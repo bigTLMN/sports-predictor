@@ -73,8 +73,24 @@ export default async function Home() {
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-wide">System Pick</p>
                   <div className="flex items-center gap-3 mt-1">
-                    <div className="text-2xl font-black text-blue-600">
-                      {pick.recommended_team.code}
+                    <div className="flex items-center gap-2">
+                      {/* 如果有 Logo URL 就顯示圖片，沒有就顯示代碼 */}
+                      {pick.recommended_team.logo_url ? (
+                        <img 
+                          src={pick.recommended_team.logo_url} 
+                          alt={pick.recommended_team.code} 
+                          className="w-12 h-12 object-contain"
+                        />
+                      ) : (
+                        <div className="text-2xl font-black text-blue-600">
+                          {pick.recommended_team.code}
+                        </div>
+                      )}
+                      
+                      {/* 顯示隊名代碼在圖片旁邊 */}
+                      <span className="text-xl font-bold text-gray-700">
+                        {pick.recommended_team.code}
+                      </span>
                     </div>
                     <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                       WIN
