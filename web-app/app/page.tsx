@@ -1,9 +1,7 @@
 import { supabase } from '@/lib/supabase';
 
-// 設定不快取，確保每次重整都抓新資料
 export const revalidate = 0;
 
-// 定義資料庫回傳的型別 (TypeScript 專用)
 interface Team {
   code: string;
   full_name?: string;
@@ -19,17 +17,26 @@ interface Match {
 interface Pick {
   confidence_score: number;
   consensus_logic: string;
+  spread_logic?: string;
+  line_info?: string;
+  ou_pick?: string;      // 新增
+  ou_line?: number;      // 新增
+  ou_confidence?: number;// 新增
   matches: Match;
   recommended_team: Team;
 }
 
 export default async function Home() {
-  // 1. 從 Supabase 抓取資料
   const { data, error } = await supabase
     .from('aggregated_picks')
     .select(`
       confidence_score,
       consensus_logic,
+      spread_logic,
+      line_info,
+      ou_pick,
+      ou_line,
+      ou_confidence,
       matches (
         date,
         home_team: teams!matches_home_team_id_fkey (code, full_name),
@@ -40,85 +47,76 @@ export default async function Home() {
     .order('confidence_score', { ascending: false });
 
   if (error) {
-    console.error("Error fetching data:", error);
-    return <div className="p-10 text-red-500">讀取資料發生錯誤，請檢查終端機。</div>;
+    console.error(error);
+    return <div className="p-10 text-red-500">讀取資料發生錯誤</div>;
   }
 
-  // 強制轉型：告訴 TypeScript "我相信回傳的資料符合 Pick[] 結構"
-  // 在正式專案中我們會用 Zod 做驗證，但 MVP 這樣最快
   const picks = data as any as Pick[];
 
   return (
-    <main className="min-h-screen bg-gray-100 p-8">
+    <main className="min-h-screen bg-gray-100 p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-          🏀 AI 賽事預測聚合平台
+          🏀 AI 賽事預測 (Next Day)
         </h1>
 
         <div className="grid gap-6 md:grid-cols-2">
           {picks?.map((pick, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-200">
-              {/* 卡片頭部：比賽隊伍 */}
-              <div className="bg-gray-50 px-6 py-4 border-b border-gray-100 flex justify-between items-center">
+            <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+              
+              {/* Header */}
+              <div className="bg-gray-50 px-6 py-3 border-b border-gray-100 flex justify-between items-center">
                 <span className="text-sm text-gray-500 font-mono">
                   {new Date(pick.matches.date).toLocaleDateString()}
                 </span>
                 <span className="font-bold text-gray-700">
-                  {pick.matches.away_team.code} vs {pick.matches.home_team.code}
+                  {pick.matches.away_team.code} @ {pick.matches.home_team.code}
                 </span>
               </div>
 
-              {/* 卡片內容：推薦結果 */}
-              <div className="p-6 flex items-center justify-between">
-                <div>
-                  <p className="text-xs text-gray-400 uppercase tracking-wide">System Pick</p>
-                  <div className="flex items-center gap-3 mt-1">
-                    <div className="flex items-center gap-2">
-                      {/* 如果有 Logo URL 就顯示圖片，沒有就顯示代碼 */}
-                      {pick.recommended_team.logo_url ? (
-                        <img 
-                          src={pick.recommended_team.logo_url} 
-                          alt={pick.recommended_team.code} 
-                          className="w-12 h-12 object-contain"
-                        />
-                      ) : (
-                        <div className="text-2xl font-black text-blue-600">
+              {/* Spread Pick Section */}
+              <div className="p-5 border-b border-gray-100">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="text-xs font-bold text-gray-400 uppercase">Spread Pick</span>
+                  <span className="text-xs bg-gray-200 px-2 py-1 rounded text-gray-600 font-mono">
+                    {pick.line_info || 'PK'}
+                  </span>
+                </div>
+                <div className="flex justify-between items-center">
+                   <div className="flex items-center gap-3">
+                      {pick.recommended_team.logo_url && (
+                        <img src={pick.recommended_team.logo_url} className="w-10 h-10 object-contain" alt="" />
+                      )}
+                      <div>
+                        <div className="text-2xl font-black text-blue-600 leading-none">
                           {pick.recommended_team.code}
                         </div>
-                      )}
-                      
-                      {/* 顯示隊名代碼在圖片旁邊 */}
-                      <span className="text-xl font-bold text-gray-700">
-                        {pick.recommended_team.code}
+                        <div className="text-xs text-gray-500 mt-1">{pick.spread_logic}</div>
+                      </div>
+                   </div>
+                   <div className="text-right">
+                      <div className="text-2xl font-bold text-green-600">{pick.confidence_score}%</div>
+                   </div>
+                </div>
+              </div>
+
+              {/* O/U Pick Section (New!) */}
+              {pick.ou_pick && (
+                <div className="px-5 py-3 bg-blue-50 flex justify-between items-center">
+                   <div className="flex items-center gap-2">
+                      <span className="text-xs font-bold text-blue-400 uppercase">Total</span>
+                      <span className={`text-lg font-bold ${pick.ou_pick === 'OVER' ? 'text-red-500' : 'text-blue-600'}`}>
+                        {pick.ou_pick} {pick.ou_line}
                       </span>
-                    </div>
-                    <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
-                      WIN
-                    </span>
-                  </div>
+                   </div>
+                   <div className="text-sm font-semibold text-gray-600">
+                     {pick.ou_confidence}% Conf.
+                   </div>
                 </div>
+              )}
 
-                {/* 信心指數 */}
-                <div className="text-right">
-                  <div className="text-3xl font-bold text-green-600">
-                    {pick.confidence_score}%
-                  </div>
-                  <p className="text-xs text-gray-400">Confidence</p>
-                </div>
-              </div>
-
-              {/* 底部邏輯 */}
-              <div className="px-6 py-3 bg-gray-50 text-xs text-gray-500 border-t border-gray-100">
-                💡 Logic: {pick.consensus_logic}
-              </div>
             </div>
           ))}
-
-          {(!picks || picks.length === 0) && (
-            <div className="col-span-2 text-center text-gray-500 py-10">
-              目前沒有推薦賽事，請先執行 Python 爬蟲。
-            </div>
-          )}
         </div>
       </div>
     </main>
