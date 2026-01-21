@@ -13,4 +13,6 @@ key = os.environ.get("SUPABASE_KEY")
 def get_supabase_client() -> Client:
     if not url or not key:
         raise ValueError("請檢查 .env 檔案，確認 SUPABASE_URL 和 SUPABASE_KEY 是否已設定")
+    
+    # 回復成最簡單的連線方式，避免版本衝突
     return create_client(url, key)

@@ -2,48 +2,52 @@ name: Daily Sports Update
 
 # 設定觸發時機
 on:
-  # 1. 排程執行：每天 UTC 時間 02:00 (約台灣時間早上 10:00)
+  # 每天台灣時間晚上 10:00 (UTC 14:00)
   schedule:
     - cron: '0 14 * * *'
   
-  # 2. 手動觸發：讓你在 GitHub 網頁上可以按按鈕測試
+  # 手動觸發
   workflow_dispatch:
 
 jobs:
   run-pipeline:
-    runs-on: ubuntu-latest # 使用 Linux 虛擬機
+    runs-on: ubuntu-latest
 
     steps:
-      # 1. 下載你的程式碼
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # 2. 設定 Python 環境
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      # 3. 安裝套件 (依照你的 requirements.txt)
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
 
-      # 4. 執行賽程爬蟲 (注入 Secrets)
+      # 1. 更新賽程與比分 (這步最重要，要先把昨天的比分抓回來)
       - name: Run Schedule Scraper
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: python scrape_schedule.py
 
-      # 5. 執行模擬預測 (未來換成真實爬蟲改這裡就好)
-      - name: Run Predictions Generator
+      # 2. 執行結算 (新增這步！根據剛剛更新的比分來對答案)
+      - name: Grade Past Picks
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        run: python mock_predictions.py
+        run: python grade_picks.py
 
-      # 6. 執行聚合引擎 (產出最終結果)
+      # 3. 抓取真實盤口 (準備明天的資料)
+      - name: Run Odds Scraper
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python scrape_odds.py
+
+      # 4. 產生新的推薦 (最後一步)
       - name: Run Aggregation Engine
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
