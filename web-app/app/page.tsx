@@ -79,19 +79,27 @@ export default async function Home() {
                 <div className="flex justify-between items-start mb-2">
                   <span className="text-xs font-bold text-gray-400 uppercase">Spread Pick</span>
                   <span className="text-xs bg-gray-200 px-2 py-1 rounded text-gray-600 font-mono">
+                    {/* 防呆：如果沒有 line_info，顯示 PK */}
                     {pick.line_info || 'PK'}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
                    <div className="flex items-center gap-3">
-                      {pick.recommended_team.logo_url && (
+                      {/* 防呆：如果有 Logo 才顯示圖片 */}
+                      {pick.recommended_team?.logo_url ? (
                         <img src={pick.recommended_team.logo_url} className="w-10 h-10 object-contain" alt="" />
+                      ) : (
+                        <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-xs">N/A</div>
                       )}
+                      
                       <div>
                         <div className="text-2xl font-black text-blue-600 leading-none">
-                          {pick.recommended_team.code}
+                          {pick.recommended_team?.code || 'TBD'}
                         </div>
-                        <div className="text-xs text-gray-500 mt-1">{pick.spread_logic}</div>
+                        {/* 防呆：如果沒有邏輯文字，給個預設字串 */}
+                        <div className="text-xs text-gray-500 mt-1">
+                          {pick.spread_logic || pick.consensus_logic || 'Model Analysis'}
+                        </div>
                       </div>
                    </div>
                    <div className="text-right">
