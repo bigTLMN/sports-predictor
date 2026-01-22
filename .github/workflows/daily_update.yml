@@ -1,55 +1,66 @@
-name: Daily Sports Update
+name: Daily NBA Prediction & Grading
 
-# 設定觸發時機
 on:
-  # 每天台灣時間晚上 10:00 (UTC 14:00)
   schedule:
+    # 1. 下午茶結算時段：台灣時間 15:00 (UTC 07:00)
+    #    用途：只負責收割今天打完的比賽結果，不進行新預測
+    - cron: '0 7 * * *'
+    
+    # 2. 晚間預測時段：台灣時間 22:00 (UTC 14:00)
+    #    用途：預測明天的比賽 (這時候賠率較穩)
     - cron: '0 14 * * *'
-  
-  # 手動觸發
+
+  # 允許手動按按鈕觸發 (手動觸發時，我們會預設執行所有動作)
   workflow_dispatch:
 
 jobs:
-  run-pipeline:
+  build:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install supabase requests python-dateutil pytz
 
-      # 1. 更新賽程與比分 (這步最重要，要先把昨天的比分抓回來)
-      - name: Run Schedule Scraper
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        run: python scrape_schedule.py
-
-      # 2. 執行結算 (新增這步！根據剛剛更新的比分來對答案)
-      - name: Grade Past Picks
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        run: python grade_picks.py
-
-      # 3. 抓取真實盤口 (準備明天的資料)
-      - name: Run Odds Scraper
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        run: python scrape_odds.py
-
-      # 4. 產生新的推薦 (最後一步)
-      - name: Run Aggregation Engine
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        run: python aggregate_picks.py
+    - name: Run NBA Logic (Conditional Prediction)
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      run: |
+        # 1. 總是先更新賽程與比分 (包含昨天剛打完的)
+        # 這是為了讓使用者能看到最新的比分
+        python scrape_schedule.py
+        
+        # 2. 總是抓取最新賠率 (多多益善，收集數據)
+        python scrape_odds.py
+        
+        # 3. [關鍵守門員] 判斷是否執行「產生預測」
+        # 邏輯：取得目前的 UTC 小時 (date -u +%H)
+        # 如果是 07 (即台灣 15:00) 且 是排程觸發 -> 跳過預測！
+        # 如果是 14 (即台灣 22:00) 或 手動觸發 -> 執行預測！
+        
+        CURRENT_HOUR=$(date -u +%H)
+        EVENT_NAME="${{ github.event_name }}"
+        
+        echo "Current UTC Hour: $CURRENT_HOUR"
+        echo "Event Name: $EVENT_NAME"
+        
+        if [ "$CURRENT_HOUR" -eq "07" ] && [ "$EVENT_NAME" == "schedule" ]; then
+          echo "🛑 現在是下午 3 點 (UTC 07:00)，只結算成績，跳過新預測生成 (避免鎖定早盤)。"
+        else
+          echo "🚀 現在是晚上 (或手動觸發)，開始執行 AI 預測模型 (aggregate_picks)..."
+          python aggregate_picks.py
+        fi
+        
+        # 4. 總是執行結算 (只要有打完的比賽，就閱卷)
+        # 這會讓你下午 3 點就能看到昨晚比賽的 Win/Loss
+        python grade_picks.py
