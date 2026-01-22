@@ -1,19 +1,15 @@
 import { supabase } from '@/lib/supabase';
 import DateNavigator from './components/DateNavigator';
-import { format, addDays } from 'date-fns';
+import StatsDashboard from './components/StatsDashboard';
+import { format } from 'date-fns';
 
-export const revalidate = 0; // 確保每次都抓最新資料，不要快取
+export const revalidate = 0;
 
-interface Team {
-  code: string;
-  full_name?: string;
-  logo_url?: string;
-}
-
+// 定義資料結構
 interface Match {
   date: string;
-  home_team: Team;
-  away_team: Team;
+  home_team: { code: string; full_name?: string };
+  away_team: { code: string; full_name?: string };
   home_score?: number;
   away_score?: number;
   status?: string;
@@ -27,164 +23,162 @@ interface Pick {
   ou_pick?: string;
   ou_line?: number;
   ou_confidence?: number;
-  outcome?: string; // WIN, LOSS, PUSH
+  spread_outcome?: string; 
+  ou_outcome?: string;     
   matches: Match;
-  recommended_team: Team;
+  recommended_team: { code: string; logo_url?: string };
 }
 
-// Next.js 15 Update: searchParams 現在是一個 Promise
 export default async function Home({
   searchParams,
 }: {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
-  // 1. 等待 searchParams 解析 (這是 Next.js 15 的新規定)
   const params = await searchParams;
-
-  // 2. 預設日期邏輯
   const todayStr = format(new Date(), 'yyyy-MM-dd');
-  
-  // 使用解析後的 params 來讀取 date
   const targetDate = (params.date as string) || todayStr;
 
-  // 3. 向 Supabase 查詢資料
-  const { data, error } = await supabase
+  // 1. 抓取「當天」的資料 (用於顯示卡片)
+  const { data: dailyData } = await supabase
     .from('aggregated_picks')
     .select(`
       *,
       matches!inner (
-        date,
-        status,
-        home_score,
-        away_score,
+        date, status, home_score, away_score,
         home_team: teams!matches_home_team_id_fkey (code, full_name),
         away_team: teams!matches_away_team_id_fkey (code, full_name)
       ),
       recommended_team: teams!aggregated_picks_recommended_team_id_fkey (code, logo_url)
     `)
-    .eq('matches.date', targetDate) // 只抓這一天
+    .eq('matches.date', targetDate)
     .order('confidence_score', { ascending: false });
 
-  if (error) {
-    console.error(error);
-    return <div className="p-10 text-red-500">讀取資料發生錯誤</div>;
-  }
+  // 2. 抓取「所有已結算」的歷史資料 (用於計算累積勝率)
+  // [修正重點]: 移除 .not('matches', 'is', null) 這種錯誤寫法
+  // 直接選取欄位，我們會在下面用 JS 濾掉還沒結算的
+  const { data: historyData } = await supabase
+    .from('aggregated_picks')
+    .select('spread_outcome, ou_outcome');
 
-  const picks = data as any as Pick[];
+  const picks = (dailyData || []) as any as Pick[];
+  const history = (historyData || []) as { spread_outcome?: string; ou_outcome?: string }[];
 
-  // 計算當日戰績
-  const totalGraded = picks.filter(p => p.outcome).length;
-  const wins = picks.filter(p => p.outcome === 'WIN').length;
-  const losses = picks.filter(p => p.outcome === 'LOSS').length;
-  const winRate = totalGraded > 0 ? Math.round((wins / totalGraded) * 100) : 0;
+  // --- 統計邏輯 ---
+  
+  // A. 計算本日 (Daily Stats)
+  const dailyStats = {
+    spreadWin: picks.filter(p => p.spread_outcome === 'WIN').length,
+    spreadTotal: picks.filter(p => p.spread_outcome === 'WIN' || p.spread_outcome === 'LOSS').length,
+    ouWin: picks.filter(p => p.ou_outcome === 'WIN').length,
+    ouTotal: picks.filter(p => p.ou_outcome === 'WIN' || p.ou_outcome === 'LOSS').length,
+  };
+
+  // B. 計算累積 (Cumulative Stats)
+  // 這裡會統計資料庫裡「每一筆」有結果的資料
+  const cumulativeStats = {
+    spreadWin: history.filter(p => p.spread_outcome === 'WIN').length,
+    spreadTotal: history.filter(p => p.spread_outcome === 'WIN' || p.spread_outcome === 'LOSS').length,
+    ouWin: history.filter(p => p.ou_outcome === 'WIN').length,
+    ouTotal: history.filter(p => p.ou_outcome === 'WIN' || p.ou_outcome === 'LOSS').length,
+  };
 
   return (
-    <main className="min-h-screen bg-gray-100 p-4 md:p-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-800 text-center mb-2">
+    <main className="min-h-screen bg-gray-50 p-4 md:p-8 font-sans">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-3xl font-black text-gray-900 text-center mb-1 tracking-tight">
           🏀 AI 賽事預測
         </h1>
+        <p className="text-center text-gray-400 text-xs font-medium mb-6">POWERED BY SUPABASE & NEXT.JS</p>
         
-        {/* 日期導航器 */}
         <DateNavigator />
 
-        {/* 戰績顯示看板 (只有當天有結算資料時才顯示) */}
-        {totalGraded > 0 && (
-          <div className="mb-6 p-4 bg-gray-800 text-white rounded-xl shadow-lg text-center">
-            <h2 className="text-sm text-gray-400 uppercase tracking-wider mb-1">Historical Performance</h2>
-            <div className="text-2xl font-bold flex justify-center items-center gap-4">
-              <span className="text-green-400">{wins} Wins</span>
-              <span className="text-gray-500">/</span>
-              <span className="text-red-400">{losses} Losses</span>
-            </div>
-            <div className="mt-1 text-sm font-mono bg-gray-700 inline-block px-2 py-0.5 rounded text-yellow-400">
-              Win Rate: {winRate}%
-            </div>
-          </div>
-        )}
+        {/* 統計儀表板：現在 Cumulative 數據應該正常了 */}
+        <StatsDashboard daily={dailyStats} cumulative={cumulativeStats} />
 
         {/* 預測卡片列表 */}
         {picks.length === 0 ? (
-          <div className="text-center text-gray-500 py-10">
-            📭 這一天 ({targetDate}) 沒有預測資料
-            <div className="text-xs mt-2">請按箭頭查看其他日期，或確認爬蟲是否執行</div>
+          <div className="text-center text-gray-400 py-12 bg-white rounded-xl border border-gray-100 border-dashed">
+            <div className="text-4xl mb-2">📭</div>
+            <div className="font-bold">No Data Available</div>
+            <div className="text-xs mt-1">Check the date or run the scraper.</div>
           </div>
         ) : (
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-4 md:grid-cols-2">
             {picks.map((pick, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 relative">
+              <div key={index} className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
                 
-                {/* 輸贏印章 */}
-                {pick.outcome === 'WIN' && (
-                  <div className="absolute top-2 right-2 z-10 bg-green-100 text-green-700 border border-green-300 px-3 py-1 rounded-full font-black transform rotate-12 shadow-sm">
-                    ✅ WIN
-                  </div>
-                )}
-                {pick.outcome === 'LOSS' && (
-                  <div className="absolute top-2 right-2 z-10 bg-red-100 text-red-700 border border-red-300 px-3 py-1 rounded-full font-black transform rotate-12 shadow-sm">
-                    ❌ LOSS
-                  </div>
-                )}
-
                 {/* Header */}
-                <div className="bg-gray-50 px-6 py-3 border-b border-gray-100 flex justify-between items-center">
-                  <span className="text-sm text-gray-500 font-mono">
-                    {pick.matches.date}
-                  </span>
+                <div className="bg-gray-50 px-4 py-3 border-b border-gray-100 flex justify-between items-center">
+                  <div className="text-xs font-bold text-gray-400">{pick.matches.date}</div>
                   <div className="text-right">
-                     <span className="font-bold text-gray-700 block">
-                       {pick.matches.away_team.code} @ {pick.matches.home_team.code}
-                     </span>
-                     {pick.matches.status === 'STATUS_FINAL' && (
-                       <span className="text-xs text-gray-500 font-mono block">
+                    <div className="text-sm font-black text-gray-800">
+                      {pick.matches.away_team.code} <span className="text-gray-400 font-normal">@</span> {pick.matches.home_team.code}
+                    </div>
+                    {pick.matches.status === 'STATUS_FINAL' && (
+                       <div className="text-xs font-mono text-gray-500 mt-0.5">
                          {pick.matches.away_score} - {pick.matches.home_score}
-                       </span>
-                     )}
+                       </div>
+                    )}
                   </div>
                 </div>
 
-                {/* SPREAD PICK */}
-                <div className="p-5 border-b border-gray-100">
-                  <div className="flex justify-between items-start mb-2">
-                    <span className="text-xs font-bold text-gray-400 uppercase">Spread Pick</span>
-                    <span className="text-xs bg-gray-200 px-2 py-1 rounded text-gray-600 font-mono">
-                      {pick.line_info || 'PK'}
-                    </span>
+                {/* Body: Spread Pick */}
+                <div className="p-4 relative">
+                  {pick.spread_outcome === 'WIN' && (
+                    <div className="absolute top-3 right-3 bg-green-100 text-green-700 text-[10px] font-black px-2 py-0.5 rounded border border-green-200">WIN</div>
+                  )}
+                  {pick.spread_outcome === 'LOSS' && (
+                    <div className="absolute top-3 right-3 bg-red-100 text-red-700 text-[10px] font-black px-2 py-0.5 rounded border border-red-200">LOSS</div>
+                  )}
+
+                  <div className="flex justify-between items-start mb-3">
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-bold text-gray-400 tracking-wider uppercase">Spread Pick</span>
+                      <span className="text-[10px] text-gray-500 font-mono bg-gray-100 px-1.5 py-0.5 rounded w-fit mt-1">
+                        {pick.line_info || 'PK'}
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex justify-between items-center">
-                     <div className="flex items-center gap-3">
-                        {pick.recommended_team?.logo_url ? (
-                          <img src={pick.recommended_team.logo_url} className="w-10 h-10 object-contain" alt="" />
-                        ) : (
-                          <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-xs">N/A</div>
-                        )}
-                        <div>
-                          <div className="text-2xl font-black text-blue-600 leading-none">
-                            {pick.recommended_team?.code || 'TBD'}
-                          </div>
-                          <div className="text-xs text-gray-500 mt-1 max-w-[150px] truncate">
-                            {pick.spread_logic || pick.consensus_logic || 'Model Analysis'}
-                          </div>
-                        </div>
-                     </div>
-                     <div className="text-right mt-4">
-                        <div className="text-2xl font-bold text-green-600">{pick.confidence_score}%</div>
-                     </div>
+
+                  <div className="flex items-center gap-3 mb-2">
+                    {pick.recommended_team?.logo_url ? (
+                      <img src={pick.recommended_team.logo_url} className="w-10 h-10 object-contain" alt={pick.recommended_team.code} />
+                    ) : (
+                      <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-xs font-bold text-gray-400">?</div>
+                    )}
+                    <div>
+                      <div className="text-2xl font-black text-gray-900 leading-none">
+                        {pick.recommended_team?.code}
+                      </div>
+                      <div className="text-[10px] text-gray-500 mt-1 line-clamp-1">
+                        {pick.spread_logic || 'AI Model Analysis'}
+                      </div>
+                    </div>
+                    <div className="ml-auto text-2xl font-black text-green-600 tracking-tighter">
+                      {pick.confidence_score}%
+                    </div>
                   </div>
                 </div>
 
-                {/* O/U PICK */}
+                {/* Footer: O/U Pick */}
                 {pick.ou_pick && (
-                  <div className="px-5 py-3 bg-blue-50 flex justify-between items-center">
-                     <div className="flex items-center gap-2">
-                        <span className="text-xs font-bold text-blue-400 uppercase">Total</span>
-                        <span className={`text-lg font-bold ${pick.ou_pick === 'OVER' ? 'text-red-500' : 'text-blue-600'}`}>
-                          {pick.ou_pick} {pick.ou_line}
-                        </span>
-                     </div>
-                     <div className="text-sm font-semibold text-gray-600">
-                       {pick.ou_confidence}% Conf.
-                     </div>
+                  <div className="px-4 py-3 bg-slate-50 border-t border-gray-100 flex justify-between items-center relative">
+                    {pick.ou_outcome === 'WIN' && (
+                      <div className="absolute right-4 top-1/2 -translate-y-1/2 bg-green-100 text-green-700 text-[10px] font-black px-2 py-0.5 rounded border border-green-200">WIN</div>
+                    )}
+                    {pick.ou_outcome === 'LOSS' && (
+                      <div className="absolute right-4 top-1/2 -translate-y-1/2 bg-red-100 text-red-700 text-[10px] font-black px-2 py-0.5 rounded border border-red-200">LOSS</div>
+                    )}
+
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-bold text-slate-400 uppercase">Total</span>
+                      <div className={`text-sm font-black ${pick.ou_pick === 'OVER' ? 'text-red-500' : 'text-blue-600'}`}>
+                        {pick.ou_pick} {pick.ou_line}
+                      </div>
+                    </div>
+                    <div className={`text-[10px] font-bold text-slate-400 ${pick.ou_outcome ? 'mr-12' : ''}`}>
+                      {pick.ou_confidence}% Conf.
+                    </div>
                   </div>
                 )}
               </div>

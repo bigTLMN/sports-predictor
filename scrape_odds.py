@@ -46,8 +46,7 @@ def fetch_real_odds():
 
     # 3. 抓取未來賽事的盤口
     today = datetime.datetime.now()
-    tomorrow = today + datetime.timedelta(days=1)
-    target_dates = [tomorrow.strftime("%Y%m%d")]
+    target_dates = [(today + datetime.timedelta(days=i)).strftime("%Y%m%d") for i in range(-1, 2)]
 
     odds_data_to_insert = []
 

@@ -37,8 +37,7 @@ def fetch_and_store_schedule():
     
     # 抓取未來賽程
     today = datetime.datetime.now()
-    tomorrow = today + datetime.timedelta(days=1)
-    target_dates = [tomorrow.strftime("%Y%m%d")]
+    target_dates = [(today + datetime.timedelta(days=i)).strftime("%Y%m%d") for i in range(-1, 2)]
     
     print(f"2. 準備抓取這些日期的賽程: {target_dates}")
 
