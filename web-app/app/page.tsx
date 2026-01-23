@@ -5,9 +5,11 @@ import { format } from 'date-fns';
 
 export const revalidate = 0;
 
-// 定義資料結構
+// 1. 更新 Interface，確保我們有 ID 和 start_time 可以排序
 interface Match {
+  id: number;           // 新增
   date: string;
+  start_time?: string;  // 新增 (資料庫可能有存，如果沒存我們就用 ID 排)
   home_team: { code: string; full_name?: string };
   away_team: { code: string; full_name?: string };
   home_score?: number;
@@ -38,34 +40,38 @@ export default async function Home({
   const todayStr = format(new Date(), 'yyyy-MM-dd');
   const targetDate = (params.date as string) || todayStr;
 
-  // 1. 抓取「當天」的資料 (用於顯示卡片)
+  // 1. 抓取「當天」的資料
+  // 我們在 select 裡多抓 matches 的 id 和 start_time
   const { data: dailyData } = await supabase
     .from('aggregated_picks')
     .select(`
       *,
       matches!inner (
-        date, status, home_score, away_score,
+        id, date, status, home_score, away_score, start_time,
         home_team: teams!matches_home_team_id_fkey (code, full_name),
         away_team: teams!matches_away_team_id_fkey (code, full_name)
       ),
       recommended_team: teams!aggregated_picks_recommended_team_id_fkey (code, logo_url)
     `)
-    .eq('matches.date', targetDate)
-    .order('confidence_score', { ascending: false });
+    .eq('matches.date', targetDate);
+    // 移除這裡的 .order，我們改用 JavaScript 在下面手動排
 
-  // 2. 抓取「所有已結算」的歷史資料 (用於計算累積勝率)
-  // [修正重點]: 移除 .not('matches', 'is', null) 這種錯誤寫法
-  // 直接選取欄位，我們會在下面用 JS 濾掉還沒結算的
+  // 2. 抓取歷史資料 (計算累積勝率用)
   const { data: historyData } = await supabase
     .from('aggregated_picks')
     .select('spread_outcome, ou_outcome');
 
-  const picks = (dailyData || []) as any as Pick[];
+  let picks = (dailyData || []) as any as Pick[];
   const history = (historyData || []) as { spread_outcome?: string; ou_outcome?: string }[];
 
+  // --- 關鍵修改：JavaScript 排序邏輯 ---
+  // 優先依照 ID 排序 (通常 ESPN ID 順序 = 開賽順序)
+  // 如果你有 start_time 欄位，也可以改用 start_time 排序
+  picks.sort((a, b) => {
+    return a.matches.id - b.matches.id;
+  });
+
   // --- 統計邏輯 ---
-  
-  // A. 計算本日 (Daily Stats)
   const dailyStats = {
     spreadWin: picks.filter(p => p.spread_outcome === 'WIN').length,
     spreadTotal: picks.filter(p => p.spread_outcome === 'WIN' || p.spread_outcome === 'LOSS').length,
@@ -73,8 +79,6 @@ export default async function Home({
     ouTotal: picks.filter(p => p.ou_outcome === 'WIN' || p.ou_outcome === 'LOSS').length,
   };
 
-  // B. 計算累積 (Cumulative Stats)
-  // 這裡會統計資料庫裡「每一筆」有結果的資料
   const cumulativeStats = {
     spreadWin: history.filter(p => p.spread_outcome === 'WIN').length,
     spreadTotal: history.filter(p => p.spread_outcome === 'WIN' || p.spread_outcome === 'LOSS').length,
@@ -90,9 +94,9 @@ export default async function Home({
         </h1>
         <p className="text-center text-gray-400 text-xs font-medium mb-6">POWERED BY SUPABASE & NEXT.JS</p>
         
+        {/* 新的日期導航器 */}
         <DateNavigator />
 
-        {/* 統計儀表板：現在 Cumulative 數據應該正常了 */}
         <StatsDashboard daily={dailyStats} cumulative={cumulativeStats} />
 
         {/* 預測卡片列表 */}
@@ -109,7 +113,10 @@ export default async function Home({
                 
                 {/* Header */}
                 <div className="bg-gray-50 px-4 py-3 border-b border-gray-100 flex justify-between items-center">
-                  <div className="text-xs font-bold text-gray-400">{pick.matches.date}</div>
+                  <div className="flex flex-col">
+                    <span className="text-xs font-bold text-gray-400">{pick.matches.date}</span>
+                    {/* 如果想顯示比賽時間，可以在這裡加 */}
+                  </div>
                   <div className="text-right">
                     <div className="text-sm font-black text-gray-800">
                       {pick.matches.away_team.code} <span className="text-gray-400 font-normal">@</span> {pick.matches.home_team.code}
