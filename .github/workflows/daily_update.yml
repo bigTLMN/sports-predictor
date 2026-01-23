@@ -29,7 +29,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install supabase requests python-dateutil pytz
+        pip install supabase requests python-dateutil pytz python-dotenv
 
     - name: Run NBA Logic (Conditional Prediction)
       env:

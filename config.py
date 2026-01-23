@@ -1,5 +1,9 @@
 import os
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 from supabase import create_client, Client
 
 # 1. 載入 .env 檔案裡的設定
