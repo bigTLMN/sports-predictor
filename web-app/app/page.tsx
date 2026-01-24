@@ -71,26 +71,32 @@ export default async function Home({
     .gte('matches.date', startUTC)
     .lt('matches.date', endUTCString);
 
-  // 4. 查詢歷史數據 (for TrendChart)
-  const sevenDaysAgo = new Date();
-  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-  
-  const { data: historyData } = await supabase
+  // 4. 查詢歷史數據 (修改：抓取所有歷史紀錄，而不只是 7 天)
+  const { data: allHistoryData } = await supabase
     .from('aggregated_picks')
     .select(`spread_outcome, matches!inner (date)`)
-    .gte('matches.date', sevenDaysAgo.toISOString())
-    .not('spread_outcome', 'is', null);
+    .not('spread_outcome', 'is', null) // 只抓已結算的
+    .order('matches(date)', { ascending: true }); // 按日期排序
 
   // --- 資料統計 ---
-  // TrendData
+  
+  // A. 處理走勢圖數據 (只取最近 7 天)
+  const sevenDaysAgo = new Date();
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  const sevenDaysAgoStr = sevenDaysAgo.toISOString();
+
   const trendMap = new Map<string, { wins: number; total: number }>();
-  (historyData || []).forEach((pick: any) => {
-    const dateStr = pick.matches.date.split('T')[0];
-    const shortDate = dateStr.slice(5); 
-    if (!trendMap.has(shortDate)) trendMap.set(shortDate, { wins: 0, total: 0 });
-    const dayStat = trendMap.get(shortDate)!;
-    if (pick.spread_outcome === 'WIN') dayStat.wins++;
-    if (pick.spread_outcome === 'WIN' || pick.spread_outcome === 'LOSS') dayStat.total++;
+  
+  (allHistoryData || []).forEach((pick: any) => {
+    // 過濾：只畫最近 7 天的圖
+    if (pick.matches.date >= sevenDaysAgoStr) {
+        const dateStr = pick.matches.date.split('T')[0];
+        const shortDate = dateStr.slice(5); 
+        if (!trendMap.has(shortDate)) trendMap.set(shortDate, { wins: 0, total: 0 });
+        const dayStat = trendMap.get(shortDate)!;
+        if (pick.spread_outcome === 'WIN') dayStat.wins++;
+        if (pick.spread_outcome === 'WIN' || pick.spread_outcome === 'LOSS') dayStat.total++;
+    }
   });
 
   const trendData = Array.from(trendMap.entries())
@@ -99,6 +105,13 @@ export default async function Home({
       winRate: stat.total > 0 ? Math.round((stat.wins / stat.total) * 100) : 0
     }))
     .sort((a, b) => a.date.localeCompare(b.date));
+
+  // B. 處理 Dashboard Stats (使用全賽季數據 allHistoryData)
+  const cumulativeStats = {
+    spreadWin: (allHistoryData || []).filter((p: any) => p.spread_outcome === 'WIN').length,
+    spreadTotal: (allHistoryData || []).filter((p: any) => p.spread_outcome === 'WIN' || p.spread_outcome === 'LOSS').length,
+    ouWin: 0, ouTotal: 0,
+  };
 
   // Dashboard Stats
   const cumulativeStats = {
