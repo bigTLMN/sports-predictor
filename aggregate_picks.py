@@ -1,110 +1,169 @@
-import random
+import pandas as pd
+import joblib
+from datetime import datetime, timedelta
 from config import get_supabase_client
 
-def run_aggregation_engine():
-    supabase = get_supabase_client()
-    print("1. 正在啟動進階聚合引擎 (鎖定模式)...")
+# ==========================================
+# 設定：只預測未來 1 天 (配合 CI/CD 每日執行)
+# ==========================================
+PREDICT_DAYS = 1 
 
-    # 1. 抓取未來賽事 (STATUS_SCHEDULED)
-    matches_res = supabase.table("matches")\
-        .select("id, home_team_id, away_team_id")\
-        .eq("status", "STATUS_SCHEDULED")\
-        .execute()
-    matches = matches_res.data
+print("📂 正在載入 AI 模型...")
+try:
+    model_win = joblib.load('model_win.pkl')
+    model_spread = joblib.load('model_spread.pkl')
+    model_total = joblib.load('model_total.pkl')
+    features_spread = joblib.load('features_spread.pkl')
+    features_total = joblib.load('features_total.pkl')
+except Exception as e:
+    print(f"❌ 模型載入失敗: {e}")
+    exit()
+
+RAW_FEATURES = [
+    'fieldGoalsPercentage', 'threePointersPercentage', 'freeThrowsPercentage',
+    'reboundsTotal', 'assists', 'steals', 'blocks', 'turnovers', 
+    'plusMinusPoints', 'pointsInThePaint', 'teamScore'
+]
+
+def get_latest_stats():
+    print("🔄 從 CSV 讀取球隊近況...")
+    try:
+        cols = ['teamId', 'gameDateTimeEst'] + RAW_FEATURES
+        df = pd.read_csv('data/TeamStatistics.csv', usecols=cols, low_memory=False)
+        df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], utc=True)
+        df = df.sort_values(['teamId', 'gameDateTimeEst'])
+        
+        df_rolled = df.groupby('teamId')[RAW_FEATURES].apply(lambda x: x.rolling(5, min_periods=1).mean())
+        df_rolled['teamId'] = df['teamId']
+        
+        last = df_rolled.groupby('teamId').tail(1)
+        return {int(r['teamId']): {f"rolling_{c}": r[c] for c in RAW_FEATURES} for _, r in last.iterrows()}
+    except Exception as e:
+        print(f"❌ 讀取 TeamStatistics 失敗: {e}")
+        return {}
+
+def prepare_features(h_id, a_id, stats):
+    if h_id not in stats or a_id not in stats: return None, None
+    h, a = stats[h_id], stats[a_id]
     
+    row = {'is_home': 1}
+    for col in RAW_FEATURES:
+        r = f"rolling_{col}"
+        row[f"diff_{col}"] = h[r] - a[r]
+        row[f"sum_{col}"] = h[r] + a[r]
+        
+    df = pd.DataFrame([row])
+    for c in features_spread: 
+        if c not in df.columns: df[c] = 0
+    for c in features_total: 
+        if c not in df.columns: df[c] = 0
+    return df[features_spread], df[features_total]
+
+def run():
+    supabase = get_supabase_client()
+    stats = get_latest_stats()
+    if not stats: return
+
+    # 設定時間範圍
+    now = datetime.utcnow()
+    end_date = now + timedelta(days=PREDICT_DAYS)
+    
+    print(f"📅 抓取賽程範圍: {now.strftime('%Y-%m-%d')} 至 {end_date.strftime('%Y-%m-%d')}")
+
+    # 抓取比賽 (包含剛剛更新的 vegas_spread)
+    matches = supabase.table("matches")\
+        .select("*, home_team:teams!matches_home_team_id_fkey(code, nba_team_id), away_team:teams!matches_away_team_id_fkey(code, nba_team_id)")\
+        .eq("status", "STATUS_SCHEDULED")\
+        .gte("date", now.isoformat())\
+        .lt("date", end_date.isoformat())\
+        .order('date')\
+        .execute().data
+
     if not matches:
-        print("⚠️ 無待處理賽事。")
+        print("📭 無未開打比賽。")
         return
 
-    # --- 新增邏輯：先找出「已經預測過」的比賽 ID ---
-    # 我們不希望覆蓋舊的預測，所以要先建立一個「已鎖定清單」
-    existing_picks_res = supabase.table("aggregated_picks").select("match_id").execute()
-    existing_match_ids = set(item['match_id'] for item in existing_picks_res.data)
-
-    new_picks = []
-    skipped_count = 0
-
-    for match in matches:
-        match_id = match['id']
-        
-        # [關鍵鎖定]：如果這場比賽已經有預測了，直接跳過！
-        # 這保證了昨天的預測今天看不會變，且今天的重跑不會覆蓋昨天的結果
-        if match_id in existing_match_ids:
-            skipped_count += 1
-            continue
-
-        # 2. 抓取這場比賽的真實盤口 (ESPN BET)
-        odds_res = supabase.table("raw_predictions")\
-            .select("*")\
-            .eq("match_id", match_id)\
-            .order("crawled_at", desc=True)\
-            .execute()
-        
-        odds_list = odds_res.data
-        if not odds_list: continue
-
-        spread_data = next((x for x in odds_list if x['prediction_type'] == 'SPREAD'), None)
-        total_data = next((x for x in odds_list if x['prediction_type'] == 'TOTAL'), None)
-
-        # 初始化結果容器
-        result = {
-            "match_id": match_id,
-            "result_status": "PENDING"
-        }
-
-        # --- A. 讓分盤邏輯 ---
-        if spread_data:
-            vegas_line = float(spread_data['line_value'])
-            fav_team_id = spread_data['picked_team_id']
-            
-            # 模擬專家模型 (這裡的 variance 生成後就會被寫入資料庫並永久固定)
-            variance = random.uniform(-4.0, 4.0) 
-            expert_projected_diff = vegas_line + variance 
-            
-            if expert_projected_diff < vegas_line: 
-                rec_team = fav_team_id
-                logic_msg = f"Model projects win by {abs(round(expert_projected_diff,1))}, covers {spread_data['line_value']}"
-            else:
-                if fav_team_id == match['home_team_id']:
-                    rec_team = match['away_team_id']
-                else:
-                    rec_team = match['home_team_id']
-                logic_msg = f"Value Play: Taking points vs {spread_data['line_value']}"
-
-            result["recommended_team_id"] = rec_team
-            result["confidence_score"] = random.randint(60, 95)
-            result["line_info"] = f"Line: {spread_data['line_value']}"
-            result["spread_logic"] = logic_msg
-            result["consensus_logic"] = "Smart Money Model"
-
-        # --- B. 大小分邏輯 ---
-        if total_data:
-            vegas_total = float(total_data['line_value'])
-            projected_total = vegas_total + random.uniform(-10, 10)
-            
-            if projected_total > vegas_total:
-                result["ou_pick"] = "OVER"
-                result["ou_confidence"] = random.randint(60, 90)
-            else:
-                result["ou_pick"] = "UNDER"
-                result["ou_confidence"] = random.randint(60, 90)
-            result["ou_line"] = vegas_total
-
-        # 只有當產生了有效預測才加入清單
-        if "recommended_team_id" in result:
-            new_picks.append(result)
-
-    # 3. 寫入資料庫 (只 Insert 新的，不 Delete 舊的)
-    if new_picks:
-        print(f"3. 生成 {len(new_picks)} 筆新預測 (跳過 {skipped_count} 筆已鎖定預測)...")
+    print(f"🤖 準備預測 {len(matches)} 場比賽...")
+    picks = []
+    
+    for m in matches:
         try:
-            # 這裡只用 insert，不再先 delete 了
-            supabase.table("aggregated_picks").insert(new_picks).execute()
-            print("🎉 新增預測完成！")
+            h_id = int(m['home_team']['nba_team_id'])
+            a_id = int(m['away_team']['nba_team_id'])
+            
+            X_spr, X_tot = prepare_features(h_id, a_id, stats)
+            if X_spr is None: continue
+
+            # AI 預測
+            p_win = float(model_win.predict_proba(X_spr)[0][1]) # 主隊勝率
+            pred_margin = float(model_spread.predict(X_spr)[0]) # 正=主贏, 負=客贏
+            pred_total = float(model_total.predict(X_tot)[0])
+
+            # 莊家盤口 (如果沒有，就用 AI 預測模擬一個 PK 盤)
+            vegas_spread = m.get('vegas_spread')
+            vegas_total = m.get('vegas_total')
+            
+            if vegas_spread is None: vegas_spread = 0.0
+            if vegas_total is None: vegas_total = 225.0
+
+            # --- 邏輯核心：AI vs Vegas ---
+            # 判斷讓分盤 (Spread Pick)
+            # 邏輯：如果 AI 預測贏 10 分，莊家只開讓 5 分 -> 買主隊 (Cover)
+            # 讓分盤邏輯：(AI Margin) - (Vegas Spread * -1) 
+            # 注意：Vegas Spread 主讓是負的 (e.g. -5.5)，所以要 * -1 變成正的 5.5 來比較
+            
+            # 簡單判定：AI 預測分數 - 莊家預測分數 (Vegas Spread 轉換後)
+            # 這裡我們直接比較 "預測勝分" 與 "盤口"
+            
+            # 推薦邏輯
+            if pred_margin > (vegas_spread * -1): 
+                # AI 覺得主隊表現比莊家預期好 -> 買主隊
+                rec_id = m['home_team_id']
+                rec_code = m['home_team']['code']
+                # 信心度簡單計算：差距越大信心越高
+                diff = abs(pred_margin - (vegas_spread * -1))
+                conf = min(50 + int(diff * 4), 95) # 基礎50%，每差1分加4%
+            else:
+                # 買客隊
+                rec_id = m['away_team_id']
+                rec_code = m['away_team']['code']
+                diff = abs(pred_margin - (vegas_spread * -1))
+                conf = min(50 + int(diff * 4), 95)
+
+            # 大小分推薦
+            ou_pick = "OVER" if pred_total > vegas_total else "UNDER"
+            ou_conf = min(50 + int(abs(pred_total - vegas_total) * 3), 90)
+
+            picks.append({
+                "match_id": m['id'],
+                "recommended_team_id": rec_id,
+                "confidence_score": conf,
+                "spread_logic": f"AI預測贏 {pred_margin:.1f} 分", # 簡化，前端顯示細節
+                "line_info": str(vegas_spread), # 這裡存真實盤口
+                "ou_pick": ou_pick,
+                "ou_line": float(vegas_total),  # 這裡存真實盤口
+                "ou_confidence": ou_conf,
+                "created_at": datetime.utcnow().isoformat()
+            })
+            print(f"   -> {m['away_team']['code']} @ {m['home_team']['code']}: 莊家[{vegas_spread}] vs AI[{pred_margin:.1f}] -> 買 {rec_code}")
+
         except Exception as e:
-            print(f"❌ 寫入失敗: {e}")
+            print(f"⚠️ Error {m['id']}: {e}")
+
+    # 寫入 (Check-then-Upsert)
+    if picks:
+        match_ids = [p['match_id'] for p in picks]
+        existing = supabase.table("aggregated_picks").select("id, match_id").in_("match_id", match_ids).execute().data
+        existing_map = {item['match_id']: item['id'] for item in existing}
+        
+        for p in picks:
+            if p['match_id'] in existing_map:
+                p['id'] = existing_map[p['match_id']]
+        
+        supabase.table("aggregated_picks").upsert(picks).execute()
+        print(f"✅ 完成！已寫入 {len(picks)} 筆最佳推薦。")
     else:
-        print(f"✅ 沒有新的預測產生 (跳過 {skipped_count} 筆已存在的預測)。")
+        print("✅ 無需更新。")
 
 if __name__ == "__main__":
-    run_aggregation_engine()
+    run()
