@@ -30,7 +30,10 @@ def get_latest_stats():
     try:
         cols = ['teamId', 'gameDateTimeEst'] + RAW_FEATURES
         df = pd.read_csv('data/TeamStatistics.csv', usecols=cols, low_memory=False)
-        df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], utc=True)
+        
+        # 🔥 修改處：加上 format='mixed' 以解決日期解析錯誤
+        df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], format='mixed', utc=True)
+        
         df = df.sort_values(['teamId', 'gameDateTimeEst'])
         
         df_rolled = df.groupby('teamId')[RAW_FEATURES].apply(lambda x: x.rolling(5, min_periods=1).mean())
@@ -70,7 +73,7 @@ def run():
     
     print(f"📅 抓取賽程範圍: {now.strftime('%Y-%m-%d')} 至 {end_date.strftime('%Y-%m-%d')}")
 
-    # 抓取比賽 (包含剛剛更新的 vegas_spread)
+    # 抓取比賽
     matches = supabase.table("matches")\
         .select("*, home_team:teams!matches_home_team_id_fkey(code, nba_team_id), away_team:teams!matches_away_team_id_fkey(code, nba_team_id)")\
         .eq("status", "STATUS_SCHEDULED")\
@@ -95,7 +98,6 @@ def run():
             if X_spr is None: continue
 
             # AI 預測
-            # pred_margin: 正數代表預測主隊贏幾分，負數代表預測客隊贏幾分
             pred_margin = float(model_spread.predict(X_spr)[0]) 
             pred_total = float(model_total.predict(X_tot)[0])
 
@@ -107,15 +109,6 @@ def run():
             if vegas_total is None: vegas_total = 225.0
 
             # --- 邏輯核心：AI vs Vegas ---
-            # Vegas Spread 定義：主隊讓分是負的 (e.g. LAL -5.5)，客隊讓分是正的 (e.g. LAL +5.5)
-            # AI Margin 定義：主隊贏是正的，主隊輸是負的
-            
-            # 我們要比較的是 "AI 預測的勝分" 是否大於 "莊家開出的門檻"
-            # 轉換 Vegas Spread 為門檻：
-            # 如果 Vegas 是 -5.5 (主讓)，代表主隊要贏 > 5.5 才算過盤
-            # 對比 AI Margin > 5.5
-            # 因此比較基準是: pred_margin > (vegas_spread * -1)
-            
             cutoff = vegas_spread * -1
             
             if pred_margin > cutoff: 
@@ -137,19 +130,13 @@ def run():
             ou_conf = min(50 + int(abs(pred_total - vegas_total) * 3), 90)
 
             # --- 修正邏輯：準確描述 AI 預測是「贏幾分」還是「輸幾分」 ---
-            # 1. 先判斷推薦的是主隊還是客隊
             is_rec_home = (rec_id == m['home_team_id'])
             
-            # 2. 轉換成「推薦隊伍視角」的預測勝分
-            # model_spread 預測的是「主隊」勝分 (正=主贏, 負=客贏)
             if is_rec_home:
                 my_proj_margin = pred_margin
             else:
                 my_proj_margin = -pred_margin # 客隊視角要取負號
 
-            # 3. 生成邏輯文字
-            # 如果 my_proj_margin > 0，代表 AI 預測這隊會贏 (Win)
-            # 如果 my_proj_margin < 0，代表 AI 預測這隊會輸 (Lose)，但因為受讓夠深所以推薦
             if my_proj_margin > 0:
                 logic_str = f"AI projects {rec_code} to win by {abs(my_proj_margin):.1f} pts"
             else:
@@ -159,10 +146,10 @@ def run():
                 "match_id": m['id'],
                 "recommended_team_id": rec_id,
                 "confidence_score": conf,
-                "spread_logic": logic_str,      # <--- 修正後的英文描述
-                "line_info": str(vegas_spread), # 真實盤口
+                "spread_logic": logic_str,
+                "line_info": str(vegas_spread), 
                 "ou_pick": ou_pick,
-                "ou_line": float(vegas_total),  # 真實盤口
+                "ou_line": float(vegas_total),
                 "ou_confidence": ou_conf,
                 "created_at": datetime.utcnow().isoformat()
             })
