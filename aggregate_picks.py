@@ -138,7 +138,7 @@ def run():
                 "match_id": m['id'],
                 "recommended_team_id": rec_id,
                 "confidence_score": conf,
-                "spread_logic": f"AI預測贏 {pred_margin:.1f} 分", # 簡化，前端顯示細節
+                "spread_logic": f"AI projects {rec_code} to win by {abs(pred_margin):.1f} pts",
                 "line_info": str(vegas_spread), # 這裡存真實盤口
                 "ou_pick": ou_pick,
                 "ou_line": float(vegas_total),  # 這裡存真實盤口
