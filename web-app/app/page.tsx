@@ -113,13 +113,6 @@ export default async function Home({
     ouWin: 0, ouTotal: 0,
   };
 
-  // Dashboard Stats
-  const cumulativeStats = {
-    spreadWin: (historyData || []).filter((p: any) => p.spread_outcome === 'WIN').length,
-    spreadTotal: (historyData || []).filter((p: any) => p.spread_outcome === 'WIN' || p.spread_outcome === 'LOSS').length,
-    ouWin: 0, ouTotal: 0, // 簡化，若有需要可再加
-  };
-
   let picks = (dailyData || []) as any as Pick[];
   picks.sort((a, b) => a.matches.id - b.matches.id);
 
