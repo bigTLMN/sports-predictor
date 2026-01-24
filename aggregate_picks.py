@@ -31,12 +31,15 @@ def get_latest_stats():
         cols = ['teamId', 'gameDateTimeEst'] + RAW_FEATURES
         df = pd.read_csv('data/TeamStatistics.csv', usecols=cols, low_memory=False)
         
-        # 🔥 修改處：加上 format='mixed' 以解決日期解析錯誤
+        # 處理日期格式 (包含上一輪的修正)
         df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], format='mixed', utc=True)
         
         df = df.sort_values(['teamId', 'gameDateTimeEst'])
         
-        df_rolled = df.groupby('teamId')[RAW_FEATURES].apply(lambda x: x.rolling(5, min_periods=1).mean())
+        # 🔥 修正處：加上 group_keys=False，避免 teamId 同時出現在 Index 和 Column
+        df_rolled = df.groupby('teamId', group_keys=False)[RAW_FEATURES].apply(lambda x: x.rolling(5, min_periods=1).mean())
+        
+        # 現在我們可以安全地把 teamId 加回來，因為 Index 裡沒有它
         df_rolled['teamId'] = df['teamId']
         
         last = df_rolled.groupby('teamId').tail(1)
@@ -101,7 +104,7 @@ def run():
             pred_margin = float(model_spread.predict(X_spr)[0]) 
             pred_total = float(model_total.predict(X_tot)[0])
 
-            # 莊家盤口 (如果沒有，就用 AI 預測模擬一個 PK 盤)
+            # 莊家盤口
             vegas_spread = m.get('vegas_spread')
             vegas_total = m.get('vegas_total')
             
@@ -122,20 +125,20 @@ def run():
                 rec_code = m['away_team']['code']
                 diff = abs(pred_margin - cutoff)
 
-            # 信心度計算 (基礎 50%，每差 1 分加 4%)
+            # 信心度計算
             conf = min(50 + int(diff * 4), 95)
 
             # 大小分推薦
             ou_pick = "OVER" if pred_total > vegas_total else "UNDER"
             ou_conf = min(50 + int(abs(pred_total - vegas_total) * 3), 90)
 
-            # --- 修正邏輯：準確描述 AI 預測是「贏幾分」還是「輸幾分」 ---
+            # --- 邏輯描述 ---
             is_rec_home = (rec_id == m['home_team_id'])
             
             if is_rec_home:
                 my_proj_margin = pred_margin
             else:
-                my_proj_margin = -pred_margin # 客隊視角要取負號
+                my_proj_margin = -pred_margin 
 
             if my_proj_margin > 0:
                 logic_str = f"AI projects {rec_code} to win by {abs(my_proj_margin):.1f} pts"
@@ -162,7 +165,6 @@ def run():
     if picks:
         match_ids = [p['match_id'] for p in picks]
         try:
-            # 查詢既有 ID 以便更新
             existing = supabase.table("aggregated_picks").select("id, match_id").in_("match_id", match_ids).execute().data
             existing_map = {item['match_id']: item['id'] for item in existing}
             
