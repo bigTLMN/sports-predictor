@@ -95,8 +95,8 @@ def run():
             if X_spr is None: continue
 
             # AI 預測
-            p_win = float(model_win.predict_proba(X_spr)[0][1]) # 主隊勝率
-            pred_margin = float(model_spread.predict(X_spr)[0]) # 正=主贏, 負=客贏
+            # pred_margin: 正數代表預測主隊贏幾分，負數代表預測客隊贏幾分
+            pred_margin = float(model_spread.predict(X_spr)[0]) 
             pred_total = float(model_total.predict(X_tot)[0])
 
             # 莊家盤口 (如果沒有，就用 AI 預測模擬一個 PK 盤)
@@ -107,41 +107,62 @@ def run():
             if vegas_total is None: vegas_total = 225.0
 
             # --- 邏輯核心：AI vs Vegas ---
-            # 判斷讓分盤 (Spread Pick)
-            # 邏輯：如果 AI 預測贏 10 分，莊家只開讓 5 分 -> 買主隊 (Cover)
-            # 讓分盤邏輯：(AI Margin) - (Vegas Spread * -1) 
-            # 注意：Vegas Spread 主讓是負的 (e.g. -5.5)，所以要 * -1 變成正的 5.5 來比較
+            # Vegas Spread 定義：主隊讓分是負的 (e.g. LAL -5.5)，客隊讓分是正的 (e.g. LAL +5.5)
+            # AI Margin 定義：主隊贏是正的，主隊輸是負的
             
-            # 簡單判定：AI 預測分數 - 莊家預測分數 (Vegas Spread 轉換後)
-            # 這裡我們直接比較 "預測勝分" 與 "盤口"
+            # 我們要比較的是 "AI 預測的勝分" 是否大於 "莊家開出的門檻"
+            # 轉換 Vegas Spread 為門檻：
+            # 如果 Vegas 是 -5.5 (主讓)，代表主隊要贏 > 5.5 才算過盤
+            # 對比 AI Margin > 5.5
+            # 因此比較基準是: pred_margin > (vegas_spread * -1)
             
-            # 推薦邏輯
-            if pred_margin > (vegas_spread * -1): 
+            cutoff = vegas_spread * -1
+            
+            if pred_margin > cutoff: 
                 # AI 覺得主隊表現比莊家預期好 -> 買主隊
                 rec_id = m['home_team_id']
                 rec_code = m['home_team']['code']
-                # 信心度簡單計算：差距越大信心越高
-                diff = abs(pred_margin - (vegas_spread * -1))
-                conf = min(50 + int(diff * 4), 95) # 基礎50%，每差1分加4%
+                diff = abs(pred_margin - cutoff)
             else:
                 # 買客隊
                 rec_id = m['away_team_id']
                 rec_code = m['away_team']['code']
-                diff = abs(pred_margin - (vegas_spread * -1))
-                conf = min(50 + int(diff * 4), 95)
+                diff = abs(pred_margin - cutoff)
+
+            # 信心度計算 (基礎 50%，每差 1 分加 4%)
+            conf = min(50 + int(diff * 4), 95)
 
             # 大小分推薦
             ou_pick = "OVER" if pred_total > vegas_total else "UNDER"
             ou_conf = min(50 + int(abs(pred_total - vegas_total) * 3), 90)
 
+            # --- 修正邏輯：準確描述 AI 預測是「贏幾分」還是「輸幾分」 ---
+            # 1. 先判斷推薦的是主隊還是客隊
+            is_rec_home = (rec_id == m['home_team_id'])
+            
+            # 2. 轉換成「推薦隊伍視角」的預測勝分
+            # model_spread 預測的是「主隊」勝分 (正=主贏, 負=客贏)
+            if is_rec_home:
+                my_proj_margin = pred_margin
+            else:
+                my_proj_margin = -pred_margin # 客隊視角要取負號
+
+            # 3. 生成邏輯文字
+            # 如果 my_proj_margin > 0，代表 AI 預測這隊會贏 (Win)
+            # 如果 my_proj_margin < 0，代表 AI 預測這隊會輸 (Lose)，但因為受讓夠深所以推薦
+            if my_proj_margin > 0:
+                logic_str = f"AI projects {rec_code} to win by {abs(my_proj_margin):.1f} pts"
+            else:
+                logic_str = f"AI projects {rec_code} to lose by {abs(my_proj_margin):.1f} pts"
+
             picks.append({
                 "match_id": m['id'],
                 "recommended_team_id": rec_id,
                 "confidence_score": conf,
-                "spread_logic": f"AI projects {rec_code} to win by {abs(pred_margin):.1f} pts",
-                "line_info": str(vegas_spread), # 這裡存真實盤口
+                "spread_logic": logic_str,      # <--- 修正後的英文描述
+                "line_info": str(vegas_spread), # 真實盤口
                 "ou_pick": ou_pick,
-                "ou_line": float(vegas_total),  # 這裡存真實盤口
+                "ou_line": float(vegas_total),  # 真實盤口
                 "ou_confidence": ou_conf,
                 "created_at": datetime.utcnow().isoformat()
             })
@@ -153,15 +174,19 @@ def run():
     # 寫入 (Check-then-Upsert)
     if picks:
         match_ids = [p['match_id'] for p in picks]
-        existing = supabase.table("aggregated_picks").select("id, match_id").in_("match_id", match_ids).execute().data
-        existing_map = {item['match_id']: item['id'] for item in existing}
-        
-        for p in picks:
-            if p['match_id'] in existing_map:
-                p['id'] = existing_map[p['match_id']]
-        
-        supabase.table("aggregated_picks").upsert(picks).execute()
-        print(f"✅ 完成！已寫入 {len(picks)} 筆最佳推薦。")
+        try:
+            # 查詢既有 ID 以便更新
+            existing = supabase.table("aggregated_picks").select("id, match_id").in_("match_id", match_ids).execute().data
+            existing_map = {item['match_id']: item['id'] for item in existing}
+            
+            for p in picks:
+                if p['match_id'] in existing_map:
+                    p['id'] = existing_map[p['match_id']]
+            
+            supabase.table("aggregated_picks").upsert(picks).execute()
+            print(f"✅ 完成！已寫入 {len(picks)} 筆最佳推薦。")
+        except Exception as e:
+            print(f"❌ 寫入失敗: {e}")
     else:
         print("✅ 無需更新。")
 
