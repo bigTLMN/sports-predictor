@@ -31,16 +31,15 @@ export default function TrendChart({
     <div className="w-full mb-2 select-none">
       
       {/* 標題區塊 */}
-      <div className="flex justify-end items-end mb-2 px-1">
+      <div className="flex justify-end items-end mb-3 px-1">
         <div className="text-[10px] font-black flex items-center gap-1" style={{ color }}>
           <span className="w-2 h-2 rounded-full" style={{ backgroundColor: color }}></span>
           {label} (Last {days} Days)
         </div>
       </div>
       
-      <div className="w-full h-64 bg-[#1A1A1A] rounded-xl border border-gray-800 p-4 shadow-sm relative overflow-hidden">
+      <div className="w-full h-64 bg-[#1A1A1A] rounded-3xl border border--800 p-4 shadow-sm relative overflow-hidden">
         <ResponsiveContainer width="100%" height="100%">
-          {/* 🔥 修正 Margin: left 改為 0 或正數，讓 Y 軸標籤有空間顯示 */}
           <LineChart data={data} margin={{ top: 10, right: 10, bottom: 0, left: 0 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#334155" opacity={0.5} />
             
@@ -54,7 +53,6 @@ export default function TrendChart({
               interval="preserveStartEnd"
             />
             
-            {/* 🔥 新增 Y 軸標籤: 顯示 0, 25, 50, 75, 100 */}
             <YAxis 
               width={30}
               domain={[0, 100]} 
@@ -67,9 +65,10 @@ export default function TrendChart({
             <Tooltip 
               cursor={{ stroke: '#475569', strokeWidth: 1 }}
               contentStyle={{ 
-                backgroundColor: '#0F172A', 
-                border: '1px solid #1E293B', 
-                borderRadius: '8px',
+                backgroundColor: 'rgba(15, 23, 42, 0.6)', 
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(223, 189, 105, 0.3)', // 淡淡的金色邊框
+                boxShadow: '0 10px 15px rgba(0,0,0,0.5)'
               }}
               itemStyle={{ color: color, fontWeight: 'bold', fontSize: '13px' }}
               labelStyle={{ fontSize: '11px', color: '#94a3b8', marginBottom: '4px' }}

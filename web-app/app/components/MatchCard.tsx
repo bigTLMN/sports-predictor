@@ -22,7 +22,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
     : 'PK';
 
   // 🔥 判定是否為高信心推薦 (超過 70%)
-  const isHighConfidence = pick.confidence_score >= 70;
+  const isHighConfidence = pick.confidence_score >= 80;
 
   return (
     <motion.div
