@@ -1,7 +1,7 @@
 name: NBA Schedule & Odds Monitor
 
 on:
-  # 1. 允許手動按按鈕測試 (不論幾點按，都會強制執行預測)
+  # 1. 手動觸發
   workflow_dispatch:
     inputs:
       force_predict:
@@ -9,9 +9,7 @@ on:
         required: false
         default: 'true'
 
-  # 2. 定時排程 (UTC 時間)
-  # 台灣 12:00 (UTC 04:00) 開始，到 台灣 21:30 (UTC 13:30) 結束
-  # 每 30 分鐘一次
+  # 2. 定時排程 (UTC 4:00 - 13:30，即台灣 12:00 - 21:30)
   schedule:
     - cron: '*/30 4-13 * * *'
 
@@ -22,6 +20,12 @@ jobs:
   daily-task:
     runs-on: ubuntu-latest
     
+    # 🔥🔥🔥 修正重點：把環境變數放在這裡 (Job Level) 🔥🔥🔥
+    # 這樣底下的每一個 step (包含預測) 都會自動吃到這些金鑰，不會再報錯了
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -39,9 +43,6 @@ jobs:
       # 任務 1: 更新賽程與賠率 (無論幾點，每次都跑)
       # ==================================================
       - name: 1. Fetch Schedule & Odds (Always Run)
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: |
           echo "🏀 [$(date)] Fetching Latest Schedule..."
           python scrape_schedule.py
@@ -54,14 +55,12 @@ jobs:
       # ==================================================
       - name: 2. Conditional Prediction (22:00 CST Only)
         run: |
-          # 取得當前 UTC 小時 (00-23)
+          # 取得當前 UTC 小時
           CURRENT_HOUR=$(date -u +%H)
           
           echo "🕒 Current UTC Hour: $CURRENT_HOUR (Taiwan: UTC+8)"
           
-          # 邏輯判斷：
-          # 1. 如果 UTC 小時是 "14" (即台灣 22:00 - 22:59)
-          # 2. 或者 這是手動觸發 (workflow_dispatch)
+          # 判斷邏輯：UTC 14點 (台22點) 或 手動觸發
           if [ "$CURRENT_HOUR" == "14" ] || [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             echo "🚀 It's 22:00 CST! Starting AI Prediction Pipeline..."
             
@@ -70,6 +69,7 @@ jobs:
             python train_model.py
             
             echo "🔮 Generating Picks..."
+            # 這裡之前報錯，現在因為 env 在最上面設定好了，所以會成功
             python aggregate_picks.py
             
           else
@@ -85,10 +85,8 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           
-          # 加入所有變更 (包含 data/ 資料夾)
           git add .
           
-          # 檢查是否有變更，有才 Commit
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
