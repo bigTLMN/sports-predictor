@@ -78,7 +78,7 @@ BEST_PARAMS_TOTAL = {
 }
 
 def load_and_clean_data():
-    print("📂 [V7] 正在讀取 TeamStatistics.csv (黃金參數版)...")
+    print("📂 [V7.1] 正在讀取 TeamStatistics.csv (含 Concept Drift 修正)...")
     try:
         # 1. 讀取數據
         req_cols = [
@@ -100,6 +100,19 @@ def load_and_clean_data():
         if df.empty:
             print("❌ 錯誤：DataFrame 為空！")
             exit()
+
+        # =========================================================================
+        # 🔥🔥🔥 修正核心：只保留 2015 年以後的現代籃球數據 🔥🔥🔥
+        # 避免 1950-2010 年代的舊球風（低三分、鐵血防守）污染現代模型的預測邏輯
+        # =========================================================================
+        CUTOFF_YEAR = 2015
+        print(f"✂️ [Concept Drift Fix] 過濾數據：僅保留 {CUTOFF_YEAR} 年以後的現代籃球數據...")
+        original_count = len(df)
+        df = df[df['gameDateTimeEst'].dt.year >= CUTOFF_YEAR]
+        print(f"   📉 資料縮減: {original_count} -> {len(df)} 筆 (確保資料純度)")
+
+        if len(df) < 1000:
+             print("⚠️ 警告：過濾後資料量過少，可能影響訓練效果。")
 
         # 3. 排序
         df = df.sort_values(['teamId', 'gameDateTimeEst'])
@@ -148,7 +161,7 @@ def load_and_clean_data():
         exit()
 
 def prepare_training_data(df):
-    print(f"🔄 [V7] 正在準備對戰組合 ({len(df)} rows)...")
+    print(f"🔄 [V7.1] 正在準備對戰組合 ({len(df)} rows)...")
     
     df_home = df[df['home'] == 1].copy()
     df_away = df[df['home'] == 0].copy()
@@ -180,13 +193,15 @@ def train():
 
     data = prepare_training_data(df)
     
-    # 時間序列切分
+    # 時間序列切分 (85% 訓練 / 15% 驗證)
+    # 由於我們已經過濾了 2015 年後的數據，這裡的驗證集會是非常近期的比賽 (約近 1.5 年)
     split_idx = int(len(data) * 0.85)
     train_data = data.iloc[:split_idx]
     test_data = data.iloc[split_idx:]
     
     print(f"\n📅 訓練區間: {train_data['gameDateTimeEst_h'].min().date()} ~ {train_data['gameDateTimeEst_h'].max().date()}")
     print(f"📅 驗證區間: {test_data['gameDateTimeEst_h'].min().date()} ~ {test_data['gameDateTimeEst_h'].max().date()}")
+    print(f"   (驗證集包含約 {len(test_data)} 場比賽)")
     
     # 動態特徵選擇
     available_features_spread = [f for f in TRAIN_FEATURES_SPREAD if f in data.columns]
@@ -194,16 +209,14 @@ def train():
     
     # --- 模型 1: 勝負預測 (使用黃金參數) ---
     print("\n🤖 訓練模型 1: 勝負預測 (Win/Loss)...")
-    # 🔥 載入 BEST_PARAMS_WIN
     model_win = xgb.XGBClassifier(**BEST_PARAMS_WIN)
     model_win.fit(train_data[available_features_spread], train_data['target_win'])
     
     acc = accuracy_score(test_data['target_win'], model_win.predict(test_data[available_features_spread]))
-    print(f"   🎯 V7 最終回測準確度: {acc*100:.2f}% (Target: >60%)")
+    print(f"   🎯 V7.1 最終回測準確度: {acc*100:.2f}% (Target: >60%)")
     
     # --- 模型 2: 讓分預測 (使用黃金參數) ---
     print("\n🤖 訓練模型 2: 讓分預測 (Spread Margin)...")
-    # 🔥 載入 BEST_PARAMS_SPREAD
     model_spread = xgb.XGBRegressor(**BEST_PARAMS_SPREAD)
     model_spread.fit(train_data[available_features_spread], train_data['target_margin'])
     
@@ -212,7 +225,6 @@ def train():
     
     # --- 模型 3: 大小分預測 (使用黃金參數) ---
     print("\n🤖 訓練模型 3: 大小分預測 (Total Points)...")
-    # 🔥 載入 BEST_PARAMS_TOTAL
     model_total = xgb.XGBRegressor(**BEST_PARAMS_TOTAL)
     model_total.fit(train_data[available_features_total], train_data['target_total'])
     
@@ -226,7 +238,7 @@ def train():
     joblib.dump(available_features_spread, 'features_spread.pkl')
     joblib.dump(available_features_total, 'features_total.pkl')
     
-    print("\n💾 V7 模型訓練完成！所有系統已就緒。")
+    print("\n💾 V7.1 模型訓練完成！所有系統已就緒。")
 
 if __name__ == "__main__":
     train()
