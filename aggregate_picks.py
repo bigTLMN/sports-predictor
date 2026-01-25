@@ -1,5 +1,6 @@
 import pandas as pd
 import joblib
+import os
 from datetime import datetime, timedelta
 from config import get_supabase_client
 
@@ -8,7 +9,11 @@ from config import get_supabase_client
 # ==========================================
 PREDICT_DAYS = 1 
 
-print("📂 正在載入 AI 模型...")
+# 🕵️‍♂️ 上帝模式：設為 true 可以強制修改歷史預測 (通常用於測試或手動修正)
+# 使用方式: export CHEAT_MODE=true (Mac/Linux) 或 set CHEAT_MODE=true (Windows)
+CHEAT_MODE = os.getenv("CHEAT_MODE", "false").lower() == "true"
+
+print(f"📂 正在載入 AI 模型... (Cheat Mode: {CHEAT_MODE})")
 try:
     model_win = joblib.load('model_win.pkl')
     model_spread = joblib.load('model_spread.pkl')
@@ -29,21 +34,27 @@ def get_latest_stats():
     print("🔄 從 CSV 讀取球隊近況...")
     try:
         cols = ['teamId', 'gameDateTimeEst'] + RAW_FEATURES
+        # 1. 讀取 CSV
         df = pd.read_csv('data/TeamStatistics.csv', usecols=cols, low_memory=False)
         
-        # 處理日期格式 (包含上一輪的修正)
-        df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], format='mixed', utc=True)
+        # 🔥🔥🔥 關鍵修正：移除 format='mixed'，加入 errors='coerce' 🔥🔥🔥
+        # 這樣如果遇到無法解析的日期，它會變成 NaT 而不會報錯 crash
+        df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], utc=True, errors='coerce')
         
+        # 移除壞掉的日期行
+        if df['gameDateTimeEst'].isnull().any():
+            print(f"   ⚠️ 發現 {df['gameDateTimeEst'].isnull().sum()} 筆無效日期，已自動過濾。")
+            df = df.dropna(subset=['gameDateTimeEst'])
+
         df = df.sort_values(['teamId', 'gameDateTimeEst'])
         
-        # 🔥 修正處：加上 group_keys=False，避免 teamId 同時出現在 Index 和 Column
+        # group_keys=False 避免索引衝突
         df_rolled = df.groupby('teamId', group_keys=False)[RAW_FEATURES].apply(lambda x: x.rolling(5, min_periods=1).mean())
-        
-        # 現在我們可以安全地把 teamId 加回來，因為 Index 裡沒有它
         df_rolled['teamId'] = df['teamId']
         
         last = df_rolled.groupby('teamId').tail(1)
         return {int(r['teamId']): {f"rolling_{c}": r[c] for c in RAW_FEATURES} for _, r in last.iterrows()}
+        
     except Exception as e:
         print(f"❌ 讀取 TeamStatistics 失敗: {e}")
         return {}
@@ -59,6 +70,7 @@ def prepare_features(h_id, a_id, stats):
         row[f"sum_{col}"] = h[r] + a[r]
         
     df = pd.DataFrame([row])
+    # 補齊特徵欄位，避免模型報錯
     for c in features_spread: 
         if c not in df.columns: df[c] = 0
     for c in features_total: 
@@ -76,24 +88,37 @@ def run():
     
     print(f"📅 抓取賽程範圍: {now.strftime('%Y-%m-%d')} 至 {end_date.strftime('%Y-%m-%d')}")
 
-    # 抓取比賽
+    # 抓取比賽 (這裡不限狀態，由下方迴圈決定是否更新)
     matches = supabase.table("matches")\
         .select("*, home_team:teams!matches_home_team_id_fkey(code, nba_team_id), away_team:teams!matches_away_team_id_fkey(code, nba_team_id)")\
-        .eq("status", "STATUS_SCHEDULED")\
         .gte("date", now.isoformat())\
         .lt("date", end_date.isoformat())\
         .order('date')\
         .execute().data
 
     if not matches:
-        print("📭 無未開打比賽。")
+        print("📭 無比賽。")
         return
 
-    print(f"🤖 準備預測 {len(matches)} 場比賽...")
+    print(f"🤖 準備掃描 {len(matches)} 場比賽...")
     picks = []
     
     for m in matches:
         try:
+            # ==========================================
+            # 🔒 關鍵保護：檢查比賽狀態
+            # ==========================================
+            # 定義哪些狀態算是「完賽」
+            finished_statuses = ['STATUS_FINAL', 'STATUS_FINISHED', 'Final', 'STATUS_IN_PROGRESS']
+            is_finished = m.get('status') in finished_statuses
+            
+            # 如果比賽已經開始或結束，且沒有開上帝模式 -> 跳過預測 (保護已產生的結果)
+            if is_finished and not CHEAT_MODE:
+                # 只有在 console 印出 log，但不加入更新列表
+                # print(f"   🔒 跳過已開打/完賽: {m['away_team']['code']} @ {m['home_team']['code']} (ID: {m['id']})")
+                continue
+
+            # --- 以下為預測邏輯 ---
             h_id = int(m['home_team']['nba_team_id'])
             a_id = int(m['away_team']['nba_team_id'])
             
@@ -111,35 +136,24 @@ def run():
             if vegas_spread is None: vegas_spread = 0.0
             if vegas_total is None: vegas_total = 225.0
 
-            # --- 邏輯核心：AI vs Vegas ---
+            # 邏輯核心
             cutoff = vegas_spread * -1
-            
             if pred_margin > cutoff: 
-                # AI 覺得主隊表現比莊家預期好 -> 買主隊
                 rec_id = m['home_team_id']
                 rec_code = m['home_team']['code']
                 diff = abs(pred_margin - cutoff)
             else:
-                # 買客隊
                 rec_id = m['away_team_id']
                 rec_code = m['away_team']['code']
                 diff = abs(pred_margin - cutoff)
 
-            # 信心度計算
             conf = min(50 + int(diff * 4), 95)
-
-            # 大小分推薦
             ou_pick = "OVER" if pred_total > vegas_total else "UNDER"
             ou_conf = min(50 + int(abs(pred_total - vegas_total) * 3), 90)
 
-            # --- 邏輯描述 ---
             is_rec_home = (rec_id == m['home_team_id'])
+            my_proj_margin = pred_margin if is_rec_home else -pred_margin 
             
-            if is_rec_home:
-                my_proj_margin = pred_margin
-            else:
-                my_proj_margin = -pred_margin 
-
             if my_proj_margin > 0:
                 logic_str = f"AI projects {rec_code} to win by {abs(my_proj_margin):.1f} pts"
             else:
@@ -156,7 +170,7 @@ def run():
                 "ou_confidence": ou_conf,
                 "created_at": datetime.utcnow().isoformat()
             })
-            print(f"   -> {m['away_team']['code']} @ {m['home_team']['code']}: 莊家[{vegas_spread}] vs AI[{pred_margin:.1f}] -> 買 {rec_code}")
+            print(f"   -> {m['away_team']['code']} @ {m['home_team']['code']}: 預測更新 [{rec_code}]")
 
         except Exception as e:
             print(f"⚠️ Error {m['id']}: {e}")
@@ -165,6 +179,7 @@ def run():
     if picks:
         match_ids = [p['match_id'] for p in picks]
         try:
+            # 這裡我們只抓 id，用來做 upsert mapping
             existing = supabase.table("aggregated_picks").select("id, match_id").in_("match_id", match_ids).execute().data
             existing_map = {item['match_id']: item['id'] for item in existing}
             
@@ -173,11 +188,11 @@ def run():
                     p['id'] = existing_map[p['match_id']]
             
             supabase.table("aggregated_picks").upsert(picks).execute()
-            print(f"✅ 完成！已寫入 {len(picks)} 筆最佳推薦。")
+            print(f"✅ 完成！已更新 {len(picks)} 筆未開賽預測。")
         except Exception as e:
             print(f"❌ 寫入失敗: {e}")
     else:
-        print("✅ 無需更新。")
+        print("✅ 無需更新 (沒有未開賽的比賽)。")
 
 if __name__ == "__main__":
     run()

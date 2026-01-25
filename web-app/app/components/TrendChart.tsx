@@ -1,66 +1,91 @@
 'use client';
 
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
+import { StatsType } from './StatsDashboard';
 
 interface TrendData {
   date: string;
   winRate: number;
 }
 
-export default function TrendChart({ data }: { data: TrendData[] }) {
-  // 如果沒有數據，就不顯示圖表
+export default function TrendChart({ 
+  data, 
+  type = 'SPREAD', 
+  days = 7 
+}: { 
+  data: TrendData[], 
+  type?: StatsType, 
+  days?: number 
+}) {
   if (!data || data.length === 0) return null;
 
+  const config = {
+    SPREAD: { label: 'Spread Picks', color: '#F59E0B' }, 
+    TOTAL:  { label: 'Total Picks',  color: '#10B981' }, 
+    ALL:    { label: 'Combined',     color: '#6366F1' }, 
+  };
+
+  const { label, color } = config[type];
+
   return (
-    <div className="h-[200px] w-full mt-6 mb-2 select-none">
-      <div className="flex justify-between items-end mb-2 px-1">
-        <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-          Winning Trend (Last 7 Days)
-        </div>
-        <div className="text-[10px] font-medium text-slate-300">
-          Spread Picks
+    <div className="w-full mb-2 select-none">
+      
+      {/* 標題區塊 */}
+      <div className="flex justify-end items-end mb-2 px-1">
+        <div className="text-[10px] font-black flex items-center gap-1" style={{ color }}>
+          <span className="w-2 h-2 rounded-full" style={{ backgroundColor: color }}></span>
+          {label} (Last {days} Days)
         </div>
       </div>
       
-      <div className="w-full h-full bg-white rounded-xl border border-slate-100 p-2 shadow-sm">
+      <div className="w-full h-64 bg-[#1A1A1A] rounded-xl border border-gray-800 p-4 shadow-sm relative overflow-hidden">
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ top: 5, right: 5, bottom: 5, left: -20 }}>
-            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
+          {/* 🔥 修正 Margin: left 改為 0 或正數，讓 Y 軸標籤有空間顯示 */}
+          <LineChart data={data} margin={{ top: 10, right: 10, bottom: 0, left: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#334155" opacity={0.5} />
+            
             <XAxis 
               dataKey="date" 
               axisLine={false} 
               tickLine={false} 
               tick={{ fontSize: 10, fill: '#94a3b8' }} 
-              interval="preserveStartEnd"
               dy={10}
+              minTickGap={days > 30 ? 30 : 10} 
+              interval="preserveStartEnd"
             />
+            
+            {/* 🔥 新增 Y 軸標籤: 顯示 0, 25, 50, 75, 100 */}
             <YAxis 
-              hide 
+              width={30}
               domain={[0, 100]} 
+              axisLine={false}
+              tickLine={false}
+              ticks={[0, 25, 50, 75, 100]}
+              tick={{ fontSize: 10, fill: '#64748b', fontWeight: 'bold' }}
             />
+            
             <Tooltip 
+              cursor={{ stroke: '#475569', strokeWidth: 1 }}
               contentStyle={{ 
-                borderRadius: '8px', 
-                border: 'none', 
-                boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
-                padding: '8px 12px'
+                backgroundColor: '#0F172A', 
+                border: '1px solid #1E293B', 
+                borderRadius: '8px',
               }}
-              itemStyle={{ color: '#2563eb', fontWeight: '900', fontSize: '14px' }}
-              labelStyle={{ fontSize: '10px', color: '#64748b', marginBottom: '4px' }}
-              // 🔥 修正處：將類型改為 any 以解決 TypeScript 報錯
+              itemStyle={{ color: color, fontWeight: 'bold', fontSize: '13px' }}
+              labelStyle={{ fontSize: '11px', color: '#94a3b8', marginBottom: '4px' }}
               formatter={(value: any) => [`${value}%`, 'Win Rate']}
             />
-            {/* 50% 勝率參考線 */}
-            <ReferenceLine y={50} stroke="#cbd5e1" strokeDasharray="3 3" />
+            
+            <ReferenceLine y={50} stroke="#475569" strokeDasharray="3 3" />
             
             <Line 
               type="monotone" 
               dataKey="winRate" 
-              stroke="#2563eb" 
-              strokeWidth={3} 
-              dot={{ r: 4, fill: '#2563eb', strokeWidth: 2, stroke: '#fff' }}
-              activeDot={{ r: 6, strokeWidth: 0 }}
-              animationDuration={1500}
+              stroke={color} 
+              strokeWidth={2} 
+              dot={days <= 30 ? { r: 3, fill: '#1A1A1A', stroke: color, strokeWidth: 2 } : false} 
+              activeDot={{ r: 6, fill: color, stroke: '#FFF' }}
+              animationDuration={500}
             />
           </LineChart>
         </ResponsiveContainer>

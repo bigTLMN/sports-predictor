@@ -1,40 +1,12 @@
 import { supabase } from '@/lib/supabase';
 import DateNavigator from './components/DateNavigator';
 import StatsDashboard from './components/StatsDashboard';
-import TrendChart from './components/TrendChart';
-import MatchCard from './components/MatchCard'; // 新增
-import Footer from './components/Footer';       // 新增
+import MatchCard from './components/MatchCard';
+import Footer from './components/Footer';
 import { format } from 'date-fns';
 import { toZonedTime } from 'date-fns-tz';
 
-export const revalidate = 0;
-
-// 定義介面
-interface Match {
-  id: number;
-  date: string;
-  start_time: string;
-  home_team: { code: string; full_name?: string; logo_url?: string };
-  away_team: { code: string; full_name?: string; logo_url?: string };
-  home_score?: number;
-  away_score?: number;
-  status?: string;
-  vegas_spread?: number;
-  vegas_total?: number;
-}
-
-interface Pick {
-  confidence_score: number;
-  spread_logic?: string;
-  line_info?: string;
-  ou_pick?: string;
-  ou_line?: number;
-  ou_confidence?: number;
-  spread_outcome?: string;
-  ou_outcome?: string;
-  matches: Match;
-  recommended_team: { code: string; logo_url?: string };
-}
+export const revalidate = 0; // 確保數據即時更新
 
 export default async function Home({
   searchParams,
@@ -52,11 +24,12 @@ export default async function Home({
 
   // 2. 計算查詢範圍 (UTC)
   const startUTC = new Date(targetDate + 'T00:00:00Z').toISOString();
+  // 抓取到隔日下午 (確保涵蓋所有時區的晚場比賽)
   const endUTC = new Date(targetDate + 'T23:59:59Z');
   endUTC.setHours(endUTC.getHours() + 14); 
   const endUTCString = endUTC.toISOString();
 
-  // 3. 查詢當日比賽
+  // 3. 查詢當日比賽 (包含關聯資料)
   const { data: dailyData } = await supabase
     .from('aggregated_picks')
     .select(`
@@ -71,57 +44,18 @@ export default async function Home({
     .gte('matches.date', startUTC)
     .lt('matches.date', endUTCString);
 
-  // 4. 查詢歷史數據 (修改：抓取所有歷史紀錄，而不只是 7 天)
+  // 4. 查詢全歷史紀錄 (Raw Data)
+  // 🔥 重點：這裡加入了 'total_outcome'，以便前端計算大小分勝率
   const { data: allHistoryData } = await supabase
     .from('aggregated_picks')
-    .select(`spread_outcome, matches!inner (date)`)
-    .not('spread_outcome', 'is', null) // 只抓已結算的
-    .order('matches(date)', { ascending: true }); // 按日期排序
+    .select(`spread_outcome, total_outcome, matches!inner (date)`)
+    .or('spread_outcome.neq.null,total_outcome.neq.null') // 只要有任一結果就抓
+    .order('matches(date)', { ascending: true });
 
-  // --- 資料統計 ---
-  
-  // A. 處理走勢圖數據 (只取最近 7 天)
-  const sevenDaysAgo = new Date();
-  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-  const sevenDaysAgoStr = sevenDaysAgo.toISOString();
-
-  const trendMap = new Map<string, { wins: number; total: number }>();
-  
-  (allHistoryData || []).forEach((pick: any) => {
-    // 過濾：只畫最近 7 天的圖
-    if (pick.matches.date >= sevenDaysAgoStr) {
-        const dateStr = pick.matches.date.split('T')[0];
-        const shortDate = dateStr.slice(5); 
-        if (!trendMap.has(shortDate)) trendMap.set(shortDate, { wins: 0, total: 0 });
-        const dayStat = trendMap.get(shortDate)!;
-        if (pick.spread_outcome === 'WIN') dayStat.wins++;
-        if (pick.spread_outcome === 'WIN' || pick.spread_outcome === 'LOSS') dayStat.total++;
-    }
-  });
-
-  const trendData = Array.from(trendMap.entries())
-    .map(([date, stat]) => ({
-      date: date,
-      winRate: stat.total > 0 ? Math.round((stat.wins / stat.total) * 100) : 0
-    }))
-    .sort((a, b) => a.date.localeCompare(b.date));
-
-  // B. 處理 Dashboard Stats (使用全賽季數據 allHistoryData)
-  const cumulativeStats = {
-    spreadWin: (allHistoryData || []).filter((p: any) => p.spread_outcome === 'WIN').length,
-    spreadTotal: (allHistoryData || []).filter((p: any) => p.spread_outcome === 'WIN' || p.spread_outcome === 'LOSS').length,
-    ouWin: 0, ouTotal: 0,
-  };
-
-  let picks = (dailyData || []) as any as Pick[];
-  picks.sort((a, b) => a.matches.id - b.matches.id);
-
-  const dailyStats = {
-    spreadWin: picks.filter(p => p.spread_outcome === 'WIN').length,
-    spreadTotal: picks.filter(p => p.spread_outcome === 'WIN' || p.spread_outcome === 'LOSS').length,
-    ouWin: picks.filter(p => p.ou_outcome === 'WIN').length,
-    ouTotal: picks.filter(p => p.ou_outcome === 'WIN' || p.ou_outcome === 'LOSS').length,
-  };
+  // 準備資料
+  const picks = dailyData || [];
+  // 簡單排序：按比賽 ID (通常也代表時間序)
+  picks.sort((a: any, b: any) => a.matches.id - b.matches.id);
 
   return (
     <div className="min-h-screen bg-slate-300 font-sans flex flex-col">
@@ -149,16 +83,18 @@ export default async function Home({
 
           <DateNavigator />
 
-          <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 mb-6">
-             <StatsDashboard daily={dailyStats} cumulative={cumulativeStats} />
-             {trendData.length > 0 && (
-               <div className="border-t border-slate-100 mt-5 pt-2">
-                 <TrendChart data={trendData} />
-               </div>
-             )}
-          </div>
+          {/* StatsDashboard (Client Component)
+              現在負責：
+              1. 顯示今日/累積勝率
+              2. 管理 Tab 狀態 (Spread/Total/All)
+              3. 根據 Tab 渲染下方的 TrendChart
+          */}
+          <StatsDashboard 
+            dailyPicks={picks} 
+            historyPicks={allHistoryData || []} 
+          />
 
-          {/* 卡片列表 (使用 MatchCard) */}
+          {/* 賽事卡片列表 */}
           {picks.length === 0 ? (
             <div className="text-center py-12 bg-white rounded-2xl border border-dashed border-slate-300">
               <div className="text-4xl mb-3">💤</div>
@@ -167,15 +103,14 @@ export default async function Home({
             </div>
           ) : (
             <div className="grid gap-4 md:grid-cols-2">
-              {picks.map((pick, index) => (
-                <MatchCard key={pick.matches.id} pick={pick} index={index} />
+              {picks.map((pick: any, index: number) => (
+                <MatchCard key={pick.id} pick={pick} index={index} />
               ))}
             </div>
           )}
         </div>
       </main>
       
-      {/* Footer */}
       <Footer />
     </div>
   );

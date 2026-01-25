@@ -2,18 +2,21 @@
 
 import { motion } from 'framer-motion';
 import { format } from 'date-fns';
-import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
-// 定義與 page.tsx 相同的介面 (簡化版)
+// 定義介面以獲得更好的類型提示
 interface MatchCardProps {
-  pick: any; // 為了方便，這裡先用 any，您也可以複製 page.tsx 的完整介面
+  pick: any; 
   index: number;
 }
 
 export default function MatchCard({ pick, index }: MatchCardProps) {
   const m = pick.matches;
-  const isFinished = m.status === 'STATUS_FINISHED' || m.status === 'STATUS_FINAL';
+  
+  // 判斷比賽是否結束 (狀態可能來自不同源頭的命名慣例，這裡做寬容判斷)
+  const isFinished = m.status === 'STATUS_FINISHED' || m.status === 'STATUS_FINAL' || m.status === 'Final';
+  
+  // 處理盤口顯示字串 (例如: +5.5, -3.0, PK)
   const spreadText = m.vegas_spread !== null 
     ? (m.vegas_spread > 0 ? `+${m.vegas_spread}` : m.vegas_spread) 
     : 'PK';
@@ -25,7 +28,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: index * 0.1 }} // 依照順序延遲出場
+      transition={{ duration: 0.4, delay: index * 0.1 }}
       className={twMerge(
         "bg-white rounded-2xl shadow-sm border overflow-hidden hover:shadow-lg transition-all relative group",
         isHighConfidence ? "border-blue-200 ring-2 ring-blue-100/50" : "border-slate-200"
@@ -99,12 +102,12 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
             <div className="flex items-center gap-3">
               <img src={pick.recommended_team.logo_url} className="w-8 h-8 object-contain drop-shadow-sm" />
               <div>
-                 <div className="text-base font-black text-slate-800 leading-none">
-                   {pick.recommended_team.code} <span className="text-xs font-bold text-slate-400">to cover</span>
-                 </div>
-                 <div className="text-[10px] font-medium text-slate-500 mt-1 bg-white/80 px-1.5 py-0.5 rounded border border-slate-100/50 inline-block backdrop-blur-sm">
-                   {pick.spread_logic || 'Value Bet Analysis'}
-                 </div>
+                  <div className="text-base font-black text-slate-800 leading-none">
+                    {pick.recommended_team.code} <span className="text-xs font-bold text-slate-400">to cover</span>
+                  </div>
+                  <div className="text-[10px] font-medium text-slate-500 mt-1 bg-white/80 px-1.5 py-0.5 rounded border border-slate-100/50 inline-block backdrop-blur-sm">
+                    {pick.spread_logic || 'Value Bet Analysis'}
+                  </div>
               </div>
             </div>
             
@@ -143,18 +146,23 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
       </div>
       
       {/* Footer: 結果狀態 */}
-      {(pick.spread_outcome || pick.ou_outcome) && (
+      {/* 🔥 關鍵修正：這裡原本寫 pick.ou_outcome，已更正為 pick.total_outcome 以符合資料庫 */}
+      {(pick.spread_outcome || pick.total_outcome) && (
         <div className="flex border-t border-slate-100 divide-x divide-slate-100 bg-white">
+           {/* Spread Result */}
            <div className={`flex-1 py-2 flex flex-col items-center justify-center ${pick.spread_outcome === 'WIN' ? 'bg-green-50/50' : pick.spread_outcome === 'LOSS' ? 'bg-red-50/50' : ''}`}>
               <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Spread</span>
               <span className={`text-xs font-black ${pick.spread_outcome === 'WIN' ? 'text-green-600' : pick.spread_outcome === 'LOSS' ? 'text-red-500' : 'text-slate-500'}`}>
                 {pick.spread_outcome || '-'}
               </span>
            </div>
-           <div className={`flex-1 py-2 flex flex-col items-center justify-center ${pick.ou_outcome === 'WIN' ? 'bg-green-50/50' : pick.ou_outcome === 'LOSS' ? 'bg-red-50/50' : ''}`}>
+           
+           {/* Total Result */}
+           <div className={`flex-1 py-2 flex flex-col items-center justify-center ${pick.total_outcome === 'WIN' ? 'bg-green-50/50' : pick.total_outcome === 'LOSS' ? 'bg-red-50/50' : ''}`}>
               <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Total</span>
-              <span className={`text-xs font-black ${pick.ou_outcome === 'WIN' ? 'text-green-600' : pick.ou_outcome === 'LOSS' ? 'text-red-500' : 'text-slate-500'}`}>
-                 {pick.ou_outcome || '-'}
+              <span className={`text-xs font-black ${pick.total_outcome === 'WIN' ? 'text-green-600' : pick.total_outcome === 'LOSS' ? 'text-red-500' : 'text-slate-500'}`}>
+                 {/* 🔥 這裡也修正為 total_outcome */}
+                 {pick.total_outcome || '-'}
               </span>
            </div>
         </div>

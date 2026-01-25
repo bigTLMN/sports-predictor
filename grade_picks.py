@@ -1,31 +1,51 @@
 from config import get_supabase_client
+import pandas as pd
 
 def grade_picks():
     supabase = get_supabase_client()
-    print("1. 正在進行賽果結算 (Dual Grading)...")
+    print("1. 正在進行賽果結算 (Grading)...")
 
-    # 1. 抓取所有「還沒完全結算」的預測 (任一欄位是 NULL 且比賽已打完)
-    # 這裡我們放寬標準：只要比賽是 FINAL，我們就重新檢查一次所有欄位
+    # 1. 抓取所有已完賽的比賽
     try:
-        picks_res = supabase.table("aggregated_picks")\
-            .select("*, matches(*)")\
-            .execute()
+        # 🔥 修復 1：加入關聯查詢 (Join)，抓取隊伍代號 (code)，避免 KeyError
+        matches = supabase.table("matches")\
+            .select("*, home_team:teams!matches_home_team_id_fkey(code), away_team:teams!matches_away_team_id_fkey(code)")\
+            .in_("status", ["STATUS_FINAL", "STATUS_FINISHED", "Final"])\
+            .execute().data
+            
+        if not matches:
+            print("📭 無已完賽的比賽。")
+            return
+        
+        # 建立 match_id -> match 對照表
+        finished_matches = {m['id']: m for m in matches}
+        
     except Exception as e:
-        print(f"❌ 查詢失敗: {e}")
+        print(f"❌ 查詢比賽失敗: {e}")
         return
-    
-    picks = picks_res.data
-    updates_count = 0
 
-    print(f"2. 掃描 {len(picks)} 筆預測，進行雙重對獎...")
+    # 2. 抓取所有尚未結算的預測
+    try:
+        # 抓取 spread_outcome 為空的預測
+        picks = supabase.table("aggregated_picks").select("*").is_("spread_outcome", "null").execute().data
+    except Exception as e:
+        print(f"❌ 查詢預測失敗: {e}")
+        return
+
+    if not picks:
+        print("✅ 無需結算的預測。")
+        return
+
+    updates_count = 0
+    print(f"2. 掃描 {len(picks)} 筆待結算預測...")
     
     for pick in picks:
-        match = pick['matches']
-        
-        # 只有已完賽的才算分
-        if not match or match.get('status') != 'STATUS_FINAL':
+        match_id = pick['match_id']
+        if match_id not in finished_matches:
             continue
             
+        match = finished_matches[match_id]
+        
         # 取得比分
         home_score = match['home_score']
         away_score = match['away_score']
@@ -37,35 +57,34 @@ def grade_picks():
         should_update = False
 
         # --- A. 結算讓分盤 (Spread) ---
-        # 只有當 spread_outcome 還沒填，且有推薦隊伍時才算
-        if pick.get('recommended_team_id') and pick.get('line_info') and not pick.get('spread_outcome'):
+        if pick.get('line_info'):
             try:
+                line_val = float(pick['line_info'])
                 rec_team_id = pick['recommended_team_id']
-                line_str = pick['line_info'].replace("Line: ", "").replace("Spread: ", "").replace("PK", "0")
-                line_val = float(line_str)
                 
-                # 計算：(主隊-客隊)
-                score_diff = home_score - away_score 
-                is_home_pick = (rec_team_id == match['home_team_id'])
-                real_diff = score_diff if is_home_pick else -score_diff
+                # 計算主隊贏分
+                home_margin = home_score - away_score
                 
-                if (real_diff + line_val) > 0:
-                    updates["spread_outcome"] = "WIN"
-                elif (real_diff + line_val) < 0:
-                    updates["spread_outcome"] = "LOSS"
+                # 如果 AI 推薦主隊
+                if rec_team_id == match['home_team_id']:
+                    if (home_margin + line_val) > 0: result = "WIN"
+                    elif (home_margin + line_val) < 0: result = "LOSS"
+                    else: result = "PUSH"
+                # 如果 AI 推薦客隊
                 else:
-                    updates["spread_outcome"] = "PUSH"
-                
+                    if (home_margin + line_val) > 0: result = "LOSS" 
+                    elif (home_margin + line_val) < 0: result = "WIN"
+                    else: result = "PUSH"
+
+                updates["spread_outcome"] = result
                 should_update = True
-                print(f"   [Spread] Match {match['id']}: {updates['spread_outcome']}")
             except Exception as e:
-                print(f"   ⚠️ Spread 計算錯誤: {e}")
+                print(f"   ⚠️ Spread Error ID {pick['id']}: {e}")
 
         # --- B. 結算大小分 (Total) ---
-        # 只有當 ou_outcome 還沒填，且有預測大小分時才算
-        if pick.get('ou_pick') and pick.get('ou_line') and not pick.get('ou_outcome'):
+        if pick.get('ou_pick') and pick.get('ou_line'):
             try:
-                pick_type = pick['ou_pick'] # 'OVER' or 'UNDER'
+                pick_type = pick['ou_pick']
                 line_val = float(pick['ou_line'])
                 total_score = home_score + away_score
                 
@@ -75,16 +94,23 @@ def grade_picks():
                 elif total_score < line_val:
                     result = "WIN" if pick_type == 'UNDER' else "LOSS"
                 
-                updates["ou_outcome"] = result
+                updates["total_outcome"] = result 
                 should_update = True
-                print(f"   [Total] Match {match['id']}: {total_score} vs {line_val} ({pick_type}) -> {result}")
             except Exception as e:
-                print(f"   ⚠️ Total 計算錯誤: {e}")
+                print(f"   ⚠️ Total Error ID {pick['id']}: {e}")
 
         # --- 執行更新 ---
         if should_update:
-            supabase.table("aggregated_picks").update(updates).eq("id", pick['id']).execute()
-            updates_count += 1
+            try:
+                supabase.table("aggregated_picks").update(updates).eq("id", pick['id']).execute()
+                updates_count += 1
+                # 🔥 修復 2：這裡現在可以安全地存取 home_team code 了
+                h_code = match['home_team']['code'] if match.get('home_team') else 'HOME'
+                a_code = match['away_team']['code'] if match.get('away_team') else 'AWAY'
+                
+                print(f"   ✅ Match {a_code} @ {h_code} -> {updates}")
+            except Exception as e:
+                print(f"   ❌ Update Failed ID {pick['id']}: {e}")
 
     print(f"🎉 結算完成！共更新 {updates_count} 筆資料。")
 

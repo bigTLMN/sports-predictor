@@ -1,72 +1,99 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
+import dynamic from 'next/dynamic';
 
-type StatsType = 'SPREAD' | 'TOTAL' | 'ALL';
+// 動態引入圖表，並設定 Loading 佔位符
+const TrendChart = dynamic(() => import('./TrendChart'), { 
+  ssr: false,
+  loading: () => <div className="w-full h-64 bg-slate-100 animate-pulse rounded-xl" /> 
+});
 
-interface StatsProps {
-  daily: {
-    spreadWin: number; spreadTotal: number;
-    ouWin: number; ouTotal: number;
-  };
-  cumulative: {
-    spreadWin: number; spreadTotal: number;
-    ouWin: number; ouTotal: number;
-  };
+export type StatsType = 'SPREAD' | 'TOTAL' | 'ALL';
+
+interface StatsDashboardProps {
+  dailyPicks: any[];   
+  historyPicks: any[]; 
 }
 
-export default function StatsDashboard({ daily, cumulative }: StatsProps) {
+export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashboardProps) {
   const [activeTab, setActiveTab] = useState<StatsType>('SPREAD');
+  const [daysRange, setDaysRange] = useState<7 | 30 | 90>(7);
 
-  // 計算勝率的小工具
-  const calcRate = (wins: number, total: number) => 
-    total > 0 ? Math.round((wins / total) * 100) : 0;
+  // --- 核心邏輯：根據 Tab 與 TimeRange 篩選數據 ---
+  const statsData = useMemo(() => {
+    // 1. 定義篩選函式
+    const filterPicks = (picks: any[]) => {
+      let wins = 0;
+      let total = 0;
+      
+      picks.forEach(p => {
+        if (activeTab === 'SPREAD' || activeTab === 'ALL') {
+          if (p.spread_outcome === 'WIN') wins++;
+          if (p.spread_outcome === 'WIN' || p.spread_outcome === 'LOSS') total++;
+        }
+        if (activeTab === 'TOTAL' || activeTab === 'ALL') {
+          if (p.total_outcome === 'WIN') wins++;
+          if (p.total_outcome === 'WIN' || p.total_outcome === 'LOSS') total++;
+        }
+      });
+      return { wins, total };
+    };
 
-  // 根據 Tab 決定要顯示什麼數據
-  const getDisplayData = () => {
-    switch (activeTab) {
-      case 'SPREAD':
-        return {
-          dayLabel: 'Daily Spread',
-          dayWin: daily.spreadWin, dayTotal: daily.spreadTotal,
-          allLabel: 'Season Spread',
-          allWin: cumulative.spreadWin, allTotal: cumulative.spreadTotal,
-        };
-      case 'TOTAL':
-        return {
-          dayLabel: 'Daily Total',
-          dayWin: daily.ouWin, dayTotal: daily.ouTotal,
-          allLabel: 'Season Total',
-          allWin: cumulative.ouWin, allTotal: cumulative.ouTotal,
-        };
-      case 'ALL':
-        return {
-          dayLabel: 'Daily Combined',
-          dayWin: daily.spreadWin + daily.ouWin, 
-          dayTotal: daily.spreadTotal + daily.ouTotal,
-          allLabel: 'Season Combined',
-          allWin: cumulative.spreadWin + cumulative.ouWin, 
-          allTotal: cumulative.spreadTotal + cumulative.ouTotal,
-        };
-    }
-  };
+    // 2. 計算 Dashboard 用的「本日」與「賽季」數據
+    const dayStats = filterPicks(dailyPicks);
+    const seasonStats = filterPicks(historyPicks);
 
-  const data = getDisplayData();
-  const dayRate = calcRate(data.dayWin, data.dayTotal);
-  const allRate = calcRate(data.allWin, data.allTotal);
+    // 3. 計算「趨勢圖」數據
+    const dates = [...Array(daysRange)].map((_, i) => {
+      const d = new Date();
+      d.setDate(d.getDate() - ((daysRange - 1) - i)); 
+      return d.toISOString().split('T')[0];
+    });
+
+    const trend = dates.map(date => {
+      const dayPicks = historyPicks.filter((p: any) => p.matches?.date?.startsWith(date));
+      const { wins, total } = filterPicks(dayPicks);
+      
+      return {
+        date: date.slice(5), // MM-DD
+        fullDate: date,      
+        winRate: total > 0 ? Math.round((wins / total) * 100) : 0,
+        count: total         
+      };
+    })
+    // 🔥 關鍵修正：過濾掉「沒有已結算場次」的日期 (例如明天)
+    // 這樣圖表就不會因為明天勝率是 0 而掉下去，而是維持在最後一天的狀態
+    .filter(t => t.count > 0);
+
+    let label = 'Spread';
+    if (activeTab === 'TOTAL') label = 'Total';
+    if (activeTab === 'ALL') label = 'Combined';
+
+    return {
+      day: dayStats,
+      season: seasonStats,
+      trend: trend,
+      label: label
+    };
+  }, [dailyPicks, historyPicks, activeTab, daysRange]); 
+
+  const dayRate = statsData.day.total > 0 ? Math.round((statsData.day.wins / statsData.day.total) * 100) : 0;
+  const seasonRate = statsData.season.total > 0 ? Math.round((statsData.season.wins / statsData.season.total) * 100) : 0;
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 mb-6">
+    <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 mb-6 transition-all">
+      
       {/* 頁籤切換 */}
-      <div className="flex justify-center gap-2 mb-4">
-        {['SPREAD', 'TOTAL', 'ALL'].map((tab) => (
+      <div className="flex justify-center gap-2 mb-6">
+        {(['SPREAD', 'TOTAL', 'ALL'] as StatsType[]).map((tab) => (
           <button
             key={tab}
-            onClick={() => setActiveTab(tab as StatsType)}
-            className={`px-4 py-1 rounded-full text-xs font-bold transition-colors ${
+            onClick={() => setActiveTab(tab)}
+            className={`px-5 py-1.5 rounded-full text-xs font-black tracking-wider transition-all duration-300 ${
               activeTab === tab 
-                ? 'bg-blue-600 text-white' 
-                : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
+                ? 'bg-slate-900 text-white shadow-lg transform scale-105' 
+                : 'bg-slate-100 text-slate-400 hover:bg-slate-200'
             }`}
           >
             {tab === 'ALL' ? 'COMBINED' : tab}
@@ -74,34 +101,68 @@ export default function StatsDashboard({ daily, cumulative }: StatsProps) {
         ))}
       </div>
 
-      {/* 數據顯示區 */}
-      <div className="grid grid-cols-2 gap-4 divide-x divide-gray-100">
-        {/* 左邊：本日戰績 */}
+      {/* 數據看板 */}
+      <div className="grid grid-cols-2 gap-6 divide-x divide-slate-100 mb-6">
         <div className="text-center">
-          <div className="text-xs text-gray-400 uppercase font-bold mb-1">{data.dayLabel}</div>
-          <div className="flex justify-center items-baseline gap-1">
-            <span className="text-2xl font-black text-gray-800">{dayRate}%</span>
-            <span className="text-xs text-gray-500">Win Rate</span>
+          <div className="text-[10px] text-slate-400 uppercase font-bold tracking-widest mb-1">
+            Daily {statsData.label}
           </div>
-          <div className="text-xs text-gray-400 mt-1">
-            {data.dayWin}W - {data.dayTotal - data.dayWin}L
+          <div className="flex justify-center items-baseline gap-1.5">
+            <span className="text-3xl font-black text-slate-800">{dayRate}%</span>
+          </div>
+          <div className="text-xs font-bold text-slate-400 mt-1 bg-slate-50 inline-block px-2 py-0.5 rounded">
+            {statsData.day.wins}W - {statsData.day.total - statsData.day.wins}L
           </div>
         </div>
 
-        {/* 右邊：累積戰績 */}
-        <div className="text-center pl-4">
-          <div className="text-xs text-gray-400 uppercase font-bold mb-1">{data.allLabel}</div>
-          <div className="flex justify-center items-baseline gap-1">
-            <span className={`text-2xl font-black ${allRate >= 50 ? 'text-green-600' : 'text-yellow-600'}`}>
-              {allRate}%
-            </span>
-            <span className="text-xs text-gray-500">Win Rate</span>
+        <div className="text-center pl-6">
+          <div className="text-[10px] text-slate-400 uppercase font-bold tracking-widest mb-1">
+            Season {statsData.label}
           </div>
-          <div className="text-xs text-gray-400 mt-1">
-            {data.allWin}W - {data.allTotal - data.allWin}L
+          <div className="flex justify-center items-baseline gap-1.5">
+            <span className={`text-3xl font-black ${seasonRate >= 53 ? 'text-green-600' : 'text-amber-500'}`}>
+              {seasonRate}%
+            </span>
+          </div>
+          <div className="text-xs font-bold text-slate-400 mt-1 bg-slate-50 inline-block px-2 py-0.5 rounded">
+            {statsData.season.wins}W - {statsData.season.total - statsData.season.wins}L
           </div>
         </div>
       </div>
+
+      {/* 整合圖表 */}
+      {/* 只有當 trend 有數據時才顯示 (避免空陣列報錯) */}
+      {statsData.trend.length > 0 && (
+        <div className="border-t border-slate-100 pt-4 animate-in fade-in duration-500 relative">
+           
+           {/* 天數切換按鈕 */}
+           <div className="flex justify-between items-center mb-4 px-1">
+              <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                Trend Analysis
+              </div>
+              <div className="flex bg-slate-100 rounded-lg p-1 gap-1">
+                {[7, 30, 90].map((d) => (
+                  <button
+                    key={d}
+                    onClick={() => setDaysRange(d as any)}
+                    className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${
+                      daysRange === d 
+                        ? 'bg-white text-slate-800 shadow-sm' 
+                        : 'text-slate-400 hover:text-slate-600'
+                    }`}
+                  >
+                    {d}D
+                  </button>
+                ))}
+              </div>
+           </div>
+
+           <div style={{ minHeight: '300px', width: '100%' }}>
+              <TrendChart data={statsData.trend} type={activeTab} days={daysRange} />
+           </div>
+        </div>
+      )}
+      
     </div>
   );
 }
