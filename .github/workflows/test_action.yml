@@ -1,0 +1,12 @@
+name: Test Manual Trigger
+
+on: 
+  # 這行讓你可以手動按按鈕觸發
+  workflow_dispatch: 
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "🎉 GitHub Actions is working! 系統功能正常。"

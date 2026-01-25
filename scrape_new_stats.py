@@ -91,30 +91,56 @@ def fetch_daily_stats(date_str):
 
 def get_boxscore_stats(game_id, team_id):
     """
-    呼叫 Summary API 取得該隊伍的詳細數據
+    呼叫 Summary API 取得該隊伍的詳細數據 (Debug 版)
     """
     url = f"{ESPN_BASE}/summary?event={game_id}"
     try:
-        data = requests.get(url, timeout=10).json()
+        resp = requests.get(url, timeout=10)
+        
+        # 1. 檢查 HTTP 狀態碼
+        if resp.status_code != 200:
+            print(f"   ❌ [Debug] API Request Failed: {resp.status_code} | URL: {url}")
+            return None
+            
+        data = resp.json()
+        
+        # 2. 檢查是否有 boxscore 欄位
+        if 'boxscore' not in data:
+            print(f"   ❌ [Debug] JSON 缺少 'boxscore' 欄位。Keys: {list(data.keys())} | Game: {game_id}")
+            return None
+            
         boxscores = data.get('boxscore', {}).get('teams', [])
         
+        # 3. 印出這場比賽有哪些隊伍 ID (確認是否 ID 對不上)
+        available_ids = [t['team']['id'] for t in boxscores]
+        
         # 找到對應球隊的數據區塊
-        target = next((t for t in boxscores if t['team']['id'] == team_id), None)
+        # 注意：這裡將 team_id 轉為字串再比較，避免型別不符 (int vs str)
+        target = next((t for t in boxscores if str(t['team']['id']) == str(team_id)), None)
         
-        if not target: return None
+        if not target:
+            # 這是最常見的原因：ID 對不上
+            print(f"   ⚠️ [Debug] 找不到 Team ID {team_id}。API 裡的 ID 是: {available_ids}")
+            return None
         
+        # 4. 檢查是否有 statistics
+        stats_list = target.get('statistics', [])
+        if not stats_list:
+            print(f"   ⚠️ [Debug] Team {team_id} 找到了，但 'statistics' 是空的！")
+            return None
+
         # ESPN 格式是 [{'name': 'fieldGoalsMade', 'value': '40'}, ...]
-        # 我們轉成 dict: {'fieldGoalsMade': 40.0, ...}
         stats_map = {}
-        for s in target.get('statistics', []):
+        for s in stats_list:
             try:
                 stats_map[s['name']] = float(s['value'])
             except:
-                pass # 無法轉 float 就跳過
+                pass 
         
         return stats_map
         
-    except Exception:
+    except Exception as e:
+        print(f"   ❌ [Debug] Exception: {e}")
         return None
 
 def update_csv():
