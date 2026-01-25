@@ -37,19 +37,24 @@ def get_latest_stats():
         # 1. 讀取 CSV
         df = pd.read_csv('data/TeamStatistics.csv', usecols=cols, low_memory=False)
         
-        # 🔥🔥🔥 關鍵修正：移除 format='mixed'，加入 errors='coerce' 🔥🔥🔥
-        # 這樣如果遇到無法解析的日期，它會變成 NaT 而不會報錯 crash
+        # 🔥 同步修復：強制正規化日期 (只取前 10 碼 YYYY-MM-DD)
+        # 這樣就能解決帶有時區 (-04:00) 導致解析失敗的問題
+        df['gameDateTimeEst'] = df['gameDateTimeEst'].astype(str).str.slice(0, 10)
+
+        # 2. 強壯的日期解析
         df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], utc=True, errors='coerce')
         
-        # 移除壞掉的日期行
+        # 3. 移除無效日期 (現在應該會是 0 筆了)
         if df['gameDateTimeEst'].isnull().any():
-            print(f"   ⚠️ 發現 {df['gameDateTimeEst'].isnull().sum()} 筆無效日期，已自動過濾。")
+            print(f"   ⚠️ Warning: 發現 {df['gameDateTimeEst'].isnull().sum()} 筆無效日期，已自動過濾。")
             df = df.dropna(subset=['gameDateTimeEst'])
 
         df = df.sort_values(['teamId', 'gameDateTimeEst'])
         
-        # group_keys=False 避免索引衝突
+        # 4. 滾動平均計算
         df_rolled = df.groupby('teamId', group_keys=False)[RAW_FEATURES].apply(lambda x: x.rolling(5, min_periods=1).mean())
+        
+        # 把 teamId 加回來
         df_rolled['teamId'] = df['teamId']
         
         last = df_rolled.groupby('teamId').tail(1)

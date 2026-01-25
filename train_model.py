@@ -11,10 +11,10 @@ import os
 RAW_FEATURES = [
     'fieldGoalsPercentage', 'threePointersPercentage', 'freeThrowsPercentage',
     'reboundsTotal', 'assists', 'steals', 'blocks', 'turnovers', 
-    'plusMinusPoints', 'pointsInThePaint', 'teamScore' # 保留用來計算 Target，但不放入 X
+    'plusMinusPoints', 'pointsInThePaint', 'teamScore' # 保留 teamScore 用來算 Target，但不放入訓練特徵
 ]
 
-# 訓練用的特徵 (已移除 teamScore)
+# 訓練用的特徵 (已移除 teamScore，防止 Data Leakage)
 TRAIN_FEATURES_SPREAD = [
     'is_home', 
     'diff_fieldGoalsPercentage', 'diff_threePointersPercentage', 'diff_freeThrowsPercentage',
@@ -35,52 +35,25 @@ def load_and_clean_data():
         cols = ['gameId', 'teamId', 'gameDateTimeEst', 'home', 'win', 'teamScore', 'opponentScore'] + RAW_FEATURES
         df = pd.read_csv('data/TeamStatistics.csv', usecols=cols, low_memory=False)
 
-        # ====================================================
-        # 🕵️‍♂️ Debug & Fix: 找出無效日期並修復
-        # ====================================================
+        # 🔥 關鍵修復：強制正規化日期 (只取前 10 碼 YYYY-MM-DD)
+        # 這能解決帶有時區 (-04:00) 或重複 Header 導致解析失敗的問題
+        df['gameDateTimeEst'] = df['gameDateTimeEst'].astype(str).str.slice(0, 10)
         
-        # 1. 先把這一欄轉成字串，確保處理一致
-        df['gameDateTimeEst'] = df['gameDateTimeEst'].astype(str)
-
-        # 2. 嘗試解析日期 (先不 assign 回去，單純測試)
-        temp_dates = pd.to_datetime(df['gameDateTimeEst'], utc=True, errors='coerce')
-        
-        # 3. 找出解析失敗的行 (那就是造成 Warning 的元兇)
-        bad_indices = df[temp_dates.isnull()].index
-        
-        if len(bad_indices) > 0:
-            print(f"⚠️ [Debug] 發現 {len(bad_indices)} 筆格式異常的日期，原始資料如下：")
-            # 印出異常資料的前 5 筆，讓你去 GitHub Log 裡看看到底是 header 重複還是格式爛掉
-            print(df.loc[bad_indices, ['gameId', 'teamId', 'gameDateTimeEst']].head())
-            
-            # --- 強制修復策略 ---
-            # 策略 A: 如果是重複的 Header (gameId == 'gameId')，直接丟掉
-            # 策略 B: 如果是格式太長 (例如帶有時區 2025-01-24 19:00:00-05:00)，強制只取前 10 碼 (YYYY-MM-DD)
-            
-            print("🔧 嘗試強制正規化日期格式 (只取前 10 碼)...")
-            # 這裡假設日期都在最前面，例如 "2025-01-25..."
-            df['gameDateTimeEst'] = df['gameDateTimeEst'].str.slice(0, 10)
-
-        # 4. 正式轉換 (經過上面的修復，應該都能過了)
+        # 使用 errors='coerce' 自動過濾無法解析的日期
         df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], utc=True, errors='coerce')
         
-        # 5. 最後檢查 (如果還有錯，那就是真的沒救的髒資料，例如空值)
-        invalid_count = df['gameDateTimeEst'].isnull().sum()
-        if invalid_count > 0:
-            print(f"❌ Warning: 仍有 {invalid_count} 筆無法修復的日期，將自動過濾。")
-            df = df.dropna(subset=['gameDateTimeEst'])
+        # 移除無效日期
+        df = df.dropna(subset=['gameDateTimeEst'])
         
-        # ====================================================
-
-        # 檢查是否還有資料
         if df.empty:
-            print("❌ 錯誤：所有日期解析失敗，DataFrame 為空！請檢查 TeamStatistics.csv 的日期格式。")
+            print("❌ 錯誤：DataFrame 為空！請檢查 CSV 日期格式。")
             exit()
 
         # 排序
         df = df.sort_values(['teamId', 'gameDateTimeEst'])
         
         # 滾動平均 (Rolling Average) - 計算近 5 場表現
+        # 使用 group_keys=False 保持索引整潔
         df_rolled = df.groupby('teamId', group_keys=False)[RAW_FEATURES].apply(lambda x: x.shift(1).rolling(5, min_periods=1).mean())
         
         # 把原始資訊接回來
@@ -94,8 +67,6 @@ def load_and_clean_data():
 
     except Exception as e:
         print(f"❌ 發生錯誤: {e}")
-        import traceback
-        traceback.print_exc()
         exit()
 
 def prepare_training_data(df):
@@ -121,7 +92,6 @@ def prepare_training_data(df):
 def train():
     df = load_and_clean_data()
     
-    # 再次檢查資料量
     if len(df) < 10:
         print(f"❌ 資料量過少 ({len(df)} 筆)，無法訓練。")
         exit()
@@ -152,7 +122,7 @@ def train():
     
     preds = model_spread.predict(X_test)
     mae = mean_absolute_error(y_test, preds)
-    print(f"   📏 平均誤差 (MAE): {mae:.2f} 分 (越低越好)")
+    print(f"   📏 平均誤差 (MAE): {mae:.2f} 分")
     
     # --- 模型 3: 大小分預測 ---
     print("\n🤖 訓練模型 3: 大小分預測 (Total Points)...")
