@@ -35,16 +35,43 @@ def load_and_clean_data():
         cols = ['gameId', 'teamId', 'gameDateTimeEst', 'home', 'win', 'teamScore', 'opponentScore'] + RAW_FEATURES
         df = pd.read_csv('data/TeamStatistics.csv', usecols=cols, low_memory=False)
 
-        # 🔥🔥🔥 關鍵修正：移除 format='mixed' 以支援 Python 3.7 🔥🔥🔥
-        # 舊版 Pandas 會自動偵測 ISO8601 格式，不需要指定 format
+        # ====================================================
+        # 🕵️‍♂️ Debug & Fix: 找出無效日期並修復
+        # ====================================================
+        
+        # 1. 先把這一欄轉成字串，確保處理一致
+        df['gameDateTimeEst'] = df['gameDateTimeEst'].astype(str)
+
+        # 2. 嘗試解析日期 (先不 assign 回去，單純測試)
+        temp_dates = pd.to_datetime(df['gameDateTimeEst'], utc=True, errors='coerce')
+        
+        # 3. 找出解析失敗的行 (那就是造成 Warning 的元兇)
+        bad_indices = df[temp_dates.isnull()].index
+        
+        if len(bad_indices) > 0:
+            print(f"⚠️ [Debug] 發現 {len(bad_indices)} 筆格式異常的日期，原始資料如下：")
+            # 印出異常資料的前 5 筆，讓你去 GitHub Log 裡看看到底是 header 重複還是格式爛掉
+            print(df.loc[bad_indices, ['gameId', 'teamId', 'gameDateTimeEst']].head())
+            
+            # --- 強制修復策略 ---
+            # 策略 A: 如果是重複的 Header (gameId == 'gameId')，直接丟掉
+            # 策略 B: 如果是格式太長 (例如帶有時區 2025-01-24 19:00:00-05:00)，強制只取前 10 碼 (YYYY-MM-DD)
+            
+            print("🔧 嘗試強制正規化日期格式 (只取前 10 碼)...")
+            # 這裡假設日期都在最前面，例如 "2025-01-25..."
+            df['gameDateTimeEst'] = df['gameDateTimeEst'].str.slice(0, 10)
+
+        # 4. 正式轉換 (經過上面的修復，應該都能過了)
         df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], utc=True, errors='coerce')
         
-        # 檢查無效日期
+        # 5. 最後檢查 (如果還有錯，那就是真的沒救的髒資料，例如空值)
         invalid_count = df['gameDateTimeEst'].isnull().sum()
         if invalid_count > 0:
-            print(f"   ⚠️ Warning: 發現 {invalid_count} 筆無效日期，已自動過濾。")
+            print(f"❌ Warning: 仍有 {invalid_count} 筆無法修復的日期，將自動過濾。")
             df = df.dropna(subset=['gameDateTimeEst'])
         
+        # ====================================================
+
         # 檢查是否還有資料
         if df.empty:
             print("❌ 錯誤：所有日期解析失敗，DataFrame 為空！請檢查 TeamStatistics.csv 的日期格式。")
@@ -67,6 +94,8 @@ def load_and_clean_data():
 
     except Exception as e:
         print(f"❌ 發生錯誤: {e}")
+        import traceback
+        traceback.print_exc()
         exit()
 
 def prepare_training_data(df):
