@@ -9,9 +9,9 @@ on:
         required: false
         default: 'true'
 
-  # 2. 定時排程 (UTC 4:00 - 13:30，即台灣 12:00 - 21:30)
+  # 2. 定時排程 (UTC 4:00 - 14:30，即台灣 12:00 - 22:30)
   schedule:
-    - cron: '*/30 4-13 * * *'
+    - cron: '*/30 4-14 * * *'
 
 permissions:
   contents: write

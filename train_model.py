@@ -104,7 +104,8 @@ def train():
     y_win = data['target_win']
     
     X_train, X_test, y_train, y_test = train_test_split(X_win, y_win, test_size=0.2, random_state=42)
-    model_win = xgb.XGBClassifier(use_label_encoder=False, eval_metric='logloss')
+    # 🔥 修正：移除了 use_label_encoder=False
+    model_win = xgb.XGBClassifier(eval_metric='logloss')
     model_win.fit(X_train, y_train)
     
     preds = model_win.predict(X_test)
