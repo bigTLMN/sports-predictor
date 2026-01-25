@@ -6,26 +6,26 @@ import joblib
 import os
 
 # ==========================================
-# 1. 定義特徵欄位 (必須與 aggregate_picks.py 一致)
+# 1. 定義特徵欄位
 # ==========================================
 RAW_FEATURES = [
     'fieldGoalsPercentage', 'threePointersPercentage', 'freeThrowsPercentage',
     'reboundsTotal', 'assists', 'steals', 'blocks', 'turnovers', 
-    'plusMinusPoints', 'pointsInThePaint', 'teamScore'
+    'plusMinusPoints', 'pointsInThePaint', 'teamScore' # 保留用來計算 Target，但不放入 X
 ]
 
-# 這些是經過特徵工程後，真正餵給模型訓練的欄位
+# 訓練用的特徵 (已移除 teamScore)
 TRAIN_FEATURES_SPREAD = [
     'is_home', 
     'diff_fieldGoalsPercentage', 'diff_threePointersPercentage', 'diff_freeThrowsPercentage',
     'diff_reboundsTotal', 'diff_assists', 'diff_steals', 'diff_blocks', 'diff_turnovers',
-    'diff_plusMinusPoints', 'diff_pointsInThePaint', 'diff_teamScore'
+    'diff_plusMinusPoints', 'diff_pointsInThePaint'
 ]
 
 TRAIN_FEATURES_TOTAL = [
     'sum_fieldGoalsPercentage', 'sum_threePointersPercentage', 'sum_freeThrowsPercentage',
     'sum_reboundsTotal', 'sum_assists', 'sum_steals', 'sum_blocks', 'sum_turnovers',
-    'sum_plusMinusPoints', 'sum_pointsInThePaint', 'sum_teamScore'
+    'sum_plusMinusPoints', 'sum_pointsInThePaint'
 ]
 
 def load_and_clean_data():
@@ -35,28 +35,32 @@ def load_and_clean_data():
         cols = ['gameId', 'teamId', 'gameDateTimeEst', 'home', 'win', 'teamScore', 'opponentScore'] + RAW_FEATURES
         df = pd.read_csv('data/TeamStatistics.csv', usecols=cols, low_memory=False)
 
-        # 🔥🔥🔥 關鍵修正：強壯的日期解析 (Fix Date Parsing Error) 🔥🔥🔥
-        # 使用 format='mixed' 讓它自動處理 ISO8601 和帶時區的格式
-        # errors='coerce' 會把無法解析的變成 NaT，避免 crash
-        df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], utc=True, format='mixed', errors='coerce')
+        # 🔥🔥🔥 關鍵修正：移除 format='mixed' 以支援 Python 3.7 🔥🔥🔥
+        # 舊版 Pandas 會自動偵測 ISO8601 格式，不需要指定 format
+        df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], utc=True, errors='coerce')
         
-        # 移除無效日期的資料
-        if df['gameDateTimeEst'].isnull().any():
-            print(f"   ⚠️ Warning: 發現 {df['gameDateTimeEst'].isnull().sum()} 筆無效日期，已自動過濾。")
+        # 檢查無效日期
+        invalid_count = df['gameDateTimeEst'].isnull().sum()
+        if invalid_count > 0:
+            print(f"   ⚠️ Warning: 發現 {invalid_count} 筆無效日期，已自動過濾。")
             df = df.dropna(subset=['gameDateTimeEst'])
+        
+        # 檢查是否還有資料
+        if df.empty:
+            print("❌ 錯誤：所有日期解析失敗，DataFrame 為空！請檢查 TeamStatistics.csv 的日期格式。")
+            exit()
 
         # 排序
         df = df.sort_values(['teamId', 'gameDateTimeEst'])
         
         # 滾動平均 (Rolling Average) - 計算近 5 場表現
-        # group_keys=False 避免索引層級增加
         df_rolled = df.groupby('teamId', group_keys=False)[RAW_FEATURES].apply(lambda x: x.shift(1).rolling(5, min_periods=1).mean())
         
-        # 把原始資訊 (gameId, date, score...) 接回來
+        # 把原始資訊接回來
         for col in ['gameId', 'gameDateTimeEst', 'home', 'win', 'teamScore', 'opponentScore']:
             df_rolled[col] = df[col]
             
-        # 移除沒有滾動數據的前幾場 (NaN)
+        # 移除前幾場沒有滾動數據的行
         df_rolled = df_rolled.dropna()
         
         return df_rolled
@@ -68,42 +72,34 @@ def load_and_clean_data():
 def prepare_training_data(df):
     print("🔄 [V3] 特徵工程：計算 Diff (讓分用) 與 Sum (大小分用)...")
     
-    # 自行 Join：把同一場比賽的主客隊數據併在同一列
-    # 1. 分出主隊與客隊
     df_home = df[df['home'] == 1].copy()
     df_away = df[df['home'] == 0].copy()
     
-    # 2. 合併 (Merge)
     merged = pd.merge(df_home, df_away, on='gameId', suffixes=('_h', '_a'))
     
-    # 3. 產生特徵
     merged['is_home'] = 1 
     
-    # 計算 Diff (主隊 - 客隊) -> 用於預測勝負/讓分
     for col in RAW_FEATURES:
         merged[f'diff_{col}'] = merged[f'{col}_h'] - merged[f'{col}_a']
-        
-    # 計算 Sum (主隊 + 客隊) -> 用於預測大小分
-    for col in RAW_FEATURES:
         merged[f'sum_{col}'] = merged[f'{col}_h'] + merged[f'{col}_a']
         
-    # 定義 Target (目標值)
-    # Win: 主隊贏=1, 輸=0
     merged['target_win'] = merged['win_h'] 
-    
-    # Spread: 主隊贏分 (例如 +5 或 -10)
     merged['target_margin'] = merged['teamScore_h'] - merged['teamScore_a']
-    
-    # Total: 總分
     merged['target_total'] = merged['teamScore_h'] + merged['teamScore_a']
     
     return merged
 
 def train():
     df = load_and_clean_data()
+    
+    # 再次檢查資料量
+    if len(df) < 10:
+        print(f"❌ 資料量過少 ({len(df)} 筆)，無法訓練。")
+        exit()
+
     data = prepare_training_data(df)
     
-    # --- 模型 1: 勝負預測 (Classification) ---
+    # --- 模型 1: 勝負預測 ---
     print("\n🤖 訓練模型 1: 勝負預測 (Win/Loss)...")
     X_win = data[TRAIN_FEATURES_SPREAD]
     y_win = data['target_win']
@@ -116,7 +112,7 @@ def train():
     acc = accuracy_score(y_test, preds)
     print(f"   🎯 勝率準確度: {acc*100:.2f}%")
     
-    # --- 模型 2: 讓分預測 (Regression) ---
+    # --- 模型 2: 讓分預測 ---
     print("\n🤖 訓練模型 2: 讓分預測 (Spread Margin)...")
     X_spread = data[TRAIN_FEATURES_SPREAD]
     y_spread = data['target_margin']
@@ -129,7 +125,7 @@ def train():
     mae = mean_absolute_error(y_test, preds)
     print(f"   📏 平均誤差 (MAE): {mae:.2f} 分 (越低越好)")
     
-    # --- 模型 3: 大小分預測 (Regression) ---
+    # --- 模型 3: 大小分預測 ---
     print("\n🤖 訓練模型 3: 大小分預測 (Total Points)...")
     X_total = data[TRAIN_FEATURES_TOTAL]
     y_total = data['target_total']
@@ -146,7 +142,6 @@ def train():
     joblib.dump(model_win, 'model_win.pkl')
     joblib.dump(model_spread, 'model_spread.pkl')
     joblib.dump(model_total, 'model_total.pkl')
-    # 儲存特徵列表，確保預測時欄位順序一致
     joblib.dump(TRAIN_FEATURES_SPREAD, 'features_spread.pkl')
     joblib.dump(TRAIN_FEATURES_TOTAL, 'features_total.pkl')
     
