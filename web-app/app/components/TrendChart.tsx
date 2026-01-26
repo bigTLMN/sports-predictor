@@ -32,7 +32,7 @@ export default function TrendChart({
       
       {/* 標題區塊 */}
       <div className="flex justify-end items-end mb-3 px-1">
-        <div className="text-[10px] font-black flex items-center gap-1" style={{ color }}>
+        <div className="text-[12px] font-semibold flex items-center gap-1 bg-current/10 px-2 py-0.5 rounded-full backdrop-blur-sm" style={{ color }}>
           <span className="w-2 h-2 rounded-full" style={{ backgroundColor: color }}></span>
           {label} (Last {days} Days)
         </div>

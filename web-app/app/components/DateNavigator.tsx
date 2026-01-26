@@ -34,39 +34,39 @@ export default function DateNavigator() {
   };
 
   return (
-    <div className="flex items-center justify-center gap-6 my-8">
+    <div className="flex items-center justify-center gap-12 my-8">
       {/* 左箭頭 */}
       <button 
         onClick={() => handleNavigation('prev')}
         disabled={isPending}
-        className={`group flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-sm border border-gray-200 transition-all active:scale-95
-          ${isPending ? 'opacity-50 cursor-wait' : 'hover:bg-blue-50 hover:border-blue-200'}
+        className={`group flex items-center justify-center w-10 h-10 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-xl transition-all active:scale-90
+          ${isPending ? 'opacity-30 cursor-wait' : 'hover:bg-white/20 hover:border-blue-400/50'}
         `}
         aria-label="Previous Day"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={`text-gray-500 transition-colors ${!isPending && 'group-hover:text-blue-600'}`}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" 
+          className={`text-indigo-300 transition-colors ${!isPending && 'group-hover:text-indigo-600'}`}>
           <path d="m15 18-6-6 6-6"/>
         </svg>
       </button>
       
       {/* 中間日期顯示 */}
       <div className={`flex flex-col items-center select-none transition-opacity duration-200 ${isPending ? 'opacity-50' : 'opacity-100'}`}>
-        <span className="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-1">
+        <span className="text-[14px] font-bold tracking-widest bg-gradient-to-r from-[#dfbd69] via-[#855e23] to-[#dfbd69] bg-clip-text text-transparent uppercase mb-3">
           Game Schedule
         </span>
         <div className="flex items-baseline gap-2">
           {isPending ? (
-            // 讀取時顯示轉圈圈或 Loading 文字
-            <div className="flex items-center gap-2 h-8">
-                <span className="animate-spin h-4 w-4 border-2 border-gray-300 border-t-blue-600 rounded-full"></span>
-                <span className="text-sm font-bold text-gray-400">UPDATING...</span>
+            <div className="flex items-center gap-4 h-8">
+                <span className="animate-spin h-5 w-5 border-3 border-slate-100 border-t-slate-800 rounded-full"></span>
+                <span className="text-sm font-bold text-slate-600 uppercase transition-opacity duration-1000">UPDATING...</span>
             </div>
           ) : (
             <>
-              <span className="text-2xl font-black text-gray-800 tracking-tight">
+              <span className="text-2xl font-black text-slate-400/80 tracking-tight [text-shadow:_-1px_-1px_1px_white,_1px_1px_1px_rgba(0,0,0,0.2)]">
                 {format(currentDate, 'MMMM d')}
               </span>
-              <span className="text-sm font-semibold text-gray-400">
+              <span className="text-base font-black text-slate-400/80 tracking-tight [text-shadow:_-1px_-1px_1px_white,_1px_1px_1px_rgba(0,0,0,0.2)]">
                 {format(currentDate, ', yyyy')}
               </span>
             </>
@@ -78,12 +78,13 @@ export default function DateNavigator() {
       <button 
         onClick={() => handleNavigation('next')}
         disabled={isPending}
-        className={`group flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-sm border border-gray-200 transition-all active:scale-95
-          ${isPending ? 'opacity-50 cursor-wait' : 'hover:bg-blue-50 hover:border-blue-200'}
+        className={`group flex items-center justify-center w-10 h-10 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-xl transition-all active:scale-90
+          ${isPending ? 'opacity-30 cursor-wait' : 'hover:bg-white/20 hover:border-blue-400/50'}
         `}
         aria-label="Next Day"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={`text-gray-500 transition-colors ${!isPending && 'group-hover:text-blue-600'}`}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" 
+          className={`text-indigo-300 transition-colors ${!isPending && 'group-hover:text-indigo-600'}`}>
           <path d="m9 18 6-6-6-6"/>
         </svg>
       </button>
