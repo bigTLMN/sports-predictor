@@ -12,6 +12,12 @@ on:
   # 2. 定時排程 (UTC 4:00 - 14:30，即台灣 12:00 - 22:30)
   schedule:
     - cron: '*/30 4-14 * * *'
+  
+  # 3. 代碼推送時自動觸發 (方便測試)
+  push:
+    branches:
+      - main
+      - master  # 預防你的主分支叫 master
 
 permissions:
   contents: write
@@ -38,7 +44,7 @@ jobs:
           pip install -r requirements.txt
 
       # ==================================================
-      # 任務 1: 更新賽程、賠率與「結算」(無論幾點，每次都跑)
+      # 任務 1: 更新賽程、賠率與結算 (無論幾點，每次都跑)
       # ==================================================
       - name: 1. Fetch Schedule, Odds & Grade Picks (Always Run)
         run: |
@@ -48,23 +54,23 @@ jobs:
           echo "💰 [$(date)] Fetching Latest Odds..."
           python scrape_odds.py
 
-          # 🔥 新增：執行結算，讓比賽結束後能自動更新勝敗 🔥
+          # 🔥 關鍵修正：確保每次更新賽程後，立刻進行結算
           echo "🎓 [$(date)] Grading Finished Games..."
           python grade_picks.py
 
       # ==================================================
-      # 任務 2: 執行預測 (只在台灣 22:00 或手動觸發時跑)
+      # 任務 2: 執行預測 (只在台灣 22:00 或手動/Push 觸發時跑)
       # ==================================================
-      - name: 2. Conditional Prediction (22:00 CST Only)
+      - name: 2. Conditional Prediction (22:00 CST or Manual/Push)
         run: |
           # 取得當前 UTC 小時
           CURRENT_HOUR=$(date -u +%H)
           
           echo "🕒 Current UTC Hour: $CURRENT_HOUR (Taiwan: UTC+8)"
           
-          # 判斷邏輯：UTC 14點 (台22點) 或 手動觸發
-          if [ "$CURRENT_HOUR" == "14" ] || [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "🚀 It's 22:00 CST! Starting AI Prediction Pipeline..."
+          # 判斷邏輯：UTC 14點 (台22點) 或 手動觸發 或 Push觸發
+          if [ "$CURRENT_HOUR" == "14" ] || [ "${{ github.event_name }}" == "workflow_dispatch" ] || [ "${{ github.event_name }}" == "push" ]; then
+            echo "🚀 It's 22:00 CST (or triggered manually/push)! Starting AI Prediction Pipeline..."
             
             echo "🧠 Training Model..."
             python train_model.py
@@ -90,6 +96,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "🤖 Auto-update: Schedule/Odds/Grading (Prediction: ${{ github.event_name == 'workflow_dispatch' || env.CURRENT_HOUR == '14' }})"
+            git commit -m "🤖 Auto-update: Schedule/Odds/Grading (Prediction: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' || env.CURRENT_HOUR == '14' }})"
             git push
           fi
