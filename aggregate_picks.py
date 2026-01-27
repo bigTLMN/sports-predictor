@@ -1,6 +1,7 @@
 import pandas as pd
 import joblib
 import os
+import numpy as np
 from datetime import datetime, timedelta
 from config import get_supabase_client
 
@@ -29,6 +30,75 @@ RAW_FEATURES = [
     'reboundsTotal', 'assists', 'steals', 'blocks', 'turnovers', 
     'plusMinusPoints', 'pointsInThePaint', 'teamScore'
 ]
+
+def generate_insight(rec_code, opp_code, is_home_pick, features_df):
+    """
+    將特徵數據轉換為文字分析報告
+    """
+    # 定義特徵對應的專業術語
+    feature_map = {
+        'diff_fieldGoalsPercentage': 'Overall Shooting Efficiency',
+        'diff_threePointersPercentage': 'Perimeter Scoring (3PT%)',
+        'diff_freeThrowsPercentage': 'Free Throw Reliability',
+        'diff_reboundsTotal': 'Rebounding Dominance',
+        'diff_assists': 'Ball Movement & Playmaking',
+        'diff_steals': 'Defensive Disruptions (Steals)',
+        'diff_blocks': 'Rim Protection',
+        'diff_turnovers': 'Ball Security (Turnovers)', 
+        'diff_plusMinusPoints': 'Recent Point Differential',
+        'diff_pointsInThePaint': 'Paint Scoring Presence'
+    }
+
+    # 取得第一筆特徵資料 (Series)
+    if features_df.empty: return "Analysis unavailable based on current data."
+    row = features_df.iloc[0]
+
+    # 找出對推薦隊伍「最有利」的 3 個特徵
+    factor_scores = {}
+    
+    for col, name in feature_map.items():
+        if col not in row: continue
+        val = row[col]
+        
+        # 特殊處理：失誤 (Turnovers)，數值越小越好
+        if 'turnovers' in col:
+            # 如果推薦的是主隊，val (主-客) 為負是好事 => 取負號變成正分
+            # 如果推薦的是客隊，val (主-客) 為正是好事 (代表主隊失誤多) => 直接取正值
+            # 這裡邏輯簡化：我們想知道這項數據是否支持「推薦隊伍」
+            # 推薦主隊: 我們希望 主<客 => val < 0 => score = -val (正分)
+            # 推薦客隊: 我們希望 客<主 => val > 0 => score = val (正分)
+            score = -val if is_home_pick else val 
+        else:
+            # 一般數據：越大越好
+            # 推薦主隊: 我們希望 主>客 => val > 0 => score = val
+            # 推薦客隊: 我們希望 客>主 => val < 0 => score = -val
+            score = val if is_home_pick else -val 
+            
+        factor_scores[name] = score
+
+    # 排序取出前 3 名關鍵因素 (分數越高代表優勢越大)
+    top_factors = sorted(factor_scores.items(), key=lambda x: x[1], reverse=True)[:3]
+    
+    # --- 生成文案 ---
+    intro = f"Our AI model identifies a statistical edge for {rec_code} over {opp_code}."
+    
+    bullet_points = []
+    for name, score in top_factors:
+        # 根據數值強度給予形容詞
+        intensity = "slight"
+        if score > 5: intensity = "significant" 
+        if score > 10: intensity = "dominant"
+        
+        bullet_points.append(f"• **{name}**: Shows a {intensity} advantage in recent form.")
+
+    # 總結
+    if top_factors:
+        summary = f"Comparing the rolling 5-game averages, {rec_code}'s performance in {top_factors[0][0]} is the primary driver for this prediction."
+    else:
+        summary = "Data analysis suggests a close matchup based on recent performance."
+
+    full_text = f"{intro}\n\n" + "\n".join(bullet_points) + f"\n\n{summary}"
+    return full_text
 
 def get_latest_stats():
     print("🔄 從 CSV 讀取球隊近況...")
@@ -65,7 +135,7 @@ def get_latest_stats():
         return {}
 
 def prepare_features(h_id, a_id, stats):
-    if h_id not in stats or a_id not in stats: return None, None
+    if h_id not in stats or a_id not in stats: return None, None, None
     h, a = stats[h_id], stats[a_id]
     
     row = {'is_home': 1}
@@ -80,7 +150,7 @@ def prepare_features(h_id, a_id, stats):
         if c not in df.columns: df[c] = 0
     for c in features_total: 
         if c not in df.columns: df[c] = 0
-    return df[features_spread], df[features_total]
+    return df[features_spread], df[features_total], df
 
 def run():
     supabase = get_supabase_client()
@@ -93,7 +163,7 @@ def run():
     
     print(f"📅 抓取賽程範圍: {now.strftime('%Y-%m-%d')} 至 {end_date.strftime('%Y-%m-%d')}")
 
-    # 抓取比賽 (這裡不限狀態，由下方迴圈決定是否更新)
+    # 抓取比賽
     matches = supabase.table("matches")\
         .select("*, home_team:teams!matches_home_team_id_fkey(code, nba_team_id), away_team:teams!matches_away_team_id_fkey(code, nba_team_id)")\
         .gte("date", now.isoformat())\
@@ -113,21 +183,18 @@ def run():
             # ==========================================
             # 🔒 關鍵保護：檢查比賽狀態
             # ==========================================
-            # 定義哪些狀態算是「完賽」
             finished_statuses = ['STATUS_FINAL', 'STATUS_FINISHED', 'Final', 'STATUS_IN_PROGRESS']
             is_finished = m.get('status') in finished_statuses
             
-            # 如果比賽已經開始或結束，且沒有開上帝模式 -> 跳過預測 (保護已產生的結果)
             if is_finished and not CHEAT_MODE:
-                # 只有在 console 印出 log，但不加入更新列表
-                # print(f"   🔒 跳過已開打/完賽: {m['away_team']['code']} @ {m['home_team']['code']} (ID: {m['id']})")
                 continue
 
             # --- 以下為預測邏輯 ---
             h_id = int(m['home_team']['nba_team_id'])
             a_id = int(m['away_team']['nba_team_id'])
             
-            X_spr, X_tot = prepare_features(h_id, a_id, stats)
+            # 🔥 修改：接收第三個回傳值 raw_df
+            X_spr, X_tot, raw_df = prepare_features(h_id, a_id, stats)
             if X_spr is None: continue
 
             # AI 預測
@@ -146,10 +213,12 @@ def run():
             if pred_margin > cutoff: 
                 rec_id = m['home_team_id']
                 rec_code = m['home_team']['code']
+                opp_code = m['away_team']['code'] # 對手
                 diff = abs(pred_margin - cutoff)
             else:
                 rec_id = m['away_team_id']
                 rec_code = m['away_team']['code']
+                opp_code = m['home_team']['code'] # 對手
                 diff = abs(pred_margin - cutoff)
 
             conf = min(50 + int(diff * 4), 95)
@@ -164,6 +233,14 @@ def run():
             else:
                 logic_str = f"AI projects {rec_code} to lose by {abs(my_proj_margin):.1f} pts"
 
+            # 🤖 生成 AI 分析文案
+            analysis_text = generate_insight(
+                rec_code, 
+                opp_code,
+                is_rec_home,
+                raw_df
+            )
+
             picks.append({
                 "match_id": m['id'],
                 "recommended_team_id": rec_id,
@@ -173,6 +250,7 @@ def run():
                 "ou_pick": ou_pick,
                 "ou_line": float(vegas_total),
                 "ou_confidence": ou_conf,
+                "analysis_content": analysis_text, # 🔥 新增欄位
                 "created_at": datetime.utcnow().isoformat()
             })
             print(f"   -> {m['away_team']['code']} @ {m['home_team']['code']}: 預測更新 [{rec_code}]")

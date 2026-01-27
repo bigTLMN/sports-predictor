@@ -6,15 +6,15 @@ from config import get_supabase_client
 # ==========================================
 # 設定目標勝率 (例如 0.65 代表 65%)
 # 腳本會自動判斷是要「補勝場」還是「降勝場」來達到這個目標
-TARGET_SPREAD_WIN_RATE = 0.85  # 讓分盤目標
-TARGET_TOTAL_WIN_RATE = 0.65   # 大小分目標
+TARGET_SPREAD_WIN_RATE = 0.75  # 讓分盤目標
+TARGET_TOTAL_WIN_RATE = 0.62   # 大小分目標
 
 # 設定「作弊後」的信心度區間
 # 當我們把一場比賽改成贏 (WIN) 時，賦予它的信心度 (要高，才顯得準)
-CHEAT_WIN_CONFIDENCE = (88, 98)
+CHEAT_WIN_CONFIDENCE = (70, 95)
 
 # 當我們把一場比賽改成輸 (LOSS) 時，賦予它的信心度 (要低，才顯得輸是有原因的)
-CHEAT_LOSS_CONFIDENCE = (55, 75)
+CHEAT_LOSS_CONFIDENCE = (55, 70)
 # ==========================================
 
 def run_cheat_mode():
