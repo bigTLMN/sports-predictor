@@ -13,13 +13,17 @@ interface MatchCardProps {
 export default function MatchCard({ pick, index }: MatchCardProps) {
   const m = pick.matches;
   
+  // 🔥 關鍵判斷：根據是否有 'recommended_team' 來決定是否顯示預測內容
+  const hasPrediction = !!pick.recommended_team;
+
   const isFinished = m.status === 'STATUS_FINISHED' || m.status === 'STATUS_FINAL' || m.status === 'Final';
   
   const spreadText = m.vegas_spread !== null 
     ? (m.vegas_spread > 0 ? `+${m.vegas_spread}` : m.vegas_spread) 
     : 'PK';
 
-  const isHighConfidence = pick.confidence_score >= 80;
+  // 若無預測，信心度視為 0 (不顯示 High Value)
+  const isHighConfidence = hasPrediction && pick.confidence_score >= 80;
 
   return (
     <motion.div
@@ -28,9 +32,12 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
       transition={{ duration: 0.4, delay: index * 0.1 }}
       className="group relative h-full"
     >
-      <Link href={`/match/${pick.match_id}`} className="block h-full">
+      {/* 連結控制：只有當有預測時 (hasPrediction) 才允許點擊跳轉 */}
+      <Link href={hasPrediction ? `/match/${pick.match_id}` : '#'} className={`block h-full ${!hasPrediction && 'cursor-default pointer-events-none'}`}>
           <div className={twMerge(
-            "bg-white rounded-2xl shadow-sm border overflow-hidden hover:shadow-lg transition-all relative h-full transform group-hover:-translate-y-1",
+            "bg-white rounded-2xl shadow-sm border overflow-hidden transition-all relative h-full",
+            // 有預測時才有 hover 效果，沒預測時保持靜態
+            hasPrediction ? "hover:shadow-lg transform group-hover:-translate-y-1" : "bg-slate-50",
             isHighConfidence ? "border-blue-200 ring-2 ring-blue-100/50" : "border-slate-200"
           )}>
             
@@ -56,7 +63,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
             <div className="pt-10 pb-4 px-4 flex justify-between items-center bg-gradient-to-b from-slate-50 to-white">
                 {/* 客隊 */}
                 <div className="flex flex-col items-center w-1/3 relative">
-                <div className="w-14 h-14 p-2 bg-white rounded-full shadow-sm border border-slate-100 mb-2 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 p-2 bg-white rounded-full shadow-sm border border-slate-100 mb-2 flex items-center justify-center transition-transform duration-300">
                     <img src={m.away_team.logo_url || '/placeholder.png'} className="w-full h-full object-contain" alt={m.away_team.code} />
                 </div>
                 <span className="font-bold text-slate-700">{m.away_team.code}</span>
@@ -77,7 +84,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
 
                 {/* 主隊 */}
                 <div className="flex flex-col items-center w-1/3 relative">
-                <div className="w-14 h-14 p-2 bg-white rounded-full shadow-sm border border-slate-100 mb-2 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 p-2 bg-white rounded-full shadow-sm border border-slate-100 mb-2 flex items-center justify-center transition-transform duration-300">
                     <img src={m.home_team.logo_url || '/placeholder.png'} className="w-full h-full object-contain" alt={m.home_team.code} />
                 </div>
                 <span className="font-bold text-slate-700">{m.home_team.code}</span>
@@ -89,73 +96,81 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
             <div className="px-4 pb-4">
                 <div className={twMerge(
                     "rounded-xl p-3 border relative overflow-hidden transition-colors",
-                    isHighConfidence ? "bg-blue-50/50 border-blue-100" : "bg-slate-50 border-slate-100"
+                    hasPrediction 
+                        ? (isHighConfidence ? "bg-blue-50/50 border-blue-100" : "bg-slate-50 border-slate-100")
+                        : "bg-slate-50/50 border-slate-100/50 border-dashed" // 無預測時顯示虛線框
                 )}>
                 
-                {/* 🔥 修改這裡：Header 改為左右分佈，右邊加入 View Analysis */}
-                <div className="flex justify-between items-center mb-3 relative z-10">
-                    {/* 左側: AI Label */}
-                    <div className="flex items-center gap-2">
-                        <span className={twMerge("w-2 h-2 rounded-full animate-pulse", isHighConfidence ? "bg-blue-600" : "bg-slate-400")}></span>
-                        <span className={twMerge("text-[10px] font-black uppercase tracking-widest", isHighConfidence ? "text-blue-700" : "text-slate-400")}>AI Analysis</span>
-                    </div>
+                {hasPrediction ? (
+                    /* ✅ 有預測時：顯示 AI 分析內容 */
+                    <>
+                        <div className="flex justify-between items-center mb-3 relative z-10">
+                            <div className="flex items-center gap-2">
+                                <span className={twMerge("w-2 h-2 rounded-full animate-pulse", isHighConfidence ? "bg-blue-600" : "bg-slate-400")}></span>
+                                <span className={twMerge("text-[10px] font-black uppercase tracking-widest", isHighConfidence ? "text-blue-700" : "text-slate-400")}>AI Analysis</span>
+                            </div>
 
-                    {/* 右側: View Analysis Button (常駐顯示，Hover 變色) */}
-                    <div className="flex items-center gap-1 text-[9px] font-black uppercase text-slate-400 bg-white/60 px-2 py-1 rounded border border-slate-200/60 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all shadow-sm">
-                        View Analysis
-                        <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path></svg>
-                    </div>
-                </div>
-
-                {/* 1. Spread/Moneyline Pick */}
-                <div className="flex justify-between items-start mb-3 relative z-10">
-                    <div className="flex items-center gap-3">
-                    <img src={pick.recommended_team.logo_url} className="w-8 h-8 object-contain drop-shadow-sm" />
-                    <div>
-                        <div className="text-base font-black text-slate-800 leading-none">
-                            {pick.recommended_team.code} <span className="text-xs font-bold text-slate-400">to cover</span>
+                            <div className="flex items-center gap-1 text-[9px] font-black uppercase text-slate-400 bg-white/60 px-2 py-1 rounded border border-slate-200/60 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all shadow-sm">
+                                View Analysis
+                                <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path></svg>
+                            </div>
                         </div>
-                        <div className="text-[10px] font-medium text-slate-500 mt-1 bg-white/80 px-1.5 py-0.5 rounded border border-slate-100/50 inline-block backdrop-blur-sm">
-                            {pick.spread_logic || 'Value Bet Analysis'}
+
+                        <div className="flex justify-between items-start mb-3 relative z-10">
+                            <div className="flex items-center gap-3">
+                            <img src={pick.recommended_team.logo_url} className="w-8 h-8 object-contain drop-shadow-sm" />
+                            <div>
+                                <div className="text-base font-black text-slate-800 leading-none">
+                                    {pick.recommended_team.code} <span className="text-xs font-bold text-slate-400">to cover</span>
+                                </div>
+                                <div className="text-[10px] font-medium text-slate-500 mt-1 bg-white/80 px-1.5 py-0.5 rounded border border-slate-100/50 inline-block backdrop-blur-sm">
+                                    {pick.spread_logic || 'Value Bet Analysis'}
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div className="flex flex-col items-end w-20">
+                            <div className={twMerge("text-xl font-black", isHighConfidence ? "text-blue-600" : "text-slate-600")}>
+                                {pick.confidence_score}%
+                            </div>
+                            <div className="w-full h-1.5 bg-slate-200 rounded-full mt-1 overflow-hidden">
+                                <div 
+                                    className={twMerge("h-full rounded-full", isHighConfidence ? "bg-gradient-to-r from-blue-400 to-blue-600" : "bg-slate-400")} 
+                                    style={{ width: `${pick.confidence_score}%` }}
+                                ></div>
+                            </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                    
-                    {/* 信心度區塊 */}
-                    <div className="flex flex-col items-end w-20">
-                    <div className={twMerge("text-xl font-black", isHighConfidence ? "text-blue-600" : "text-slate-600")}>
-                        {pick.confidence_score}%
-                    </div>
-                    <div className="w-full h-1.5 bg-slate-200 rounded-full mt-1 overflow-hidden">
-                        <div 
-                            className={twMerge("h-full rounded-full", isHighConfidence ? "bg-gradient-to-r from-blue-400 to-blue-600" : "bg-slate-400")} 
-                            style={{ width: `${pick.confidence_score}%` }}
-                        ></div>
-                    </div>
-                    </div>
-                </div>
 
-                <div className="w-full h-px bg-slate-200/60 my-2"></div>
+                        <div className="w-full h-px bg-slate-200/60 my-2"></div>
 
-                {/* 2. Total Pick */}
-                <div className="flex justify-between items-center relative z-10">
-                    <div className="flex items-center gap-1.5">
-                    <span className="text-[10px] font-bold text-slate-400 uppercase">Total</span>
-                    <span className="text-xs font-black text-slate-700">{m.vegas_total || '--'}</span>
+                        <div className="flex justify-between items-center relative z-10">
+                            <div className="flex items-center gap-1.5">
+                            <span className="text-[10px] font-bold text-slate-400 uppercase">Total</span>
+                            <span className="text-xs font-black text-slate-700">{m.vegas_total || '--'}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                            <span className={`text-xs font-black px-2 py-0.5 rounded ${pick.ou_pick === 'OVER' ? 'bg-red-50 text-red-600 border border-red-100' : 'bg-blue-50 text-blue-600 border border-blue-100'}`}>
+                                {pick.ou_pick}
+                            </span>
+                            <span className="text-[10px] font-bold text-slate-400">({pick.ou_confidence}%)</span>
+                            </div>
+                        </div>
+                    </>
+                ) : (
+                    /* ⏳ 無預測時：顯示 Pending 狀態 */
+                    <div className="flex flex-col items-center justify-center py-5 text-center space-y-2 opacity-60">
+                         <span className="w-2 h-2 bg-slate-300 rounded-full animate-pulse"></span>
+                         <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">AI Analysis Pending</span>
+                         <span className="text-[9px] text-slate-300 font-mono">Waiting for data...</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                    <span className={`text-xs font-black px-2 py-0.5 rounded ${pick.ou_pick === 'OVER' ? 'bg-red-50 text-red-600 border border-red-100' : 'bg-blue-50 text-blue-600 border border-blue-100'}`}>
-                        {pick.ou_pick}
-                    </span>
-                    <span className="text-[10px] font-bold text-slate-400">({pick.ou_confidence}%)</span>
-                    </div>
-                </div>
+                )}
 
                 </div>
             </div>
             
-            {/* Footer: 結果狀態 */}
-            {(pick.spread_outcome || pick.total_outcome) && (
+            {/* Footer: 結果狀態 (只有在有預測且已結算時顯示) */}
+            {hasPrediction && (pick.spread_outcome || pick.total_outcome) && (
                 <div className="flex border-t border-slate-100 divide-x divide-slate-100 bg-white">
                 <div className={`flex-1 py-2 flex flex-col items-center justify-center ${pick.spread_outcome === 'WIN' ? 'bg-green-50/50' : pick.spread_outcome === 'LOSS' ? 'bg-red-50/50' : ''}`}>
                     <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Spread</span>

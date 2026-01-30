@@ -3,7 +3,6 @@
 import { useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 
-// 動態引入圖表，並設定 Loading 佔位符
 const TrendChart = dynamic(() => import('./TrendChart'), { 
   ssr: false,
   loading: () => <div className="w-full h-64 bg-slate-100 animate-pulse rounded-xl" /> 
@@ -20,9 +19,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
   const [activeTab, setActiveTab] = useState<StatsType>('SPREAD');
   const [daysRange, setDaysRange] = useState<7 | 30 | 90>(7);
 
-  // --- 核心邏輯：根據 Tab 與 TimeRange 篩選數據 ---
   const statsData = useMemo(() => {
-    // 1. 定義篩選函式
     const filterPicks = (picks: any[]) => {
       let wins = 0;
       let total = 0;
@@ -40,11 +37,9 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
       return { wins, total };
     };
 
-    // 2. 計算 Dashboard 用的「本日」與「賽季」數據
     const dayStats = filterPicks(dailyPicks);
     const seasonStats = filterPicks(historyPicks);
 
-    // 3. 計算「趨勢圖」數據
     const dates = [...Array(daysRange)].map((_, i) => {
       const d = new Date();
       d.setDate(d.getDate() - ((daysRange - 1) - i)); 
@@ -59,11 +54,12 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
         date: date.slice(5), // MM-DD
         fullDate: date,      
         winRate: total > 0 ? Math.round((wins / total) * 100) : 0,
-        count: total         
+        count: total,
+        // 🔥 這裡加入 wins 和 total 讓 TrendChart 使用
+        wins: wins,
+        total: total
       };
     })
-    // 🔥 關鍵修正：過濾掉「沒有已結算場次」的日期 (例如明天)
-    // 這樣圖表就不會因為明天勝率是 0 而掉下去，而是維持在最後一天的狀態
     .filter(t => t.count > 0);
 
     let label = 'Spread';
@@ -131,7 +127,6 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
       </div>
 
       {/* 整合圖表 */}
-      {/* 只有當 trend 有數據時才顯示 (避免空陣列報錯) */}
       {statsData.trend.length > 0 && (
         <div className="border-t border-slate-100 pt-4 animate-in fade-in duration-500 relative">
            
@@ -158,7 +153,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
            </div>
 
            <div style={{ minHeight: '300px', width: '100%' }}>
-              <TrendChart data={statsData.trend} type={activeTab} days={daysRange} />
+              <TrendChart data={statsData.trend as any[]} type={activeTab} days={daysRange} />
            </div>
         </div>
       )}

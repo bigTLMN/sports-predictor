@@ -3,9 +3,12 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
 import { StatsType } from './StatsDashboard';
 
+// 🔥 1. 更新介面，加入 wins 與 total
 interface TrendData {
   date: string;
   winRate: number;
+  wins: number;
+  total: number;
 }
 
 export default function TrendChart({ 
@@ -67,12 +70,16 @@ export default function TrendChart({
               contentStyle={{ 
                 backgroundColor: 'rgba(15, 23, 42, 0.6)', 
                 backdropFilter: 'blur(8px)',
-                border: '1px solid rgba(223, 189, 105, 0.3)', // 淡淡的金色邊框
+                border: '1px solid rgba(223, 189, 105, 0.3)', 
                 boxShadow: '0 10px 15px rgba(0,0,0,0.5)'
               }}
               itemStyle={{ color: color, fontWeight: 'bold', fontSize: '13px' }}
               labelStyle={{ fontSize: '11px', color: '#94a3b8', marginBottom: '4px' }}
-              formatter={(value: any) => [`${value}%`, 'Win Rate']}
+              // 🔥 2. 修改 Tooltip 顯示格式
+              formatter={(value: number, name: string, props: any) => {
+                const { wins, total } = props.payload;
+                return [`${value}% (${wins}/${total})`, 'Win Rate'];
+              }}
             />
             
             <ReferenceLine y={50} stroke="#475569" strokeDasharray="3 3" />
