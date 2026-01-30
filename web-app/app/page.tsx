@@ -24,16 +24,10 @@ export default async function Home({
   // ==========================================
   // 🔥 關鍵修正：調整查詢時區 (NBA Day Logic)
   // ==========================================
-  // NBA 比賽日通常是美東時間 12:00 PM ~ 01:00 AM
-  // 換算 UTC 大約是 17:00 ~ 06:00 (+1 day)
-  // 我們用 UTC 11:00 (美東 06:00 AM) 作為切割點，絕對安全，不會抓到前一天的比賽
-  
-  // 1. 設定起始點: 當天 UTC 11:00
   const startDate = new Date(targetDate);
   startDate.setUTCHours(11, 0, 0, 0); 
   const startUTC = startDate.toISOString();
 
-  // 2. 設定結束點: +24 小時 (隔天 UTC 11:00)
   const endDate = new Date(startDate);
   endDate.setHours(endDate.getHours() + 24);
   const endUTC = endDate.toISOString();
@@ -118,14 +112,12 @@ export default async function Home({
             </div>
           </div>
 
-          {/* Date Navigator */}
           <div className="mb-10 ">
             <div className="bg-[#0D1117] rounded-xl p-1 border-2 border-slate-200/20">
               <DateNavigator />
             </div>
           </div>
 
-          {/* Dashboard */}
           <div className="mb-8 relative">
             <div className="absolute -inset-1 bg-orange-500 rounded-2xl blur-2xl opacity-5" />
             <div className="relative">
@@ -133,7 +125,6 @@ export default async function Home({
             </div>
           </div>
 
-          {/* Match List */}
           <div className="space-y-6">
              <div className="flex items-center gap-4">
                 <h2 className="text-2xl font-black uppercase tracking-tight text-slate-100">Market Board</h2>
