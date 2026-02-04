@@ -1,6 +1,7 @@
 import pandas as pd
 import xgboost as xgb
 from sklearn.metrics import accuracy_score, mean_absolute_error
+from sklearn.ensemble import VotingClassifier, VotingRegressor # 🔥 新增：集成學習模組
 import joblib
 import numpy as np
 
@@ -16,7 +17,6 @@ BASE_STATS_COLS = [
 ]
 
 # 🔥 V2.0 升級：定義多重時間窗口
-# 5場=近況, 10場=近兩週, 30場=長期實力(跨賽季延續)
 ROLLING_WINDOWS = [5, 10, 30] 
 
 # 動態生成訓練特徵列表
@@ -35,7 +35,7 @@ for w in ROLLING_WINDOWS:
 # ==========================================
 # 🔥 V8.0 黃金參數設定 (來自 Optuna 2026/01/29 調優結果)
 # ==========================================
-# 準確率: 64.84% (大幅提升!)
+# 準確率: 64.84%
 BEST_PARAMS_WIN = {
     'n_estimators': 509,
     'max_depth': 3,
@@ -47,7 +47,7 @@ BEST_PARAMS_WIN = {
     'reg_lambda': 5.724831419033642,
     'eval_metric': 'logloss',
     'missing': np.nan,
-    'n_jobs': -1
+    'n_jobs': 1 # 🔥 改為 1，因為 Voting 會平行處理多個模型，避免 CPU 搶佔
 }
 
 # MAE: 11.38
@@ -62,7 +62,7 @@ BEST_PARAMS_SPREAD = {
     'reg_lambda': 9.364714111214916,
     'objective': 'reg:squarederror',
     'missing': np.nan,
-    'n_jobs': -1
+    'n_jobs': 1 
 }
 
 # MAE: 15.10
@@ -77,7 +77,7 @@ BEST_PARAMS_TOTAL = {
     'reg_lambda': 4.892385537038124,
     'objective': 'reg:squarederror',
     'missing': np.nan,
-    'n_jobs': -1
+    'n_jobs': 1
 }
 
 def load_and_clean_data():
@@ -108,7 +108,7 @@ def load_and_clean_data():
         # 3. 排序 (重要)
         df = df.sort_values(['teamId', 'gameDateTimeEst'])
 
-        # 🔥 修正：移除 'win' 為 NaN 的資料 (未來賽程或缺失值)
+        # 🔥 修正：移除 'win' 為 NaN 的資料
         if df['win'].isnull().any():
             print(f"   ⚠️ 發現 {df['win'].isnull().sum()} 筆無勝負結果的資料(可能是未來賽程)，已移除。")
             df = df.dropna(subset=['win'])
@@ -129,7 +129,7 @@ def load_and_clean_data():
         # 新增：數值化勝負
         df['win_numeric'] = df['win'].astype(int)
 
-        # 5. 滾動平均 (多重窗口迴圈)
+        # 5. 滾動平均
         print("   🔄 執行多重滾動平均計算 (Windows: 5, 10, 30)...")
         
         cols_to_roll = [c for c in BASE_STATS_COLS if c in df.columns and c != 'RestDays']
@@ -202,6 +202,30 @@ def prepare_training_data(df):
     
     return merged
 
+# 🔥 新增：建立集成模型 (Ensemble Builder)
+def create_ensemble_model(base_estimator, params, n_estimators=5, type='classifier'):
+    """
+    創建一個集成模型，包含 n_estimators 個不同種子碼的 XGBoost。
+    """
+    estimators = []
+    print(f"   🧬 正在構建集成模型 (Ensemble size: {n_estimators})...")
+    
+    for i in range(n_estimators):
+        # 複製參數並設定不同的 Random Seed
+        model_params = params.copy()
+        model_params['random_state'] = 42 + (i * 10) # 42, 52, 62...
+        
+        model_name = f'xgb_{i}'
+        model = base_estimator(**model_params)
+        estimators.append((model_name, model))
+    
+    if type == 'classifier':
+        # Soft Voting: 平均「機率」而非平均「結果」，通常更準確
+        return VotingClassifier(estimators=estimators, voting='soft', n_jobs=-1)
+    else:
+        # Regressor: 直接平均數值
+        return VotingRegressor(estimators=estimators, n_jobs=-1)
+
 def train():
     df = load_and_clean_data()
     
@@ -224,31 +248,35 @@ def train():
     
     print(f"🚀 使用特徵數量 (Spread): {len(available_features_spread)} (引入多重窗口)")
     
-    # --- 模型 1: 勝負預測 ---
-    print("\n🤖 訓練模型 1: 勝負預測 (Win/Loss)...")
-    model_win = xgb.XGBClassifier(**BEST_PARAMS_WIN)
+    # --- 模型 1: 勝負預測 (Ensemble) ---
+    print("\n🤖 訓練模型 1: 勝負預測 (Win/Loss Ensemble)...")
+    # 使用 VotingClassifier 
+    model_win = create_ensemble_model(xgb.XGBClassifier, BEST_PARAMS_WIN, n_estimators=5, type='classifier')
     model_win.fit(train_data[available_features_spread], train_data['target_win'])
     
     acc = accuracy_score(test_data['target_win'], model_win.predict(test_data[available_features_spread]))
-    print(f"   🎯 最終回測準確度: {acc*100:.2f}%")
+    print(f"   🎯 最終回測準確度: {acc*100:.2f}% (Ensemble)")
     
-    # --- 模型 2: 讓分預測 ---
-    print("\n🤖 訓練模型 2: 讓分預測 (Spread Margin)...")
-    model_spread = xgb.XGBRegressor(**BEST_PARAMS_SPREAD)
+    # --- 模型 2: 讓分預測 (Ensemble) ---
+    print("\n🤖 訓練模型 2: 讓分預測 (Spread Margin Ensemble)...")
+    # 使用 VotingRegressor
+    model_spread = create_ensemble_model(xgb.XGBRegressor, BEST_PARAMS_SPREAD, n_estimators=5, type='regressor')
     model_spread.fit(train_data[available_features_spread], train_data['target_margin'])
     
     mae = mean_absolute_error(test_data['target_margin'], model_spread.predict(test_data[available_features_spread]))
-    print(f"   📏 平均誤差 (MAE): {mae:.2f} 分")
+    print(f"   📏 平均誤差 (MAE): {mae:.2f} 分 (Ensemble)")
     
-    # --- 模型 3: 大小分預測 ---
-    print("\n🤖 訓練模型 3: 大小分預測 (Total Points)...")
-    model_total = xgb.XGBRegressor(**BEST_PARAMS_TOTAL)
+    # --- 模型 3: 大小分預測 (Ensemble) ---
+    print("\n🤖 訓練模型 3: 大小分預測 (Total Points Ensemble)...")
+    model_total = create_ensemble_model(xgb.XGBRegressor, BEST_PARAMS_TOTAL, n_estimators=5, type='regressor')
     model_total.fit(train_data[available_features_total], train_data['target_total'])
     
     mae = mean_absolute_error(test_data['target_total'], model_total.predict(test_data[available_features_total]))
-    print(f"   📏 平均誤差 (MAE): {mae:.2f} 分")
+    print(f"   📏 平均誤差 (MAE): {mae:.2f} 分 (Ensemble)")
     
     # --- 儲存 ---
+    # VotingClassifier/Regressor 是一個標準的 sklearn 物件，可以直接 pickle
+    # aggregate_picks.py 載入後呼叫 .predict() 行為跟單一模型一模一樣
     joblib.dump(model_win, 'model_win.pkl')
     joblib.dump(model_spread, 'model_spread.pkl')
     joblib.dump(model_total, 'model_total.pkl')
@@ -258,7 +286,7 @@ def train():
     # 新增：儲存窗口設定
     joblib.dump(ROLLING_WINDOWS, 'rolling_config.pkl') 
     
-    print("\n💾 V8.0 模型訓練完成！所有系統已就緒。")
+    print("\n💾 V8.0 (Ensemble) 模型訓練完成！所有系統已就緒。")
 
 if __name__ == "__main__":
     train()
