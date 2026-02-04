@@ -9,15 +9,16 @@ on:
         required: false
         default: 'true'
 
-  # 2. 定時排程 (UTC 4:00 - 14:30，即台灣 12:00 - 22:30)
+  # 2. 定時排程 (UTC 1:00 - 14:30，即台灣 09:00 - 22:30)
+  # 🔥 修改：從 UTC 4 改為 UTC 1 (台灣早上 9 點)
   schedule:
-    - cron: '*/30 4-14 * * *'
+    - cron: '*/30 1-14 * * *'
   
-  # 3. 代碼推送時自動觸發 (方便測試)
+  # 3. 代碼推送時自動觸發
   push:
     branches:
       - main
-      - master  # 預防你的主分支叫 master
+      - master
 
 permissions:
   contents: write
@@ -29,6 +30,9 @@ jobs:
     env:
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      # 🔥 將 Kaggle 密鑰設為全域環境變數，方便 Python 抓取
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
 
     steps:
       - name: Checkout code
@@ -54,7 +58,6 @@ jobs:
           echo "💰 [$(date)] Fetching Latest Odds..."
           python scrape_odds.py
 
-          # 🔥 關鍵修正：確保每次更新賽程後，立刻進行結算
           echo "🎓 [$(date)] Grading Finished Games..."
           python grade_picks.py
 
@@ -72,6 +75,10 @@ jobs:
           if [ "$CURRENT_HOUR" == "14" ] || [ "${{ github.event_name }}" == "workflow_dispatch" ] || [ "${{ github.event_name }}" == "push" ]; then
             echo "🚀 It's 22:00 CST (or triggered manually/push)! Starting AI Prediction Pipeline..."
             
+            # 🔥 修改：在訓練前，先從 Kaggle 更新數據
+            echo "📥 Updating TeamStatistics.csv from Kaggle..."
+            python fetch_kaggle_data.py
+
             echo "🧠 Training Model..."
             python train_model.py
             
@@ -79,7 +86,7 @@ jobs:
             python aggregate_picks.py
             
           else
-            echo "💤 It's not 22:00 CST yet. Skipping Prediction."
+            echo "💤 It's not 22:00 CST yet. Skipping Prediction & Data Update."
             echo "✅ Only Schedule, Odds & Grading were updated."
           fi
 
