@@ -9,10 +9,10 @@ on:
         required: false
         default: 'true'
 
-  # 2. 定時排程 (UTC 1:00 - 14:30，即台灣 09:00 - 22:30)
-  # 🔥 修改：從 UTC 4 改為 UTC 1 (台灣早上 9 點)
+  # 2. 定時排程 (UTC 23:00 - 14:00，即台灣 07:00 - 22:00)
+  # 每 15 分鐘執行一次
   schedule:
-    - cron: '*/30 1-14 * * *'
+    - cron: '*/15 23,0-14 * * *'
   
   # 3. 代碼推送時自動觸發
   push:
@@ -71,9 +71,10 @@ jobs:
           
           echo "🕒 Current UTC Hour: $CURRENT_HOUR (Taiwan: UTC+8)"
           
-          # 判斷邏輯：UTC 14點 (台22點) 或 手動觸發 或 Push觸發
-          if [ "$CURRENT_HOUR" == "14" ] || [ "${{ github.event_name }}" == "workflow_dispatch" ] || [ "${{ github.event_name }}" == "push" ]; then
-            echo "🚀 It's 22:00 CST (or triggered manually/push)! Starting AI Prediction Pipeline..."
+          # 判斷邏輯：UTC 14點 (台22點) 或 手動觸發
+          # 注意：Push 事件不再觸發預測，避免測試時浪費資源 (除非你想測)
+          if [ "$CURRENT_HOUR" == "14" ] || [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "🚀 It's 22:00 CST (or triggered manually)! Starting AI Prediction Pipeline..."
             
             # 🔥 修改：在訓練前，先從 Kaggle 更新數據
             echo "📥 Updating TeamStatistics.csv from Kaggle..."
@@ -103,6 +104,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "🤖 Auto-update: Schedule/Odds/Grading (Prediction: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' || env.CURRENT_HOUR == '14' }})"
+            git commit -m "🤖 Auto-update: Schedule/Odds/Grading (Prediction: ${{ github.event_name == 'workflow_dispatch' || env.CURRENT_HOUR == '14' }})"
             git push
           fi

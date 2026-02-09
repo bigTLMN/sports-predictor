@@ -2,12 +2,13 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import { format, addDays, subDays, isValid, parseISO } from 'date-fns';
-import { useTransition } from 'react';
+import { useTransition, useRef } from 'react'; // 🔥 1. 引入 useRef
 
 export default function DateNavigator() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [isPending, startTransition] = useTransition(); // 🪄 魔法就在這裡
+  const [isPending, startTransition] = useTransition(); 
+  const dateInputRef = useRef<HTMLInputElement>(null); // 🔥 2. 建立 Ref
   
   // 1. 取得並解析目前日期
   const dateParam = searchParams.get('date');
@@ -27,66 +28,86 @@ export default function DateNavigator() {
     
     const dateStr = format(newDate, 'yyyy-MM-dd');
 
-    // 啟動轉場：這會讓 React 知道這是一個背景任務
     startTransition(() => {
       router.push(`/?date=${dateStr}`);
     });
   };
 
+  // 3. 處理日期選擇器變更
+  const handleDateSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const dateStr = e.target.value;
+    if (dateStr) {
+        startTransition(() => {
+            router.push(`/?date=${dateStr}`);
+        });
+    }
+  };
+
+  // 🔥 4. 新增：強制開啟日曆的函數
+  const openDatePicker = () => {
+    try {
+      // showPicker 是現代瀏覽器 API，能直接叫出日曆
+      if (dateInputRef.current && 'showPicker' in dateInputRef.current) {
+        dateInputRef.current.showPicker();
+      } else {
+        // 舊瀏覽器 fallback (雖然現在很少見了)
+        dateInputRef.current?.focus();
+      }
+    } catch (error) {
+      console.error("Browser doesn't support showPicker", error);
+    }
+  };
+
   return (
-    <div className="flex items-center justify-center gap-12 my-8">
-      {/* 左箭頭 */}
+    <div className="flex items-center justify-between px-4 py-4 bg-[#0D1117] rounded-xl border border-slate-800 relative">
+      
+      {/* 左箭頭: 前一天 */}
       <button 
         onClick={() => handleNavigation('prev')}
         disabled={isPending}
-        className={`group flex items-center justify-center w-10 h-10 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-xl transition-all active:scale-90
-          ${isPending ? 'opacity-30 cursor-wait' : 'hover:bg-white/20 hover:border-blue-400/50'}
-        `}
-        aria-label="Previous Day"
+        className={`p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all ${isPending ? 'opacity-30' : ''}`}
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" 
-          className={`text-indigo-300 transition-colors ${!isPending && 'group-hover:text-indigo-600'}`}>
-          <path d="m15 18-6-6 6-6"/>
-        </svg>
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
       </button>
-      
-      {/* 中間日期顯示 */}
-      <div className={`flex flex-col items-center select-none transition-opacity duration-200 ${isPending ? 'opacity-50' : 'opacity-100'}`}>
-        <span className="text-[14px] font-bold tracking-widest bg-gradient-to-r from-[#dfbd69] via-[#855e23] to-[#dfbd69] bg-clip-text text-transparent uppercase mb-3">
-          Game Schedule
-        </span>
-        <div className="flex items-baseline gap-2">
-          {isPending ? (
-            <div className="flex items-center gap-4 h-8">
-                <span className="animate-spin h-5 w-5 border-3 border-slate-100 border-t-slate-800 rounded-full"></span>
-                <span className="text-sm font-bold text-slate-600 uppercase transition-opacity duration-1000">UPDATING...</span>
-            </div>
-          ) : (
-            <>
-              <span className="text-2xl font-black text-slate-400/80 tracking-tight [text-shadow:_-1px_-1px_1px_white,_1px_1px_1px_rgba(0,0,0,0.2)]">
-                {format(currentDate, 'MMMM d')}
-              </span>
-              <span className="text-base font-black text-slate-400/80 tracking-tight [text-shadow:_-1px_-1px_1px_white,_1px_1px_1px_rgba(0,0,0,0.2)]">
-                {format(currentDate, ', yyyy')}
-              </span>
-            </>
-          )}
+
+      {/* 中間：日期顯示區塊 */}
+      {/* 🔥 5. 在父層 Div 加上 onClick，點擊整個區域都能觸發 */}
+      <div 
+        onClick={openDatePicker} 
+        className={`relative group cursor-pointer text-center select-none transition-opacity duration-200 ${isPending ? 'opacity-50' : 'opacity-100'}`}
+      >
+        
+        {/* 星期幾 (小字) */}
+        <div className="text-sm font-bold text-slate-400 uppercase tracking-widest group-hover:text-orange-500 transition-colors">
+            {format(currentDate, 'EEEE')}
         </div>
+        
+        {/* 日期 (大字) */}
+        <div className="text-xl font-black text-white tracking-tight flex items-center justify-center gap-2">
+            {format(currentDate, 'MMM dd, yyyy')}
+            <svg className="w-4 h-4 text-slate-500 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+        </div>
+        
+        {/* 🔥 6. Input 修改： */}
+        {/* - 加入 ref={dateInputRef} */}
+        {/* - 加入 pointer-events-none：讓滑鼠點擊可以直接穿透 input 打到下方的 div，觸發 onClick */}
+        {/* - 這樣我們就不依賴 input 自己的點擊判定，而是由我們手動控制 */}
+        <input 
+            ref={dateInputRef}
+            type="date" 
+            value={format(currentDate, 'yyyy-MM-dd')}
+            onChange={handleDateSelect}
+            className="absolute inset-0 w-full h-full opacity-0 pointer-events-none"
+        />
       </div>
 
-      {/* 右箭頭 */}
+      {/* 右箭頭: 後一天 */}
       <button 
         onClick={() => handleNavigation('next')}
         disabled={isPending}
-        className={`group flex items-center justify-center w-10 h-10 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-xl transition-all active:scale-90
-          ${isPending ? 'opacity-30 cursor-wait' : 'hover:bg-white/20 hover:border-blue-400/50'}
-        `}
-        aria-label="Next Day"
+        className={`p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all ${isPending ? 'opacity-30' : ''}`}
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" 
-          className={`text-indigo-300 transition-colors ${!isPending && 'group-hover:text-indigo-600'}`}>
-          <path d="m9 18 6-6-6-6"/>
-        </svg>
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
       </button>
     </div>
   );

@@ -5,7 +5,10 @@ import MatchCard from './components/MatchCard';
 import Footer from './components/Footer';
 import { format } from 'date-fns';
 import { toZonedTime } from 'date-fns-tz';
+import { redirect } from 'next/navigation';
 
+// 強制動態渲染，確保每次進來都會重新跑邏輯
+export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export default async function Home({
@@ -19,10 +22,44 @@ export default async function Home({
   const now = new Date();
   const zonedDate = toZonedTime(now, timeZone);
   const todayStr = format(zonedDate, 'yyyy-MM-dd');
+
+  // ==========================================
+  // 🔥 1. 自動跳轉邏輯 (Auto-Redirect) - 強力版
+  // ==========================================
+  if (!params.date) {
+    console.log(`🔍 [Redirect Check] Checking for games from ${todayStr}...`);
+    
+    const { data: latestMatch } = await supabase
+      .from('matches')
+      .select('date, start_time')
+      .gte('date', todayStr)
+      .order('date', { ascending: true })
+      .limit(1)
+      .maybeSingle();
+
+    if (latestMatch?.date) {
+      console.log(`🚀 [Redirect] Found game on ${latestMatch.date}, redirecting...`);
+      redirect(`/?date=${latestMatch.date}`);
+    } else {
+      console.log(`⚠️ [Redirect] No future games found. Staying on today.`);
+      const { data: lastMatch } = await supabase
+        .from('matches')
+        .select('date')
+        .lt('date', todayStr)
+        .order('date', { ascending: false })
+        .limit(1)
+        .maybeSingle();
+        
+      if (lastMatch?.date) {
+         redirect(`/?date=${lastMatch.date}`);
+      }
+    }
+  }
+
   const targetDate = (params.date as string) || todayStr;
 
   // ==========================================
-  // 🔥 關鍵修正：調整查詢時區 (NBA Day Logic)
+  // 🔥 2. 查詢時區設定 (NBA Day Logic)
   // ==========================================
   const startDate = new Date(targetDate);
   startDate.setUTCHours(11, 0, 0, 0); 
@@ -32,7 +69,7 @@ export default async function Home({
   endDate.setHours(endDate.getHours() + 24);
   const endUTC = endDate.toISOString();
 
-  // 1. 先抓取比賽
+  // 3. Match Query
   const { data: matchesData } = await supabase
     .from('matches')
     .select(`
@@ -47,9 +84,8 @@ export default async function Home({
   const matches = matchesData || [];
   const matchIds = matches.map(m => m.id);
 
-  // 2. 再抓取預測
+  // 4. Picks Query
   let picksMap = new Map();
-  
   if (matchIds.length > 0) {
     const { data: picksData } = await supabase
       .from('aggregated_picks')
@@ -64,18 +100,13 @@ export default async function Home({
     });
   }
 
-  // 3. 合併資料
+  // 5. Merge
   const picks = matches.map((match: any) => {
     const prediction = picksMap.get(match.id) || {};
-    
-    return {
-      ...prediction,     
-      matches: match,    
-      match_id: match.id 
-    };
+    return { ...prediction, matches: match, match_id: match.id };
   });
 
-  // 4. 歷史紀錄
+  // 6. History
   const { data: allHistoryData } = await supabase
     .from('aggregated_picks')
     .select(`spread_outcome, total_outcome, matches!inner (date)`)
@@ -89,30 +120,30 @@ export default async function Home({
       <main className="flex-1 p-4 md:p-8 bg-[radial-gradient(circle_at_top,rgba(255,165,0,0.05)_0%,transparent_50%)]">
         <div className="w-full max-w-3xl mx-auto px-4 md:px-0">
           
-          {/* Hero Banner */}
-          <div className="relative w-full h-48 md:h-60 mb-12 overflow-hidden rounded-2xl border-t-2 border-white/40 shadow-[0_0_40px_rgba(223,189,105,0.3)] [animation:aurora_4s_ease-in-out_infinite]">
+          {/* 🔥 修改這裡：將整個 Hero Banner 包在 <a> 標籤內 */}
+          <a href="/" className="block relative w-full h-48 md:h-60 mb-8 overflow-hidden rounded-2xl border-t-2 border-white/40 shadow-[0_0_40px_rgba(223,189,105,0.3)] [animation:aurora_4s_ease-in-out_infinite] group cursor-pointer transition-transform duration-300 hover:scale-[1.01]">
             <img 
               src="/cover.png" 
               className="absolute inset-0 w-full h-full object-cover mix-blend-color-burn opacity-50 saturate-150 sepia-[.50]"
             />
             <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-12">
               <div className="relative z-10">
-                <h1 className="text-5xl md:text-7xl font-[1000] tracking-tighter leading-none uppercase">
-                  EDGE <span className="text-orange-400">ANALYTICS</span>
+                <h1 className="text-5xl md:text-7xl font-[1000] tracking-tighter leading-none uppercase group-hover:text-orange-100 transition-colors">
+                  EDGE <span className="text-orange-400 group-hover:text-orange-300">ANALYTICS</span>
                 </h1>
                 <div className="flex items-center gap-3 mt-5">
-                  <p className="bg-orange-500 text-black font-black px-3 py-1 text-xs uppercase tracking-tighter">
+                  <p className="bg-orange-500 text-black font-black px-3 py-1 text-xs uppercase tracking-tighter group-hover:bg-orange-400 transition-colors">
                     Data Driven
                   </p>
-                  <p className="text-slate-400 font-bold text-xs tracking-[0.3em] uppercase border-l border-slate-700 pl-3">
+                  <p className="text-slate-400 font-bold text-xs tracking-[0.3em] uppercase border-l border-slate-700 pl-3 group-hover:text-slate-300 transition-colors">
                     Systematic Value
                   </p>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div className="mb-10 ">
+          <div className="mb-8 ">
             <div className="bg-[#0D1117] rounded-xl p-1 border-2 border-slate-200/20">
               <DateNavigator />
             </div>
