@@ -2,13 +2,13 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import { format, addDays, subDays, isValid, parseISO } from 'date-fns';
-import { useTransition, useRef } from 'react'; // 🔥 1. 引入 useRef
+import { useTransition, useRef } from 'react';
 
 export default function DateNavigator() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [isPending, startTransition] = useTransition(); 
-  const dateInputRef = useRef<HTMLInputElement>(null); // 🔥 2. 建立 Ref
+  const dateInputRef = useRef<HTMLInputElement>(null);
   
   // 1. 取得並解析目前日期
   const dateParam = searchParams.get('date');
@@ -43,18 +43,22 @@ export default function DateNavigator() {
     }
   };
 
-  // 🔥 4. 新增：強制開啟日曆的函數
+  // 🔥 4. 修正：使用 'as any' 繞過 TypeScript 檢查
   const openDatePicker = () => {
+    const input = dateInputRef.current;
+    if (!input) return;
+
     try {
-      // showPicker 是現代瀏覽器 API，能直接叫出日曆
-      if (dateInputRef.current && 'showPicker' in dateInputRef.current) {
-        dateInputRef.current.showPicker();
+      // 強制轉型為 any，避免 TypeScript 因為看不懂 showPicker 而報錯
+      if (typeof (input as any).showPicker === 'function') {
+        (input as any).showPicker();
       } else {
-        // 舊瀏覽器 fallback (雖然現在很少見了)
-        dateInputRef.current?.focus();
+        input.focus();
       }
     } catch (error) {
       console.error("Browser doesn't support showPicker", error);
+      // 如果出錯，至少試著 focus
+      input.focus();
     }
   };
 
@@ -71,7 +75,6 @@ export default function DateNavigator() {
       </button>
 
       {/* 中間：日期顯示區塊 */}
-      {/* 🔥 5. 在父層 Div 加上 onClick，點擊整個區域都能觸發 */}
       <div 
         onClick={openDatePicker} 
         className={`relative group cursor-pointer text-center select-none transition-opacity duration-200 ${isPending ? 'opacity-50' : 'opacity-100'}`}
@@ -88,10 +91,7 @@ export default function DateNavigator() {
             <svg className="w-4 h-4 text-slate-500 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
         </div>
         
-        {/* 🔥 6. Input 修改： */}
-        {/* - 加入 ref={dateInputRef} */}
-        {/* - 加入 pointer-events-none：讓滑鼠點擊可以直接穿透 input 打到下方的 div，觸發 onClick */}
-        {/* - 這樣我們就不依賴 input 自己的點擊判定，而是由我們手動控制 */}
+        {/* Input 設定 pointer-events-none 讓點擊穿透 */}
         <input 
             ref={dateInputRef}
             type="date" 
