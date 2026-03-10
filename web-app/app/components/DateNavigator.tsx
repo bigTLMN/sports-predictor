@@ -43,13 +43,13 @@ export default function DateNavigator() {
     }
   };
 
-  // 🔥 4. 修正：使用 'as any' 繞過 TypeScript 檢查
+  // 4. (備用) 強制開啟日曆
+  // 雖然這段在 Mobile 沒用，但在 PC 某些舊瀏覽器可能還是有輔助效果
   const openDatePicker = () => {
     const input = dateInputRef.current;
     if (!input) return;
 
     try {
-      // 強制轉型為 any，避免 TypeScript 因為看不懂 showPicker 而報錯
       if (typeof (input as any).showPicker === 'function') {
         (input as any).showPicker();
       } else {
@@ -57,8 +57,6 @@ export default function DateNavigator() {
       }
     } catch (error) {
       console.error("Browser doesn't support showPicker", error);
-      // 如果出錯，至少試著 focus
-      input.focus();
     }
   };
 
@@ -66,18 +64,20 @@ export default function DateNavigator() {
     <div className="flex items-center justify-between px-4 py-4 bg-[#0D1117] rounded-xl border border-slate-800 relative">
       
       {/* 左箭頭: 前一天 */}
+      {/* 加上 z-20 確保箭頭浮在 input 之上，不然會按不到箭頭 */}
       <button 
         onClick={() => handleNavigation('prev')}
         disabled={isPending}
-        className={`p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all ${isPending ? 'opacity-30' : ''}`}
+        className={`relative z-20 p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all ${isPending ? 'opacity-30' : ''}`}
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
       </button>
 
       {/* 中間：日期顯示區塊 */}
+      {/* 這裡的 onClick 變成 PC 的輔助，Mobile 主要靠 input 自己 */}
       <div 
-        onClick={openDatePicker} 
-        className={`relative group cursor-pointer text-center select-none transition-opacity duration-200 ${isPending ? 'opacity-50' : 'opacity-100'}`}
+        onClick={openDatePicker}
+        className={`relative group cursor-pointer text-center select-none transition-opacity duration-200 flex-1 ${isPending ? 'opacity-50' : 'opacity-100'}`}
       >
         
         {/* 星期幾 (小字) */}
@@ -91,21 +91,27 @@ export default function DateNavigator() {
             <svg className="w-4 h-4 text-slate-500 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
         </div>
         
-        {/* Input 設定 pointer-events-none 讓點擊穿透 */}
+        {/* 🔥 關鍵修正：
+            1. 移除 pointer-events-none (讓手指能真正點到它)
+            2. 加入 z-10 (確保它覆蓋在文字上面)
+            3. 加入 cursor-pointer (PC 滑鼠變手指)
+        */}
         <input 
             ref={dateInputRef}
             type="date" 
             value={format(currentDate, 'yyyy-MM-dd')}
             onChange={handleDateSelect}
-            className="absolute inset-0 w-full h-full opacity-0 pointer-events-none"
+            // 修改這裡：不再強制 w-full，而是給它一個適中的寬度並 mx-auto 置中
+            className="absolute inset-0 w-[200px] mx-auto opacity-0 z-10 cursor-pointer"
         />
       </div>
 
       {/* 右箭頭: 後一天 */}
+      {/* 加上 z-20 確保箭頭浮在 input 之上 */}
       <button 
         onClick={() => handleNavigation('next')}
         disabled={isPending}
-        className={`p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all ${isPending ? 'opacity-30' : ''}`}
+        className={`relative z-20 p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all ${isPending ? 'opacity-30' : ''}`}
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
       </button>

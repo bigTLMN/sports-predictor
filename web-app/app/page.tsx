@@ -74,9 +74,10 @@ export default async function Home({
     .from('matches')
     .select(`
       id, date, status, home_score, away_score, start_time, vegas_spread, vegas_total,
+      period_scores, 
       home_team: teams!matches_home_team_id_fkey (code, full_name, logo_url),
       away_team: teams!matches_away_team_id_fkey (code, full_name, logo_url)
-    `)
+    `) 
     .gte('start_time', startUTC)
     .lt('start_time', endUTC)
     .order('start_time', { ascending: true });
@@ -120,7 +121,7 @@ export default async function Home({
       <main className="flex-1 p-4 md:p-8 bg-[radial-gradient(circle_at_top,rgba(255,165,0,0.05)_0%,transparent_50%)]">
         <div className="w-full max-w-3xl mx-auto px-4 md:px-0">
           
-          {/* 🔥 修改這裡：將整個 Hero Banner 包在 <a> 標籤內 */}
+          {/* Hero Banner */}
           <a href="/" className="block relative w-full h-48 md:h-60 mb-8 overflow-hidden rounded-2xl border-t-2 border-white/40 shadow-[0_0_40px_rgba(223,189,105,0.3)] [animation:aurora_4s_ease-in-out_infinite] group cursor-pointer transition-transform duration-300 hover:scale-[1.01]">
             <img 
               src="/cover.png" 

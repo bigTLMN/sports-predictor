@@ -3,12 +3,11 @@ import time
 from datetime import datetime, timedelta
 from config import get_supabase_client
 
-# 改用 ESPN API (穩定、不擋 IP)
+# 改用 ESPN API (穩定、不擋 IP、含各節比分)
 ESPN_API_URL = "http://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"
 
 def get_team_map(supabase):
     """建立球隊代碼對照表 (Code -> ID)，包含 ESPN 特殊代碼轉換"""
-    # ESPN 的代碼有時候跟我們的稍微不一樣，這裡做對應
     mapping_fix = {
         'UTA': 'UTAH', 'NOP': 'NO', 'NYK': 'NY', 'SAS': 'SA', 'GSW': 'GS', 'WSH': 'WSH'
     }
@@ -17,7 +16,6 @@ def get_team_map(supabase):
     team_map = {}
     for t in teams:
         team_map[t['code']] = t['id']
-        # 加上反向對應
         for espn_code, my_code in mapping_fix.items():
             if my_code == t['code']:
                 team_map[espn_code] = t['id']
@@ -36,12 +34,10 @@ def scrape_schedule():
     total_processed = 0
 
     for date_str in dates_to_scrape:
-        # 格式化顯示用日期 (YYYY-MM-DD)
         display_date = f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:]}"
         print(f"   -> 正在檢查 {display_date} ...")
         
         try:
-            # ESPN API 只需要 dates 參數，不需要複雜 Header
             resp = requests.get(ESPN_API_URL, params={'dates': date_str}, timeout=10)
             if resp.status_code != 200:
                 print(f"      ⚠️ API 錯誤: {resp.status_code}")
@@ -67,14 +63,12 @@ def scrape_schedule():
                     away_abbr = away_comp['team']['abbreviation']
                     
                     if home_abbr not in team_map or away_abbr not in team_map:
-                        # print(f"      ⚠️ 找不到球隊: {away_abbr} @ {home_abbr}")
                         continue
                         
                     h_id = team_map[home_abbr]
                     a_id = team_map[away_abbr]
 
                     # 狀態判斷
-                    # ESPN status type: 'STATUS_SCHEDULED', 'STATUS_FINAL', 'STATUS_IN_PROGRESS'
                     espn_status = event['status']['type']['name']
                     if espn_status == 'STATUS_FINAL':
                         status = "STATUS_FINISHED"
@@ -83,24 +77,36 @@ def scrape_schedule():
                     else:
                         status = "STATUS_SCHEDULED"
 
-                    # 處理分數
+                    # 處理總分
                     h_score = int(home_comp['score']) if home_comp.get('score') else 0
                     a_score = int(away_comp['score']) if away_comp.get('score') else 0
                     
+                    # 🔥 處理各節比分 (Period Scores)
+                    # ESPN 格式: linescores: [{'value': 25}, {'value': 30}...]
+                    period_scores_json = None
+                    if 'linescores' in home_comp and 'linescores' in away_comp:
+                        h_lines = [int(x['value']) for x in home_comp['linescores']]
+                        a_lines = [int(x['value']) for x in away_comp['linescores']]
+                        
+                        if h_lines or a_lines:
+                            period_scores_json = {
+                                "home": h_lines,
+                                "away": a_lines
+                            }
+
                     # 準備寫入資料
                     match_data = {
-                        "date": display_date,  # 強制對齊查詢日期 (YYYY-MM-DD)
-                        "start_time": event['date'], # ESPN 給的是 ISO UTC 時間
+                        "date": display_date,
+                        "start_time": event['date'],
                         "home_team_id": h_id,
                         "away_team_id": a_id,
                         "status": status,
                         "home_score": h_score,
-                        "away_score": a_score
+                        "away_score": a_score,
+                        "period_scores": period_scores_json  # ✅ 新增這行
                     }
 
-                    # ==========================================
-                    # 🔥 穩健寫入邏輯：先檢查，後動作
-                    # ==========================================
+                    # Upsert 邏輯
                     existing = supabase.table('matches').select('id')\
                         .eq('date', display_date)\
                         .eq('home_team_id', h_id)\
@@ -108,20 +114,18 @@ def scrape_schedule():
                         .execute().data
                     
                     if existing:
-                        # 存在 -> Update
                         match_id = existing[0]['id']
                         supabase.table('matches').update(match_data).eq('id', match_id).execute()
                     else:
-                        # 不存在 -> Insert
                         supabase.table('matches').insert(match_data).execute()
                         print(f"      ➕ 新增: {away_abbr} @ {home_abbr}")
                     
                     total_processed += 1
 
                 except Exception as e:
-                    print(f"      ❌ 處理錯誤: {e}")
+                    print(f"      ❌ 處理錯誤 ({away_abbr} vs {home_abbr}): {e}")
 
-            time.sleep(0.5) # ESPN 很耐操，稍微休息即可
+            time.sleep(0.5)
 
         except Exception as e:
             print(f"      ❌ 連線錯誤: {e}")

@@ -1,22 +1,24 @@
 import pandas as pd
 import xgboost as xgb
 from sklearn.metrics import accuracy_score, mean_absolute_error
-from sklearn.ensemble import VotingClassifier, VotingRegressor # 🔥 新增：集成學習模組
+from sklearn.ensemble import VotingClassifier, VotingRegressor # 🔥 集成學習模組
 import joblib
 import numpy as np
+import os
 
 # ==========================================
-# 1. 定義特徵欄位 (改為動態生成)
+# 1. 定義特徵欄位 (動態生成)
 # ==========================================
 # 基礎數據 (Raw Stats)
 BASE_STATS_COLS = [
     'fieldGoalsPercentage', 'threePointersPercentage', 'freeThrowsPercentage',
     'reboundsTotal', 'assists', 'steals', 'blocks', 'turnovers', 
     'plusMinusPoints', 'pointsInThePaint', 'teamScore', 
-    'eFG_Percentage', 'TS_Percentage', 'RestDays'
+    'eFG_Percentage', 'TS_Percentage', 'RestDays',
+    'roster_impact_score' # 🔥 新增：陣容強度分數
 ]
 
-# 🔥 V2.0 升級：定義多重時間窗口
+# 定義多重時間窗口
 ROLLING_WINDOWS = [5, 10, 30] 
 
 # 動態生成訓練特徵列表
@@ -28,9 +30,13 @@ for w in ROLLING_WINDOWS:
         TRAIN_FEATURES_SPREAD.append(f'diff_rolling_{w}_{col}')
         TRAIN_FEATURES_TOTAL.append(f'sum_rolling_{w}_{col}')
     
-    # 🔥 特別加入：勝率 (Win Rate) 作為實力指標
+    # 加入勝率
     TRAIN_FEATURES_SPREAD.append(f'diff_rolling_{w}_win_rate')
     TRAIN_FEATURES_TOTAL.append(f'sum_rolling_{w}_win_rate')
+
+# 🔥 新增：陣容完整度與缺損特徵 (不依賴 rolling，而是當場差異)
+TRAIN_FEATURES_SPREAD.append('diff_roster_impact')    # 雙方今日陣容強度差
+TRAIN_FEATURES_SPREAD.append('diff_missing_impact')   # 雙方「戰力缺損」差 (最重要！)
 
 # ==========================================
 # 🔥 V8.0 黃金參數設定 (來自 Optuna 2026/01/29 調優結果)
@@ -81,9 +87,9 @@ BEST_PARAMS_TOTAL = {
 }
 
 def load_and_clean_data():
-    print("📂 [V8.0] 正在讀取 TeamStatistics.csv (多重窗口特徵版)...")
+    print("📂 [V9.5] 正在讀取 TeamStatistics.csv (含 Roster Impact)...")
     try:
-        # 1. 讀取數據
+        # 1. 讀取基礎數據
         req_cols = [
             'gameId', 'teamId', 'gameDateTimeEst', 'home', 'win', 'teamScore', 'opponentScore',
             'fieldGoalsMade', 'fieldGoalsAttempted', 'threePointersMade', 
@@ -94,8 +100,24 @@ def load_and_clean_data():
         ]
         
         df = pd.read_csv('data/TeamStatistics.csv', usecols=lambda c: c in req_cols, low_memory=False)
+        df['gameId'] = df['gameId'].astype(str) # 統一轉字串
 
-        # 2. 日期處理
+        # 2. 🔥 合併 Roster Impact (球員影響力)
+        if os.path.exists('data/match_roster_impact.csv'):
+            print("   🔗 合併球員影響力特徵 (match_roster_impact.csv)...")
+            df_impact = pd.read_csv('data/match_roster_impact.csv')
+            df_impact['gameId'] = df_impact['gameId'].astype(str)
+            
+            # Left Join
+            df = pd.merge(df, df_impact, on=['gameId', 'teamId'], how='left')
+            
+            # 填補遺失值 (如果是舊比賽沒數據，填補平均值)
+            df['roster_impact_score'] = df['roster_impact_score'].fillna(df['roster_impact_score'].mean())
+        else:
+            print("⚠️ 警告: 找不到 match_roster_impact.csv，請先執行 build_player_features.py")
+            df['roster_impact_score'] = 0
+
+        # 3. 日期處理
         df['gameDateTimeEst'] = df['gameDateTimeEst'].astype(str).str.slice(0, 10)
         df['gameDateTimeEst'] = pd.to_datetime(df['gameDateTimeEst'], utc=True, errors='coerce')
         df = df.dropna(subset=['gameDateTimeEst'])
@@ -105,15 +127,15 @@ def load_and_clean_data():
         print(f"✂️ [Concept Drift Fix] 過濾數據：僅保留 {CUTOFF_YEAR} 年以後的現代籃球數據...")
         df = df[df['gameDateTimeEst'].dt.year >= CUTOFF_YEAR]
         
-        # 3. 排序 (重要)
+        # 4. 排序 (重要)
         df = df.sort_values(['teamId', 'gameDateTimeEst'])
 
-        # 🔥 修正：移除 'win' 為 NaN 的資料
+        # 修正：移除 'win' 為 NaN 的資料
         if df['win'].isnull().any():
             print(f"   ⚠️ 發現 {df['win'].isnull().sum()} 筆無勝負結果的資料(可能是未來賽程)，已移除。")
             df = df.dropna(subset=['win'])
 
-        # 4. 特徵工程
+        # 5. 特徵工程
         df['threePointersMade'] = df['threePointersMade'].fillna(0)
         df['fieldGoalsAttempted'] = df['fieldGoalsAttempted'].replace(0, np.nan)
         
@@ -126,33 +148,36 @@ def load_and_clean_data():
         df['RestDays'] = (df['gameDateTimeEst'] - df['prev_game_date']).dt.days
         df['RestDays'] = df['RestDays'].fillna(3).clip(upper=7)
         
-        # 新增：數值化勝負
         df['win_numeric'] = df['win'].astype(int)
 
-        # 5. 滾動平均
+        # 6. 滾動平均
         print("   🔄 執行多重滾動平均計算 (Windows: 5, 10, 30)...")
         
         cols_to_roll = [c for c in BASE_STATS_COLS if c in df.columns and c != 'RestDays']
         cols_to_roll.append('RestDays')
         
+        # 確保 roster_impact_score 在滾動列表裡
+        if 'roster_impact_score' not in cols_to_roll and 'roster_impact_score' in df.columns:
+            cols_to_roll.append('roster_impact_score')
+        
         for w in ROLLING_WINDOWS:
-            # 5.1 計算數據統計平均
+            # 6.1 計算數據統計平均
             rolled_stats = df.groupby('teamId', group_keys=False)[cols_to_roll].apply(
                 lambda x: x.shift(1).rolling(w, min_periods=1).mean()
             )
             rolled_stats.columns = [f'rolling_{w}_{c}' for c in rolled_stats.columns]
             
-            # 5.2 計算勝率 (Win Rate)
+            # 6.2 計算勝率 (Win Rate)
             rolled_win = df.groupby('teamId', group_keys=False)['win_numeric'].apply(
                 lambda x: x.shift(1).rolling(w, min_periods=1).mean()
             )
             rolled_stats[f'rolling_{w}_win_rate'] = rolled_win
             
-            # 5.3 合併回主表
+            # 6.3 合併回主表
             df = pd.concat([df, rolled_stats], axis=1)
         
-        # 6. 清理與過濾
-        meta_cols = ['gameId', 'gameDateTimeEst', 'home', 'win', 'teamScore', 'opponentScore']
+        # 7. 清理與過濾
+        meta_cols = ['gameId', 'gameDateTimeEst', 'home', 'win', 'teamScore', 'opponentScore', 'roster_impact_score']
         keep_cols = meta_cols + [c for c in df.columns if 'rolling_' in c]
         
         df_final = df[keep_cols].rename(columns={
@@ -162,7 +187,7 @@ def load_and_clean_data():
         
         df_final = df_final.dropna(subset=['win', 'actual_teamScore', 'actual_opponentScore'])
         
-        print(f"   ✅ 資料處理完成！特徵數大幅增加。總行數: {len(df_final)}")
+        print(f"   ✅ 資料處理完成！總行數: {len(df_final)}")
         return df_final
 
     except Exception as e:
@@ -172,7 +197,7 @@ def load_and_clean_data():
         exit()
 
 def prepare_training_data(df):
-    print(f"🔄 [V8.0] 準備對戰特徵...")
+    print(f"🔄 [V9.5] 準備對戰特徵...")
     
     df_home = df[df['home'] == 1].copy()
     df_away = df[df['home'] == 0].copy()
@@ -185,7 +210,7 @@ def prepare_training_data(df):
     # 自動計算 Diff 和 Sum
     needed_features = set()
     for f in TRAIN_FEATURES_SPREAD:
-        if f.startswith('diff_'):
+        if f.startswith('diff_') and 'roster' not in f and 'missing' not in f:
             needed_features.add(f.replace('diff_', ''))
             
     for base_col in needed_features:
@@ -195,35 +220,41 @@ def prepare_training_data(df):
         if h_col in merged.columns and a_col in merged.columns:
             merged[f'diff_{base_col}'] = merged[h_col] - merged[a_col]
             merged[f'sum_{base_col}'] = merged[h_col] + merged[a_col]
-    
+
+    # 🔥🔥 計算陣容強度相關特徵 (V9.0 新增) 🔥🔥
+    # 1. 直接比較雙方今日強度 (主隊強度 - 客隊強度)
+    if 'roster_impact_score_h' in merged.columns:
+        merged['diff_roster_impact'] = merged['roster_impact_score_h'] - merged['roster_impact_score_a']
+        
+        # 2. 比較「戰力缺損程度」 (Missing Impact)
+        # 今日強度 - 近10場平均強度 (如果 < 0 代表今日戰力比平常差)
+        merged['missing_impact_h'] = merged['roster_impact_score_h'] - merged['rolling_10_roster_impact_score_h']
+        merged['missing_impact_a'] = merged['roster_impact_score_a'] - merged['rolling_10_roster_impact_score_a']
+        
+        # 3. 雙方缺損差異 (主隊缺損 - 客隊缺損)
+        merged['diff_missing_impact'] = merged['missing_impact_h'] - merged['missing_impact_a']
+    merged = merged.copy()
     merged['target_win'] = merged['win_h'] 
     merged['target_margin'] = merged['actual_teamScore_h'] - merged['actual_teamScore_a']
     merged['target_total'] = merged['actual_teamScore_h'] + merged['actual_teamScore_a']
     
     return merged
 
-# 🔥 新增：建立集成模型 (Ensemble Builder)
+# 建立集成模型 (Ensemble Builder)
 def create_ensemble_model(base_estimator, params, n_estimators=5, type='classifier'):
-    """
-    創建一個集成模型，包含 n_estimators 個不同種子碼的 XGBoost。
-    """
     estimators = []
     print(f"   🧬 正在構建集成模型 (Ensemble size: {n_estimators})...")
     
     for i in range(n_estimators):
-        # 複製參數並設定不同的 Random Seed
         model_params = params.copy()
         model_params['random_state'] = 42 + (i * 10) # 42, 52, 62...
-        
         model_name = f'xgb_{i}'
         model = base_estimator(**model_params)
         estimators.append((model_name, model))
     
     if type == 'classifier':
-        # Soft Voting: 平均「機率」而非平均「結果」，通常更準確
         return VotingClassifier(estimators=estimators, voting='soft', n_jobs=-1)
     else:
-        # Regressor: 直接平均數值
         return VotingRegressor(estimators=estimators, n_jobs=-1)
 
 def train():
@@ -246,11 +277,10 @@ def train():
     available_features_spread = [f for f in TRAIN_FEATURES_SPREAD if f in data.columns]
     available_features_total = [f for f in TRAIN_FEATURES_TOTAL if f in data.columns]
     
-    print(f"🚀 使用特徵數量 (Spread): {len(available_features_spread)} (引入多重窗口)")
+    print(f"🚀 使用特徵數量 (Spread): {len(available_features_spread)} (包含 Roster Impact)")
     
     # --- 模型 1: 勝負預測 (Ensemble) ---
     print("\n🤖 訓練模型 1: 勝負預測 (Win/Loss Ensemble)...")
-    # 使用 VotingClassifier 
     model_win = create_ensemble_model(xgb.XGBClassifier, BEST_PARAMS_WIN, n_estimators=5, type='classifier')
     model_win.fit(train_data[available_features_spread], train_data['target_win'])
     
@@ -259,7 +289,6 @@ def train():
     
     # --- 模型 2: 讓分預測 (Ensemble) ---
     print("\n🤖 訓練模型 2: 讓分預測 (Spread Margin Ensemble)...")
-    # 使用 VotingRegressor
     model_spread = create_ensemble_model(xgb.XGBRegressor, BEST_PARAMS_SPREAD, n_estimators=5, type='regressor')
     model_spread.fit(train_data[available_features_spread], train_data['target_margin'])
     
@@ -275,18 +304,14 @@ def train():
     print(f"   📏 平均誤差 (MAE): {mae:.2f} 分 (Ensemble)")
     
     # --- 儲存 ---
-    # VotingClassifier/Regressor 是一個標準的 sklearn 物件，可以直接 pickle
-    # aggregate_picks.py 載入後呼叫 .predict() 行為跟單一模型一模一樣
     joblib.dump(model_win, 'model_win.pkl')
     joblib.dump(model_spread, 'model_spread.pkl')
     joblib.dump(model_total, 'model_total.pkl')
     joblib.dump(available_features_spread, 'features_spread.pkl')
     joblib.dump(available_features_total, 'features_total.pkl')
-    
-    # 新增：儲存窗口設定
     joblib.dump(ROLLING_WINDOWS, 'rolling_config.pkl') 
     
-    print("\n💾 V8.0 (Ensemble) 模型訓練完成！所有系統已就緒。")
+    print("\n💾 V9.5 (Ensemble + Impact) 模型訓練完成！所有系統已就緒。")
 
 if __name__ == "__main__":
     train()
