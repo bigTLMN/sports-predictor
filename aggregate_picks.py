@@ -3,6 +3,7 @@ import numpy as np
 import joblib
 import os
 import json
+import difflib
 from datetime import datetime, timedelta
 from supabase import create_client
 from config import get_supabase_client
@@ -53,28 +54,38 @@ BASE_STATS_COLS = [
 ]
 
 def calculate_live_impact(team_id, injury_report):
-    """計算即時戰力分數：拿完整陣容扣除傷兵"""
+    """計算即時戰力分數：拿完整陣容扣除傷兵 (支援模糊比對與機率扣分)"""
     if team_id not in team_rosters:
         return 100.0, [], 0.0
     
-    full_roster = team_rosters[team_id] # list of player names
+    full_roster = team_rosters[team_id] 
     current_impact = 0.0
     missing_impact = 0.0
     missing_players = []
     
+    # 取得 ESPN 傷兵名單中的所有名字
+    injured_names = list(injury_report.keys())
+    
     for player in full_roster:
         impact = player_impact_map.get(player, 0)
         
-        # 檢查是否在傷兵名單
-        is_injured = False
-        if player in injury_report and injury_report[player] == 'OUT':
-            is_injured = True
+        # 🔥 升級：使用模糊比對 (Fuzzy Matching)，相似度 >= 0.8 就算命中
+        # 可以解決 "Kelly Oubre Jr." vs "Kelly Oubre" 的問題
+        matches = difflib.get_close_matches(player, injured_names, n=1, cutoff=0.8)
         
-        if is_injured:
-            missing_impact += impact
-            # 只記錄主力 (impact > 10) 以免訊息太長
+        if matches:
+            matched_name = matches[0]
+            miss_prob = injury_report[matched_name] # 取得 1.0 或 0.5
+            
+            # 計算折損的戰力
+            impact_lost = impact * miss_prob
+            missing_impact += impact_lost
+            current_impact += (impact - impact_lost)
+            
+            # 只有主力才顯示在文字戰報中
             if impact > 10:
-                missing_players.append(f"{player}")
+                status_label = "OUT" if miss_prob == 1.0 else "GTD"
+                missing_players.append(f"{player}({status_label})")
         else:
             current_impact += impact
             
@@ -258,6 +269,12 @@ def run():
     
     for m in matches:
         try:
+            status = m.get('status', '')
+            locked_statuses = ['STATUS_IN_PROGRESS', 'STATUS_FINAL', 'STATUS_FINISHED', 'STATUS_POSTPONED', 'In Progress', 'Final']
+            
+            if status in locked_statuses and not CHEAT_MODE:
+                print(f"   ⏩ 防呆跳過: {m['away_team']['code']} @ {m['home_team']['code']} (狀態: {status}，已開打或結束)")
+                continue            
             h_id = int(m['home_team']['nba_team_id'])
             a_id = int(m['away_team']['nba_team_id'])
             
@@ -335,6 +352,7 @@ def run():
                 "spread_logic": analysis_text, 
                 "ou_pick": ou_pick,
                 "ou_confidence": ou_conf,
+                "line_info": str(vegas_spread),
                 "created_at": datetime.utcnow().isoformat()
             })
             print(f"   -> {m['away_team']['code']} @ {m['home_team']['code']}: [{rec_code}] {analysis_text[:50]}...")
@@ -342,19 +360,52 @@ def run():
         except Exception as e:
             print(f"⚠️ Error {m['id']}: {e}")
 
-    # 5. DB Upsert
+    # 5. DB Upsert (升級版：保留預測歷史)
     if picks:
         try:
             match_ids = [p['match_id'] for p in picks]
-            existing = supabase.table("aggregated_picks").select("id, match_id").in_("match_id", match_ids).execute().data
-            existing_map = {item['match_id']: item['id'] for item in existing}
+            # 這次不僅抓 id，連原本的資料都抓出來比對
+            existing = supabase.table("aggregated_picks").select("*").in_("match_id", match_ids).execute().data
+            existing_map = {item['match_id']: item for item in existing}
             
             for p in picks:
                 if p['match_id'] in existing_map:
-                    p['id'] = existing_map[p['match_id']]
+                    old_data = existing_map[p['match_id']]
+                    p['id'] = old_data['id']
+                    
+                    # 取出舊的歷史紀錄，沒有的話就是空陣列
+                    history = old_data.get('history', [])
+                    if not history:
+                        history = []
+                        
+                    # 判斷預測是否真的有改變 (例如讓分盤口變了，或是推薦隊伍變了)
+                    # 避免每 15 分鐘都塞一樣的廢話進歷史紀錄
+                    is_changed = (
+                        old_data.get('line_info') != p['line_info'] or 
+                        old_data.get('recommended_team_id') != p['recommended_team_id']
+                    )
+                    
+                    if is_changed:
+                        # 擷取舊預測的重點，打包成歷史紀錄
+                        old_timestamp = old_data.get('created_at', 'Unknown Time')
+                        
+                        # 找出舊預測推薦的隊伍代碼
+                        old_rec_id = old_data.get('recommended_team_id')
+                        old_rec_code = "HOME" if old_rec_id == m['home_team_id'] else "AWAY" # 這裡簡化處理，前端有完整 map
+                        
+                        history_entry = {
+                            "time": old_timestamp,
+                            "logic": old_data.get('spread_logic', ''),
+                            "line": old_data.get('line_info', ''),
+                            "team_id": old_rec_id
+                        }
+                        history.append(history_entry)
+                    
+                    # 把更新後的歷史紀錄寫回準備 upsert 的資料中
+                    p['history'] = history
             
             supabase.table("aggregated_picks").upsert(picks).execute()
-            print(f"✅ 完成！已更新 {len(picks)} 筆預測。")
+            print(f"✅ 完成！已更新 {len(picks)} 筆預測 (包含歷史軌跡)。")
         except Exception as e:
             print(f"❌ 寫入 Supabase 失敗: {e}")
     else:
