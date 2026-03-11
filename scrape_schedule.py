@@ -3,11 +3,11 @@ import time
 from datetime import datetime, timedelta
 from config import get_supabase_client
 
-# 改用 ESPN API (穩定、不擋 IP、含各節比分)
+# 改用 ESPN API (穩定、不擋 IP、含各節比分與盤口)
 ESPN_API_URL = "http://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"
 
 def get_team_map(supabase):
-    """建立球隊代碼對照表 (Code -> ID)，包含 ESPN 特殊代碼轉換"""
+    """建立球隊代碼對照表 (Code -> ID)"""
     mapping_fix = {
         'UTA': 'UTAH', 'NOP': 'NO', 'NYK': 'NY', 'SAS': 'SA', 'GSW': 'GS', 'WSH': 'WSH'
     }
@@ -25,12 +25,11 @@ def scrape_schedule():
     supabase = get_supabase_client()
     team_map = get_team_map(supabase)
     
-    # 🔥 修正 1：擴大抓取範圍到「過去 3 天」到「未來 3 天」
-    # 解決 UTC 時區切換導致美西晚場比賽被「提早遺忘」卡在第四節的問題
+    # 抓取範圍：過去 3 天到未來 3 天
     today = datetime.now()
     dates_to_scrape = [(today + timedelta(days=i)).strftime('%Y%m%d') for i in range(-3, 4)]
     
-    print(f"🕵️‍♂️ 啟動賽程更新 (來源: ESPN)，目標日期: {dates_to_scrape}")
+    print(f"🕵️‍♂️ 啟動賽程與盤口更新 (來源: ESPN)，目標日期: {dates_to_scrape}")
     
     total_processed = 0
 
@@ -69,7 +68,7 @@ def scrape_schedule():
                     h_id = team_map[home_abbr]
                     a_id = team_map[away_abbr]
 
-                    # 🔥 修正 2：涵蓋所有中場休息與節間狀態
+                    # 狀態判斷
                     espn_status = event['status']['type']['name']
                     if espn_status == 'STATUS_FINAL':
                         status = "STATUS_FINISHED"
@@ -84,18 +83,39 @@ def scrape_schedule():
                     h_score = int(home_comp['score']) if home_comp.get('score') else 0
                     a_score = int(away_comp['score']) if away_comp.get('score') else 0
                     
-                    # 處理各節比分 (Period Scores)
-                    # 加入安全檢查，避免 value 遺失
+                    # 處理各節比分
                     period_scores_json = None
                     if 'linescores' in home_comp and 'linescores' in away_comp:
                         h_lines = [int(x['value']) for x in home_comp['linescores'] if 'value' in x]
                         a_lines = [int(x['value']) for x in away_comp['linescores'] if 'value' in x]
-                        
                         if h_lines or a_lines:
-                            period_scores_json = {
-                                "home": h_lines,
-                                "away": a_lines
-                            }
+                            period_scores_json = {"home": h_lines, "away": a_lines}
+
+                    # 🔥 新增：抓取盤口資訊 (Vegas Odds)
+                    vegas_spread = None
+                    vegas_total = None
+                    odds_info = competition.get('odds')
+                    if odds_info and len(odds_info) > 0:
+                        odd_data = odds_info[0]
+                        vegas_total = odd_data.get('overUnder')
+                        details = odd_data.get('details', '')
+                        
+                        if details.upper() in ['EVEN', 'PICK', 'PK']:
+                            vegas_spread = 0.0
+                        elif details:
+                            parts = details.split(' ')
+                            if len(parts) >= 2:
+                                try:
+                                    fav_team = parts[0]
+                                    spread_val = float(parts[1])
+                                    # 如果 ESPN 讓分方是主隊，vegas_spread 記錄為該負值
+                                    # 如果讓分方是客隊，主隊的 spread 則為正值
+                                    if fav_team == home_abbr:
+                                        vegas_spread = spread_val
+                                    else:
+                                        vegas_spread = -spread_val
+                                except Exception as e:
+                                    pass
 
                     # 準備寫入資料
                     match_data = {
@@ -108,6 +128,12 @@ def scrape_schedule():
                         "away_score": a_score,
                         "period_scores": period_scores_json
                     }
+
+                    # 只有抓到盤口時才更新，避免把舊盤口洗掉
+                    if vegas_spread is not None:
+                        match_data["vegas_spread"] = vegas_spread
+                    if vegas_total is not None:
+                        match_data["vegas_total"] = vegas_total
 
                     # Upsert 邏輯
                     existing = supabase.table('matches').select('id')\

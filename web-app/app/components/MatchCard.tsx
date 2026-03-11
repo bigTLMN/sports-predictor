@@ -5,13 +5,11 @@ import { format } from 'date-fns';
 import { twMerge } from 'tailwind-merge';
 import Link from 'next/link';
 
-// 定義各節比分型別
 type PeriodScores = {
   home: number[];
   away: number[];
 };
 
-// 定義預測歷史紀錄的型別
 interface PickHistory {
   time: string;
   logic: string;
@@ -24,37 +22,75 @@ interface MatchCardProps {
   index: number;
 }
 
+// 🔥 動態盤口轉換器 (改用 Code 比對，徹底解決 ID 遺失導致的 undefined 問題)
+const getFormattedSpreadByCode = (homeSpreadVal: any, targetTeamCode: string, homeTeamCode: string) => {
+    if (homeSpreadVal === null || homeSpreadVal === undefined || homeSpreadVal === '') return 'PK';
+    
+    const spreadNum = parseFloat(String(homeSpreadVal));
+    if (isNaN(spreadNum) || spreadNum === 0) return 'PK';
+
+    const isHome = targetTeamCode === homeTeamCode;
+    
+    // 如果推薦的是客隊，就把主隊的盤口正負號反轉
+    const targetSpread = isHome ? spreadNum : -spreadNum;
+    
+    // 正數加上 + 號，負數自帶 - 號
+    return targetSpread > 0 ? `+${targetSpread}` : `${targetSpread}`;
+};
+
 export default function MatchCard({ pick, index }: MatchCardProps) {
   const m = pick.matches;
   
-  // 關鍵判斷：根據是否有 'recommended_team' 來決定是否顯示預測內容
   const hasPrediction = !!pick.recommended_team;
-
   const isFinished = m.status === 'STATUS_FINISHED' || m.status === 'STATUS_FINAL' || m.status === 'Final';
   const isLive = m.status === 'STATUS_IN_PROGRESS';
   
-  const spreadText = m.vegas_spread !== null 
+  // 提取球隊 Code，用來進行精準比對
+  const homeCode = m.home_team?.code;
+  const awayCode = m.away_team?.code;
+  const recCode = pick.recommended_team?.code;
+  const isCurrentHome = recCode === homeCode;
+  const currentRecIdStr = String(pick.recommended_team_id);
+
+  // 左上角 Vegas 標籤 (永遠顯示主隊真實盤口)
+  const vegasBadgeText = m.vegas_spread !== null && m.vegas_spread !== 0
     ? (m.vegas_spread > 0 ? `+${m.vegas_spread}` : m.vegas_spread) 
     : 'PK';
 
-  // 若無預測，信心度視為 0
   const isHighConfidence = hasPrediction && pick.confidence_score >= 80;
-
-  // 處理各節比分 (League Pass 風格)
   const periodScores = m.period_scores as PeriodScores | null;
   const showScoreboard = (isFinished || isLive) && periodScores;
-
-  // 計算總共幾節 (最少4節)
   const totalPeriods = periodScores ? Math.max(4, periodScores.home.length) : 4;
   
-  // 產生表頭
   const headers = Array.from({ length: totalPeriods }, (_, i) => {
     if (i < 4) return `Q${i + 1}`;
     return `OT${i - 3}`;
   });
 
-  // 取得並反轉歷史紀錄 (讓最新的舊預測排在最上面)
-  const pickHistory: PickHistory[] = pick.history ? [...pick.history].reverse() : [];
+  const fallbackLogo = "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg";
+
+  // 🔥 計算目前「正確帶有 +/- 的讓分」
+  const currentFormattedSpread = getFormattedSpreadByCode(m.vegas_spread, recCode, homeCode);
+  
+  // 🔥 過濾幽靈歷史紀錄，並推算歷史紀錄的球隊代號
+  const rawHistory: PickHistory[] = pick.history ? [...pick.history].reverse() : [];
+  const pickHistory = rawHistory.filter((hist) => {
+      if (hist.line === null || hist.line === 'None' || hist.line === undefined) return false;
+      if ((hist.line === '0' || hist.line === '0.0') && m.vegas_spread !== 0) return false;
+      
+      // 反推歷史紀錄的球隊 Code (如果 ID 跟當前推薦一樣就是 recCode，否則就是對手)
+      const histCode = String(hist.team_id) === currentRecIdStr 
+          ? recCode 
+          : (isCurrentHome ? awayCode : homeCode);
+          
+      const formattedHistSpread = getFormattedSpreadByCode(hist.line, histCode, homeCode);
+      
+      // 如果盤口跟球隊都沒變，就隱藏這筆歷史
+      if (formattedHistSpread === currentFormattedSpread && histCode === recCode) {
+          return false; 
+      }
+      return true;
+  });
 
   return (
     <motion.div
@@ -83,23 +119,26 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
             <div className="absolute top-0 left-0 bg-slate-900 text-white px-3 py-1.5 rounded-br-xl z-10 shadow-sm">
                 <div className="text-[9px] font-bold tracking-widest text-slate-400 uppercase mb-0.5">VEGAS</div>
                 <div className="text-xs font-black leading-none flex items-center gap-1">
-                <span>{m.home_team.code}</span>
-                <span className="text-yellow-400">{spreadText}</span>
+                <span>{homeCode}</span>
+                <span className="text-yellow-400">{vegasBadgeText}</span>
                 </div>
             </div>
 
             {/* Header: 對戰組合 */}
             <div className="pt-10 pb-2 px-4 flex justify-between items-center bg-gradient-to-b from-slate-50 to-white">
-                {/* 客隊 */}
                 <div className="flex flex-col items-center w-1/3 relative">
                     <div className="w-14 h-14 p-2 bg-white rounded-full shadow-sm border border-slate-100 mb-2 flex items-center justify-center">
-                        <img src={m.away_team.logo_url || '/placeholder.png'} className="w-full h-full object-contain" alt={m.away_team.code} />
+                        <img 
+                            src={m.away_team.logo_url || fallbackLogo} 
+                            className="w-full h-full object-contain" 
+                            alt={awayCode} 
+                            onError={(e) => { e.currentTarget.src = fallbackLogo; }}
+                        />
                     </div>
-                    <span className="font-bold text-slate-700">{m.away_team.code}</span>
+                    <span className="font-bold text-slate-700">{awayCode}</span>
                     {(isFinished || isLive) && <span className="text-xl font-black text-slate-900 mt-1">{m.away_score}</span>}
                 </div>
 
-                {/* VS / 時間 */}
                 <div className="flex flex-col items-center w-1/3">
                     <span className="text-[10px] font-black text-slate-300 tracking-widest">AT</span>
                     {isFinished ? (
@@ -111,12 +150,16 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                     )}
                 </div>
 
-                {/* 主隊 */}
                 <div className="flex flex-col items-center w-1/3 relative">
                     <div className="w-14 h-14 p-2 bg-white rounded-full shadow-sm border border-slate-100 mb-2 flex items-center justify-center">
-                        <img src={m.home_team.logo_url || '/placeholder.png'} className="w-full h-full object-contain" alt={m.home_team.code} />
+                        <img 
+                            src={m.home_team.logo_url || fallbackLogo} 
+                            className="w-full h-full object-contain" 
+                            alt={homeCode} 
+                            onError={(e) => { e.currentTarget.src = fallbackLogo; }}
+                        />
                     </div>
-                    <span className="font-bold text-slate-700">{m.home_team.code}</span>
+                    <span className="font-bold text-slate-700">{homeCode}</span>
                     {(isFinished || isLive) && <span className="text-xl font-black text-slate-900 mt-1">{m.home_score}</span>}
                 </div>
             </div>
@@ -137,14 +180,14 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                             </thead>
                             <tbody className="font-mono text-slate-500 font-medium">
                                 <tr className="border-b border-slate-50">
-                                    <td className="py-1 text-left font-bold text-slate-700">{m.away_team.code}</td>
+                                    <td className="py-1 text-left font-bold text-slate-700">{awayCode}</td>
                                     {Array.from({ length: totalPeriods }).map((_, i) => (
                                         <td key={i} className="py-1">{periodScores?.away[i] ?? '-'}</td>
                                     ))}
                                     <td className="py-1 font-black text-slate-900">{m.away_score}</td>
                                 </tr>
                                 <tr>
-                                    <td className="py-1 text-left font-bold text-slate-700">{m.home_team.code}</td>
+                                    <td className="py-1 text-left font-bold text-slate-700">{homeCode}</td>
                                     {Array.from({ length: totalPeriods }).map((_, i) => (
                                         <td key={i} className="py-1">{periodScores?.home[i] ?? '-'}</td>
                                     ))}
@@ -167,28 +210,31 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                 
                 {hasPrediction ? (
                     <>
-                        {/* 頂部小標題 */}
                         <div className="flex justify-between items-center mb-3 relative z-10">
                             <div className="flex items-center gap-2">
                                 <span className={twMerge("w-2 h-2 rounded-full animate-pulse", isHighConfidence ? "bg-blue-600" : "bg-slate-400")}></span>
                                 <span className={twMerge("text-[10px] font-black uppercase tracking-widest", isHighConfidence ? "text-blue-700" : "text-slate-400")}>AI Analysis</span>
                             </div>
-
                             <div className="flex items-center gap-1 text-[9px] font-black uppercase text-slate-400 bg-white/60 px-2 py-1 rounded border border-slate-200/60 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all shadow-sm">
                                 View Analysis
                                 <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path></svg>
                             </div>
                         </div>
 
-                        {/* 🔥 核心預測 (Latest Pick) - 移除落落長的 spread_logic */}
+                        {/* 🔥 核心預測 (Latest Pick) */}
                         <div className="flex justify-between items-center mb-3 relative z-10">
                             <div className="flex items-center gap-3">
-                                <img src={pick.recommended_team.logo_url} className="w-8 h-8 object-contain drop-shadow-sm" />
+                                <img 
+                                    src={pick.recommended_team.logo_url || fallbackLogo} 
+                                    className="w-8 h-8 object-contain drop-shadow-sm" 
+                                    onError={(e) => { e.currentTarget.src = fallbackLogo; }}
+                                />
                                 <div>
                                     <div className="text-base font-black text-slate-800 leading-none flex items-center gap-1.5">
-                                        {pick.recommended_team.code}
+                                        {recCode}
+                                        {/* 🔥 完美對應正負號 */}
                                         <span className="text-sm font-bold text-blue-600 bg-blue-100/50 px-1.5 py-0.5 rounded">
-                                            {pick.line_info || spreadText}
+                                            {currentFormattedSpread}
                                         </span>
                                     </div>
                                     <div className="text-[9px] font-bold text-blue-500 mt-1 uppercase tracking-wider flex items-center gap-1">
@@ -198,7 +244,6 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                                 </div>
                             </div>
                             
-                            {/* 勝率小進度條 */}
                             <div className="flex flex-col items-end w-16 md:w-20 shrink-0">
                                 <div className={twMerge("text-lg md:text-xl font-black", isHighConfidence ? "text-blue-600" : "text-slate-600")}>
                                     {pick.confidence_score}%
@@ -212,19 +257,24 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                             </div>
                         </div>
 
-                        {/* 🔥 預測時間線 (Prediction History) - 移除舊紀錄的邏輯文字 */}
+                        {/* 🔥 預測時間線 (Prediction History) */}
                         {pickHistory.length > 0 && (
                             <div className="mt-1 pt-2 border-t border-slate-200/60 border-dashed relative z-10">
                                 <div className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">Timeline History</div>
                                 <div className="space-y-1.5 max-h-24 overflow-y-auto no-scrollbar">
                                     {pickHistory.map((hist, idx) => {
-                                        const isHome = hist.team_id === m.home_team_id;
-                                        const teamCode = isHome ? m.home_team.code : m.away_team.code;
+                                        // 完美判斷歷史紀錄的隊伍代號與對應盤口
+                                        const histCode = String(hist.team_id) === currentRecIdStr 
+                                            ? recCode 
+                                            : (isCurrentHome ? awayCode : homeCode);
+                                            
+                                        const formattedHistSpread = getFormattedSpreadByCode(hist.line, histCode, homeCode);
+                                        
                                         return (
                                             <div key={idx} className="border-l-2 border-slate-300 pl-2 opacity-60 hover:opacity-100 transition-opacity">
                                                 <div className="flex justify-between items-center">
                                                     <span className="text-[11px] font-bold text-slate-600">
-                                                        {teamCode} {hist.line}
+                                                        {histCode} {formattedHistSpread}
                                                     </span>
                                                     <span className="text-[9px] font-mono text-slate-400">
                                                         {format(new Date(hist.time), 'MM/dd HH:mm')}
@@ -239,7 +289,6 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
 
                         <div className="w-full h-px bg-slate-200/60 my-2"></div>
 
-                        {/* 大小分預測 */}
                         <div className="flex justify-between items-center relative z-10">
                             <div className="flex items-center gap-1.5">
                                 <span className="text-[10px] font-bold text-slate-400 uppercase">Total</span>
@@ -263,7 +312,6 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                 </div>
             </div>
             
-            {/* Footer: 結果狀態 */}
             {hasPrediction && (pick.spread_outcome || pick.total_outcome) && (
                 <div className="flex border-t border-slate-100 divide-x divide-slate-100 bg-white">
                     <div className={`flex-1 py-2 flex flex-col items-center justify-center ${pick.spread_outcome === 'WIN' ? 'bg-green-50/50' : pick.spread_outcome === 'LOSS' ? 'bg-red-50/50' : ''}`}>
