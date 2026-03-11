@@ -25,9 +25,10 @@ def scrape_schedule():
     supabase = get_supabase_client()
     team_map = get_team_map(supabase)
     
-    # 設定抓取範圍：昨天、今天、明天、後天
+    # 🔥 修正 1：擴大抓取範圍到「過去 3 天」到「未來 3 天」
+    # 解決 UTC 時區切換導致美西晚場比賽被「提早遺忘」卡在第四節的問題
     today = datetime.now()
-    dates_to_scrape = [(today + timedelta(days=i)).strftime('%Y%m%d') for i in range(-1, 3)]
+    dates_to_scrape = [(today + timedelta(days=i)).strftime('%Y%m%d') for i in range(-3, 4)]
     
     print(f"🕵️‍♂️ 啟動賽程更新 (來源: ESPN)，目標日期: {dates_to_scrape}")
     
@@ -68,12 +69,14 @@ def scrape_schedule():
                     h_id = team_map[home_abbr]
                     a_id = team_map[away_abbr]
 
-                    # 狀態判斷
+                    # 🔥 修正 2：涵蓋所有中場休息與節間狀態
                     espn_status = event['status']['type']['name']
                     if espn_status == 'STATUS_FINAL':
                         status = "STATUS_FINISHED"
-                    elif espn_status == 'STATUS_IN_PROGRESS':
+                    elif espn_status in ['STATUS_IN_PROGRESS', 'STATUS_HALFTIME', 'STATUS_END_PERIOD']:
                         status = "STATUS_IN_PROGRESS"
+                    elif espn_status in ['STATUS_POSTPONED', 'STATUS_CANCELED']:
+                        status = "STATUS_POSTPONED"
                     else:
                         status = "STATUS_SCHEDULED"
 
@@ -81,12 +84,12 @@ def scrape_schedule():
                     h_score = int(home_comp['score']) if home_comp.get('score') else 0
                     a_score = int(away_comp['score']) if away_comp.get('score') else 0
                     
-                    # 🔥 處理各節比分 (Period Scores)
-                    # ESPN 格式: linescores: [{'value': 25}, {'value': 30}...]
+                    # 處理各節比分 (Period Scores)
+                    # 加入安全檢查，避免 value 遺失
                     period_scores_json = None
                     if 'linescores' in home_comp and 'linescores' in away_comp:
-                        h_lines = [int(x['value']) for x in home_comp['linescores']]
-                        a_lines = [int(x['value']) for x in away_comp['linescores']]
+                        h_lines = [int(x['value']) for x in home_comp['linescores'] if 'value' in x]
+                        a_lines = [int(x['value']) for x in away_comp['linescores'] if 'value' in x]
                         
                         if h_lines or a_lines:
                             period_scores_json = {
@@ -103,7 +106,7 @@ def scrape_schedule():
                         "status": status,
                         "home_score": h_score,
                         "away_score": a_score,
-                        "period_scores": period_scores_json  # ✅ 新增這行
+                        "period_scores": period_scores_json
                     }
 
                     # Upsert 邏輯
