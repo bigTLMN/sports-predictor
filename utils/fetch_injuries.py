@@ -18,18 +18,28 @@ def fetch_injury_report():
         rows = soup.find_all('tr', class_='Table__TR')
         for row in rows:
             cols = row.find_all('td')
-            if len(cols) >= 4:
+            # 確保有抓到說明欄位 (第 5 個欄位)
+            if len(cols) >= 5:
                 try:
                     name_tag = cols[0].find('a')
                     if name_tag:
                         name = name_tag.text.strip()
-                        status = cols[3].text.strip() 
+                        status = cols[3].text.strip().lower()
+                        desc = cols[4].text.lower() # 把說明文字轉小寫，方便搜尋
                         
-                        # 🔥 升級：給予不同的戰力折損係數
-                        if "Out" in status or "Expected to miss" in status or "Doubtful" in status:
-                            injuries[name] = 1.0  # 100% 缺席
-                        elif "Questionable" in status or "Day-To-Day" in status:
-                            injuries[name] = 0.5  # 50% 戰力折損
+                        # 🔥 終極升級：透過「說明欄位 (Col[4])」的關鍵字，精準給予戰力折損
+                        if "out" in status or "expected to miss" in desc or "will be rested" in desc:
+                            injuries[name] = 1.0  # 100% 缺席 (扣全額戰力)
+                            
+                        elif "day-to-day" in status:
+                            if "doubtful" in desc:
+                                injuries[name] = 0.75 # 大概率不打 (扣 75% 戰力)
+                            elif "questionable" in desc:
+                                injuries[name] = 0.5  # 50/50 機率 (扣一半戰力)
+                            elif "probable" in desc:
+                                injuries[name] = 0.0  # 大概率上場 (🔥 關鍵：不扣戰力！)
+                            else:
+                                injuries[name] = 0.5  # 找不到關鍵字，預設扣一半
                 except:
                     continue
         
