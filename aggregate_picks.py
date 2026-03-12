@@ -3,7 +3,7 @@ import numpy as np
 import joblib
 import os
 import json
-import difflib
+import re # 🔥 新增：正則表達式，用來清理字串
 from datetime import datetime, timedelta
 from supabase import create_client
 from config import get_supabase_client
@@ -34,7 +34,6 @@ try:
         print(f"   ⚠️ 未找到 rolling_config.pkl，使用預設窗口: {ROLLING_WINDOWS}")
 
     # 🔥 載入球員戰力庫 (修正為根目錄讀取)
-    # 這裡假設你已經執行過 utils/export_impact_data.py
     player_impact_map = joblib.load('player_impact_map.pkl')
     team_rosters = joblib.load('team_rosters.pkl')
     print(f"   ✅ 戰力庫載入成功 (球員數: {len(player_impact_map)})")
@@ -50,11 +49,22 @@ BASE_STATS_COLS = [
     'reboundsTotal', 'assists', 'steals', 'blocks', 'turnovers', 
     'plusMinusPoints', 'pointsInThePaint', 'teamScore', 
     'eFG_Percentage', 'TS_Percentage', 'RestDays',
-    'roster_impact_score' # 🔥 新增
+    'roster_impact_score' 
 ]
 
+def normalize_name(name):
+    """🔥 新增：標準化球員姓名 (取代危險的模糊比對)"""
+    if not isinstance(name, str):
+        return ""
+    name = name.lower()
+    # 去除標點符號 (如 O'Neale -> oneale)
+    name = re.sub(r"[^\w\s]", "", name)
+    # 去除常見後綴 (jr, sr, ii, iii)
+    name = re.sub(r"\s+(jr|sr|ii|iii|iv)$", "", name)
+    return name.strip()
+
 def calculate_live_impact(team_id, injury_report):
-    """計算即時戰力分數：拿完整陣容扣除傷兵 (支援模糊比對與機率扣分)"""
+    """計算即時戰力分數：拿完整陣容扣除傷兵 (改用精準正規化比對)"""
     if team_id not in team_rosters:
         return 100.0, [], 0.0
     
@@ -63,28 +73,26 @@ def calculate_live_impact(team_id, injury_report):
     missing_impact = 0.0
     missing_players = []
     
-    # 取得 ESPN 傷兵名單中的所有名字
-    injured_names = list(injury_report.keys())
+    # 🔥 預先清理 ESPN 抓下來的傷兵名單 key
+    normalized_injury_report = {normalize_name(k): v for k, v in injury_report.items()}
     
     for player in full_roster:
         impact = player_impact_map.get(player, 0)
         
-        # 🔥 升級：使用模糊比對 (Fuzzy Matching)，相似度 >= 0.8 就算命中
-        # 可以解決 "Kelly Oubre Jr." vs "Kelly Oubre" 的問題
-        matches = difflib.get_close_matches(player, injured_names, n=1, cutoff=0.8)
+        # 標準化我們資料庫中的球員名字
+        norm_player = normalize_name(player)
         
-        if matches:
-            matched_name = matches[0]
-            miss_prob = injury_report[matched_name] # 取得 1.0 或 0.5
+        # 🔥 改用「正規化後的精準比對」，徹底消滅 Jovic/Jokic 誤判事件
+        if norm_player in normalized_injury_report:
+            miss_prob = normalized_injury_report[norm_player] # 取得 1.0, 0.75, 0.5 或 0.0
             
-            # 計算折損的戰力
             impact_lost = impact * miss_prob
             missing_impact += impact_lost
             current_impact += (impact - impact_lost)
             
-            # 只有主力才顯示在文字戰報中
-            if impact > 10:
-                status_label = "OUT" if miss_prob == 1.0 else "GTD"
+            # 只有主力且真的有扣到戰力 (miss_prob > 0) 才顯示在文字戰報中
+            if impact > 10 and miss_prob > 0:
+                status_label = "OUT" if miss_prob >= 0.75 else "GTD"
                 missing_players.append(f"{player}({status_label})")
         else:
             current_impact += impact
@@ -173,10 +181,8 @@ def get_latest_stats():
         if df['win'].isnull().any(): df = df.dropna(subset=['win'])
         df['win_numeric'] = df['win'].astype(int)
         
-        # 暫時給預設值，後面用即時運算覆蓋
         df['roster_impact_score'] = 100.0
 
-        # 多重滾動平均
         cols_to_roll = [c for c in BASE_STATS_COLS if c in df.columns and c != 'RestDays']
         cols_to_roll.append('RestDays')
 
@@ -215,24 +221,20 @@ def prepare_features(h_id, a_id, stats, h_impact, a_impact, h_avg_impact, a_avg_
     
     row = {'is_home': 1}
     
-    # 1. Diff & Sum
     for key in h.keys():
         if key in a:
             row[f"diff_{key}"] = h[key] - a[key]
             row[f"sum_{key}"] = h[key] + a[key]
             
-    # 2. 🔥 Impact 特徵
     row['roster_impact_score'] = h_impact 
     row['diff_roster_impact'] = h_impact - a_impact
     
-    # 計算戰力缺損
     row['missing_impact_h'] = h_impact - h_avg_impact
     row['missing_impact_a'] = a_impact - a_avg_impact
     row['diff_missing_impact'] = row['missing_impact_h'] - row['missing_impact_a']
 
     df = pd.DataFrame([row])
     
-    # 3. 補齊特徵
     for c in features_spread: 
         if c not in df.columns: df[c] = 0
     for c in features_total: 
@@ -245,7 +247,6 @@ def run():
     stats = get_latest_stats()
     if not stats: return
 
-    # 🔥 爬取即時傷兵
     injury_report = fetch_injury_report() 
 
     now = datetime.utcnow()
@@ -278,14 +279,12 @@ def run():
             h_id = int(m['home_team']['nba_team_id'])
             a_id = int(m['away_team']['nba_team_id'])
             
-            # 🔥 1. 計算即時戰力
             h_impact, h_missing_names, _ = calculate_live_impact(h_id, injury_report)
             a_impact, a_missing_names, _ = calculate_live_impact(a_id, injury_report)
             
             h_avg_impact = stats[h_id].get('rolling_10_roster_impact_score', 100)
             a_avg_impact = stats[a_id].get('rolling_10_roster_impact_score', 100)
 
-            # 2. 準備特徵
             X_spr, X_tot, raw_df = prepare_features(
                 h_id, a_id, stats, 
                 h_impact, a_impact, 
@@ -293,12 +292,10 @@ def run():
             )
             if X_spr is None: continue
 
-            # 3. AI 預測
             win_prob = float(model_win.predict_proba(X_spr)[0][1])
             pred_margin = float(model_spread.predict(X_spr)[0]) 
             pred_total = float(model_total.predict(X_tot)[0])
 
-            # 4. 決策邏輯
             vegas_spread = m.get('vegas_spread', 0.0) or 0.0
             vegas_total = m.get('vegas_total', 225.0) or 225.0
             
@@ -326,21 +323,18 @@ def run():
                     opp_code = m['home_team']['code']
                     is_rec_home = False
 
-            # 信心度與大小分
             edge = abs(predicted_cover_margin)
             conf = min(50 + int(edge * 5), 95)
             
             ou_pick = "OVER" if pred_total > vegas_total else "UNDER"
             ou_conf = min(50 + int(abs(pred_total - vegas_total) * 3), 90)
 
-            # 生成 AI 分析
             analysis_text = generate_insight(
                 rec_code, opp_code, is_rec_home, raw_df,
                 h_missing_names, a_missing_names,
                 m['home_team']['code'], m['away_team']['code']
             )
 
-            # 寫入
             picks.append({
                 "match_id": m['id'],
                 "predicted_winner_id": m['home_team_id'] if win_prob > 0.5 else m['away_team_id'],
@@ -360,11 +354,9 @@ def run():
         except Exception as e:
             print(f"⚠️ Error {m['id']}: {e}")
 
-    # 5. DB Upsert (升級版：保留預測歷史)
     if picks:
         try:
             match_ids = [p['match_id'] for p in picks]
-            # 這次不僅抓 id，連原本的資料都抓出來比對
             existing = supabase.table("aggregated_picks").select("*").in_("match_id", match_ids).execute().data
             existing_map = {item['match_id']: item for item in existing}
             
@@ -373,25 +365,18 @@ def run():
                     old_data = existing_map[p['match_id']]
                     p['id'] = old_data['id']
                     
-                    # 取出舊的歷史紀錄，沒有的話就是空陣列
                     history = old_data.get('history', [])
                     if not history:
                         history = []
                         
-                    # 判斷預測是否真的有改變 (例如讓分盤口變了，或是推薦隊伍變了)
-                    # 避免每 15 分鐘都塞一樣的廢話進歷史紀錄
                     is_changed = (
                         old_data.get('line_info') != p['line_info'] or 
                         old_data.get('recommended_team_id') != p['recommended_team_id']
                     )
                     
                     if is_changed:
-                        # 擷取舊預測的重點，打包成歷史紀錄
                         old_timestamp = old_data.get('created_at', 'Unknown Time')
-                        
-                        # 找出舊預測推薦的隊伍代碼
                         old_rec_id = old_data.get('recommended_team_id')
-                        old_rec_code = "HOME" if old_rec_id == m['home_team_id'] else "AWAY" # 這裡簡化處理，前端有完整 map
                         
                         history_entry = {
                             "time": old_timestamp,
@@ -401,7 +386,6 @@ def run():
                         }
                         history.append(history_entry)
                     
-                    # 把更新後的歷史紀錄寫回準備 upsert 的資料中
                     p['history'] = history
             
             supabase.table("aggregated_picks").upsert(picks).execute()
