@@ -9,7 +9,7 @@ on:
         default: 'true'
 
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/30 * * * *'
   
   push:
     branches:
