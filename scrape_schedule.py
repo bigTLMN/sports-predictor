@@ -1,5 +1,6 @@
 import requests
 import time
+import random
 from datetime import datetime, timedelta
 from config import get_supabase_client
 
@@ -21,6 +22,15 @@ def get_team_map(supabase):
                 team_map[espn_code] = t['id']
     return team_map
 
+# 🔥 防護罩：安全整數轉換器 (防止空字串或浮點數字串導致程式崩潰)
+def safe_int(val):
+    try:
+        if val is None or str(val).strip() == '': 
+            return 0
+        return int(float(val))
+    except:
+        return 0
+
 def scrape_schedule():
     supabase = get_supabase_client()
     team_map = get_team_map(supabase)
@@ -38,7 +48,14 @@ def scrape_schedule():
         print(f"   -> 正在檢查 {display_date} ...")
         
         try:
-            resp = requests.get(ESPN_API_URL, params={'dates': date_str}, timeout=10)
+            # 🔥 快取剋星 (Cache Buster)：加上隨機時間戳，強迫 ESPN CDN 給我們最新鮮的資料！
+            cache_buster = int(time.time() * 1000) + random.randint(1, 1000)
+            params = {
+                'dates': date_str,
+                '_': cache_buster 
+            }
+            
+            resp = requests.get(ESPN_API_URL, params=params, timeout=15)
             if resp.status_code != 200:
                 print(f"      ⚠️ API 錯誤: {resp.status_code}")
                 continue
@@ -55,7 +72,6 @@ def scrape_schedule():
                     competition = event['competitions'][0]
                     competitors = competition['competitors']
                     
-                    # 抓取主客隊資料
                     home_comp = next(filter(lambda x: x['homeAway'] == 'home', competitors))
                     away_comp = next(filter(lambda x: x['homeAway'] == 'away', competitors))
                     
@@ -68,30 +84,30 @@ def scrape_schedule():
                     h_id = team_map[home_abbr]
                     a_id = team_map[away_abbr]
 
-                    # 狀態判斷
+                    # 狀態判斷 (涵蓋更多可能的中斷或延遲狀態)
                     espn_status = event['status']['type']['name']
                     if espn_status == 'STATUS_FINAL':
                         status = "STATUS_FINISHED"
-                    elif espn_status in ['STATUS_IN_PROGRESS', 'STATUS_HALFTIME', 'STATUS_END_PERIOD']:
+                    elif any(s in espn_status for s in ['IN_PROGRESS', 'HALFTIME', 'END_PERIOD', 'DELAY']):
                         status = "STATUS_IN_PROGRESS"
                     elif espn_status in ['STATUS_POSTPONED', 'STATUS_CANCELED']:
                         status = "STATUS_POSTPONED"
                     else:
                         status = "STATUS_SCHEDULED"
 
-                    # 處理總分
-                    h_score = int(home_comp['score']) if home_comp.get('score') else 0
-                    a_score = int(away_comp['score']) if away_comp.get('score') else 0
+                    # 🔥 安全處理總分
+                    h_score = safe_int(home_comp.get('score'))
+                    a_score = safe_int(away_comp.get('score'))
                     
-                    # 處理各節比分
+                    # 🔥 安全處理各節比分
                     period_scores_json = None
                     if 'linescores' in home_comp and 'linescores' in away_comp:
-                        h_lines = [int(x['value']) for x in home_comp['linescores'] if 'value' in x]
-                        a_lines = [int(x['value']) for x in away_comp['linescores'] if 'value' in x]
+                        h_lines = [safe_int(x.get('value')) for x in home_comp.get('linescores', []) if 'value' in x]
+                        a_lines = [safe_int(x.get('value')) for x in away_comp.get('linescores', []) if 'value' in x]
                         if h_lines or a_lines:
                             period_scores_json = {"home": h_lines, "away": a_lines}
 
-                    # 🔥 新增：抓取盤口資訊 (Vegas Odds)
+                    # 抓取盤口資訊
                     vegas_spread = None
                     vegas_total = None
                     odds_info = competition.get('odds')
@@ -108,16 +124,13 @@ def scrape_schedule():
                                 try:
                                     fav_team = parts[0]
                                     spread_val = float(parts[1])
-                                    # 如果 ESPN 讓分方是主隊，vegas_spread 記錄為該負值
-                                    # 如果讓分方是客隊，主隊的 spread 則為正值
                                     if fav_team == home_abbr:
                                         vegas_spread = spread_val
                                     else:
                                         vegas_spread = -spread_val
-                                except Exception as e:
+                                except Exception:
                                     pass
 
-                    # 準備寫入資料
                     match_data = {
                         "date": display_date,
                         "start_time": event['date'],
@@ -129,13 +142,11 @@ def scrape_schedule():
                         "period_scores": period_scores_json
                     }
 
-                    # 只有抓到盤口時才更新，避免把舊盤口洗掉
                     if vegas_spread is not None:
                         match_data["vegas_spread"] = vegas_spread
                     if vegas_total is not None:
                         match_data["vegas_total"] = vegas_total
 
-                    # Upsert 邏輯
                     existing = supabase.table('matches').select('id')\
                         .eq('date', display_date)\
                         .eq('home_team_id', h_id)\
