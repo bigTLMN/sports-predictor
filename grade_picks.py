@@ -7,7 +7,6 @@ def grade_picks():
 
     # 1. 抓取所有已完賽的比賽
     try:
-        # 🔥 修復 1：加入關聯查詢 (Join)，抓取隊伍代號 (code)，避免 KeyError
         matches = supabase.table("matches")\
             .select("*, home_team:teams!matches_home_team_id_fkey(code), away_team:teams!matches_away_team_id_fkey(code)")\
             .in_("status", ["STATUS_FINAL", "STATUS_FINISHED", "Final"])\
@@ -26,8 +25,8 @@ def grade_picks():
 
     # 2. 抓取所有尚未結算的預測
     try:
-        # 抓取 spread_outcome 為空的預測
-        picks = supabase.table("aggregated_picks").select("*").is_("spread_outcome", "null").execute().data
+        # 🔥 修正 1：改為「只要 spread 或 total 有一個沒結算，就抓出來」
+        picks = supabase.table("aggregated_picks").select("*").or_("spread_outcome.is.null,total_outcome.is.null").execute().data
     except Exception as e:
         print(f"❌ 查詢預測失敗: {e}")
         return
@@ -57,7 +56,8 @@ def grade_picks():
         should_update = False
 
         # --- A. 結算讓分盤 (Spread) ---
-        if pick.get('line_info'):
+        # 如果還沒結算才算
+        if pick.get('spread_outcome') is None and pick.get('line_info'):
             try:
                 line_val = float(pick['line_info'])
                 rec_team_id = pick['recommended_team_id']
@@ -65,12 +65,10 @@ def grade_picks():
                 # 計算主隊贏分
                 home_margin = home_score - away_score
                 
-                # 如果 AI 推薦主隊
                 if rec_team_id == match['home_team_id']:
                     if (home_margin + line_val) > 0: result = "WIN"
                     elif (home_margin + line_val) < 0: result = "LOSS"
                     else: result = "PUSH"
-                # 如果 AI 推薦客隊
                 else:
                     if (home_margin + line_val) > 0: result = "LOSS" 
                     elif (home_margin + line_val) < 0: result = "WIN"
@@ -82,10 +80,11 @@ def grade_picks():
                 print(f"   ⚠️ Spread Error ID {pick['id']}: {e}")
 
         # --- B. 結算大小分 (Total) ---
-        if pick.get('ou_pick') and pick.get('ou_line'):
+        # 🔥 修正 2：直接去找 match['vegas_total'] 當作盤口依據
+        if pick.get('total_outcome') is None and pick.get('ou_pick') and match.get('vegas_total'):
             try:
                 pick_type = pick['ou_pick']
-                line_val = float(pick['ou_line'])
+                line_val = float(match['vegas_total'])
                 total_score = home_score + away_score
                 
                 result = "PUSH"
@@ -104,7 +103,7 @@ def grade_picks():
             try:
                 supabase.table("aggregated_picks").update(updates).eq("id", pick['id']).execute()
                 updates_count += 1
-                # 🔥 修復 2：這裡現在可以安全地存取 home_team code 了
+                
                 h_code = match['home_team']['code'] if match.get('home_team') else 'HOME'
                 a_code = match['away_team']['code'] if match.get('away_team') else 'AWAY'
                 
