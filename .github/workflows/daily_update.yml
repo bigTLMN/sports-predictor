@@ -1,7 +1,6 @@
 name: NBA Schedule & Odds Monitor
 
 on:
-  # 1. 手動觸發
   workflow_dispatch:
     inputs:
       force_predict:
@@ -9,17 +8,12 @@ on:
         required: false
         default: 'true'
 
-  # 2. 定時排程 (UTC 時間，台灣時間 = UTC + 8)
   schedule:
-    # 🌟 [極速黃金時段] 台灣 06:00 ~ 14:55 (NBA 密集開打與賽前異動)
-    # 對應 UTC: 22,23 點以及 0~6 點 -> 每 5 分鐘狂刷一次 (GitHub 支援的極限)
+    # 🌟 [極速黃金時段] 每 5 分鐘狂刷一次
     - cron: '*/5 22,23,0-6 * * *'
-    
-    # 💤 [常規巡邏時段] 台灣 15:00 ~ 隔天 05:00 (休賽或半夜，含 22:00 初盤)
-    # 對應 UTC: 07:00~21:00 -> 每 30 分鐘刷一次 (保持對早期盤口的敏銳度)
+    # 💤 [常規巡邏時段] 每 30 分鐘刷一次
     - cron: '*/30 7-21 * * *'
   
-  # 3. 代碼推送時自動觸發 (可選)
   push:
     branches:
       - main
@@ -37,24 +31,27 @@ jobs:
       SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
       KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
       KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
-      # 如果你的程式有用到 CHEAT_MODE
       CHEAT_MODE: false 
 
     steps:
+      # 🔥 致命修復 1：升級 Checkout 並強制綁定 Token，打破 128 權限卡死問題
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.9'
+          cache: 'pip' # 🔥 加速套件安裝
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Schedule & Odds Scraper (Always Run)
+      - name: [Always Run] Fetch Schedule, Odds & Live Scores
         run: |
           echo "🏀 Fetching Schedule & Odds..."
           python scrape_schedule.py
@@ -62,52 +59,37 @@ jobs:
           echo "🏆 Grading Past Picks..."
           python grade_picks.py
 
-      - name: Run AI Prediction Pipeline (Only at 22:00 CST or Manual Trigger)
+      - name: [Conditional] Run Heavy AI Pipeline (Only at 22:00)
         run: |
-          # 取得當前小時 (UTC)
           CURRENT_HOUR=$(date -u +%H)
           echo "Current UTC Hour: $CURRENT_HOUR"
           
-          # 判斷邏輯：UTC 14點 (台22點) 或 手動觸發
           if [ "$CURRENT_HOUR" == "14" ] || [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "🚀 It's 22:00 CST (or triggered manually)! Starting AI Prediction Pipeline..."
-            
-            # 1. 下載數據 (確保包含 PlayerStatistics.csv)
-            echo "📥 Updating Data from Kaggle..."
+            echo "🚀 It's 22:00 CST! Starting Heavy Training..."
             python fetch_kaggle_data.py
-
-            # 2. 🔥 新增：建立球員影響力歷史特徵 (給訓練用)
-            echo "🏗️ Building Roster Impact Features..."
             python build_player_features.py
-
-            # 3. 訓練模型
-            echo "🧠 Training Model..."
             python train_model.py
-            
-            # 4. 🔥 新增：匯出球員戰力庫 (給預測用)
-            echo "📊 Exporting Player Impact Maps..."
             python utils/export_impact_data.py
-
-            # 5. 執行預測 (含傷兵爬蟲)
-            echo "🔮 Generating Picks..."
-            python aggregate_picks.py
-            
           else
-            echo "💤 It's not 22:00 CST yet. Skipping Prediction & Data Update."
-            echo "✅ Only Schedule, Odds & Grading were updated."
+            echo "💤 Not 22:00 CST. Skipping heavy training."
           fi
+
+      # 🔥 致命修復 2：把 AI 預測獨立出來！確保每 5 分鐘都能即時追蹤傷兵與盤口
+      - name: [Always Run] Generate Live Predictions
+        run: |
+          echo "🔮 Generating Live Picks..."
+          python aggregate_picks.py
 
       - name: Commit and Push Results
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           
-          # 加入所有變更 (包含 .pkl, .csv 等)
           git add .
           
           if git diff --staged --quiet; then
-            echo "No changes to commit."
+            echo "✅ No changes to commit."
           else
-            git commit -m "🤖 Auto-update: Schedule, Odds & AI Picks [Skip CI]"
+            git commit -m "🤖 Auto-update: Odds, Injuries & Live Scores [Skip CI]"
             git push
           fi
