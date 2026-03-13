@@ -81,14 +81,18 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           
-          # 🔥 終極殺招 1：強制把 data 資料夾下的 CSV 加入存檔，留給其他時間的排程使用
-          git add -f data/*.csv || true
+          # 🧹 清道夫：刪除超過 100MB 的怪物檔案，避免撐爆 GitHub 限制
+          rm -f data/PlayerStatistics.csv
+          
+          # 🔥 確保輕巧且必備的 TeamStatistics.csv 被強制加入
+          git add -f data/TeamStatistics.csv || true
+          
+          # 加入其他所有變更 (包含 .pkl 模型與預測結果)
           git add .
           
           if git diff --staged --quiet; then
             echo "✅ No changes to commit."
           else
-            # 🔥 終極殺招 2：移除了會殺死 30 分鐘排程的 [Skip CI] 咒語
             git commit -m "🤖 Auto-update: Schedule, Odds, Picks & CSV Data"
             git push
           fi
