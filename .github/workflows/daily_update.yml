@@ -47,7 +47,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 🔥 移除了中括號，改用雙引號包裝，徹底解決 YAML 解析錯誤
       - name: "Fetch Schedule, Odds & Live Scores"
         run: |
           echo "🏀 Fetching Schedule & Odds..."
@@ -62,13 +61,14 @@ jobs:
           echo "Current UTC Hour: $CURRENT_HOUR"
           
           if [ "$CURRENT_HOUR" == "14" ] || [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "🚀 It's 22:00 CST! Starting Heavy Training..."
+            echo "🚀 It's 22:00 CST! Starting Heavy Training & Data Update..."
+            # 🔥 每天只在這裡下載一次最新數據
             python fetch_kaggle_data.py
             python build_player_features.py
             python train_model.py
             python utils/export_impact_data.py
           else
-            echo "💤 Not 22:00 CST. Skipping heavy training."
+            echo "💤 Not 22:00 CST. Skipping heavy training and downloading."
           fi
 
       - name: "Generate Live Predictions"
@@ -81,11 +81,14 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           
+          # 🔥 終極殺招 1：強制把 data 資料夾下的 CSV 加入存檔，留給其他時間的排程使用
+          git add -f data/*.csv || true
           git add .
           
           if git diff --staged --quiet; then
             echo "✅ No changes to commit."
           else
-            git commit -m "🤖 Auto-update: Odds, Injuries & Live Scores [Skip CI]"
+            # 🔥 終極殺招 2：移除了會殺死 30 分鐘排程的 [Skip CI] 咒語
+            git commit -m "🤖 Auto-update: Schedule, Odds, Picks & CSV Data"
             git push
           fi
