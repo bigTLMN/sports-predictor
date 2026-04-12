@@ -1,1 +1,2 @@
-https://docs.google.com/spreadsheets/d/1ktNgN1TL0nuis9l3AGxH7a0ys_Go98loYP-J4Fh6m94/edit?usp=sharing
+- [系統架構說明](doc/系統架構說明.md)
+- [Google 試算表](https://docs.google.com/spreadsheets/d/1ktNgN1TL0nuis9l3AGxH7a0ys_Go98loYP-J4Fh6m94/edit?usp=sharing)
