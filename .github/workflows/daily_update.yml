@@ -8,14 +8,6 @@ on:
         required: false
         default: 'true'
 
-  schedule:
-    - cron: '*/30 * * * *'
-  
-  push:
-    branches:
-      - main
-      - master
-
 permissions:
   contents: write
 
