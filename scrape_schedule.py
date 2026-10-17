@@ -2,18 +2,18 @@ import requests
 import time
 import random
 from datetime import datetime, timedelta
-from config import get_supabase_client
+import sqlite_store
 
 # 改用 ESPN API (穩定、不擋 IP、含各節比分與盤口)
 ESPN_API_URL = "http://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"
 
-def get_team_map(supabase):
+def get_team_map(conn):
     """建立球隊代碼對照表 (Code -> ID)"""
     mapping_fix = {
         'UTA': 'UTAH', 'NOP': 'NO', 'NYK': 'NY', 'SAS': 'SA', 'GSW': 'GS', 'WSH': 'WSH'
     }
-    
-    teams = supabase.table('teams').select('id, code').execute().data
+
+    teams = conn.execute("SELECT id, code FROM teams").fetchall()
     team_map = {}
     for t in teams:
         team_map[t['code']] = t['id']
@@ -21,6 +21,13 @@ def get_team_map(supabase):
             if my_code == t['code']:
                 team_map[espn_code] = t['id']
     return team_map
+
+
+def save_match(conn, team_map, payload):
+    row = dict(payload)
+    row["home_team_id"] = team_map[row.pop("home_abbr")]
+    row["away_team_id"] = team_map[row.pop("away_abbr")]
+    return sqlite_store.upsert_match(conn, row)
 
 # 🔥 防護罩：安全整數轉換器 (防止空字串或浮點數字串導致程式崩潰)
 def safe_int(val):
@@ -32,8 +39,8 @@ def safe_int(val):
         return 0
 
 def scrape_schedule():
-    supabase = get_supabase_client()
-    team_map = get_team_map(supabase)
+    conn = sqlite_store.connect()
+    team_map = get_team_map(conn)
     
     # 抓取範圍：過去 3 天到未來 3 天
     today = datetime.now()
@@ -80,9 +87,6 @@ def scrape_schedule():
                     
                     if home_abbr not in team_map or away_abbr not in team_map:
                         continue
-                        
-                    h_id = team_map[home_abbr]
-                    a_id = team_map[away_abbr]
 
                     # 狀態判斷 (涵蓋更多可能的中斷或延遲狀態)
                     espn_status = event['status']['type']['name']
@@ -131,11 +135,11 @@ def scrape_schedule():
                                 except Exception:
                                     pass
 
-                    match_data = {
+                    payload = {
                         "date": display_date,
                         "start_time": event['date'],
-                        "home_team_id": h_id,
-                        "away_team_id": a_id,
+                        "home_abbr": home_abbr,
+                        "away_abbr": away_abbr,
                         "status": status,
                         "home_score": h_score,
                         "away_score": a_score,
@@ -143,23 +147,11 @@ def scrape_schedule():
                     }
 
                     if vegas_spread is not None:
-                        match_data["vegas_spread"] = vegas_spread
+                        payload["vegas_spread"] = vegas_spread
                     if vegas_total is not None:
-                        match_data["vegas_total"] = vegas_total
+                        payload["vegas_total"] = vegas_total
 
-                    existing = supabase.table('matches').select('id')\
-                        .eq('date', display_date)\
-                        .eq('home_team_id', h_id)\
-                        .eq('away_team_id', a_id)\
-                        .execute().data
-                    
-                    if existing:
-                        match_id = existing[0]['id']
-                        supabase.table('matches').update(match_data).eq('id', match_id).execute()
-                    else:
-                        supabase.table('matches').insert(match_data).execute()
-                        print(f"      ➕ 新增: {away_abbr} @ {home_abbr}")
-                    
+                    save_match(conn, team_map, payload)
                     total_processed += 1
 
                 except Exception as e:
