@@ -1,61 +1,73 @@
 import requests
-from config import get_supabase_client
 
-# 這是 ESPN 的公開 API，回傳非常乾淨的 JSON 格式
+import sqlite_store
+
 ESPN_NBA_TEAMS_URL = "http://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams"
 
-def fetch_and_store_teams():
-    supabase = get_supabase_client()
+NBA_TEAM_IDS = {
+    "ATL": 1610612737,
+    "BOS": 1610612738,
+    "BKN": 1610612751,
+    "CHA": 1610612766,
+    "CHI": 1610612741,
+    "CLE": 1610612739,
+    "DAL": 1610612742,
+    "DEN": 1610612743,
+    "DET": 1610612765,
+    "GSW": 1610612744,
+    "HOU": 1610612745,
+    "IND": 1610612754,
+    "LAC": 1610612746,
+    "LAL": 1610612747,
+    "MEM": 1610612763,
+    "MIA": 1610612748,
+    "MIL": 1610612749,
+    "MIN": 1610612750,
+    "NOP": 1610612740,
+    "NYK": 1610612752,
+    "OKC": 1610612760,
+    "ORL": 1610612753,
+    "PHI": 1610612755,
+    "PHX": 1610612756,
+    "POR": 1610612757,
+    "SAC": 1610612758,
+    "SAS": 1610612759,
+    "TOR": 1610612761,
+    "UTA": 1610612762,
+    "WAS": 1610612764,
+    "WSH": 1610612764,
+}
 
-    print("1. 正在取得 NBA 聯盟 ID...")
-    # 先從 DB 找出 NBA 的 ID (避免寫死 ID=1，萬一變了會報錯)
-    league_response = supabase.table("leagues").select("id").eq("name", "NBA").execute()
-    
-    if not league_response.data:
-        print("❌ 錯誤：找不到 NBA 聯盟資料，請先執行 main.py 建立聯盟。")
-        return
-        
-    nba_league_id = league_response.data[0]['id']
-    print(f"✅ 取得 NBA ID: {nba_league_id}")
 
-    print("2. 正在從 ESPN API 下載球隊資料...")
-    # 發送請求給 ESPN
-    response = requests.get(ESPN_NBA_TEAMS_URL)
-    data = response.json()
-    
-    # 解析 JSON 資料
-    teams_to_insert = []
-    # ESPN 的 JSON 結構比較深，不用擔心，這是標準結構
-    raw_teams = data.get('sports', [])[0].get('leagues', [])[0].get('teams', [])
-    
-    print(f"📊 找到 {len(raw_teams)} 支球隊，正在整理數據...")
-
+def store_teams(conn, raw_teams):
+    count = 0
     for item in raw_teams:
-        team_info = item['team']
-        
-        # 整理成我們資料庫要的格式
-        team_payload = {
-            "league_id": nba_league_id,
-            "name": team_info.get('shortDisplayName'),  # e.g., Lakers
-            "full_name": team_info.get('displayName'),  # e.g., Los Angeles Lakers
-            "code": team_info.get('abbreviation'),      # e.g., LAL
-            "logo_url": team_info.get('logos', [{}])[0].get('href') # 抓第一張 Logo
-        }
-        teams_to_insert.append(team_payload)
+        info = item["team"]
+        code = info.get("abbreviation")
+        nba_id = NBA_TEAM_IDS.get(code)
+        if not code or nba_id is None:
+            continue
+        logos = info.get("logos") or [{}]
+        sqlite_store.upsert_team(
+            conn,
+            code,
+            info.get("shortDisplayName"),
+            info.get("displayName"),
+            logos[0].get("href") if logos else None,
+            nba_id,
+        )
+        count += 1
+    return count
 
-    print("3. 正在寫入 Supabase 資料庫...")
-    try:
-        # 批量寫入 (Batch Insert)
-        result = supabase.table("teams").upsert(teams_to_insert).execute()
-        print("🎉 成功！已將 30 支球隊資料存入資料庫！")
-        
-        # 顯示前 3 筆驗證
-        print("\n--- 預覽前 3 筆資料 ---")
-        for team in result.data[:3]:
-            print(f"🏀 {team['code']} - {team['full_name']}")
-            
-    except Exception as e:
-        print(f"❌ 寫入失敗：{e}")
+
+def fetch_and_store_teams():
+    conn = sqlite_store.connect()
+    response = requests.get(ESPN_NBA_TEAMS_URL, timeout=30)
+    response.raise_for_status()
+    raw = response.json().get("sports", [])[0].get("leagues", [])[0].get("teams", [])
+    count = store_teams(conn, raw)
+    print(f"stored {count} teams")
+
 
 if __name__ == "__main__":
     fetch_and_store_teams()
