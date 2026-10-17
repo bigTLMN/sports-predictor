@@ -24,6 +24,26 @@ class TeamSeedTests(unittest.TestCase):
         self.assertEqual(row["code"], "LAL")
         self.assertEqual(row["nba_team_id"], 1610612747)
         self.assertEqual(row["full_name"], "Los Angeles Lakers")
+        espn_codes = {
+            "GS": "GSW",
+            "NO": "NOP",
+            "NY": "NYK",
+            "SA": "SAS",
+            "UTAH": "UTA",
+        }
+        for espn_code, alias in espn_codes.items():
+            self.assertEqual(scrape_teams.NBA_TEAM_IDS[espn_code], scrape_teams.NBA_TEAM_IDS[alias])
+        gs_count = scrape_teams.store_teams(conn, [{
+            "team": {
+                "abbreviation": "GS",
+                "shortDisplayName": "Warriors",
+                "displayName": "Golden State Warriors",
+                "logos": [{"href": "http://gs"}],
+            }
+        }])
+        self.assertEqual(gs_count, 1)
+        gs = conn.execute("SELECT nba_team_id FROM teams WHERE code = 'GS'").fetchone()
+        self.assertEqual(gs["nba_team_id"], 1610612744)
 
 
 if __name__ == "__main__":
