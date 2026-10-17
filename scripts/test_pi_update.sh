@@ -68,6 +68,7 @@ EOF
   export PI_UPDATE_LOCK="$SANDBOX/lock"
   export PI_UPDATE_HOUR=10
   export PI_UPDATE_MINUTE=00
+  export PI_UPDATE_MOUNT_CHECK=skip
 }
 
 make_sandbox
@@ -83,9 +84,11 @@ grep -qx "抓賽程" "$SANDBOX/out.txt"
 grep -qx "結算" "$SANDBOX/out.txt"
 grep -qx "跳過重訓" "$SANDBOX/out.txt"
 grep -qx "預測" "$SANDBOX/out.txt"
+grep -qx "scrape_teams.py" "$CALL_LOG"
 grep -qx "scrape_schedule.py" "$CALL_LOG"
 grep -qx "grade_picks.py" "$CALL_LOG"
 grep -qx "aggregate_picks.py" "$CALL_LOG"
+grep -qx "export_snapshot.py" "$CALL_LOG"
 if grep -q "fetch_kaggle_data.py" "$CALL_LOG"; then
   echo "FAIL light run retrained"
   exit 1
@@ -106,7 +109,7 @@ export PI_UPDATE_MINUTE=10
 ( main > "$SANDBOX/out.txt" )
 grep -qx "開始重訓" "$SANDBOX/out.txt"
 python_order=$(paste -sd, "$CALL_LOG")
-if [ "$python_order" != "scrape_schedule.py,grade_picks.py,fetch_kaggle_data.py,build_player_features.py,train_model.py,utils/export_impact_data.py,aggregate_picks.py" ]; then
+if [ "$python_order" != "scrape_teams.py,scrape_schedule.py,grade_picks.py,fetch_kaggle_data.py,build_player_features.py,train_model.py,utils/export_impact_data.py,aggregate_picks.py,export_snapshot.py" ]; then
   echo "FAIL retrain order: $python_order"
   exit 1
 fi
@@ -161,4 +164,21 @@ if ! printf "%s\n" "$second" | grep -q "already running"; then
   exit 1
 fi
 echo "PASS lock"
+
+SANDBOX=$(mktemp -d)
+export PI_UPDATE_ROOT="$SANDBOX"
+export PI_UPDATE_PYTHON="$SANDBOX/bin/python"
+export PI_UPDATE_LOCK="$SANDBOX/lock"
+export PI_UPDATE_MOUNT_CHECK=mountpoint
+export PI_UPDATE_MOUNT="$SANDBOX/not-a-mount"
+mkdir -p "$PI_UPDATE_MOUNT"
+set +e
+( main > "$SANDBOX/mount-out.txt" )
+rc=$?
+set -e
+if [ "$rc" -eq 0 ] || ! grep -qx "sqlite mount missing" "$SANDBOX/mount-out.txt"; then
+  echo "FAIL mount check"
+  exit 1
+fi
+echo "PASS mount check"
 echo "ALL PASS"

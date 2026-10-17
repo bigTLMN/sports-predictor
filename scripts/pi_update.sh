@@ -25,7 +25,17 @@ main() {
     exit 0
   fi
 
+  mount_dir="${PI_UPDATE_MOUNT:-/mnt/sports-db}"
+  mount_check="${PI_UPDATE_MOUNT_CHECK:-mountpoint}"
+  if [ "$mount_check" != "skip" ]; then
+    if ! mountpoint -q "$mount_dir" || [ ! -w "$mount_dir" ]; then
+      echo "sqlite mount missing"
+      exit 1
+    fi
+  fi
+
   echo "抓賽程"
+  "$py" scrape_teams.py
   "$py" scrape_schedule.py
   echo "結算"
   "$py" grade_picks.py
@@ -40,6 +50,7 @@ main() {
   fi
   echo "預測"
   "$py" aggregate_picks.py
+  "$py" export_snapshot.py
 
   rm -f data/PlayerStatistics.csv
   "$gitcmd" add -f data/TeamStatistics.csv || true
