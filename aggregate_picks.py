@@ -4,7 +4,7 @@ import os
 import numpy as np
 from datetime import datetime, timedelta
 from typing import Optional, Tuple
-from config import get_supabase_client
+import sqlite_store
 from nba_schedule_features import b2b_before_game, load_schedule_for_b2b
 
 # ==========================================
@@ -242,6 +242,28 @@ def get_latest_stats():
         print(f"❌ 讀取 TeamStatistics 失敗: {e}")
         return {}
 
+def upcoming_matches(conn, start_iso, end_iso):
+    rows = conn.execute(
+        """
+        SELECT m.*, h.code AS home_code, h.nba_team_id AS home_nba,
+               a.code AS away_code, a.nba_team_id AS away_nba
+        FROM matches m
+        JOIN teams h ON h.id = m.home_team_id
+        JOIN teams a ON a.id = m.away_team_id
+        WHERE m.date >= ? AND m.date < ?
+        ORDER BY m.date
+        """,
+        (start_iso, end_iso),
+    ).fetchall()
+    matches = []
+    for row in rows:
+        item = dict(row)
+        item["home_team"] = {"code": row["home_code"], "nba_team_id": row["home_nba"]}
+        item["away_team"] = {"code": row["away_code"], "nba_team_id": row["away_nba"]}
+        matches.append(item)
+    return matches
+
+
 def prepare_features(h_id, a_id, stats, b2b_h=0, b2b_a=0):
     if h_id not in stats or a_id not in stats: return None, None, None
     h, a = stats[h_id], stats[a_id]
@@ -269,7 +291,7 @@ def prepare_features(h_id, a_id, stats, b2b_h=0, b2b_a=0):
     return df[features_spread], df[features_total], df
 
 def run():
-    supabase = get_supabase_client()
+    conn = sqlite_store.connect()
     stats = get_latest_stats()
     if not stats: return
 
@@ -284,12 +306,7 @@ def run():
     
     print(f"📅 抓取賽程範圍: {now.strftime('%Y-%m-%d')} 至 {end_date.strftime('%Y-%m-%d')}")
 
-    matches = supabase.table("matches")\
-        .select("*, home_team:teams!matches_home_team_id_fkey(code, nba_team_id), away_team:teams!matches_away_team_id_fkey(code, nba_team_id)")\
-        .gte("date", now.isoformat())\
-        .lt("date", end_date.isoformat())\
-        .order('date')\
-        .execute().data
+    matches = upcoming_matches(conn, now.isoformat(), end_date.isoformat())
 
     if not matches:
         print("📭 無比賽。")
@@ -423,16 +440,9 @@ def run():
 
     # 寫入
     if picks:
-        match_ids = [p['match_id'] for p in picks]
         try:
-            existing = supabase.table("aggregated_picks").select("id, match_id").in_("match_id", match_ids).execute().data
-            existing_map = {item['match_id']: item['id'] for item in existing}
-            
             for p in picks:
-                if p['match_id'] in existing_map:
-                    p['id'] = existing_map[p['match_id']]
-            
-            supabase.table("aggregated_picks").upsert(picks).execute()
+                sqlite_store.upsert_pick(conn, p)
             print(f"✅ 完成！已更新 {len(picks)} 筆未開賽預測。")
         except Exception as e:
             print(f"❌ 寫入失敗: {e}")
