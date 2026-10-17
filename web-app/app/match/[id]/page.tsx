@@ -1,4 +1,4 @@
-import { supabase } from '@/lib/supabase';
+import { loadSnapshot, pickForMatch } from '@/lib/snapshot.mjs';
 import { notFound } from 'next/navigation';
 import MatchDetailView from './MatchDetailView';
 
@@ -11,21 +11,8 @@ interface PageProps {
 export default async function MatchDetail({ params }: PageProps) {
   const { id } = await params;
 
-  const { data: pick } = await supabase
-    .from('aggregated_picks')
-    .select(
-      `
-      *,
-      matches!inner (
-        *,
-        home_team: teams!matches_home_team_id_fkey (*),
-        away_team: teams!matches_away_team_id_fkey (*)
-      ),
-      recommended_team: teams!aggregated_picks_recommended_team_id_fkey (*)
-    `
-    )
-    .eq('match_id', id)
-    .single();
+  const snapshot = await loadSnapshot();
+  const pick = pickForMatch(snapshot, id);
 
   if (!pick) {
     return notFound();

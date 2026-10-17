@@ -1,4 +1,9 @@
-import { supabase } from '@/lib/supabase';
+import {
+  loadSnapshot,
+  latestDate,
+  matchesOnDate,
+  historyPicks,
+} from '@/lib/snapshot.mjs';
 import DateNavigator from './components/DateNavigator';
 import StatsDashboard from './components/StatsDashboard';
 import HomeMarketBoard from './components/HomeMarketBoard';
@@ -23,96 +28,43 @@ export default async function Home({
   const zonedDate = toZonedTime(now, timeZone);
   const todayStr = format(zonedDate, 'yyyy-MM-dd');
 
+  const snapshot = await loadSnapshot();
+
   // ==========================================
   // 🔥 1. 自動跳轉邏輯 (Auto-Redirect) - 強力版
   // ==========================================
   if (!params.date) {
     console.log(`🔍 [Redirect Check] Checking for games from ${todayStr}...`);
-    
-    const { data: latestMatch } = await supabase
-      .from('matches')
-      .select('date, start_time')
-      .gte('date', todayStr)
-      .order('date', { ascending: true })
-      .limit(1)
-      .maybeSingle();
 
-    if (latestMatch?.date) {
-      console.log(`🚀 [Redirect] Found game on ${latestMatch.date}, redirecting...`);
-      redirect(`/?date=${latestMatch.date}`);
+    const redirectDate = latestDate(snapshot, todayStr);
+    if (redirectDate) {
+      console.log(`🚀 [Redirect] Found game on ${redirectDate}, redirecting...`);
+      redirect(`/?date=${redirectDate}`);
     } else {
       console.log(`⚠️ [Redirect] No future games found. Staying on today.`);
-      const { data: lastMatch } = await supabase
-        .from('matches')
-        .select('date')
-        .lt('date', todayStr)
-        .order('date', { ascending: false })
-        .limit(1)
-        .maybeSingle();
-        
-      if (lastMatch?.date) {
-         redirect(`/?date=${lastMatch.date}`);
-      }
     }
   }
 
   const targetDate = (params.date as string) || todayStr;
 
-  // ==========================================
-  // 🔥 2. 查詢時區設定 (NBA Day Logic)
-  // ==========================================
-  const startDate = new Date(targetDate);
-  startDate.setUTCHours(11, 0, 0, 0); 
-  const startUTC = startDate.toISOString();
+  const matches = matchesOnDate(snapshot, targetDate);
+  const matchIds = matches.map((m) => m.id);
 
-  const endDate = new Date(startDate);
-  endDate.setHours(endDate.getHours() + 24);
-  const endUTC = endDate.toISOString();
-
-  // 3. Match Query
-  const { data: matchesData } = await supabase
-    .from('matches')
-    .select(`
-      id, date, status, home_score, away_score, start_time, vegas_spread, vegas_total,
-      period_scores, 
-      home_team: teams!matches_home_team_id_fkey (code, full_name, logo_url),
-      away_team: teams!matches_away_team_id_fkey (code, full_name, logo_url)
-    `) 
-    .gte('start_time', startUTC)
-    .lt('start_time', endUTC)
-    .order('start_time', { ascending: true });
-
-  const matches = matchesData || [];
-  const matchIds = matches.map(m => m.id);
-
-  // 4. Picks Query
   let picksMap = new Map();
   if (matchIds.length > 0) {
-    const { data: picksData } = await supabase
-      .from('aggregated_picks')
-      .select(`
-        *,
-        recommended_team: teams!aggregated_picks_recommended_team_id_fkey (code, logo_url)
-      `)
-      .in('match_id', matchIds);
-      
-    (picksData || []).forEach((p: any) => {
-      picksMap.set(p.match_id, p);
-    });
+    snapshot.picks
+      .filter((p) => matchIds.includes(p.match_id))
+      .forEach((p) => {
+        picksMap.set(p.match_id, p);
+      });
   }
 
-  // 5. Merge
   const picks = matches.map((match: any) => {
     const prediction = picksMap.get(match.id) || {};
     return { ...prediction, matches: match, match_id: match.id };
   });
 
-  // 6. History
-  const { data: allHistoryData } = await supabase
-    .from('aggregated_picks')
-    .select(`spread_outcome, total_outcome, matches!inner (date)`)
-    .or('spread_outcome.neq.null,total_outcome.neq.null')
-    .order('matches(date)', { ascending: true });
+  const allHistoryData = historyPicks(snapshot);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1F2937] to-[#030712] font-sans flex flex-col text-white tracking-tight font-medium">
