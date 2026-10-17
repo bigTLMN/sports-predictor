@@ -5,6 +5,7 @@ from sklearn.ensemble import VotingClassifier, VotingRegressor # 🔥 新增：�
 import joblib
 import numpy as np
 
+from ats import apply_shrink, grade_spread, grade_total, summarize, time_split
 from nba_schedule_features import add_b2b_column
 
 # ==========================================
@@ -236,6 +237,39 @@ def create_ensemble_model(base_estimator, params, n_estimators=5, type='classifi
         # Regressor: 直接平均數值
         return VotingRegressor(estimators=estimators, n_jobs=-1)
 
+
+def _print_holdout_ats(report_test, report_spread, report_total, spread_cols, total_cols):
+    try:
+        odds = pd.read_csv("data/odds_2025_26.csv", dtype={"gameId": str})
+    except FileNotFoundError:
+        print("   ⚠️ 沒有 odds_2025_26.csv，略過過盤分數。")
+        return
+    odds["vegas_spread"] = pd.to_numeric(odds["vegas_spread"], errors="coerce")
+    odds["vegas_total"] = pd.to_numeric(odds["vegas_total"], errors="coerce")
+    odds = odds.dropna(subset=["vegas_spread", "vegas_total"])
+    scored = report_test.copy()
+    scored["gameId"] = scored["gameId"].astype(str)
+    scored = scored.merge(odds[["gameId", "vegas_spread", "vegas_total"]], on="gameId", how="inner")
+    if scored.empty:
+        print("   ⚠️ 驗證區間沒有可對上的盤口。")
+        return
+    pred_margin = report_spread.predict(scored[spread_cols])
+    pred_total = report_total.predict(scored[total_cols])
+    spread_grades = [
+        grade_spread(margin, apply_shrink(pred, spread, 0.2), spread)
+        for margin, pred, spread in zip(scored["target_margin"], pred_margin, scored["vegas_spread"])
+    ]
+    total_grades = [
+        grade_total(actual, pred, line)
+        for actual, pred, line in zip(scored["target_total"], pred_total, scored["vegas_total"])
+    ]
+    spread_stats = summarize(spread_grades)
+    total_stats = summarize(total_grades)
+    spread_rate = "n/a" if spread_stats["rate"] is None else f"{spread_stats['rate'] * 100:.2f}%"
+    total_rate = "n/a" if total_stats["rate"] is None else f"{total_stats['rate'] * 100:.2f}%"
+    print(f"   📈 驗證集讓分過盤: {spread_rate} ({spread_stats['wins']}-{spread_stats['losses']}, pushes {spread_stats['pushes']})")
+    print(f"   📈 驗證集大小分: {total_rate} ({total_stats['wins']}-{total_stats['losses']}, pushes {total_stats['pushes']})")
+
 def train():
     df = load_and_clean_data()
     
@@ -244,13 +278,17 @@ def train():
         exit()
 
     data = prepare_training_data(df)
-    
-    split_idx = int(len(data) * 0.85)
-    train_data = data.iloc[:split_idx]
-    test_data = data.iloc[split_idx:]
-    
-    print(f"\n📅 訓練區間: {train_data['gameDateTimeEst_h'].min().date()} ~ {train_data['gameDateTimeEst_h'].max().date()}")
-    print(f"📅 驗證區間: {test_data['gameDateTimeEst_h'].min().date()} ~ {test_data['gameDateTimeEst_h'].max().date()}")
+    data["game_date"] = pd.to_datetime(data["gameDateTimeEst_h"], utc=True).dt.strftime("%Y-%m-%d")
+    today = pd.Timestamp.now(tz="UTC").strftime("%Y-%m-%d")
+    trainable = data[data["game_date"] < today].copy()
+    if len(trainable) < 50:
+        print("❌ 資料量過少，無法訓練。")
+        exit()
+
+    train_data, test_data = time_split(trainable, 0.85)
+    print(f"\n📅 報告用訓練: {train_data['game_date'].min()} ~ {train_data['game_date'].max()} ({len(train_data)} 場)")
+    print(f"📅 報告用驗證: {test_data['game_date'].min()} ~ {test_data['game_date'].max()} ({len(test_data)} 場)")
+    print("   同一天只落在一邊。這個驗證分數不會拿去擬合即將存檔的模型。")
     
     # 確保只使用資料中實際存在的特徵
     available_features_spread = [f for f in TRAIN_FEATURES_SPREAD if f in data.columns]
@@ -283,7 +321,16 @@ def train():
     
     mae = mean_absolute_error(test_data['target_total'], model_total.predict(test_data[available_features_total]))
     print(f"   📏 平均誤差 (MAE): {mae:.2f} 分 (Ensemble)")
-    
+    _print_holdout_ats(test_data, model_spread, model_total, available_features_spread, available_features_total)
+
+    print(f"\n🤖 存檔模型改用全部已結束比賽重訓 ({len(trainable)} 場)")
+    model_win = create_ensemble_model(xgb.XGBClassifier, BEST_PARAMS_WIN, n_estimators=5, type='classifier')
+    model_win.fit(trainable[available_features_spread], trainable['target_win'])
+    model_spread = create_ensemble_model(xgb.XGBRegressor, BEST_PARAMS_SPREAD, n_estimators=5, type='regressor')
+    model_spread.fit(trainable[available_features_spread], trainable['target_margin'])
+    model_total = create_ensemble_model(xgb.XGBRegressor, BEST_PARAMS_TOTAL, n_estimators=5, type='regressor')
+    model_total.fit(trainable[available_features_total], trainable['target_total'])
+
     # --- 儲存 ---
     # VotingClassifier/Regressor 是一個標準的 sklearn 物件，可以直接 pickle
     # aggregate_picks.py 載入後呼叫 .predict() 行為跟單一模型一模一樣
@@ -296,7 +343,7 @@ def train():
     # 新增：儲存窗口設定
     joblib.dump(ROLLING_WINDOWS, 'rolling_config.pkl') 
     
-    print("\n💾 V8.0 (Ensemble) 模型訓練完成！所有系統已就緒。")
+    print("\n💾 V8.0 (Ensemble) 模型訓練完成！存檔模型含全部已結束比賽，驗證分數來自較早的切分。")
 
 if __name__ == "__main__":
     train()
