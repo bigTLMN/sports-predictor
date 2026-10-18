@@ -1393,6 +1393,56 @@
       },
       "home_team_nba_id": 1610612746,
       "away_team_nba_id": 1610612758
+    },
+    {
+      "id": 36,
+      "date": "2026-10-22",
+      "start_time": "2026-10-22T23:00Z",
+      "home_team_id": 20,
+      "away_team_id": 6,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": -4.5,
+      "vegas_total": 233.5,
+      "home_team": {
+        "code": "PHI",
+        "full_name": "Philadelphia 76ers",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png"
+      },
+      "away_team": {
+        "code": "CLE",
+        "full_name": "Cleveland Cavaliers",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png"
+      },
+      "home_team_nba_id": 1610612755,
+      "away_team_nba_id": 1610612739
+    },
+    {
+      "id": 37,
+      "date": "2026-10-22",
+      "start_time": "2026-10-23T01:30Z",
+      "home_team_id": 18,
+      "away_team_id": 8,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": -7.5,
+      "vegas_total": 232.5,
+      "home_team": {
+        "code": "OKC",
+        "full_name": "Oklahoma City Thunder",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png"
+      },
+      "away_team": {
+        "code": "DEN",
+        "full_name": "Denver Nuggets",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/den.png"
+      },
+      "home_team_nba_id": 1610612760,
+      "away_team_nba_id": 1610612743
     }
   ],
   "picks": []
