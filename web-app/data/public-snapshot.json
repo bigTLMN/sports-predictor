@@ -1205,7 +1205,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 1.5,
-      "vegas_total": 220.5,
+      "vegas_total": 221.5,
       "home_team": {
         "code": "BKN",
         "full_name": "Brooklyn Nets",
@@ -1329,8 +1329,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -7.5,
-      "vegas_total": 229.5,
+      "vegas_spread": -6.5,
+      "vegas_total": 230.5,
       "home_team": {
         "code": "LAL",
         "full_name": "Los Angeles Lakers",
@@ -1404,8 +1404,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -4.5,
-      "vegas_total": 233.5,
+      "vegas_spread": -3.5,
+      "vegas_total": 234.5,
       "home_team": {
         "code": "PHI",
         "full_name": "Philadelphia 76ers",
@@ -1445,5 +1445,150 @@
       "away_team_nba_id": 1610612743
     }
   ],
-  "picks": []
+  "picks": [
+    {
+      "id": 1,
+      "match_id": 15,
+      "recommended_team_id": 9,
+      "confidence_score": 60.0,
+      "spread_logic": "AI projects DET to win by 1.1 pts",
+      "spread_logic_zh": "AI 預測 DET 贏 1.1 分",
+      "line_info": "1.5",
+      "ou_pick": "UNDER",
+      "ou_line": 222.5,
+      "ou_confidence": 72.0,
+      "analysis_content": "Our AI model identifies a statistical edge for DET over BOS.\n\n• **Paint Scoring (L5)**: Shows a dominant advantage in recent form.\n• **Defensive Pressure (L5)**: Shows a slight advantage in recent form.\n• **Ball Movement (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, DET's performance in Paint Scoring (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：DET 相對 BOS，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **防守壓迫（近5場）**：近 5 場呈現「輕微」優勢。\n• **傳導與助攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，DET 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 1.1,
+      "predicted_total": 215.04,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-19T00:00:10.083302",
+      "matches": {
+        "id": 15,
+        "date": "2026-10-20",
+        "start_time": "2026-10-20T19:00Z",
+        "home_team_id": 9,
+        "away_team_id": 2,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": 1.5,
+        "vegas_total": 222.5,
+        "home_team": {
+          "code": "DET",
+          "full_name": "Detroit Pistons",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/det.png"
+        },
+        "away_team": {
+          "code": "BOS",
+          "full_name": "Boston Celtics",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png"
+        },
+        "home_team_nba_id": 1610612765,
+        "away_team_nba_id": 1610612738
+      },
+      "recommended_team": {
+        "code": "DET",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/det.png"
+      }
+    },
+    {
+      "id": 2,
+      "match_id": 23,
+      "recommended_team_id": 28,
+      "confidence_score": 67.0,
+      "spread_logic": "AI projects NY to win by 9.0 pts",
+      "spread_logic_zh": "AI 預測 NY 贏 9.0 分",
+      "line_info": "-4.5",
+      "ou_pick": "UNDER",
+      "ou_line": 232.5,
+      "ou_confidence": 90.0,
+      "analysis_content": "Our AI model identifies a statistical edge for NY over PHI.\n\n• **Net Rating Trend (L5)**: Shows a dominant advantage in recent form.\n• **Rebounding Presence (L5)**: Shows a dominant advantage in recent form.\n• **Defensive Pressure (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, NY's performance in Net Rating Trend (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：NY 相對 PHI，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「強烈」優勢。\n• **籃板影響力（近5場）**：近 5 場呈現「強烈」優勢。\n• **防守壓迫（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，NY 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 8.99,
+      "predicted_total": 213.56,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-19T00:00:10.131332",
+      "matches": {
+        "id": 23,
+        "date": "2026-10-20",
+        "start_time": "2026-10-20T23:00Z",
+        "home_team_id": 28,
+        "away_team_id": 20,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -4.5,
+        "vegas_total": 232.5,
+        "home_team": {
+          "code": "NY",
+          "full_name": "New York Knicks",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png"
+        },
+        "away_team": {
+          "code": "PHI",
+          "full_name": "Philadelphia 76ers",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png"
+        },
+        "home_team_nba_id": 1610612752,
+        "away_team_nba_id": 1610612755
+      },
+      "recommended_team": {
+        "code": "NY",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png"
+      }
+    },
+    {
+      "id": 3,
+      "match_id": 24,
+      "recommended_team_id": 18,
+      "confidence_score": 56.0,
+      "spread_logic": "AI projects OKC to lose by 0.8 pts",
+      "spread_logic_zh": "AI 預測 OKC 輸 0.8 分",
+      "line_info": "-2.5",
+      "ou_pick": "UNDER",
+      "ou_line": 231.5,
+      "ou_confidence": 90.0,
+      "analysis_content": "Our AI model identifies a statistical edge for OKC over SA.\n\n• **Ball Movement (L5)**: Shows a slight advantage in recent form.\n• **Defensive Pressure (L5)**: Shows a slight advantage in recent form.\n• **Winning Momentum (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, OKC's performance in Ball Movement (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：OKC 相對 SA，在近期統計指標上較占優勢。\n\n• **傳導與助攻（近5場）**：近 5 場呈現「輕微」優勢。\n• **防守壓迫（近5場）**：近 5 場呈現「輕微」優勢。\n• **勝率動能（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，OKC 在「傳導與助攻（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": -0.77,
+      "predicted_total": 216.55,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-19T00:00:10.176073",
+      "matches": {
+        "id": 24,
+        "date": "2026-10-20",
+        "start_time": "2026-10-21T01:30Z",
+        "home_team_id": 29,
+        "away_team_id": 18,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -2.5,
+        "vegas_total": 231.5,
+        "home_team": {
+          "code": "SA",
+          "full_name": "San Antonio Spurs",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png"
+        },
+        "away_team": {
+          "code": "OKC",
+          "full_name": "Oklahoma City Thunder",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png"
+        },
+        "home_team_nba_id": 1610612759,
+        "away_team_nba_id": 1610612760
+      },
+      "recommended_team": {
+        "code": "OKC",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png"
+      }
+    }
+  ]
 }
