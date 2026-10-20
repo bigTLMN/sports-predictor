@@ -1055,7 +1055,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 1.5,
-      "vegas_total": 218.5,
+      "vegas_total": 219.5,
       "home_team": {
         "code": "DET",
         "full_name": "Detroit Pistons",
@@ -1229,7 +1229,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -8.5,
+      "vegas_spread": -9.5,
       "vegas_total": 236.5,
       "home_team": {
         "code": "TOR",
@@ -1775,7 +1775,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 1.5,
-        "vegas_total": 218.5,
+        "vegas_total": 219.5,
         "home_team": {
           "code": "DET",
           "full_name": "Detroit Pistons",
@@ -1907,7 +1907,7 @@
       "predicted_total": 222.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T13:00:09.486971",
+      "created_at": "2026-10-20T13:30:09.341550",
       "matches": {
         "id": 28,
         "date": "2026-10-21",
@@ -1955,7 +1955,7 @@
       "predicted_total": 229.72,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T13:00:09.531483",
+      "created_at": "2026-10-20T13:30:09.385490",
       "matches": {
         "id": 32,
         "date": "2026-10-21",
@@ -2003,7 +2003,7 @@
       "predicted_total": 230.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T13:00:09.576883",
+      "created_at": "2026-10-20T13:30:09.430778",
       "matches": {
         "id": 35,
         "date": "2026-10-21",
@@ -2051,7 +2051,7 @@
       "predicted_total": 221.89,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T13:00:09.624939",
+      "created_at": "2026-10-20T13:30:09.478222",
       "matches": {
         "id": 33,
         "date": "2026-10-21",
@@ -2099,7 +2099,7 @@
       "predicted_total": 242.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T13:00:09.666804",
+      "created_at": "2026-10-20T13:30:09.519650",
       "matches": {
         "id": 30,
         "date": "2026-10-21",
@@ -2147,7 +2147,7 @@
       "predicted_total": 238.78,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T13:00:09.707946",
+      "created_at": "2026-10-20T13:30:09.560508",
       "matches": {
         "id": 27,
         "date": "2026-10-21",
@@ -2195,7 +2195,7 @@
       "predicted_total": 219.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T13:00:09.752106",
+      "created_at": "2026-10-20T13:30:09.604503",
       "matches": {
         "id": 25,
         "date": "2026-10-21",
@@ -2243,7 +2243,7 @@
       "predicted_total": 221.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T13:00:09.796687",
+      "created_at": "2026-10-20T13:30:09.649392",
       "matches": {
         "id": 34,
         "date": "2026-10-21",
@@ -2278,20 +2278,20 @@
       "id": 12,
       "match_id": 29,
       "recommended_team_id": 24,
-      "confidence_score": 53.0,
-      "spread_logic": "AI projects TOR to win by 9.4 pts",
-      "spread_logic_zh": "AI 預測 TOR 贏 9.4 分",
-      "line_info": "-8.5",
+      "confidence_score": 50.0,
+      "spread_logic": "AI projects TOR to win by 9.6 pts",
+      "spread_logic_zh": "AI 預測 TOR 贏 9.6 分",
+      "line_info": "-9.5",
       "ou_pick": "UNDER",
       "ou_line": 236.5,
       "ou_confidence": 55.0,
       "analysis_content": "Our AI model identifies a statistical edge for TOR over CHI.\n\n• **Net Rating Trend (L5)**: Shows a slight advantage in recent form.\n• **Ball Security (L5)**: Shows a slight advantage in recent form.\n• **Rim Protection (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, TOR's performance in Net Rating Trend (L5) is a key indicator for this matchup.",
       "analysis_content_zh": "AI 模型指出：TOR 相對 CHI，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，TOR 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
-      "predicted_margin": 9.35,
+      "predicted_margin": 9.55,
       "predicted_total": 234.75,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T13:00:09.839192",
+      "created_at": "2026-10-20T13:30:09.691843",
       "matches": {
         "id": 29,
         "date": "2026-10-21",
@@ -2302,7 +2302,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -8.5,
+        "vegas_spread": -9.5,
         "vegas_total": 236.5,
         "home_team": {
           "code": "TOR",
@@ -2339,7 +2339,7 @@
       "predicted_total": 230.55,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T13:00:09.884555",
+      "created_at": "2026-10-20T13:30:09.737037",
       "matches": {
         "id": 26,
         "date": "2026-10-21",
@@ -2387,7 +2387,7 @@
       "predicted_total": 239.77,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T13:00:09.926749",
+      "created_at": "2026-10-20T13:30:09.778487",
       "matches": {
         "id": 31,
         "date": "2026-10-21",
