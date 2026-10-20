@@ -1050,12 +1050,19 @@
       "start_time": "2026-10-20T19:00Z",
       "home_team_id": 9,
       "away_team_id": 2,
-      "status": "STATUS_SCHEDULED",
-      "home_score": 0,
-      "away_score": 0,
-      "period_scores": null,
-      "vegas_spread": 1.5,
-      "vegas_total": 220.5,
+      "status": "STATUS_IN_PROGRESS",
+      "home_score": 24,
+      "away_score": 23,
+      "period_scores": {
+        "home": [
+          24
+        ],
+        "away": [
+          23
+        ]
+      },
+      "vegas_spread": null,
+      "vegas_total": null,
       "home_team": {
         "code": "DET",
         "full_name": "Detroit Pistons",
@@ -1130,7 +1137,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 236.5,
+      "vegas_total": 235.5,
       "home_team": {
         "code": "ORL",
         "full_name": "Orlando Magic",
@@ -1970,12 +1977,19 @@
         "start_time": "2026-10-20T19:00Z",
         "home_team_id": 9,
         "away_team_id": 2,
-        "status": "STATUS_SCHEDULED",
-        "home_score": 0,
-        "away_score": 0,
-        "period_scores": null,
-        "vegas_spread": 1.5,
-        "vegas_total": 220.5,
+        "status": "STATUS_IN_PROGRESS",
+        "home_score": 24,
+        "away_score": 23,
+        "period_scores": {
+          "home": [
+            24
+          ],
+          "away": [
+            23
+          ]
+        },
+        "vegas_spread": null,
+        "vegas_total": null,
         "home_team": {
           "code": "DET",
           "full_name": "Detroit Pistons",
@@ -2107,7 +2121,7 @@
       "predicted_total": 222.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T19:00:09.626340",
+      "created_at": "2026-10-20T19:30:10.030495",
       "matches": {
         "id": 28,
         "date": "2026-10-21",
@@ -2155,7 +2169,7 @@
       "predicted_total": 229.72,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T19:00:09.670370",
+      "created_at": "2026-10-20T19:30:10.074453",
       "matches": {
         "id": 32,
         "date": "2026-10-21",
@@ -2203,7 +2217,7 @@
       "predicted_total": 230.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T19:00:09.716263",
+      "created_at": "2026-10-20T19:30:10.119942",
       "matches": {
         "id": 35,
         "date": "2026-10-21",
@@ -2251,7 +2265,7 @@
       "predicted_total": 221.89,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T19:00:09.763882",
+      "created_at": "2026-10-20T19:30:10.167855",
       "matches": {
         "id": 33,
         "date": "2026-10-21",
@@ -2299,7 +2313,7 @@
       "predicted_total": 242.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T19:00:09.805717",
+      "created_at": "2026-10-20T19:30:10.210334",
       "matches": {
         "id": 30,
         "date": "2026-10-21",
@@ -2347,7 +2361,7 @@
       "predicted_total": 238.78,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T19:00:09.847461",
+      "created_at": "2026-10-20T19:30:10.251811",
       "matches": {
         "id": 27,
         "date": "2026-10-21",
@@ -2387,7 +2401,7 @@
       "spread_logic_zh": "AI 預測 ATL 輸 1.3 分",
       "line_info": "-3.5",
       "ou_pick": "UNDER",
-      "ou_line": 236.5,
+      "ou_line": 235.5,
       "ou_confidence": 90.0,
       "analysis_content": "Our AI model identifies a statistical edge for ATL over ORL.\n\n• **Paint Scoring (L5)**: Shows a dominant advantage in recent form.\n• **Ball Movement (L5)**: Shows a slight advantage in recent form.\n• **Shooting Efficiency (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, ATL's performance in Paint Scoring (L5) is a key indicator for this matchup.",
       "analysis_content_zh": "AI 模型指出：ATL 相對 ORL，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **傳導與助攻（近5場）**：近 5 場呈現「輕微」優勢。\n• **投籃效率（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，ATL 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
@@ -2395,7 +2409,7 @@
       "predicted_total": 219.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T19:00:09.891966",
+      "created_at": "2026-10-20T19:30:10.296149",
       "matches": {
         "id": 25,
         "date": "2026-10-21",
@@ -2407,7 +2421,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -3.5,
-        "vegas_total": 236.5,
+        "vegas_total": 235.5,
         "home_team": {
           "code": "ORL",
           "full_name": "Orlando Magic",
@@ -2443,7 +2457,7 @@
       "predicted_total": 221.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T19:00:09.936324",
+      "created_at": "2026-10-20T19:30:10.340908",
       "matches": {
         "id": 34,
         "date": "2026-10-21",
@@ -2491,7 +2505,7 @@
       "predicted_total": 234.75,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T19:00:09.978873",
+      "created_at": "2026-10-20T19:30:10.383784",
       "matches": {
         "id": 29,
         "date": "2026-10-21",
@@ -2539,7 +2553,7 @@
       "predicted_total": 230.55,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T19:00:10.024087",
+      "created_at": "2026-10-20T19:30:10.429276",
       "matches": {
         "id": 26,
         "date": "2026-10-21",
@@ -2587,7 +2601,7 @@
       "predicted_total": 239.77,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T19:00:10.065305",
+      "created_at": "2026-10-20T19:30:10.470616",
       "matches": {
         "id": 31,
         "date": "2026-10-21",
