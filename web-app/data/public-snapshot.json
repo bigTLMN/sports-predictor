@@ -1055,7 +1055,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 1.5,
-      "vegas_total": 220.5,
+      "vegas_total": 219.5,
       "home_team": {
         "code": "DET",
         "full_name": "Detroit Pistons",
@@ -1255,7 +1255,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -1.5,
-      "vegas_total": 242.5,
+      "vegas_total": 240.5,
       "home_team": {
         "code": "MEM",
         "full_name": "Memphis Grizzlies",
@@ -1975,7 +1975,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 1.5,
-        "vegas_total": 220.5,
+        "vegas_total": 219.5,
         "home_team": {
           "code": "DET",
           "full_name": "Detroit Pistons",
@@ -2107,7 +2107,7 @@
       "predicted_total": 222.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T16:30:10.983972",
+      "created_at": "2026-10-20T17:00:09.373675",
       "matches": {
         "id": 28,
         "date": "2026-10-21",
@@ -2155,7 +2155,7 @@
       "predicted_total": 229.72,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T16:30:11.028276",
+      "created_at": "2026-10-20T17:00:09.418375",
       "matches": {
         "id": 32,
         "date": "2026-10-21",
@@ -2203,7 +2203,7 @@
       "predicted_total": 230.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T16:30:11.074390",
+      "created_at": "2026-10-20T17:00:09.464226",
       "matches": {
         "id": 35,
         "date": "2026-10-21",
@@ -2251,7 +2251,7 @@
       "predicted_total": 221.89,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T16:30:11.122225",
+      "created_at": "2026-10-20T17:00:09.512540",
       "matches": {
         "id": 33,
         "date": "2026-10-21",
@@ -2290,16 +2290,16 @@
       "spread_logic": "AI projects UTAH to lose by 0.5 pts",
       "spread_logic_zh": "AI 預測 UTAH 輸 0.5 分",
       "line_info": "-1.5",
-      "ou_pick": "UNDER",
-      "ou_line": 242.5,
-      "ou_confidence": 50.0,
+      "ou_pick": "OVER",
+      "ou_line": 240.5,
+      "ou_confidence": 55.0,
       "analysis_content": "Our AI model identifies a statistical edge for UTAH over MEM.\n\n• **Paint Scoring (L5)**: Shows a dominant advantage in recent form.\n• **Net Rating Trend (L5)**: Shows a dominant advantage in recent form.\n• **Rebounding Presence (L5)**: Shows a significant advantage in recent form.\n\nComparing the recent 5-game trends, UTAH's performance in Paint Scoring (L5) is a key indicator for this matchup.",
       "analysis_content_zh": "AI 模型指出：UTAH 相對 MEM，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「強烈」優勢。\n• **籃板影響力（近5場）**：近 5 場呈現「明顯」優勢。\n\n綜合近 5 場走勢，UTAH 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
       "predicted_margin": -0.46,
       "predicted_total": 242.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T16:30:11.164280",
+      "created_at": "2026-10-20T17:00:09.554151",
       "matches": {
         "id": 30,
         "date": "2026-10-21",
@@ -2311,7 +2311,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -1.5,
-        "vegas_total": 242.5,
+        "vegas_total": 240.5,
         "home_team": {
           "code": "MEM",
           "full_name": "Memphis Grizzlies",
@@ -2347,7 +2347,7 @@
       "predicted_total": 238.78,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T16:30:11.205666",
+      "created_at": "2026-10-20T17:00:09.595390",
       "matches": {
         "id": 27,
         "date": "2026-10-21",
@@ -2395,7 +2395,7 @@
       "predicted_total": 219.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T16:30:11.249756",
+      "created_at": "2026-10-20T17:00:09.639676",
       "matches": {
         "id": 25,
         "date": "2026-10-21",
@@ -2443,7 +2443,7 @@
       "predicted_total": 221.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T16:30:11.294544",
+      "created_at": "2026-10-20T17:00:09.684127",
       "matches": {
         "id": 34,
         "date": "2026-10-21",
@@ -2491,7 +2491,7 @@
       "predicted_total": 234.75,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T16:30:11.337465",
+      "created_at": "2026-10-20T17:00:09.726842",
       "matches": {
         "id": 29,
         "date": "2026-10-21",
@@ -2539,7 +2539,7 @@
       "predicted_total": 230.55,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T16:30:11.383453",
+      "created_at": "2026-10-20T17:00:09.771914",
       "matches": {
         "id": 26,
         "date": "2026-10-21",
@@ -2587,7 +2587,7 @@
       "predicted_total": 239.77,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T16:30:11.425319",
+      "created_at": "2026-10-20T17:00:09.813006",
       "matches": {
         "id": 31,
         "date": "2026-10-21",
