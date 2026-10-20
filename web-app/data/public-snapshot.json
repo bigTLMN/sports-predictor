@@ -1051,16 +1051,18 @@
       "home_team_id": 9,
       "away_team_id": 2,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 39,
-      "away_score": 47,
+      "home_score": 47,
+      "away_score": 63,
       "period_scores": {
         "home": [
           27,
-          12
+          18,
+          2
         ],
         "away": [
           28,
-          19
+          30,
+          5
         ]
       },
       "vegas_spread": null,
@@ -1214,7 +1216,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 219.5,
+      "vegas_total": 218.5,
       "home_team": {
         "code": "BKN",
         "full_name": "Brooklyn Nets",
@@ -1980,16 +1982,18 @@
         "home_team_id": 9,
         "away_team_id": 2,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 39,
-        "away_score": 47,
+        "home_score": 47,
+        "away_score": 63,
         "period_scores": {
           "home": [
             27,
-            12
+            18,
+            2
           ],
           "away": [
             28,
-            19
+            30,
+            5
           ]
         },
         "vegas_spread": null,
@@ -2117,15 +2121,15 @@
       "spread_logic_zh": "AI 預測 CHA 贏 6.5 分",
       "line_info": "-3.5",
       "ou_pick": "OVER",
-      "ou_line": 219.5,
-      "ou_confidence": 59.0,
+      "ou_line": 218.5,
+      "ou_confidence": 62.0,
       "analysis_content": "Our AI model identifies a statistical edge for CHA over BKN.\n\n• **Rebounding Presence (L5)**: Shows a significant advantage in recent form.\n• **Net Rating Trend (L5)**: Shows a slight advantage in recent form.\n• **Rim Protection (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, CHA's performance in Rebounding Presence (L5) is a key indicator for this matchup.",
       "analysis_content_zh": "AI 模型指出：CHA 相對 BKN，在近期統計指標上較占優勢。\n\n• **籃板影響力（近5場）**：近 5 場呈現「明顯」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，CHA 在「籃板影響力（近5場）」上的表現是本場關鍵指標。",
       "predicted_margin": 6.5,
       "predicted_total": 222.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T20:00:09.594201",
+      "created_at": "2026-10-20T20:30:09.936490",
       "matches": {
         "id": 28,
         "date": "2026-10-21",
@@ -2137,7 +2141,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -3.5,
-        "vegas_total": 219.5,
+        "vegas_total": 218.5,
         "home_team": {
           "code": "BKN",
           "full_name": "Brooklyn Nets",
@@ -2173,7 +2177,7 @@
       "predicted_total": 229.72,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T20:00:09.638011",
+      "created_at": "2026-10-20T20:30:09.980689",
       "matches": {
         "id": 32,
         "date": "2026-10-21",
@@ -2221,7 +2225,7 @@
       "predicted_total": 230.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T20:00:09.683675",
+      "created_at": "2026-10-20T20:30:10.026204",
       "matches": {
         "id": 35,
         "date": "2026-10-21",
@@ -2269,7 +2273,7 @@
       "predicted_total": 221.89,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T20:00:09.731017",
+      "created_at": "2026-10-20T20:30:10.073731",
       "matches": {
         "id": 33,
         "date": "2026-10-21",
@@ -2317,7 +2321,7 @@
       "predicted_total": 242.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T20:00:09.772894",
+      "created_at": "2026-10-20T20:30:10.115350",
       "matches": {
         "id": 30,
         "date": "2026-10-21",
@@ -2365,7 +2369,7 @@
       "predicted_total": 238.78,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T20:00:09.813954",
+      "created_at": "2026-10-20T20:30:10.156568",
       "matches": {
         "id": 27,
         "date": "2026-10-21",
@@ -2413,7 +2417,7 @@
       "predicted_total": 219.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T20:00:09.858645",
+      "created_at": "2026-10-20T20:30:10.200673",
       "matches": {
         "id": 25,
         "date": "2026-10-21",
@@ -2461,7 +2465,7 @@
       "predicted_total": 221.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T20:00:09.903270",
+      "created_at": "2026-10-20T20:30:10.245185",
       "matches": {
         "id": 34,
         "date": "2026-10-21",
@@ -2509,7 +2513,7 @@
       "predicted_total": 234.75,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T20:00:09.946010",
+      "created_at": "2026-10-20T20:30:10.287868",
       "matches": {
         "id": 29,
         "date": "2026-10-21",
@@ -2557,7 +2561,7 @@
       "predicted_total": 230.55,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T20:00:09.991365",
+      "created_at": "2026-10-20T20:30:10.333169",
       "matches": {
         "id": 26,
         "date": "2026-10-21",
@@ -2605,7 +2609,7 @@
       "predicted_total": 239.77,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T20:00:10.032396",
+      "created_at": "2026-10-20T20:30:10.374542",
       "matches": {
         "id": 31,
         "date": "2026-10-21",
