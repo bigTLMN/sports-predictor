@@ -1130,7 +1130,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -2.5,
-      "vegas_total": 235.5,
+      "vegas_total": 236.5,
       "home_team": {
         "code": "ORL",
         "full_name": "Orlando Magic",
@@ -1180,7 +1180,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -1.5,
-      "vegas_total": 242.5,
+      "vegas_total": 243.5,
       "home_team": {
         "code": "MIA",
         "full_name": "Miami Heat",
@@ -1743,6 +1743,206 @@
       },
       "home_team_nba_id": 1610612758,
       "away_team_nba_id": 1610612757
+    },
+    {
+      "id": 50,
+      "date": "2026-10-24",
+      "start_time": "2026-10-24T22:00Z",
+      "home_team_id": 4,
+      "away_team_id": 15,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "CHA",
+        "full_name": "Charlotte Hornets",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png"
+      },
+      "away_team": {
+        "code": "MIA",
+        "full_name": "Miami Heat",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png"
+      },
+      "home_team_nba_id": 1610612766,
+      "away_team_nba_id": 1610612748
+    },
+    {
+      "id": 51,
+      "date": "2026-10-24",
+      "start_time": "2026-10-24T23:30Z",
+      "home_team_id": 6,
+      "away_team_id": 3,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "CLE",
+        "full_name": "Cleveland Cavaliers",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png"
+      },
+      "away_team": {
+        "code": "BKN",
+        "full_name": "Brooklyn Nets",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png"
+      },
+      "home_team_nba_id": 1610612739,
+      "away_team_nba_id": 1610612751
+    },
+    {
+      "id": 52,
+      "date": "2026-10-24",
+      "start_time": "2026-10-24T23:30Z",
+      "home_team_id": 20,
+      "away_team_id": 16,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "PHI",
+        "full_name": "Philadelphia 76ers",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png"
+      },
+      "away_team": {
+        "code": "MIL",
+        "full_name": "Milwaukee Bucks",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png"
+      },
+      "home_team_nba_id": 1610612755,
+      "away_team_nba_id": 1610612749
+    },
+    {
+      "id": 53,
+      "date": "2026-10-24",
+      "start_time": "2026-10-25T00:00Z",
+      "home_team_id": 5,
+      "away_team_id": 25,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "CHI",
+        "full_name": "Chicago Bulls",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png"
+      },
+      "away_team": {
+        "code": "WSH",
+        "full_name": "Washington Wizards",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png"
+      },
+      "home_team_nba_id": 1610612741,
+      "away_team_nba_id": 1610612764
+    },
+    {
+      "id": 54,
+      "date": "2026-10-24",
+      "start_time": "2026-10-25T00:00Z",
+      "home_team_id": 7,
+      "away_team_id": 29,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "DAL",
+        "full_name": "Dallas Mavericks",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png"
+      },
+      "away_team": {
+        "code": "SA",
+        "full_name": "San Antonio Spurs",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png"
+      },
+      "home_team_nba_id": 1610612742,
+      "away_team_nba_id": 1610612759
+    },
+    {
+      "id": 55,
+      "date": "2026-10-24",
+      "start_time": "2026-10-25T00:30Z",
+      "home_team_id": 1,
+      "away_team_id": 10,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "ATL",
+        "full_name": "Atlanta Hawks",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png"
+      },
+      "away_team": {
+        "code": "HOU",
+        "full_name": "Houston Rockets",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png"
+      },
+      "home_team_nba_id": 1610612737,
+      "away_team_nba_id": 1610612745
+    },
+    {
+      "id": 56,
+      "date": "2026-10-24",
+      "start_time": "2026-10-25T01:00Z",
+      "home_team_id": 8,
+      "away_team_id": 27,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "DEN",
+        "full_name": "Denver Nuggets",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/den.png"
+      },
+      "away_team": {
+        "code": "NO",
+        "full_name": "New Orleans Pelicans",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/no.png"
+      },
+      "home_team_nba_id": 1610612743,
+      "away_team_nba_id": 1610612740
+    },
+    {
+      "id": 57,
+      "date": "2026-10-24",
+      "start_time": "2026-10-25T02:00Z",
+      "home_team_id": 21,
+      "away_team_id": 26,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "PHX",
+        "full_name": "Phoenix Suns",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png"
+      },
+      "away_team": {
+        "code": "GS",
+        "full_name": "Golden State Warriors",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png"
+      },
+      "home_team_nba_id": 1610612756,
+      "away_team_nba_id": 1610612744
     }
   ],
   "picks": [
@@ -1907,7 +2107,7 @@
       "predicted_total": 222.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T15:30:08.978481",
+      "created_at": "2026-10-20T16:00:11.932627",
       "matches": {
         "id": 28,
         "date": "2026-10-21",
@@ -1955,7 +2155,7 @@
       "predicted_total": 229.72,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T15:30:09.022277",
+      "created_at": "2026-10-20T16:00:11.976433",
       "matches": {
         "id": 32,
         "date": "2026-10-21",
@@ -2003,7 +2203,7 @@
       "predicted_total": 230.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T15:30:09.067749",
+      "created_at": "2026-10-20T16:00:12.021972",
       "matches": {
         "id": 35,
         "date": "2026-10-21",
@@ -2051,7 +2251,7 @@
       "predicted_total": 221.89,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T15:30:09.115380",
+      "created_at": "2026-10-20T16:00:12.069973",
       "matches": {
         "id": 33,
         "date": "2026-10-21",
@@ -2099,7 +2299,7 @@
       "predicted_total": 242.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T15:30:09.157059",
+      "created_at": "2026-10-20T16:00:12.112343",
       "matches": {
         "id": 30,
         "date": "2026-10-21",
@@ -2139,15 +2339,15 @@
       "spread_logic_zh": "AI 預測 MIA 贏 7.0 分",
       "line_info": "-1.5",
       "ou_pick": "UNDER",
-      "ou_line": 242.5,
-      "ou_confidence": 61.0,
+      "ou_line": 243.5,
+      "ou_confidence": 64.0,
       "analysis_content": "Our AI model identifies a statistical edge for MIA over MIN.\n\n• **Net Rating Trend (L5)**: Shows a dominant advantage in recent form.\n• **Paint Scoring (L5)**: Shows a dominant advantage in recent form.\n• **Ball Movement (L5)**: Shows a dominant advantage in recent form.\n\nComparing the recent 5-game trends, MIA's performance in Net Rating Trend (L5) is a key indicator for this matchup.",
       "analysis_content_zh": "AI 模型指出：MIA 相對 MIN，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「強烈」優勢。\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **傳導與助攻（近5場）**：近 5 場呈現「強烈」優勢。\n\n綜合近 5 場走勢，MIA 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
       "predicted_margin": 6.95,
       "predicted_total": 238.78,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T15:30:09.198198",
+      "created_at": "2026-10-20T16:00:12.154160",
       "matches": {
         "id": 27,
         "date": "2026-10-21",
@@ -2159,7 +2359,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -1.5,
-        "vegas_total": 242.5,
+        "vegas_total": 243.5,
         "home_team": {
           "code": "MIA",
           "full_name": "Miami Heat",
@@ -2187,7 +2387,7 @@
       "spread_logic_zh": "AI 預測 ATL 輸 1.1 分",
       "line_info": "-2.5",
       "ou_pick": "UNDER",
-      "ou_line": 235.5,
+      "ou_line": 236.5,
       "ou_confidence": 90.0,
       "analysis_content": "Our AI model identifies a statistical edge for ATL over ORL.\n\n• **Paint Scoring (L5)**: Shows a dominant advantage in recent form.\n• **Ball Movement (L5)**: Shows a slight advantage in recent form.\n• **Shooting Efficiency (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, ATL's performance in Paint Scoring (L5) is a key indicator for this matchup.",
       "analysis_content_zh": "AI 模型指出：ATL 相對 ORL，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **傳導與助攻（近5場）**：近 5 場呈現「輕微」優勢。\n• **投籃效率（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，ATL 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
@@ -2195,7 +2395,7 @@
       "predicted_total": 219.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T15:30:09.242391",
+      "created_at": "2026-10-20T16:00:12.198673",
       "matches": {
         "id": 25,
         "date": "2026-10-21",
@@ -2207,7 +2407,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -2.5,
-        "vegas_total": 235.5,
+        "vegas_total": 236.5,
         "home_team": {
           "code": "ORL",
           "full_name": "Orlando Magic",
@@ -2243,7 +2443,7 @@
       "predicted_total": 221.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T15:30:09.287238",
+      "created_at": "2026-10-20T16:00:12.243322",
       "matches": {
         "id": 34,
         "date": "2026-10-21",
@@ -2291,7 +2491,7 @@
       "predicted_total": 234.75,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T15:30:09.329716",
+      "created_at": "2026-10-20T16:00:12.286875",
       "matches": {
         "id": 29,
         "date": "2026-10-21",
@@ -2339,7 +2539,7 @@
       "predicted_total": 230.55,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T15:30:09.375207",
+      "created_at": "2026-10-20T16:00:12.333217",
       "matches": {
         "id": 26,
         "date": "2026-10-21",
@@ -2387,7 +2587,7 @@
       "predicted_total": 239.77,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T15:30:09.416889",
+      "created_at": "2026-10-20T16:00:12.375273",
       "matches": {
         "id": 31,
         "date": "2026-10-21",
