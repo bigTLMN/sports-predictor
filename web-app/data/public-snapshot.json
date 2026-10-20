@@ -1105,7 +1105,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -1.5,
-      "vegas_total": 232.5,
+      "vegas_total": 231.5,
       "home_team": {
         "code": "SA",
         "full_name": "San Antonio Spurs",
@@ -1204,7 +1204,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -1.5,
+      "vegas_spread": -3.5,
       "vegas_total": 219.5,
       "home_team": {
         "code": "BKN",
@@ -1871,7 +1871,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -1.5,
-        "vegas_total": 232.5,
+        "vegas_total": 231.5,
         "home_team": {
           "code": "SA",
           "full_name": "San Antonio Spurs",
@@ -1894,20 +1894,20 @@
       "id": 4,
       "match_id": 28,
       "recommended_team_id": 4,
-      "confidence_score": 83.0,
-      "spread_logic": "AI projects CHA to win by 6.9 pts",
-      "spread_logic_zh": "AI 預測 CHA 贏 6.9 分",
-      "line_info": "-1.5",
+      "confidence_score": 89.0,
+      "spread_logic": "AI projects CHA to win by 6.5 pts",
+      "spread_logic_zh": "AI 預測 CHA 贏 6.5 分",
+      "line_info": "-3.5",
       "ou_pick": "OVER",
       "ou_line": 219.5,
       "ou_confidence": 59.0,
       "analysis_content": "Our AI model identifies a statistical edge for CHA over BKN.\n\n• **Rebounding Presence (L5)**: Shows a significant advantage in recent form.\n• **Net Rating Trend (L5)**: Shows a slight advantage in recent form.\n• **Rim Protection (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, CHA's performance in Rebounding Presence (L5) is a key indicator for this matchup.",
       "analysis_content_zh": "AI 模型指出：CHA 相對 BKN，在近期統計指標上較占優勢。\n\n• **籃板影響力（近5場）**：近 5 場呈現「明顯」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，CHA 在「籃板影響力（近5場）」上的表現是本場關鍵指標。",
-      "predicted_margin": 6.9,
+      "predicted_margin": 6.5,
       "predicted_total": 222.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T11:00:09.697065",
+      "created_at": "2026-10-20T11:30:09.787616",
       "matches": {
         "id": 28,
         "date": "2026-10-21",
@@ -1918,7 +1918,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -1.5,
+        "vegas_spread": -3.5,
         "vegas_total": 219.5,
         "home_team": {
           "code": "BKN",
@@ -1955,7 +1955,7 @@
       "predicted_total": 229.72,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T11:00:09.741837",
+      "created_at": "2026-10-20T11:30:09.830996",
       "matches": {
         "id": 32,
         "date": "2026-10-21",
@@ -2003,7 +2003,7 @@
       "predicted_total": 230.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T11:00:09.787370",
+      "created_at": "2026-10-20T11:30:09.876338",
       "matches": {
         "id": 35,
         "date": "2026-10-21",
@@ -2051,7 +2051,7 @@
       "predicted_total": 221.89,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T11:00:09.835275",
+      "created_at": "2026-10-20T11:30:09.923811",
       "matches": {
         "id": 33,
         "date": "2026-10-21",
@@ -2099,7 +2099,7 @@
       "predicted_total": 242.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T11:00:09.877569",
+      "created_at": "2026-10-20T11:30:09.965665",
       "matches": {
         "id": 30,
         "date": "2026-10-21",
@@ -2147,7 +2147,7 @@
       "predicted_total": 238.78,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T11:00:09.918868",
+      "created_at": "2026-10-20T11:30:10.006785",
       "matches": {
         "id": 27,
         "date": "2026-10-21",
@@ -2195,7 +2195,7 @@
       "predicted_total": 219.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T11:00:09.963350",
+      "created_at": "2026-10-20T11:30:10.050783",
       "matches": {
         "id": 25,
         "date": "2026-10-21",
@@ -2243,7 +2243,7 @@
       "predicted_total": 221.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T11:00:10.008473",
+      "created_at": "2026-10-20T11:30:10.095232",
       "matches": {
         "id": 34,
         "date": "2026-10-21",
@@ -2291,7 +2291,7 @@
       "predicted_total": 234.75,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T11:00:10.051383",
+      "created_at": "2026-10-20T11:30:10.137763",
       "matches": {
         "id": 29,
         "date": "2026-10-21",
@@ -2339,7 +2339,7 @@
       "predicted_total": 230.55,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T11:00:10.096969",
+      "created_at": "2026-10-20T11:30:10.182862",
       "matches": {
         "id": 26,
         "date": "2026-10-21",
@@ -2387,7 +2387,7 @@
       "predicted_total": 239.77,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-20T11:00:10.138528",
+      "created_at": "2026-10-20T11:30:10.223961",
       "matches": {
         "id": 31,
         "date": "2026-10-21",
