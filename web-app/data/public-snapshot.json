@@ -1255,7 +1255,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -1.5,
-      "vegas_total": 241.5,
+      "vegas_total": 242.5,
       "home_team": {
         "code": "MEM",
         "full_name": "Memphis Grizzlies",
@@ -1305,7 +1305,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -8.5,
-      "vegas_total": 230.5,
+      "vegas_total": 229.5,
       "home_team": {
         "code": "HOU",
         "full_name": "Houston Rockets",
@@ -1355,7 +1355,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 233.5,
+      "vegas_total": 232.5,
       "home_team": {
         "code": "POR",
         "full_name": "Portland Trail Blazers",
@@ -1888,6 +1888,534 @@
       "recommended_team": {
         "code": "OKC",
         "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png"
+      }
+    },
+    {
+      "id": 4,
+      "match_id": 28,
+      "recommended_team_id": 4,
+      "confidence_score": 83.0,
+      "spread_logic": "AI projects CHA to win by 6.9 pts",
+      "spread_logic_zh": "AI 預測 CHA 贏 6.9 分",
+      "line_info": "-1.5",
+      "ou_pick": "OVER",
+      "ou_line": 219.5,
+      "ou_confidence": 59.0,
+      "analysis_content": "Our AI model identifies a statistical edge for CHA over BKN.\n\n• **Rebounding Presence (L5)**: Shows a significant advantage in recent form.\n• **Net Rating Trend (L5)**: Shows a slight advantage in recent form.\n• **Rim Protection (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, CHA's performance in Rebounding Presence (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：CHA 相對 BKN，在近期統計指標上較占優勢。\n\n• **籃板影響力（近5場）**：近 5 場呈現「明顯」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，CHA 在「籃板影響力（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 6.9,
+      "predicted_total": 222.66,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-20T00:00:09.582969",
+      "matches": {
+        "id": 28,
+        "date": "2026-10-21",
+        "start_time": "2026-10-21T23:30Z",
+        "home_team_id": 3,
+        "away_team_id": 4,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -1.5,
+        "vegas_total": 219.5,
+        "home_team": {
+          "code": "BKN",
+          "full_name": "Brooklyn Nets",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png"
+        },
+        "away_team": {
+          "code": "CHA",
+          "full_name": "Charlotte Hornets",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png"
+        },
+        "home_team_nba_id": 1610612751,
+        "away_team_nba_id": 1610612766
+      },
+      "recommended_team": {
+        "code": "CHA",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png"
+      }
+    },
+    {
+      "id": 5,
+      "match_id": 32,
+      "recommended_team_id": 10,
+      "confidence_score": 53.0,
+      "spread_logic": "AI projects HOU to win by 9.3 pts",
+      "spread_logic_zh": "AI 預測 HOU 贏 9.3 分",
+      "line_info": "-8.5",
+      "ou_pick": "OVER",
+      "ou_line": 229.5,
+      "ou_confidence": 50.0,
+      "analysis_content": "Our AI model identifies a statistical edge for HOU over DAL.\n\n• **Defensive Pressure (L5)**: Shows a slight advantage in recent form.\n• **Net Rating Trend (L5)**: Shows a slight advantage in recent form.\n• **Rim Protection (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, HOU's performance in Defensive Pressure (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：HOU 相對 DAL，在近期統計指標上較占優勢。\n\n• **防守壓迫（近5場）**：近 5 場呈現「輕微」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，HOU 在「防守壓迫（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 9.34,
+      "predicted_total": 229.72,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-20T00:00:09.626746",
+      "matches": {
+        "id": 32,
+        "date": "2026-10-21",
+        "start_time": "2026-10-22T00:30Z",
+        "home_team_id": 10,
+        "away_team_id": 7,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -8.5,
+        "vegas_total": 229.5,
+        "home_team": {
+          "code": "HOU",
+          "full_name": "Houston Rockets",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png"
+        },
+        "away_team": {
+          "code": "DAL",
+          "full_name": "Dallas Mavericks",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png"
+        },
+        "home_team_nba_id": 1610612745,
+        "away_team_nba_id": 1610612742
+      },
+      "recommended_team": {
+        "code": "HOU",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png"
+      }
+    },
+    {
+      "id": 6,
+      "match_id": 35,
+      "recommended_team_id": 12,
+      "confidence_score": 64.0,
+      "spread_logic": "AI projects LAC to win by 8.2 pts",
+      "spread_logic_zh": "AI 預測 LAC 贏 8.2 分",
+      "line_info": "-4.5",
+      "ou_pick": "OVER",
+      "ou_line": 228.5,
+      "ou_confidence": 54.0,
+      "analysis_content": "Our AI model identifies a statistical edge for LAC over SAC.\n\n• **Net Rating Trend (L5)**: Shows a slight advantage in recent form.\n• **Ball Security (L5)**: Shows a slight advantage in recent form.\n• **Free Throw Reliability (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, LAC's performance in Net Rating Trend (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：LAC 相對 SAC，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n• **罰球穩定度（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，LAC 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 8.18,
+      "predicted_total": 230.04,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-20T00:00:09.672312",
+      "matches": {
+        "id": 35,
+        "date": "2026-10-21",
+        "start_time": "2026-10-22T02:30Z",
+        "home_team_id": 12,
+        "away_team_id": 23,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -4.5,
+        "vegas_total": 228.5,
+        "home_team": {
+          "code": "LAC",
+          "full_name": "LA Clippers",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png"
+        },
+        "away_team": {
+          "code": "SAC",
+          "full_name": "Sacramento Kings",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png"
+        },
+        "home_team_nba_id": 1610612746,
+        "away_team_nba_id": 1610612758
+      },
+      "recommended_team": {
+        "code": "LAC",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png"
+      }
+    },
+    {
+      "id": 7,
+      "match_id": 33,
+      "recommended_team_id": 13,
+      "confidence_score": 51.0,
+      "spread_logic": "AI projects LAL to win by 7.0 pts",
+      "spread_logic_zh": "AI 預測 LAL 贏 7.0 分",
+      "line_info": "-6.5",
+      "ou_pick": "UNDER",
+      "ou_line": 234.5,
+      "ou_confidence": 87.0,
+      "analysis_content": "Our AI model identifies a statistical edge for LAL over GS.\n\n• **Rim Protection (L5)**: Shows a slight advantage in recent form.\n• **Rebounding Presence (L5)**: Shows a slight advantage in recent form.\n• **Ball Security (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, LAL's performance in Rim Protection (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：LAL 相對 GS，在近期統計指標上較占優勢。\n\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n• **籃板影響力（近5場）**：近 5 場呈現「輕微」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，LAL 在「護框阻攻（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 6.98,
+      "predicted_total": 221.89,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-20T00:00:09.719908",
+      "matches": {
+        "id": 33,
+        "date": "2026-10-21",
+        "start_time": "2026-10-22T02:00Z",
+        "home_team_id": 13,
+        "away_team_id": 26,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -6.5,
+        "vegas_total": 234.5,
+        "home_team": {
+          "code": "LAL",
+          "full_name": "Los Angeles Lakers",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png"
+        },
+        "away_team": {
+          "code": "GS",
+          "full_name": "Golden State Warriors",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png"
+        },
+        "home_team_nba_id": 1610612747,
+        "away_team_nba_id": 1610612744
+      },
+      "recommended_team": {
+        "code": "LAL",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png"
+      }
+    },
+    {
+      "id": 8,
+      "match_id": 30,
+      "recommended_team_id": 30,
+      "confidence_score": 54.0,
+      "spread_logic": "AI projects UTAH to lose by 0.5 pts",
+      "spread_logic_zh": "AI 預測 UTAH 輸 0.5 分",
+      "line_info": "-1.5",
+      "ou_pick": "UNDER",
+      "ou_line": 242.5,
+      "ou_confidence": 50.0,
+      "analysis_content": "Our AI model identifies a statistical edge for UTAH over MEM.\n\n• **Paint Scoring (L5)**: Shows a dominant advantage in recent form.\n• **Net Rating Trend (L5)**: Shows a dominant advantage in recent form.\n• **Rebounding Presence (L5)**: Shows a significant advantage in recent form.\n\nComparing the recent 5-game trends, UTAH's performance in Paint Scoring (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：UTAH 相對 MEM，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「強烈」優勢。\n• **籃板影響力（近5場）**：近 5 場呈現「明顯」優勢。\n\n綜合近 5 場走勢，UTAH 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": -0.46,
+      "predicted_total": 242.2,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-20T00:00:09.761749",
+      "matches": {
+        "id": 30,
+        "date": "2026-10-21",
+        "start_time": "2026-10-22T00:00Z",
+        "home_team_id": 14,
+        "away_team_id": 30,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -1.5,
+        "vegas_total": 242.5,
+        "home_team": {
+          "code": "MEM",
+          "full_name": "Memphis Grizzlies",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png"
+        },
+        "away_team": {
+          "code": "UTAH",
+          "full_name": "Utah Jazz",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png"
+        },
+        "home_team_nba_id": 1610612763,
+        "away_team_nba_id": 1610612762
+      },
+      "recommended_team": {
+        "code": "UTAH",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png"
+      }
+    },
+    {
+      "id": 9,
+      "match_id": 27,
+      "recommended_team_id": 15,
+      "confidence_score": 71.0,
+      "spread_logic": "AI projects MIA to win by 7.0 pts",
+      "spread_logic_zh": "AI 預測 MIA 贏 7.0 分",
+      "line_info": "-1.5",
+      "ou_pick": "UNDER",
+      "ou_line": 243.5,
+      "ou_confidence": 64.0,
+      "analysis_content": "Our AI model identifies a statistical edge for MIA over MIN.\n\n• **Net Rating Trend (L5)**: Shows a dominant advantage in recent form.\n• **Paint Scoring (L5)**: Shows a dominant advantage in recent form.\n• **Ball Movement (L5)**: Shows a dominant advantage in recent form.\n\nComparing the recent 5-game trends, MIA's performance in Net Rating Trend (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：MIA 相對 MIN，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「強烈」優勢。\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **傳導與助攻（近5場）**：近 5 場呈現「強烈」優勢。\n\n綜合近 5 場走勢，MIA 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 6.95,
+      "predicted_total": 238.78,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-20T00:00:09.802860",
+      "matches": {
+        "id": 27,
+        "date": "2026-10-21",
+        "start_time": "2026-10-21T23:30Z",
+        "home_team_id": 15,
+        "away_team_id": 17,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -1.5,
+        "vegas_total": 243.5,
+        "home_team": {
+          "code": "MIA",
+          "full_name": "Miami Heat",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png"
+        },
+        "away_team": {
+          "code": "MIN",
+          "full_name": "Minnesota Timberwolves",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/min.png"
+        },
+        "home_team_nba_id": 1610612748,
+        "away_team_nba_id": 1610612750
+      },
+      "recommended_team": {
+        "code": "MIA",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png"
+      }
+    },
+    {
+      "id": 10,
+      "match_id": 25,
+      "recommended_team_id": 1,
+      "confidence_score": 55.0,
+      "spread_logic": "AI projects ATL to lose by 1.1 pts",
+      "spread_logic_zh": "AI 預測 ATL 輸 1.1 分",
+      "line_info": "-2.5",
+      "ou_pick": "UNDER",
+      "ou_line": 235.5,
+      "ou_confidence": 90.0,
+      "analysis_content": "Our AI model identifies a statistical edge for ATL over ORL.\n\n• **Paint Scoring (L5)**: Shows a dominant advantage in recent form.\n• **Ball Movement (L5)**: Shows a slight advantage in recent form.\n• **Shooting Efficiency (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, ATL's performance in Paint Scoring (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：ATL 相對 ORL，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **傳導與助攻（近5場）**：近 5 場呈現「輕微」優勢。\n• **投籃效率（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，ATL 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": -1.05,
+      "predicted_total": 219.48,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-20T00:00:09.847323",
+      "matches": {
+        "id": 25,
+        "date": "2026-10-21",
+        "start_time": "2026-10-21T23:00Z",
+        "home_team_id": 19,
+        "away_team_id": 1,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -2.5,
+        "vegas_total": 235.5,
+        "home_team": {
+          "code": "ORL",
+          "full_name": "Orlando Magic",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png"
+        },
+        "away_team": {
+          "code": "ATL",
+          "full_name": "Atlanta Hawks",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png"
+        },
+        "home_team_nba_id": 1610612753,
+        "away_team_nba_id": 1610612737
+      },
+      "recommended_team": {
+        "code": "ATL",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png"
+      }
+    },
+    {
+      "id": 11,
+      "match_id": 34,
+      "recommended_team_id": 22,
+      "confidence_score": 50.0,
+      "spread_logic": "AI projects POR to win by 3.6 pts",
+      "spread_logic_zh": "AI 預測 POR 贏 3.6 分",
+      "line_info": "-3.5",
+      "ou_pick": "UNDER",
+      "ou_line": 232.5,
+      "ou_confidence": 83.0,
+      "analysis_content": "Our AI model identifies a statistical edge for POR over PHX.\n\n• **Paint Scoring (L5)**: Shows a significant advantage in recent form.\n• **Ball Security (L5)**: Shows a slight advantage in recent form.\n• **Rim Protection (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, POR's performance in Paint Scoring (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：POR 相對 PHX，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「明顯」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，POR 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 3.62,
+      "predicted_total": 221.49,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-20T00:00:09.892177",
+      "matches": {
+        "id": 34,
+        "date": "2026-10-21",
+        "start_time": "2026-10-22T02:00Z",
+        "home_team_id": 22,
+        "away_team_id": 21,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -3.5,
+        "vegas_total": 232.5,
+        "home_team": {
+          "code": "POR",
+          "full_name": "Portland Trail Blazers",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/por.png"
+        },
+        "away_team": {
+          "code": "PHX",
+          "full_name": "Phoenix Suns",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png"
+        },
+        "home_team_nba_id": 1610612757,
+        "away_team_nba_id": 1610612756
+      },
+      "recommended_team": {
+        "code": "POR",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/por.png"
+      }
+    },
+    {
+      "id": 12,
+      "match_id": 29,
+      "recommended_team_id": 24,
+      "confidence_score": 50.0,
+      "spread_logic": "AI projects TOR to win by 9.6 pts",
+      "spread_logic_zh": "AI 預測 TOR 贏 9.6 分",
+      "line_info": "-9.5",
+      "ou_pick": "UNDER",
+      "ou_line": 236.5,
+      "ou_confidence": 55.0,
+      "analysis_content": "Our AI model identifies a statistical edge for TOR over CHI.\n\n• **Net Rating Trend (L5)**: Shows a slight advantage in recent form.\n• **Ball Security (L5)**: Shows a slight advantage in recent form.\n• **Rim Protection (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, TOR's performance in Net Rating Trend (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：TOR 相對 CHI，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，TOR 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 9.55,
+      "predicted_total": 234.75,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-20T00:00:09.934900",
+      "matches": {
+        "id": 29,
+        "date": "2026-10-21",
+        "start_time": "2026-10-21T23:30Z",
+        "home_team_id": 24,
+        "away_team_id": 5,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -9.5,
+        "vegas_total": 236.5,
+        "home_team": {
+          "code": "TOR",
+          "full_name": "Toronto Raptors",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png"
+        },
+        "away_team": {
+          "code": "CHI",
+          "full_name": "Chicago Bulls",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png"
+        },
+        "home_team_nba_id": 1610612761,
+        "away_team_nba_id": 1610612741
+      },
+      "recommended_team": {
+        "code": "TOR",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png"
+      }
+    },
+    {
+      "id": 13,
+      "match_id": 26,
+      "recommended_team_id": 16,
+      "confidence_score": 71.0,
+      "spread_logic": "AI projects MIL to win by 0.8 pts",
+      "spread_logic_zh": "AI 預測 MIL 贏 0.8 分",
+      "line_info": "-4.5",
+      "ou_pick": "UNDER",
+      "ou_line": 238.5,
+      "ou_confidence": 73.0,
+      "analysis_content": "Our AI model identifies a statistical edge for MIL over WSH.\n\n• **Net Rating Trend (L5)**: Shows a dominant advantage in recent form.\n• **Ball Movement (L5)**: Shows a slight advantage in recent form.\n• **Rebounding Presence (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, MIL's performance in Net Rating Trend (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：MIL 相對 WSH，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「強烈」優勢。\n• **傳導與助攻（近5場）**：近 5 場呈現「輕微」優勢。\n• **籃板影響力（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，MIL 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 0.84,
+      "predicted_total": 230.55,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-20T00:00:09.980224",
+      "matches": {
+        "id": 26,
+        "date": "2026-10-21",
+        "start_time": "2026-10-21T23:00Z",
+        "home_team_id": 25,
+        "away_team_id": 16,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -4.5,
+        "vegas_total": 238.5,
+        "home_team": {
+          "code": "WSH",
+          "full_name": "Washington Wizards",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png"
+        },
+        "away_team": {
+          "code": "MIL",
+          "full_name": "Milwaukee Bucks",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png"
+        },
+        "home_team_nba_id": 1610612764,
+        "away_team_nba_id": 1610612749
+      },
+      "recommended_team": {
+        "code": "MIL",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png"
+      }
+    },
+    {
+      "id": 14,
+      "match_id": 31,
+      "recommended_team_id": 27,
+      "confidence_score": 79.0,
+      "spread_logic": "AI projects NO to win by 4.0 pts",
+      "spread_logic_zh": "AI 預測 NO 贏 4.0 分",
+      "line_info": "3.5",
+      "ou_pick": "UNDER",
+      "ou_line": 240.5,
+      "ou_confidence": 52.0,
+      "analysis_content": "Our AI model identifies a statistical edge for NO over IND.\n\n• **Paint Scoring (L5)**: Shows a dominant advantage in recent form.\n• **Ball Security (L5)**: Shows a slight advantage in recent form.\n• **Defensive Pressure (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, NO's performance in Paint Scoring (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：NO 相對 IND，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n• **防守壓迫（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，NO 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 3.98,
+      "predicted_total": 239.77,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-20T00:00:10.021475",
+      "matches": {
+        "id": 31,
+        "date": "2026-10-21",
+        "start_time": "2026-10-22T00:00Z",
+        "home_team_id": 27,
+        "away_team_id": 11,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": 3.5,
+        "vegas_total": 240.5,
+        "home_team": {
+          "code": "NO",
+          "full_name": "New Orleans Pelicans",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/no.png"
+        },
+        "away_team": {
+          "code": "IND",
+          "full_name": "Indiana Pacers",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png"
+        },
+        "home_team_nba_id": 1610612740,
+        "away_team_nba_id": 1610612754
+      },
+      "recommended_team": {
+        "code": "NO",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/no.png"
       }
     }
   ]
