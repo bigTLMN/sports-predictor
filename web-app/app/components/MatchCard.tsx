@@ -61,6 +61,12 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
       : null;
 
   const spreadLogicDisplay = pickSpreadLogic(pick, locale);
+  const outcomeText = (value: string | null | undefined) => {
+    if (value === 'WIN') return t('common.win');
+    if (value === 'LOSS') return t('common.loss');
+    if (value === 'PUSH') return t('common.push');
+    return '-';
+  };
 
   return (
     <motion.div
@@ -289,7 +295,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                           : 'text-slate-500'
                   }`}
                 >
-                  {hasSpreadLine ? pick.spread_outcome || '-' : '—'}
+                  {hasSpreadLine ? outcomeText(pick.spread_outcome) : '—'}
                 </span>
               </div>
 
@@ -308,7 +314,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                         : 'text-slate-500'
                   }`}
                 >
-                  {pick.total_outcome || '-'}
+                  {outcomeText(pick.total_outcome)}
                 </span>
               </div>
             </div>

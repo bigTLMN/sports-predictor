@@ -17,12 +17,6 @@ interface StatsDashboardProps {
   historyPicks: any[];
 }
 
-const WINDOW_LABELS: Record<7 | 30 | 90, string> = {
-  7: '7D',
-  30: '30D',
-  90: '90D',
-};
-
 function matchDayString(p: any): string | undefined {
   const d = p?.matches?.date;
   if (d == null) return undefined;
@@ -242,7 +236,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
                     daysRange === d ? 'bg-white text-slate-800 shadow-sm' : 'text-slate-400 hover:text-slate-600'
                   }`}
                 >
-                  {WINDOW_LABELS[d]}
+                  {t('stats.nDays', { n: d })}
                 </button>
               ))}
             </div>

@@ -24,7 +24,7 @@ const en: Messages = {
     'Rolling win–loss by calendar day (chart matches the range on the right). Combined = spread + total legs per pick.',
   'stats.market': 'Market',
   'stats.days': 'days',
-  'stats.nDays': '{n} days',
+  'stats.nDays': '{n}D',
   'stats.legWin': '{n}W',
   'stats.legLoss': '{n}L',
   'stats.row.spread': 'Spread',
@@ -51,6 +51,7 @@ const en: Messages = {
 
   'common.win': 'W',
   'common.loss': 'L',
+  'common.push': 'PUSH',
 
   // Match card
   'card.highValue': 'High Value',
@@ -59,9 +60,9 @@ const en: Messages = {
   'card.final': 'FINAL',
   'card.aiAnalysis': 'AI Analysis',
   'card.viewAnalysis': 'View Analysis',
-  'card.toCover': '過盤',
+  'card.toCover': 'cover',
   'card.coverBy': '',
-  'card.totalCoverLine': '{side} {line} 過盤',
+  'card.totalCoverLine': '{side} {line} cover',
   'card.valueBetFallback': 'Value Bet Analysis',
   'card.confTotal': 'Conf. (Total)',
   'card.totalRow': 'Total',
@@ -100,7 +101,7 @@ const en: Messages = {
 
 const zhTW: Messages = {
   'stats.intro':
-    '以下為「已結算」的 AI 建議統計。Spread＝依盤口讓分是否過關；Total＝依大小分盤口是否過關。Combined＝同一場同時計入讓分腿與大小分腿。切換上方分頁可改變圖表與表格的統計範圍。',
+    '以下為已結算的 AI 建議。讓分看有沒有過盤，大小分看有沒有過大小分盤。合併是同一場的讓分和大小分一起算。切換上方分頁可改變統計範圍。',
   'stats.intro.zhNote': '',
 
   'stats.tab.spread': '讓分',
@@ -142,6 +143,7 @@ const zhTW: Messages = {
 
   'common.win': '勝',
   'common.loss': '負',
+  'common.push': '和',
 
   'card.highValue': '高價值',
   'card.vegas': '盤口',
@@ -169,7 +171,7 @@ const zhTW: Messages = {
   'card.ou.under': '小分',
 
   'detail.back': '返回盤面',
-  'detail.edgePro': 'Edge Analytics Pro',
+  'detail.edgePro': '進階分析',
   'detail.away': '客隊',
   'detail.home': '主隊',
   'detail.vegasSpread': '盤口讓分',
