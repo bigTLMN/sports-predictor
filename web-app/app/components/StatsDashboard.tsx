@@ -239,12 +239,12 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
       {hasHistory && (
         <div className="border-t border-slate-200 dark:border-slate-700 pt-4 relative">
           <div className="rounded-xl border border-slate-300 bg-slate-50 dark:border-slate-600 dark:bg-slate-800/80">
-            <div className="flex items-center justify-between gap-3 px-3 py-2.5">
+            <div className="flex flex-col gap-2 px-3 py-2.5 sm:flex-row sm:items-center sm:justify-between">
               <button
                 type="button"
                 onClick={toggleTrend}
                 aria-expanded={trendOpen}
-                className="flex flex-1 items-center gap-2 text-left text-sm font-bold text-slate-800 dark:text-white uppercase tracking-wider"
+                className="flex w-full items-center gap-2 text-left text-sm font-bold text-slate-800 dark:text-white uppercase tracking-wider sm:flex-1"
               >
                 <span
                   className={`inline-flex h-6 w-6 items-center justify-center rounded-full bg-slate-900 text-white dark:bg-white dark:text-slate-900 ${trendOpen ? '' : 'animate-[trend-nudge_1.2s_ease-in-out_infinite]'}`}
@@ -261,13 +261,13 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
                 {t('stats.trendTitle')}
               </button>
               {trendOpen && (
-                <div className="flex bg-slate-200 dark:bg-slate-900 rounded-lg p-1 gap-1 shrink-0">
+                <div className="flex w-full bg-slate-200 dark:bg-slate-900 rounded-lg p-1 gap-1 sm:w-auto sm:shrink-0">
                   {([7, 30, 90] as const).map((d) => (
                     <button
                       key={d}
                       type="button"
                       onClick={() => setDaysRange(d)}
-                      className={`px-3 py-1 text-sm font-bold rounded-md transition-all ${
+                      className={`flex-1 sm:flex-none px-3 py-1 text-sm font-bold rounded-md transition-all ${
                         daysRange === d ? 'bg-white text-slate-900 shadow-sm dark:bg-slate-950 dark:text-white' : 'text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white'
                       }`}
                     >
@@ -333,31 +333,54 @@ function RollingBoard({
   const record = (leg: Leg) => `${t('stats.legWin', { n: leg.w })} ${t('stats.legLoss', { n: leg.l })}`;
 
   return (
-    <div className="mb-5 rounded-2xl bg-[#0D1117] text-white p-4">
-      <div className="grid grid-cols-4 gap-2 text-sm font-bold tracking-wide text-slate-500">
-        <div />
+    <div className="mb-5 rounded-2xl bg-[#0D1117] text-white p-3 sm:p-4">
+      <div className="grid gap-3 sm:hidden">
         {snapshots.map((col) => (
-          <div key={col.days} className={`text-right ${activeDays === col.days ? 'text-[#dfbd69]' : ''}`}>
-            {t('stats.nDays', { n: col.days })}
+          <div key={col.days} className="border-t border-white/10 pt-3 first:border-t-0 first:pt-0">
+            <div className={`text-sm font-bold ${activeDays === col.days ? 'text-[#dfbd69]' : 'text-slate-400'}`}>
+              {t('stats.nDays', { n: col.days })}
+            </div>
+            {rows.map((row) => {
+              const leg = col[row.key];
+              return (
+                <div key={row.key} className="mt-1.5 flex items-baseline justify-between gap-3">
+                  <div className="text-sm font-bold">{row.label}</div>
+                  <div className={`text-xl font-bold leading-none tabular-nums ${activeDays === col.days ? 'text-[#dfbd69]' : 'text-white'}`}>
+                    {rateText(leg)}
+                  </div>
+                  <div className="text-sm font-bold text-slate-400 tabular-nums">{record(leg)}</div>
+                </div>
+              );
+            })}
           </div>
         ))}
       </div>
-      {rows.map((row) => (
-        <div key={row.key} className="grid grid-cols-4 gap-2 items-end border-t border-white/10 mt-2 pt-2">
-          <div className="text-sm font-bold">{row.label}</div>
-          {snapshots.map((col) => {
-            const leg = col[row.key];
-            return (
-              <div key={col.days} className="text-right">
-                <div className={`text-2xl font-bold leading-none tabular-nums ${activeDays === col.days ? 'text-[#dfbd69]' : 'text-white'}`}>
-                  {rateText(leg)}
-                </div>
-                <div className="mt-1 text-sm font-bold text-slate-400 tabular-nums">{record(leg)}</div>
-              </div>
-            );
-          })}
+      <div className="hidden sm:block">
+        <div className="grid grid-cols-4 gap-2 text-sm font-bold tracking-wide text-slate-500">
+          <div />
+          {snapshots.map((col) => (
+            <div key={col.days} className={`text-right ${activeDays === col.days ? 'text-[#dfbd69]' : ''}`}>
+              {t('stats.nDays', { n: col.days })}
+            </div>
+          ))}
         </div>
-      ))}
+        {rows.map((row) => (
+          <div key={row.key} className="grid grid-cols-4 gap-2 items-end border-t border-white/10 mt-2 pt-2">
+            <div className="text-sm font-bold">{row.label}</div>
+            {snapshots.map((col) => {
+              const leg = col[row.key];
+              return (
+                <div key={col.days} className="min-w-0 text-right">
+                  <div className={`text-2xl font-bold leading-none tabular-nums ${activeDays === col.days ? 'text-[#dfbd69]' : 'text-white'}`}>
+                    {rateText(leg)}
+                  </div>
+                  <div className="mt-1 text-sm font-bold text-slate-400 tabular-nums">{record(leg)}</div>
+                </div>
+              );
+            })}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
