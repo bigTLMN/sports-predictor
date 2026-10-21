@@ -97,8 +97,8 @@ export default async function Home({
                 </div>
               </div>
             </a>
-            <div className="absolute top-3 right-3 md:top-4 md:right-4 z-20">
-              <AppearanceSwitch />
+            <div className="absolute top-1 right-1.5 z-20">
+              <AppearanceSwitch compact />
             </div>
           </div>
 
