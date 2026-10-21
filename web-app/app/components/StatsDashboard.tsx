@@ -211,10 +211,8 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
           <div className="flex justify-center items-baseline gap-1.5">
             <span className="text-3xl font-black text-slate-800 dark:text-white">{dayRate}%</span>
           </div>
-          <div className="text-sm font-bold text-slate-700 dark:text-slate-200 mt-1 bg-slate-100 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
-            {statsData.day.wins}
-            {t('common.win')} - {statsData.day.total - statsData.day.wins}
-            {t('common.loss')}
+          <div className="text-sm font-bold mt-1 bg-slate-100 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
+            <WinLoss wins={statsData.day.wins} losses={statsData.day.total - statsData.day.wins} t={t} />
           </div>
         </div>
 
@@ -227,10 +225,8 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
               {seasonRate}%
             </span>
           </div>
-          <div className="text-sm font-bold text-slate-700 dark:text-slate-200 mt-1 bg-slate-100 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
-            {statsData.season.wins}
-            {t('common.win')} - {statsData.season.total - statsData.season.wins}
-            {t('common.loss')}
+          <div className="text-sm font-bold mt-1 bg-slate-100 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
+            <WinLoss wins={statsData.season.wins} losses={statsData.season.total - statsData.season.wins} t={t} />
           </div>
         </div>
       </div>
@@ -315,6 +311,30 @@ type Snapshot = {
   combined: Leg;
 };
 
+function WinLoss({
+  wins,
+  losses,
+  onDark = false,
+  t,
+}: {
+  wins: number;
+  losses: number;
+  onDark?: boolean;
+  t: (key: string, vars?: Record<string, string | number>) => string;
+}) {
+  return (
+    <span className="tabular-nums whitespace-nowrap">
+      <span className={onDark ? 'text-emerald-300' : 'text-emerald-700 dark:text-emerald-300'}>
+        {t('stats.legWin', { n: wins })}
+      </span>
+      {' '}
+      <span className={onDark ? 'text-red-300' : 'text-red-600 dark:text-red-300'}>
+        {t('stats.legLoss', { n: losses })}
+      </span>
+    </span>
+  );
+}
+
 function RollingBoard({
   snapshots,
   activeDays,
@@ -330,7 +350,7 @@ function RollingBoard({
     { key: 'combined', label: t('stats.row.combined') },
   ];
   const rateText = (leg: Leg) => (leg.rate == null ? '—' : `${leg.rate}%`);
-  const record = (leg: Leg) => `${t('stats.legWin', { n: leg.w })} ${t('stats.legLoss', { n: leg.l })}`;
+  const record = (leg: Leg) => <WinLoss wins={leg.w} losses={leg.l} onDark t={t} />;
 
   return (
     <div className="mb-5 rounded-2xl bg-[#0D1117] text-white p-3 sm:p-4">

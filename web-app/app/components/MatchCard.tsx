@@ -276,22 +276,22 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
               <div
                 className={`flex-1 py-2 flex flex-col items-center justify-center ${
                   hasSpreadLine && pick.spread_outcome === 'WIN'
-                    ? 'bg-green-50/50'
+                    ? 'bg-emerald-100 dark:bg-emerald-500/25'
                     : hasSpreadLine && pick.spread_outcome === 'LOSS'
-                      ? 'bg-red-50/50'
+                      ? 'bg-red-100 dark:bg-red-500/25'
                       : ''
                 }`}
               >
-                <span className="text-sm font-bold text-slate-400 uppercase tracking-wider">{t('card.spreadFooter')}</span>
+                <span className="text-sm font-bold text-slate-500 dark:text-slate-300 uppercase tracking-wider">{t('card.spreadFooter')}</span>
                 <span
                   className={`text-base font-black ${
                     !hasSpreadLine
                       ? 'text-slate-400'
                       : pick.spread_outcome === 'WIN'
-                        ? 'text-green-600'
+                        ? 'text-emerald-700 dark:text-emerald-300'
                         : pick.spread_outcome === 'LOSS'
-                          ? 'text-red-500'
-                          : 'text-slate-500'
+                          ? 'text-red-600 dark:text-red-300'
+                          : 'text-slate-500 dark:text-slate-300'
                   }`}
                 >
                   {hasSpreadLine ? outcomeText(pick.spread_outcome) : '—'}
@@ -300,17 +300,21 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
 
               <div
                 className={`flex-1 py-2 flex flex-col items-center justify-center ${
-                  pick.total_outcome === 'WIN' ? 'bg-green-50/50' : pick.total_outcome === 'LOSS' ? 'bg-red-50/50' : ''
+                  pick.total_outcome === 'WIN'
+                    ? 'bg-emerald-100 dark:bg-emerald-500/25'
+                    : pick.total_outcome === 'LOSS'
+                      ? 'bg-red-100 dark:bg-red-500/25'
+                      : ''
                 }`}
               >
-                <span className="text-sm font-bold text-slate-400 uppercase tracking-wider">{t('card.totalFooter')}</span>
+                <span className="text-sm font-bold text-slate-500 dark:text-slate-300 uppercase tracking-wider">{t('card.totalFooter')}</span>
                 <span
                   className={`text-base font-black ${
                     pick.total_outcome === 'WIN'
-                      ? 'text-green-600'
+                      ? 'text-emerald-700 dark:text-emerald-300'
                       : pick.total_outcome === 'LOSS'
-                        ? 'text-red-500'
-                        : 'text-slate-500'
+                        ? 'text-red-600 dark:text-red-300'
+                        : 'text-slate-500 dark:text-slate-300'
                   }`}
                 >
                   {outcomeText(pick.total_outcome)}
