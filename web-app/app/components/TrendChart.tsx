@@ -84,27 +84,15 @@ function TrendChartInner({
 
   const { color, gradientId } = config[type];
 
-  const meanOfDailyRates =
-    data.length > 0
-      ? Math.round(data.reduce((s, d) => s + d.winRate, 0) / data.length)
-      : 0;
-
   return (
     <div className="w-full mb-2 select-none">
-      <div className="flex flex-wrap justify-between items-end gap-2 mb-3 px-1">
+      <div className="mb-3 px-1">
         <div
-          className="text-[12px] font-semibold flex items-center gap-1.5 bg-current/10 px-2.5 py-1 rounded-full backdrop-blur-sm"
+          className="text-[12px] font-semibold inline-flex items-center gap-1.5 bg-current/10 px-2.5 py-1 rounded-full backdrop-blur-sm"
           style={{ color }}
         >
           <span className="w-2 h-2 rounded-full" style={{ backgroundColor: color }} />
           {t('trend.dailyRate', { label: metricLabel })}
-        </div>
-        <div className="text-right max-w-[220px]">
-          <div className="text-[10px] font-bold text-slate-500">
-            {t('trend.meanRates')}{' '}
-            <span className="text-slate-800 dark:text-slate-100 tabular-nums">{meanOfDailyRates}%</span>
-          </div>
-          <div className="text-[9px] text-slate-400 leading-tight mt-0.5">{t('trend.meanFootnote')}</div>
         </div>
       </div>
 

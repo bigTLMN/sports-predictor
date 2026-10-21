@@ -33,8 +33,6 @@ const en: Messages = {
   'stats.noHistory': 'No settled pick history yet.',
 
   'trend.dailyRate': '{label} · daily rate (by game day)',
-  'trend.meanRates': 'Mean of daily rates:',
-  'trend.meanFootnote': 'Aggregate W-L uses the table above (not the same as this mean).',
 
   'home.marketTitle': 'Market Board',
   'home.noAction': 'No Action',
@@ -126,8 +124,6 @@ const zhTW: Messages = {
   'stats.noHistory': '尚無已結算的歷史紀錄。',
 
   'trend.dailyRate': '{label} · 依比賽日的每日命中率',
-  'trend.meanRates': '每日命中率平均：',
-  'trend.meanFootnote': '總體勝負以上方表格為準（與此平均值意義不同）。',
 
   'home.marketTitle': '盤面',
   'home.noAction': '本日無賽事',
