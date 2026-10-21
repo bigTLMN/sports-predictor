@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { differenceInCalendarDays, parseISO } from 'date-fns';
 import dynamic from 'next/dynamic';
 import { useI18n } from '@/lib/i18n';
@@ -11,6 +11,9 @@ const TrendChart = dynamic(() => import('./TrendChart'), {
 });
 
 export type StatsType = 'SPREAD' | 'TOTAL' | 'ALL';
+type BoardStyle = 'board' | 'bars' | 'tiles' | 'ticker';
+const BOARD_STYLES: BoardStyle[] = ['board', 'bars', 'tiles', 'ticker'];
+const STYLE_KEY = 'stats-board-style';
 
 interface StatsDashboardProps {
   dailyPicks: any[];
@@ -92,6 +95,19 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
   const { t } = useI18n();
   const [activeTab, setActiveTab] = useState<StatsType>('SPREAD');
   const [daysRange, setDaysRange] = useState<7 | 30 | 90>(7);
+  const [boardStyle, setBoardStyle] = useState<BoardStyle>('board');
+
+  useEffect(() => {
+    const saved = window.localStorage.getItem(STYLE_KEY);
+    if (saved === 'board' || saved === 'bars' || saved === 'tiles' || saved === 'ticker') {
+      setBoardStyle(saved);
+    }
+  }, []);
+
+  const chooseStyle = (style: BoardStyle) => {
+    setBoardStyle(style);
+    window.localStorage.setItem(STYLE_KEY, style);
+  };
 
   const rollingSnapshots = useMemo(() => {
     const windows = [7, 30, 90] as const;
@@ -217,98 +233,49 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
       {/* Trend Analysis：滾動視窗快照 + 圖 */}
       {hasHistory && (
         <div className="border-t border-slate-100 pt-4 animate-in fade-in duration-500 relative">
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4 px-1">
-            <div>
+          <div className="flex flex-col gap-3 mb-4 px-1">
+            <div className="flex items-center justify-between gap-3">
               <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">{t('stats.trendTitle')}</div>
-              <p className="text-[10px] text-slate-400 mt-0.5 leading-relaxed max-w-md">{t('stats.trendHint')}</p>
+              <div className="flex bg-slate-100 rounded-lg p-1 gap-1 shrink-0">
+                {([7, 30, 90] as const).map((d) => (
+                  <button
+                    key={d}
+                    type="button"
+                    onClick={() => setDaysRange(d)}
+                    className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${
+                      daysRange === d ? 'bg-white text-slate-800 shadow-sm' : 'text-slate-400 hover:text-slate-600'
+                    }`}
+                  >
+                    {t('stats.nDays', { n: d })}
+                  </button>
+                ))}
+              </div>
             </div>
-            <div className="flex bg-slate-100 rounded-lg p-1 gap-1 shrink-0 self-end sm:self-auto">
-              {([7, 30, 90] as const).map((d) => (
+            <div className="flex flex-wrap gap-1.5">
+              {BOARD_STYLES.map((style) => (
                 <button
-                  key={d}
+                  key={style}
                   type="button"
-                  onClick={() => setDaysRange(d)}
-                  className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${
-                    daysRange === d ? 'bg-white text-slate-800 shadow-sm' : 'text-slate-400 hover:text-slate-600'
+                  onClick={() => chooseStyle(style)}
+                  className={`px-2.5 py-1 rounded-full text-[10px] font-black tracking-wide ${
+                    boardStyle === style
+                      ? 'bg-slate-900 text-white'
+                      : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
                   }`}
                 >
-                  {t('stats.nDays', { n: d })}
+                  {t(`stats.style.${style}`)}
                 </button>
               ))}
             </div>
           </div>
 
-          {/* 7 / 30 / 90 快照表 */}
           {rollingSnapshots && (
-            <div className="mb-5 overflow-x-auto rounded-2xl border border-slate-200 bg-gradient-to-b from-slate-50/80 to-white">
-              <table className="w-full text-left text-[11px] min-w-[320px]">
-                <thead>
-                  <tr className="border-b border-slate-200/80 text-[9px] uppercase tracking-widest text-slate-400">
-                    <th className="py-2.5 pl-4 font-bold w-[28%]">{t('stats.market')}</th>
-                    {rollingSnapshots.map((col) => (
-                      <th
-                        key={col.days}
-                        className={`py-2.5 pr-4 text-right font-black ${
-                          daysRange === col.days ? 'text-slate-900 bg-amber-500/10' : ''
-                        }`}
-                      >
-                        {t('stats.nDays', { n: col.days })}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody className="font-bold text-slate-700">
-                  <tr className="border-b border-slate-100/90">
-                    <td className="py-2.5 pl-4 text-amber-700 flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                      {t('stats.row.spread')}
-                    </td>
-                    {rollingSnapshots.map((col) => (
-                      <td key={col.days} className={`py-2.5 pr-4 text-right tabular-nums ${daysRange === col.days ? 'bg-amber-500/5' : ''}`}>
-                        <span className="text-emerald-700">{t('stats.legWin', { n: col.spread.w })}</span>
-                        <span className="text-slate-300 mx-1">/</span>
-                        <span className="text-rose-600">{t('stats.legLoss', { n: col.spread.l })}</span>
-                        {col.spread.rate != null && (
-                          <span className="text-slate-400 font-semibold ml-1.5">({col.spread.rate}%)</span>
-                        )}
-                      </td>
-                    ))}
-                  </tr>
-                  <tr className="border-b border-slate-100/90">
-                    <td className="py-2.5 pl-4 text-emerald-700 flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                      {t('stats.row.total')}
-                    </td>
-                    {rollingSnapshots.map((col) => (
-                      <td key={col.days} className={`py-2.5 pr-4 text-right tabular-nums ${daysRange === col.days ? 'bg-emerald-500/5' : ''}`}>
-                        <span className="text-emerald-700">{t('stats.legWin', { n: col.total.w })}</span>
-                        <span className="text-slate-300 mx-1">/</span>
-                        <span className="text-rose-600">{t('stats.legLoss', { n: col.total.l })}</span>
-                        {col.total.rate != null && (
-                          <span className="text-slate-400 font-semibold ml-1.5">({col.total.rate}%)</span>
-                        )}
-                      </td>
-                    ))}
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 pl-4 text-indigo-700 flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
-                      {t('stats.row.combined')}
-                    </td>
-                    {rollingSnapshots.map((col) => (
-                      <td key={col.days} className={`py-2.5 pr-4 text-right tabular-nums ${daysRange === col.days ? 'bg-indigo-500/5' : ''}`}>
-                        <span className="text-emerald-700">{t('stats.legWin', { n: col.combined.w })}</span>
-                        <span className="text-slate-300 mx-1">/</span>
-                        <span className="text-rose-600">{t('stats.legLoss', { n: col.combined.l })}</span>
-                        {col.combined.rate != null && (
-                          <span className="text-slate-400 font-semibold ml-1.5">({col.combined.rate}%)</span>
-                        )}
-                      </td>
-                    ))}
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <RollingBoard
+              style={boardStyle}
+              snapshots={rollingSnapshots}
+              activeDays={daysRange}
+              t={t}
+            />
           )}
 
           {statsData.trend.length > 0 ? (
@@ -326,6 +293,146 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
       {!hasHistory && (
         <p className="text-center text-[10px] text-slate-400 mt-2">{t('stats.noHistory')}</p>
       )}
+    </div>
+  );
+}
+
+type Leg = { w: number; l: number; rate: number | null };
+type Snapshot = {
+  days: number;
+  spread: Leg;
+  total: Leg;
+  combined: Leg;
+};
+
+function RollingBoard({
+  style,
+  snapshots,
+  activeDays,
+  t,
+}: {
+  style: BoardStyle;
+  snapshots: Snapshot[];
+  activeDays: number;
+  t: (key: string, vars?: Record<string, string | number>) => string;
+}) {
+  const rows: { key: keyof Pick<Snapshot, 'spread' | 'total' | 'combined'>; label: string }[] = [
+    { key: 'spread', label: t('stats.row.spread') },
+    { key: 'total', label: t('stats.row.total') },
+    { key: 'combined', label: t('stats.row.combined') },
+  ];
+  const rateText = (leg: Leg) => (leg.rate == null ? '—' : `${leg.rate}%`);
+  const record = (leg: Leg) =>
+    `${t('stats.legWin', { n: leg.w })} ${t('stats.legLoss', { n: leg.l })}`;
+
+  if (style === 'bars') {
+    return (
+      <div className="mb-5 space-y-3">
+        {rows.map((row) => (
+          <div key={row.key}>
+            <div className="text-xs font-black text-slate-800 mb-1">{row.label}</div>
+            <div className="grid grid-cols-3 gap-2">
+              {snapshots.map((col) => {
+                const leg = col[row.key];
+                const width = leg.rate == null ? 0 : Math.max(0, Math.min(100, leg.rate));
+                return (
+                  <div key={col.days} className={activeDays === col.days ? 'opacity-100' : 'opacity-70'}>
+                    <div className="flex justify-between text-[10px] font-bold text-slate-500">
+                      <span>{t('stats.nDays', { n: col.days })}</span>
+                      <span className="text-slate-900">{rateText(leg)}</span>
+                    </div>
+                    <div className="mt-1 h-1.5 rounded-full bg-slate-200 overflow-hidden">
+                      <div className="h-full rounded-full bg-slate-900" style={{ width: `${width}%` }} />
+                    </div>
+                    <div className="mt-1 text-[10px] font-bold text-slate-400">{record(leg)}</div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  if (style === 'tiles') {
+    return (
+      <div className="mb-5 grid grid-cols-3 gap-2">
+        {snapshots.map((col) => (
+          <div
+            key={col.days}
+            className={`rounded-2xl border p-3 ${
+              activeDays === col.days ? 'border-slate-900 bg-slate-900 text-white' : 'border-slate-200 bg-white'
+            }`}
+          >
+            <div className={`text-[10px] font-black tracking-widest ${activeDays === col.days ? 'text-slate-400' : 'text-slate-400'}`}>
+              {t('stats.nDays', { n: col.days })}
+            </div>
+            {rows.map((row) => {
+              const leg = col[row.key];
+              return (
+                <div key={row.key} className="mt-2">
+                  <div className={`text-[10px] font-bold ${activeDays === col.days ? 'text-slate-400' : 'text-slate-400'}`}>
+                    {row.label}
+                  </div>
+                  <div className="text-2xl font-black leading-none">{rateText(leg)}</div>
+                  <div className={`text-[10px] font-bold ${activeDays === col.days ? 'text-slate-300' : 'text-slate-500'}`}>
+                    {record(leg)}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  if (style === 'ticker') {
+    return (
+      <div className="mb-5 rounded-2xl border border-slate-200 divide-y divide-slate-100">
+        {rows.map((row) => (
+          <div key={row.key} className="flex items-center gap-3 px-3 py-2.5">
+            <div className="w-14 shrink-0 text-xs font-black text-slate-800">{row.label}</div>
+            <div className="flex flex-1 justify-between gap-2 font-mono text-[11px] font-bold text-slate-700">
+              {snapshots.map((col) => (
+                <span key={col.days} className={activeDays === col.days ? 'text-slate-950' : 'text-slate-400'}>
+                  {t('stats.nDays', { n: col.days })} {rateText(col[row.key])}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <div className="mb-5 rounded-2xl bg-[#0D1117] text-white p-4">
+      <div className="grid grid-cols-4 gap-2 text-[10px] font-black tracking-widest text-slate-500">
+        <div />
+        {snapshots.map((col) => (
+          <div key={col.days} className={`text-right ${activeDays === col.days ? 'text-[#dfbd69]' : ''}`}>
+            {t('stats.nDays', { n: col.days })}
+          </div>
+        ))}
+      </div>
+      {rows.map((row) => (
+        <div key={row.key} className="grid grid-cols-4 gap-2 items-end border-t border-white/10 mt-2 pt-2">
+          <div className="text-xs font-black">{row.label}</div>
+          {snapshots.map((col) => {
+            const leg = col[row.key];
+            return (
+              <div key={col.days} className="text-right">
+                <div className={`text-lg font-black leading-none ${activeDays === col.days ? 'text-[#dfbd69]' : 'text-white'}`}>
+                  {rateText(leg)}
+                </div>
+                <div className="mt-1 text-[10px] font-bold text-slate-400">{record(leg)}</div>
+              </div>
+            );
+          })}
+        </div>
+      ))}
     </div>
   );
 }
