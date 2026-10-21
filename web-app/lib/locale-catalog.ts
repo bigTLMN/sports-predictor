@@ -54,7 +54,7 @@ const en: Messages = {
   // Match card
   'card.highValue': 'High Value',
   'card.vegas': 'VEGAS',
-  'card.vegasTotal': 'O/U',
+  'card.vegasTotal': 'Total',
   'card.at': 'AT',
   'card.final': 'FINAL',
   'card.aiAnalysis': 'AI Analysis',
