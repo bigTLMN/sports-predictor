@@ -33,10 +33,7 @@ export default function MatchDetailView({ pick }: { pick: any }) {
       : pick.ou_line;
   const totalLineNumber = Number(totalSource);
   const totalLineText = Number.isNaN(totalLineNumber) ? null : formatTotalLine(totalLineNumber);
-  const totalCoverText =
-    pick.ou_pick && totalLineText
-      ? t('card.totalCoverLine', { side: ouLabel, line: totalLineText })
-      : ouLabel;
+  const totalCoverText = ouLabel ? `${ouLabel} ${t('card.toCover')}` : null;
 
   const analysisDisplay = pickAnalysisContent(pick, locale);
 
@@ -70,13 +67,18 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               {format(new Date(m.start_time), 'MMM dd • HH:mm')}
             </div>
             <div className="text-center space-y-1">
-              <div className="text-slate-400 text-xs font-bold tracking-widest uppercase">{t('detail.vegasSpread')}</div>
+              <div className="text-slate-400 text-xs font-bold tracking-widest uppercase">{t('card.vegas')}</div>
               <div className="text-xl font-black text-slate-900 dark:text-white">
                 {m.home_team.code}{' '}
                 {m.vegas_spread !== null && m.vegas_spread !== undefined && m.vegas_spread !== ''
                   ? formatSignedLine(Number(m.vegas_spread))
                   : t('card.pk')}
               </div>
+              {totalLineText && (
+                <div className="text-lg font-black text-yellow-600 dark:text-yellow-400 tabular-nums">
+                  {t('card.vegasTotal')} {totalLineText}
+                </div>
+              )}
             </div>
           </div>
 
@@ -161,7 +163,7 @@ export default function MatchDetailView({ pick }: { pick: any }) {
                 <span
                   className={`font-bold tabular-nums ${pick.ou_pick === 'OVER' ? 'text-red-400' : 'text-blue-400'}`}
                 >
-                  {totalCoverText}
+                  {totalCoverText ?? '—'}
                 </span>
               </div>
               <div className="text-xs text-slate-600 text-center mt-4">

@@ -55,10 +55,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
       : pick.ou_line;
   const totalLineNumber = Number(totalSource);
   const totalLineText = Number.isNaN(totalLineNumber) ? null : formatTotalLine(totalLineNumber);
-  const totalCoverText =
-    hasOuPick && totalLineText
-      ? t('card.totalCoverLine', { side: ouLabel, line: totalLineText })
-      : null;
+  const totalCoverText = hasOuPick && ouLabel ? `${ouLabel} ${t('card.toCover')}` : null;
 
   const spreadLogicDisplay = pickSpreadLogic(pick, locale);
   const outcomeText = (value: string | null | undefined) => {
@@ -100,9 +97,14 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
               <span>{m.home_team.code}</span>
               <span className="text-yellow-400">{spreadText}</span>
             </div>
+            {totalLineText && (
+              <div className="text-xs font-black leading-none mt-1 text-yellow-400 tabular-nums">
+                {t('card.vegasTotal')} {totalLineText}
+              </div>
+            )}
           </div>
 
-          <div className="pt-10 pb-4 px-4 flex justify-between items-center bg-gradient-to-b from-slate-50 to-white dark:from-[#161b22] dark:to-[#161b22]">
+          <div className={`${totalLineText ? 'pt-16' : 'pt-10'} pb-4 px-4 flex justify-between items-center bg-gradient-to-b from-slate-50 to-white dark:from-[#161b22] dark:to-[#161b22]`}>
             <div className="flex flex-col items-center w-1/3 relative">
               <div className="w-14 h-14 p-2 bg-white dark:bg-slate-900 rounded-full shadow-sm border border-slate-100 dark:border-slate-700 mb-2 flex items-center justify-center transition-transform duration-300">
                 <img
@@ -238,12 +240,10 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                     </div>
                   )}
 
-                  <div className="w-full h-px bg-slate-200/60 my-2" />
-
-                  <div className="flex justify-between items-center relative z-10">
-                    <div className="flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
-                      <span className="text-xs font-black text-slate-500 dark:text-slate-300">{totalLineText ?? '--'}</span>
-                      {totalCoverText && (
+                  {totalCoverText && (
+                    <>
+                      <div className="w-full h-px bg-slate-200/60 my-2" />
+                      <div className="flex justify-between items-center relative z-10">
                         <span
                           className={`text-sm font-black ${
                             pick.ou_pick === 'OVER' ? 'text-red-600' : 'text-blue-700'
@@ -251,14 +251,10 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                         >
                           {totalCoverText}
                         </span>
-                      )}
-                    </div>
-                    <div className="flex items-center gap-2">
-                      {hasOuPick && (
                         <span className="text-[10px] font-bold text-slate-400">({pick.ou_confidence}%)</span>
-                      )}
-                    </div>
-                  </div>
+                      </div>
+                    </>
+                  )}
                 </>
               ) : (
                 <div className="flex flex-col items-center justify-center py-5 text-center space-y-2 opacity-60">

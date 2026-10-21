@@ -56,6 +56,7 @@ const en: Messages = {
   // Match card
   'card.highValue': 'High Value',
   'card.vegas': 'VEGAS',
+  'card.vegasTotal': 'O/U',
   'card.at': 'AT',
   'card.final': 'FINAL',
   'card.aiAnalysis': 'AI Analysis',
@@ -147,6 +148,7 @@ const zhTW: Messages = {
 
   'card.highValue': '高價值',
   'card.vegas': '盤口',
+  'card.vegasTotal': '大小',
   'card.at': '開賽',
   'card.final': '完賽',
   'card.aiAnalysis': 'AI 分析',
