@@ -1,13 +1,13 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Layout stays on a 16px rem. Only type follows --type-px (12–18). */
+/* Layout and type both stay on 16px. */
 html {
   font-size: 16px;
 }
 
 :root {
-  --type-px: 18;
+  --type-px: 16;
   --text-xs: calc(var(--type-px) * 0.75 * 1px);
   --text-sm: calc(var(--type-px) * 0.875 * 1px);
   --text-base: calc(var(--type-px) * 1px);

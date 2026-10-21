@@ -46,8 +46,6 @@ const en: Messages = {
   'footer.lang.zh': '繁體中文',
   'footer.theme.light': 'Light',
   'footer.theme.dark': 'Dark',
-  'footer.fontSmaller': 'Smaller',
-  'footer.fontLarger': 'Larger',
 
   'common.win': 'W',
   'common.loss': 'L',
@@ -139,8 +137,6 @@ const zhTW: Messages = {
   'footer.lang.zh': '繁體中文',
   'footer.theme.light': '淺色',
   'footer.theme.dark': '深色',
-  'footer.fontSmaller': '縮小',
-  'footer.fontLarger': '放大',
 
   'common.win': '勝',
   'common.loss': '負',

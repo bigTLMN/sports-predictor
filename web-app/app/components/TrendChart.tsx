@@ -14,7 +14,6 @@ import {
 } from 'recharts';
 import { StatsType } from './StatsDashboard';
 import { useI18n } from '@/lib/i18n';
-import { useTheme } from '@/lib/theme';
 
 export interface TrendData {
   date: string;
@@ -73,8 +72,7 @@ function TrendChartInner({
   days: number;
 }) {
   const { t } = useI18n();
-  const { fontSize } = useTheme();
-  const tickSize = Math.round((fontSize * 14) / 18);
+  const tickSize = 12;
 
   const labelKey = type === 'ALL' ? 'combined' : type === 'TOTAL' ? 'total' : 'spread';
   const metricLabel = t(`stats.label.${labelKey}`);
@@ -91,7 +89,7 @@ function TrendChartInner({
     <div className="w-full mb-2 select-none">
       <div className="mb-3 px-1">
         <div
-          className="text-sm font-semibold inline-flex items-center gap-1.5 bg-current/10 px-2.5 py-1 rounded-full backdrop-blur-sm"
+          className="text-sm font-semibold inline-flex max-w-full items-center gap-1.5 bg-current/10 px-2.5 py-1 rounded-full leading-snug backdrop-blur-sm"
           style={{ color }}
         >
           <span className="w-2 h-2 rounded-full" style={{ backgroundColor: color }} />
