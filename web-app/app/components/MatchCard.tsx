@@ -55,7 +55,10 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
       : pick.ou_line;
   const totalLineNumber = Number(totalSource);
   const totalLineText = Number.isNaN(totalLineNumber) ? null : formatTotalLine(totalLineNumber);
-  const totalCoverText = hasOuPick && ouLabel ? `${ouLabel} ${t('card.toCover')}` : null;
+  const totalCoverText =
+    hasOuPick && ouLabel && totalLineText
+      ? t('card.totalCoverLine', { side: ouLabel, line: totalLineText })
+      : null;
 
   const spreadLogicDisplay = pickSpreadLogic(pick, locale);
   const outcomeText = (value: string | null | undefined) => {

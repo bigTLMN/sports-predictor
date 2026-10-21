@@ -34,7 +34,12 @@ export default function MatchDetailView({ pick }: { pick: any }) {
       : pick.ou_line;
   const totalLineNumber = Number(totalSource);
   const totalLineText = Number.isNaN(totalLineNumber) ? null : formatTotalLine(totalLineNumber);
-  const totalCoverText = ouLabel ? `${ouLabel} ${t('card.toCover')}` : null;
+  const totalCoverText =
+    ouLabel && totalLineText
+      ? t('card.totalCoverLine', { side: ouLabel, line: totalLineText })
+      : ouLabel
+        ? `${ouLabel} ${t('card.toCover')}`
+        : null;
 
   const analysisDisplay = pickAnalysisContent(pick, locale);
 
