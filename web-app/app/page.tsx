@@ -8,6 +8,7 @@ import DateNavigator from './components/DateNavigator';
 import StatsDashboard from './components/StatsDashboard';
 import HomeMarketBoard from './components/HomeMarketBoard';
 import Footer from './components/Footer';
+import AppearanceSwitch from './components/AppearanceSwitch';
 import { format } from 'date-fns';
 import { toZonedTime } from 'date-fns-tz';
 import { redirect } from 'next/navigation';
@@ -74,27 +75,32 @@ export default async function Home({
         <div className="w-full max-w-3xl mx-auto px-4 md:px-0">
           
           {/* Hero Banner */}
-          <a href="/" className="block relative w-full h-48 md:h-60 mb-8 overflow-hidden rounded-2xl border-t-2 border-white/40 shadow-[0_0_40px_rgba(223,189,105,0.3)] [animation:aurora_4s_ease-in-out_infinite] group cursor-pointer transition-transform duration-300 hover:scale-[1.01]">
-            <img 
-              src="/cover.png" 
-              className="absolute inset-0 w-full h-full object-cover mix-blend-color-burn opacity-50 saturate-150 sepia-[.50]"
-            />
-            <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-12">
-              <div className="relative z-10">
-                <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-none uppercase text-white group-hover:text-orange-100 transition-colors">
-                  EDGE <span className="text-orange-400 group-hover:text-orange-300">ANALYTICS</span>
-                </h1>
-                <div className="flex items-center gap-3 mt-5">
-                  <p className="bg-orange-500 text-black font-black px-3 py-1 text-xs uppercase tracking-tighter group-hover:bg-orange-400 transition-colors">
-                    Data Driven
-                  </p>
-                  <p className="text-slate-400 font-bold text-xs tracking-[0.3em] uppercase border-l border-slate-700 pl-3 group-hover:text-slate-300 transition-colors">
-                    Systematic Value
-                  </p>
+          <div className="relative w-full h-48 md:h-60 mb-8">
+            <a href="/" className="absolute inset-0 z-0 block overflow-hidden rounded-2xl border-t-2 border-white/40 shadow-[0_0_40px_rgba(223,189,105,0.3)] [animation:aurora_4s_ease-in-out_infinite] group cursor-pointer transition-transform duration-300 hover:scale-[1.01]">
+              <img 
+                src="/cover.png" 
+                className="absolute inset-0 w-full h-full object-cover mix-blend-color-burn opacity-50 saturate-150 sepia-[.50]"
+              />
+              <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-10">
+                <div className="relative z-10">
+                  <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-none uppercase text-white group-hover:text-orange-100 transition-colors">
+                    EDGE <span className="text-orange-400 group-hover:text-orange-300">ANALYTICS</span>
+                  </h1>
+                  <div className="flex items-center gap-3 mt-5">
+                    <p className="bg-orange-500 text-black font-black px-3 py-1 text-xs uppercase tracking-tighter group-hover:bg-orange-400 transition-colors">
+                      Data Driven
+                    </p>
+                    <p className="text-slate-400 font-bold text-xs tracking-[0.3em] uppercase border-l border-slate-700 pl-3 group-hover:text-slate-300 transition-colors">
+                      Systematic Value
+                    </p>
+                  </div>
                 </div>
               </div>
+            </a>
+            <div className="absolute top-3 right-3 md:top-4 md:right-4 z-20">
+              <AppearanceSwitch />
             </div>
-          </a>
+          </div>
 
           <div className="mb-8 ">
             <div className="bg-white rounded-xl p-1 border-2 border-slate-200 dark:bg-[#0D1117] dark:border-slate-200/20">

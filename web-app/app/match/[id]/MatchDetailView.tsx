@@ -5,6 +5,7 @@ import { format } from 'date-fns';
 import { useI18n } from '@/lib/i18n';
 import { formatSignedLine, formatTotalLine, recommendedCoverNumber } from '@/lib/pickModelLabels';
 import { pickAnalysisContent } from '@/lib/pickLocalized';
+import AppearanceSwitch from '@/app/components/AppearanceSwitch';
 
 export default function MatchDetailView({ pick }: { pick: any }) {
   const { t, locale } = useI18n();
@@ -39,12 +40,15 @@ export default function MatchDetailView({ pick }: { pick: any }) {
 
   return (
     <div className="min-h-screen bg-slate-100 text-slate-900 dark:bg-[#030712] dark:text-white font-sans selection:bg-orange-500/30">
-      <div className="p-6 border-b border-slate-200 dark:border-white/10 flex items-center justify-between bg-white dark:bg-[#0D1117]">
+      <div className="p-4 md:p-6 border-b border-slate-200 dark:border-white/10 flex flex-wrap items-center justify-between gap-3 bg-white dark:bg-[#0D1117]">
         <Link href="/" className="flex items-center gap-2 text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors group">
           <span className="group-hover:-translate-x-1 transition-transform">←</span>
           <span className="font-bold text-sm tracking-widest uppercase">{t('detail.back')}</span>
         </Link>
-        <div className="text-orange-500 font-black tracking-tighter uppercase">{t('detail.edgePro')}</div>
+        <div className="flex items-center gap-3">
+          <AppearanceSwitch />
+          <div className="text-orange-500 font-black tracking-tighter uppercase">{t('detail.edgePro')}</div>
+        </div>
       </div>
 
       <main className="max-w-4xl mx-auto p-6 md:p-12">
