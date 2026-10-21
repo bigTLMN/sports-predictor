@@ -191,7 +191,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
             key={tab}
             type="button"
             onClick={() => setActiveTab(tab)}
-            className={`px-5 py-1.5 rounded-full text-xs font-black tracking-wider transition-all duration-300 ${
+            className={`px-5 py-1.5 rounded-full text-sm font-black tracking-wider transition-all duration-300 ${
               activeTab === tab
                 ? 'bg-slate-900 text-white shadow-lg transform scale-105'
                 : 'bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700'
@@ -205,13 +205,13 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
       {/* 數據看板 */}
       <div className="grid grid-cols-2 gap-6 divide-x divide-slate-100 dark:divide-slate-800 mb-6">
         <div className="text-center">
-          <div className="text-[10px] text-slate-400 uppercase font-bold tracking-widest mb-1">
+          <div className="text-sm text-slate-400 uppercase font-bold tracking-widest mb-1">
             {t('stats.daily')} {metricLabel}
           </div>
           <div className="flex justify-center items-baseline gap-1.5">
             <span className="text-3xl font-black text-slate-800 dark:text-white">{dayRate}%</span>
           </div>
-          <div className="text-xs font-bold text-slate-400 mt-1 bg-slate-50 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
+          <div className="text-sm font-bold text-slate-400 mt-1 bg-slate-50 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
             {statsData.day.wins}
             {t('common.win')} - {statsData.day.total - statsData.day.wins}
             {t('common.loss')}
@@ -219,7 +219,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
         </div>
 
         <div className="text-center pl-6">
-          <div className="text-[10px] text-slate-400 uppercase font-bold tracking-widest mb-1">
+          <div className="text-sm text-slate-400 uppercase font-bold tracking-widest mb-1">
             {t('stats.allTime')} {metricLabel}
           </div>
           <div className="flex justify-center items-baseline gap-1.5">
@@ -227,7 +227,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
               {seasonRate}%
             </span>
           </div>
-          <div className="text-xs font-bold text-slate-400 mt-1 bg-slate-50 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
+          <div className="text-sm font-bold text-slate-400 mt-1 bg-slate-50 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
             {statsData.season.wins}
             {t('common.win')} - {statsData.season.total - statsData.season.wins}
             {t('common.loss')}
@@ -243,7 +243,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
               type="button"
               onClick={toggleTrend}
               aria-expanded={trendOpen}
-              className="flex items-center gap-1.5 text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider"
+              className="flex items-center gap-1.5 text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider"
             >
               <svg
                 className={`w-3.5 h-3.5 transition-transform ${trendOpen ? 'rotate-90' : ''}`}
@@ -262,7 +262,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
                     key={d}
                     type="button"
                     onClick={() => setDaysRange(d)}
-                    className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${
+                    className={`px-3 py-1 text-sm font-bold rounded-md transition-all ${
                       daysRange === d ? 'bg-white text-slate-800 shadow-sm' : 'text-slate-400 hover:text-slate-600'
                     }`}
                   >
@@ -284,7 +284,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
                   <TrendChart data={statsData.trend as any[]} type={activeTab} days={daysRange} />
                 </div>
               ) : (
-                <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/50 py-12 text-center text-xs font-bold text-slate-400">
+                <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/50 py-12 text-center text-sm font-bold text-slate-400">
                   {t('stats.noDailyResults', { label: metricLabel })}
                 </div>
               )}
@@ -294,7 +294,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
       )}
 
       {!hasHistory && (
-        <p className="text-center text-[10px] text-slate-400 mt-2">{t('stats.noHistory')}</p>
+        <p className="text-center text-sm text-slate-400 mt-2">{t('stats.noHistory')}</p>
       )}
     </div>
   );
@@ -327,7 +327,7 @@ function RollingBoard({
 
   return (
     <div className="mb-5 rounded-2xl bg-[#0D1117] text-white p-4">
-      <div className="grid grid-cols-4 gap-2 text-[10px] font-bold tracking-wide text-slate-500">
+      <div className="grid grid-cols-4 gap-2 text-sm font-bold tracking-wide text-slate-500">
         <div />
         {snapshots.map((col) => (
           <div key={col.days} className={`text-right ${activeDays === col.days ? 'text-[#dfbd69]' : ''}`}>
@@ -337,15 +337,15 @@ function RollingBoard({
       </div>
       {rows.map((row) => (
         <div key={row.key} className="grid grid-cols-4 gap-2 items-end border-t border-white/10 mt-2 pt-2">
-          <div className="text-xs font-bold">{row.label}</div>
+          <div className="text-sm font-bold">{row.label}</div>
           {snapshots.map((col) => {
             const leg = col[row.key];
             return (
               <div key={col.days} className="text-right">
-                <div className={`text-lg font-bold leading-none tabular-nums ${activeDays === col.days ? 'text-[#dfbd69]' : 'text-white'}`}>
+                <div className={`text-2xl font-bold leading-none tabular-nums ${activeDays === col.days ? 'text-[#dfbd69]' : 'text-white'}`}>
                   {rateText(leg)}
                 </div>
-                <div className="mt-1 text-[10px] font-bold text-slate-400 tabular-nums">{record(leg)}</div>
+                <div className="mt-1 text-sm font-bold text-slate-400 tabular-nums">{record(leg)}</div>
               </div>
             );
           })}

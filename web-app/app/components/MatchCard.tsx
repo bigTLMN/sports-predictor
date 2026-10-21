@@ -85,26 +85,26 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
         >
           {isHighConfidence && (
             <div className="absolute top-0 right-0 z-20">
-              <div className="bg-gradient-to-l from-blue-600 to-blue-500 text-white text-[9px] font-black px-2 py-1 rounded-bl-xl shadow-sm uppercase tracking-wider flex items-center gap-1">
+              <div className="bg-gradient-to-l from-blue-600 to-blue-500 text-white text-sm font-black px-2 py-1 rounded-bl-xl shadow-sm uppercase tracking-wider flex items-center gap-1">
                 🔥 {t('card.highValue')}
               </div>
             </div>
           )}
 
           <div className="absolute top-0 left-0 bg-slate-900 text-white px-3 py-1.5 rounded-br-xl z-10 shadow-sm">
-            <div className="text-[9px] font-bold tracking-widest text-slate-400 uppercase mb-0.5">{t('card.vegas')}</div>
-            <div className="text-xs font-black leading-none flex items-center gap-1">
+            <div className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-0.5">{t('card.vegas')}</div>
+            <div className="text-base font-black leading-none flex items-center gap-1">
               <span>{m.home_team.code}</span>
               <span className="text-yellow-400">{spreadText}</span>
             </div>
             {totalLineText && (
-              <div className="text-xs font-black leading-none mt-1 text-yellow-400 tabular-nums">
+              <div className="text-base font-black leading-none mt-1 text-yellow-400 tabular-nums">
                 {t('card.vegasTotal')} {totalLineText}
               </div>
             )}
           </div>
 
-          <div className={`${totalLineText ? 'pt-16' : 'pt-10'} pb-4 px-4 flex justify-between items-center bg-gradient-to-b from-slate-50 to-white dark:from-[#161b22] dark:to-[#161b22]`}>
+          <div className={`${totalLineText ? 'pt-20' : 'pt-14'} pb-4 px-4 flex justify-between items-center bg-gradient-to-b from-slate-50 to-white dark:from-[#161b22] dark:to-[#161b22]`}>
             <div className="flex flex-col items-center w-1/3 relative">
               <div className="w-14 h-14 p-2 bg-white dark:bg-slate-900 rounded-full shadow-sm border border-slate-100 dark:border-slate-700 mb-2 flex items-center justify-center transition-transform duration-300">
                 <img
@@ -113,18 +113,18 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                   alt={m.away_team.code}
                 />
               </div>
-              <span className="font-bold text-slate-700 dark:text-slate-100">{m.away_team.code}</span>
+              <span className="text-lg font-bold text-slate-700 dark:text-slate-100">{m.away_team.code}</span>
               {isFinished && <span className="text-xl font-black text-slate-900 mt-1">{m.away_score}</span>}
             </div>
 
             <div className="flex flex-col items-center w-1/3">
-              <span className="text-[10px] font-black text-slate-300 tracking-widest">{t('card.at')}</span>
+              <span className="text-sm font-black text-slate-300 tracking-widest">{t('card.at')}</span>
               {isFinished ? (
-                <span className="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-0.5 rounded mt-1 border border-slate-200">
+                <span className="text-sm font-bold bg-slate-100 text-slate-500 px-2 py-0.5 rounded mt-1 border border-slate-200">
                   {t('card.final')}
                 </span>
               ) : (
-                <span className="text-[10px] font-bold text-slate-400 mt-1 bg-slate-50 px-2 py-0.5 rounded border border-slate-100">
+                <span className="text-sm font-bold text-slate-400 mt-1 bg-slate-50 px-2 py-0.5 rounded border border-slate-100">
                   {format(new Date(m.start_time), 'HH:mm')}
                 </span>
               )}
@@ -138,7 +138,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                   alt={m.home_team.code}
                 />
               </div>
-              <span className="font-bold text-slate-700 dark:text-slate-100">{m.home_team.code}</span>
+              <span className="text-lg font-bold text-slate-700 dark:text-slate-100">{m.home_team.code}</span>
               {isFinished && <span className="text-xl font-black text-slate-900 mt-1">{m.home_score}</span>}
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       />
                       <span
                         className={twMerge(
-                          'text-[10px] font-black uppercase tracking-widest',
+                          'text-sm font-black uppercase tracking-widest',
                           isHighConfidence ? 'text-blue-700' : 'text-slate-400'
                         )}
                       >
@@ -174,7 +174,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-1 text-[9px] font-black uppercase text-slate-400 bg-white/60 px-2 py-1 rounded border border-slate-200/60 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all shadow-sm">
+                    <div className="flex items-center gap-1 text-sm font-black uppercase text-slate-400 bg-white/60 px-2 py-1 rounded border border-slate-200/60 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all shadow-sm">
                       {t('card.viewAnalysis')}
                       <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7" />
@@ -187,7 +187,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       <div className="flex items-center gap-3">
                         <img src={pick.recommended_team.logo_url} className="w-8 h-8 object-contain drop-shadow-sm" />
                         <div>
-                          <div className="text-base font-black text-slate-800 dark:text-white leading-snug flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
+                          <div className="text-lg font-black text-slate-800 dark:text-white leading-snug flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
                             <span>{spreadPickText}</span>
                           </div>
                         </div>
@@ -210,12 +210,12 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                     </div>
                   ) : (
                     <div className="mb-3 relative z-10 space-y-2">
-                      <p className="text-[11px] font-bold text-amber-700/90 leading-snug">
+                      <p className="text-sm font-bold text-amber-700/90 leading-snug">
                         {spreadLogicDisplay || t('card.spreadWithheld')}
                       </p>
                       <div className="flex justify-end w-full">
                         <div className="flex flex-col items-end w-20">
-                          <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">
+                          <span className="text-sm font-bold text-slate-400 uppercase tracking-wider">
                             {t('card.confTotal')}
                           </span>
                           <div
@@ -245,13 +245,13 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       <div className="w-full h-px bg-slate-200/60 my-2" />
                       <div className="flex justify-between items-center relative z-10">
                         <span
-                          className={`text-sm font-black ${
+                          className={`text-base font-black ${
                             pick.ou_pick === 'OVER' ? 'text-red-600' : 'text-blue-700'
                           }`}
                         >
                           {totalCoverText}
                         </span>
-                        <span className="text-[10px] font-bold text-slate-400">({pick.ou_confidence}%)</span>
+                        <span className="text-sm font-bold text-slate-400">({pick.ou_confidence}%)</span>
                       </div>
                     </>
                   )}
@@ -259,10 +259,10 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
               ) : (
                 <div className="flex flex-col items-center justify-center py-5 text-center space-y-2 opacity-60">
                   <span className="w-2 h-2 bg-slate-300 rounded-full animate-pulse" />
-                  <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">
+                  <span className="text-sm font-black uppercase tracking-widest text-slate-400">
                     {t('card.aiPending')}
                   </span>
-                  <span className="text-[9px] text-slate-300">{t('card.waitingData')}</span>
+                  <span className="text-sm text-slate-300">{t('card.waitingData')}</span>
                 </div>
               )}
             </div>
@@ -279,9 +279,9 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       : ''
                 }`}
               >
-                <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">{t('card.spreadFooter')}</span>
+                <span className="text-sm font-bold text-slate-400 uppercase tracking-wider">{t('card.spreadFooter')}</span>
                 <span
-                  className={`text-xs font-black ${
+                  className={`text-base font-black ${
                     !hasSpreadLine
                       ? 'text-slate-400'
                       : pick.spread_outcome === 'WIN'
@@ -300,9 +300,9 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                   pick.total_outcome === 'WIN' ? 'bg-green-50/50' : pick.total_outcome === 'LOSS' ? 'bg-red-50/50' : ''
                 }`}
               >
-                <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">{t('card.totalFooter')}</span>
+                <span className="text-sm font-bold text-slate-400 uppercase tracking-wider">{t('card.totalFooter')}</span>
                 <span
-                  className={`text-xs font-black ${
+                  className={`text-base font-black ${
                     pick.total_outcome === 'WIN'
                       ? 'text-green-600'
                       : pick.total_outcome === 'LOSS'

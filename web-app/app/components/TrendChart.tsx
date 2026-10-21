@@ -40,8 +40,8 @@ function ChartTooltip(props: {
         borderColor: 'rgba(223, 189, 105, 0.25)',
       }}
     >
-      <p className="text-[11px] text-slate-400 mb-1">{label}</p>
-      <p className="text-[13px] font-bold tabular-nums" style={{ color }}>
+      <p className="text-sm text-slate-400 mb-1">{label}</p>
+      <p className="text-base font-bold tabular-nums" style={{ color }}>
         {row.winRate}% <span className="text-slate-400 font-semibold">({row.wins}/{row.total})</span>
       </p>
     </div>
@@ -88,7 +88,7 @@ function TrendChartInner({
     <div className="w-full mb-2 select-none">
       <div className="mb-3 px-1">
         <div
-          className="text-[12px] font-semibold inline-flex items-center gap-1.5 bg-current/10 px-2.5 py-1 rounded-full backdrop-blur-sm"
+          className="text-sm font-semibold inline-flex items-center gap-1.5 bg-current/10 px-2.5 py-1 rounded-full backdrop-blur-sm"
           style={{ color }}
         >
           <span className="w-2 h-2 rounded-full" style={{ backgroundColor: color }} />
@@ -110,7 +110,7 @@ function TrendChartInner({
               dataKey="date"
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 10, fill: '#94a3b8', fontFamily: 'inherit' }}
+              tick={{ fontSize: 14, fill: '#94a3b8', fontFamily: 'inherit' }}
               dy={10}
               minTickGap={10}
               interval="preserveStartEnd"
@@ -121,7 +121,7 @@ function TrendChartInner({
               axisLine={false}
               tickLine={false}
               ticks={[0, 25, 50, 75, 100]}
-              tick={{ fontSize: 10, fill: '#64748b', fontWeight: 700, fontFamily: 'inherit' }}
+              tick={{ fontSize: 14, fill: '#64748b', fontWeight: 700, fontFamily: 'inherit' }}
             />
 
             {/* Single tooltip: Area+Line share winRate — default would duplicate rows */}

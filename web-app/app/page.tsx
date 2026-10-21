@@ -87,10 +87,10 @@ export default async function Home({
                     EDGE <span className="text-orange-400 group-hover:text-orange-300">ANALYTICS</span>
                   </h1>
                   <div className="flex items-center gap-3 mt-5">
-                    <p className="bg-orange-500 text-black font-black px-3 py-1 text-xs uppercase tracking-tighter group-hover:bg-orange-400 transition-colors">
+                    <p className="bg-orange-500 text-black font-black px-3 py-1 text-sm uppercase tracking-tighter group-hover:bg-orange-400 transition-colors">
                       Data Driven
                     </p>
-                    <p className="text-slate-400 font-bold text-xs tracking-[0.3em] uppercase border-l border-slate-700 pl-3 group-hover:text-slate-300 transition-colors">
+                    <p className="text-slate-400 font-bold text-sm tracking-[0.3em] uppercase border-l border-slate-700 pl-3 group-hover:text-slate-300 transition-colors">
                       Systematic Value
                     </p>
                   </div>

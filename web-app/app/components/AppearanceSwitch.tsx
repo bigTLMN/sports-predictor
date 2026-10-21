@@ -11,7 +11,7 @@ const chip =
 export default function AppearanceSwitch({ compact = false }: { compact?: boolean }) {
   const { locale, setLocale, t } = useI18n();
   const { theme, setTheme } = useTheme();
-  const size = compact ? 'text-[10px] px-2 py-0.5' : 'text-[11px] px-3 py-1.5';
+  const size = compact ? 'text-xs px-2 py-0.5' : 'text-sm px-3 py-1.5';
 
   return (
     <div className={`flex items-center ${compact ? 'gap-1' : 'gap-1.5'}`}>

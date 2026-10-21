@@ -81,12 +81,12 @@ export default function DateNavigator() {
       >
         
         {/* 星期幾 (小字) */}
-        <div className="text-sm font-bold text-slate-500 uppercase tracking-widest group-hover:text-orange-500 transition-colors">
+        <div className="text-base font-bold text-slate-500 uppercase tracking-widest group-hover:text-orange-500 transition-colors">
             {format(currentDate, 'EEEE')}
         </div>
         
         {/* 日期 (大字) */}
-        <div className="text-xl font-black text-slate-900 dark:text-white tracking-tight flex items-center justify-center gap-2">
+        <div className="text-2xl font-black text-slate-900 dark:text-white tracking-tight flex items-center justify-center gap-2">
             {format(currentDate, 'MMM dd, yyyy')}
             <svg className="w-4 h-4 text-slate-500 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
         </div>

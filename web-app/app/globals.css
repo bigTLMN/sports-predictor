@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Comfortable reading size. Display titles stay in their own steps. */
+html {
+  font-size: 18px;
+}
+
 /* =========================================================
    Global Design Tokens - Light Mode
    ========================================================= */

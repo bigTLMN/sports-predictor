@@ -44,7 +44,7 @@ export default function Loading() {
                 <p className="text-sm font-bold text-orange-500 tracking-widest uppercase animate-pulse">
                     Analyzing Market Data
                 </p>
-                <p className="text-xs text-slate-500">
+                <p className="text-sm text-slate-500">
                     Locating latest schedule & odds...
                 </p>
             </div>

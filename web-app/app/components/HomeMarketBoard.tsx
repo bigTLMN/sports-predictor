@@ -22,7 +22,7 @@ export default function HomeMarketBoard({
           <p className="text-slate-400 dark:text-slate-800 text-6xl font-black opacity-50 mb-2 uppercase tracking-tighter">
             {t('home.noAction')}
           </p>
-          <p className="text-slate-500 font-bold uppercase tracking-[0.2em] text-[10px]">{t('home.noActionSub')}</p>
+          <p className="text-slate-500 font-bold uppercase tracking-[0.2em] text-sm">{t('home.noActionSub')}</p>
         </div>
       ) : (
         <div className="grid gap-6">

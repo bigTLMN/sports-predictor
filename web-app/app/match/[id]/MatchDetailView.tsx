@@ -67,11 +67,11 @@ export default function MatchDetailView({ pick }: { pick: any }) {
 
           <div className="flex flex-col items-center justify-center shrink-0 z-10">
             <div className="text-5xl font-black text-slate-700/30 italic absolute select-none">VS</div>
-            <div className="bg-slate-800 text-slate-300 px-4 py-1 rounded-full text-xs mb-2 border border-slate-700">
+            <div className="bg-slate-800 text-slate-300 px-4 py-1 rounded-full text-sm mb-2 border border-slate-700">
               {format(new Date(m.start_time), 'MMM dd • HH:mm')}
             </div>
             <div className="text-center space-y-1">
-              <div className="text-slate-400 text-xs font-bold tracking-widest uppercase">{t('card.vegas')}</div>
+              <div className="text-slate-400 text-sm font-bold tracking-widest uppercase">{t('card.vegas')}</div>
               <div className="text-xl font-black text-slate-900 dark:text-white">
                 {m.home_team.code}{' '}
                 {m.vegas_spread !== null && m.vegas_spread !== undefined && m.vegas_spread !== ''
@@ -101,13 +101,13 @@ export default function MatchDetailView({ pick }: { pick: any }) {
 
         <div className="mb-12">
           <div className="bg-gradient-to-br from-blue-900/40 to-slate-900 border border-blue-500/30 rounded-3xl p-8 relative overflow-hidden">
-            <div className="absolute top-0 right-0 bg-blue-500 text-white text-xs font-black px-4 py-2 rounded-bl-2xl uppercase tracking-widest">
+            <div className="absolute top-0 right-0 bg-blue-500 text-white text-sm font-black px-4 py-2 rounded-bl-2xl uppercase tracking-widest">
               {hasSpreadLine ? t('detail.officialPick') : t('detail.totalAnalysis')}
             </div>
 
             <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center">
               <div className="flex-1">
-                <div className="text-blue-400 font-bold tracking-widest uppercase text-xs mb-2">
+                <div className="text-blue-400 font-bold tracking-widest uppercase text-sm mb-2">
                   {hasSpreadLine ? t('detail.algoProj') : t('detail.spreadWithheldLabel')}
                 </div>
                 <h3 className="text-4xl md:text-5xl font-black text-white mb-2 leading-none">
@@ -116,7 +116,7 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               </div>
 
               <div className="flex flex-col items-center bg-black/20 p-6 rounded-2xl border border-white/5 backdrop-blur-sm">
-                <span className="text-blue-400 text-xs font-black uppercase tracking-widest mb-1">
+                <span className="text-blue-400 text-sm font-black uppercase tracking-widest mb-1">
                   {hasSpreadLine ? t('detail.confidence') : t('card.confTotal')}
                 </span>
                 <span className="text-5xl font-black text-white">{pick.confidence_score}%</span>
@@ -157,20 +157,20 @@ export default function MatchDetailView({ pick }: { pick: any }) {
             </div>
             <div className="bg-white border border-slate-200 dark:bg-[#161b22] dark:border-slate-800 rounded-2xl p-6">
               <div className="flex justify-between items-center mb-4 pb-4 border-b border-slate-800">
-                <span className="text-slate-400 text-xs font-bold uppercase">{t('detail.totalLine')}</span>
+                <span className="text-slate-400 text-sm font-bold uppercase">{t('detail.totalLine')}</span>
                 <div className="text-right">
                   <span className="text-slate-900 dark:text-white font-bold tabular-nums">{totalLineText ?? m.vegas_total}</span>
                 </div>
               </div>
               <div className="flex justify-between items-center mb-4 pb-4 border-b border-slate-800">
-                <span className="text-slate-400 text-xs font-bold uppercase">{t('detail.aiTotal')}</span>
+                <span className="text-slate-400 text-sm font-bold uppercase">{t('detail.aiTotal')}</span>
                 <span
                   className={`font-bold tabular-nums ${pick.ou_pick === 'OVER' ? 'text-red-400' : 'text-blue-400'}`}
                 >
                   {totalCoverText ?? '—'}
                 </span>
               </div>
-              <div className="text-xs text-slate-600 text-center mt-4">
+              <div className="text-sm text-slate-600 text-center mt-4">
                 {t('detail.updatedUtc', { time: format(new Date(pick.created_at), 'HH:mm') })}
               </div>
             </div>
