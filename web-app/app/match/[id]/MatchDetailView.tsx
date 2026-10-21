@@ -44,19 +44,19 @@ export default function MatchDetailView({ pick }: { pick: any }) {
   const analysisDisplay = pickAnalysisContent(pick, locale);
 
   return (
-    <div className="min-h-screen bg-slate-100 text-slate-900 dark:bg-[#030712] dark:text-white font-sans selection:bg-orange-500/30">
+    <div className="min-h-screen overflow-x-hidden bg-slate-100 text-slate-900 dark:bg-[#030712] dark:text-white font-sans selection:bg-orange-500/30">
       <div className="p-4 md:p-6 border-b border-slate-200 dark:border-white/10 flex flex-wrap items-center justify-between gap-3 bg-white dark:bg-[#0D1117]">
         <Link href="/" className="flex items-center gap-2 text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors group">
           <span className="group-hover:-translate-x-1 transition-transform">←</span>
-          <span className="font-bold text-sm tracking-widest uppercase">{t('detail.back')}</span>
+          <span className="font-bold text-sm tracking-wide uppercase">{t('detail.back')}</span>
         </Link>
-        <div className="flex items-center gap-3">
-          <AppearanceSwitch />
+        <div className="flex max-w-full flex-wrap items-center justify-end gap-2">
+          <AppearanceSwitch compact />
           <div className="text-orange-500 font-black tracking-tighter uppercase">{t('detail.edgePro')}</div>
         </div>
       </div>
 
-      <main className="max-w-4xl mx-auto p-6 md:p-12">
+      <main className="max-w-4xl mx-auto p-4 sm:p-6 md:p-12">
         <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-8 relative">
           <div className="flex flex-col items-center gap-4 flex-1">
             <img
@@ -65,7 +65,7 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               alt=""
             />
             <div className="text-center">
-              <h2 className="text-3xl font-black tracking-tight">{m.away_team.full_name}</h2>
+              <h2 className="text-2xl sm:text-3xl font-black tracking-tight break-words">{m.away_team.full_name}</h2>
               <p className="text-slate-500 text-sm">{t('detail.away')}</p>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               alt=""
             />
             <div className="text-center">
-              <h2 className="text-3xl font-black tracking-tight">{m.home_team.full_name}</h2>
+              <h2 className="text-2xl sm:text-3xl font-black tracking-tight break-words">{m.home_team.full_name}</h2>
               <p className="text-slate-500 text-sm">{t('detail.home')}</p>
             </div>
           </div>

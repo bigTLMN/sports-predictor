@@ -185,15 +185,15 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
   return (
     <div className="bg-white text-slate-900 dark:bg-[#161b22] dark:text-slate-100 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-5 mb-6 transition-all">
       {/* 頁籤切換 */}
-      <div className="flex justify-center gap-2 mb-6">
+      <div className="flex flex-wrap justify-center gap-2 mb-6">
         {(['SPREAD', 'TOTAL', 'ALL'] as StatsType[]).map((tab) => (
           <button
             key={tab}
             type="button"
             onClick={() => setActiveTab(tab)}
-            className={`px-5 py-1.5 rounded-full text-sm font-black tracking-wider transition-all duration-300 ${
+            className={`px-3 sm:px-5 py-1.5 rounded-full text-sm font-black tracking-wide sm:tracking-wider transition-colors duration-300 ${
               activeTab === tab
-                ? 'bg-slate-900 text-white shadow-lg transform scale-105'
+                ? 'bg-slate-900 text-white shadow-lg'
                 : 'bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700'
             }`}
           >
@@ -205,7 +205,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
       {/* 數據看板 */}
       <div className="grid grid-cols-2 gap-6 divide-x divide-slate-100 dark:divide-slate-800 mb-6">
         <div className="text-center">
-          <div className="text-sm text-slate-600 dark:text-slate-300 uppercase font-bold tracking-widest mb-1">
+          <div className="text-sm text-slate-600 dark:text-slate-300 uppercase font-bold tracking-wide sm:tracking-widest mb-1 break-words">
             {t('stats.daily')} {metricLabel}
           </div>
           <div className="flex justify-center items-baseline gap-1.5">
@@ -219,7 +219,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
         </div>
 
         <div className="text-center pl-6">
-          <div className="text-sm text-slate-600 dark:text-slate-300 uppercase font-bold tracking-widest mb-1">
+          <div className="text-sm text-slate-600 dark:text-slate-300 uppercase font-bold tracking-wide sm:tracking-widest mb-1 break-words">
             {t('stats.allTime')} {metricLabel}
           </div>
           <div className="flex justify-center items-baseline gap-1.5">

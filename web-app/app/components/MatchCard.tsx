@@ -159,8 +159,8 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
             >
               {hasPrediction ? (
                 <>
-                  <div className="flex justify-between items-center mb-3 relative z-10">
-                    <div className="flex items-center gap-2">
+                  <div className="flex flex-wrap justify-between items-center gap-2 mb-3 relative z-10">
+                    <div className="flex items-center gap-2 min-w-0">
                       <span
                         className={twMerge(
                           'w-2 h-2 rounded-full animate-pulse',
@@ -169,7 +169,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       />
                       <span
                         className={twMerge(
-                          'text-sm font-black uppercase tracking-widest',
+                          'text-sm font-black uppercase tracking-wide sm:tracking-widest',
                           isHighConfidence ? 'text-blue-700 dark:text-blue-300' : 'text-slate-600 dark:text-slate-300'
                         )}
                       >
@@ -177,7 +177,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-1 text-sm font-black uppercase text-slate-900 bg-white border border-slate-300 px-2 py-1 rounded shadow-sm dark:text-white dark:bg-slate-700 dark:border-slate-500 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all">
+                    <div className="flex shrink-0 items-center gap-1 text-sm font-black uppercase text-slate-900 bg-white border border-slate-300 px-2 py-1 rounded shadow-sm dark:text-white dark:bg-slate-700 dark:border-slate-500 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all">
                       {t('card.viewAnalysis')}
                       <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7" />
@@ -186,17 +186,17 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                   </div>
 
                   {hasSpreadLine && pick.recommended_team ? (
-                    <div className="flex justify-between items-start mb-3 relative z-10">
-                      <div className="flex items-center gap-3">
-                        <img src={pick.recommended_team.logo_url} className="w-8 h-8 object-contain drop-shadow-sm" />
-                        <div>
+                    <div className="flex justify-between items-start gap-3 mb-3 relative z-10">
+                      <div className="flex items-center gap-3 min-w-0">
+                        <img src={pick.recommended_team.logo_url} className="w-8 h-8 shrink-0 object-contain drop-shadow-sm" />
+                        <div className="min-w-0">
                           <div className="text-lg font-black text-slate-800 dark:text-white leading-snug flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
                             <span>{spreadPickText}</span>
                           </div>
                         </div>
                       </div>
 
-                      <div className="flex flex-col items-end w-20">
+                      <div className="flex shrink-0 flex-col items-end w-16 sm:w-20">
                         <div className={twMerge('text-xl font-black', isHighConfidence ? 'text-blue-600 dark:text-blue-300' : 'text-slate-700 dark:text-slate-100')}>
                           {pick.confidence_score}%
                         </div>
@@ -217,7 +217,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                         {spreadLogicDisplay || t('card.spreadWithheld')}
                       </p>
                       <div className="flex justify-end w-full">
-                        <div className="flex flex-col items-end w-20">
+                        <div className="flex shrink-0 flex-col items-end w-16 sm:w-20">
                           <span className="text-sm font-bold text-slate-400 uppercase tracking-wider">
                             {t('card.confTotal')}
                           </span>

@@ -15,7 +15,7 @@ export default function AppearanceSwitch({ compact = false }: { compact?: boolea
   const type = compact ? 'text-[12px] py-0.5' : 'text-[13px] py-1.5';
 
   return (
-    <div className={`flex items-center ${compact ? 'gap-1' : 'gap-1.5'}`}>
+    <div className={`flex max-w-full flex-wrap items-center justify-end ${compact ? 'gap-1' : 'gap-1.5'}`}>
       <div className={`${chip} ${type} flex items-center gap-0.5 px-1`}>
         <button
           type="button"
