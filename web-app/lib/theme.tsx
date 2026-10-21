@@ -36,7 +36,9 @@ function clampFont(size: number) {
 }
 
 function applyFontSize(size: number) {
-  document.documentElement.style.fontSize = `${size}px`;
+  const root = document.documentElement;
+  root.style.fontSize = '';
+  root.style.setProperty('--type-px', String(size));
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {

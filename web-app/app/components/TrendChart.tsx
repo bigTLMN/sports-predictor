@@ -14,6 +14,7 @@ import {
 } from 'recharts';
 import { StatsType } from './StatsDashboard';
 import { useI18n } from '@/lib/i18n';
+import { useTheme } from '@/lib/theme';
 
 export interface TrendData {
   date: string;
@@ -72,6 +73,8 @@ function TrendChartInner({
   days: number;
 }) {
   const { t } = useI18n();
+  const { fontSize } = useTheme();
+  const tickSize = Math.round((fontSize * 14) / 18);
 
   const labelKey = type === 'ALL' ? 'combined' : type === 'TOTAL' ? 'total' : 'spread';
   const metricLabel = t(`stats.label.${labelKey}`);
@@ -110,7 +113,7 @@ function TrendChartInner({
               dataKey="date"
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 14, fill: '#94a3b8', fontFamily: 'inherit' }}
+              tick={{ fontSize: tickSize, fill: '#94a3b8', fontFamily: 'inherit' }}
               dy={10}
               minTickGap={10}
               interval="preserveStartEnd"
@@ -121,7 +124,7 @@ function TrendChartInner({
               axisLine={false}
               tickLine={false}
               ticks={[0, 25, 50, 75, 100]}
-              tick={{ fontSize: 14, fill: '#64748b', fontWeight: 700, fontFamily: 'inherit' }}
+              tick={{ fontSize: tickSize, fill: '#64748b', fontWeight: 700, fontFamily: 'inherit' }}
             />
 
             {/* Single tooltip: Area+Line share winRate — default would duplicate rows */}
