@@ -122,7 +122,7 @@ function TrendChartInner({
               dataKey="date"
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 10, fill: '#94a3b8' }}
+              tick={{ fontSize: 10, fill: '#94a3b8', fontFamily: 'inherit' }}
               dy={10}
               minTickGap={10}
               interval="preserveStartEnd"
@@ -133,7 +133,7 @@ function TrendChartInner({
               axisLine={false}
               tickLine={false}
               ticks={[0, 25, 50, 75, 100]}
-              tick={{ fontSize: 10, fill: '#64748b', fontWeight: 'bold' }}
+              tick={{ fontSize: 10, fill: '#64748b', fontWeight: 700, fontFamily: 'inherit' }}
             />
 
             {/* Single tooltip: Area+Line share winRate — default would duplicate rows */}

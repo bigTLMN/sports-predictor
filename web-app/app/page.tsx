@@ -81,7 +81,7 @@ export default async function Home({
             />
             <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-12">
               <div className="relative z-10">
-                <h1 className="text-5xl md:text-7xl font-[1000] tracking-tighter leading-none uppercase group-hover:text-orange-100 transition-colors">
+                <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-none uppercase group-hover:text-orange-100 transition-colors">
                   EDGE <span className="text-orange-400 group-hover:text-orange-300">ANALYTICS</span>
                 </h1>
                 <div className="flex items-center gap-3 mt-5">

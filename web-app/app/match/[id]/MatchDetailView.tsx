@@ -59,14 +59,14 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               alt=""
             />
             <div className="text-center">
-              <h2 className="text-3xl font-[1000] tracking-tighter">{m.away_team.full_name}</h2>
-              <p className="text-slate-500 font-mono text-sm">{t('detail.away')}</p>
+              <h2 className="text-3xl font-black tracking-tight">{m.away_team.full_name}</h2>
+              <p className="text-slate-500 text-sm">{t('detail.away')}</p>
             </div>
           </div>
 
           <div className="flex flex-col items-center justify-center shrink-0 z-10">
             <div className="text-5xl font-black text-slate-700/30 italic absolute select-none">VS</div>
-            <div className="bg-slate-800 text-slate-300 px-4 py-1 rounded-full text-xs font-mono mb-2 border border-slate-700">
+            <div className="bg-slate-800 text-slate-300 px-4 py-1 rounded-full text-xs mb-2 border border-slate-700">
               {format(new Date(m.start_time), 'MMM dd • HH:mm')}
             </div>
             <div className="text-center space-y-1">
@@ -87,8 +87,8 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               alt=""
             />
             <div className="text-center">
-              <h2 className="text-3xl font-[1000] tracking-tighter">{m.home_team.full_name}</h2>
-              <p className="text-slate-500 font-mono text-sm">{t('detail.home')}</p>
+              <h2 className="text-3xl font-black tracking-tight">{m.home_team.full_name}</h2>
+              <p className="text-slate-500 text-sm">{t('detail.home')}</p>
             </div>
           </div>
         </div>
@@ -153,13 +153,13 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               <div className="flex justify-between items-center mb-4 pb-4 border-b border-slate-800">
                 <span className="text-slate-400 text-xs font-bold uppercase">{t('detail.totalLine')}</span>
                 <div className="text-right">
-                  <span className="text-white font-mono font-bold">{totalLineText ?? m.vegas_total}</span>
+                  <span className="text-white font-bold tabular-nums">{totalLineText ?? m.vegas_total}</span>
                 </div>
               </div>
               <div className="flex justify-between items-center mb-4 pb-4 border-b border-slate-800">
                 <span className="text-slate-400 text-xs font-bold uppercase">{t('detail.aiTotal')}</span>
                 <span
-                  className={`font-mono font-bold ${pick.ou_pick === 'OVER' ? 'text-red-400' : 'text-blue-400'}`}
+                  className={`font-bold tabular-nums ${pick.ou_pick === 'OVER' ? 'text-red-400' : 'text-blue-400'}`}
                 >
                   {totalCoverText}
                 </span>

@@ -122,7 +122,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                   {t('card.final')}
                 </span>
               ) : (
-                <span className="text-[10px] font-bold text-slate-400 mt-1 font-mono bg-slate-50 px-2 py-0.5 rounded border border-slate-100">
+                <span className="text-[10px] font-bold text-slate-400 mt-1 bg-slate-50 px-2 py-0.5 rounded border border-slate-100">
                   {format(new Date(m.start_time), 'HH:mm')}
                 </span>
               )}
@@ -266,7 +266,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                   <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">
                     {t('card.aiPending')}
                   </span>
-                  <span className="text-[9px] text-slate-300 font-mono">{t('card.waitingData')}</span>
+                  <span className="text-[9px] text-slate-300">{t('card.waitingData')}</span>
                 </div>
               )}
             </div>

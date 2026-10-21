@@ -26,8 +26,9 @@
   --ring: #2563eb;
 
   /* Fonts */
-  --font-geist-sans: Arial, Helvetica, sans-serif;
-  --font-geist-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* One face for English and Chinese, including figures. */
+  --font-geist-sans: "Segoe UI", "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", Arial, Helvetica, sans-serif;
+  --font-geist-mono: "Segoe UI", "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", Arial, Helvetica, sans-serif;
 }
 
 /* =========================================================
@@ -84,4 +85,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans);
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
 }
