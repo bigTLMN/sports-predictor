@@ -114,17 +114,17 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                 />
               </div>
               <span className="text-lg font-bold text-slate-700 dark:text-slate-100">{m.away_team.code}</span>
-              {isFinished && <span className="text-xl font-black text-slate-900 mt-1">{m.away_score}</span>}
+              {isFinished && <span className="text-xl font-black text-slate-900 dark:text-white mt-1">{m.away_score}</span>}
             </div>
 
             <div className="flex flex-col items-center w-1/3">
-              <span className="text-sm font-black text-slate-300 tracking-widest">{t('card.at')}</span>
+              <span className="text-sm font-black text-slate-500 dark:text-slate-300 tracking-widest">{t('card.at')}</span>
               {isFinished ? (
-                <span className="text-sm font-bold bg-slate-100 text-slate-500 px-2 py-0.5 rounded mt-1 border border-slate-200">
+                <span className="text-sm font-bold bg-white text-slate-800 px-2 py-0.5 rounded mt-1 border border-slate-300 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-600">
                   {t('card.final')}
                 </span>
               ) : (
-                <span className="text-sm font-bold text-slate-400 mt-1 bg-slate-50 px-2 py-0.5 rounded border border-slate-100">
+                <span className="text-sm font-bold text-slate-800 mt-1 bg-white px-2 py-0.5 rounded border border-slate-300 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-600">
                   {format(new Date(m.start_time), 'HH:mm')}
                 </span>
               )}
@@ -139,7 +139,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                 />
               </div>
               <span className="text-lg font-bold text-slate-700 dark:text-slate-100">{m.home_team.code}</span>
-              {isFinished && <span className="text-xl font-black text-slate-900 mt-1">{m.home_score}</span>}
+              {isFinished && <span className="text-xl font-black text-slate-900 dark:text-white mt-1">{m.home_score}</span>}
             </div>
           </div>
 
@@ -167,14 +167,14 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       <span
                         className={twMerge(
                           'text-sm font-black uppercase tracking-widest',
-                          isHighConfidence ? 'text-blue-700' : 'text-slate-400'
+                          isHighConfidence ? 'text-blue-700 dark:text-blue-300' : 'text-slate-600 dark:text-slate-300'
                         )}
                       >
                         {t('card.aiAnalysis')}
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-1 text-sm font-black uppercase text-slate-400 bg-white/60 px-2 py-1 rounded border border-slate-200/60 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all shadow-sm">
+                    <div className="flex items-center gap-1 text-sm font-black uppercase text-slate-900 bg-white border border-slate-300 px-2 py-1 rounded shadow-sm dark:text-white dark:bg-slate-700 dark:border-slate-500 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all">
                       {t('card.viewAnalysis')}
                       <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7" />
@@ -194,10 +194,10 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       </div>
 
                       <div className="flex flex-col items-end w-20">
-                        <div className={twMerge('text-xl font-black', isHighConfidence ? 'text-blue-600' : 'text-slate-600')}>
+                        <div className={twMerge('text-xl font-black', isHighConfidence ? 'text-blue-600 dark:text-blue-300' : 'text-slate-700 dark:text-slate-100')}>
                           {pick.confidence_score}%
                         </div>
-                        <div className="w-full h-1.5 bg-slate-200 rounded-full mt-1 overflow-hidden">
+                        <div className="w-full h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full mt-1 overflow-hidden">
                           <div
                             className={twMerge(
                               'h-full rounded-full',
@@ -210,7 +210,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                     </div>
                   ) : (
                     <div className="mb-3 relative z-10 space-y-2">
-                      <p className="text-sm font-bold text-amber-700/90 leading-snug">
+                      <p className="text-sm font-bold text-amber-800 dark:text-amber-300 leading-snug">
                         {spreadLogicDisplay || t('card.spreadWithheld')}
                       </p>
                       <div className="flex justify-end w-full">
@@ -221,12 +221,12 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                           <div
                             className={twMerge(
                               'text-xl font-black',
-                              isHighConfidence ? 'text-blue-600' : 'text-slate-600'
+                              isHighConfidence ? 'text-blue-600 dark:text-blue-300' : 'text-slate-700 dark:text-slate-100'
                             )}
                           >
                             {pick.confidence_score}%
                           </div>
-                          <div className="w-full h-1.5 bg-slate-200 rounded-full mt-1 overflow-hidden">
+                          <div className="w-full h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full mt-1 overflow-hidden">
                             <div
                               className={twMerge(
                                 'h-full rounded-full',
@@ -246,12 +246,12 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       <div className="flex justify-between items-center relative z-10">
                         <span
                           className={`text-base font-black ${
-                            pick.ou_pick === 'OVER' ? 'text-red-600' : 'text-blue-700'
+                            pick.ou_pick === 'OVER' ? 'text-red-600 dark:text-red-400' : 'text-blue-700 dark:text-blue-300'
                           }`}
                         >
                           {totalCoverText}
                         </span>
-                        <span className="text-sm font-bold text-slate-400">({pick.ou_confidence}%)</span>
+                        <span className="text-sm font-bold text-slate-600 dark:text-slate-300">({pick.ou_confidence}%)</span>
                       </div>
                     </>
                   )}
@@ -259,10 +259,10 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
               ) : (
                 <div className="flex flex-col items-center justify-center py-5 text-center space-y-2 opacity-60">
                   <span className="w-2 h-2 bg-slate-300 rounded-full animate-pulse" />
-                  <span className="text-sm font-black uppercase tracking-widest text-slate-400">
+                  <span className="text-sm font-black uppercase tracking-widest text-slate-600 dark:text-slate-300">
                     {t('card.aiPending')}
                   </span>
-                  <span className="text-sm text-slate-300">{t('card.waitingData')}</span>
+                  <span className="text-sm text-slate-600 dark:text-slate-300">{t('card.waitingData')}</span>
                 </div>
               )}
             </div>

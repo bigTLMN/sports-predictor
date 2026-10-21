@@ -19,10 +19,10 @@ export default function HomeMarketBoard({
 
       {picks.length === 0 ? (
         <div className="text-center py-24 border-4 border-slate-200 dark:border-[#0D1117] rounded-[3rem] bg-white/60 dark:bg-slate-900/10">
-          <p className="text-slate-400 dark:text-slate-800 text-6xl font-black opacity-50 mb-2 uppercase tracking-tighter">
+          <p className="text-slate-500 dark:text-slate-400 text-6xl font-black mb-2 uppercase tracking-tighter">
             {t('home.noAction')}
           </p>
-          <p className="text-slate-500 font-bold uppercase tracking-[0.2em] text-sm">{t('home.noActionSub')}</p>
+          <p className="text-slate-600 dark:text-slate-300 font-bold uppercase tracking-[0.2em] text-sm">{t('home.noActionSub')}</p>
         </div>
       ) : (
         <div className="grid gap-6">

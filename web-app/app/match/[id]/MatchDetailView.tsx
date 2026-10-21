@@ -71,7 +71,7 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               {format(new Date(m.start_time), 'MMM dd • HH:mm')}
             </div>
             <div className="text-center space-y-1">
-              <div className="text-slate-400 text-sm font-bold tracking-widest uppercase">{t('card.vegas')}</div>
+              <div className="text-slate-600 dark:text-slate-300 text-sm font-bold tracking-widest uppercase">{t('card.vegas')}</div>
               <div className="text-xl font-black text-slate-900 dark:text-white">
                 {m.home_team.code}{' '}
                 {m.vegas_spread !== null && m.vegas_spread !== undefined && m.vegas_spread !== ''
@@ -153,17 +153,17 @@ export default function MatchDetailView({ pick }: { pick: any }) {
           <div className="space-y-6">
             <div className="flex items-center gap-3 mb-2">
               <div className="w-1 h-6 bg-slate-700 rounded-full" />
-              <h3 className="text-xl font-black uppercase tracking-tight text-slate-500">{t('detail.marketIntel')}</h3>
+              <h3 className="text-xl font-black uppercase tracking-tight text-slate-700 dark:text-slate-200">{t('detail.marketIntel')}</h3>
             </div>
             <div className="bg-white border border-slate-200 dark:bg-[#161b22] dark:border-slate-800 rounded-2xl p-6">
               <div className="flex justify-between items-center mb-4 pb-4 border-b border-slate-800">
-                <span className="text-slate-400 text-sm font-bold uppercase">{t('detail.totalLine')}</span>
+                <span className="text-slate-600 dark:text-slate-300 text-sm font-bold uppercase">{t('detail.totalLine')}</span>
                 <div className="text-right">
                   <span className="text-slate-900 dark:text-white font-bold tabular-nums">{totalLineText ?? m.vegas_total}</span>
                 </div>
               </div>
               <div className="flex justify-between items-center mb-4 pb-4 border-b border-slate-800">
-                <span className="text-slate-400 text-sm font-bold uppercase">{t('detail.aiTotal')}</span>
+                <span className="text-slate-600 dark:text-slate-300 text-sm font-bold uppercase">{t('detail.aiTotal')}</span>
                 <span
                   className={`font-bold tabular-nums ${pick.ou_pick === 'OVER' ? 'text-red-400' : 'text-blue-400'}`}
                 >

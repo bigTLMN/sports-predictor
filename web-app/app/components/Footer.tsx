@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-3xl mx-auto px-4 text-center">
         <h3 className="text-base font-black text-slate-800 tracking-tight mb-2 dark:text-slate-100">{t('footer.title')}</h3>
         <p className="text-sm text-slate-400 leading-relaxed max-w-md mx-auto mb-4">{t('footer.disclaimer')}</p>
-        <div className="text-sm font-bold text-slate-300 dark:text-slate-600">
+        <div className="text-sm font-bold text-slate-500 dark:text-slate-400">
           © {new Date().getFullYear()} {t('footer.built')}
         </div>
       </div>

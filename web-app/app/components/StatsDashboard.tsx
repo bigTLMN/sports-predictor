@@ -194,7 +194,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
             className={`px-5 py-1.5 rounded-full text-sm font-black tracking-wider transition-all duration-300 ${
               activeTab === tab
                 ? 'bg-slate-900 text-white shadow-lg transform scale-105'
-                : 'bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700'
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700'
             }`}
           >
             {tabLabel(tab)}
@@ -205,13 +205,13 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
       {/* 數據看板 */}
       <div className="grid grid-cols-2 gap-6 divide-x divide-slate-100 dark:divide-slate-800 mb-6">
         <div className="text-center">
-          <div className="text-sm text-slate-400 uppercase font-bold tracking-widest mb-1">
+          <div className="text-sm text-slate-600 dark:text-slate-300 uppercase font-bold tracking-widest mb-1">
             {t('stats.daily')} {metricLabel}
           </div>
           <div className="flex justify-center items-baseline gap-1.5">
             <span className="text-3xl font-black text-slate-800 dark:text-white">{dayRate}%</span>
           </div>
-          <div className="text-sm font-bold text-slate-400 mt-1 bg-slate-50 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
+          <div className="text-sm font-bold text-slate-700 dark:text-slate-200 mt-1 bg-slate-100 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
             {statsData.day.wins}
             {t('common.win')} - {statsData.day.total - statsData.day.wins}
             {t('common.loss')}
@@ -219,7 +219,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
         </div>
 
         <div className="text-center pl-6">
-          <div className="text-sm text-slate-400 uppercase font-bold tracking-widest mb-1">
+          <div className="text-sm text-slate-600 dark:text-slate-300 uppercase font-bold tracking-widest mb-1">
             {t('stats.allTime')} {metricLabel}
           </div>
           <div className="flex justify-center items-baseline gap-1.5">
@@ -227,7 +227,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
               {seasonRate}%
             </span>
           </div>
-          <div className="text-sm font-bold text-slate-400 mt-1 bg-slate-50 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
+          <div className="text-sm font-bold text-slate-700 dark:text-slate-200 mt-1 bg-slate-100 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
             {statsData.season.wins}
             {t('common.win')} - {statsData.season.total - statsData.season.wins}
             {t('common.loss')}
@@ -243,7 +243,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
               type="button"
               onClick={toggleTrend}
               aria-expanded={trendOpen}
-              className="flex items-center gap-1.5 text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider"
+              className="flex items-center gap-1.5 text-sm font-bold text-slate-700 dark:text-slate-200 uppercase tracking-wider"
             >
               <svg
                 className={`w-3.5 h-3.5 transition-transform ${trendOpen ? 'rotate-90' : ''}`}
@@ -256,14 +256,14 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
               {t('stats.trendTitle')}
             </button>
             {trendOpen && (
-              <div className="flex bg-slate-100 rounded-lg p-1 gap-1 shrink-0">
+              <div className="flex bg-slate-100 dark:bg-slate-800 rounded-lg p-1 gap-1 shrink-0">
                 {([7, 30, 90] as const).map((d) => (
                   <button
                     key={d}
                     type="button"
                     onClick={() => setDaysRange(d)}
                     className={`px-3 py-1 text-sm font-bold rounded-md transition-all ${
-                      daysRange === d ? 'bg-white text-slate-800 shadow-sm' : 'text-slate-400 hover:text-slate-600'
+                      daysRange === d ? 'bg-white text-slate-900 shadow-sm dark:bg-slate-950 dark:text-white' : 'text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white'
                     }`}
                   >
                     {t('stats.nDays', { n: d })}
