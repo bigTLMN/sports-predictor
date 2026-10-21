@@ -1089,20 +1089,20 @@
       "home_team_id": 28,
       "away_team_id": 20,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 83,
-      "away_score": 88,
+      "home_score": 100,
+      "away_score": 106,
       "period_scores": {
         "home": [
           25,
           33,
           18,
-          7
+          24
         ],
         "away": [
           23,
           31,
           29,
-          5
+          23
         ]
       },
       "vegas_spread": null,
@@ -1123,15 +1123,22 @@
     {
       "id": 24,
       "date": "2026-10-20",
-      "start_time": "2026-10-21T01:30Z",
+      "start_time": "2026-10-21T01:50Z",
       "home_team_id": 29,
       "away_team_id": 18,
-      "status": "STATUS_SCHEDULED",
-      "home_score": 0,
-      "away_score": 0,
-      "period_scores": null,
-      "vegas_spread": 1.5,
-      "vegas_total": 229.5,
+      "status": "STATUS_IN_PROGRESS",
+      "home_score": 8,
+      "away_score": 9,
+      "period_scores": {
+        "home": [
+          8
+        ],
+        "away": [
+          9
+        ]
+      },
+      "vegas_spread": null,
+      "vegas_total": null,
       "home_team": {
         "code": "SA",
         "full_name": "San Antonio Spurs",
@@ -2058,20 +2065,20 @@
         "home_team_id": 28,
         "away_team_id": 20,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 83,
-        "away_score": 88,
+        "home_score": 100,
+        "away_score": 106,
         "period_scores": {
           "home": [
             25,
             33,
             18,
-            7
+            24
           ],
           "away": [
             23,
             31,
             29,
-            5
+            23
           ]
         },
         "vegas_spread": null,
@@ -2115,15 +2122,22 @@
       "matches": {
         "id": 24,
         "date": "2026-10-20",
-        "start_time": "2026-10-21T01:30Z",
+        "start_time": "2026-10-21T01:50Z",
         "home_team_id": 29,
         "away_team_id": 18,
-        "status": "STATUS_SCHEDULED",
-        "home_score": 0,
-        "away_score": 0,
-        "period_scores": null,
-        "vegas_spread": 1.5,
-        "vegas_total": 229.5,
+        "status": "STATUS_IN_PROGRESS",
+        "home_score": 8,
+        "away_score": 9,
+        "period_scores": {
+          "home": [
+            8
+          ],
+          "away": [
+            9
+          ]
+        },
+        "vegas_spread": null,
+        "vegas_total": null,
         "home_team": {
           "code": "SA",
           "full_name": "San Antonio Spurs",
@@ -2687,7 +2701,7 @@
       "predicted_total": 222.18,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-21T01:30:09.943510",
+      "created_at": "2026-10-21T02:00:09.818837",
       "matches": {
         "id": 37,
         "date": "2026-10-22",
@@ -2735,7 +2749,7 @@
       "predicted_total": 222.39,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-21T01:30:09.989528",
+      "created_at": "2026-10-21T02:00:09.865193",
       "matches": {
         "id": 36,
         "date": "2026-10-22",
