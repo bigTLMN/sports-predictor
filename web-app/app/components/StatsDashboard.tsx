@@ -237,59 +237,66 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
 
       {/* Trend Analysis：滾動視窗快照 + 圖 */}
       {hasHistory && (
-        <div className="border-t border-slate-100 dark:border-slate-800 pt-4 relative">
-          <div className="flex items-center justify-between gap-3 px-1">
-            <button
-              type="button"
-              onClick={toggleTrend}
-              aria-expanded={trendOpen}
-              className="flex items-center gap-1.5 text-sm font-bold text-slate-700 dark:text-slate-200 uppercase tracking-wider"
-            >
-              <svg
-                className={`w-3.5 h-3.5 transition-transform ${trendOpen ? 'rotate-90' : ''}`}
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
+        <div className="border-t border-slate-200 dark:border-slate-700 pt-4 relative">
+          <div className="rounded-xl border border-slate-300 bg-slate-50 dark:border-slate-600 dark:bg-slate-800/80">
+            <div className="flex items-center justify-between gap-3 px-3 py-2.5">
+              <button
+                type="button"
+                onClick={toggleTrend}
+                aria-expanded={trendOpen}
+                className="flex flex-1 items-center gap-2 text-left text-sm font-bold text-slate-800 dark:text-white uppercase tracking-wider"
               >
-                <path d="M7 5l6 5-6 5V5z" />
-              </svg>
-              {t('stats.trendTitle')}
-            </button>
-            {trendOpen && (
-              <div className="flex bg-slate-100 dark:bg-slate-800 rounded-lg p-1 gap-1 shrink-0">
-                {([7, 30, 90] as const).map((d) => (
-                  <button
-                    key={d}
-                    type="button"
-                    onClick={() => setDaysRange(d)}
-                    className={`px-3 py-1 text-sm font-bold rounded-md transition-all ${
-                      daysRange === d ? 'bg-white text-slate-900 shadow-sm dark:bg-slate-950 dark:text-white' : 'text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white'
-                    }`}
+                <span
+                  className={`inline-flex h-6 w-6 items-center justify-center rounded-full bg-slate-900 text-white dark:bg-white dark:text-slate-900 ${trendOpen ? '' : 'animate-[trend-nudge_1.2s_ease-in-out_infinite]'}`}
+                >
+                  <svg
+                    className={`h-3.5 w-3.5 transition-transform duration-300 ${trendOpen ? 'rotate-90' : ''}`}
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
                   >
-                    {t('stats.nDays', { n: d })}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {trendOpen && (
-            <div className="mt-4">
-              {rollingSnapshots && (
-                <RollingBoard snapshots={rollingSnapshots} activeDays={daysRange} t={t} />
-              )}
-
-              {statsData.trend.length > 0 ? (
-                <div style={{ minHeight: '300px', width: '100%' }}>
-                  <TrendChart data={statsData.trend as any[]} type={activeTab} days={daysRange} />
-                </div>
-              ) : (
-                <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/50 py-12 text-center text-sm font-bold text-slate-400">
-                  {t('stats.noDailyResults', { label: metricLabel })}
+                    <path d="M7 5l6 5-6 5V5z" />
+                  </svg>
+                </span>
+                {t('stats.trendTitle')}
+              </button>
+              {trendOpen && (
+                <div className="flex bg-slate-200 dark:bg-slate-900 rounded-lg p-1 gap-1 shrink-0">
+                  {([7, 30, 90] as const).map((d) => (
+                    <button
+                      key={d}
+                      type="button"
+                      onClick={() => setDaysRange(d)}
+                      className={`px-3 py-1 text-sm font-bold rounded-md transition-all ${
+                        daysRange === d ? 'bg-white text-slate-900 shadow-sm dark:bg-slate-950 dark:text-white' : 'text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white'
+                      }`}
+                    >
+                      {t('stats.nDays', { n: d })}
+                    </button>
+                  ))}
                 </div>
               )}
             </div>
-          )}
+            <div className={`grid transition-[grid-template-rows] duration-300 ease-out ${trendOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
+              <div className="overflow-hidden min-h-0">
+                <div className="px-3 pb-3">
+                  {rollingSnapshots && (
+                    <RollingBoard snapshots={rollingSnapshots} activeDays={daysRange} t={t} />
+                  )}
+
+                  {statsData.trend.length > 0 ? (
+                    <div style={{ minHeight: '300px', width: '100%' }}>
+                      <TrendChart data={statsData.trend as any[]} type={activeTab} days={daysRange} />
+                    </div>
+                  ) : (
+                    <div className="rounded-2xl border border-dashed border-slate-300 bg-white/70 py-12 text-center text-sm font-bold text-slate-600 dark:border-slate-600 dark:bg-slate-900/40 dark:text-slate-300">
+                      {t('stats.noDailyResults', { label: metricLabel })}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       )}
 
