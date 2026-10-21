@@ -4,7 +4,7 @@ import sqlite_store
 def settle(conn):
     rows = conn.execute(
         """
-        SELECT p.id AS pick_id, p.line_info, p.recommended_team_id, p.ou_pick,
+        SELECT p.id AS pick_id, p.line_info, p.recommended_team_id, p.ou_pick, p.ou_line,
                p.spread_outcome, p.total_outcome,
                m.home_team_id, m.home_score, m.away_score, m.vegas_total, m.status
         FROM aggregated_picks p
@@ -22,9 +22,16 @@ def settle(conn):
                 spread = "WIN" if covered > 0 else "LOSS" if covered < 0 else "PUSH"
             else:
                 spread = "LOSS" if covered > 0 else "WIN" if covered < 0 else "PUSH"
-        if row["total_outcome"] is None and row["ou_pick"] and row["vegas_total"] is not None:
+        total_line = row["ou_line"] if row["ou_line"] not in (None, "") else row["vegas_total"]
+        if (
+            row["total_outcome"] is None
+            and row["ou_pick"]
+            and total_line not in (None, "")
+            and row["home_score"] is not None
+            and row["away_score"] is not None
+        ):
             points = row["home_score"] + row["away_score"]
-            line = float(row["vegas_total"])
+            line = float(total_line)
             if points == line:
                 total = "PUSH"
             elif row["ou_pick"] == "OVER":
