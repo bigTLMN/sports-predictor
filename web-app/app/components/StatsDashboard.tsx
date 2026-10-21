@@ -163,10 +163,6 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 mb-6 transition-all">
-      <p className="text-[11px] text-slate-600 leading-relaxed mb-4 px-0.5 border-l-2 border-amber-400 pl-3">
-        {t('stats.intro')}
-      </p>
-
       {/* 頁籤切換 */}
       <div className="flex justify-center gap-2 mb-6">
         {(['SPREAD', 'TOTAL', 'ALL'] as StatsType[]).map((tab) => (
