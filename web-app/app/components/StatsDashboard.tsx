@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { differenceInCalendarDays, parseISO } from 'date-fns';
 import dynamic from 'next/dynamic';
 import { useI18n } from '@/lib/i18n';
@@ -92,6 +92,27 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
   const { t } = useI18n();
   const [activeTab, setActiveTab] = useState<StatsType>('SPREAD');
   const [daysRange, setDaysRange] = useState<7 | 30 | 90>(7);
+  const [trendOpen, setTrendOpen] = useState(false);
+
+  useEffect(() => {
+    try {
+      if (localStorage.getItem('edge-analytics-trend-open') === '1') setTrendOpen(true);
+    } catch {
+      /* ignore */
+    }
+  }, []);
+
+  const toggleTrend = () => {
+    setTrendOpen((open) => {
+      const next = !open;
+      try {
+        localStorage.setItem('edge-analytics-trend-open', next ? '1' : '0');
+      } catch {
+        /* ignore */
+      }
+      return next;
+    });
+  };
 
   const rollingSnapshots = useMemo(() => {
     const windows = [7, 30, 90] as const;
@@ -216,36 +237,57 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
 
       {/* Trend Analysis：滾動視窗快照 + 圖 */}
       {hasHistory && (
-        <div className="border-t border-slate-100 dark:border-slate-800 pt-4 animate-in fade-in duration-500 relative">
-          <div className="flex items-center justify-between gap-3 mb-4 px-1">
-              <div className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t('stats.trendTitle')}</div>
-            <div className="flex bg-slate-100 rounded-lg p-1 gap-1 shrink-0">
-              {([7, 30, 90] as const).map((d) => (
-                <button
-                  key={d}
-                  type="button"
-                  onClick={() => setDaysRange(d)}
-                  className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${
-                    daysRange === d ? 'bg-white text-slate-800 shadow-sm' : 'text-slate-400 hover:text-slate-600'
-                  }`}
-                >
-                  {t('stats.nDays', { n: d })}
-                </button>
-              ))}
-            </div>
+        <div className="border-t border-slate-100 dark:border-slate-800 pt-4 relative">
+          <div className="flex items-center justify-between gap-3 px-1">
+            <button
+              type="button"
+              onClick={toggleTrend}
+              aria-expanded={trendOpen}
+              className="flex items-center gap-1.5 text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider"
+            >
+              <svg
+                className={`w-3.5 h-3.5 transition-transform ${trendOpen ? 'rotate-90' : ''}`}
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M7 5l6 5-6 5V5z" />
+              </svg>
+              {t('stats.trendTitle')}
+            </button>
+            {trendOpen && (
+              <div className="flex bg-slate-100 rounded-lg p-1 gap-1 shrink-0">
+                {([7, 30, 90] as const).map((d) => (
+                  <button
+                    key={d}
+                    type="button"
+                    onClick={() => setDaysRange(d)}
+                    className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${
+                      daysRange === d ? 'bg-white text-slate-800 shadow-sm' : 'text-slate-400 hover:text-slate-600'
+                    }`}
+                  >
+                    {t('stats.nDays', { n: d })}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
-          {rollingSnapshots && (
-            <RollingBoard snapshots={rollingSnapshots} activeDays={daysRange} t={t} />
-          )}
+          {trendOpen && (
+            <div className="mt-4">
+              {rollingSnapshots && (
+                <RollingBoard snapshots={rollingSnapshots} activeDays={daysRange} t={t} />
+              )}
 
-          {statsData.trend.length > 0 ? (
-            <div style={{ minHeight: '300px', width: '100%' }}>
-              <TrendChart data={statsData.trend as any[]} type={activeTab} days={daysRange} />
-            </div>
-          ) : (
-            <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/50 py-12 text-center text-xs font-bold text-slate-400">
-              {t('stats.noDailyResults', { label: metricLabel })}
+              {statsData.trend.length > 0 ? (
+                <div style={{ minHeight: '300px', width: '100%' }}>
+                  <TrendChart data={statsData.trend as any[]} type={activeTab} days={daysRange} />
+                </div>
+              ) : (
+                <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/50 py-12 text-center text-xs font-bold text-slate-400">
+                  {t('stats.noDailyResults', { label: metricLabel })}
+                </div>
+              )}
             </div>
           )}
         </div>
