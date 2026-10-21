@@ -1164,12 +1164,19 @@
       "start_time": "2026-10-21T23:00Z",
       "home_team_id": 19,
       "away_team_id": 1,
-      "status": "STATUS_SCHEDULED",
-      "home_score": 0,
-      "away_score": 0,
-      "period_scores": null,
-      "vegas_spread": -2.5,
-      "vegas_total": 233.5,
+      "status": "STATUS_IN_PROGRESS",
+      "home_score": 22,
+      "away_score": 15,
+      "period_scores": {
+        "home": [
+          22
+        ],
+        "away": [
+          15
+        ]
+      },
+      "vegas_spread": null,
+      "vegas_total": null,
       "home_team": {
         "code": "ORL",
         "full_name": "Orlando Magic",
@@ -1189,12 +1196,19 @@
       "start_time": "2026-10-21T23:00Z",
       "home_team_id": 25,
       "away_team_id": 16,
-      "status": "STATUS_SCHEDULED",
-      "home_score": 0,
-      "away_score": 0,
-      "period_scores": null,
-      "vegas_spread": -4.5,
-      "vegas_total": 239.5,
+      "status": "STATUS_IN_PROGRESS",
+      "home_score": 20,
+      "away_score": 18,
+      "period_scores": {
+        "home": [
+          20
+        ],
+        "away": [
+          18
+        ]
+      },
+      "vegas_spread": null,
+      "vegas_total": null,
       "home_team": {
         "code": "WSH",
         "full_name": "Washington Wizards",
@@ -2655,12 +2669,19 @@
         "start_time": "2026-10-21T23:00Z",
         "home_team_id": 19,
         "away_team_id": 1,
-        "status": "STATUS_SCHEDULED",
-        "home_score": 0,
-        "away_score": 0,
-        "period_scores": null,
-        "vegas_spread": -2.5,
-        "vegas_total": 233.5,
+        "status": "STATUS_IN_PROGRESS",
+        "home_score": 22,
+        "away_score": 15,
+        "period_scores": {
+          "home": [
+            22
+          ],
+          "away": [
+            15
+          ]
+        },
+        "vegas_spread": null,
+        "vegas_total": null,
         "home_team": {
           "code": "ORL",
           "full_name": "Orlando Magic",
@@ -2799,12 +2820,19 @@
         "start_time": "2026-10-21T23:00Z",
         "home_team_id": 25,
         "away_team_id": 16,
-        "status": "STATUS_SCHEDULED",
-        "home_score": 0,
-        "away_score": 0,
-        "period_scores": null,
-        "vegas_spread": -4.5,
-        "vegas_total": 239.5,
+        "status": "STATUS_IN_PROGRESS",
+        "home_score": 20,
+        "away_score": 18,
+        "period_scores": {
+          "home": [
+            20
+          ],
+          "away": [
+            18
+          ]
+        },
+        "vegas_spread": null,
+        "vegas_total": null,
         "home_team": {
           "code": "WSH",
           "full_name": "Washington Wizards",
@@ -2888,7 +2916,7 @@
       "predicted_total": 222.18,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-21T23:00:10.259776",
+      "created_at": "2026-10-21T23:30:10.404404",
       "matches": {
         "id": 37,
         "date": "2026-10-22",
@@ -2936,7 +2964,7 @@
       "predicted_total": 222.39,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-21T23:00:10.305850",
+      "created_at": "2026-10-21T23:30:10.450318",
       "matches": {
         "id": 36,
         "date": "2026-10-22",
