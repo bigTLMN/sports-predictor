@@ -1089,14 +1089,16 @@
       "home_team_id": 28,
       "away_team_id": 20,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 7,
-      "away_score": 12,
+      "home_score": 35,
+      "away_score": 28,
       "period_scores": {
         "home": [
-          7
+          25,
+          10
         ],
         "away": [
-          12
+          23,
+          5
         ]
       },
       "vegas_spread": null,
@@ -1125,7 +1127,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 1.5,
-      "vegas_total": 230.5,
+      "vegas_total": 229.5,
       "home_team": {
         "code": "SA",
         "full_name": "San Antonio Spurs",
@@ -1200,7 +1202,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -1.5,
-      "vegas_total": 243.5,
+      "vegas_total": 242.5,
       "home_team": {
         "code": "MIA",
         "full_name": "Miami Heat",
@@ -1275,7 +1277,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -1.5,
-      "vegas_total": 239.5,
+      "vegas_total": 238.5,
       "home_team": {
         "code": "MEM",
         "full_name": "Memphis Grizzlies",
@@ -1300,7 +1302,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 3.5,
-      "vegas_total": 239.5,
+      "vegas_total": 240.5,
       "home_team": {
         "code": "NO",
         "full_name": "New Orleans Pelicans",
@@ -1324,8 +1326,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -8.5,
-      "vegas_total": 230.5,
+      "vegas_spread": -9.5,
+      "vegas_total": 229.5,
       "home_team": {
         "code": "HOU",
         "full_name": "Houston Rockets",
@@ -1350,7 +1352,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -6.5,
-      "vegas_total": 235.5,
+      "vegas_total": 234.5,
       "home_team": {
         "code": "LAL",
         "full_name": "Los Angeles Lakers",
@@ -1374,7 +1376,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -3.5,
+      "vegas_spread": -2.5,
       "vegas_total": 231.5,
       "home_team": {
         "code": "POR",
@@ -1399,7 +1401,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -5.5,
+      "vegas_spread": -4.5,
       "vegas_total": 228.5,
       "home_team": {
         "code": "LAC",
@@ -2052,14 +2054,16 @@
         "home_team_id": 28,
         "away_team_id": 20,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 7,
-        "away_score": 12,
+        "home_score": 35,
+        "away_score": 28,
         "period_scores": {
           "home": [
-            7
+            25,
+            10
           ],
           "away": [
-            12
+            23,
+            5
           ]
         },
         "vegas_spread": null,
@@ -2111,7 +2115,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 1.5,
-        "vegas_total": 230.5,
+        "vegas_total": 229.5,
         "home_team": {
           "code": "SA",
           "full_name": "San Antonio Spurs",
@@ -2206,8 +2210,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -8.5,
-        "vegas_total": 230.5,
+        "vegas_spread": -9.5,
+        "vegas_total": 229.5,
         "home_team": {
           "code": "HOU",
           "full_name": "Houston Rockets",
@@ -2254,7 +2258,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -5.5,
+        "vegas_spread": -4.5,
         "vegas_total": 228.5,
         "home_team": {
           "code": "LAC",
@@ -2303,7 +2307,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -6.5,
-        "vegas_total": 235.5,
+        "vegas_total": 234.5,
         "home_team": {
           "code": "LAL",
           "full_name": "Los Angeles Lakers",
@@ -2351,7 +2355,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -1.5,
-        "vegas_total": 239.5,
+        "vegas_total": 238.5,
         "home_team": {
           "code": "MEM",
           "full_name": "Memphis Grizzlies",
@@ -2399,7 +2403,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -1.5,
-        "vegas_total": 243.5,
+        "vegas_total": 242.5,
         "home_team": {
           "code": "MIA",
           "full_name": "Miami Heat",
@@ -2494,7 +2498,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -3.5,
+        "vegas_spread": -2.5,
         "vegas_total": 231.5,
         "home_team": {
           "code": "POR",
@@ -2639,7 +2643,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 3.5,
-        "vegas_total": 239.5,
+        "vegas_total": 240.5,
         "home_team": {
           "code": "NO",
           "full_name": "New Orleans Pelicans",
@@ -2656,6 +2660,102 @@
       "recommended_team": {
         "code": "NO",
         "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/no.png"
+      }
+    },
+    {
+      "id": 15,
+      "match_id": 37,
+      "recommended_team_id": 8,
+      "confidence_score": 60.0,
+      "spread_logic": "AI projects DEN to lose by 5.8 pts",
+      "spread_logic_zh": "AI 預測 DEN 輸 5.8 分",
+      "line_info": "-8.5",
+      "ou_pick": "UNDER",
+      "ou_line": 234.5,
+      "ou_confidence": 86.0,
+      "analysis_content": "Our AI model identifies a statistical edge for DEN over OKC.\n\n• **Paint Scoring (L5)**: Shows a significant advantage in recent form.\n• **Ball Security (L5)**: Shows a slight advantage in recent form.\n• **Rim Protection (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, DEN's performance in Paint Scoring (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：DEN 相對 OKC，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「明顯」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，DEN 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": -5.84,
+      "predicted_total": 222.18,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-21T00:00:09.486464",
+      "matches": {
+        "id": 37,
+        "date": "2026-10-22",
+        "start_time": "2026-10-23T01:30Z",
+        "home_team_id": 18,
+        "away_team_id": 8,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -8.5,
+        "vegas_total": 234.5,
+        "home_team": {
+          "code": "OKC",
+          "full_name": "Oklahoma City Thunder",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png"
+        },
+        "away_team": {
+          "code": "DEN",
+          "full_name": "Denver Nuggets",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/den.png"
+        },
+        "home_team_nba_id": 1610612760,
+        "away_team_nba_id": 1610612743
+      },
+      "recommended_team": {
+        "code": "DEN",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/den.png"
+      }
+    },
+    {
+      "id": 16,
+      "match_id": 36,
+      "recommended_team_id": 6,
+      "confidence_score": 57.0,
+      "spread_logic": "AI projects CLE to lose by 0.6 pts",
+      "spread_logic_zh": "AI 預測 CLE 輸 0.6 分",
+      "line_info": "-2.5",
+      "ou_pick": "UNDER",
+      "ou_line": 235.5,
+      "ou_confidence": 89.0,
+      "analysis_content": "Our AI model identifies a statistical edge for CLE over PHI.\n\n• **Net Rating Trend (L5)**: Shows a significant advantage in recent form.\n• **Rebounding Presence (L5)**: Shows a slight advantage in recent form.\n• **Paint Scoring (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, CLE's performance in Net Rating Trend (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：CLE 相對 PHI，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「明顯」優勢。\n• **籃板影響力（近5場）**：近 5 場呈現「輕微」優勢。\n• **禁區得分（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，CLE 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": -0.59,
+      "predicted_total": 222.39,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-21T00:00:09.533012",
+      "matches": {
+        "id": 36,
+        "date": "2026-10-22",
+        "start_time": "2026-10-22T23:00Z",
+        "home_team_id": 20,
+        "away_team_id": 6,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": -2.5,
+        "vegas_total": 235.5,
+        "home_team": {
+          "code": "PHI",
+          "full_name": "Philadelphia 76ers",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png"
+        },
+        "away_team": {
+          "code": "CLE",
+          "full_name": "Cleveland Cavaliers",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png"
+        },
+        "home_team_nba_id": 1610612755,
+        "away_team_nba_id": 1610612739
+      },
+      "recommended_team": {
+        "code": "CLE",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png"
       }
     }
   ]
