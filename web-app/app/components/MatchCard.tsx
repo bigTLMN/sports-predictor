@@ -4,7 +4,15 @@ import { motion } from 'framer-motion';
 import { format } from 'date-fns';
 import { twMerge } from 'tailwind-merge';
 import Link from 'next/link';
-import { modelSpreadCaptionForLocale, modelTotalShortForLocale } from '@/lib/pickModelLabels';
+import {
+  formatSignedLine,
+  formatTotalLine,
+  modelSpreadCaptionForLocale,
+  modelTotalShortForLocale,
+  recommendedCoverNumber,
+  spreadCoverEdge,
+  totalCoverEdge,
+} from '@/lib/pickModelLabels';
 import { useI18n } from '@/lib/i18n';
 import { pickSpreadLogic } from '@/lib/pickLocalized';
 
@@ -43,6 +51,32 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
 
   const ouLabel =
     pick.ou_pick === 'OVER' ? t('card.ou.over') : pick.ou_pick === 'UNDER' ? t('card.ou.under') : pick.ou_pick;
+
+  const homeLineForCover =
+    m.vegas_spread !== null && m.vegas_spread !== undefined && m.vegas_spread !== ''
+      ? m.vegas_spread
+      : pick.line_info;
+  const coverNumber = hasSpreadLine
+    ? recommendedCoverNumber(homeLineForCover, pick.recommended_team?.code, m.home_team?.code)
+    : null;
+  const coverLineText = coverNumber === null ? null : formatSignedLine(coverNumber);
+  const spreadEdge = spreadCoverEdge(pick.predicted_margin, coverNumber);
+  const spreadCoverBy =
+    spreadEdge !== null && spreadEdge > 0 ? t('card.coverBy', { pts: spreadEdge.toFixed(1) }) : null;
+
+  const totalSource =
+    m.vegas_total !== null && m.vegas_total !== undefined && m.vegas_total !== ''
+      ? m.vegas_total
+      : pick.ou_line;
+  const totalLineNumber = Number(totalSource);
+  const totalLineText = Number.isNaN(totalLineNumber) ? null : formatTotalLine(totalLineNumber);
+  const totalEdge = totalCoverEdge(pick.predicted_total, totalLineText, pick.ou_pick);
+  const totalCoverBy =
+    totalEdge !== null && totalEdge > 0 ? t('card.coverBy', { pts: totalEdge.toFixed(1) }) : null;
+  const totalCoverText =
+    hasOuPick && totalLineText
+      ? t('card.totalCoverLine', { side: ouLabel, line: totalLineText })
+      : null;
 
   const spreadLogicDisplay = pickSpreadLogic(pick, locale);
 
@@ -165,9 +199,15 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                         <div>
                           <div className="text-base font-black text-slate-800 leading-snug flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
                             <span>
-                              {pick.recommended_team.code}{' '}
+                              {pick.recommended_team.code}
+                              {coverLineText ? ` ${coverLineText}` : ''}{' '}
                               <span className="text-xs font-bold text-slate-400">{t('card.toCover')}</span>
                             </span>
+                            {spreadCoverBy && (
+                              <span className="text-[11px] font-bold text-emerald-700 tracking-tight">
+                                · {spreadCoverBy}
+                              </span>
+                            )}
                             {modelSpreadCaptionText && (
                               <span className="text-[11px] font-bold text-orange-600 tracking-tight">
                                 · {modelSpreadCaptionText}
@@ -231,8 +271,23 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
 
                   <div className="flex justify-between items-center relative z-10">
                     <div className="flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
-                      <span className="text-[10px] font-bold text-slate-400 uppercase">{t('card.totalRow')}</span>
-                      <span className="text-xs font-black text-slate-700">{m.vegas_total ?? '--'}</span>
+                      {totalCoverText ? (
+                        <span
+                          className={`text-sm font-black ${
+                            pick.ou_pick === 'OVER' ? 'text-red-600' : 'text-blue-700'
+                          }`}
+                        >
+                          {totalCoverText}
+                        </span>
+                      ) : (
+                        <>
+                          <span className="text-[10px] font-bold text-slate-400 uppercase">{t('card.totalRow')}</span>
+                          <span className="text-xs font-black text-slate-700">{m.vegas_total ?? '--'}</span>
+                        </>
+                      )}
+                      {totalCoverBy && (
+                        <span className="text-[11px] font-bold text-emerald-700">· {totalCoverBy}</span>
+                      )}
                       {modelTotalShortForLocale(pick.predicted_total, locale) && (
                         <span className="text-[10px] font-bold text-violet-600">
                           · {modelTotalShortForLocale(pick.predicted_total, locale)}
@@ -240,16 +295,9 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       )}
                     </div>
                     <div className="flex items-center gap-2">
-                      <span
-                        className={`text-xs font-black px-2 py-0.5 rounded ${
-                          pick.ou_pick === 'OVER'
-                            ? 'bg-red-50 text-red-600 border border-red-100'
-                            : 'bg-blue-50 text-blue-600 border border-blue-100'
-                        }`}
-                      >
-                        {ouLabel}
-                      </span>
-                      <span className="text-[10px] font-bold text-slate-400">({pick.ou_confidence}%)</span>
+                      {hasOuPick && (
+                        <span className="text-[10px] font-bold text-slate-400">({pick.ou_confidence}%)</span>
+                      )}
                     </div>
                   </div>
                 </>

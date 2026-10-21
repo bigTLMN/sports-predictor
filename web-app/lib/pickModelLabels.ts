@@ -36,3 +36,52 @@ export function modelTotalShortForLocale(pt: unknown, locale: Locale): string | 
   if (Number.isNaN(n)) return null;
   return translateMessage(locale, 'card.modelTotalPts', { pts: n.toFixed(1) });
 }
+
+export function formatSignedLine(value: number): string {
+  const rounded = Math.round(value * 10) / 10;
+  if (Math.abs(rounded) < 0.05) return 'PK';
+  const body = Math.abs(rounded).toFixed(1);
+  return rounded > 0 ? `+${body}` : `-${body}`;
+}
+
+export function formatTotalLine(value: number): string {
+  return (Math.round(value * 10) / 10).toFixed(1);
+}
+
+/** Home-perspective line, flipped when the pick is the away team. */
+export function recommendedCoverNumber(
+  homeLine: unknown,
+  recommendedCode: string | undefined,
+  homeCode: string | undefined
+): number | null {
+  if (homeLine === null || homeLine === undefined || homeLine === '') return null;
+  const line = Number(homeLine);
+  if (!recommendedCode || !homeCode || Number.isNaN(line)) return null;
+  return recommendedCode === homeCode ? line : -line;
+}
+
+/** Positive means the projected margin clears the recommended team's line. */
+export function spreadCoverEdge(predictedMargin: unknown, coverNumber: number | null): number | null {
+  if (coverNumber === null || predictedMargin === null || predictedMargin === undefined || predictedMargin === '') {
+    return null;
+  }
+  const margin = Number(predictedMargin);
+  if (Number.isNaN(margin)) return null;
+  return Math.round((margin + coverNumber) * 10) / 10;
+}
+
+/** Positive means the projected total clears the picked side of the total. */
+export function totalCoverEdge(
+  predictedTotal: unknown,
+  totalLine: unknown,
+  ouPick: string | undefined
+): number | null {
+  if (predictedTotal === null || predictedTotal === undefined || predictedTotal === '') return null;
+  if (totalLine === null || totalLine === undefined || totalLine === '') return null;
+  const predicted = Number(predictedTotal);
+  const line = Number(totalLine);
+  if (Number.isNaN(predicted) || Number.isNaN(line)) return null;
+  if (ouPick === 'OVER') return Math.round((predicted - line) * 10) / 10;
+  if (ouPick === 'UNDER') return Math.round((line - predicted) * 10) / 10;
+  return null;
+}

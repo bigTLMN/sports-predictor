@@ -3,7 +3,15 @@
 import Link from 'next/link';
 import { format } from 'date-fns';
 import { useI18n } from '@/lib/i18n';
-import { modelSpreadCaptionForLocale, modelTotalShortForLocale } from '@/lib/pickModelLabels';
+import {
+  formatSignedLine,
+  formatTotalLine,
+  modelSpreadCaptionForLocale,
+  modelTotalShortForLocale,
+  recommendedCoverNumber,
+  spreadCoverEdge,
+  totalCoverEdge,
+} from '@/lib/pickModelLabels';
 import { pickAnalysisContent, pickSpreadLogic } from '@/lib/pickLocalized';
 
 export default function MatchDetailView({ pick }: { pick: any }) {
@@ -20,6 +28,31 @@ export default function MatchDetailView({ pick }: { pick: any }) {
 
   const ouLabel =
     pick.ou_pick === 'OVER' ? t('card.ou.over') : pick.ou_pick === 'UNDER' ? t('card.ou.under') : pick.ou_pick;
+
+  const homeLineForCover =
+    m.vegas_spread !== null && m.vegas_spread !== undefined && m.vegas_spread !== ''
+      ? m.vegas_spread
+      : pick.line_info;
+  const coverNumber = hasSpreadLine
+    ? recommendedCoverNumber(homeLineForCover, pick.recommended_team?.code, m.home_team?.code)
+    : null;
+  const coverLineText = coverNumber === null ? null : formatSignedLine(coverNumber);
+  const spreadEdge = spreadCoverEdge(pick.predicted_margin, coverNumber);
+  const spreadCoverBy =
+    spreadEdge !== null && spreadEdge > 0 ? t('card.coverBy', { pts: spreadEdge.toFixed(1) }) : null;
+  const totalSource =
+    m.vegas_total !== null && m.vegas_total !== undefined && m.vegas_total !== ''
+      ? m.vegas_total
+      : pick.ou_line;
+  const totalLineNumber = Number(totalSource);
+  const totalLineText = Number.isNaN(totalLineNumber) ? null : formatTotalLine(totalLineNumber);
+  const totalEdge = totalCoverEdge(pick.predicted_total, totalLineText, pick.ou_pick);
+  const totalCoverBy =
+    totalEdge !== null && totalEdge > 0 ? t('card.coverBy', { pts: totalEdge.toFixed(1) }) : null;
+  const totalCoverText =
+    pick.ou_pick && totalLineText
+      ? t('card.totalCoverLine', { side: ouLabel, line: totalLineText })
+      : ouLabel;
 
   const spreadLogicDisplay = pickSpreadLogic(pick, locale);
   const analysisDisplay = pickAnalysisContent(pick, locale);
@@ -88,6 +121,12 @@ export default function MatchDetailView({ pick }: { pick: any }) {
                 <h3 className="text-4xl md:text-5xl font-black text-white mb-2 leading-none">
                   {hasSpreadLine ? pick.recommended_team.full_name : t('detail.noSpreadPick')}
                 </h3>
+                {hasSpreadLine && coverLineText && (
+                  <p className="text-2xl font-black text-yellow-300 mb-2">
+                    {pick.recommended_team.code} {coverLineText} {t('card.toCover')}
+                    {spreadCoverBy ? ` · ${spreadCoverBy}` : ''}
+                  </p>
+                )}
                 <p className="text-2xl text-slate-300 font-light">{spreadLogicDisplay}</p>
                 {spreadModelLine && (
                   <p className="text-sm font-semibold text-orange-300/95 mt-3 tracking-tight">{spreadModelLine}</p>
@@ -149,7 +188,8 @@ export default function MatchDetailView({ pick }: { pick: any }) {
                 <span
                   className={`font-mono font-bold ${pick.ou_pick === 'OVER' ? 'text-red-400' : 'text-blue-400'}`}
                 >
-                  {ouLabel}
+                  {totalCoverText}
+                  {totalCoverBy ? ` · ${totalCoverBy}` : ''}
                 </span>
               </div>
               <div className="text-xs text-slate-600 text-center mt-4">
