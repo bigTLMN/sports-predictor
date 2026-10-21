@@ -343,12 +343,14 @@ function RollingBoard({
             {rows.map((row) => {
               const leg = col[row.key];
               return (
-                <div key={row.key} className="mt-1.5 flex items-baseline justify-between gap-3">
+                <div key={row.key} className="mt-1.5 flex items-center justify-between gap-2">
                   <div className="text-sm font-bold">{row.label}</div>
-                  <div className={`text-xl font-bold leading-none tabular-nums ${activeDays === col.days ? 'text-[#dfbd69]' : 'text-white'}`}>
-                    {rateText(leg)}
+                  <div className="text-right">
+                    <div className={`text-xl font-bold leading-none tabular-nums ${activeDays === col.days ? 'text-[#dfbd69]' : 'text-white'}`}>
+                      {rateText(leg)}
+                    </div>
+                    <div className="mt-0.5 text-sm font-bold text-slate-400 tabular-nums whitespace-nowrap">{record(leg)}</div>
                   </div>
-                  <div className="text-sm font-bold text-slate-400 tabular-nums">{record(leg)}</div>
                 </div>
               );
             })}
