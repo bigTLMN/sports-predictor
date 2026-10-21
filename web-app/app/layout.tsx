@@ -17,7 +17,7 @@ export default function RootLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('edge-analytics-theme');if(t!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}})();`,
+            __html: `(function(){try{var t=localStorage.getItem('edge-analytics-theme');if(t!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}try{var n=parseInt(localStorage.getItem('edge-analytics-font'),10);if(!(n>=12&&n<=18))n=18;document.documentElement.style.fontSize=n+'px'}catch(e){document.documentElement.style.fontSize='18px'}})();`,
           }}
         />
       </head>
