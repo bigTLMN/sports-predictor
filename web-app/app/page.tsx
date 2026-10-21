@@ -67,7 +67,7 @@ export default async function Home({
   const allHistoryData = historyPicks(snapshot);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#1F2937] to-[#030712] font-sans flex flex-col text-white tracking-tight font-medium">
+    <div className="min-h-screen bg-slate-100 text-slate-900 dark:bg-gradient-to-b dark:from-[#1F2937] dark:to-[#030712] dark:text-white font-sans flex flex-col tracking-tight font-medium">
       <div className="h-[3px] w-full bg-gradient-to-r from-[#855e23] via-[#dfbd69] to-[#855e23] shadow-[0_0_12px_#dfbd69] brightness-110" />
       
       <main className="flex-1 p-4 md:p-8 bg-[radial-gradient(circle_at_top,rgba(255,165,0,0.05)_0%,transparent_50%)]">
@@ -81,7 +81,7 @@ export default async function Home({
             />
             <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-12">
               <div className="relative z-10">
-                <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-none uppercase group-hover:text-orange-100 transition-colors">
+                <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-none uppercase text-white group-hover:text-orange-100 transition-colors">
                   EDGE <span className="text-orange-400 group-hover:text-orange-300">ANALYTICS</span>
                 </h1>
                 <div className="flex items-center gap-3 mt-5">
@@ -97,7 +97,7 @@ export default async function Home({
           </a>
 
           <div className="mb-8 ">
-            <div className="bg-[#0D1117] rounded-xl p-1 border-2 border-slate-200/20">
+            <div className="bg-white rounded-xl p-1 border-2 border-slate-200 dark:bg-[#0D1117] dark:border-slate-200/20">
               <DateNavigator />
             </div>
           </div>

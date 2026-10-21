@@ -162,7 +162,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
   const metricLabel = t(`stats.label.${statsData.labelKey}`);
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 mb-6 transition-all">
+    <div className="bg-white text-slate-900 dark:bg-[#161b22] dark:text-slate-100 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-5 mb-6 transition-all">
       {/* 頁籤切換 */}
       <div className="flex justify-center gap-2 mb-6">
         {(['SPREAD', 'TOTAL', 'ALL'] as StatsType[]).map((tab) => (
@@ -173,7 +173,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
             className={`px-5 py-1.5 rounded-full text-xs font-black tracking-wider transition-all duration-300 ${
               activeTab === tab
                 ? 'bg-slate-900 text-white shadow-lg transform scale-105'
-                : 'bg-slate-100 text-slate-400 hover:bg-slate-200'
+                : 'bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700'
             }`}
           >
             {tabLabel(tab)}
@@ -182,15 +182,15 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
       </div>
 
       {/* 數據看板 */}
-      <div className="grid grid-cols-2 gap-6 divide-x divide-slate-100 mb-6">
+      <div className="grid grid-cols-2 gap-6 divide-x divide-slate-100 dark:divide-slate-800 mb-6">
         <div className="text-center">
           <div className="text-[10px] text-slate-400 uppercase font-bold tracking-widest mb-1">
             {t('stats.daily')} {metricLabel}
           </div>
           <div className="flex justify-center items-baseline gap-1.5">
-            <span className="text-3xl font-black text-slate-800">{dayRate}%</span>
+            <span className="text-3xl font-black text-slate-800 dark:text-white">{dayRate}%</span>
           </div>
-          <div className="text-xs font-bold text-slate-400 mt-1 bg-slate-50 inline-block px-2 py-0.5 rounded">
+          <div className="text-xs font-bold text-slate-400 mt-1 bg-slate-50 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
             {statsData.day.wins}
             {t('common.win')} - {statsData.day.total - statsData.day.wins}
             {t('common.loss')}
@@ -206,7 +206,7 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
               {seasonRate}%
             </span>
           </div>
-          <div className="text-xs font-bold text-slate-400 mt-1 bg-slate-50 inline-block px-2 py-0.5 rounded">
+          <div className="text-xs font-bold text-slate-400 mt-1 bg-slate-50 dark:bg-slate-800 inline-block px-2 py-0.5 rounded">
             {statsData.season.wins}
             {t('common.win')} - {statsData.season.total - statsData.season.wins}
             {t('common.loss')}
@@ -216,9 +216,9 @@ export default function StatsDashboard({ dailyPicks, historyPicks }: StatsDashbo
 
       {/* Trend Analysis：滾動視窗快照 + 圖 */}
       {hasHistory && (
-        <div className="border-t border-slate-100 pt-4 animate-in fade-in duration-500 relative">
+        <div className="border-t border-slate-100 dark:border-slate-800 pt-4 animate-in fade-in duration-500 relative">
           <div className="flex items-center justify-between gap-3 mb-4 px-1">
-            <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">{t('stats.trendTitle')}</div>
+              <div className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t('stats.trendTitle')}</div>
             <div className="flex bg-slate-100 rounded-lg p-1 gap-1 shrink-0">
               {([7, 30, 90] as const).map((d) => (
                 <button

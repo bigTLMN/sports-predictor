@@ -41,9 +41,9 @@ export default function MatchDetailView({ pick }: { pick: any }) {
   const analysisDisplay = pickAnalysisContent(pick, locale);
 
   return (
-    <div className="min-h-screen bg-[#030712] text-white font-sans selection:bg-orange-500/30">
-      <div className="p-6 border-b border-white/10 flex items-center justify-between bg-[#0D1117]">
-        <Link href="/" className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors group">
+    <div className="min-h-screen bg-slate-100 text-slate-900 dark:bg-[#030712] dark:text-white font-sans selection:bg-orange-500/30">
+      <div className="p-6 border-b border-slate-200 dark:border-white/10 flex items-center justify-between bg-white dark:bg-[#0D1117]">
+        <Link href="/" className="flex items-center gap-2 text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors group">
           <span className="group-hover:-translate-x-1 transition-transform">←</span>
           <span className="font-bold text-sm tracking-widest uppercase">{t('detail.back')}</span>
         </Link>
@@ -71,7 +71,7 @@ export default function MatchDetailView({ pick }: { pick: any }) {
             </div>
             <div className="text-center space-y-1">
               <div className="text-slate-400 text-xs font-bold tracking-widest uppercase">{t('detail.vegasSpread')}</div>
-              <div className="text-xl font-black text-white">
+              <div className="text-xl font-black text-slate-900 dark:text-white">
                 {m.home_team.code}{' '}
                 {m.vegas_spread !== null && m.vegas_spread !== undefined && m.vegas_spread !== ''
                   ? formatSignedLine(Number(m.vegas_spread))
@@ -126,13 +126,13 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               <h3 className="text-2xl font-black uppercase tracking-tight">{t('detail.systemAnalysis')}</h3>
             </div>
 
-            <div className="bg-[#161b22] border border-slate-800 rounded-2xl p-8 shadow-xl">
+            <div className="bg-white border border-slate-200 dark:bg-[#161b22] dark:border-slate-800 rounded-2xl p-8 shadow-xl">
               <div className="prose prose-invert max-w-none">
                 {analysisDisplay ? (
                   analysisDisplay.split('\n').map((line: string, i: number) => (
                     <p
                       key={i}
-                      className={`text-slate-300 leading-relaxed ${line.startsWith('•') ? 'font-bold text-white pl-4' : ''}`}
+                      className={`leading-relaxed ${line.startsWith('•') ? 'font-bold text-slate-900 dark:text-white pl-4' : 'text-slate-700 dark:text-slate-300'}`}
                     >
                       {line}
                     </p>
@@ -149,11 +149,11 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               <div className="w-1 h-6 bg-slate-700 rounded-full" />
               <h3 className="text-xl font-black uppercase tracking-tight text-slate-500">{t('detail.marketIntel')}</h3>
             </div>
-            <div className="bg-[#161b22] border border-slate-800 rounded-2xl p-6">
+            <div className="bg-white border border-slate-200 dark:bg-[#161b22] dark:border-slate-800 rounded-2xl p-6">
               <div className="flex justify-between items-center mb-4 pb-4 border-b border-slate-800">
                 <span className="text-slate-400 text-xs font-bold uppercase">{t('detail.totalLine')}</span>
                 <div className="text-right">
-                  <span className="text-white font-bold tabular-nums">{totalLineText ?? m.vegas_total}</span>
+                  <span className="text-slate-900 dark:text-white font-bold tabular-nums">{totalLineText ?? m.vegas_total}</span>
                 </div>
               </div>
               <div className="flex justify-between items-center mb-4 pb-4 border-b border-slate-800">

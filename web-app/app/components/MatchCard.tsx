@@ -81,9 +81,9 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
       >
         <div
           className={twMerge(
-            'bg-white rounded-2xl shadow-sm border overflow-hidden transition-all relative h-full',
-            hasPrediction ? 'hover:shadow-lg transform group-hover:-translate-y-1' : 'bg-slate-50',
-            isHighConfidence ? 'border-blue-200 ring-2 ring-blue-100/50' : 'border-slate-200'
+            'bg-white dark:bg-[#161b22] rounded-2xl shadow-sm border overflow-hidden transition-all relative h-full text-slate-800 dark:text-slate-100',
+            hasPrediction ? 'hover:shadow-lg transform group-hover:-translate-y-1' : 'bg-slate-50 dark:bg-slate-900',
+            isHighConfidence ? 'border-blue-200 ring-2 ring-blue-100/50 dark:border-blue-900 dark:ring-blue-900/40' : 'border-slate-200 dark:border-slate-800'
           )}
         >
           {isHighConfidence && (
@@ -102,16 +102,16 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
             </div>
           </div>
 
-          <div className="pt-10 pb-4 px-4 flex justify-between items-center bg-gradient-to-b from-slate-50 to-white">
+          <div className="pt-10 pb-4 px-4 flex justify-between items-center bg-gradient-to-b from-slate-50 to-white dark:from-[#161b22] dark:to-[#161b22]">
             <div className="flex flex-col items-center w-1/3 relative">
-              <div className="w-14 h-14 p-2 bg-white rounded-full shadow-sm border border-slate-100 mb-2 flex items-center justify-center transition-transform duration-300">
+              <div className="w-14 h-14 p-2 bg-white dark:bg-slate-900 rounded-full shadow-sm border border-slate-100 dark:border-slate-700 mb-2 flex items-center justify-center transition-transform duration-300">
                 <img
                   src={m.away_team.logo_url || '/placeholder.png'}
                   className="w-full h-full object-contain"
                   alt={m.away_team.code}
                 />
               </div>
-              <span className="font-bold text-slate-700">{m.away_team.code}</span>
+              <span className="font-bold text-slate-700 dark:text-slate-100">{m.away_team.code}</span>
               {isFinished && <span className="text-xl font-black text-slate-900 mt-1">{m.away_score}</span>}
             </div>
 
@@ -129,14 +129,14 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
             </div>
 
             <div className="flex flex-col items-center w-1/3 relative">
-              <div className="w-14 h-14 p-2 bg-white rounded-full shadow-sm border border-slate-100 mb-2 flex items-center justify-center transition-transform duration-300">
+              <div className="w-14 h-14 p-2 bg-white dark:bg-slate-900 rounded-full shadow-sm border border-slate-100 dark:border-slate-700 mb-2 flex items-center justify-center transition-transform duration-300">
                 <img
                   src={m.home_team.logo_url || '/placeholder.png'}
                   className="w-full h-full object-contain"
                   alt={m.home_team.code}
                 />
               </div>
-              <span className="font-bold text-slate-700">{m.home_team.code}</span>
+              <span className="font-bold text-slate-700 dark:text-slate-100">{m.home_team.code}</span>
               {isFinished && <span className="text-xl font-black text-slate-900 mt-1">{m.home_score}</span>}
             </div>
           </div>
@@ -147,8 +147,8 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                 'rounded-xl p-3 border relative overflow-hidden transition-colors',
                 hasPrediction
                   ? isHighConfidence
-                    ? 'bg-blue-50/50 border-blue-100'
-                    : 'bg-slate-50 border-slate-100'
+                    ? 'bg-blue-50/50 border-blue-100 dark:bg-blue-950/40 dark:border-blue-900'
+                    : 'bg-slate-50 border-slate-100 dark:bg-slate-900/50 dark:border-slate-800'
                   : 'bg-slate-50/50 border-slate-100/50 border-dashed'
               )}
             >
@@ -185,7 +185,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                       <div className="flex items-center gap-3">
                         <img src={pick.recommended_team.logo_url} className="w-8 h-8 object-contain drop-shadow-sm" />
                         <div>
-                          <div className="text-base font-black text-slate-800 leading-snug flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
+                          <div className="text-base font-black text-slate-800 dark:text-white leading-snug flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
                             <span>{spreadPickText}</span>
                           </div>
                         </div>
@@ -242,7 +242,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
 
                   <div className="flex justify-between items-center relative z-10">
                     <div className="flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
-                      <span className="text-xs font-black text-slate-500">{totalLineText ?? '--'}</span>
+                      <span className="text-xs font-black text-slate-500 dark:text-slate-300">{totalLineText ?? '--'}</span>
                       {totalCoverText && (
                         <span
                           className={`text-sm font-black ${
@@ -273,7 +273,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
           </div>
 
           {hasPrediction && (pick.spread_outcome || pick.total_outcome) && (
-            <div className="flex border-t border-slate-100 divide-x divide-slate-100 bg-white">
+            <div className="flex border-t border-slate-100 dark:border-slate-800 divide-x divide-slate-100 dark:divide-slate-800 bg-white dark:bg-[#161b22]">
               <div
                 className={`flex-1 py-2 flex flex-col items-center justify-center ${
                   hasSpreadLine && pick.spread_outcome === 'WIN'

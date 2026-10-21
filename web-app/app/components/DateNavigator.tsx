@@ -61,14 +61,14 @@ export default function DateNavigator() {
   };
 
   return (
-    <div className="flex items-center justify-between px-4 py-4 bg-[#0D1117] rounded-xl border border-slate-800 relative">
+    <div className="flex items-center justify-between px-4 py-4 bg-white rounded-xl border border-slate-200 dark:bg-[#0D1117] dark:border-slate-800 relative">
       
       {/* 左箭頭: 前一天 */}
       {/* 加上 z-20 確保箭頭浮在 input 之上，不然會按不到箭頭 */}
       <button 
         onClick={() => handleNavigation('prev')}
         disabled={isPending}
-        className={`relative z-20 p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all ${isPending ? 'opacity-30' : ''}`}
+        className={`relative z-20 p-2 text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-white dark:hover:bg-slate-800 rounded-lg transition-all ${isPending ? 'opacity-30' : ''}`}
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
       </button>
@@ -81,12 +81,12 @@ export default function DateNavigator() {
       >
         
         {/* 星期幾 (小字) */}
-        <div className="text-sm font-bold text-slate-400 uppercase tracking-widest group-hover:text-orange-500 transition-colors">
+        <div className="text-sm font-bold text-slate-500 uppercase tracking-widest group-hover:text-orange-500 transition-colors">
             {format(currentDate, 'EEEE')}
         </div>
         
         {/* 日期 (大字) */}
-        <div className="text-xl font-black text-white tracking-tight flex items-center justify-center gap-2">
+        <div className="text-xl font-black text-slate-900 dark:text-white tracking-tight flex items-center justify-center gap-2">
             {format(currentDate, 'MMM dd, yyyy')}
             <svg className="w-4 h-4 text-slate-500 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
         </div>
@@ -111,7 +111,7 @@ export default function DateNavigator() {
       <button 
         onClick={() => handleNavigation('next')}
         disabled={isPending}
-        className={`relative z-20 p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all ${isPending ? 'opacity-30' : ''}`}
+        className={`relative z-20 p-2 text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-white dark:hover:bg-slate-800 rounded-lg transition-all ${isPending ? 'opacity-30' : ''}`}
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
       </button>

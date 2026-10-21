@@ -46,6 +46,8 @@ const en: Messages = {
   'footer.built': 'AI Sports Prediction Project. Built with Next.js & Python.',
   'footer.lang.en': 'English',
   'footer.lang.zh': '繁體中文',
+  'footer.theme.light': 'Light',
+  'footer.theme.dark': 'Dark',
 
   'common.win': 'W',
   'common.loss': 'L',
@@ -136,6 +138,8 @@ const zhTW: Messages = {
   'footer.built': 'AI 運動預測專題。以 Next.js 與 Python 建置。',
   'footer.lang.en': 'English',
   'footer.lang.zh': '繁體中文',
+  'footer.theme.light': '淺色',
+  'footer.theme.dark': '深色',
 
   'common.win': '勝',
   'common.loss': '負',

@@ -102,13 +102,13 @@ function TrendChartInner({
         <div className="text-right max-w-[220px]">
           <div className="text-[10px] font-bold text-slate-500">
             {t('trend.meanRates')}{' '}
-            <span className="text-slate-800 tabular-nums">{meanOfDailyRates}%</span>
+            <span className="text-slate-800 dark:text-slate-100 tabular-nums">{meanOfDailyRates}%</span>
           </div>
           <div className="text-[9px] text-slate-400 leading-tight mt-0.5">{t('trend.meanFootnote')}</div>
         </div>
       </div>
 
-      <div className="w-full h-64 bg-[#1A1A1A] rounded-3xl border border-slate-800 p-4 shadow-sm relative overflow-hidden ring-1 ring-white/[0.03]">
+      <div className="w-full h-64 bg-slate-100 dark:bg-[#1A1A1A] rounded-3xl border border-slate-200 dark:border-slate-800 p-4 shadow-sm relative overflow-hidden">
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart data={data} margin={{ top: 10, right: 10, bottom: 0, left: 0 }}>
             <defs>

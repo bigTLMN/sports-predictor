@@ -14,7 +14,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="antialiased font-sans bg-slate-100">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('edge-analytics-theme');if(t!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}})();`,
+          }}
+        />
+      </head>
+      <body className="antialiased font-sans bg-slate-100 dark:bg-slate-950">
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#1F2937] to-[#030712] font-sans flex flex-col text-white">
+    <div className="min-h-screen bg-slate-100 text-slate-900 dark:bg-gradient-to-b dark:from-[#1F2937] dark:to-[#030712] dark:text-white font-sans flex flex-col">
       
       {/* 1. 頂部裝飾條 (保持與首頁一致，避免視覺跳動) */}
       <div className="h-[3px] w-full bg-gradient-to-r from-[#855e23] via-[#dfbd69] to-[#855e23] shadow-[0_0_12px_#dfbd69] brightness-110" />

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* =========================================================
    Global Design Tokens - Light Mode
@@ -32,26 +33,20 @@
 }
 
 /* =========================================================
-   Dark Mode - System Preference
+   Dark Mode - explicit .dark on <html>
    ========================================================= */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #020617; /* slate-950 */
-    --foreground: #e5e7eb; /* slate-200 */
-
-    --primary: #3b82f6; /* blue-500 */
-    --primary-foreground: #020617;
-
-    --muted: #020617;
-    --muted-foreground: #94a3b8; /* slate-400 */
-
-    --accent: #4ade80; /* green-400 */
-    --accent-foreground: #052e16;
-
-    --border: #1e293b; /* slate-800 */
-    --input: #1e293b;
-    --ring: #3b82f6;
-  }
+.dark {
+  --background: #020617;
+  --foreground: #e5e7eb;
+  --primary: #3b82f6;
+  --primary-foreground: #020617;
+  --muted: #020617;
+  --muted-foreground: #94a3b8;
+  --accent: #4ade80;
+  --accent-foreground: #052e16;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #3b82f6;
 }
 
 /* =========================================================
