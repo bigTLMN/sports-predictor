@@ -1886,8 +1886,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -9.5,
+      "vegas_total": 229.5,
       "home_team": {
         "code": "LAL",
         "full_name": "Los Angeles Lakers",
@@ -1911,8 +1911,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 6.5,
+      "vegas_total": 232.5,
       "home_team": {
         "code": "SAC",
         "full_name": "Sacramento Kings",
@@ -3270,7 +3270,7 @@
       "predicted_total": 212.37,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:10.570229",
+      "created_at": "2026-10-22T06:30:10.459301",
       "matches": {
         "id": 39,
         "date": "2026-10-23",
@@ -3318,7 +3318,7 @@
       "predicted_total": 221.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:10.614543",
+      "created_at": "2026-10-22T06:30:10.503253",
       "matches": {
         "id": 40,
         "date": "2026-10-23",
@@ -3366,7 +3366,7 @@
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:10.657351",
+      "created_at": "2026-10-22T06:30:10.550946",
       "matches": {
         "id": 41,
         "date": "2026-10-23",
@@ -3400,21 +3400,21 @@
     {
       "id": 20,
       "match_id": 48,
-      "recommended_team_id": 13,
-      "confidence_score": 54.0,
-      "spread_logic": "AI projects LAL to win by 1.1 pts",
-      "spread_logic_zh": "AI 預測 LAL 贏 1.1 分",
-      "line_info": "0.0",
+      "recommended_team_id": 12,
+      "confidence_score": 77.0,
+      "spread_logic": "AI projects LAC to lose by 2.7 pts",
+      "spread_logic_zh": "AI 預測 LAC 輸 2.7 分",
+      "line_info": "-9.5",
       "ou_pick": "UNDER",
-      "ou_line": 225.0,
-      "ou_confidence": 66.0,
-      "analysis_content": "Our AI model identifies a statistical edge for LAL over LAC.\n\n• **3-Point Shooting (L5)**: Shows a slight advantage in recent form.\n• **Shooting Efficiency (L5)**: Shows a slight advantage in recent form.\n• **Free Throw Reliability (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, LAL's performance in 3-Point Shooting (L5) is a key indicator for this matchup.",
-      "analysis_content_zh": "AI 模型指出：LAL 相對 LAC，在近期統計指標上較占優勢。\n\n• **三分投射（近5場）**：近 5 場呈現「輕微」優勢。\n• **投籃效率（近5場）**：近 5 場呈現「輕微」優勢。\n• **罰球穩定度（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，LAL 在「三分投射（近5場）」上的表現是本場關鍵指標。",
-      "predicted_margin": 1.06,
+      "ou_line": 229.5,
+      "ou_confidence": 80.0,
+      "analysis_content": "Our AI model identifies a statistical edge for LAC over LAL.\n\n• **Paint Scoring (L5)**: Shows a slight advantage in recent form.\n• **Net Rating Trend (L5)**: Shows a slight advantage in recent form.\n• **Ball Security (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, LAC's performance in Paint Scoring (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：LAC 相對 LAL，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「輕微」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，LAC 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": -2.75,
       "predicted_total": 219.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:10.703212",
+      "created_at": "2026-10-22T06:30:10.597577",
       "matches": {
         "id": 48,
         "date": "2026-10-23",
@@ -3425,8 +3425,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -9.5,
+        "vegas_total": 229.5,
         "home_team": {
           "code": "LAL",
           "full_name": "Los Angeles Lakers",
@@ -3441,8 +3441,8 @@
         "away_team_nba_id": 1610612746
       },
       "recommended_team": {
-        "code": "LAL",
-        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png"
+        "code": "LAC",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png"
       }
     },
     {
@@ -3462,7 +3462,7 @@
       "predicted_total": 233.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:10.747338",
+      "created_at": "2026-10-22T06:30:10.642965",
       "matches": {
         "id": 44,
         "date": "2026-10-23",
@@ -3510,7 +3510,7 @@
       "predicted_total": 233.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:10.792428",
+      "created_at": "2026-10-22T06:30:10.687747",
       "matches": {
         "id": 38,
         "date": "2026-10-23",
@@ -3558,7 +3558,7 @@
       "predicted_total": 221.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:10.833737",
+      "created_at": "2026-10-22T06:30:10.730700",
       "matches": {
         "id": 42,
         "date": "2026-10-23",
@@ -3592,21 +3592,21 @@
     {
       "id": 24,
       "match_id": 49,
-      "recommended_team_id": 22,
-      "confidence_score": 66.0,
-      "spread_logic": "AI projects POR to win by 4.1 pts",
-      "spread_logic_zh": "AI 預測 POR 贏 4.1 分",
-      "line_info": "0.0",
-      "ou_pick": "OVER",
-      "ou_line": 225.0,
-      "ou_confidence": 62.0,
-      "analysis_content": "Our AI model identifies a statistical edge for POR over SAC.\n\n• **Ball Security (L5)**: Shows a slight advantage in recent form.\n• **Free Throw Reliability (L5)**: Shows a slight advantage in recent form.\n• **3-Point Shooting (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, POR's performance in Ball Security (L5) is a key indicator for this matchup.",
-      "analysis_content_zh": "AI 模型指出：POR 相對 SAC，在近期統計指標上較占優勢。\n\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n• **罰球穩定度（近5場）**：近 5 場呈現「輕微」優勢。\n• **三分投射（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，POR 在「失誤控制（近5場）」上的表現是本場關鍵指標。",
-      "predicted_margin": 4.12,
+      "recommended_team_id": 23,
+      "confidence_score": 57.0,
+      "spread_logic": "AI projects SAC to lose by 4.6 pts",
+      "spread_logic_zh": "AI 預測 SAC 輸 4.6 分",
+      "line_info": "6.5",
+      "ou_pick": "UNDER",
+      "ou_line": 232.5,
+      "ou_confidence": 59.0,
+      "analysis_content": "Our AI model identifies a statistical edge for SAC over POR.\n\n• **Paint Scoring (L5)**: Shows a dominant advantage in recent form.\n• **Net Rating Trend (L5)**: Shows a significant advantage in recent form.\n• **Rebounding Presence (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, SAC's performance in Paint Scoring (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：SAC 相對 POR，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「明顯」優勢。\n• **籃板影響力（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，SAC 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": -4.6,
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:10.879953",
+      "created_at": "2026-10-22T06:30:10.778251",
       "matches": {
         "id": 49,
         "date": "2026-10-23",
@@ -3617,8 +3617,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 6.5,
+        "vegas_total": 232.5,
         "home_team": {
           "code": "SAC",
           "full_name": "Sacramento Kings",
@@ -3633,8 +3633,8 @@
         "away_team_nba_id": 1610612757
       },
       "recommended_team": {
-        "code": "POR",
-        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/por.png"
+        "code": "SAC",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png"
       }
     },
     {
@@ -3654,7 +3654,7 @@
       "predicted_total": 231.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:10.923145",
+      "created_at": "2026-10-22T06:30:10.828857",
       "matches": {
         "id": 43,
         "date": "2026-10-23",
@@ -3702,7 +3702,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:10.966889",
+      "created_at": "2026-10-22T06:30:10.872708",
       "matches": {
         "id": 47,
         "date": "2026-10-23",
@@ -3750,7 +3750,7 @@
       "predicted_total": 213.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:11.011235",
+      "created_at": "2026-10-22T06:30:10.917259",
       "matches": {
         "id": 45,
         "date": "2026-10-23",
@@ -3798,7 +3798,7 @@
       "predicted_total": 243.7,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T06:00:11.052549",
+      "created_at": "2026-10-22T06:30:10.958398",
       "matches": {
         "id": 46,
         "date": "2026-10-23",
