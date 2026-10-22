@@ -132,6 +132,47 @@ class InsightWriterTest(unittest.TestCase):
         self.assertIsInstance(pick["analysis_facts"], dict)
         self.assertEqual(pick["analysis_facts"]["form"]["rec"]["streak"], "W2")
 
+    def test_quantified_layer_probabilities_ranks_and_effects(self):
+        league = {
+            "profile": iw.league_context(self.logs),
+            "effects": iw.historical_effects(self.logs),
+            "season": iw.season_ranks(self.conn, "2026-10-23"),
+            "sigmas": iw.line_sigmas(self.conn, "2026-10-23"),
+            "record": {"spread": {"w": 6, "l": 3}, "total": {"w": 4, "l": 5}, "spread_at_conf": {"w": 3, "l": 1}},
+        }
+        en, zh, facts = iw.build_insight(self._ctx(league=league, rec_nba=REC, opp_nba=OPP,
+                                                   rec_db_id=self.rec, opp_db_id=self.opp))
+        p = facts["probability"]
+        # edge = 2.3 - 6.5 = -4.2 -> cover probability below 50% with the default sigma
+        self.assertAlmostEqual(p["cover"], iw.norm_cdf(-4.2 / iw.DEFAULT_SIGMA_SPREAD), places=3)
+        self.assertLess(p["cover"], 0.5)
+        self.assertAlmostEqual(p["win_market"], iw.norm_cdf(6.5 / iw.DEFAULT_SIGMA_SPREAD), places=3)
+        self.assertAlmostEqual(p["total"], iw.norm_cdf(3.3 / iw.DEFAULT_SIGMA_TOTAL), places=3)
+        self.assertIn("chance of covering", en)
+        self.assertIn("過盤機率", zh)
+        self.assertIn("break-even", en)
+        # league ranks: two NBA teams in the synthetic logs, REC better on points
+        self.assertEqual(league["profile"]["teams"], 2)
+        fg_row = next(r for r in facts["rows"] if r["key"] == "ppg")
+        self.assertEqual((fg_row["rec_rank"], fg_row["opp_rank"]), (1, 2))
+        self.assertIsNotNone(fg_row["avg"])
+        self.assertIn("1st vs SAS 2nd of 2", en)
+        # season ranks from sqlite: NYK +7.5 margin ranks above SAS
+        self.assertEqual(facts["form"]["rec"]["rank"]["margin"], 1)
+        self.assertIn("(1st of 3)", en)
+        # track record and effects reach the text
+        self.assertIn("## Model Track Record", en)
+        self.assertIn("6-3 (67%)", en)
+        self.assertIn("## 模型本季戰績", zh)
+        self.assertIn("Home teams have outscored visitors by", en)
+        self.assertIn("back-to-back have been outscored", en)
+        self.assertEqual(facts["record"]["spread"], [6, 3])
+        self.assertIn("Consistency check", en)
+
+    def test_line_sigmas_default_until_sample_is_large(self):
+        s = iw.line_sigmas(self.conn, "2026-10-23")
+        self.assertEqual((s["spread"], s["total"], s["measured"]), (iw.DEFAULT_SIGMA_SPREAD, iw.DEFAULT_SIGMA_TOTAL, False))
+
     def test_connect_adds_facts_column_to_old_database(self):
         import sqlite3
         import tempfile

@@ -6,7 +6,7 @@ import { useI18n } from '@/lib/i18n';
 import { formatSignedLine, formatTotalLine, recommendedCoverNumber } from '@/lib/pickModelLabels';
 import { pickAnalysisContent } from '@/lib/pickLocalized';
 import AppearanceSwitch from '@/app/components/AppearanceSwitch';
-import { AnalysisText, FactsTable } from '@/app/components/AnalysisReport';
+import { AnalysisText, FactsTable, NumbersCard } from '@/app/components/AnalysisReport';
 
 export default function MatchDetailView({ pick }: { pick: any }) {
   const { t, locale } = useI18n();
@@ -175,6 +175,7 @@ export default function MatchDetailView({ pick }: { pick: any }) {
                 {t('detail.updatedUtc', { time: format(new Date(pick.created_at), 'HH:mm') })}
               </div>
             </div>
+            {facts ? <NumbersCard facts={facts} recCode={recCode} ouPick={pick.ou_pick} withheld={!hasSpreadLine} /> : null}
           </div>
         </div>
       </main>

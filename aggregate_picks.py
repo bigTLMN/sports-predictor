@@ -309,6 +309,18 @@ def run():
         team_logs = pd.DataFrame()
 
     now = datetime.utcnow()
+    today_iso = now.strftime("%Y-%m-%d")
+    try:
+        league_ctx = {
+            "profile": insight_writer.league_context(team_logs),
+            "effects": insight_writer.historical_effects(team_logs),
+            "season": insight_writer.season_ranks(conn, today_iso),
+            "sigmas": insight_writer.line_sigmas(conn, today_iso),
+        }
+        base_record = insight_writer.model_record(conn, today_iso)
+    except Exception as e:
+        print(f"⚠️ League context failed ({e}); analysis omits league ranks.")
+        league_ctx, base_record = {}, {}
     end_date = now + timedelta(days=PREDICT_DAYS)
     
     print(f"📅 抓取賽程範圍: {now.strftime('%Y-%m-%d')} 至 {end_date.strftime('%Y-%m-%d')}")
@@ -402,9 +414,18 @@ def run():
             try:
                 rec_form = insight_writer.season_form(conn, rec_id, match_date)
                 opp_form = insight_writer.season_form(conn, opp_id, match_date)
+                record = {}
+                if base_record:
+                    record = {
+                        "spread": base_record["spread"], "total": base_record["total"],
+                        "spread_at_conf": base_record["tally"](base_record["_spread"], conf),
+                    }
                 analysis_text_en, analysis_text_zh, analysis_facts = insight_writer.build_insight({
                     "match_id": m["id"], "date": match_date,
                     "rec_code": rec_code, "opp_code": opp_code,
+                    "rec_nba": rec_nba, "opp_nba": opp_nba,
+                    "rec_db_id": rec_id, "opp_db_id": opp_id,
+                    "league": dict(league_ctx, record=record),
                     "rec_is_home": is_rec_home, "home_code": m['home_team']['code'],
                     "vegas_spread": raw_vegas_spread, "vegas_total": vegas_total,
                     "total_is_default": total_is_default,
