@@ -1469,16 +1469,18 @@
       "home_team_id": 13,
       "away_team_id": 26,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 66,
-      "away_score": 52,
+      "home_score": 94,
+      "away_score": 63,
       "period_scores": {
         "home": [
           34,
-          32
+          32,
+          28
         ],
         "away": [
           33,
-          19
+          19,
+          11
         ]
       },
       "vegas_spread": null,
@@ -1503,15 +1505,17 @@
       "home_team_id": 22,
       "away_team_id": 21,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 72,
-      "away_score": 39,
+      "home_score": 107,
+      "away_score": 66,
       "period_scores": {
         "home": [
           43,
-          29
+          29,
+          35
         ],
         "away": [
           12,
+          27,
           27
         ]
       },
@@ -1537,16 +1541,18 @@
       "home_team_id": 12,
       "away_team_id": 23,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 50,
-      "away_score": 41,
+      "home_score": 61,
+      "away_score": 54,
       "period_scores": {
         "home": [
           41,
-          9
+          20,
+          0
         ],
         "away": [
           29,
-          12
+          25,
+          0
         ]
       },
       "vegas_spread": null,
@@ -1774,8 +1780,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -1.5,
+      "vegas_total": 234.5,
       "home_team": {
         "code": "MIA",
         "full_name": "Miami Heat",
@@ -2621,16 +2627,18 @@
         "home_team_id": 12,
         "away_team_id": 23,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 50,
-        "away_score": 41,
+        "home_score": 61,
+        "away_score": 54,
         "period_scores": {
           "home": [
             41,
-            9
+            20,
+            0
           ],
           "away": [
             29,
-            12
+            25,
+            0
           ]
         },
         "vegas_spread": null,
@@ -2678,16 +2686,18 @@
         "home_team_id": 13,
         "away_team_id": 26,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 66,
-        "away_score": 52,
+        "home_score": 94,
+        "away_score": 63,
         "period_scores": {
           "home": [
             34,
-            32
+            32,
+            28
           ],
           "away": [
             33,
-            19
+            19,
+            11
           ]
         },
         "vegas_spread": null,
@@ -2918,15 +2928,17 @@
         "home_team_id": 22,
         "away_team_id": 21,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 72,
-        "away_score": 39,
+        "home_score": 107,
+        "away_score": 66,
         "period_scores": {
           "home": [
             43,
-            29
+            29,
+            35
           ],
           "away": [
             12,
+            27,
             27
           ]
         },
@@ -3246,7 +3258,7 @@
       "predicted_total": 212.37,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:10.651709",
+      "created_at": "2026-10-22T04:00:10.533837",
       "matches": {
         "id": 39,
         "date": "2026-10-23",
@@ -3294,7 +3306,7 @@
       "predicted_total": 221.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:10.695565",
+      "created_at": "2026-10-22T04:00:10.578616",
       "matches": {
         "id": 40,
         "date": "2026-10-23",
@@ -3342,7 +3354,7 @@
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:10.738638",
+      "created_at": "2026-10-22T04:00:10.622277",
       "matches": {
         "id": 41,
         "date": "2026-10-23",
@@ -3390,7 +3402,7 @@
       "predicted_total": 219.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:10.784376",
+      "created_at": "2026-10-22T04:00:10.669545",
       "matches": {
         "id": 48,
         "date": "2026-10-23",
@@ -3424,21 +3436,21 @@
     {
       "id": 21,
       "match_id": 44,
-      "recommended_team_id": 15,
-      "confidence_score": 53.0,
-      "spread_logic": "AI projects MIA to win by 0.8 pts",
-      "spread_logic_zh": "AI 預測 MIA 贏 0.8 分",
-      "line_info": "0.0",
-      "ou_pick": "OVER",
-      "ou_line": 225.0,
-      "ou_confidence": 75.0,
-      "analysis_content": "Our AI model identifies a statistical edge for MIA over DET.\n\n• **Paint Scoring (L5)**: Shows a dominant advantage in recent form.\n• **Ball Movement (L5)**: Shows a significant advantage in recent form.\n• **Net Rating Trend (L5)**: Shows a significant advantage in recent form.\n\nComparing the recent 5-game trends, MIA's performance in Paint Scoring (L5) is a key indicator for this matchup.",
-      "analysis_content_zh": "AI 模型指出：MIA 相對 DET，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **傳導與助攻（近5場）**：近 5 場呈現「明顯」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「明顯」優勢。\n\n綜合近 5 場走勢，MIA 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
-      "predicted_margin": 0.75,
+      "recommended_team_id": 9,
+      "confidence_score": 52.0,
+      "spread_logic": "AI projects DET to lose by 0.9 pts",
+      "spread_logic_zh": "AI 預測 DET 輸 0.9 分",
+      "line_info": "-1.5",
+      "ou_pick": "UNDER",
+      "ou_line": 234.5,
+      "ou_confidence": 53.0,
+      "analysis_content": "Our AI model identifies a statistical edge for DET over MIA.\n\n• **Defensive Pressure (L5)**: Shows a slight advantage in recent form.\n• **Rim Protection (L5)**: Shows a slight advantage in recent form.\n• **Free Throw Reliability (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, DET's performance in Defensive Pressure (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：DET 相對 MIA，在近期統計指標上較占優勢。\n\n• **防守壓迫（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n• **罰球穩定度（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，DET 在「防守壓迫（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": -0.9,
       "predicted_total": 233.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:10.828497",
+      "created_at": "2026-10-22T04:00:10.714500",
       "matches": {
         "id": 44,
         "date": "2026-10-23",
@@ -3449,8 +3461,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -1.5,
+        "vegas_total": 234.5,
         "home_team": {
           "code": "MIA",
           "full_name": "Miami Heat",
@@ -3465,8 +3477,8 @@
         "away_team_nba_id": 1610612765
       },
       "recommended_team": {
-        "code": "MIA",
-        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png"
+        "code": "DET",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/det.png"
       }
     },
     {
@@ -3486,7 +3498,7 @@
       "predicted_total": 233.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:10.873354",
+      "created_at": "2026-10-22T04:00:10.759834",
       "matches": {
         "id": 38,
         "date": "2026-10-23",
@@ -3534,7 +3546,7 @@
       "predicted_total": 221.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:10.914208",
+      "created_at": "2026-10-22T04:00:10.802629",
       "matches": {
         "id": 42,
         "date": "2026-10-23",
@@ -3582,7 +3594,7 @@
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:10.959899",
+      "created_at": "2026-10-22T04:00:10.848775",
       "matches": {
         "id": 49,
         "date": "2026-10-23",
@@ -3630,7 +3642,7 @@
       "predicted_total": 231.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:11.002695",
+      "created_at": "2026-10-22T04:00:10.903389",
       "matches": {
         "id": 43,
         "date": "2026-10-23",
@@ -3678,7 +3690,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:11.046789",
+      "created_at": "2026-10-22T04:00:10.947160",
       "matches": {
         "id": 47,
         "date": "2026-10-23",
@@ -3726,7 +3738,7 @@
       "predicted_total": 213.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:11.091520",
+      "created_at": "2026-10-22T04:00:10.991594",
       "matches": {
         "id": 45,
         "date": "2026-10-23",
@@ -3774,7 +3786,7 @@
       "predicted_total": 243.7,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T03:30:11.132898",
+      "created_at": "2026-10-22T04:00:11.033386",
       "matches": {
         "id": 46,
         "date": "2026-10-23",
