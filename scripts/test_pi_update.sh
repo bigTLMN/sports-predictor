@@ -40,7 +40,7 @@ make_sandbox() {
   : > "$GIT_LOG"
   cat > "$SANDBOX/bin/python" << 'EOF'
 #!/usr/bin/env bash
-echo "$1" >> "$CALL_LOG"
+echo "$*" >> "$CALL_LOG"
 if [ -n "${FAIL_ON:-}" ] && [ "$1" = "$FAIL_ON" ]; then
   exit 1
 fi
@@ -181,4 +181,32 @@ if [ "$rc" -eq 0 ] || ! grep -qx "sqlite mount missing" "$SANDBOX/mount-out.txt"
   exit 1
 fi
 echo "PASS mount check"
+
+make_sandbox
+export DIFF_DIRTY=1
+( score_main > "$SANDBOX/out.txt" )
+grep -qx "抓比分" "$SANDBOX/out.txt"
+grep -qx "scrape_schedule.py --scores-only" "$CALL_LOG"
+grep -qx "grade_picks.py" "$CALL_LOG"
+grep -qx "export_snapshot.py" "$CALL_LOG"
+if grep -q "aggregate_picks.py" "$CALL_LOG" || grep -q "train_model.py" "$CALL_LOG"; then
+  echo "FAIL score run changed predictions or retrained"
+  exit 1
+fi
+grep -F "add -- web-app/data/public-snapshot.json" "$GIT_LOG"
+grep -F "commit -m 🤖 Auto-update: Scores" "$GIT_LOG"
+if grep -q "add \." "$GIT_LOG"; then
+  echo "FAIL score run staged the whole tree"
+  exit 1
+fi
+echo "PASS score run pushes snapshot only"
+
+make_sandbox
+( score_main > "$SANDBOX/out.txt" )
+grep -qx "No changes to commit." "$SANDBOX/out.txt"
+if grep -q "commit" "$GIT_LOG"; then
+  echo "FAIL clean score run committed"
+  exit 1
+fi
+echo "PASS clean score run does not commit"
 echo "ALL PASS"

@@ -6,7 +6,8 @@ const EMPTY_SNAPSHOT = { teams: [], matches: [], picks: [] };
 export async function loadSnapshot() {
   const url = process.env.SNAPSHOT_URL || DEFAULT_SNAPSHOT_URL;
   try {
-    const res = await fetch(url, { cache: "no-store" });
+    const joiner = url.includes("?") ? "&" : "?";
+    const res = await fetch(`${url}${joiner}t=${Math.floor(Date.now() / 60000)}`, { cache: "no-store" });
     if (!res.ok) return { ...EMPTY_SNAPSHOT };
     const data = await res.json();
     return {

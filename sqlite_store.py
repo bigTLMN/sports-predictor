@@ -83,33 +83,35 @@ def upsert_team(conn, code, name, full_name, logo_url, nba_team_id):
 def upsert_match(conn, row):
     periods = row.get("period_scores")
     periods_text = json.dumps(periods) if isinstance(periods, dict) else periods
+    fields = {
+        "start_time": row.get("start_time"),
+        "status": row.get("status"),
+        "home_score": row.get("home_score"),
+        "away_score": row.get("away_score"),
+        "period_scores": periods_text,
+    }
+    # Absent odds keys keep the line already stored. A score refresh must not wipe it.
+    if "vegas_spread" in row:
+        fields["vegas_spread"] = row.get("vegas_spread")
+    if "vegas_total" in row:
+        fields["vegas_total"] = row.get("vegas_total")
     existing = conn.execute(
         "SELECT id FROM matches WHERE date=? AND home_team_id=? AND away_team_id=?",
         (row["date"], row["home_team_id"], row["away_team_id"]),
     ).fetchone()
-    values = (
-        row.get("start_time"), row.get("status"), row.get("home_score"), row.get("away_score"),
-        periods_text, row.get("vegas_spread"), row.get("vegas_total"),
-        row["date"], row["home_team_id"], row["away_team_id"],
-    )
     if existing:
+        assignments = ", ".join(f"{name}=?" for name in fields)
         conn.execute(
-            """
-            UPDATE matches SET start_time=?, status=?, home_score=?, away_score=?,
-              period_scores=?, vegas_spread=?, vegas_total=?
-            WHERE date=? AND home_team_id=? AND away_team_id=?
-            """,
-            values,
+            f"UPDATE matches SET {assignments} WHERE id=?",
+            tuple(fields.values()) + (existing["id"],),
         )
         match_id = existing["id"]
     else:
+        columns = list(fields) + ["date", "home_team_id", "away_team_id"]
+        values = list(fields.values()) + [row["date"], row["home_team_id"], row["away_team_id"]]
+        placeholders = ", ".join("?" for _ in columns)
         cur = conn.execute(
-            """
-            INSERT INTO matches (
-              start_time, status, home_score, away_score, period_scores, vegas_spread, vegas_total,
-              date, home_team_id, away_team_id
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """,
+            f"INSERT INTO matches ({', '.join(columns)}) VALUES ({placeholders})",
             values,
         )
         match_id = cur.lastrowid

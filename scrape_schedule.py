@@ -38,7 +38,7 @@ def safe_int(val):
     except:
         return 0
 
-def scrape_schedule():
+def scrape_schedule(scores_only=False):
     conn = sqlite_store.connect()
     team_map = get_team_map(conn)
     
@@ -111,10 +111,10 @@ def scrape_schedule():
                         if h_lines or a_lines:
                             period_scores_json = {"home": h_lines, "away": a_lines}
 
-                    # 抓取盤口資訊
+                    # 抓取盤口資訊。比分排程不帶這段，避免改到原本 30 分鐘才更新的賠率。
                     vegas_spread = None
                     vegas_total = None
-                    odds_info = competition.get('odds')
+                    odds_info = None if scores_only else competition.get('odds')
                     if odds_info and len(odds_info) > 0:
                         odd_data = odds_info[0]
                         vegas_total = odd_data.get('overUnder')
@@ -165,4 +165,5 @@ def scrape_schedule():
     print(f"🎉 完成！共處理 {total_processed} 場比賽 (ESPN Source)。")
 
 if __name__ == "__main__":
-    scrape_schedule()
+    import sys
+    scrape_schedule(scores_only="--scores-only" in sys.argv)
