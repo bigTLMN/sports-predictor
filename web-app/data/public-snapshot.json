@@ -1711,8 +1711,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -5.5,
-      "vegas_total": 236.5,
+      "vegas_spread": -6.5,
+      "vegas_total": 237.5,
       "home_team": {
         "code": "IND",
         "full_name": "Indiana Pacers",
@@ -1836,7 +1836,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -3.5,
+      "vegas_spread": -2.5,
       "vegas_total": 241.5,
       "home_team": {
         "code": "UTAH",
@@ -3511,7 +3511,7 @@
       "predicted_total": 212.37,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.242655",
+      "created_at": "2026-10-22T20:30:12.069944",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -3819,7 +3819,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 39,
@@ -3868,7 +3868,7 @@
       "predicted_total": 221.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.299692",
+      "created_at": "2026-10-22T20:30:12.127223",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -4176,7 +4176,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 40,
@@ -4212,20 +4212,20 @@
       "id": 19,
       "match_id": 41,
       "recommended_team_id": 7,
-      "confidence_score": 57.0,
-      "spread_logic": "AI projects DAL to lose by 3.6 pts",
-      "spread_logic_zh": "AI 預測 DAL 輸 3.6 分",
-      "line_info": "-5.5",
+      "confidence_score": 60.0,
+      "spread_logic": "AI projects DAL to lose by 3.8 pts",
+      "spread_logic_zh": "AI 預測 DAL 輸 3.8 分",
+      "line_info": "-6.5",
       "ou_pick": "UNDER",
-      "ou_line": 236.5,
-      "ou_confidence": 50.0,
-      "analysis_content": "## The Call\nDAL on the road is the side.\nThe market has DAL at +5.5, which implies a 5.5-point loss and a 33% win probability. Our projection is -3.6 for DAL (39% to win), a gap of 1.9 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 1.9-point edge is a 56% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 57%.\n## Season So Far\nDAL is 0-3 (0-2 home, 0-1 away), scoring 106.0 (25th of 29) and allowing 121.3 (20th of 29) for a -15.3 margin (27th of 29), currently on a L3 run. Last out: L 97-101 vs NO, L 111-135 vs ATL, L 110-128 at HOU.\nIND is 1-1, scoring 125.0 (5th of 29) and allowing 124.0 (26th of 29) for a +1.0 margin (14th of 29), on a W1 run. Last out: L 127-128 vs MIL, W 123-120 at NO.\nHead to head, DAL is 2-1 in the last 3 meetings with an average margin of +0.7 (most recent 2026-02-22: W 134-130).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-04-12), DAL's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Turnovers** — DAL commits 11.1 turnovers to 15.3 (league avg 13.6; DAL 1st vs IND 27th of 30).\n• **Off. rebounds** — DAL grabs 11.9 offensive boards to 8.6 (league avg 11.1; DAL 8th vs IND 28th of 30).\n• **Bench points** — DAL gets 51.7 from the bench to 47.9 (league avg 35.3; DAL 1st vs IND 3rd of 30).\n• **Rebounds** — DAL pulls 45.0 rebounds to 43.3 (league avg 41.9; DAL 6th vs IND 12th of 30).\nWhere IND pushes back:\n• **Assists** — IND holds the better number, 33.4 to DAL's 25.2 (league avg 25.0; DAL 12th vs IND 1st of 30).\n• **FG%** — IND holds the better number, 48.7% to DAL's 43.7% (league avg 45.8%; DAL 26th vs IND 3rd of 30).\n• **3P%** — IND holds the better number, 38.5% to DAL's 32.9% (league avg 34.9%; DAL 24th vs IND 6th of 30).\nConsistency check: DAL's game margins over this stretch vary by ±14.7 points (one standard deviation) against ±16.4 for IND; the steadier side is DAL.\n## Schedule & Rest\nDAL has one day off; IND has one day off.\nIND has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 236.5\nTempo check: this season the two offences combine for 231.0 points and the two defences concede 245.3; on record they attempt 76 threes between them (league pair average 73) with 36 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 236.3 total points against a line of 236.5, 0.2 points below the number. With totals spreading ±19.0 points around the line, that is a 50% probability of the under; published confidence is 50%.\n## Model Track Record\nThis season, published spread picks are 10-4 (71%); at 57%+ confidence they are 5-3; totals are 7-7 (50%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: IND's edge in Assists (33.4 vs 25.2) is the cleanest path to an upset of this read; DAL's results swing ±14.7 points game to game, so any single-game edge is fragile; DAL is on a L3 skid and the model does not read locker rooms.",
-      "analysis_content_zh": "## 結論\n本場站 客場的 DAL。\n市場開 DAL +5.5，等於預期輸 5.5 分、勝率 33%；模型估 DAL -3.6（勝率 39%），與盤口差 1.9 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，1.9 分的優勢等於 56% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（57%）。\n## 本季至今\nDAL 戰績 0-3（主 0-2、客 0-1），場均得 106.0（29 隊中第 25）、失 121.3（29 隊中第 20），淨勝 -15.3（29 隊中第 27），目前 L3。近況：主場負 NO 97-101、主場負 ATL 111-135、客場負 HOU 110-128。\nIND 戰績 1-1，場均得 125.0（29 隊中第 5）、失 124.0（29 隊中第 26），淨勝 +1.0（29 隊中第 14），目前 W1。近況：主場負 MIL 127-128、客場勝 NO 123-120。\n近 3 次交手 DAL 2 勝 1 負，平均分差 +0.7（最近一次 2026-02-22：勝 134-130）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-12）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失誤**：DAL 失誤 11.1 次，對手 15.3（聯盟平均 13.6；DAL 第 1、IND 第 27／30 隊）。\n• **進攻籃板**：DAL 進攻籃板 11.9 個，對手 8.6（聯盟平均 11.1；DAL 第 8、IND 第 28／30 隊）。\n• **板凳得分**：DAL 板凳貢獻 51.7 分，對手 47.9（聯盟平均 35.3；DAL 第 1、IND 第 3／30 隊）。\n• **籃板**：DAL 場均 45.0 籃板，對手 43.3（聯盟平均 41.9；DAL 第 6、IND 第 12／30 隊）。\nIND 能反擊的地方：\n• **助攻**：IND 這項較好，33.4 對 DAL 的 25.2（聯盟平均 25.0；DAL 第 12、IND 第 1／30 隊）。\n• **命中率**：IND 這項較好，48.7% 對 DAL 的 43.7%（聯盟平均 45.8%；DAL 第 26、IND 第 3／30 隊）。\n• **三分命中率**：IND 這項較好，38.5% 對 DAL 的 32.9%（聯盟平均 34.9%；DAL 第 24、IND 第 6／30 隊）。\n穩定度：這段期間 DAL 單場分差的標準差是 ±14.7 分，IND 是 ±16.4 分；DAL 的表現較穩。\n## 賽程與休息\nDAL 休一天；IND 休一天。\nIND 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 236.5\n節奏觀察：本季兩隊進攻合計 231.0 分，防守合計失 245.3 分；近況合計每場出手 76 記三分（聯盟兩隊平均 73）、快攻 36 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 236.3，盤口 236.5，低於盤口 0.2 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 50%；公布信心 50%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 57% 以上的場次 5 勝 3 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：IND 在助攻上的優勢（33.4 對 25.2）是翻掉這份判讀最直接的路徑；DAL 單場分差起伏 ±14.7 分，單場優勢並不牢靠；DAL 正吞 3 連敗，模型看不到更衣室氣氛。",
-      "predicted_margin": -3.61,
+      "ou_line": 237.5,
+      "ou_confidence": 53.0,
+      "analysis_content": "## The Call\nDAL on the road is the side.\nThe market has DAL at +6.5, which implies a 6.5-point loss and a 30% win probability. Our projection is -3.8 for DAL (38% to win), a gap of 2.7 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 2.7-point edge is a 59% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 60%.\n## Season So Far\nDAL is 0-3 (0-2 home, 0-1 away), scoring 106.0 (25th of 29) and allowing 121.3 (20th of 29) for a -15.3 margin (27th of 29), currently on a L3 run. Last out: L 97-101 vs NO, L 111-135 vs ATL, L 110-128 at HOU.\nIND is 1-1, scoring 125.0 (5th of 29) and allowing 124.0 (26th of 29) for a +1.0 margin (14th of 29), on a W1 run. Last out: L 127-128 vs MIL, W 123-120 at NO.\nHead to head, DAL is 2-1 in the last 3 meetings with an average margin of +0.7 (most recent 2026-02-22: W 134-130).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-04-12), DAL's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Turnovers** — DAL commits 11.1 turnovers to 15.3 (league avg 13.6; DAL 1st vs IND 27th of 30).\n• **Off. rebounds** — DAL grabs 11.9 offensive boards to 8.6 (league avg 11.1; DAL 8th vs IND 28th of 30).\n• **Bench points** — DAL gets 51.7 from the bench to 47.9 (league avg 35.3; DAL 1st vs IND 3rd of 30).\n• **Rebounds** — DAL pulls 45.0 rebounds to 43.3 (league avg 41.9; DAL 6th vs IND 12th of 30).\nWhere IND pushes back:\n• **Assists** — IND holds the better number, 33.4 to DAL's 25.2 (league avg 25.0; DAL 12th vs IND 1st of 30).\n• **FG%** — IND holds the better number, 48.7% to DAL's 43.7% (league avg 45.8%; DAL 26th vs IND 3rd of 30).\n• **3P%** — IND holds the better number, 38.5% to DAL's 32.9% (league avg 34.9%; DAL 24th vs IND 6th of 30).\nConsistency check: DAL's game margins over this stretch vary by ±14.7 points (one standard deviation) against ±16.4 for IND; the steadier side is DAL.\n## Schedule & Rest\nDAL has one day off; IND has one day off.\nIND has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 237.5\nTempo check: this season the two offences combine for 231.0 points and the two defences concede 245.3; on record they attempt 76 threes between them (league pair average 73) with 36 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 236.3 total points against a line of 237.5, 1.2 points below the number. With totals spreading ±19.0 points around the line, that is a 53% probability of the under; published confidence is 53%.\n## Model Track Record\nThis season, published spread picks are 10-4 (71%); at 60%+ confidence they are 4-3; totals are 7-7 (50%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: IND's edge in Assists (33.4 vs 25.2) is the cleanest path to an upset of this read; DAL's results swing ±14.7 points game to game, so any single-game edge is fragile; DAL is on a L3 skid and the model does not read locker rooms.",
+      "analysis_content_zh": "## 結論\n本場站 客場的 DAL。\n市場開 DAL +6.5，等於預期輸 6.5 分、勝率 30%；模型估 DAL -3.8（勝率 38%），與盤口差 2.7 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，2.7 分的優勢等於 59% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（60%）。\n## 本季至今\nDAL 戰績 0-3（主 0-2、客 0-1），場均得 106.0（29 隊中第 25）、失 121.3（29 隊中第 20），淨勝 -15.3（29 隊中第 27），目前 L3。近況：主場負 NO 97-101、主場負 ATL 111-135、客場負 HOU 110-128。\nIND 戰績 1-1，場均得 125.0（29 隊中第 5）、失 124.0（29 隊中第 26），淨勝 +1.0（29 隊中第 14），目前 W1。近況：主場負 MIL 127-128、客場勝 NO 123-120。\n近 3 次交手 DAL 2 勝 1 負，平均分差 +0.7（最近一次 2026-02-22：勝 134-130）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-12）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失誤**：DAL 失誤 11.1 次，對手 15.3（聯盟平均 13.6；DAL 第 1、IND 第 27／30 隊）。\n• **進攻籃板**：DAL 進攻籃板 11.9 個，對手 8.6（聯盟平均 11.1；DAL 第 8、IND 第 28／30 隊）。\n• **板凳得分**：DAL 板凳貢獻 51.7 分，對手 47.9（聯盟平均 35.3；DAL 第 1、IND 第 3／30 隊）。\n• **籃板**：DAL 場均 45.0 籃板，對手 43.3（聯盟平均 41.9；DAL 第 6、IND 第 12／30 隊）。\nIND 能反擊的地方：\n• **助攻**：IND 這項較好，33.4 對 DAL 的 25.2（聯盟平均 25.0；DAL 第 12、IND 第 1／30 隊）。\n• **命中率**：IND 這項較好，48.7% 對 DAL 的 43.7%（聯盟平均 45.8%；DAL 第 26、IND 第 3／30 隊）。\n• **三分命中率**：IND 這項較好，38.5% 對 DAL 的 32.9%（聯盟平均 34.9%；DAL 第 24、IND 第 6／30 隊）。\n穩定度：這段期間 DAL 單場分差的標準差是 ±14.7 分，IND 是 ±16.4 分；DAL 的表現較穩。\n## 賽程與休息\nDAL 休一天；IND 休一天。\nIND 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 237.5\n節奏觀察：本季兩隊進攻合計 231.0 分，防守合計失 245.3 分；近況合計每場出手 76 記三分（聯盟兩隊平均 73）、快攻 36 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 236.3，盤口 237.5，低於盤口 1.2 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 53%；公布信心 53%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 60% 以上的場次 4 勝 3 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：IND 在助攻上的優勢（33.4 對 25.2）是翻掉這份判讀最直接的路徑；DAL 單場分差起伏 ±14.7 分，單場優勢並不牢靠；DAL 正吞 3 連敗，模型看不到更衣室氣氛。",
+      "predicted_margin": -3.81,
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.355198",
+      "created_at": "2026-10-22T20:30:12.183037",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -4490,20 +4490,20 @@
           }
         ],
         "projection": {
-          "model_margin": -3.6,
+          "model_margin": -3.8,
           "raw_margin": -3.1,
-          "market_margin": -5.5,
-          "edge": 1.9,
+          "market_margin": -6.5,
+          "edge": 2.7,
           "pred_total": 236.3,
-          "total_line": 236.5,
-          "total_edge": -0.2,
+          "total_line": 237.5,
+          "total_edge": -1.2,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.56,
-          "win_model": 0.386,
-          "win_market": 0.33,
-          "total": 0.504,
+          "cover": 0.585,
+          "win_model": 0.38,
+          "win_market": 0.302,
+          "total": 0.525,
           "sigma_spread": 12.5,
           "sigma_total": 19.0,
           "sigma_measured": false
@@ -4529,11 +4529,11 @@
             7
           ],
           "spread_at_conf": [
-            5,
+            4,
             3
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 41,
@@ -4545,8 +4545,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -5.5,
-        "vegas_total": 236.5,
+        "vegas_spread": -6.5,
+        "vegas_total": 237.5,
         "home_team": {
           "code": "IND",
           "full_name": "Indiana Pacers",
@@ -4582,7 +4582,7 @@
       "predicted_total": 219.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.414825",
+      "created_at": "2026-10-22T20:30:12.242747",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -4890,7 +4890,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 48,
@@ -4939,7 +4939,7 @@
       "predicted_total": 233.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.472246",
+      "created_at": "2026-10-22T20:30:12.300115",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -5247,7 +5247,7 @@
             4
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 44,
@@ -5296,7 +5296,7 @@
       "predicted_total": 233.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.530251",
+      "created_at": "2026-10-22T20:30:12.358802",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -5604,7 +5604,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 38,
@@ -5653,7 +5653,7 @@
       "predicted_total": 221.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.583320",
+      "created_at": "2026-10-22T20:30:12.412989",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -5961,7 +5961,7 @@
             2
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 42,
@@ -6010,7 +6010,7 @@
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.642744",
+      "created_at": "2026-10-22T20:30:12.472077",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -6318,7 +6318,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 49,
@@ -6367,7 +6367,7 @@
       "predicted_total": 231.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.698153",
+      "created_at": "2026-10-22T20:30:12.528056",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -6675,7 +6675,7 @@
             2
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 43,
@@ -6724,7 +6724,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.754494",
+      "created_at": "2026-10-22T20:30:12.585084",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -7032,7 +7032,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 47,
@@ -7081,7 +7081,7 @@
       "predicted_total": 213.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.812068",
+      "created_at": "2026-10-22T20:30:12.643965",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-01",
@@ -7389,7 +7389,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 45,
@@ -7425,20 +7425,20 @@
       "id": 28,
       "match_id": 46,
       "recommended_team_id": 27,
-      "confidence_score": 68.0,
-      "spread_logic": "AI projects NO to win by 1.1 pts",
-      "spread_logic_zh": "AI 預測 NO 贏 1.1 分",
-      "line_info": "-3.5",
+      "confidence_score": 65.0,
+      "spread_logic": "AI projects NO to win by 1.3 pts",
+      "spread_logic_zh": "AI 預測 NO 贏 1.3 分",
+      "line_info": "-2.5",
       "ou_pick": "OVER",
       "ou_line": 241.5,
       "ou_confidence": 56.0,
-      "analysis_content": "## The Call\nNO on the road is the side.\nThe market has NO at +3.5, which implies a 3.5-point loss and a 39% win probability. Our projection is +1.1 for NO (54% to win), a gap of 4.6 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 4.6-point edge is a 64% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was +2.3; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 68%.\n## Season So Far\nNO is 2-1 (1-1 home, 1-0 away), scoring 109.3 (24th of 29) and allowing 108.7 (6th of 29) for a +0.7 margin (15th of 29), currently on a L1 run. Last out: W 101-97 at DAL, W 107-106 vs WSH, L 120-123 vs IND.\nUTAH is 1-1, scoring 111.0 (23rd of 29) and allowing 119.5 (19th of 29) for a -8.5 margin (22nd of 29), on a L1 run. Last out: W 119-116 at PHX, L 103-123 at MEM.\nHead to head, NO is 3-0 in the last 3 meetings with an average margin of +13.3 (most recent 2026-04-07: W 156-137).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-04-12) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **FT%** — NO converts 77.0% at the line to 67.5% (league avg 77.5%; NO 18th vs UTAH 30th of 30).\n• **Points allowed** — NO gives up 126.3 to 132.8 (league avg 115.8; NO 25th vs UTAH 30th of 30).\n• **Net margin** — NO outscores opponents by -10.4 per game against -14.2 (league avg -4.7; NO 24th vs UTAH 28th of 30).\n• **Bench points** — NO gets 37.6 from the bench to 34.0 (league avg 35.3; NO 13th vs UTAH 19th of 30).\nWhere UTAH pushes back:\n• **Assists** — UTAH holds the better number, 31.9 to NO's 24.0 (league avg 25.0; NO 17th vs UTAH 2nd of 30).\n• **Fast-break points** — UTAH holds the better number, 24.9 to NO's 20.0 (league avg 14.2; NO 3rd vs UTAH 1st of 30).\n• **Points off turnovers** — UTAH holds the better number, 20.2 to NO's 17.1 (league avg 17.5; NO 17th vs UTAH 6th of 30).\nConsistency check: NO's game margins over this stretch vary by ±13.5 points (one standard deviation) against ±22.0 for UTAH; the steadier side is NO.\n## Schedule & Rest\nNO has one day off; UTAH has one day off.\nUTAH has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: OVER 241.5\nTempo check: this season the two offences combine for 220.3 points and the two defences concede 228.2; on record they attempt 61 threes between them (league pair average 73) with 45 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 243.7 total points against a line of 241.5, 2.2 points above the number. With totals spreading ±19.0 points around the line, that is a 55% probability of the over; published confidence is 56%.\n## Model Track Record\nThis season, published spread picks are 10-4 (71%); at 68%+ confidence they are 2-2; totals are 7-7 (50%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: UTAH's edge in Assists (31.9 vs 24.0) is the cleanest path to an upset of this read.",
-      "analysis_content_zh": "## 結論\n數字指向 NO（客場）。\n市場開 NO +3.5，等於預期輸 3.5 分、勝率 39%；模型估 NO +1.1（勝率 54%），與盤口差 4.6 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，4.6 分的優勢等於 64% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +2.3；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（68%）。\n## 本季至今\nNO 戰績 2-1（主 1-1、客 1-0），場均得 109.3（29 隊中第 24）、失 108.7（29 隊中第 6），淨勝 +0.7（29 隊中第 15），目前 L1。近況：客場勝 DAL 101-97、主場勝 WSH 107-106、主場負 IND 120-123。\nUTAH 戰績 1-1，場均得 111.0（29 隊中第 23）、失 119.5（29 隊中第 19），淨勝 -8.5（29 隊中第 22），目前 L1。近況：客場勝 PHX 119-116、客場負 MEM 103-123。\n近 3 次交手 NO 3 勝 0 負，平均分差 +13.3（最近一次 2026-04-07：勝 156-137）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-12），NO 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **罰球命中率**：NO 罰球 77.0%，對手 67.5%（聯盟平均 77.5%；NO 第 18、UTAH 第 30／30 隊）。\n• **失分**：NO 場均失 126.3 分，對手 132.8（聯盟平均 115.8；NO 第 25、UTAH 第 30／30 隊）。\n• **淨勝分**：NO 場均淨勝 -10.4 分，對手 -14.2（聯盟平均 -4.7；NO 第 24、UTAH 第 28／30 隊）。\n• **板凳得分**：NO 板凳貢獻 37.6 分，對手 34.0（聯盟平均 35.3；NO 第 13、UTAH 第 19／30 隊）。\nUTAH 能反擊的地方：\n• **助攻**：UTAH 這項較好，31.9 對 NO 的 24.0（聯盟平均 25.0；NO 第 17、UTAH 第 2／30 隊）。\n• **快攻得分**：UTAH 這項較好，24.9 對 NO 的 20.0（聯盟平均 14.2；NO 第 3、UTAH 第 1／30 隊）。\n• **失誤轉換得分**：UTAH 這項較好，20.2 對 NO 的 17.1（聯盟平均 17.5；NO 第 17、UTAH 第 6／30 隊）。\n穩定度：這段期間 NO 單場分差的標準差是 ±13.5 分，UTAH 是 ±22.0 分；NO 的表現較穩。\n## 賽程與休息\nNO 休一天；UTAH 休一天。\nUTAH 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：大分 241.5\n節奏觀察：本季兩隊進攻合計 220.3 分，防守合計失 228.2 分；近況合計每場出手 61 記三分（聯盟兩隊平均 73）、快攻 45 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 243.7，盤口 241.5，高於盤口 2.2 分。以總分相對盤口 ±19.0 分的分佈換算，大分機率 55%；公布信心 56%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 68% 以上的場次 2 勝 2 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：UTAH 在助攻上的優勢（31.9 對 24.0）是翻掉這份判讀最直接的路徑。",
-      "predicted_margin": 1.11,
+      "analysis_content": "## The Call\nNO on the road is the side.\nThe market has NO at +2.5, which implies a 2.5-point loss and a 42% win probability. Our projection is +1.3 for NO (54% to win), a gap of 3.8 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 3.8-point edge is a 62% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was +2.3; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 65%.\n## Season So Far\nNO is 2-1 (1-1 home, 1-0 away), scoring 109.3 (24th of 29) and allowing 108.7 (6th of 29) for a +0.7 margin (15th of 29), currently on a L1 run. Last out: W 101-97 at DAL, W 107-106 vs WSH, L 120-123 vs IND.\nUTAH is 1-1, scoring 111.0 (23rd of 29) and allowing 119.5 (19th of 29) for a -8.5 margin (22nd of 29), on a L1 run. Last out: W 119-116 at PHX, L 103-123 at MEM.\nHead to head, NO is 3-0 in the last 3 meetings with an average margin of +13.3 (most recent 2026-04-07: W 156-137).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-04-12) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **FT%** — NO converts 77.0% at the line to 67.5% (league avg 77.5%; NO 18th vs UTAH 30th of 30).\n• **Points allowed** — NO gives up 126.3 to 132.8 (league avg 115.8; NO 25th vs UTAH 30th of 30).\n• **Net margin** — NO outscores opponents by -10.4 per game against -14.2 (league avg -4.7; NO 24th vs UTAH 28th of 30).\n• **Bench points** — NO gets 37.6 from the bench to 34.0 (league avg 35.3; NO 13th vs UTAH 19th of 30).\nWhere UTAH pushes back:\n• **Assists** — UTAH holds the better number, 31.9 to NO's 24.0 (league avg 25.0; NO 17th vs UTAH 2nd of 30).\n• **Fast-break points** — UTAH holds the better number, 24.9 to NO's 20.0 (league avg 14.2; NO 3rd vs UTAH 1st of 30).\n• **Points off turnovers** — UTAH holds the better number, 20.2 to NO's 17.1 (league avg 17.5; NO 17th vs UTAH 6th of 30).\nConsistency check: NO's game margins over this stretch vary by ±13.5 points (one standard deviation) against ±22.0 for UTAH; the steadier side is NO.\n## Schedule & Rest\nNO has one day off; UTAH has one day off.\nUTAH has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: OVER 241.5\nTempo check: this season the two offences combine for 220.3 points and the two defences concede 228.2; on record they attempt 61 threes between them (league pair average 73) with 45 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 243.7 total points against a line of 241.5, 2.2 points above the number. With totals spreading ±19.0 points around the line, that is a 55% probability of the over; published confidence is 56%.\n## Model Track Record\nThis season, published spread picks are 10-4 (71%); at 65%+ confidence they are 2-3; totals are 7-7 (50%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: UTAH's edge in Assists (31.9 vs 24.0) is the cleanest path to an upset of this read.",
+      "analysis_content_zh": "## 結論\n數字指向 NO（客場）。\n市場開 NO +2.5，等於預期輸 2.5 分、勝率 42%；模型估 NO +1.3（勝率 54%），與盤口差 3.8 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，3.8 分的優勢等於 62% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +2.3；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（65%）。\n## 本季至今\nNO 戰績 2-1（主 1-1、客 1-0），場均得 109.3（29 隊中第 24）、失 108.7（29 隊中第 6），淨勝 +0.7（29 隊中第 15），目前 L1。近況：客場勝 DAL 101-97、主場勝 WSH 107-106、主場負 IND 120-123。\nUTAH 戰績 1-1，場均得 111.0（29 隊中第 23）、失 119.5（29 隊中第 19），淨勝 -8.5（29 隊中第 22），目前 L1。近況：客場勝 PHX 119-116、客場負 MEM 103-123。\n近 3 次交手 NO 3 勝 0 負，平均分差 +13.3（最近一次 2026-04-07：勝 156-137）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-12），NO 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **罰球命中率**：NO 罰球 77.0%，對手 67.5%（聯盟平均 77.5%；NO 第 18、UTAH 第 30／30 隊）。\n• **失分**：NO 場均失 126.3 分，對手 132.8（聯盟平均 115.8；NO 第 25、UTAH 第 30／30 隊）。\n• **淨勝分**：NO 場均淨勝 -10.4 分，對手 -14.2（聯盟平均 -4.7；NO 第 24、UTAH 第 28／30 隊）。\n• **板凳得分**：NO 板凳貢獻 37.6 分，對手 34.0（聯盟平均 35.3；NO 第 13、UTAH 第 19／30 隊）。\nUTAH 能反擊的地方：\n• **助攻**：UTAH 這項較好，31.9 對 NO 的 24.0（聯盟平均 25.0；NO 第 17、UTAH 第 2／30 隊）。\n• **快攻得分**：UTAH 這項較好，24.9 對 NO 的 20.0（聯盟平均 14.2；NO 第 3、UTAH 第 1／30 隊）。\n• **失誤轉換得分**：UTAH 這項較好，20.2 對 NO 的 17.1（聯盟平均 17.5；NO 第 17、UTAH 第 6／30 隊）。\n穩定度：這段期間 NO 單場分差的標準差是 ±13.5 分，UTAH 是 ±22.0 分；NO 的表現較穩。\n## 賽程與休息\nNO 休一天；UTAH 休一天。\nUTAH 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：大分 241.5\n節奏觀察：本季兩隊進攻合計 220.3 分，防守合計失 228.2 分；近況合計每場出手 61 記三分（聯盟兩隊平均 73）、快攻 45 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 243.7，盤口 241.5，高於盤口 2.2 分。以總分相對盤口 ±19.0 分的分佈換算，大分機率 55%；公布信心 56%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 65% 以上的場次 2 勝 3 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：UTAH 在助攻上的優勢（31.9 對 24.0）是翻掉這份判讀最直接的路徑。",
+      "predicted_margin": 1.31,
       "predicted_total": 243.7,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T20:00:12.865566",
+      "created_at": "2026-10-22T20:30:12.697837",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -7703,19 +7703,19 @@
           }
         ],
         "projection": {
-          "model_margin": 1.1,
+          "model_margin": 1.3,
           "raw_margin": 2.3,
-          "market_margin": -3.5,
-          "edge": 4.6,
+          "market_margin": -2.5,
+          "edge": 3.8,
           "pred_total": 243.7,
           "total_line": 241.5,
           "total_edge": 2.2,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.644,
-          "win_model": 0.535,
-          "win_market": 0.39,
+          "cover": 0.62,
+          "win_model": 0.542,
+          "win_market": 0.421,
           "total": 0.546,
           "sigma_spread": 12.5,
           "sigma_total": 19.0,
@@ -7743,10 +7743,10 @@
           ],
           "spread_at_conf": [
             2,
-            2
+            3
           ]
         },
-        "generated_at": "2026-10-22T20:00:12"
+        "generated_at": "2026-10-22T20:30:12"
       },
       "matches": {
         "id": 46,
@@ -7758,7 +7758,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -3.5,
+        "vegas_spread": -2.5,
         "vegas_total": 241.5,
         "home_team": {
           "code": "UTAH",
