@@ -1469,18 +1469,20 @@
       "home_team_id": 13,
       "away_team_id": 26,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 94,
-      "away_score": 63,
+      "home_score": 118,
+      "away_score": 88,
       "period_scores": {
         "home": [
           34,
           32,
-          28
+          36,
+          16
         ],
         "away": [
           33,
           19,
-          11
+          16,
+          20
         ]
       },
       "vegas_spread": null,
@@ -1504,19 +1506,21 @@
       "start_time": "2026-10-22T02:00Z",
       "home_team_id": 22,
       "away_team_id": 21,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 107,
-      "away_score": 66,
+      "status": "STATUS_FINISHED",
+      "home_score": 124,
+      "away_score": 83,
       "period_scores": {
         "home": [
           43,
           29,
-          35
+          35,
+          17
         ],
         "away": [
           12,
           27,
-          27
+          27,
+          17
         ]
       },
       "vegas_spread": null,
@@ -1541,18 +1545,18 @@
       "home_team_id": 12,
       "away_team_id": 23,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 61,
-      "away_score": 54,
+      "home_score": 93,
+      "away_score": 70,
       "period_scores": {
         "home": [
           41,
           20,
-          0
+          32
         ],
         "away": [
           29,
           25,
-          0
+          16
         ]
       },
       "vegas_spread": null,
@@ -1730,8 +1734,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 1.5,
+      "vegas_total": 237.5,
       "home_team": {
         "code": "ORL",
         "full_name": "Orlando Magic",
@@ -2627,18 +2631,18 @@
         "home_team_id": 12,
         "away_team_id": 23,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 61,
-        "away_score": 54,
+        "home_score": 93,
+        "away_score": 70,
         "period_scores": {
           "home": [
             41,
             20,
-            0
+            32
           ],
           "away": [
             29,
             25,
-            0
+            16
           ]
         },
         "vegas_spread": null,
@@ -2686,18 +2690,20 @@
         "home_team_id": 13,
         "away_team_id": 26,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 94,
-        "away_score": 63,
+        "home_score": 118,
+        "away_score": 88,
         "period_scores": {
           "home": [
             34,
             32,
-            28
+            36,
+            16
           ],
           "away": [
             33,
             19,
-            11
+            16,
+            20
           ]
         },
         "vegas_spread": null,
@@ -2918,8 +2924,8 @@
       "analysis_content_zh": "AI 模型指出：POR 相對 PHX，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「明顯」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，POR 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
       "predicted_margin": 3.62,
       "predicted_total": 221.49,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-10-20T23:30:09.868124",
       "matches": {
         "id": 34,
@@ -2927,19 +2933,21 @@
         "start_time": "2026-10-22T02:00Z",
         "home_team_id": 22,
         "away_team_id": 21,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 107,
-        "away_score": 66,
+        "status": "STATUS_FINISHED",
+        "home_score": 124,
+        "away_score": 83,
         "period_scores": {
           "home": [
             43,
             29,
-            35
+            35,
+            17
           ],
           "away": [
             12,
             27,
-            27
+            27,
+            17
           ]
         },
         "vegas_spread": null,
@@ -3258,7 +3266,7 @@
       "predicted_total": 212.37,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:10.533837",
+      "created_at": "2026-10-22T04:30:10.151638",
       "matches": {
         "id": 39,
         "date": "2026-10-23",
@@ -3306,7 +3314,7 @@
       "predicted_total": 221.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:10.578616",
+      "created_at": "2026-10-22T04:30:10.195881",
       "matches": {
         "id": 40,
         "date": "2026-10-23",
@@ -3354,7 +3362,7 @@
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:10.622277",
+      "created_at": "2026-10-22T04:30:10.238815",
       "matches": {
         "id": 41,
         "date": "2026-10-23",
@@ -3402,7 +3410,7 @@
       "predicted_total": 219.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:10.669545",
+      "created_at": "2026-10-22T04:30:10.284846",
       "matches": {
         "id": 48,
         "date": "2026-10-23",
@@ -3450,7 +3458,7 @@
       "predicted_total": 233.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:10.714500",
+      "created_at": "2026-10-22T04:30:10.329228",
       "matches": {
         "id": 44,
         "date": "2026-10-23",
@@ -3498,7 +3506,7 @@
       "predicted_total": 233.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:10.759834",
+      "created_at": "2026-10-22T04:30:10.375435",
       "matches": {
         "id": 38,
         "date": "2026-10-23",
@@ -3533,20 +3541,20 @@
       "id": 23,
       "match_id": 42,
       "recommended_team_id": 19,
-      "confidence_score": 69.0,
-      "spread_logic": "AI projects ORL to win by 5.0 pts",
-      "spread_logic_zh": "AI 預測 ORL 贏 5.0 分",
-      "line_info": "0.0",
+      "confidence_score": 70.0,
+      "spread_logic": "AI projects ORL to win by 3.7 pts",
+      "spread_logic_zh": "AI 預測 ORL 贏 3.7 分",
+      "line_info": "1.5",
       "ou_pick": "UNDER",
-      "ou_line": 225.0,
-      "ou_confidence": 61.0,
+      "ou_line": 237.5,
+      "ou_confidence": 90.0,
       "analysis_content": "Our AI model identifies a statistical edge for ORL over MIN.\n\n• **Net Rating Trend (L5)**: Shows a dominant advantage in recent form.\n• **Defensive Pressure (L5)**: Shows a slight advantage in recent form.\n• **Rim Protection (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, ORL's performance in Net Rating Trend (L5) is a key indicator for this matchup.",
       "analysis_content_zh": "AI 模型指出：ORL 相對 MIN，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「強烈」優勢。\n• **防守壓迫（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，ORL 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
-      "predicted_margin": 4.96,
+      "predicted_margin": 3.67,
       "predicted_total": 221.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:10.802629",
+      "created_at": "2026-10-22T04:30:10.416824",
       "matches": {
         "id": 42,
         "date": "2026-10-23",
@@ -3557,8 +3565,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 1.5,
+        "vegas_total": 237.5,
         "home_team": {
           "code": "ORL",
           "full_name": "Orlando Magic",
@@ -3594,7 +3602,7 @@
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:10.848775",
+      "created_at": "2026-10-22T04:30:10.462750",
       "matches": {
         "id": 49,
         "date": "2026-10-23",
@@ -3642,7 +3650,7 @@
       "predicted_total": 231.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:10.903389",
+      "created_at": "2026-10-22T04:30:10.505757",
       "matches": {
         "id": 43,
         "date": "2026-10-23",
@@ -3690,7 +3698,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:10.947160",
+      "created_at": "2026-10-22T04:30:10.552561",
       "matches": {
         "id": 47,
         "date": "2026-10-23",
@@ -3738,7 +3746,7 @@
       "predicted_total": 213.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:10.991594",
+      "created_at": "2026-10-22T04:30:10.597531",
       "matches": {
         "id": 45,
         "date": "2026-10-23",
@@ -3786,7 +3794,7 @@
       "predicted_total": 243.7,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:00:11.033386",
+      "created_at": "2026-10-22T04:30:10.639616",
       "matches": {
         "id": 46,
         "date": "2026-10-23",
