@@ -1468,21 +1468,21 @@
       "start_time": "2026-10-22T02:00Z",
       "home_team_id": 13,
       "away_team_id": 26,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 118,
-      "away_score": 88,
+      "status": "STATUS_FINISHED",
+      "home_score": 127,
+      "away_score": 105,
       "period_scores": {
         "home": [
           34,
           32,
           36,
-          16
+          25
         ],
         "away": [
           33,
           19,
           16,
-          20
+          37
         ]
       },
       "vegas_spread": null,
@@ -1544,19 +1544,21 @@
       "start_time": "2026-10-22T02:30Z",
       "home_team_id": 12,
       "away_team_id": 23,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 93,
-      "away_score": 70,
+      "status": "STATUS_FINISHED",
+      "home_score": 121,
+      "away_score": 96,
       "period_scores": {
         "home": [
           41,
           20,
-          32
+          32,
+          28
         ],
         "away": [
           29,
           25,
-          16
+          16,
+          26
         ]
       },
       "vegas_spread": null,
@@ -1609,7 +1611,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -7.5,
+      "vegas_spread": -8.5,
       "vegas_total": 235.5,
       "home_team": {
         "code": "OKC",
@@ -2621,8 +2623,8 @@
       "analysis_content_zh": "AI 模型指出：LAC 相對 SAC，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n• **罰球穩定度（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，LAC 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
       "predicted_margin": 8.38,
       "predicted_total": 230.04,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "LOSS",
       "created_at": "2026-10-20T23:30:09.648344",
       "matches": {
         "id": 35,
@@ -2630,19 +2632,21 @@
         "start_time": "2026-10-22T02:30Z",
         "home_team_id": 12,
         "away_team_id": 23,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 93,
-        "away_score": 70,
+        "status": "STATUS_FINISHED",
+        "home_score": 121,
+        "away_score": 96,
         "period_scores": {
           "home": [
             41,
             20,
-            32
+            32,
+            28
           ],
           "away": [
             29,
             25,
-            16
+            16,
+            26
           ]
         },
         "vegas_spread": null,
@@ -2680,8 +2684,8 @@
       "analysis_content_zh": "AI 模型指出：LAL 相對 GS，在近期統計指標上較占優勢。\n\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n• **籃板影響力（近5場）**：近 5 場呈現「輕微」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，LAL 在「護框阻攻（近5場）」上的表現是本場關鍵指標。",
       "predicted_margin": 6.98,
       "predicted_total": 221.89,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-10-20T23:30:09.695916",
       "matches": {
         "id": 33,
@@ -2689,21 +2693,21 @@
         "start_time": "2026-10-22T02:00Z",
         "home_team_id": 13,
         "away_team_id": 26,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 118,
-        "away_score": 88,
+        "status": "STATUS_FINISHED",
+        "home_score": 127,
+        "away_score": 105,
         "period_scores": {
           "home": [
             34,
             32,
             36,
-            16
+            25
           ],
           "away": [
             33,
             19,
             16,
-            20
+            37
           ]
         },
         "vegas_spread": null,
@@ -3181,7 +3185,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -7.5,
+        "vegas_spread": -8.5,
         "vegas_total": 235.5,
         "home_team": {
           "code": "OKC",
@@ -3266,7 +3270,7 @@
       "predicted_total": 212.37,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.151638",
+      "created_at": "2026-10-22T05:00:09.857886",
       "matches": {
         "id": 39,
         "date": "2026-10-23",
@@ -3314,7 +3318,7 @@
       "predicted_total": 221.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.195881",
+      "created_at": "2026-10-22T05:00:09.902282",
       "matches": {
         "id": 40,
         "date": "2026-10-23",
@@ -3362,7 +3366,7 @@
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.238815",
+      "created_at": "2026-10-22T05:00:09.947489",
       "matches": {
         "id": 41,
         "date": "2026-10-23",
@@ -3410,7 +3414,7 @@
       "predicted_total": 219.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.284846",
+      "created_at": "2026-10-22T05:00:09.994228",
       "matches": {
         "id": 48,
         "date": "2026-10-23",
@@ -3458,7 +3462,7 @@
       "predicted_total": 233.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.329228",
+      "created_at": "2026-10-22T05:00:10.042574",
       "matches": {
         "id": 44,
         "date": "2026-10-23",
@@ -3506,7 +3510,7 @@
       "predicted_total": 233.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.375435",
+      "created_at": "2026-10-22T05:00:10.091607",
       "matches": {
         "id": 38,
         "date": "2026-10-23",
@@ -3554,7 +3558,7 @@
       "predicted_total": 221.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.416824",
+      "created_at": "2026-10-22T05:00:10.132772",
       "matches": {
         "id": 42,
         "date": "2026-10-23",
@@ -3602,7 +3606,7 @@
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.462750",
+      "created_at": "2026-10-22T05:00:10.178731",
       "matches": {
         "id": 49,
         "date": "2026-10-23",
@@ -3650,7 +3654,7 @@
       "predicted_total": 231.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.505757",
+      "created_at": "2026-10-22T05:00:10.221759",
       "matches": {
         "id": 43,
         "date": "2026-10-23",
@@ -3698,7 +3702,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.552561",
+      "created_at": "2026-10-22T05:00:10.265821",
       "matches": {
         "id": 47,
         "date": "2026-10-23",
@@ -3746,7 +3750,7 @@
       "predicted_total": 213.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.597531",
+      "created_at": "2026-10-22T05:00:10.310714",
       "matches": {
         "id": 45,
         "date": "2026-10-23",
@@ -3794,7 +3798,7 @@
       "predicted_total": 243.7,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T04:30:10.639616",
+      "created_at": "2026-10-22T05:00:10.352441",
       "matches": {
         "id": 46,
         "date": "2026-10-23",
