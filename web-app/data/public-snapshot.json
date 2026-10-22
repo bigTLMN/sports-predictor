@@ -1240,21 +1240,21 @@
       "start_time": "2026-10-21T23:30Z",
       "home_team_id": 15,
       "away_team_id": 17,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 90,
-      "away_score": 114,
+      "status": "STATUS_FINISHED",
+      "home_score": 106,
+      "away_score": 131,
       "period_scores": {
         "home": [
           32,
           27,
           22,
-          9
+          25
         ],
         "away": [
           34,
           35,
           30,
-          15
+          32
         ]
       },
       "vegas_spread": null,
@@ -1278,21 +1278,21 @@
       "start_time": "2026-10-21T23:30Z",
       "home_team_id": 3,
       "away_team_id": 4,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 92,
-      "away_score": 100,
+      "status": "STATUS_FINISHED",
+      "home_score": 103,
+      "away_score": 110,
       "period_scores": {
         "home": [
           23,
           25,
           33,
-          9
+          22
         ],
         "away": [
           27,
           27,
           32,
-          14
+          24
         ]
       },
       "vegas_spread": null,
@@ -1316,21 +1316,21 @@
       "start_time": "2026-10-21T23:30Z",
       "home_team_id": 24,
       "away_team_id": 5,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 121,
-      "away_score": 75,
+      "status": "STATUS_FINISHED",
+      "home_score": 135,
+      "away_score": 92,
       "period_scores": {
         "home": [
           43,
           26,
           34,
-          18
+          32
         ],
         "away": [
           23,
           21,
           27,
-          4
+          21
         ]
       },
       "vegas_spread": null,
@@ -1355,18 +1355,20 @@
       "home_team_id": 14,
       "away_team_id": 30,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 96,
-      "away_score": 76,
+      "home_score": 116,
+      "away_score": 97,
       "period_scores": {
         "home": [
           29,
           35,
-          32
+          34,
+          18
         ],
         "away": [
           31,
           20,
-          25
+          28,
+          18
         ]
       },
       "vegas_spread": null,
@@ -1391,20 +1393,20 @@
       "home_team_id": 27,
       "away_team_id": 11,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 92,
-      "away_score": 86,
+      "home_score": 118,
+      "away_score": 120,
       "period_scores": {
         "home": [
           31,
           35,
           26,
-          0
+          26
         ],
         "away": [
           38,
           18,
           30,
-          0
+          34
         ]
       },
       "vegas_spread": null,
@@ -1429,18 +1431,20 @@
       "home_team_id": 10,
       "away_team_id": 7,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 72,
-      "away_score": 41,
+      "home_score": 100,
+      "away_score": 76,
       "period_scores": {
         "home": [
           32,
           38,
-          2
+          30,
+          0
         ],
         "away": [
           26,
           12,
-          3
+          38,
+          0
         ]
       },
       "vegas_spread": null,
@@ -1464,12 +1468,19 @@
       "start_time": "2026-10-22T02:00Z",
       "home_team_id": 13,
       "away_team_id": 26,
-      "status": "STATUS_SCHEDULED",
-      "home_score": 0,
-      "away_score": 0,
-      "period_scores": null,
-      "vegas_spread": -6.5,
-      "vegas_total": 233.5,
+      "status": "STATUS_IN_PROGRESS",
+      "home_score": 16,
+      "away_score": 17,
+      "period_scores": {
+        "home": [
+          16
+        ],
+        "away": [
+          17
+        ]
+      },
+      "vegas_spread": null,
+      "vegas_total": null,
       "home_team": {
         "code": "LAL",
         "full_name": "Los Angeles Lakers",
@@ -1489,12 +1500,19 @@
       "start_time": "2026-10-22T02:00Z",
       "home_team_id": 22,
       "away_team_id": 21,
-      "status": "STATUS_SCHEDULED",
-      "home_score": 0,
+      "status": "STATUS_IN_PROGRESS",
+      "home_score": 21,
       "away_score": 0,
-      "period_scores": null,
-      "vegas_spread": -3.5,
-      "vegas_total": 232.5,
+      "period_scores": {
+        "home": [
+          21
+        ],
+        "away": [
+          1
+        ]
+      },
+      "vegas_spread": null,
+      "vegas_total": null,
       "home_team": {
         "code": "POR",
         "full_name": "Portland Trail Blazers",
@@ -1518,7 +1536,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -4.5,
+      "vegas_spread": -5.5,
       "vegas_total": 226.5,
       "home_team": {
         "code": "LAC",
@@ -1768,8 +1786,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -7.5,
-      "vegas_total": 225.5,
+      "vegas_spread": null,
+      "vegas_total": null,
       "home_team": {
         "code": "SA",
         "full_name": "San Antonio Spurs",
@@ -2458,8 +2476,8 @@
       "analysis_content_zh": "AI 模型指出：CHA 相對 BKN，在近期統計指標上較占優勢。\n\n• **籃板影響力（近5場）**：近 5 場呈現「明顯」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，CHA 在「籃板影響力（近5場）」上的表現是本場關鍵指標。",
       "predicted_margin": 6.7,
       "predicted_total": 222.66,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "LOSS",
       "created_at": "2026-10-20T23:30:09.558536",
       "matches": {
         "id": 28,
@@ -2467,21 +2485,21 @@
         "start_time": "2026-10-21T23:30Z",
         "home_team_id": 3,
         "away_team_id": 4,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 92,
-        "away_score": 100,
+        "status": "STATUS_FINISHED",
+        "home_score": 103,
+        "away_score": 110,
         "period_scores": {
           "home": [
             23,
             25,
             33,
-            9
+            22
           ],
           "away": [
             27,
             27,
             32,
-            14
+            24
           ]
         },
         "vegas_spread": null,
@@ -2529,18 +2547,20 @@
         "home_team_id": 10,
         "away_team_id": 7,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 72,
-        "away_score": 41,
+        "home_score": 100,
+        "away_score": 76,
         "period_scores": {
           "home": [
             32,
             38,
-            2
+            30,
+            0
           ],
           "away": [
             26,
             12,
-            3
+            38,
+            0
           ]
         },
         "vegas_spread": null,
@@ -2591,7 +2611,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -4.5,
+        "vegas_spread": -5.5,
         "vegas_total": 226.5,
         "home_team": {
           "code": "LAC",
@@ -2635,12 +2655,19 @@
         "start_time": "2026-10-22T02:00Z",
         "home_team_id": 13,
         "away_team_id": 26,
-        "status": "STATUS_SCHEDULED",
-        "home_score": 0,
-        "away_score": 0,
-        "period_scores": null,
-        "vegas_spread": -6.5,
-        "vegas_total": 233.5,
+        "status": "STATUS_IN_PROGRESS",
+        "home_score": 16,
+        "away_score": 17,
+        "period_scores": {
+          "home": [
+            16
+          ],
+          "away": [
+            17
+          ]
+        },
+        "vegas_spread": null,
+        "vegas_total": null,
         "home_team": {
           "code": "LAL",
           "full_name": "Los Angeles Lakers",
@@ -2684,18 +2711,20 @@
         "home_team_id": 14,
         "away_team_id": 30,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 96,
-        "away_score": 76,
+        "home_score": 116,
+        "away_score": 97,
         "period_scores": {
           "home": [
             29,
             35,
-            32
+            34,
+            18
           ],
           "away": [
             31,
             20,
-            25
+            28,
+            18
           ]
         },
         "vegas_spread": null,
@@ -2733,8 +2762,8 @@
       "analysis_content_zh": "AI 模型指出：MIA 相對 MIN，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「強烈」優勢。\n• **禁區得分（近5場）**：近 5 場呈現「強烈」優勢。\n• **傳導與助攻（近5場）**：近 5 場呈現「強烈」優勢。\n\n綜合近 5 場走勢，MIA 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
       "predicted_margin": 6.95,
       "predicted_total": 238.78,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "WIN",
       "created_at": "2026-10-20T23:30:09.779005",
       "matches": {
         "id": 27,
@@ -2742,21 +2771,21 @@
         "start_time": "2026-10-21T23:30Z",
         "home_team_id": 15,
         "away_team_id": 17,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 90,
-        "away_score": 114,
+        "status": "STATUS_FINISHED",
+        "home_score": 106,
+        "away_score": 131,
         "period_scores": {
           "home": [
             32,
             27,
             22,
-            9
+            25
           ],
           "away": [
             34,
             35,
             30,
-            15
+            32
           ]
         },
         "vegas_spread": null,
@@ -2864,12 +2893,19 @@
         "start_time": "2026-10-22T02:00Z",
         "home_team_id": 22,
         "away_team_id": 21,
-        "status": "STATUS_SCHEDULED",
-        "home_score": 0,
+        "status": "STATUS_IN_PROGRESS",
+        "home_score": 21,
         "away_score": 0,
-        "period_scores": null,
-        "vegas_spread": -3.5,
-        "vegas_total": 232.5,
+        "period_scores": {
+          "home": [
+            21
+          ],
+          "away": [
+            1
+          ]
+        },
+        "vegas_spread": null,
+        "vegas_total": null,
         "home_team": {
           "code": "POR",
           "full_name": "Portland Trail Blazers",
@@ -2903,8 +2939,8 @@
       "analysis_content_zh": "AI 模型指出：TOR 相對 CHI，在近期統計指標上較占優勢。\n\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，TOR 在「正負值趨勢（近5場）」上的表現是本場關鍵指標。",
       "predicted_margin": 9.55,
       "predicted_total": 234.75,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-10-20T23:30:09.910790",
       "matches": {
         "id": 29,
@@ -2912,21 +2948,21 @@
         "start_time": "2026-10-21T23:30Z",
         "home_team_id": 24,
         "away_team_id": 5,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 121,
-        "away_score": 75,
+        "status": "STATUS_FINISHED",
+        "home_score": 135,
+        "away_score": 92,
         "period_scores": {
           "home": [
             43,
             26,
             34,
-            18
+            32
           ],
           "away": [
             23,
             21,
             27,
-            4
+            21
           ]
         },
         "vegas_spread": null,
@@ -3035,20 +3071,20 @@
         "home_team_id": 27,
         "away_team_id": 11,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 92,
-        "away_score": 86,
+        "home_score": 118,
+        "away_score": 120,
         "period_scores": {
           "home": [
             31,
             35,
             26,
-            0
+            26
           ],
           "away": [
             38,
             18,
             30,
-            0
+            34
           ]
         },
         "vegas_spread": null,
@@ -3184,7 +3220,7 @@
       "predicted_total": 212.37,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.179348",
+      "created_at": "2026-10-22T02:30:09.770027",
       "matches": {
         "id": 39,
         "date": "2026-10-23",
@@ -3232,7 +3268,7 @@
       "predicted_total": 221.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.223496",
+      "created_at": "2026-10-22T02:30:09.814459",
       "matches": {
         "id": 40,
         "date": "2026-10-23",
@@ -3280,7 +3316,7 @@
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.266458",
+      "created_at": "2026-10-22T02:30:09.857664",
       "matches": {
         "id": 41,
         "date": "2026-10-23",
@@ -3328,7 +3364,7 @@
       "predicted_total": 219.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.312688",
+      "created_at": "2026-10-22T02:30:09.903772",
       "matches": {
         "id": 48,
         "date": "2026-10-23",
@@ -3376,7 +3412,7 @@
       "predicted_total": 233.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.357111",
+      "created_at": "2026-10-22T02:30:09.948185",
       "matches": {
         "id": 44,
         "date": "2026-10-23",
@@ -3424,7 +3460,7 @@
       "predicted_total": 233.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.402095",
+      "created_at": "2026-10-22T02:30:09.993130",
       "matches": {
         "id": 38,
         "date": "2026-10-23",
@@ -3472,7 +3508,7 @@
       "predicted_total": 221.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.443098",
+      "created_at": "2026-10-22T02:30:10.034193",
       "matches": {
         "id": 42,
         "date": "2026-10-23",
@@ -3520,7 +3556,7 @@
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.490332",
+      "created_at": "2026-10-22T02:30:10.080314",
       "matches": {
         "id": 49,
         "date": "2026-10-23",
@@ -3568,7 +3604,7 @@
       "predicted_total": 231.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.534961",
+      "created_at": "2026-10-22T02:30:10.123567",
       "matches": {
         "id": 43,
         "date": "2026-10-23",
@@ -3616,7 +3652,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.579923",
+      "created_at": "2026-10-22T02:30:10.167615",
       "matches": {
         "id": 47,
         "date": "2026-10-23",
@@ -3650,21 +3686,21 @@
     {
       "id": 27,
       "match_id": 45,
-      "recommended_team_id": 10,
-      "confidence_score": 61.0,
-      "spread_logic": "AI projects HOU to lose by 4.5 pts",
-      "spread_logic_zh": "AI 預測 HOU 輸 4.5 分",
-      "line_info": "-7.5",
+      "recommended_team_id": 29,
+      "confidence_score": 65.0,
+      "spread_logic": "AI projects SA to win by 3.8 pts",
+      "spread_logic_zh": "AI 預測 SA 贏 3.8 分",
+      "line_info": "0.0",
       "ou_pick": "UNDER",
-      "ou_line": 225.5,
-      "ou_confidence": 84.0,
-      "analysis_content": "Our AI model identifies a statistical edge for HOU over SA.\n\n• **Paint Scoring (L5)**: Shows a significant advantage in recent form.\n• **Defensive Pressure (L5)**: Shows a slight advantage in recent form.\n• **Net Rating Trend (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, HOU's performance in Paint Scoring (L5) is a key indicator for this matchup.",
-      "analysis_content_zh": "AI 模型指出：HOU 相對 SA，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「明顯」優勢。\n• **防守壓迫（近5場）**：近 5 場呈現「輕微」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，HOU 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
-      "predicted_margin": -4.53,
+      "ou_line": 225.0,
+      "ou_confidence": 83.0,
+      "analysis_content": "Our AI model identifies a statistical edge for SA over HOU.\n\n• **Rebounding Presence (L5)**: Shows a slight advantage in recent form.\n• **Ball Movement (L5)**: Shows a slight advantage in recent form.\n• **Ball Security (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, SA's performance in Rebounding Presence (L5) is a key indicator for this matchup.",
+      "analysis_content_zh": "AI 模型指出：SA 相對 HOU，在近期統計指標上較占優勢。\n\n• **籃板影響力（近5場）**：近 5 場呈現「輕微」優勢。\n• **傳導與助攻（近5場）**：近 5 場呈現「輕微」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，SA 在「籃板影響力（近5場）」上的表現是本場關鍵指標。",
+      "predicted_margin": 3.78,
       "predicted_total": 213.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.624786",
+      "created_at": "2026-10-22T02:30:10.213270",
       "matches": {
         "id": 45,
         "date": "2026-10-23",
@@ -3675,8 +3711,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -7.5,
-        "vegas_total": 225.5,
+        "vegas_spread": null,
+        "vegas_total": null,
         "home_team": {
           "code": "SA",
           "full_name": "San Antonio Spurs",
@@ -3691,8 +3727,8 @@
         "away_team_nba_id": 1610612745
       },
       "recommended_team": {
-        "code": "HOU",
-        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png"
+        "code": "SA",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png"
       }
     },
     {
@@ -3712,7 +3748,7 @@
       "predicted_total": 243.7,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T02:00:10.666483",
+      "created_at": "2026-10-22T02:30:10.254907",
       "matches": {
         "id": 46,
         "date": "2026-10-23",
