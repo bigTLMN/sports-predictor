@@ -1165,16 +1165,18 @@
       "home_team_id": 19,
       "away_team_id": 1,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 62,
-      "away_score": 72,
+      "home_score": 88,
+      "away_score": 91,
       "period_scores": {
         "home": [
           33,
-          29
+          29,
+          26
         ],
         "away": [
           28,
-          44
+          44,
+          19
         ]
       },
       "vegas_spread": null,
@@ -1199,16 +1201,18 @@
       "home_team_id": 25,
       "away_team_id": 16,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 51,
-      "away_score": 56,
+      "home_score": 81,
+      "away_score": 82,
       "period_scores": {
         "home": [
           25,
-          26
+          26,
+          30
         ],
         "away": [
           23,
-          33
+          33,
+          26
         ]
       },
       "vegas_spread": null,
@@ -1233,16 +1237,16 @@
       "home_team_id": 15,
       "away_team_id": 17,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 45,
-      "away_score": 47,
+      "home_score": 59,
+      "away_score": 69,
       "period_scores": {
         "home": [
           32,
-          13
+          27
         ],
         "away": [
           34,
-          13
+          35
         ]
       },
       "vegas_spread": null,
@@ -1267,16 +1271,16 @@
       "home_team_id": 3,
       "away_team_id": 4,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 32,
-      "away_score": 35,
+      "home_score": 48,
+      "away_score": 54,
       "period_scores": {
         "home": [
           23,
-          9
+          25
         ],
         "away": [
           27,
-          8
+          27
         ]
       },
       "vegas_spread": null,
@@ -1301,16 +1305,16 @@
       "home_team_id": 24,
       "away_team_id": 5,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 52,
-      "away_score": 30,
+      "home_score": 69,
+      "away_score": 44,
       "period_scores": {
         "home": [
           43,
-          9
+          26
         ],
         "away": [
           23,
-          7
+          21
         ]
       },
       "vegas_spread": null,
@@ -1335,14 +1339,16 @@
       "home_team_id": 14,
       "away_team_id": 30,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 17,
-      "away_score": 17,
+      "home_score": 46,
+      "away_score": 43,
       "period_scores": {
         "home": [
-          16
+          29,
+          17
         ],
         "away": [
-          17
+          31,
+          12
         ]
       },
       "vegas_spread": null,
@@ -1367,14 +1373,16 @@
       "home_team_id": 27,
       "away_team_id": 11,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 18,
-      "away_score": 25,
+      "home_score": 48,
+      "away_score": 48,
       "period_scores": {
         "home": [
-          18
+          31,
+          17
         ],
         "away": [
-          25
+          38,
+          10
         ]
       },
       "vegas_spread": null,
@@ -1398,12 +1406,19 @@
       "start_time": "2026-10-22T00:30Z",
       "home_team_id": 10,
       "away_team_id": 7,
-      "status": "STATUS_SCHEDULED",
-      "home_score": 0,
-      "away_score": 0,
-      "period_scores": null,
-      "vegas_spread": -9.5,
-      "vegas_total": 230.5,
+      "status": "STATUS_IN_PROGRESS",
+      "home_score": 20,
+      "away_score": 18,
+      "period_scores": {
+        "home": [
+          20
+        ],
+        "away": [
+          18
+        ]
+      },
+      "vegas_spread": null,
+      "vegas_total": null,
       "home_team": {
         "code": "HOU",
         "full_name": "Houston Rockets",
@@ -2427,16 +2442,16 @@
         "home_team_id": 3,
         "away_team_id": 4,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 32,
-        "away_score": 35,
+        "home_score": 48,
+        "away_score": 54,
         "period_scores": {
           "home": [
             23,
-            9
+            25
           ],
           "away": [
             27,
-            8
+            27
           ]
         },
         "vegas_spread": null,
@@ -2483,12 +2498,19 @@
         "start_time": "2026-10-22T00:30Z",
         "home_team_id": 10,
         "away_team_id": 7,
-        "status": "STATUS_SCHEDULED",
-        "home_score": 0,
-        "away_score": 0,
-        "period_scores": null,
-        "vegas_spread": -9.5,
-        "vegas_total": 230.5,
+        "status": "STATUS_IN_PROGRESS",
+        "home_score": 20,
+        "away_score": 18,
+        "period_scores": {
+          "home": [
+            20
+          ],
+          "away": [
+            18
+          ]
+        },
+        "vegas_spread": null,
+        "vegas_total": null,
         "home_team": {
           "code": "HOU",
           "full_name": "Houston Rockets",
@@ -2628,14 +2650,16 @@
         "home_team_id": 14,
         "away_team_id": 30,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 17,
-        "away_score": 17,
+        "home_score": 46,
+        "away_score": 43,
         "period_scores": {
           "home": [
-            16
+            29,
+            17
           ],
           "away": [
-            17
+            31,
+            12
           ]
         },
         "vegas_spread": null,
@@ -2683,16 +2707,16 @@
         "home_team_id": 15,
         "away_team_id": 17,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 45,
-        "away_score": 47,
+        "home_score": 59,
+        "away_score": 69,
         "period_scores": {
           "home": [
             32,
-            13
+            27
           ],
           "away": [
             34,
-            13
+            35
           ]
         },
         "vegas_spread": null,
@@ -2740,16 +2764,18 @@
         "home_team_id": 19,
         "away_team_id": 1,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 62,
-        "away_score": 72,
+        "home_score": 88,
+        "away_score": 91,
         "period_scores": {
           "home": [
             33,
-            29
+            29,
+            26
           ],
           "away": [
             28,
-            44
+            44,
+            19
           ]
         },
         "vegas_spread": null,
@@ -2845,16 +2871,16 @@
         "home_team_id": 24,
         "away_team_id": 5,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 52,
-        "away_score": 30,
+        "home_score": 69,
+        "away_score": 44,
         "period_scores": {
           "home": [
             43,
-            9
+            26
           ],
           "away": [
             23,
-            7
+            21
           ]
         },
         "vegas_spread": null,
@@ -2902,16 +2928,18 @@
         "home_team_id": 25,
         "away_team_id": 16,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 51,
-        "away_score": 56,
+        "home_score": 81,
+        "away_score": 82,
         "period_scores": {
           "home": [
             25,
-            26
+            26,
+            30
           ],
           "away": [
             23,
-            33
+            33,
+            26
           ]
         },
         "vegas_spread": null,
@@ -2959,14 +2987,16 @@
         "home_team_id": 27,
         "away_team_id": 11,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 18,
-        "away_score": 25,
+        "home_score": 48,
+        "away_score": 48,
         "period_scores": {
           "home": [
-            18
+            31,
+            17
           ],
           "away": [
-            25
+            38,
+            10
           ]
         },
         "vegas_spread": null,
@@ -3102,7 +3132,7 @@
       "predicted_total": 212.37,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.165370",
+      "created_at": "2026-10-22T01:00:09.758069",
       "matches": {
         "id": 39,
         "date": "2026-10-23",
@@ -3150,7 +3180,7 @@
       "predicted_total": 221.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.209383",
+      "created_at": "2026-10-22T01:00:09.802197",
       "matches": {
         "id": 40,
         "date": "2026-10-23",
@@ -3198,7 +3228,7 @@
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.252445",
+      "created_at": "2026-10-22T01:00:09.845250",
       "matches": {
         "id": 41,
         "date": "2026-10-23",
@@ -3246,7 +3276,7 @@
       "predicted_total": 219.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.298482",
+      "created_at": "2026-10-22T01:00:09.891301",
       "matches": {
         "id": 48,
         "date": "2026-10-23",
@@ -3294,7 +3324,7 @@
       "predicted_total": 233.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.343270",
+      "created_at": "2026-10-22T01:00:09.935419",
       "matches": {
         "id": 44,
         "date": "2026-10-23",
@@ -3342,7 +3372,7 @@
       "predicted_total": 233.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.388370",
+      "created_at": "2026-10-22T01:00:09.980407",
       "matches": {
         "id": 38,
         "date": "2026-10-23",
@@ -3390,7 +3420,7 @@
       "predicted_total": 221.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.429629",
+      "created_at": "2026-10-22T01:00:10.021339",
       "matches": {
         "id": 42,
         "date": "2026-10-23",
@@ -3438,7 +3468,7 @@
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.475503",
+      "created_at": "2026-10-22T01:00:10.067047",
       "matches": {
         "id": 49,
         "date": "2026-10-23",
@@ -3486,7 +3516,7 @@
       "predicted_total": 231.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.518953",
+      "created_at": "2026-10-22T01:00:10.110309",
       "matches": {
         "id": 43,
         "date": "2026-10-23",
@@ -3534,7 +3564,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.566560",
+      "created_at": "2026-10-22T01:00:10.154039",
       "matches": {
         "id": 47,
         "date": "2026-10-23",
@@ -3582,7 +3612,7 @@
       "predicted_total": 213.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.612513",
+      "created_at": "2026-10-22T01:00:10.198946",
       "matches": {
         "id": 45,
         "date": "2026-10-23",
@@ -3630,7 +3660,7 @@
       "predicted_total": 243.7,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T00:30:10.654104",
+      "created_at": "2026-10-22T01:00:10.240449",
       "matches": {
         "id": 46,
         "date": "2026-10-23",
