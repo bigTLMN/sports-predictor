@@ -1886,7 +1886,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -9.5,
+      "vegas_spread": -10.5,
       "vegas_total": 228.5,
       "home_team": {
         "code": "LAL",
@@ -3511,7 +3511,7 @@
       "predicted_total": 212.37,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:38.585933",
+      "created_at": "2026-10-22T17:30:12.258390",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -3819,7 +3819,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T17:03:38"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 39,
@@ -3868,7 +3868,7 @@
       "predicted_total": 221.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:38.644077",
+      "created_at": "2026-10-22T17:30:12.315551",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -4176,7 +4176,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-22T17:03:38"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 40,
@@ -4225,7 +4225,7 @@
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:38.700568",
+      "created_at": "2026-10-22T17:30:12.371607",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -4533,7 +4533,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T17:03:38"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 41,
@@ -4569,20 +4569,20 @@
       "id": 20,
       "match_id": 48,
       "recommended_team_id": 12,
-      "confidence_score": 77.0,
-      "spread_logic": "AI projects LAC to lose by 2.7 pts",
-      "spread_logic_zh": "AI 預測 LAC 輸 2.7 分",
-      "line_info": "-9.5",
+      "confidence_score": 80.0,
+      "spread_logic": "AI projects LAC to lose by 2.9 pts",
+      "spread_logic_zh": "AI 預測 LAC 輸 2.9 分",
+      "line_info": "-10.5",
       "ou_pick": "UNDER",
       "ou_line": 228.5,
       "ou_confidence": 77.0,
-      "analysis_content": "## The Call\nLAC on the road is the side.\nThe market has LAC at +9.5, which implies a 9.5-point loss and a 22% win probability. Our projection is -2.7 for LAC (41% to win), a gap of 6.8 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 6.8-point edge is a 71% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was -1.1; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 77%.\n## Season So Far\nLAC is 2-0 (2-0 home, 0-0 away), scoring 121.5 (8th of 29) and allowing 103.0 (3rd of 29) for a +18.5 margin (3rd of 29), currently on a W2 run. Last out: W 122-110 vs DEN, W 121-96 vs SAC.\nLAL is 1-1, scoring 116.5 (16th of 29) and allowing 113.0 (13th of 29) for a +3.5 margin (12th of 29), on a W1 run. Last out: L 106-121 vs DEN, W 127-105 vs GS.\nHead to head, LAC is 2-1 in the last 3 meetings with an average margin of +6.7 (most recent 2026-02-20: L 122-125).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-04-15), here is where LAC separates from LAL. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — LAC gets 43.1 from the bench to 21.6 (league avg 35.3; LAC 8th vs LAL 28th of 30).\n• **Points** — LAC scores 114.1 a night to 102.2 (league avg 111.1; LAC 8th vs LAL 29th of 30).\n• **Points off turnovers** — LAC turns mistakes into 22.4 points to 14.6 (league avg 17.5; LAC 1st vs LAL 27th of 30).\n• **Turnovers** — LAC commits 13.5 turnovers to 17.0 (league avg 13.6; LAC 15th vs LAL 29th of 30).\nWhere LAL pushes back:\n• **Points allowed** — LAL holds the better number, 107.1 to LAC's 115.0 (league avg 115.8; LAC 17th vs LAL 7th of 30).\nConsistency check: LAC's game margins over this stretch vary by ±15.5 points (one standard deviation) against ±13.8 for LAL; the more volatile side is LAC.\n## Schedule & Rest\nLAC has one day off; LAL has one day off.\nLAL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 228.5\nTempo check: this season the two offences combine for 238.0 points and the two defences concede 216.0; on record they attempt 62 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 219.4 total points against a line of 228.5, 9.1 points below the number. With totals spreading ±19.0 points around the line, that is a 68% probability of the under; published confidence is 77%.\n## Model Track Record\nThis season, published spread picks are 10-4 (71%); totals are 7-7 (50%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: taking +9.5 relies on LAC staying within reach late; LAL's edge in Points allowed (107.1 vs 115.0) is the cleanest path to an upset of this read; LAC's results swing ±15.5 points game to game, so any single-game edge is fragile; sample sizes this early in the season are thin and roster changes are not in the box scores yet.",
-      "analysis_content_zh": "## 結論\n數字指向 LAC（客場）。\n市場開 LAC +9.5，等於預期輸 9.5 分、勝率 22%；模型估 LAC -2.7（勝率 41%），與盤口差 6.8 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，6.8 分的優勢等於 71% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 -1.1；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（77%）。\n## 本季至今\nLAC 戰績 2-0（主 2-0、客 0-0），場均得 121.5（29 隊中第 8）、失 103.0（29 隊中第 3），淨勝 +18.5（29 隊中第 3），目前 W2。近況：主場勝 DEN 122-110、主場勝 SAC 121-96。\nLAL 戰績 1-1，場均得 116.5（29 隊中第 16）、失 113.0（29 隊中第 13），淨勝 +3.5（29 隊中第 12），目前 W1。近況：主場負 DEN 106-121、主場勝 GS 127-105。\n近 3 次交手 LAC 2 勝 1 負，平均分差 +6.7（最近一次 2026-02-20：負 122-125）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-15）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：LAC 板凳貢獻 43.1 分，對手 21.6（聯盟平均 35.3；LAC 第 8、LAL 第 28／30 隊）。\n• **得分**：LAC 場均得 114.1 分，對手 102.2（聯盟平均 111.1；LAC 第 8、LAL 第 29／30 隊）。\n• **失誤轉換得分**：LAC 失誤轉換得 22.4 分，對手 14.6（聯盟平均 17.5；LAC 第 1、LAL 第 27／30 隊）。\n• **失誤**：LAC 失誤 13.5 次，對手 17.0（聯盟平均 13.6；LAC 第 15、LAL 第 29／30 隊）。\nLAL 能反擊的地方：\n• **失分**：LAL 這項較好，107.1 對 LAC 的 115.0（聯盟平均 115.8；LAC 第 17、LAL 第 7／30 隊）。\n穩定度：這段期間 LAC 單場分差的標準差是 ±15.5 分，LAL 是 ±13.8 分；LAC 的表現起伏較大。\n## 賽程與休息\nLAC 休一天；LAL 休一天。\nLAL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 228.5\n節奏觀察：本季兩隊進攻合計 238.0 分，防守合計失 216.0 分；近況合計每場出手 62 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 219.4，盤口 228.5，低於盤口 9.1 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 68%；公布信心 77%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：收 +9.5 的前提是 LAC 末段還咬得住；LAL 在失分上的優勢（107.1 對 115.0）是翻掉這份判讀最直接的路徑；LAC 單場分差起伏 ±15.5 分，單場優勢並不牢靠；季初樣本很小，陣容異動也還沒反映在技術統計裡。",
-      "predicted_margin": -2.75,
+      "analysis_content": "## The Call\nLAC on the road is the side.\nThe market has LAC at +10.5, which implies a 10.5-point loss and a 20% win probability. Our projection is -2.9 for LAC (41% to win), a gap of 7.6 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 7.6-point edge is a 73% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was -1.1; we pull it 20% toward the line to respect price discovery.\nConfidence is high at 80%.\n## Season So Far\nLAC is 2-0 (2-0 home, 0-0 away), scoring 121.5 (8th of 29) and allowing 103.0 (3rd of 29) for a +18.5 margin (3rd of 29), currently on a W2 run. Last out: W 122-110 vs DEN, W 121-96 vs SAC.\nLAL is 1-1, scoring 116.5 (16th of 29) and allowing 113.0 (13th of 29) for a +3.5 margin (12th of 29), on a W1 run. Last out: L 106-121 vs DEN, W 127-105 vs GS.\nHead to head, LAC is 2-1 in the last 3 meetings with an average margin of +6.7 (most recent 2026-02-20: L 122-125).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-04-15), here is where LAC separates from LAL. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — LAC gets 43.1 from the bench to 21.6 (league avg 35.3; LAC 8th vs LAL 28th of 30).\n• **Points** — LAC scores 114.1 a night to 102.2 (league avg 111.1; LAC 8th vs LAL 29th of 30).\n• **Points off turnovers** — LAC turns mistakes into 22.4 points to 14.6 (league avg 17.5; LAC 1st vs LAL 27th of 30).\n• **Turnovers** — LAC commits 13.5 turnovers to 17.0 (league avg 13.6; LAC 15th vs LAL 29th of 30).\nWhere LAL pushes back:\n• **Points allowed** — LAL holds the better number, 107.1 to LAC's 115.0 (league avg 115.8; LAC 17th vs LAL 7th of 30).\nConsistency check: LAC's game margins over this stretch vary by ±15.5 points (one standard deviation) against ±13.8 for LAL; the more volatile side is LAC.\n## Schedule & Rest\nLAC has one day off; LAL has one day off.\nLAL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 228.5\nTempo check: this season the two offences combine for 238.0 points and the two defences concede 216.0; on record they attempt 62 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 219.4 total points against a line of 228.5, 9.1 points below the number. With totals spreading ±19.0 points around the line, that is a 68% probability of the under; published confidence is 77%.\n## Model Track Record\nThis season, published spread picks are 10-4 (71%); totals are 7-7 (50%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: taking +10.5 relies on LAC staying within reach late; LAL's edge in Points allowed (107.1 vs 115.0) is the cleanest path to an upset of this read; LAC's results swing ±15.5 points game to game, so any single-game edge is fragile; sample sizes this early in the season are thin and roster changes are not in the box scores yet.",
+      "analysis_content_zh": "## 結論\n數字指向 LAC（客場）。\n市場開 LAC +10.5，等於預期輸 10.5 分、勝率 20%；模型估 LAC -2.9（勝率 41%），與盤口差 7.6 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，7.6 分的優勢等於 73% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 -1.1；我們固定把它往盤口拉 20%，尊重市場定價。\n信心高（80%）。\n## 本季至今\nLAC 戰績 2-0（主 2-0、客 0-0），場均得 121.5（29 隊中第 8）、失 103.0（29 隊中第 3），淨勝 +18.5（29 隊中第 3），目前 W2。近況：主場勝 DEN 122-110、主場勝 SAC 121-96。\nLAL 戰績 1-1，場均得 116.5（29 隊中第 16）、失 113.0（29 隊中第 13），淨勝 +3.5（29 隊中第 12），目前 W1。近況：主場負 DEN 106-121、主場勝 GS 127-105。\n近 3 次交手 LAC 2 勝 1 負，平均分差 +6.7（最近一次 2026-02-20：負 122-125）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-15）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：LAC 板凳貢獻 43.1 分，對手 21.6（聯盟平均 35.3；LAC 第 8、LAL 第 28／30 隊）。\n• **得分**：LAC 場均得 114.1 分，對手 102.2（聯盟平均 111.1；LAC 第 8、LAL 第 29／30 隊）。\n• **失誤轉換得分**：LAC 失誤轉換得 22.4 分，對手 14.6（聯盟平均 17.5；LAC 第 1、LAL 第 27／30 隊）。\n• **失誤**：LAC 失誤 13.5 次，對手 17.0（聯盟平均 13.6；LAC 第 15、LAL 第 29／30 隊）。\nLAL 能反擊的地方：\n• **失分**：LAL 這項較好，107.1 對 LAC 的 115.0（聯盟平均 115.8；LAC 第 17、LAL 第 7／30 隊）。\n穩定度：這段期間 LAC 單場分差的標準差是 ±15.5 分，LAL 是 ±13.8 分；LAC 的表現起伏較大。\n## 賽程與休息\nLAC 休一天；LAL 休一天。\nLAL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 228.5\n節奏觀察：本季兩隊進攻合計 238.0 分，防守合計失 216.0 分；近況合計每場出手 62 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 219.4，盤口 228.5，低於盤口 9.1 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 68%；公布信心 77%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：收 +10.5 的前提是 LAC 末段還咬得住；LAL 在失分上的優勢（107.1 對 115.0）是翻掉這份判讀最直接的路徑；LAC 單場分差起伏 ±15.5 分，單場優勢並不牢靠；季初樣本很小，陣容異動也還沒反映在技術統計裡。",
+      "predicted_margin": -2.95,
       "predicted_total": 219.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:38.761384",
+      "created_at": "2026-10-22T17:30:12.431663",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -4847,19 +4847,19 @@
           }
         ],
         "projection": {
-          "model_margin": -2.7,
+          "model_margin": -2.9,
           "raw_margin": -1.1,
-          "market_margin": -9.5,
-          "edge": 6.8,
+          "market_margin": -10.5,
+          "edge": 7.6,
           "pred_total": 219.4,
           "total_line": 228.5,
           "total_edge": -9.1,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.705,
-          "win_model": 0.413,
-          "win_market": 0.224,
+          "cover": 0.727,
+          "win_model": 0.407,
+          "win_market": 0.2,
           "total": 0.683,
           "sigma_spread": 12.5,
           "sigma_total": 19.0,
@@ -4886,11 +4886,11 @@
             7
           ],
           "spread_at_conf": [
-            2,
+            1,
             0
           ]
         },
-        "generated_at": "2026-10-22T17:03:38"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 48,
@@ -4902,7 +4902,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -9.5,
+        "vegas_spread": -10.5,
         "vegas_total": 228.5,
         "home_team": {
           "code": "LAL",
@@ -4939,7 +4939,7 @@
       "predicted_total": 233.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:38.834056",
+      "created_at": "2026-10-22T17:30:12.489075",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -5247,7 +5247,7 @@
             4
           ]
         },
-        "generated_at": "2026-10-22T17:03:38"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 44,
@@ -5296,7 +5296,7 @@
       "predicted_total": 233.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:38.892632",
+      "created_at": "2026-10-22T17:30:12.547569",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -5604,7 +5604,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T17:03:38"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 38,
@@ -5653,7 +5653,7 @@
       "predicted_total": 221.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:38.945292",
+      "created_at": "2026-10-22T17:30:12.601274",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -5961,7 +5961,7 @@
             2
           ]
         },
-        "generated_at": "2026-10-22T17:03:38"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 42,
@@ -6010,7 +6010,7 @@
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:39.004444",
+      "created_at": "2026-10-22T17:30:12.660613",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -6318,7 +6318,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T17:03:39"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 49,
@@ -6367,7 +6367,7 @@
       "predicted_total": 231.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:39.059870",
+      "created_at": "2026-10-22T17:30:12.716260",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -6675,7 +6675,7 @@
             2
           ]
         },
-        "generated_at": "2026-10-22T17:03:39"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 43,
@@ -6724,7 +6724,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:39.116483",
+      "created_at": "2026-10-22T17:30:12.773252",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -7032,7 +7032,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T17:03:39"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 47,
@@ -7081,7 +7081,7 @@
       "predicted_total": 213.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:39.173866",
+      "created_at": "2026-10-22T17:30:12.831246",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-01",
@@ -7389,7 +7389,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T17:03:39"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 45,
@@ -7438,7 +7438,7 @@
       "predicted_total": 243.7,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T17:03:39.227868",
+      "created_at": "2026-10-22T17:30:12.885113",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -7746,7 +7746,7 @@
             2
           ]
         },
-        "generated_at": "2026-10-22T17:03:39"
+        "generated_at": "2026-10-22T17:30:12"
       },
       "matches": {
         "id": 46,
