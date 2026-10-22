@@ -1587,7 +1587,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 236.5,
+      "vegas_total": 237.5,
       "home_team": {
         "code": "PHI",
         "full_name": "Philadelphia 76ers",
@@ -1886,7 +1886,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -10.5,
+      "vegas_spread": -9.5,
       "vegas_total": 228.5,
       "home_team": {
         "code": "LAL",
@@ -3234,7 +3234,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -3.5,
-        "vegas_total": 236.5,
+        "vegas_total": 237.5,
         "home_team": {
           "code": "PHI",
           "full_name": "Philadelphia 76ers",
@@ -3270,7 +3270,7 @@
       "predicted_total": 212.37,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:10.847612",
+      "created_at": "2026-10-22T15:30:12.214817",
       "matches": {
         "id": 39,
         "date": "2026-10-23",
@@ -3318,7 +3318,7 @@
       "predicted_total": 221.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:10.891286",
+      "created_at": "2026-10-22T15:30:12.258666",
       "matches": {
         "id": 40,
         "date": "2026-10-23",
@@ -3366,7 +3366,7 @@
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:10.934090",
+      "created_at": "2026-10-22T15:30:12.301465",
       "matches": {
         "id": 41,
         "date": "2026-10-23",
@@ -3401,20 +3401,20 @@
       "id": 20,
       "match_id": 48,
       "recommended_team_id": 12,
-      "confidence_score": 80.0,
-      "spread_logic": "AI projects LAC to lose by 2.9 pts",
-      "spread_logic_zh": "AI 預測 LAC 輸 2.9 分",
-      "line_info": "-10.5",
+      "confidence_score": 77.0,
+      "spread_logic": "AI projects LAC to lose by 2.7 pts",
+      "spread_logic_zh": "AI 預測 LAC 輸 2.7 分",
+      "line_info": "-9.5",
       "ou_pick": "UNDER",
       "ou_line": 228.5,
       "ou_confidence": 77.0,
       "analysis_content": "Our AI model identifies a statistical edge for LAC over LAL.\n\n• **Paint Scoring (L5)**: Shows a slight advantage in recent form.\n• **Net Rating Trend (L5)**: Shows a slight advantage in recent form.\n• **Ball Security (L5)**: Shows a slight advantage in recent form.\n\nComparing the recent 5-game trends, LAC's performance in Paint Scoring (L5) is a key indicator for this matchup.",
       "analysis_content_zh": "AI 模型指出：LAC 相對 LAL，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「輕微」優勢。\n• **正負值趨勢（近5場）**：近 5 場呈現「輕微」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，LAC 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
-      "predicted_margin": -2.95,
+      "predicted_margin": -2.75,
       "predicted_total": 219.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:10.979891",
+      "created_at": "2026-10-22T15:30:12.347653",
       "matches": {
         "id": 48,
         "date": "2026-10-23",
@@ -3425,7 +3425,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -10.5,
+        "vegas_spread": -9.5,
         "vegas_total": 228.5,
         "home_team": {
           "code": "LAL",
@@ -3462,7 +3462,7 @@
       "predicted_total": 233.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:11.024036",
+      "created_at": "2026-10-22T15:30:12.392369",
       "matches": {
         "id": 44,
         "date": "2026-10-23",
@@ -3510,7 +3510,7 @@
       "predicted_total": 233.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:11.069080",
+      "created_at": "2026-10-22T15:30:12.437268",
       "matches": {
         "id": 38,
         "date": "2026-10-23",
@@ -3558,7 +3558,7 @@
       "predicted_total": 221.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:11.109941",
+      "created_at": "2026-10-22T15:30:12.479725",
       "matches": {
         "id": 42,
         "date": "2026-10-23",
@@ -3606,7 +3606,7 @@
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:11.155740",
+      "created_at": "2026-10-22T15:30:12.525392",
       "matches": {
         "id": 49,
         "date": "2026-10-23",
@@ -3654,7 +3654,7 @@
       "predicted_total": 231.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:11.198441",
+      "created_at": "2026-10-22T15:30:12.568896",
       "matches": {
         "id": 43,
         "date": "2026-10-23",
@@ -3702,7 +3702,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:11.242005",
+      "created_at": "2026-10-22T15:30:12.613162",
       "matches": {
         "id": 47,
         "date": "2026-10-23",
@@ -3750,7 +3750,7 @@
       "predicted_total": 213.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:11.286167",
+      "created_at": "2026-10-22T15:30:12.657611",
       "matches": {
         "id": 45,
         "date": "2026-10-23",
@@ -3798,7 +3798,7 @@
       "predicted_total": 243.7,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T15:00:11.327373",
+      "created_at": "2026-10-22T15:30:12.698863",
       "matches": {
         "id": 46,
         "date": "2026-10-23",
