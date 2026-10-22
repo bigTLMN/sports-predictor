@@ -6,6 +6,7 @@ import { useI18n } from '@/lib/i18n';
 import { formatSignedLine, formatTotalLine, recommendedCoverNumber } from '@/lib/pickModelLabels';
 import { pickAnalysisContent } from '@/lib/pickLocalized';
 import AppearanceSwitch from '@/app/components/AppearanceSwitch';
+import { AnalysisText, FactsTable } from '@/app/components/AnalysisReport';
 
 export default function MatchDetailView({ pick }: { pick: any }) {
   const { t, locale } = useI18n();
@@ -42,6 +43,9 @@ export default function MatchDetailView({ pick }: { pick: any }) {
         : null;
 
   const analysisDisplay = pickAnalysisContent(pick, locale);
+  const facts = pick.analysis_facts && typeof pick.analysis_facts === 'object' ? pick.analysis_facts : null;
+  const recCode = pick.recommended_team?.code ?? '';
+  const oppCode = recCode === m.home_team?.code ? m.away_team?.code ?? '' : m.home_team?.code ?? '';
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-slate-100 text-slate-900 dark:bg-[#030712] dark:text-white font-sans selection:bg-orange-500/30">
@@ -137,22 +141,14 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               <h3 className="text-2xl font-black uppercase tracking-tight">{t('detail.systemAnalysis')}</h3>
             </div>
 
-            <div className="bg-white border border-slate-200 dark:bg-[#161b22] dark:border-slate-800 rounded-2xl p-8 shadow-xl">
-              <div className="prose prose-invert max-w-none">
-                {analysisDisplay ? (
-                  analysisDisplay.split('\n').map((line: string, i: number) => (
-                    <p
-                      key={i}
-                      className={`leading-relaxed ${line.startsWith('•') ? 'font-bold text-slate-900 dark:text-white pl-4' : 'text-slate-700 dark:text-slate-300'}`}
-                    >
-                      {line}
-                    </p>
-                  ))
-                ) : (
-                  <p className="text-slate-500 italic">{t('detail.generating')}</p>
-                )}
-              </div>
+            <div className="bg-white border border-slate-200 dark:bg-[#161b22] dark:border-slate-800 rounded-2xl p-5 sm:p-8 shadow-xl">
+              {analysisDisplay ? (
+                <AnalysisText text={analysisDisplay} />
+              ) : (
+                <p className="text-slate-500 italic">{t('detail.generating')}</p>
+              )}
             </div>
+            {facts ? <FactsTable facts={facts} recCode={recCode} oppCode={oppCode} /> : null}
           </div>
 
           <div className="space-y-6">

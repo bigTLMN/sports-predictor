@@ -5,6 +5,7 @@ import numpy as np
 from datetime import datetime, timedelta
 from typing import Optional, Tuple
 import sqlite_store
+import insight_writer
 from nba_schedule_features import b2b_before_game, load_schedule_for_b2b
 
 # ==========================================
@@ -301,6 +302,12 @@ def run():
         print(f"⚠️ B2B schedule load failed ({e}); diff_b2b/sum_b2b default to 0.")
         sched_df = pd.DataFrame(columns=["teamId", "gameDateTimeEst"])
 
+    try:
+        team_logs = insight_writer.load_team_logs()
+    except Exception as e:
+        print(f"⚠️ Team log load failed ({e}); analysis falls back to season form only.")
+        team_logs = pd.DataFrame()
+
     now = datetime.utcnow()
     end_date = now + timedelta(days=PREDICT_DAYS)
     
@@ -338,6 +345,7 @@ def run():
 
             # AI 預測（讓分模型輸出為 home 視角淨勝分）
             pred_margin = float(model_spread.predict(X_spr)[0])
+            raw_pred_margin = pred_margin
             pred_total = float(model_total.predict(X_tot)[0])
 
             # 莊家盤口
@@ -355,6 +363,7 @@ def run():
                 pred_margin = (1.0 - w) * pred_margin + w * market_home_margin
 
             vegas_spread = float(raw_vegas_spread) if raw_vegas_spread is not None else 0.0
+            total_is_default = vegas_total is None
             if vegas_total is None:
                 vegas_total = 225.0
 
@@ -385,13 +394,38 @@ def run():
             is_rec_home = (rec_id == m['home_team_id'])
             my_proj_margin = pred_margin if is_rec_home else -pred_margin
 
-            # 生成 AI 分析文案（英／繁）
-            analysis_text_en, analysis_text_zh = generate_insight_bilingual(
-                rec_code,
-                opp_code,
-                is_rec_home,
-                raw_df,
-            )
+            # 生成 AI 分析文案（英／繁）：以本季戰績、技術統計、盤口與模型數字寫成研究式判讀
+            opp_id = m['away_team_id'] if is_rec_home else m['home_team_id']
+            rec_nba = h_id if is_rec_home else a_id
+            opp_nba = a_id if is_rec_home else h_id
+            match_date = str(m["date"])[:10]
+            try:
+                rec_form = insight_writer.season_form(conn, rec_id, match_date)
+                opp_form = insight_writer.season_form(conn, opp_id, match_date)
+                analysis_text_en, analysis_text_zh, analysis_facts = insight_writer.build_insight({
+                    "match_id": m["id"], "date": match_date,
+                    "rec_code": rec_code, "opp_code": opp_code,
+                    "rec_is_home": is_rec_home, "home_code": m['home_team']['code'],
+                    "vegas_spread": raw_vegas_spread, "vegas_total": vegas_total,
+                    "total_is_default": total_is_default,
+                    "pred_margin_rec": my_proj_margin,
+                    "raw_margin_rec": raw_pred_margin if is_rec_home else -raw_pred_margin,
+                    "pred_total": pred_total, "ou_pick": ou_pick,
+                    "confidence": conf, "ou_confidence": ou_conf,
+                    "withhold_spread": withhold_spread,
+                    "rec_form": rec_form, "opp_form": opp_form,
+                    "rec_profile": insight_writer.team_profile(team_logs, rec_nba),
+                    "opp_profile": insight_writer.team_profile(team_logs, opp_nba),
+                    "rec_rest": insight_writer.rest_days(rec_form, match_date),
+                    "opp_rest": insight_writer.rest_days(opp_form, match_date),
+                    "h2h": insight_writer.head_to_head(team_logs, rec_nba, opp_nba),
+                })
+            except Exception as e:
+                print(f"⚠️ Insight writer failed for match {m['id']} ({e}); using legacy text.")
+                analysis_text_en, analysis_text_zh = generate_insight_bilingual(
+                    rec_code, opp_code, is_rec_home, raw_df,
+                )
+                analysis_facts = None
 
             if my_proj_margin > 0:
                 logic_str_en = f"AI projects {rec_code} to win by {abs(my_proj_margin):.1f} pts"
@@ -427,6 +461,7 @@ def run():
                 "ou_confidence": ou_conf,
                 "analysis_content": analysis_text_en,
                 "analysis_content_zh": analysis_text_zh,
+                "analysis_facts": analysis_facts,
                 # 供前端顯示：推薦隊視角淨勝分（正=預測贏幾分，負=預測輸幾分）；模型預測總分
                 "predicted_margin": round(float(my_proj_margin), 2),
                 "predicted_total": round(float(pred_total), 2),

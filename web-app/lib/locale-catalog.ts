@@ -96,6 +96,12 @@ const en: Messages = {
   'detail.aiTotal': 'AI Total',
   'detail.generating': 'Detailed analysis is generating...',
   'detail.updatedUtc': 'Data updated at {time} UTC',
+  'detail.factsTitle': 'Side by Side',
+  'detail.factsNote': 'Season record plus the last {n} box scores on record',
+  'detail.factsMetric': 'Metric',
+  'detail.factsRecord': 'Record',
+  'detail.factsStreak': 'Streak',
+  'detail.factsAts': 'ATS record',
 };
 
 const zhTW: Messages = {
@@ -185,6 +191,12 @@ const zhTW: Messages = {
   'detail.aiTotal': 'AI 大小',
   'detail.generating': '詳細分析產生中…',
   'detail.updatedUtc': '資料更新時間 {time}（UTC）',
+  'detail.factsTitle': '雙方對照',
+  'detail.factsNote': '本季戰績＋近 {n} 場有紀錄的技術統計',
+  'detail.factsMetric': '項目',
+  'detail.factsRecord': '戰績',
+  'detail.factsStreak': '連勝／連敗',
+  'detail.factsAts': '讓分戰績',
 };
 
 export const catalogs: Record<Locale, Messages> = { en, 'zh-TW': zhTW };

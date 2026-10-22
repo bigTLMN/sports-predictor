@@ -40,6 +40,7 @@ CREATE TABLE IF NOT EXISTS aggregated_picks (
   ou_confidence REAL,
   analysis_content TEXT,
   analysis_content_zh TEXT,
+  analysis_facts TEXT,
   predicted_margin REAL,
   predicted_total REAL,
   spread_outcome TEXT,
@@ -48,10 +49,13 @@ CREATE TABLE IF NOT EXISTS aggregated_picks (
 );
 """
 
+# Columns added after the first deploy; connect() adds them to older databases.
+PICK_MIGRATIONS = (("analysis_facts", "TEXT"),)
+
 PICK_FIELDS = (
     "recommended_team_id", "confidence_score", "spread_logic", "spread_logic_zh",
     "line_info", "ou_pick", "ou_line", "ou_confidence", "analysis_content",
-    "analysis_content_zh", "predicted_margin", "predicted_total", "created_at",
+    "analysis_content_zh", "analysis_facts", "predicted_margin", "predicted_total", "created_at",
 )
 
 
@@ -60,6 +64,11 @@ def connect(path=None):
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
+    existing = {row["name"] for row in conn.execute("PRAGMA table_info(aggregated_picks)")}
+    for column, col_type in PICK_MIGRATIONS:
+        if column not in existing:
+            conn.execute(f"ALTER TABLE aggregated_picks ADD COLUMN {column} {col_type}")
+    conn.commit()
     return conn
 
 
@@ -120,6 +129,10 @@ def upsert_match(conn, row):
 
 
 def upsert_pick(conn, row):
+    facts = row.get("analysis_facts")
+    if facts is not None and not isinstance(facts, str):
+        row = dict(row)
+        row["analysis_facts"] = json.dumps(facts, ensure_ascii=False, default=str)
     existing = conn.execute(
         "SELECT id FROM aggregated_picks WHERE match_id=?", (row["match_id"],)
     ).fetchone()
@@ -193,6 +206,12 @@ def export_snapshot(conn):
     picks = []
     for row in conn.execute("SELECT * FROM aggregated_picks ORDER BY id"):
         pick = dict(row)
+        facts = pick.get("analysis_facts")
+        if isinstance(facts, str) and facts:
+            try:
+                pick["analysis_facts"] = json.loads(facts)
+            except ValueError:
+                pick["analysis_facts"] = None
         match = conn.execute("SELECT * FROM matches WHERE id=?", (pick["match_id"],)).fetchone()
         pick["matches"] = _match_public(conn, match) if match else None
         rec = _team(conn, pick["recommended_team_id"])
