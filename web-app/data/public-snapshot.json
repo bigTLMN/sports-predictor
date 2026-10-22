@@ -1786,7 +1786,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -1.5,
+      "vegas_spread": 1.5,
       "vegas_total": 237.5,
       "home_team": {
         "code": "MIA",
@@ -1812,7 +1812,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -5.5,
-      "vegas_total": 227.5,
+      "vegas_total": 225.5,
       "home_team": {
         "code": "SA",
         "full_name": "San Antonio Spurs",
@@ -3511,7 +3511,7 @@
       "predicted_total": 212.37,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:11.651929",
+      "created_at": "2026-10-22T22:30:11.697026",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -3819,7 +3819,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T22:00:11"
+        "generated_at": "2026-10-22T22:30:11"
       },
       "matches": {
         "id": 39,
@@ -3868,7 +3868,7 @@
       "predicted_total": 221.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:11.708600",
+      "created_at": "2026-10-22T22:30:11.753745",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -4176,7 +4176,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-22T22:00:11"
+        "generated_at": "2026-10-22T22:30:11"
       },
       "matches": {
         "id": 40,
@@ -4225,7 +4225,7 @@
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:11.763944",
+      "created_at": "2026-10-22T22:30:11.809368",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -4533,7 +4533,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T22:00:11"
+        "generated_at": "2026-10-22T22:30:11"
       },
       "matches": {
         "id": 41,
@@ -4582,7 +4582,7 @@
       "predicted_total": 219.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:11.823196",
+      "created_at": "2026-10-22T22:30:11.868729",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -4890,7 +4890,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-22T22:00:11"
+        "generated_at": "2026-10-22T22:30:11"
       },
       "matches": {
         "id": 48,
@@ -4925,24 +4925,24 @@
     {
       "id": 21,
       "match_id": 44,
-      "recommended_team_id": 9,
-      "confidence_score": 52.0,
-      "spread_logic": "AI projects DET to lose by 0.9 pts",
-      "spread_logic_zh": "AI 預測 DET 輸 0.9 分",
-      "line_info": "-1.5",
+      "recommended_team_id": 15,
+      "confidence_score": 57.0,
+      "spread_logic": "AI projects MIA to win by 0.3 pts",
+      "spread_logic_zh": "AI 預測 MIA 贏 0.3 分",
+      "line_info": "1.5",
       "ou_pick": "UNDER",
       "ou_line": 237.5,
       "ou_confidence": 62.0,
-      "analysis_content": "## The Call\nThe number says DET, on the road.\nThe market has DET at +1.5, which implies a 1.5-point loss and a 45% win probability. Our projection is -0.9 for DET (47% to win), a gap of 0.6 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 0.6-point edge is a 52% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 52%.\n## Season So Far\nDET is 3-0 (2-0 home, 1-0 away), scoring 126.0 (4th of 29) and allowing 114.7 (16th of 29) for a +11.3 margin (8th of 29), currently on a W3 run. Last out: W 128-106 at MIN, W 129-125 vs TOR, W 121-113 vs BOS.\nMIA is 1-2, scoring 121.7 (7th of 29) and allowing 131.7 (29th of 29) for a -10.0 margin (23rd of 29), on a L2 run. Last out: W 144-128 vs BKN, L 115-136 at ORL, L 106-131 vs MIN.\nHead to head, DET is 1-2 in the last 3 meetings with an average margin of -4.7 (most recent 2026-03-08: L 110-121).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-17), here is where DET separates from MIA. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — DET gives up 104.4 to 128.6 (league avg 115.8; DET 3rd vs MIA 27th of 30).\n• **Points off turnovers** — DET turns mistakes into 20.7 points to 14.4 (league avg 17.5; DET 3rd vs MIA 28th of 30).\n• **Off. rebounds** — DET grabs 13.5 offensive boards to 10.9 (league avg 11.1; DET 2nd vs MIA 17th of 30).\n• **Net margin** — DET outscores opponents by +3.3 per game against -2.2 (league avg -4.7; DET 4th vs MIA 13th of 30).\nWhere MIA pushes back:\n• **Points** — MIA holds the better number, 126.4 to DET's 107.7 (league avg 111.1; DET 21st vs MIA 1st of 30).\n• **Bench points** — MIA holds the better number, 48.5 to DET's 30.5 (league avg 35.3; DET 21st vs MIA 2nd of 30).\n• **Assists** — MIA holds the better number, 31.1 to DET's 23.0 (league avg 25.0; DET 24th vs MIA 3rd of 30).\nConsistency check: DET's game margins over this stretch vary by ±15.4 points (one standard deviation) against ±18.5 for MIA; the steadier side is DET.\n## Schedule & Rest\nDET comes in with 2 days of rest; MIA has one day off.\nThe rest edge belongs to DET.\nMIA has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 237.5\nTempo check: this season the two offences combine for 247.7 points and the two defences concede 246.3; on record they attempt 70 threes between them (league pair average 73) with 35 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 233.4 total points against a line of 237.5, 4.1 points below the number. With totals spreading ±19.0 points around the line, that is a 58% probability of the under; published confidence is 62%.\n## Model Track Record\nThis season, published spread picks are 10-4 (71%); at 52%+ confidence they are 7-4; totals are 7-7 (50%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: the edge is only 0.6 points (52% cover probability), inside normal line noise; MIA's edge in Points (126.4 vs 107.7) is the cleanest path to an upset of this read; DET's results swing ±15.4 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n數字指向 DET（客場）。\n市場開 DET +1.5，等於預期輸 1.5 分、勝率 45%；模型估 DET -0.9（勝率 47%），與盤口差 0.6 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，0.6 分的優勢等於 52% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（52%）。\n## 本季至今\nDET 戰績 3-0（主 2-0、客 1-0），場均得 126.0（29 隊中第 4）、失 114.7（29 隊中第 16），淨勝 +11.3（29 隊中第 8），目前 W3。近況：客場勝 MIN 128-106、主場勝 TOR 129-125、主場勝 BOS 121-113。\nMIA 戰績 1-2，場均得 121.7（29 隊中第 7）、失 131.7（29 隊中第 29），淨勝 -10.0（29 隊中第 23），目前 L2。近況：主場勝 BKN 144-128、客場負 ORL 115-136、主場負 MIN 106-131。\n近 3 次交手 DET 1 勝 2 負，平均分差 -4.7（最近一次 2026-03-08：負 110-121）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-17），DET 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：DET 場均失 104.4 分，對手 128.6（聯盟平均 115.8；DET 第 3、MIA 第 27／30 隊）。\n• **失誤轉換得分**：DET 失誤轉換得 20.7 分，對手 14.4（聯盟平均 17.5；DET 第 3、MIA 第 28／30 隊）。\n• **進攻籃板**：DET 進攻籃板 13.5 個，對手 10.9（聯盟平均 11.1；DET 第 2、MIA 第 17／30 隊）。\n• **淨勝分**：DET 場均淨勝 +3.3 分，對手 -2.2（聯盟平均 -4.7；DET 第 4、MIA 第 13／30 隊）。\nMIA 能反擊的地方：\n• **得分**：MIA 這項較好，126.4 對 DET 的 107.7（聯盟平均 111.1；DET 第 21、MIA 第 1／30 隊）。\n• **板凳得分**：MIA 這項較好，48.5 對 DET 的 30.5（聯盟平均 35.3；DET 第 21、MIA 第 2／30 隊）。\n• **助攻**：MIA 這項較好，31.1 對 DET 的 23.0（聯盟平均 25.0；DET 第 24、MIA 第 3／30 隊）。\n穩定度：這段期間 DET 單場分差的標準差是 ±15.4 分，MIA 是 ±18.5 分；DET 的表現較穩。\n## 賽程與休息\nDET 休了 2 天；MIA 休一天。\n體能上 DET 較佔便宜。\nMIA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 237.5\n節奏觀察：本季兩隊進攻合計 247.7 分，防守合計失 246.3 分；近況合計每場出手 70 記三分（聯盟兩隊平均 73）、快攻 35 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 233.4，盤口 237.5，低於盤口 4.1 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 58%；公布信心 62%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 52% 以上的場次 7 勝 4 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：優勢只有 0.6 分（過盤機率 52%），落在盤口正常波動範圍內；MIA 在得分上的優勢（126.4 對 107.7）是翻掉這份判讀最直接的路徑；DET 單場分差起伏 ±15.4 分，單場優勢並不牢靠。",
-      "predicted_margin": -0.9,
+      "analysis_content": "## The Call\nThe number says MIA, at home.\nThe market has MIA at +1.5, which implies a 1.5-point loss and a 45% win probability. Our projection is +0.3 for MIA (51% to win), a gap of 1.8 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 1.8-point edge is a 56% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 57%.\n## Season So Far\nMIA is 1-2 (1-1 home, 0-1 away), scoring 121.7 (7th of 29) and allowing 131.7 (29th of 29) for a -10.0 margin (23rd of 29), currently on a L2 run. Last out: W 144-128 vs BKN, L 115-136 at ORL, L 106-131 vs MIN.\nDET is 3-0, scoring 126.0 (4th of 29) and allowing 114.7 (16th of 29) for a +11.3 margin (8th of 29), on a W3 run. Last out: W 128-106 at MIN, W 129-125 vs TOR, W 121-113 vs BOS.\nHead to head, MIA is 2-1 in the last 3 meetings with an average margin of +4.7 (most recent 2026-03-08: W 121-110).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-04-14) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Points** — MIA scores 126.4 a night to 107.7 (league avg 111.1; MIA 1st vs DET 21st of 30).\n• **Bench points** — MIA gets 48.5 from the bench to 30.5 (league avg 35.3; MIA 2nd vs DET 21st of 30).\n• **Assists** — MIA records 31.1 assists to 23.0 (league avg 25.0; MIA 3rd vs DET 24th of 30).\n• **Paint points** — MIA produces 57.0 paint points to 45.0 (league avg 47.4; MIA 4th vs DET 19th of 30).\nWhere DET pushes back:\n• **Points allowed** — DET holds the better number, 104.4 to MIA's 128.6 (league avg 115.8; MIA 27th vs DET 3rd of 30).\n• **Points off turnovers** — DET holds the better number, 20.7 to MIA's 14.4 (league avg 17.5; MIA 28th vs DET 3rd of 30).\n• **Off. rebounds** — DET holds the better number, 13.5 to MIA's 10.9 (league avg 11.1; MIA 17th vs DET 2nd of 30).\nConsistency check: MIA's game margins over this stretch vary by ±18.5 points (one standard deviation) against ±15.4 for DET; the more volatile side is MIA.\n## Schedule & Rest\nMIA has one day off; DET comes in with 2 days of rest.\nThe rest edge belongs to DET.\nMIA has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 237.5\nTempo check: this season the two offences combine for 247.7 points and the two defences concede 246.3; on record they attempt 70 threes between them (league pair average 73) with 35 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 233.4 total points against a line of 237.5, 4.1 points below the number. With totals spreading ±19.0 points around the line, that is a 58% probability of the under; published confidence is 62%.\n## Model Track Record\nThis season, published spread picks are 10-4 (71%); at 57%+ confidence they are 5-3; totals are 7-7 (50%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: DET's edge in Points allowed (104.4 vs 128.6) is the cleanest path to an upset of this read; MIA's results swing ±18.5 points game to game, so any single-game edge is fragile; MIA is on a L2 skid and the model does not read locker rooms.",
+      "analysis_content_zh": "## 結論\n數字指向 MIA（主場）。\n市場開 MIA +1.5，等於預期輸 1.5 分、勝率 45%；模型估 MIA +0.3（勝率 51%），與盤口差 1.8 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，1.8 分的優勢等於 56% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（57%）。\n## 本季至今\nMIA 戰績 1-2（主 1-1、客 0-1），場均得 121.7（29 隊中第 7）、失 131.7（29 隊中第 29），淨勝 -10.0（29 隊中第 23），目前 L2。近況：主場勝 BKN 144-128、客場負 ORL 115-136、主場負 MIN 106-131。\nDET 戰績 3-0，場均得 126.0（29 隊中第 4）、失 114.7（29 隊中第 16），淨勝 +11.3（29 隊中第 8），目前 W3。近況：客場勝 MIN 128-106、主場勝 TOR 129-125、主場勝 BOS 121-113。\n近 3 次交手 MIA 2 勝 1 負，平均分差 +4.7（最近一次 2026-03-08：勝 121-110）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-14），MIA 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **得分**：MIA 場均得 126.4 分，對手 107.7（聯盟平均 111.1；MIA 第 1、DET 第 21／30 隊）。\n• **板凳得分**：MIA 板凳貢獻 48.5 分，對手 30.5（聯盟平均 35.3；MIA 第 2、DET 第 21／30 隊）。\n• **助攻**：MIA 助攻 31.1 次，對手 23.0（聯盟平均 25.0；MIA 第 3、DET 第 24／30 隊）。\n• **禁區得分**：MIA 禁區拿 57.0 分，對手 45.0（聯盟平均 47.4；MIA 第 4、DET 第 19／30 隊）。\nDET 能反擊的地方：\n• **失分**：DET 這項較好，104.4 對 MIA 的 128.6（聯盟平均 115.8；MIA 第 27、DET 第 3／30 隊）。\n• **失誤轉換得分**：DET 這項較好，20.7 對 MIA 的 14.4（聯盟平均 17.5；MIA 第 28、DET 第 3／30 隊）。\n• **進攻籃板**：DET 這項較好，13.5 對 MIA 的 10.9（聯盟平均 11.1；MIA 第 17、DET 第 2／30 隊）。\n穩定度：這段期間 MIA 單場分差的標準差是 ±18.5 分，DET 是 ±15.4 分；MIA 的表現起伏較大。\n## 賽程與休息\nMIA 休一天；DET 休了 2 天。\n體能上 DET 較佔便宜。\nMIA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 237.5\n節奏觀察：本季兩隊進攻合計 247.7 分，防守合計失 246.3 分；近況合計每場出手 70 記三分（聯盟兩隊平均 73）、快攻 35 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 233.4，盤口 237.5，低於盤口 4.1 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 58%；公布信心 62%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 57% 以上的場次 5 勝 3 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：DET 在失分上的優勢（104.4 對 128.6）是翻掉這份判讀最直接的路徑；MIA 單場分差起伏 ±18.5 分，單場優勢並不牢靠；MIA 正吞 2 連敗，模型看不到更衣室氣氛。",
+      "predicted_margin": 0.3,
       "predicted_total": 233.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:11.880692",
+      "created_at": "2026-10-22T22:30:11.926304",
       "analysis_facts": {
         "profile_games": 10,
-        "profile_through": "2026-05-17",
+        "profile_through": "2026-04-14",
         "league_teams": 30,
         "season_teams": 29,
         "rows": [
@@ -4950,11 +4950,11 @@
             "key": "ppg",
             "en": "Points",
             "zh": "得分",
-            "rec": 107.7,
-            "opp": 126.4,
+            "rec": 126.4,
+            "opp": 107.7,
             "avg": 111.1,
-            "rec_rank": 21,
-            "opp_rank": 1,
+            "rec_rank": 1,
+            "opp_rank": 21,
             "unit": "",
             "better": "high"
           },
@@ -4962,11 +4962,11 @@
             "key": "papg",
             "en": "Points allowed",
             "zh": "失分",
-            "rec": 104.4,
-            "opp": 128.6,
+            "rec": 128.6,
+            "opp": 104.4,
             "avg": 115.8,
-            "rec_rank": 3,
-            "opp_rank": 27,
+            "rec_rank": 27,
+            "opp_rank": 3,
             "unit": "",
             "better": "low"
           },
@@ -4974,11 +4974,11 @@
             "key": "net",
             "en": "Net margin",
             "zh": "淨勝分",
-            "rec": 3.3,
-            "opp": -2.2,
+            "rec": -2.2,
+            "opp": 3.3,
             "avg": -4.7,
-            "rec_rank": 4,
-            "opp_rank": 13,
+            "rec_rank": 13,
+            "opp_rank": 4,
             "unit": "",
             "better": "high"
           },
@@ -4986,11 +4986,11 @@
             "key": "fg",
             "en": "FG%",
             "zh": "命中率",
-            "rec": 46.1,
-            "opp": 49.7,
+            "rec": 49.7,
+            "opp": 46.1,
             "avg": 45.8,
-            "rec_rank": 16,
-            "opp_rank": 1,
+            "rec_rank": 1,
+            "opp_rank": 16,
             "unit": "%",
             "better": "high"
           },
@@ -4998,11 +4998,11 @@
             "key": "tp",
             "en": "3P%",
             "zh": "三分命中率",
-            "rec": 39.4,
-            "opp": 39.1,
+            "rec": 39.1,
+            "opp": 39.4,
             "avg": 34.9,
-            "rec_rank": 2,
-            "opp_rank": 4,
+            "rec_rank": 4,
+            "opp_rank": 2,
             "unit": "%",
             "better": "high"
           },
@@ -5010,11 +5010,11 @@
             "key": "tpa",
             "en": "3PA",
             "zh": "三分出手",
-            "rec": 29.8,
-            "opp": 40.3,
+            "rec": 40.3,
+            "opp": 29.8,
             "avg": 36.4,
-            "rec_rank": 27,
-            "opp_rank": 6,
+            "rec_rank": 6,
+            "opp_rank": 27,
             "unit": "",
             "better": null
           },
@@ -5022,11 +5022,11 @@
             "key": "ft",
             "en": "FT%",
             "zh": "罰球命中率",
-            "rec": 78.2,
-            "opp": 77.6,
+            "rec": 77.6,
+            "opp": 78.2,
             "avg": 77.5,
-            "rec_rank": 11,
-            "opp_rank": 14,
+            "rec_rank": 14,
+            "opp_rank": 11,
             "unit": "%",
             "better": "high"
           },
@@ -5034,11 +5034,11 @@
             "key": "reb",
             "en": "Rebounds",
             "zh": "籃板",
-            "rec": 42.8,
-            "opp": 44.1,
+            "rec": 44.1,
+            "opp": 42.8,
             "avg": 41.9,
-            "rec_rank": 15,
-            "opp_rank": 9,
+            "rec_rank": 9,
+            "opp_rank": 15,
             "unit": "",
             "better": "high"
           },
@@ -5046,11 +5046,11 @@
             "key": "oreb",
             "en": "Off. rebounds",
             "zh": "進攻籃板",
-            "rec": 13.5,
-            "opp": 10.9,
+            "rec": 10.9,
+            "opp": 13.5,
             "avg": 11.1,
-            "rec_rank": 2,
-            "opp_rank": 17,
+            "rec_rank": 17,
+            "opp_rank": 2,
             "unit": "",
             "better": "high"
           },
@@ -5058,11 +5058,11 @@
             "key": "ast",
             "en": "Assists",
             "zh": "助攻",
-            "rec": 23.0,
-            "opp": 31.1,
+            "rec": 31.1,
+            "opp": 23.0,
             "avg": 25.0,
-            "rec_rank": 24,
-            "opp_rank": 3,
+            "rec_rank": 3,
+            "opp_rank": 24,
             "unit": "",
             "better": "high"
           },
@@ -5070,11 +5070,11 @@
             "key": "tov",
             "en": "Turnovers",
             "zh": "失誤",
-            "rec": 13.5,
-            "opp": 11.3,
+            "rec": 11.3,
+            "opp": 13.5,
             "avg": 13.6,
-            "rec_rank": 17,
-            "opp_rank": 3,
+            "rec_rank": 3,
+            "opp_rank": 17,
             "unit": "",
             "better": "low"
           },
@@ -5082,11 +5082,11 @@
             "key": "paint",
             "en": "Paint points",
             "zh": "禁區得分",
-            "rec": 45.0,
-            "opp": 57.0,
+            "rec": 57.0,
+            "opp": 45.0,
             "avg": 47.4,
-            "rec_rank": 19,
-            "opp_rank": 4,
+            "rec_rank": 4,
+            "opp_rank": 19,
             "unit": "",
             "better": "high"
           },
@@ -5094,11 +5094,11 @@
             "key": "fb",
             "en": "Fast-break points",
             "zh": "快攻得分",
-            "rec": 14.0,
-            "opp": 21.2,
+            "rec": 21.2,
+            "opp": 14.0,
             "avg": 14.2,
-            "rec_rank": 15,
-            "opp_rank": 2,
+            "rec_rank": 2,
+            "opp_rank": 15,
             "unit": "",
             "better": "high"
           },
@@ -5106,11 +5106,11 @@
             "key": "pot",
             "en": "Points off turnovers",
             "zh": "失誤轉換得分",
-            "rec": 20.7,
-            "opp": 14.4,
+            "rec": 14.4,
+            "opp": 20.7,
             "avg": 17.5,
-            "rec_rank": 3,
-            "opp_rank": 28,
+            "rec_rank": 28,
+            "opp_rank": 3,
             "unit": "",
             "better": "high"
           },
@@ -5118,42 +5118,17 @@
             "key": "bench",
             "en": "Bench points",
             "zh": "板凳得分",
-            "rec": 30.5,
-            "opp": 48.5,
+            "rec": 48.5,
+            "opp": 30.5,
             "avg": 35.3,
-            "rec_rank": 21,
-            "opp_rank": 2,
+            "rec_rank": 2,
+            "opp_rank": 21,
             "unit": "",
             "better": "high"
           }
         ],
         "form": {
           "rec": {
-            "games": 3,
-            "wins": 3,
-            "losses": 0,
-            "home": [
-              2,
-              0
-            ],
-            "away": [
-              1,
-              0
-            ],
-            "ppg": 126.0,
-            "papg": 114.7,
-            "margin": 11.3,
-            "rank": {
-              "ppg": 4,
-              "papg": 16,
-              "margin": 8
-            },
-            "streak": "W3",
-            "ats": null,
-            "ou": null,
-            "rest": 3
-          },
-          "opp": {
             "games": 3,
             "wins": 1,
             "losses": 2,
@@ -5177,45 +5152,70 @@
             "ats": null,
             "ou": null,
             "rest": 2
+          },
+          "opp": {
+            "games": 3,
+            "wins": 3,
+            "losses": 0,
+            "home": [
+              2,
+              0
+            ],
+            "away": [
+              1,
+              0
+            ],
+            "ppg": 126.0,
+            "papg": 114.7,
+            "margin": 11.3,
+            "rank": {
+              "ppg": 4,
+              "papg": 16,
+              "margin": 8
+            },
+            "streak": "W3",
+            "ats": null,
+            "ou": null,
+            "rest": 3
           }
         },
         "volatility": {
-          "rec": 15.4,
-          "opp": 18.5
+          "rec": 18.5,
+          "opp": 15.4
         },
         "h2h": [
           {
             "date": "2025-11-29",
-            "won": true,
-            "for": 138,
-            "against": 135
+            "won": false,
+            "for": 135,
+            "against": 138
           },
           {
             "date": "2026-01-01",
-            "won": false,
-            "for": 112,
-            "against": 118
+            "won": true,
+            "for": 118,
+            "against": 112
           },
           {
             "date": "2026-03-08",
-            "won": false,
-            "for": 110,
-            "against": 121
+            "won": true,
+            "for": 121,
+            "against": 110
           }
         ],
         "projection": {
-          "model_margin": -0.9,
-          "raw_margin": -0.8,
+          "model_margin": 0.3,
+          "raw_margin": 0.8,
           "market_margin": -1.5,
-          "edge": 0.6,
+          "edge": 1.8,
           "pred_total": 233.4,
           "total_line": 237.5,
           "total_edge": -4.1,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.519,
-          "win_model": 0.471,
+          "cover": 0.557,
+          "win_model": 0.51,
           "win_market": 0.452,
           "total": 0.585,
           "sigma_spread": 12.5,
@@ -5243,11 +5243,11 @@
             7
           ],
           "spread_at_conf": [
-            7,
-            4
+            5,
+            3
           ]
         },
-        "generated_at": "2026-10-22T22:00:11"
+        "generated_at": "2026-10-22T22:30:11"
       },
       "matches": {
         "id": 44,
@@ -5259,7 +5259,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -1.5,
+        "vegas_spread": 1.5,
         "vegas_total": 237.5,
         "home_team": {
           "code": "MIA",
@@ -5275,8 +5275,8 @@
         "away_team_nba_id": 1610612765
       },
       "recommended_team": {
-        "code": "DET",
-        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/det.png"
+        "code": "MIA",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png"
       }
     },
     {
@@ -5296,7 +5296,7 @@
       "predicted_total": 233.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:11.938930",
+      "created_at": "2026-10-22T22:30:11.984869",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -5604,7 +5604,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T22:00:11"
+        "generated_at": "2026-10-22T22:30:11"
       },
       "matches": {
         "id": 38,
@@ -5653,7 +5653,7 @@
       "predicted_total": 221.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:11.992808",
+      "created_at": "2026-10-22T22:30:12.037956",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -5961,7 +5961,7 @@
             2
           ]
         },
-        "generated_at": "2026-10-22T22:00:11"
+        "generated_at": "2026-10-22T22:30:12"
       },
       "matches": {
         "id": 42,
@@ -6010,7 +6010,7 @@
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:12.051998",
+      "created_at": "2026-10-22T22:30:12.097623",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -6318,7 +6318,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T22:00:12"
+        "generated_at": "2026-10-22T22:30:12"
       },
       "matches": {
         "id": 49,
@@ -6367,7 +6367,7 @@
       "predicted_total": 231.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:12.107555",
+      "created_at": "2026-10-22T22:30:12.153380",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -6675,7 +6675,7 @@
             2
           ]
         },
-        "generated_at": "2026-10-22T22:00:12"
+        "generated_at": "2026-10-22T22:30:12"
       },
       "matches": {
         "id": 43,
@@ -6724,7 +6724,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:12.164243",
+      "created_at": "2026-10-22T22:30:12.209754",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -7032,7 +7032,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T22:00:12"
+        "generated_at": "2026-10-22T22:30:12"
       },
       "matches": {
         "id": 47,
@@ -7073,15 +7073,15 @@
       "spread_logic_zh": "AI 預測 HOU 輸 4.1 分",
       "line_info": "-5.5",
       "ou_pick": "UNDER",
-      "ou_line": 227.5,
-      "ou_confidence": 90.0,
-      "analysis_content": "## The Call\nHOU on the road is the side.\nThe market has HOU at +5.5, which implies a 5.5-point loss and a 33% win probability. Our projection is -4.1 for HOU (37% to win), a gap of 1.4 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 1.4-point edge is a 54% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 55%.\n## Season So Far\nHOU is 2-0 (2-0 home, 0-0 away), scoring 122.0 (6th of 29) and allowing 99.5 (1st of 29) for a +22.5 margin (1st of 29), currently on a W2 run. Last out: W 116-89 vs OKC, W 128-110 vs DAL.\nSA is 2-1, scoring 117.7 (12th of 29) and allowing 105.3 (4th of 29) for a +12.3 margin (6th of 29), on a L1 run. Last out: W 123-103 vs PHX, W 126-97 vs SAC, L 104-116 vs OKC.\nHead to head, HOU is 1-2 in the last 3 meetings with an average margin of -10.7 (most recent 2026-03-08: L 120-145).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-01), here is where HOU separates from SA. League averages and ranks across 30 teams are given for scale.\n• **Paint points** — HOU produces 53.4 paint points to 41.4 (league avg 47.4; HOU 6th vs SA 25th of 30).\n• **Off. rebounds** — HOU grabs 15.3 offensive boards to 11.5 (league avg 11.1; HOU 1st vs SA 12th of 30).\n• **FG%** — HOU shoots 44.3% from the floor to 42.4% (league avg 45.8%; HOU 25th vs SA 29th of 30).\n• **Rebounds** — HOU pulls 46.0 rebounds to 44.4 (league avg 41.9; HOU 2nd vs SA 7th of 30).\nWhere SA pushes back:\n• **Bench points** — SA holds the better number, 28.3 to HOU's 21.3 (league avg 35.3; HOU 29th vs SA 23rd of 30).\n• **3P%** — SA holds the better number, 33.8% to HOU's 29.9% (league avg 34.9%; HOU 29th vs SA 19th of 30).\n• **Assists** — SA holds the better number, 23.5 to HOU's 22.4 (league avg 25.0; HOU 26th vs SA 22nd of 30).\nConsistency check: HOU's game margins over this stretch vary by ±14.5 points (one standard deviation) against ±13.2 for SA; the more volatile side is HOU.\n## Schedule & Rest\nHOU has one day off; SA comes in with 2 days of rest.\nThe rest edge belongs to SA.\nSA has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 227.5\nTempo check: this season the two offences combine for 239.7 points and the two defences concede 204.8; on record they attempt 72 threes between them (league pair average 73) with 30 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 213.9 total points against a line of 227.5, 13.6 points below the number. With totals spreading ±19.0 points around the line, that is a 76% probability of the under; published confidence is 90%.\n## Model Track Record\nThis season, published spread picks are 10-4 (71%); at 55%+ confidence they are 6-3; totals are 7-7 (50%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: the edge is only 1.4 points (54% cover probability), inside normal line noise; SA's edge in Bench points (28.3 vs 21.3) is the cleanest path to an upset of this read; HOU's results swing ±14.5 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n本場站 客場的 HOU。\n市場開 HOU +5.5，等於預期輸 5.5 分、勝率 33%；模型估 HOU -4.1（勝率 37%），與盤口差 1.4 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，1.4 分的優勢等於 54% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（55%）。\n## 本季至今\nHOU 戰績 2-0（主 2-0、客 0-0），場均得 122.0（29 隊中第 6）、失 99.5（29 隊中第 1），淨勝 +22.5（29 隊中第 1），目前 W2。近況：主場勝 OKC 116-89、主場勝 DAL 128-110。\nSA 戰績 2-1，場均得 117.7（29 隊中第 12）、失 105.3（29 隊中第 4），淨勝 +12.3（29 隊中第 6），目前 L1。近況：主場勝 PHX 123-103、主場勝 SAC 126-97、主場負 OKC 104-116。\n近 3 次交手 HOU 1 勝 2 負，平均分差 -10.7（最近一次 2026-03-08：負 120-145）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-01），HOU 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **禁區得分**：HOU 禁區拿 53.4 分，對手 41.4（聯盟平均 47.4；HOU 第 6、SA 第 25／30 隊）。\n• **進攻籃板**：HOU 進攻籃板 15.3 個，對手 11.5（聯盟平均 11.1；HOU 第 1、SA 第 12／30 隊）。\n• **命中率**：HOU 命中率 44.3%，對手 42.4%（聯盟平均 45.8%；HOU 第 25、SA 第 29／30 隊）。\n• **籃板**：HOU 場均 46.0 籃板，對手 44.4（聯盟平均 41.9；HOU 第 2、SA 第 7／30 隊）。\nSA 能反擊的地方：\n• **板凳得分**：SA 這項較好，28.3 對 HOU 的 21.3（聯盟平均 35.3；HOU 第 29、SA 第 23／30 隊）。\n• **三分命中率**：SA 這項較好，33.8% 對 HOU 的 29.9%（聯盟平均 34.9%；HOU 第 29、SA 第 19／30 隊）。\n• **助攻**：SA 這項較好，23.5 對 HOU 的 22.4（聯盟平均 25.0；HOU 第 26、SA 第 22／30 隊）。\n穩定度：這段期間 HOU 單場分差的標準差是 ±14.5 分，SA 是 ±13.2 分；HOU 的表現起伏較大。\n## 賽程與休息\nHOU 休一天；SA 休了 2 天。\n體能上 SA 較佔便宜。\nSA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 227.5\n節奏觀察：本季兩隊進攻合計 239.7 分，防守合計失 204.8 分；近況合計每場出手 72 記三分（聯盟兩隊平均 73）、快攻 30 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 213.9，盤口 227.5，低於盤口 13.6 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 76%；公布信心 90%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 55% 以上的場次 6 勝 3 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：優勢只有 1.4 分（過盤機率 54%），落在盤口正常波動範圍內；SA 在板凳得分上的優勢（28.3 對 21.3）是翻掉這份判讀最直接的路徑；HOU 單場分差起伏 ±14.5 分，單場優勢並不牢靠。",
+      "ou_line": 225.5,
+      "ou_confidence": 84.0,
+      "analysis_content": "## The Call\nHOU on the road is the side.\nThe market has HOU at +5.5, which implies a 5.5-point loss and a 33% win probability. Our projection is -4.1 for HOU (37% to win), a gap of 1.4 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 1.4-point edge is a 54% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 55%.\n## Season So Far\nHOU is 2-0 (2-0 home, 0-0 away), scoring 122.0 (6th of 29) and allowing 99.5 (1st of 29) for a +22.5 margin (1st of 29), currently on a W2 run. Last out: W 116-89 vs OKC, W 128-110 vs DAL.\nSA is 2-1, scoring 117.7 (12th of 29) and allowing 105.3 (4th of 29) for a +12.3 margin (6th of 29), on a L1 run. Last out: W 123-103 vs PHX, W 126-97 vs SAC, L 104-116 vs OKC.\nHead to head, HOU is 1-2 in the last 3 meetings with an average margin of -10.7 (most recent 2026-03-08: L 120-145).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-01), here is where HOU separates from SA. League averages and ranks across 30 teams are given for scale.\n• **Paint points** — HOU produces 53.4 paint points to 41.4 (league avg 47.4; HOU 6th vs SA 25th of 30).\n• **Off. rebounds** — HOU grabs 15.3 offensive boards to 11.5 (league avg 11.1; HOU 1st vs SA 12th of 30).\n• **FG%** — HOU shoots 44.3% from the floor to 42.4% (league avg 45.8%; HOU 25th vs SA 29th of 30).\n• **Rebounds** — HOU pulls 46.0 rebounds to 44.4 (league avg 41.9; HOU 2nd vs SA 7th of 30).\nWhere SA pushes back:\n• **Bench points** — SA holds the better number, 28.3 to HOU's 21.3 (league avg 35.3; HOU 29th vs SA 23rd of 30).\n• **3P%** — SA holds the better number, 33.8% to HOU's 29.9% (league avg 34.9%; HOU 29th vs SA 19th of 30).\n• **Assists** — SA holds the better number, 23.5 to HOU's 22.4 (league avg 25.0; HOU 26th vs SA 22nd of 30).\nConsistency check: HOU's game margins over this stretch vary by ±14.5 points (one standard deviation) against ±13.2 for SA; the more volatile side is HOU.\n## Schedule & Rest\nHOU has one day off; SA comes in with 2 days of rest.\nThe rest edge belongs to SA.\nSA has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 225.5\nTempo check: this season the two offences combine for 239.7 points and the two defences concede 204.8; on record they attempt 72 threes between them (league pair average 73) with 30 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 213.9 total points against a line of 225.5, 11.6 points below the number. With totals spreading ±19.0 points around the line, that is a 73% probability of the under; published confidence is 84%.\n## Model Track Record\nThis season, published spread picks are 10-4 (71%); at 55%+ confidence they are 6-3; totals are 7-7 (50%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: the edge is only 1.4 points (54% cover probability), inside normal line noise; SA's edge in Bench points (28.3 vs 21.3) is the cleanest path to an upset of this read; HOU's results swing ±14.5 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n本場站 客場的 HOU。\n市場開 HOU +5.5，等於預期輸 5.5 分、勝率 33%；模型估 HOU -4.1（勝率 37%），與盤口差 1.4 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，1.4 分的優勢等於 54% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（55%）。\n## 本季至今\nHOU 戰績 2-0（主 2-0、客 0-0），場均得 122.0（29 隊中第 6）、失 99.5（29 隊中第 1），淨勝 +22.5（29 隊中第 1），目前 W2。近況：主場勝 OKC 116-89、主場勝 DAL 128-110。\nSA 戰績 2-1，場均得 117.7（29 隊中第 12）、失 105.3（29 隊中第 4），淨勝 +12.3（29 隊中第 6），目前 L1。近況：主場勝 PHX 123-103、主場勝 SAC 126-97、主場負 OKC 104-116。\n近 3 次交手 HOU 1 勝 2 負，平均分差 -10.7（最近一次 2026-03-08：負 120-145）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-01），HOU 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **禁區得分**：HOU 禁區拿 53.4 分，對手 41.4（聯盟平均 47.4；HOU 第 6、SA 第 25／30 隊）。\n• **進攻籃板**：HOU 進攻籃板 15.3 個，對手 11.5（聯盟平均 11.1；HOU 第 1、SA 第 12／30 隊）。\n• **命中率**：HOU 命中率 44.3%，對手 42.4%（聯盟平均 45.8%；HOU 第 25、SA 第 29／30 隊）。\n• **籃板**：HOU 場均 46.0 籃板，對手 44.4（聯盟平均 41.9；HOU 第 2、SA 第 7／30 隊）。\nSA 能反擊的地方：\n• **板凳得分**：SA 這項較好，28.3 對 HOU 的 21.3（聯盟平均 35.3；HOU 第 29、SA 第 23／30 隊）。\n• **三分命中率**：SA 這項較好，33.8% 對 HOU 的 29.9%（聯盟平均 34.9%；HOU 第 29、SA 第 19／30 隊）。\n• **助攻**：SA 這項較好，23.5 對 HOU 的 22.4（聯盟平均 25.0；HOU 第 26、SA 第 22／30 隊）。\n穩定度：這段期間 HOU 單場分差的標準差是 ±14.5 分，SA 是 ±13.2 分；HOU 的表現起伏較大。\n## 賽程與休息\nHOU 休一天；SA 休了 2 天。\n體能上 SA 較佔便宜。\nSA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 225.5\n節奏觀察：本季兩隊進攻合計 239.7 分，防守合計失 204.8 分；近況合計每場出手 72 記三分（聯盟兩隊平均 73）、快攻 30 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 213.9，盤口 225.5，低於盤口 11.6 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 73%；公布信心 84%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 55% 以上的場次 6 勝 3 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：優勢只有 1.4 分（過盤機率 54%），落在盤口正常波動範圍內；SA 在板凳得分上的優勢（28.3 對 21.3）是翻掉這份判讀最直接的路徑；HOU 單場分差起伏 ±14.5 分，單場優勢並不牢靠。",
       "predicted_margin": -4.13,
       "predicted_total": 213.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:12.221754",
+      "created_at": "2026-10-22T22:30:12.267272",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-01",
@@ -7351,15 +7351,15 @@
           "market_margin": -5.5,
           "edge": 1.4,
           "pred_total": 213.9,
-          "total_line": 227.5,
-          "total_edge": -13.6,
+          "total_line": 225.5,
+          "total_edge": -11.6,
           "total_is_default": false
         },
         "probability": {
           "cover": 0.544,
           "win_model": 0.371,
           "win_market": 0.33,
-          "total": 0.763,
+          "total": 0.73,
           "sigma_spread": 12.5,
           "sigma_total": 19.0,
           "sigma_measured": false
@@ -7389,7 +7389,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T22:00:12"
+        "generated_at": "2026-10-22T22:30:12"
       },
       "matches": {
         "id": 45,
@@ -7402,7 +7402,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -5.5,
-        "vegas_total": 227.5,
+        "vegas_total": 225.5,
         "home_team": {
           "code": "SA",
           "full_name": "San Antonio Spurs",
@@ -7438,7 +7438,7 @@
       "predicted_total": 243.7,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-22T22:00:12.275301",
+      "created_at": "2026-10-22T22:30:12.320751",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -7746,7 +7746,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-22T22:00:12"
+        "generated_at": "2026-10-22T22:30:12"
       },
       "matches": {
         "id": 46,
