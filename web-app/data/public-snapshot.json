@@ -1620,7 +1620,7 @@
       "start_time": "2026-10-23T01:30Z",
       "home_team_id": 18,
       "away_team_id": 8,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 96,
       "away_score": 84,
       "period_scores": {
@@ -3437,8 +3437,8 @@
       "analysis_content_zh": "AI 模型指出：DEN 相對 OKC，在近期統計指標上較占優勢。\n\n• **禁區得分（近5場）**：近 5 場呈現「明顯」優勢。\n• **失誤控制（近5場）**：近 5 場呈現「輕微」優勢。\n• **護框阻攻（近5場）**：近 5 場呈現「輕微」優勢。\n\n綜合近 5 場走勢，DEN 在「禁區得分（近5場）」上的表現是本場關鍵指標。",
       "predicted_margin": -5.64,
       "predicted_total": 222.18,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "WIN",
       "created_at": "2026-10-21T23:30:10.404404",
       "analysis_facts": null,
       "matches": {
@@ -3447,7 +3447,7 @@
         "start_time": "2026-10-23T01:30Z",
         "home_team_id": 18,
         "away_team_id": 8,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 96,
         "away_score": 84,
         "period_scores": {
