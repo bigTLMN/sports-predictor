@@ -1659,14 +1659,14 @@
       "home_team_id": 16,
       "away_team_id": 5,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 19,
-      "away_score": 6,
+      "home_score": 24,
+      "away_score": 11,
       "period_scores": {
         "home": [
-          16
+          21
         ],
         "away": [
-          6
+          11
         ]
       },
       "vegas_spread": -1.5,
@@ -1745,7 +1745,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -7.5,
-      "vegas_total": 239.5,
+      "vegas_total": 240.5,
       "home_team": {
         "code": "IND",
         "full_name": "Indiana Pacers",
@@ -1844,7 +1844,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -4.5,
+      "vegas_spread": -5.5,
       "vegas_total": 224.5,
       "home_team": {
         "code": "SA",
@@ -1894,8 +1894,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -4.5,
-      "vegas_total": 237.5,
+      "vegas_spread": -3.5,
+      "vegas_total": 236.5,
       "home_team": {
         "code": "GS",
         "full_name": "Golden State Warriors",
@@ -4705,7 +4705,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -7.5,
-        "vegas_total": 239.5,
+        "vegas_total": 240.5,
         "home_team": {
           "code": "IND",
           "full_name": "Indiana Pacers",
@@ -5772,14 +5772,14 @@
         "home_team_id": 16,
         "away_team_id": 5,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 19,
-        "away_score": 6,
+        "home_score": 24,
+        "away_score": 11,
         "period_scores": {
           "home": [
-            16
+            21
           ],
           "away": [
-            6
+            11
           ]
         },
         "vegas_spread": -1.5,
@@ -7210,8 +7210,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -4.5,
-        "vegas_total": 237.5,
+        "vegas_spread": -3.5,
+        "vegas_total": 236.5,
         "home_team": {
           "code": "GS",
           "full_name": "Golden State Warriors",
@@ -7567,7 +7567,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -4.5,
+        "vegas_spread": -5.5,
         "vegas_total": 224.5,
         "home_team": {
           "code": "SA",
@@ -7961,7 +7961,7 @@
       "predicted_total": 219.4,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-23T20:00:12.369366",
+      "created_at": "2026-10-23T20:30:12.342832",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -8269,7 +8269,7 @@
             5
           ]
         },
-        "generated_at": "2026-10-23T20:00:12"
+        "generated_at": "2026-10-23T20:30:12"
       },
       "matches": {
         "id": 55,
@@ -8318,7 +8318,7 @@
       "predicted_total": 236.85,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-23T20:00:12.422453",
+      "created_at": "2026-10-23T20:30:12.398084",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -8626,7 +8626,7 @@
             2
           ]
         },
-        "generated_at": "2026-10-23T20:00:12"
+        "generated_at": "2026-10-23T20:30:12"
       },
       "matches": {
         "id": 50,
@@ -8675,7 +8675,7 @@
       "predicted_total": 239.28,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-23T20:00:12.481102",
+      "created_at": "2026-10-23T20:30:12.456777",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -8983,7 +8983,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-23T20:00:12"
+        "generated_at": "2026-10-23T20:30:12"
       },
       "matches": {
         "id": 53,
@@ -9032,7 +9032,7 @@
       "predicted_total": 220.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-23T20:00:12.537598",
+      "created_at": "2026-10-23T20:30:12.513421",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-25",
@@ -9348,7 +9348,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-23T20:00:12"
+        "generated_at": "2026-10-23T20:30:12"
       },
       "matches": {
         "id": 51,
@@ -9397,7 +9397,7 @@
       "predicted_total": 229.58,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-23T20:00:12.593535",
+      "created_at": "2026-10-23T20:30:12.569404",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -9705,7 +9705,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-23T20:00:12"
+        "generated_at": "2026-10-23T20:30:12"
       },
       "matches": {
         "id": 54,
@@ -9754,7 +9754,7 @@
       "predicted_total": 236.78,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-23T20:00:12.646758",
+      "created_at": "2026-10-23T20:30:12.623015",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -10070,7 +10070,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-23T20:00:12"
+        "generated_at": "2026-10-23T20:30:12"
       },
       "matches": {
         "id": 56,
@@ -10119,7 +10119,7 @@
       "predicted_total": 222.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-23T20:00:12.706914",
+      "created_at": "2026-10-23T20:30:12.682882",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-10",
@@ -10435,7 +10435,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-23T20:00:12"
+        "generated_at": "2026-10-23T20:30:12"
       },
       "matches": {
         "id": 52,
@@ -10484,7 +10484,7 @@
       "predicted_total": 225.73,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-23T20:00:12.766901",
+      "created_at": "2026-10-23T20:30:12.742599",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-27",
@@ -10792,7 +10792,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-23T20:00:12"
+        "generated_at": "2026-10-23T20:30:12"
       },
       "matches": {
         "id": 57,
