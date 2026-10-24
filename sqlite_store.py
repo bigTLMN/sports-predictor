@@ -158,12 +158,12 @@ def upsert_pick(conn, row):
 def grade_pick(conn, pick_id, spread_outcome, total_outcome):
     if spread_outcome is not None:
         conn.execute(
-            "UPDATE aggregated_picks SET spread_outcome=? WHERE id=? AND spread_outcome IS NULL",
+            "UPDATE aggregated_picks SET spread_outcome=? WHERE id=?",
             (spread_outcome, pick_id),
         )
     if total_outcome is not None:
         conn.execute(
-            "UPDATE aggregated_picks SET total_outcome=? WHERE id=? AND total_outcome IS NULL",
+            "UPDATE aggregated_picks SET total_outcome=? WHERE id=?",
             (total_outcome, pick_id),
         )
     conn.commit()
