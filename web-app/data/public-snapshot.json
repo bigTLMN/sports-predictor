@@ -1926,7 +1926,7 @@
       "away_team_id": 10,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 104,
-      "away_score": 105,
+      "away_score": 109,
       "period_scores": {
         "home": [
           27,
@@ -1938,7 +1938,7 @@
           32,
           29,
           24,
-          20
+          23
         ]
       },
       "vegas_spread": -4.5,
@@ -1962,7 +1962,7 @@
       "start_time": "2026-10-24T01:30Z",
       "home_team_id": 30,
       "away_team_id": 27,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 120,
       "away_score": 119,
       "period_scores": {
@@ -2001,18 +2001,18 @@
       "home_team_id": 26,
       "away_team_id": 14,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 76,
-      "away_score": 82,
+      "home_score": 81,
+      "away_score": 84,
       "period_scores": {
         "home": [
           34,
           22,
-          20
+          25
         ],
         "away": [
           33,
           27,
-          22
+          24
         ]
       },
       "vegas_spread": -4.5,
@@ -2037,20 +2037,20 @@
       "home_team_id": 13,
       "away_team_id": 12,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 103,
-      "away_score": 92,
+      "home_score": 112,
+      "away_score": 97,
       "period_scores": {
         "home": [
           27,
           37,
           39,
-          0
+          9
         ],
         "away": [
           31,
           33,
           26,
-          2
+          7
         ]
       },
       "vegas_spread": -8.5,
@@ -2075,20 +2075,20 @@
       "home_team_id": 23,
       "away_team_id": 22,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 92,
-      "away_score": 103,
+      "home_score": 100,
+      "away_score": 108,
       "period_scores": {
         "home": [
           33,
           31,
           26,
-          2
+          10
         ],
         "away": [
           27,
           32,
           44,
-          0
+          5
         ]
       },
       "vegas_spread": 9.5,
@@ -5244,20 +5244,20 @@
         "home_team_id": 13,
         "away_team_id": 12,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 103,
-        "away_score": 92,
+        "home_score": 112,
+        "away_score": 97,
         "period_scores": {
           "home": [
             27,
             37,
             39,
-            0
+            9
           ],
           "away": [
             31,
             33,
             26,
-            2
+            7
           ]
         },
         "vegas_spread": -8.5,
@@ -6724,20 +6724,20 @@
         "home_team_id": 23,
         "away_team_id": 22,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 92,
-        "away_score": 103,
+        "home_score": 100,
+        "away_score": 108,
         "period_scores": {
           "home": [
             33,
             31,
             26,
-            2
+            10
           ],
           "away": [
             27,
             32,
             44,
-            0
+            5
           ]
         },
         "vegas_spread": 9.5,
@@ -7464,18 +7464,18 @@
         "home_team_id": 26,
         "away_team_id": 14,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 76,
-        "away_score": 82,
+        "home_score": 81,
+        "away_score": 84,
         "period_scores": {
           "home": [
             34,
             22,
-            20
+            25
           ],
           "away": [
             33,
             27,
-            22
+            24
           ]
         },
         "vegas_spread": -4.5,
@@ -7833,7 +7833,7 @@
         "away_team_id": 10,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 104,
-        "away_score": 105,
+        "away_score": 109,
         "period_scores": {
           "home": [
             27,
@@ -7845,7 +7845,7 @@
             32,
             29,
             24,
-            20
+            23
           ]
         },
         "vegas_spread": -4.5,
@@ -7883,8 +7883,8 @@
       "analysis_content_zh": "## 結論\n數字指向 NO（客場）。\n市場開 NO +2.5，等於預期輸 2.5 分、勝率 42%；模型估 NO +1.3（勝率 54%），與盤口差 3.8 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，3.8 分的優勢等於 62% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +2.3；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（65%）。\n## 本季至今\nNO 戰績 2-1（主 1-1、客 1-0），場均得 109.3（29 隊中第 24）、失 108.7（29 隊中第 6），淨勝 +0.7（29 隊中第 15），目前 L1。近況：客場勝 DAL 101-97、主場勝 WSH 107-106、主場負 IND 120-123。\nUTAH 戰績 1-1，場均得 111.0（29 隊中第 23）、失 119.5（29 隊中第 19），淨勝 -8.5（29 隊中第 22），目前 L1。近況：客場勝 PHX 119-116、客場負 MEM 103-123。\n近 3 次交手 NO 3 勝 0 負，平均分差 +13.3（最近一次 2026-04-07：勝 156-137）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-12），NO 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **罰球命中率**：NO 罰球 77.0%，對手 67.5%（聯盟平均 77.5%；NO 第 18、UTAH 第 30／30 隊）。\n• **失分**：NO 場均失 126.3 分，對手 132.8（聯盟平均 115.8；NO 第 25、UTAH 第 30／30 隊）。\n• **淨勝分**：NO 場均淨勝 -10.4 分，對手 -14.2（聯盟平均 -4.7；NO 第 24、UTAH 第 28／30 隊）。\n• **板凳得分**：NO 板凳貢獻 37.6 分，對手 34.0（聯盟平均 35.3；NO 第 13、UTAH 第 19／30 隊）。\nUTAH 能反擊的地方：\n• **助攻**：UTAH 這項較好，31.9 對 NO 的 24.0（聯盟平均 25.0；NO 第 17、UTAH 第 2／30 隊）。\n• **快攻得分**：UTAH 這項較好，24.9 對 NO 的 20.0（聯盟平均 14.2；NO 第 3、UTAH 第 1／30 隊）。\n• **失誤轉換得分**：UTAH 這項較好，20.2 對 NO 的 17.1（聯盟平均 17.5；NO 第 17、UTAH 第 6／30 隊）。\n穩定度：這段期間 NO 單場分差的標準差是 ±13.5 分，UTAH 是 ±22.0 分；NO 的表現較穩。\n## 賽程與休息\nNO 休一天；UTAH 休一天。\nUTAH 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：大分 238.5\n節奏觀察：本季兩隊進攻合計 220.3 分，防守合計失 228.2 分；近況合計每場出手 61 記三分（聯盟兩隊平均 73）、快攻 45 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 243.7，盤口 238.5，高於盤口 5.2 分。以總分相對盤口 ±19.0 分的分佈換算，大分機率 61%；公布信心 65%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 65% 以上的場次 2 勝 3 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：UTAH 在助攻上的優勢（31.9 對 24.0）是翻掉這份判讀最直接的路徑。",
       "predicted_margin": 1.31,
       "predicted_total": 243.7,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-10-22T23:30:12.748643",
       "analysis_facts": {
         "profile_games": 10,
@@ -8201,7 +8201,7 @@
         "start_time": "2026-10-24T01:30Z",
         "home_team_id": 30,
         "away_team_id": 27,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 120,
         "away_score": 119,
         "period_scores": {
