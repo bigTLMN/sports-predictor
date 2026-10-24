@@ -1697,16 +1697,16 @@
       "home_team_id": 2,
       "away_team_id": 28,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 39,
-      "away_score": 31,
+      "home_score": 41,
+      "away_score": 39,
       "period_scores": {
         "home": [
           26,
-          13
+          15
         ],
         "away": [
           27,
-          7
+          12
         ]
       },
       "vegas_spread": -2.5,
@@ -1731,16 +1731,16 @@
       "home_team_id": 4,
       "away_team_id": 1,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 33,
-      "away_score": 50,
+      "home_score": 38,
+      "away_score": 54,
       "period_scores": {
         "home": [
           20,
-          13
+          20
         ],
         "away": [
           33,
-          17
+          21
         ]
       },
       "vegas_spread": 2.5,
@@ -1766,7 +1766,7 @@
       "away_team_id": 7,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 31,
-      "away_score": 48,
+      "away_score": 50,
       "period_scores": {
         "home": [
           27,
@@ -1774,7 +1774,7 @@
         ],
         "away": [
           44,
-          4
+          6
         ]
       },
       "vegas_spread": -7.5,
@@ -1799,16 +1799,16 @@
       "home_team_id": 19,
       "away_team_id": 17,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 28,
-      "away_score": 43,
+      "home_score": 36,
+      "away_score": 46,
       "period_scores": {
         "home": [
           20,
-          8
+          16
         ],
         "away": [
           26,
-          17
+          20
         ]
       },
       "vegas_spread": -1.5,
@@ -1833,16 +1833,16 @@
       "home_team_id": 25,
       "away_team_id": 24,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 32,
-      "away_score": 40,
+      "home_score": 34,
+      "away_score": 42,
       "period_scores": {
         "home": [
           21,
-          11
+          13
         ],
         "away": [
           34,
-          6
+          8
         ]
       },
       "vegas_spread": 9.5,
@@ -1870,7 +1870,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": 1.5,
+      "vegas_spread": 2.5,
       "vegas_total": 235.5,
       "home_team": {
         "code": "MIA",
@@ -1945,7 +1945,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -3.5,
+      "vegas_spread": -4.5,
       "vegas_total": 236.5,
       "home_team": {
         "code": "GS",
@@ -4038,16 +4038,16 @@
         "home_team_id": 2,
         "away_team_id": 28,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 39,
-        "away_score": 31,
+        "home_score": 41,
+        "away_score": 39,
         "period_scores": {
           "home": [
             26,
-            13
+            15
           ],
           "away": [
             27,
-            7
+            12
           ]
         },
         "vegas_spread": -2.5,
@@ -4404,16 +4404,16 @@
         "home_team_id": 4,
         "away_team_id": 1,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 33,
-        "away_score": 50,
+        "home_score": 38,
+        "away_score": 54,
         "period_scores": {
           "home": [
             20,
-            13
+            20
           ],
           "away": [
             33,
-            17
+            21
           ]
         },
         "vegas_spread": 2.5,
@@ -4771,7 +4771,7 @@
         "away_team_id": 7,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 31,
-        "away_score": 48,
+        "away_score": 50,
         "period_scores": {
           "home": [
             27,
@@ -4779,7 +4779,7 @@
           ],
           "away": [
             44,
-            4
+            6
           ]
         },
         "vegas_spread": -7.5,
@@ -5496,7 +5496,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": 1.5,
+        "vegas_spread": 2.5,
         "vegas_total": 235.5,
         "home_team": {
           "code": "MIA",
@@ -6220,16 +6220,16 @@
         "home_team_id": 19,
         "away_team_id": 17,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 28,
-        "away_score": 43,
+        "home_score": 36,
+        "away_score": 46,
         "period_scores": {
           "home": [
             20,
-            8
+            16
           ],
           "away": [
             26,
-            17
+            20
           ]
         },
         "vegas_spread": -1.5,
@@ -6943,16 +6943,16 @@
         "home_team_id": 25,
         "away_team_id": 24,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 32,
-        "away_score": 40,
+        "home_score": 34,
+        "away_score": 42,
         "period_scores": {
           "home": [
             21,
-            11
+            13
           ],
           "away": [
             34,
-            6
+            8
           ]
         },
         "vegas_spread": 9.5,
@@ -7312,7 +7312,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -3.5,
+        "vegas_spread": -4.5,
         "vegas_total": 236.5,
         "home_team": {
           "code": "GS",
@@ -10940,6 +10940,2521 @@
       "recommended_team": {
         "code": "PHX",
         "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png"
+      }
+    },
+    {
+      "id": 37,
+      "match_id": 59,
+      "recommended_team_id": 11,
+      "confidence_score": 68.0,
+      "spread_logic": "AI projects IND to win by 4.6 pts",
+      "spread_logic_zh": "AI 預測 IND 贏 4.6 分",
+      "line_info": "0.0",
+      "ou_pick": "OVER",
+      "ou_line": 225.0,
+      "ou_confidence": 51.0,
+      "analysis_content": "## The Call\nThe number says IND, on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has IND by 4.6, a 64% win probability.\nConfidence is moderate at 68%.\n## Season So Far\nIND is 1-1 (0-1 home, 1-0 away), scoring 125.0 (5th of 30) and allowing 124.0 (27th of 30) for a +1.0 margin (14th of 30), currently on a W1 run. Last out: L 127-128 vs MIL, W 123-120 at NO.\nBKN is 0-2, scoring 115.5 (19th of 30) and allowing 127.0 (28th of 30) for a -11.5 margin (27th of 30), on a L2 run. Last out: L 128-144 at MIA, L 103-110 vs CHA.\nHead to head, IND is 2-1 in the last 3 meetings with an average margin of +8.3 (most recent 2026-04-09: W 123-94).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-04-12), IND's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Assists** — IND records 33.4 assists to 23.2 (league avg 25.0; IND 1st vs BKN 23rd of 30).\n• **Points** — IND scores 118.1 a night to 103.4 (league avg 111.1; IND 3rd vs BKN 28th of 30).\n• **Net margin** — IND outscores opponents by -1.6 per game against -13.7 (league avg -4.7; IND 11th vs BKN 27th of 30).\n• **Rebounds** — IND pulls 43.3 rebounds to 35.4 (league avg 41.9; IND 12th vs BKN 30th of 30).\nWhere BKN pushes back:\n• **Turnovers** — BKN holds the better number, 13.1 to IND's 15.3 (league avg 13.6; IND 27th vs BKN 11th of 30).\n• **Points allowed** — BKN holds the better number, 117.1 to IND's 119.7 (league avg 115.8; IND 22nd vs BKN 18th of 30).\nConsistency check: IND's game margins over this stretch vary by ±16.4 points (one standard deviation) against ±18.0 for BKN; the steadier side is IND.\n## Schedule & Rest\nIND comes in with 3 days of rest; BKN comes in with 3 days of rest.\nBKN has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 240.5 points and the two defences concede 251.0; on record they attempt 76 threes between them (league pair average 73) with 32 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 225.5 total points against a line of 225.0, 0.5 points above the number. With totals spreading ±19.0 points around the line, that is a 51% probability of the over; published confidence is 51%.\n## Model Track Record\nThis season, published spread picks are 10-7 (59%); at 68%+ confidence they are 2-2; totals are 9-8 (53%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: BKN's edge in Turnovers (13.1 vs 15.3) is the cleanest path to an upset of this read; IND's results swing ±16.4 points game to game, so any single-game edge is fragile; sample sizes this early in the season are thin and roster changes are not in the box scores yet.",
+      "analysis_content_zh": "## 結論\n結論落在客場作戰的 IND。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 IND 贏 4.6 分，勝率 64%。\n信心中等（68%）。\n## 本季至今\nIND 戰績 1-1（主 0-1、客 1-0），場均得 125.0（30 隊中第 5）、失 124.0（30 隊中第 27），淨勝 +1.0（30 隊中第 14），目前 W1。近況：主場負 MIL 127-128、客場勝 NO 123-120。\nBKN 戰績 0-2，場均得 115.5（30 隊中第 19）、失 127.0（30 隊中第 28），淨勝 -11.5（30 隊中第 27），目前 L2。近況：客場負 MIA 128-144、主場負 CHA 103-110。\n近 3 次交手 IND 2 勝 1 負，平均分差 +8.3（最近一次 2026-04-09：勝 123-94）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-12）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **助攻**：IND 助攻 33.4 次，對手 23.2（聯盟平均 25.0；IND 第 1、BKN 第 23／30 隊）。\n• **得分**：IND 場均得 118.1 分，對手 103.4（聯盟平均 111.1；IND 第 3、BKN 第 28／30 隊）。\n• **淨勝分**：IND 場均淨勝 -1.6 分，對手 -13.7（聯盟平均 -4.7；IND 第 11、BKN 第 27／30 隊）。\n• **籃板**：IND 場均 43.3 籃板，對手 35.4（聯盟平均 41.9；IND 第 12、BKN 第 30／30 隊）。\nBKN 能反擊的地方：\n• **失誤**：BKN 這項較好，13.1 對 IND 的 15.3（聯盟平均 13.6；IND 第 27、BKN 第 11／30 隊）。\n• **失分**：BKN 這項較好，117.1 對 IND 的 119.7（聯盟平均 115.8；IND 第 22、BKN 第 18／30 隊）。\n穩定度：這段期間 IND 單場分差的標準差是 ±16.4 分，BKN 是 ±18.0 分；IND 的表現較穩。\n## 賽程與休息\nIND 休了 3 天；BKN 休了 3 天。\nBKN 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 240.5 分，防守合計失 251.0 分；近況合計每場出手 76 記三分（聯盟兩隊平均 73）、快攻 32 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 225.5，盤口 225.0，高於盤口 0.5 分。以總分相對盤口 ±19.0 分的分佈換算，大分機率 51%；公布信心 51%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 7 負（59%）；信心 68% 以上的場次 2 勝 2 負；大小分 9 勝 8 負（53%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：BKN 在失誤上的優勢（13.1 對 15.3）是翻掉這份判讀最直接的路徑；IND 單場分差起伏 ±16.4 分，單場優勢並不牢靠；季初樣本很小，陣容異動也還沒反映在技術統計裡。",
+      "predicted_margin": 4.61,
+      "predicted_total": 225.49,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-24T00:00:12.401140",
+      "analysis_facts": {
+        "profile_games": 10,
+        "profile_through": "2026-04-12",
+        "league_teams": 30,
+        "season_teams": 30,
+        "rows": [
+          {
+            "key": "ppg",
+            "en": "Points",
+            "zh": "得分",
+            "rec": 118.1,
+            "opp": 103.4,
+            "avg": 111.1,
+            "rec_rank": 3,
+            "opp_rank": 28,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "papg",
+            "en": "Points allowed",
+            "zh": "失分",
+            "rec": 119.7,
+            "opp": 117.1,
+            "avg": 115.8,
+            "rec_rank": 22,
+            "opp_rank": 18,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "net",
+            "en": "Net margin",
+            "zh": "淨勝分",
+            "rec": -1.6,
+            "opp": -13.7,
+            "avg": -4.7,
+            "rec_rank": 11,
+            "opp_rank": 27,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fg",
+            "en": "FG%",
+            "zh": "命中率",
+            "rec": 48.7,
+            "opp": 44.4,
+            "avg": 45.8,
+            "rec_rank": 3,
+            "opp_rank": 24,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tp",
+            "en": "3P%",
+            "zh": "三分命中率",
+            "rec": 38.5,
+            "opp": 32.6,
+            "avg": 34.9,
+            "rec_rank": 6,
+            "opp_rank": 26,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tpa",
+            "en": "3PA",
+            "zh": "三分出手",
+            "rec": 40.3,
+            "opp": 35.9,
+            "avg": 36.4,
+            "rec_rank": 7,
+            "opp_rank": 16,
+            "unit": "",
+            "better": null
+          },
+          {
+            "key": "ft",
+            "en": "FT%",
+            "zh": "罰球命中率",
+            "rec": 80.3,
+            "opp": 78.6,
+            "avg": 77.5,
+            "rec_rank": 8,
+            "opp_rank": 10,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "reb",
+            "en": "Rebounds",
+            "zh": "籃板",
+            "rec": 43.3,
+            "opp": 35.4,
+            "avg": 41.9,
+            "rec_rank": 12,
+            "opp_rank": 30,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "oreb",
+            "en": "Off. rebounds",
+            "zh": "進攻籃板",
+            "rec": 8.6,
+            "opp": 7.9,
+            "avg": 11.1,
+            "rec_rank": 28,
+            "opp_rank": 30,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "ast",
+            "en": "Assists",
+            "zh": "助攻",
+            "rec": 33.4,
+            "opp": 23.2,
+            "avg": 25.0,
+            "rec_rank": 1,
+            "opp_rank": 23,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "tov",
+            "en": "Turnovers",
+            "zh": "失誤",
+            "rec": 15.3,
+            "opp": 13.1,
+            "avg": 13.6,
+            "rec_rank": 27,
+            "opp_rank": 11,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "paint",
+            "en": "Paint points",
+            "zh": "禁區得分",
+            "rec": 49.6,
+            "opp": 46.4,
+            "avg": 47.4,
+            "rec_rank": 11,
+            "opp_rank": 15,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fb",
+            "en": "Fast-break points",
+            "zh": "快攻得分",
+            "rec": 20.0,
+            "opp": 12.5,
+            "avg": 14.2,
+            "rec_rank": 4,
+            "opp_rank": 20,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "pot",
+            "en": "Points off turnovers",
+            "zh": "失誤轉換得分",
+            "rec": 17.7,
+            "opp": 17.6,
+            "avg": 17.5,
+            "rec_rank": 14,
+            "opp_rank": 15,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "bench",
+            "en": "Bench points",
+            "zh": "板凳得分",
+            "rec": 47.9,
+            "opp": 40.0,
+            "avg": 35.3,
+            "rec_rank": 3,
+            "opp_rank": 11,
+            "unit": "",
+            "better": "high"
+          }
+        ],
+        "form": {
+          "rec": {
+            "games": 2,
+            "wins": 1,
+            "losses": 1,
+            "home": [
+              0,
+              1
+            ],
+            "away": [
+              1,
+              0
+            ],
+            "ppg": 125.0,
+            "papg": 124.0,
+            "margin": 1.0,
+            "rank": {
+              "ppg": 5,
+              "papg": 27,
+              "margin": 14
+            },
+            "streak": "W1",
+            "ats": null,
+            "ou": null,
+            "rest": 4
+          },
+          "opp": {
+            "games": 2,
+            "wins": 0,
+            "losses": 2,
+            "home": [
+              0,
+              1
+            ],
+            "away": [
+              0,
+              1
+            ],
+            "ppg": 115.5,
+            "papg": 127.0,
+            "margin": -11.5,
+            "rank": {
+              "ppg": 19,
+              "papg": 28,
+              "margin": 27
+            },
+            "streak": "L2",
+            "ats": null,
+            "ou": null,
+            "rest": 4
+          }
+        },
+        "volatility": {
+          "rec": 16.4,
+          "opp": 18.0
+        },
+        "h2h": [
+          {
+            "date": "2025-11-05",
+            "won": false,
+            "for": 103,
+            "against": 112
+          },
+          {
+            "date": "2026-02-11",
+            "won": true,
+            "for": 115,
+            "against": 110
+          },
+          {
+            "date": "2026-04-09",
+            "won": true,
+            "for": 123,
+            "against": 94
+          }
+        ],
+        "projection": {
+          "model_margin": 4.6,
+          "raw_margin": 4.6,
+          "market_margin": 0.0,
+          "edge": 4.6,
+          "pred_total": 225.5,
+          "total_line": 225.0,
+          "total_edge": 0.5,
+          "total_is_default": true
+        },
+        "probability": {
+          "cover": 0.644,
+          "win_model": 0.644,
+          "win_market": null,
+          "total": 0.51,
+          "sigma_spread": 12.5,
+          "sigma_total": 19.0,
+          "sigma_measured": false
+        },
+        "effects": {
+          "since": "2023-06-14",
+          "years": 3,
+          "home_margin": 2.031,
+          "home_win_rate": 0.551,
+          "home_n": 4161,
+          "avg_total": 227.896,
+          "b2b_margin": -1.873,
+          "b2b_win_rate": 0.454,
+          "b2b_n": 1323
+        },
+        "record": {
+          "spread": [
+            10,
+            7
+          ],
+          "total": [
+            9,
+            8
+          ],
+          "spread_at_conf": [
+            2,
+            2
+          ]
+        },
+        "generated_at": "2026-10-24T00:00:12"
+      },
+      "matches": {
+        "id": 59,
+        "date": "2026-10-25",
+        "start_time": "2026-10-25T22:00Z",
+        "home_team_id": 3,
+        "away_team_id": 11,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": null,
+        "vegas_total": null,
+        "home_team": {
+          "code": "BKN",
+          "full_name": "Brooklyn Nets",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png"
+        },
+        "away_team": {
+          "code": "IND",
+          "full_name": "Indiana Pacers",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png"
+        },
+        "home_team_nba_id": 1610612751,
+        "away_team_nba_id": 1610612754
+      },
+      "recommended_team": {
+        "code": "IND",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png"
+      }
+    },
+    {
+      "id": 38,
+      "match_id": 61,
+      "recommended_team_id": 24,
+      "confidence_score": 61.0,
+      "spread_logic": "AI projects TOR to win by 2.8 pts",
+      "spread_logic_zh": "AI 預測 TOR 贏 2.8 分",
+      "line_info": "0.0",
+      "ou_pick": "UNDER",
+      "ou_line": 225.0,
+      "ou_confidence": 51.0,
+      "analysis_content": "## The Call\nWe land on TOR on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has TOR by 2.8, a 59% win probability.\nConfidence is modest at 61%.\n## Season So Far\nTOR is 1-2 (1-0 home, 0-2 away), scoring 126.7 (3rd of 30) and allowing 114.3 (16th of 30) for a +12.3 margin (7th of 30), currently on a W1 run. Last out: L 120-122 at NY, L 125-129 at DET, W 135-92 vs CHI.\nMIN is 1-2, scoring 117.7 (13th of 30) and allowing 122.3 (23rd of 30) for a -4.7 margin (20th of 30), on a W1 run. Last out: L 106-128 vs DET, L 116-133 at CHI, W 131-106 at MIA.\nHead to head, TOR is 1-2 in the last 3 meetings with an average margin of -1.7 (most recent 2026-03-05: L 107-115).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-05-03), TOR's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **FG%** — TOR shoots 49.2% from the floor to 43.2% (league avg 45.8%; TOR 2nd vs MIN 27th of 30).\n• **Fast-break points** — TOR runs for 16.3 fast-break points to 10.4 (league avg 14.2; TOR 8th vs MIN 24th of 30).\n• **Net margin** — TOR outscores opponents by +2.0 per game against -6.4 (league avg -4.7; TOR 8th vs MIN 18th of 30).\n• **Assists** — TOR records 26.8 assists to 22.8 (league avg 25.0; TOR 6th vs MIN 25th of 30).\nWhere MIN pushes back:\n• **Rebounds** — MIN holds the better number, 45.4 to TOR's 39.7 (league avg 41.9; TOR 23rd vs MIN 4th of 30).\n• **Off. rebounds** — MIN holds the better number, 12.9 to TOR's 10.0 (league avg 11.1; TOR 24th vs MIN 4th of 30).\n• **Bench points** — MIN holds the better number, 40.9 to TOR's 35.6 (league avg 35.3; TOR 15th vs MIN 9th of 30).\nConsistency check: TOR's game margins over this stretch vary by ±16.2 points (one standard deviation) against ±19.2 for MIN; the steadier side is TOR.\n## Schedule & Rest\nTOR comes in with 3 days of rest; MIN comes in with 3 days of rest.\nMIN has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 244.3 points and the two defences concede 236.7; on record they attempt 60 threes between them (league pair average 73) with 27 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 224.4 total points against a line of 225.0, 0.6 points below the number. With totals spreading ±19.0 points around the line, that is a 51% probability of the under; published confidence is 51%.\n## Model Track Record\nThis season, published spread picks are 10-7 (59%); at 61%+ confidence they are 3-3; totals are 9-8 (53%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: MIN's edge in Rebounds (45.4 vs 39.7) is the cleanest path to an upset of this read; TOR's results swing ±16.2 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n本場站 客場的 TOR。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 TOR 贏 2.8 分，勝率 59%。\n信心偏低（61%）。\n## 本季至今\nTOR 戰績 1-2（主 1-0、客 0-2），場均得 126.7（30 隊中第 3）、失 114.3（30 隊中第 16），淨勝 +12.3（30 隊中第 7），目前 W1。近況：客場負 NY 120-122、客場負 DET 125-129、主場勝 CHI 135-92。\nMIN 戰績 1-2，場均得 117.7（30 隊中第 13）、失 122.3（30 隊中第 23），淨勝 -4.7（30 隊中第 20），目前 W1。近況：主場負 DET 106-128、客場負 CHI 116-133、客場勝 MIA 131-106。\n近 3 次交手 TOR 1 勝 2 負，平均分差 -1.7（最近一次 2026-03-05：負 107-115）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-03），TOR 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **命中率**：TOR 命中率 49.2%，對手 43.2%（聯盟平均 45.8%；TOR 第 2、MIN 第 27／30 隊）。\n• **快攻得分**：TOR 快攻 16.3 分，對手 10.4（聯盟平均 14.2；TOR 第 8、MIN 第 24／30 隊）。\n• **淨勝分**：TOR 場均淨勝 +2.0 分，對手 -6.4（聯盟平均 -4.7；TOR 第 8、MIN 第 18／30 隊）。\n• **助攻**：TOR 助攻 26.8 次，對手 22.8（聯盟平均 25.0；TOR 第 6、MIN 第 25／30 隊）。\nMIN 能反擊的地方：\n• **籃板**：MIN 這項較好，45.4 對 TOR 的 39.7（聯盟平均 41.9；TOR 第 23、MIN 第 4／30 隊）。\n• **進攻籃板**：MIN 這項較好，12.9 對 TOR 的 10.0（聯盟平均 11.1；TOR 第 24、MIN 第 4／30 隊）。\n• **板凳得分**：MIN 這項較好，40.9 對 TOR 的 35.6（聯盟平均 35.3；TOR 第 15、MIN 第 9／30 隊）。\n穩定度：這段期間 TOR 單場分差的標準差是 ±16.2 分，MIN 是 ±19.2 分；TOR 的表現較穩。\n## 賽程與休息\nTOR 休了 3 天；MIN 休了 3 天。\nMIN 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 244.3 分，防守合計失 236.7 分；近況合計每場出手 60 記三分（聯盟兩隊平均 73）、快攻 27 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 224.4，盤口 225.0，低於盤口 0.6 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 51%；公布信心 51%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 7 負（59%）；信心 61% 以上的場次 3 勝 3 負；大小分 9 勝 8 負（53%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：MIN 在籃板上的優勢（45.4 對 39.7）是翻掉這份判讀最直接的路徑；TOR 單場分差起伏 ±16.2 分，單場優勢並不牢靠。",
+      "predicted_margin": 2.83,
+      "predicted_total": 224.38,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-24T00:00:12.453530",
+      "analysis_facts": {
+        "profile_games": 10,
+        "profile_through": "2026-05-03",
+        "league_teams": 30,
+        "season_teams": 30,
+        "rows": [
+          {
+            "key": "ppg",
+            "en": "Points",
+            "zh": "得分",
+            "rec": 113.0,
+            "opp": 107.5,
+            "avg": 111.1,
+            "rec_rank": 12,
+            "opp_rank": 22,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "papg",
+            "en": "Points allowed",
+            "zh": "失分",
+            "rec": 111.0,
+            "opp": 113.9,
+            "avg": 115.8,
+            "rec_rank": 9,
+            "opp_rank": 15,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "net",
+            "en": "Net margin",
+            "zh": "淨勝分",
+            "rec": 2.0,
+            "opp": -6.4,
+            "avg": -4.7,
+            "rec_rank": 8,
+            "opp_rank": 18,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fg",
+            "en": "FG%",
+            "zh": "命中率",
+            "rec": 49.2,
+            "opp": 43.2,
+            "avg": 45.8,
+            "rec_rank": 2,
+            "opp_rank": 27,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tp",
+            "en": "3P%",
+            "zh": "三分命中率",
+            "rec": 38.1,
+            "opp": 33.3,
+            "avg": 34.9,
+            "rec_rank": 7,
+            "opp_rank": 23,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tpa",
+            "en": "3PA",
+            "zh": "三分出手",
+            "rec": 29.0,
+            "opp": 30.6,
+            "avg": 36.4,
+            "rec_rank": 29,
+            "opp_rank": 26,
+            "unit": "",
+            "better": null
+          },
+          {
+            "key": "ft",
+            "en": "FT%",
+            "zh": "罰球命中率",
+            "rec": 72.9,
+            "opp": 77.2,
+            "avg": 77.5,
+            "rec_rank": 28,
+            "opp_rank": 17,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "reb",
+            "en": "Rebounds",
+            "zh": "籃板",
+            "rec": 39.7,
+            "opp": 45.4,
+            "avg": 41.9,
+            "rec_rank": 23,
+            "opp_rank": 4,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "oreb",
+            "en": "Off. rebounds",
+            "zh": "進攻籃板",
+            "rec": 10.0,
+            "opp": 12.9,
+            "avg": 11.1,
+            "rec_rank": 24,
+            "opp_rank": 4,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "ast",
+            "en": "Assists",
+            "zh": "助攻",
+            "rec": 26.8,
+            "opp": 22.8,
+            "avg": 25.0,
+            "rec_rank": 6,
+            "opp_rank": 25,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "tov",
+            "en": "Turnovers",
+            "zh": "失誤",
+            "rec": 13.5,
+            "opp": 13.3,
+            "avg": 13.6,
+            "rec_rank": 16,
+            "opp_rank": 13,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "paint",
+            "en": "Paint points",
+            "zh": "禁區得分",
+            "rec": 51.6,
+            "opp": 50.2,
+            "avg": 47.4,
+            "rec_rank": 7,
+            "opp_rank": 9,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fb",
+            "en": "Fast-break points",
+            "zh": "快攻得分",
+            "rec": 16.3,
+            "opp": 10.4,
+            "avg": 14.2,
+            "rec_rank": 8,
+            "opp_rank": 24,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "pot",
+            "en": "Points off turnovers",
+            "zh": "失誤轉換得分",
+            "rec": 21.3,
+            "opp": 16.7,
+            "avg": 17.5,
+            "rec_rank": 2,
+            "opp_rank": 20,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "bench",
+            "en": "Bench points",
+            "zh": "板凳得分",
+            "rec": 35.6,
+            "opp": 40.9,
+            "avg": 35.3,
+            "rec_rank": 15,
+            "opp_rank": 9,
+            "unit": "",
+            "better": "high"
+          }
+        ],
+        "form": {
+          "rec": {
+            "games": 3,
+            "wins": 1,
+            "losses": 2,
+            "home": [
+              1,
+              0
+            ],
+            "away": [
+              0,
+              2
+            ],
+            "ppg": 126.7,
+            "papg": 114.3,
+            "margin": 12.3,
+            "rank": {
+              "ppg": 3,
+              "papg": 16,
+              "margin": 7
+            },
+            "streak": "W1",
+            "ats": null,
+            "ou": null,
+            "rest": 4
+          },
+          "opp": {
+            "games": 3,
+            "wins": 1,
+            "losses": 2,
+            "home": [
+              0,
+              1
+            ],
+            "away": [
+              1,
+              1
+            ],
+            "ppg": 117.7,
+            "papg": 122.3,
+            "margin": -4.7,
+            "rank": {
+              "ppg": 13,
+              "papg": 23,
+              "margin": 20
+            },
+            "streak": "W1",
+            "ats": null,
+            "ou": null,
+            "rest": 4
+          }
+        },
+        "volatility": {
+          "rec": 16.2,
+          "opp": 19.2
+        },
+        "h2h": [
+          {
+            "date": "2024-11-21",
+            "won": true,
+            "for": 110,
+            "against": 105
+          },
+          {
+            "date": "2026-02-04",
+            "won": false,
+            "for": 126,
+            "against": 128
+          },
+          {
+            "date": "2026-03-05",
+            "won": false,
+            "for": 107,
+            "against": 115
+          }
+        ],
+        "projection": {
+          "model_margin": 2.8,
+          "raw_margin": 2.8,
+          "market_margin": 0.0,
+          "edge": 2.8,
+          "pred_total": 224.4,
+          "total_line": 225.0,
+          "total_edge": -0.6,
+          "total_is_default": true
+        },
+        "probability": {
+          "cover": 0.59,
+          "win_model": 0.59,
+          "win_market": null,
+          "total": 0.513,
+          "sigma_spread": 12.5,
+          "sigma_total": 19.0,
+          "sigma_measured": false
+        },
+        "effects": {
+          "since": "2023-06-14",
+          "years": 3,
+          "home_margin": 2.031,
+          "home_win_rate": 0.551,
+          "home_n": 4161,
+          "avg_total": 227.896,
+          "b2b_margin": -1.873,
+          "b2b_win_rate": 0.454,
+          "b2b_n": 1323
+        },
+        "record": {
+          "spread": [
+            10,
+            7
+          ],
+          "total": [
+            9,
+            8
+          ],
+          "spread_at_conf": [
+            3,
+            3
+          ]
+        },
+        "generated_at": "2026-10-24T00:00:12"
+      },
+      "matches": {
+        "id": 61,
+        "date": "2026-10-25",
+        "start_time": "2026-10-25T23:00Z",
+        "home_team_id": 17,
+        "away_team_id": 24,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": null,
+        "vegas_total": null,
+        "home_team": {
+          "code": "MIN",
+          "full_name": "Minnesota Timberwolves",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/min.png"
+        },
+        "away_team": {
+          "code": "TOR",
+          "full_name": "Toronto Raptors",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png"
+        },
+        "home_team_nba_id": 1610612750,
+        "away_team_nba_id": 1610612761
+      },
+      "recommended_team": {
+        "code": "TOR",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png"
+      }
+    },
+    {
+      "id": 39,
+      "match_id": 62,
+      "recommended_team_id": 18,
+      "confidence_score": 82.0,
+      "spread_logic": "AI projects OKC to win by 8.0 pts",
+      "spread_logic_zh": "AI 預測 OKC 贏 8.0 分",
+      "line_info": "0.0",
+      "ou_pick": "UNDER",
+      "ou_line": 225.0,
+      "ou_confidence": 67.0,
+      "analysis_content": "## The Call\nThe number says OKC, at home.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has OKC by 8.0, a 74% win probability.\nConfidence is high at 82%.\n## Season So Far\nOKC is 2-1 (1-0 home, 1-1 away), scoring 100.3 (29th of 30) and allowing 101.3 (3rd of 30) for a -1.0 margin (17th of 30), currently on a W2 run. Last out: L 89-116 at HOU, W 116-104 at SA, W 96-84 vs DEN.\nLAC is 2-0, scoring 121.5 (8th of 30) and allowing 103.0 (4th of 30) for a +18.5 margin (3rd of 30), on a W2 run. Last out: W 122-110 vs DEN, W 121-96 vs SAC.\nAgainst the number: OKC 1-0 against the spread (100%); 0 over / 1 under.\nHead to head, OKC is 3-0 in the last 3 meetings with an average margin of +19.3 (most recent 2026-04-08: W 128-110).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-05-30) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Turnovers** — OKC commits 12.3 turnovers to 13.5 (league avg 13.6; OKC 8th vs LAC 15th of 30).\n• **Points allowed** — OKC gives up 111.4 to 115.0 (league avg 115.8; OKC 10th vs LAC 17th of 30).\n• **Assists** — OKC records 25.6 assists to 24.0 (league avg 25.0; OKC 10th vs LAC 18th of 30).\n• **Net margin** — OKC outscores opponents by +2.0 per game against -0.9 (league avg -4.7; OKC 7th vs LAC 10th of 30).\nWhere LAC pushes back:\n• **Paint points** — LAC holds the better number, 50.0 to OKC's 42.0 (league avg 47.4; OKC 24th vs LAC 10th of 30).\n• **Fast-break points** — LAC holds the better number, 14.8 to OKC's 10.3 (league avg 14.2; OKC 25th vs LAC 11th of 30).\n• **FG%** — LAC holds the better number, 48.1% to OKC's 46.3% (league avg 45.8%; OKC 13th vs LAC 5th of 30).\nConsistency check: OKC's game margins over this stretch vary by ±16.1 points (one standard deviation) against ±15.5 for LAC; the more volatile side is OKC.\n## Schedule & Rest\nOKC comes in with 2 days of rest; LAC comes in with 3 days of rest.\nThe rest edge belongs to LAC.\nOKC has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 221.8 points and the two defences concede 204.3; on record they attempt 71 threes between them (league pair average 73) with 25 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 219.1 total points against a line of 225.0, 5.9 points below the number. With totals spreading ±19.0 points around the line, that is a 62% probability of the under; published confidence is 67%.\n## Model Track Record\nThis season, published spread picks are 10-7 (59%); totals are 9-8 (53%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: LAC's edge in Paint points (50.0 vs 42.0) is the cleanest path to an upset of this read; OKC's results swing ±16.1 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n結論落在主場作戰的 OKC。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 OKC 贏 8.0 分，勝率 74%。\n信心高（82%）。\n## 本季至今\nOKC 戰績 2-1（主 1-0、客 1-1），場均得 100.3（30 隊中第 29）、失 101.3（30 隊中第 3），淨勝 -1.0（30 隊中第 17），目前 W2。近況：客場負 HOU 89-116、客場勝 SA 116-104、主場勝 DEN 96-84。\nLAC 戰績 2-0，場均得 121.5（30 隊中第 8）、失 103.0（30 隊中第 4），淨勝 +18.5（30 隊中第 3），目前 W2。近況：主場勝 DEN 122-110、主場勝 SAC 121-96。\n對盤口表現：OKC 讓分 1 勝 0 負 (100%)；大分 0 次、小分 1 次。\n近 3 次交手 OKC 3 勝 0 負，平均分差 +19.3（最近一次 2026-04-08：勝 128-110）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-05-30）裡，OKC 和 LAC 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失誤**：OKC 失誤 12.3 次，對手 13.5（聯盟平均 13.6；OKC 第 8、LAC 第 15／30 隊）。\n• **失分**：OKC 場均失 111.4 分，對手 115.0（聯盟平均 115.8；OKC 第 10、LAC 第 17／30 隊）。\n• **助攻**：OKC 助攻 25.6 次，對手 24.0（聯盟平均 25.0；OKC 第 10、LAC 第 18／30 隊）。\n• **淨勝分**：OKC 場均淨勝 +2.0 分，對手 -0.9（聯盟平均 -4.7；OKC 第 7、LAC 第 10／30 隊）。\nLAC 能反擊的地方：\n• **禁區得分**：LAC 這項較好，50.0 對 OKC 的 42.0（聯盟平均 47.4；OKC 第 24、LAC 第 10／30 隊）。\n• **快攻得分**：LAC 這項較好，14.8 對 OKC 的 10.3（聯盟平均 14.2；OKC 第 25、LAC 第 11／30 隊）。\n• **命中率**：LAC 這項較好，48.1% 對 OKC 的 46.3%（聯盟平均 45.8%；OKC 第 13、LAC 第 5／30 隊）。\n穩定度：這段期間 OKC 單場分差的標準差是 ±16.1 分，LAC 是 ±15.5 分；OKC 的表現起伏較大。\n## 賽程與休息\nOKC 休了 2 天；LAC 休了 3 天。\n體能上 LAC 較佔便宜。\nOKC 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 221.8 分，防守合計失 204.3 分；近況合計每場出手 71 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 219.1，盤口 225.0，低於盤口 5.9 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 62%；公布信心 67%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 7 負（59%）；大小分 9 勝 8 負（53%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：LAC 在禁區得分上的優勢（50.0 對 42.0）是翻掉這份判讀最直接的路徑；OKC 單場分差起伏 ±16.1 分，單場優勢並不牢靠。",
+      "predicted_margin": 8.04,
+      "predicted_total": 219.08,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-24T00:00:12.511509",
+      "analysis_facts": {
+        "profile_games": 10,
+        "profile_through": "2026-05-30",
+        "league_teams": 30,
+        "season_teams": 30,
+        "rows": [
+          {
+            "key": "ppg",
+            "en": "Points",
+            "zh": "得分",
+            "rec": 113.4,
+            "opp": 114.1,
+            "avg": 111.1,
+            "rec_rank": 11,
+            "opp_rank": 8,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "papg",
+            "en": "Points allowed",
+            "zh": "失分",
+            "rec": 111.4,
+            "opp": 115.0,
+            "avg": 115.8,
+            "rec_rank": 10,
+            "opp_rank": 17,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "net",
+            "en": "Net margin",
+            "zh": "淨勝分",
+            "rec": 2.0,
+            "opp": -0.9,
+            "avg": -4.7,
+            "rec_rank": 7,
+            "opp_rank": 10,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fg",
+            "en": "FG%",
+            "zh": "命中率",
+            "rec": 46.3,
+            "opp": 48.1,
+            "avg": 45.8,
+            "rec_rank": 13,
+            "opp_rank": 5,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tp",
+            "en": "3P%",
+            "zh": "三分命中率",
+            "rec": 35.9,
+            "opp": 37.2,
+            "avg": 34.9,
+            "rec_rank": 9,
+            "opp_rank": 8,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tpa",
+            "en": "3PA",
+            "zh": "三分出手",
+            "rec": 36.4,
+            "opp": 34.5,
+            "avg": 36.4,
+            "rec_rank": 14,
+            "opp_rank": 19,
+            "unit": "",
+            "better": null
+          },
+          {
+            "key": "ft",
+            "en": "FT%",
+            "zh": "罰球命中率",
+            "rec": 83.7,
+            "opp": 83.5,
+            "avg": 77.5,
+            "rec_rank": 3,
+            "opp_rank": 4,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "reb",
+            "en": "Rebounds",
+            "zh": "籃板",
+            "rec": 40.6,
+            "opp": 39.7,
+            "avg": 41.9,
+            "rec_rank": 20,
+            "opp_rank": 22,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "oreb",
+            "en": "Off. rebounds",
+            "zh": "進攻籃板",
+            "rec": 10.7,
+            "opp": 10.2,
+            "avg": 11.1,
+            "rec_rank": 19,
+            "opp_rank": 21,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "ast",
+            "en": "Assists",
+            "zh": "助攻",
+            "rec": 25.6,
+            "opp": 24.0,
+            "avg": 25.0,
+            "rec_rank": 10,
+            "opp_rank": 18,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "tov",
+            "en": "Turnovers",
+            "zh": "失誤",
+            "rec": 12.3,
+            "opp": 13.5,
+            "avg": 13.6,
+            "rec_rank": 8,
+            "opp_rank": 15,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "paint",
+            "en": "Paint points",
+            "zh": "禁區得分",
+            "rec": 42.0,
+            "opp": 50.0,
+            "avg": 47.4,
+            "rec_rank": 24,
+            "opp_rank": 10,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fb",
+            "en": "Fast-break points",
+            "zh": "快攻得分",
+            "rec": 10.3,
+            "opp": 14.8,
+            "avg": 14.2,
+            "rec_rank": 25,
+            "opp_rank": 11,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "pot",
+            "en": "Points off turnovers",
+            "zh": "失誤轉換得分",
+            "rec": 20.6,
+            "opp": 22.4,
+            "avg": 17.5,
+            "rec_rank": 4,
+            "opp_rank": 1,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "bench",
+            "en": "Bench points",
+            "zh": "板凳得分",
+            "rec": 44.9,
+            "opp": 43.1,
+            "avg": 35.3,
+            "rec_rank": 5,
+            "opp_rank": 8,
+            "unit": "",
+            "better": "high"
+          }
+        ],
+        "form": {
+          "rec": {
+            "games": 3,
+            "wins": 2,
+            "losses": 1,
+            "home": [
+              1,
+              0
+            ],
+            "away": [
+              1,
+              1
+            ],
+            "ppg": 100.3,
+            "papg": 101.3,
+            "margin": -1.0,
+            "rank": {
+              "ppg": 29,
+              "papg": 3,
+              "margin": 17
+            },
+            "streak": "W2",
+            "ats": [
+              1,
+              0,
+              0
+            ],
+            "ou": [
+              0,
+              1,
+              0
+            ],
+            "rest": 3
+          },
+          "opp": {
+            "games": 2,
+            "wins": 2,
+            "losses": 0,
+            "home": [
+              2,
+              0
+            ],
+            "away": [
+              0,
+              0
+            ],
+            "ppg": 121.5,
+            "papg": 103.0,
+            "margin": 18.5,
+            "rank": {
+              "ppg": 8,
+              "papg": 4,
+              "margin": 3
+            },
+            "streak": "W2",
+            "ats": null,
+            "ou": null,
+            "rest": 4
+          }
+        },
+        "volatility": {
+          "rec": 16.1,
+          "opp": 15.5
+        },
+        "h2h": [
+          {
+            "date": "2025-11-04",
+            "won": true,
+            "for": 126,
+            "against": 107
+          },
+          {
+            "date": "2025-12-18",
+            "won": true,
+            "for": 122,
+            "against": 101
+          },
+          {
+            "date": "2026-04-08",
+            "won": true,
+            "for": 128,
+            "against": 110
+          }
+        ],
+        "projection": {
+          "model_margin": 8.0,
+          "raw_margin": 8.0,
+          "market_margin": 0.0,
+          "edge": 8.0,
+          "pred_total": 219.1,
+          "total_line": 225.0,
+          "total_edge": -5.9,
+          "total_is_default": true
+        },
+        "probability": {
+          "cover": 0.74,
+          "win_model": 0.74,
+          "win_market": null,
+          "total": 0.622,
+          "sigma_spread": 12.5,
+          "sigma_total": 19.0,
+          "sigma_measured": false
+        },
+        "effects": {
+          "since": "2023-06-14",
+          "years": 3,
+          "home_margin": 2.031,
+          "home_win_rate": 0.551,
+          "home_n": 4161,
+          "avg_total": 227.896,
+          "b2b_margin": -1.873,
+          "b2b_win_rate": 0.454,
+          "b2b_n": 1323
+        },
+        "record": {
+          "spread": [
+            10,
+            7
+          ],
+          "total": [
+            9,
+            8
+          ],
+          "spread_at_conf": [
+            1,
+            0
+          ]
+        },
+        "generated_at": "2026-10-24T00:00:12"
+      },
+      "matches": {
+        "id": 62,
+        "date": "2026-10-25",
+        "start_time": "2026-10-25T23:00Z",
+        "home_team_id": 18,
+        "away_team_id": 12,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": null,
+        "vegas_total": null,
+        "home_team": {
+          "code": "OKC",
+          "full_name": "Oklahoma City Thunder",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png"
+        },
+        "away_team": {
+          "code": "LAC",
+          "full_name": "LA Clippers",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png"
+        },
+        "home_team_nba_id": 1610612760,
+        "away_team_nba_id": 1610612746
+      },
+      "recommended_team": {
+        "code": "OKC",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png"
+      }
+    },
+    {
+      "id": 40,
+      "match_id": 63,
+      "recommended_team_id": 9,
+      "confidence_score": 61.0,
+      "spread_logic": "AI projects DET to win by 2.9 pts",
+      "spread_logic_zh": "AI 預測 DET 贏 2.9 分",
+      "line_info": "0.0",
+      "ou_pick": "UNDER",
+      "ou_line": 225.0,
+      "ou_confidence": 70.0,
+      "analysis_content": "## The Call\nThe number says DET, on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has DET by 2.9, a 59% win probability.\nConfidence is modest at 61%.\n## Season So Far\nDET is 3-0 (2-0 home, 1-0 away), scoring 126.0 (4th of 30) and allowing 114.7 (17th of 30) for a +11.3 margin (8th of 30), currently on a W3 run. Last out: W 128-106 at MIN, W 129-125 vs TOR, W 121-113 vs BOS.\nPHI is 2-1, scoring 113.3 (20th of 30) and allowing 110.3 (9th of 30) for a +3.0 margin (13th of 30), on a W2 run. Last out: L 120-125 vs BOS, W 106-100 at NY, W 114-106 vs CLE.\nAgainst the number: PHI 1-0 against the spread (100%); 0 over / 1 under.\nHead to head, DET is 3-0 in the last 3 meetings with an average margin of +18.0 (most recent 2026-04-04: W 116-93).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-05-17), DET's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Off. rebounds** — DET grabs 13.5 offensive boards to 8.2 (league avg 11.1; DET 2nd vs PHI 29th of 30).\n• **Net margin** — DET outscores opponents by +3.3 per game against -7.7 (league avg -4.7; DET 4th vs PHI 21st of 30).\n• **Bench points** — DET gets 30.5 from the bench to 19.7 (league avg 35.3; DET 21st vs PHI 30th of 30).\n• **Points off turnovers** — DET turns mistakes into 20.7 points to 14.3 (league avg 17.5; DET 3rd vs PHI 29th of 30).\nWhere PHI pushes back:\n• **Turnovers** — PHI holds the better number, 11.1 to DET's 13.5 (league avg 13.6; DET 17th vs PHI 2nd of 30).\nConsistency check: DET's game margins over this stretch vary by ±15.4 points (one standard deviation) against ±19.6 for PHI; the steadier side is DET.\n## Schedule & Rest\nDET comes in with 4 days of rest; PHI comes in with 2 days of rest.\nThe rest edge belongs to DET.\nPHI has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 239.3 points and the two defences concede 225.0; on record they attempt 64 threes between them (league pair average 73) with 23 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 218.3 total points against a line of 225.0, 6.7 points below the number. With totals spreading ±19.0 points around the line, that is a 64% probability of the under; published confidence is 70%.\n## Model Track Record\nThis season, published spread picks are 10-7 (59%); at 61%+ confidence they are 3-3; totals are 9-8 (53%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: PHI's edge in Turnovers (11.1 vs 13.5) is the cleanest path to an upset of this read; DET's results swing ±15.4 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n結論落在客場作戰的 DET。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 DET 贏 2.9 分，勝率 59%。\n信心偏低（61%）。\n## 本季至今\nDET 戰績 3-0（主 2-0、客 1-0），場均得 126.0（30 隊中第 4）、失 114.7（30 隊中第 17），淨勝 +11.3（30 隊中第 8），目前 W3。近況：客場勝 MIN 128-106、主場勝 TOR 129-125、主場勝 BOS 121-113。\nPHI 戰績 2-1，場均得 113.3（30 隊中第 20）、失 110.3（30 隊中第 9），淨勝 +3.0（30 隊中第 13），目前 W2。近況：主場負 BOS 120-125、客場勝 NY 106-100、主場勝 CLE 114-106。\n對盤口表現：PHI 讓分 1 勝 0 負 (100%)；大分 0 次、小分 1 次。\n近 3 次交手 DET 3 勝 0 負，平均分差 +18.0（最近一次 2026-04-04：勝 116-93）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-17），DET 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **進攻籃板**：DET 進攻籃板 13.5 個，對手 8.2（聯盟平均 11.1；DET 第 2、PHI 第 29／30 隊）。\n• **淨勝分**：DET 場均淨勝 +3.3 分，對手 -7.7（聯盟平均 -4.7；DET 第 4、PHI 第 21／30 隊）。\n• **板凳得分**：DET 板凳貢獻 30.5 分，對手 19.7（聯盟平均 35.3；DET 第 21、PHI 第 30／30 隊）。\n• **失誤轉換得分**：DET 失誤轉換得 20.7 分，對手 14.3（聯盟平均 17.5；DET 第 3、PHI 第 29／30 隊）。\nPHI 能反擊的地方：\n• **失誤**：PHI 這項較好，11.1 對 DET 的 13.5（聯盟平均 13.6；DET 第 17、PHI 第 2／30 隊）。\n穩定度：這段期間 DET 單場分差的標準差是 ±15.4 分，PHI 是 ±19.6 分；DET 的表現較穩。\n## 賽程與休息\nDET 休了 4 天；PHI 休了 2 天。\n體能上 DET 較佔便宜。\nPHI 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 239.3 分，防守合計失 225.0 分；近況合計每場出手 64 記三分（聯盟兩隊平均 73）、快攻 23 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 218.3，盤口 225.0，低於盤口 6.7 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 64%；公布信心 70%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 7 負（59%）；信心 61% 以上的場次 3 勝 3 負；大小分 9 勝 8 負（53%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：PHI 在失誤上的優勢（11.1 對 13.5）是翻掉這份判讀最直接的路徑；DET 單場分差起伏 ±15.4 分，單場優勢並不牢靠。",
+      "predicted_margin": 2.9,
+      "predicted_total": 218.3,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-24T00:00:12.572803",
+      "analysis_facts": {
+        "profile_games": 10,
+        "profile_through": "2026-05-17",
+        "league_teams": 30,
+        "season_teams": 30,
+        "rows": [
+          {
+            "key": "ppg",
+            "en": "Points",
+            "zh": "得分",
+            "rec": 107.7,
+            "opp": 104.3,
+            "avg": 111.1,
+            "rec_rank": 21,
+            "opp_rank": 27,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "papg",
+            "en": "Points allowed",
+            "zh": "失分",
+            "rec": 104.4,
+            "opp": 112.0,
+            "avg": 115.8,
+            "rec_rank": 3,
+            "opp_rank": 12,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "net",
+            "en": "Net margin",
+            "zh": "淨勝分",
+            "rec": 3.3,
+            "opp": -7.7,
+            "avg": -4.7,
+            "rec_rank": 4,
+            "opp_rank": 21,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fg",
+            "en": "FG%",
+            "zh": "命中率",
+            "rec": 46.1,
+            "opp": 45.4,
+            "avg": 45.8,
+            "rec_rank": 16,
+            "opp_rank": 17,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tp",
+            "en": "3P%",
+            "zh": "三分命中率",
+            "rec": 39.4,
+            "opp": 34.7,
+            "avg": 34.9,
+            "rec_rank": 2,
+            "opp_rank": 13,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tpa",
+            "en": "3PA",
+            "zh": "三分出手",
+            "rec": 29.8,
+            "opp": 33.8,
+            "avg": 36.4,
+            "rec_rank": 27,
+            "opp_rank": 21,
+            "unit": "",
+            "better": null
+          },
+          {
+            "key": "ft",
+            "en": "FT%",
+            "zh": "罰球命中率",
+            "rec": 78.2,
+            "opp": 78.8,
+            "avg": 77.5,
+            "rec_rank": 11,
+            "opp_rank": 9,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "reb",
+            "en": "Rebounds",
+            "zh": "籃板",
+            "rec": 42.8,
+            "opp": 37.8,
+            "avg": 41.9,
+            "rec_rank": 15,
+            "opp_rank": 28,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "oreb",
+            "en": "Off. rebounds",
+            "zh": "進攻籃板",
+            "rec": 13.5,
+            "opp": 8.2,
+            "avg": 11.1,
+            "rec_rank": 2,
+            "opp_rank": 29,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "ast",
+            "en": "Assists",
+            "zh": "助攻",
+            "rec": 23.0,
+            "opp": 21.4,
+            "avg": 25.0,
+            "rec_rank": 24,
+            "opp_rank": 28,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "tov",
+            "en": "Turnovers",
+            "zh": "失誤",
+            "rec": 13.5,
+            "opp": 11.1,
+            "avg": 13.6,
+            "rec_rank": 17,
+            "opp_rank": 2,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "paint",
+            "en": "Paint points",
+            "zh": "禁區得分",
+            "rec": 45.0,
+            "opp": 38.6,
+            "avg": 47.4,
+            "rec_rank": 19,
+            "opp_rank": 28,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fb",
+            "en": "Fast-break points",
+            "zh": "快攻得分",
+            "rec": 14.0,
+            "opp": 9.3,
+            "avg": 14.2,
+            "rec_rank": 15,
+            "opp_rank": 29,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "pot",
+            "en": "Points off turnovers",
+            "zh": "失誤轉換得分",
+            "rec": 20.7,
+            "opp": 14.3,
+            "avg": 17.5,
+            "rec_rank": 3,
+            "opp_rank": 29,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "bench",
+            "en": "Bench points",
+            "zh": "板凳得分",
+            "rec": 30.5,
+            "opp": 19.7,
+            "avg": 35.3,
+            "rec_rank": 21,
+            "opp_rank": 30,
+            "unit": "",
+            "better": "high"
+          }
+        ],
+        "form": {
+          "rec": {
+            "games": 3,
+            "wins": 3,
+            "losses": 0,
+            "home": [
+              2,
+              0
+            ],
+            "away": [
+              1,
+              0
+            ],
+            "ppg": 126.0,
+            "papg": 114.7,
+            "margin": 11.3,
+            "rank": {
+              "ppg": 4,
+              "papg": 17,
+              "margin": 8
+            },
+            "streak": "W3",
+            "ats": null,
+            "ou": null,
+            "rest": 5
+          },
+          "opp": {
+            "games": 3,
+            "wins": 2,
+            "losses": 1,
+            "home": [
+              1,
+              1
+            ],
+            "away": [
+              1,
+              0
+            ],
+            "ppg": 113.3,
+            "papg": 110.3,
+            "margin": 3.0,
+            "rank": {
+              "ppg": 20,
+              "papg": 9,
+              "margin": 13
+            },
+            "streak": "W2",
+            "ats": [
+              1,
+              0,
+              0
+            ],
+            "ou": [
+              0,
+              1,
+              0
+            ],
+            "rest": 3
+          }
+        },
+        "volatility": {
+          "rec": 15.4,
+          "opp": 19.6
+        },
+        "h2h": [
+          {
+            "date": "2025-11-14",
+            "won": true,
+            "for": 114,
+            "against": 105
+          },
+          {
+            "date": "2026-03-12",
+            "won": true,
+            "for": 131,
+            "against": 109
+          },
+          {
+            "date": "2026-04-04",
+            "won": true,
+            "for": 116,
+            "against": 93
+          }
+        ],
+        "projection": {
+          "model_margin": 2.9,
+          "raw_margin": 2.9,
+          "market_margin": 0.0,
+          "edge": 2.9,
+          "pred_total": 218.3,
+          "total_line": 225.0,
+          "total_edge": -6.7,
+          "total_is_default": true
+        },
+        "probability": {
+          "cover": 0.592,
+          "win_model": 0.592,
+          "win_market": null,
+          "total": 0.638,
+          "sigma_spread": 12.5,
+          "sigma_total": 19.0,
+          "sigma_measured": false
+        },
+        "effects": {
+          "since": "2023-06-14",
+          "years": 3,
+          "home_margin": 2.031,
+          "home_win_rate": 0.551,
+          "home_n": 4161,
+          "avg_total": 227.896,
+          "b2b_margin": -1.873,
+          "b2b_win_rate": 0.454,
+          "b2b_n": 1323
+        },
+        "record": {
+          "spread": [
+            10,
+            7
+          ],
+          "total": [
+            9,
+            8
+          ],
+          "spread_at_conf": [
+            3,
+            3
+          ]
+        },
+        "generated_at": "2026-10-24T00:00:12"
+      },
+      "matches": {
+        "id": 63,
+        "date": "2026-10-25",
+        "start_time": "2026-10-25T23:30Z",
+        "home_team_id": 20,
+        "away_team_id": 9,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": null,
+        "vegas_total": null,
+        "home_team": {
+          "code": "PHI",
+          "full_name": "Philadelphia 76ers",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png"
+        },
+        "away_team": {
+          "code": "DET",
+          "full_name": "Detroit Pistons",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/det.png"
+        },
+        "home_team_nba_id": 1610612755,
+        "away_team_nba_id": 1610612765
+      },
+      "recommended_team": {
+        "code": "DET",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/det.png"
+      }
+    },
+    {
+      "id": 41,
+      "match_id": 64,
+      "recommended_team_id": 23,
+      "confidence_score": 81.0,
+      "spread_logic": "AI projects SAC to win by 7.8 pts",
+      "spread_logic_zh": "AI 預測 SAC 贏 7.8 分",
+      "line_info": "0.0",
+      "ou_pick": "OVER",
+      "ou_line": 225.0,
+      "ou_confidence": 79.0,
+      "analysis_content": "## The Call\nSAC at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has SAC by 7.8, a 73% win probability.\nConfidence is high at 81%.\n## Season So Far\nSAC is 0-2 (0-0 home, 0-2 away), scoring 96.5 (30th of 30) and allowing 123.5 (26th of 30) for a -27.0 margin (30th of 30), currently on a L2 run. Last out: L 97-126 at SA, L 96-121 at LAC.\nMEM is 2-0, scoring 119.5 (11th of 30) and allowing 100.5 (2nd of 30) for a +19.0 margin (2nd of 30), on a W2 run. Last out: W 116-98 vs CHA, W 123-103 vs UTAH.\nHead to head, SAC is 1-2 in the last 3 meetings with an average margin of -1.0 (most recent 2026-02-23: W 123-114).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-04-12), here is where SAC separates from MEM. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — SAC gives up 121.0 to 132.0 (league avg 115.8; SAC 23rd vs MEM 29th of 30).\n• **Rebounds** — SAC pulls 42.8 rebounds to 35.8 (league avg 41.9; SAC 14th vs MEM 29th of 30).\n• **Net margin** — SAC outscores opponents by -10.3 per game against -20.4 (league avg -4.7; SAC 23rd vs MEM 30th of 30).\n• **Off. rebounds** — SAC grabs 13.4 offensive boards to 9.9 (league avg 11.1; SAC 3rd vs MEM 25th of 30).\nWhere MEM pushes back:\n• **FT%** — MEM holds the better number, 81.1% to SAC's 73.4% (league avg 77.5%; SAC 27th vs MEM 6th of 30).\n• **Bench points** — MEM holds the better number, 37.9 to SAC's 35.3 (league avg 35.3; SAC 16th vs MEM 12th of 30).\nConsistency check: SAC's game margins over this stretch vary by ±15.5 points (one standard deviation) against ±12.8 for MEM; the more volatile side is SAC.\n## Schedule & Rest\nSAC comes in with 3 days of rest; MEM comes in with 3 days of rest.\nSAC has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 216.0 points and the two defences concede 224.0; on record they attempt 76 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 235.0 total points against a line of 225.0, 10.0 points above the number. With totals spreading ±19.0 points around the line, that is a 70% probability of the over; published confidence is 79%.\n## Model Track Record\nThis season, published spread picks are 10-7 (59%); totals are 9-8 (53%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: MEM's edge in FT% (81.1% vs 73.4%) is the cleanest path to an upset of this read; SAC's results swing ±15.5 points game to game, so any single-game edge is fragile; SAC is on a L2 skid and the model does not read locker rooms; sample sizes this early in the season are thin and roster changes are not in the box scores yet.",
+      "analysis_content_zh": "## 結論\n結論落在主場作戰的 SAC。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 SAC 贏 7.8 分，勝率 73%。\n信心高（81%）。\n## 本季至今\nSAC 戰績 0-2（主 0-0、客 0-2），場均得 96.5（30 隊中第 30）、失 123.5（30 隊中第 26），淨勝 -27.0（30 隊中第 30），目前 L2。近況：客場負 SA 97-126、客場負 LAC 96-121。\nMEM 戰績 2-0，場均得 119.5（30 隊中第 11）、失 100.5（30 隊中第 2），淨勝 +19.0（30 隊中第 2），目前 W2。近況：主場勝 CHA 116-98、主場勝 UTAH 123-103。\n近 3 次交手 SAC 1 勝 2 負，平均分差 -1.0（最近一次 2026-02-23：勝 123-114）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-12）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：SAC 場均失 121.0 分，對手 132.0（聯盟平均 115.8；SAC 第 23、MEM 第 29／30 隊）。\n• **籃板**：SAC 場均 42.8 籃板，對手 35.8（聯盟平均 41.9；SAC 第 14、MEM 第 29／30 隊）。\n• **淨勝分**：SAC 場均淨勝 -10.3 分，對手 -20.4（聯盟平均 -4.7；SAC 第 23、MEM 第 30／30 隊）。\n• **進攻籃板**：SAC 進攻籃板 13.4 個，對手 9.9（聯盟平均 11.1；SAC 第 3、MEM 第 25／30 隊）。\nMEM 能反擊的地方：\n• **罰球命中率**：MEM 這項較好，81.1% 對 SAC 的 73.4%（聯盟平均 77.5%；SAC 第 27、MEM 第 6／30 隊）。\n• **板凳得分**：MEM 這項較好，37.9 對 SAC 的 35.3（聯盟平均 35.3；SAC 第 16、MEM 第 12／30 隊）。\n穩定度：這段期間 SAC 單場分差的標準差是 ±15.5 分，MEM 是 ±12.8 分；SAC 的表現起伏較大。\n## 賽程與休息\nSAC 休了 3 天；MEM 休了 3 天。\nSAC 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 216.0 分，防守合計失 224.0 分；近況合計每場出手 76 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 235.0，盤口 225.0，高於盤口 10.0 分。以總分相對盤口 ±19.0 分的分佈換算，大分機率 70%；公布信心 79%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 7 負（59%）；大小分 9 勝 8 負（53%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：MEM 在罰球命中率上的優勢（81.1% 對 73.4%）是翻掉這份判讀最直接的路徑；SAC 單場分差起伏 ±15.5 分，單場優勢並不牢靠；SAC 正吞 2 連敗，模型看不到更衣室氣氛；季初樣本很小，陣容異動也還沒反映在技術統計裡。",
+      "predicted_margin": 7.79,
+      "predicted_total": 234.97,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-24T00:00:12.629411",
+      "analysis_facts": {
+        "profile_games": 10,
+        "profile_through": "2026-04-12",
+        "league_teams": 30,
+        "season_teams": 30,
+        "rows": [
+          {
+            "key": "ppg",
+            "en": "Points",
+            "zh": "得分",
+            "rec": 110.7,
+            "opp": 111.6,
+            "avg": 111.1,
+            "rec_rank": 17,
+            "opp_rank": 14,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "papg",
+            "en": "Points allowed",
+            "zh": "失分",
+            "rec": 121.0,
+            "opp": 132.0,
+            "avg": 115.8,
+            "rec_rank": 23,
+            "opp_rank": 29,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "net",
+            "en": "Net margin",
+            "zh": "淨勝分",
+            "rec": -10.3,
+            "opp": -20.4,
+            "avg": -4.7,
+            "rec_rank": 23,
+            "opp_rank": 30,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fg",
+            "en": "FG%",
+            "zh": "命中率",
+            "rec": 47.4,
+            "opp": 44.6,
+            "avg": 45.8,
+            "rec_rank": 7,
+            "opp_rank": 20,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tp",
+            "en": "3P%",
+            "zh": "三分命中率",
+            "rec": 34.6,
+            "opp": 34.6,
+            "avg": 34.9,
+            "rec_rank": 15,
+            "opp_rank": 14,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tpa",
+            "en": "3PA",
+            "zh": "三分出手",
+            "rec": 31.9,
+            "opp": 43.9,
+            "avg": 36.4,
+            "rec_rank": 24,
+            "opp_rank": 4,
+            "unit": "",
+            "better": null
+          },
+          {
+            "key": "ft",
+            "en": "FT%",
+            "zh": "罰球命中率",
+            "rec": 73.4,
+            "opp": 81.1,
+            "avg": 77.5,
+            "rec_rank": 27,
+            "opp_rank": 6,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "reb",
+            "en": "Rebounds",
+            "zh": "籃板",
+            "rec": 42.8,
+            "opp": 35.8,
+            "avg": 41.9,
+            "rec_rank": 14,
+            "opp_rank": 29,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "oreb",
+            "en": "Off. rebounds",
+            "zh": "進攻籃板",
+            "rec": 13.4,
+            "opp": 9.9,
+            "avg": 11.1,
+            "rec_rank": 3,
+            "opp_rank": 25,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "ast",
+            "en": "Assists",
+            "zh": "助攻",
+            "rec": 25.4,
+            "opp": 25.7,
+            "avg": 25.0,
+            "rec_rank": 11,
+            "opp_rank": 9,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "tov",
+            "en": "Turnovers",
+            "zh": "失誤",
+            "rec": 14.4,
+            "opp": 14.5,
+            "avg": 13.6,
+            "rec_rank": 22,
+            "opp_rank": 23,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "paint",
+            "en": "Paint points",
+            "zh": "禁區得分",
+            "rec": 53.6,
+            "opp": 47.6,
+            "avg": 47.4,
+            "rec_rank": 5,
+            "opp_rank": 14,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fb",
+            "en": "Fast-break points",
+            "zh": "快攻得分",
+            "rec": 12.8,
+            "opp": 13.3,
+            "avg": 14.2,
+            "rec_rank": 19,
+            "opp_rank": 16,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "pot",
+            "en": "Points off turnovers",
+            "zh": "失誤轉換得分",
+            "rec": 16.9,
+            "opp": 17.9,
+            "avg": 17.5,
+            "rec_rank": 19,
+            "opp_rank": 12,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "bench",
+            "en": "Bench points",
+            "zh": "板凳得分",
+            "rec": 35.3,
+            "opp": 37.9,
+            "avg": 35.3,
+            "rec_rank": 16,
+            "opp_rank": 12,
+            "unit": "",
+            "better": "high"
+          }
+        ],
+        "form": {
+          "rec": {
+            "games": 2,
+            "wins": 0,
+            "losses": 2,
+            "home": [
+              0,
+              0
+            ],
+            "away": [
+              0,
+              2
+            ],
+            "ppg": 96.5,
+            "papg": 123.5,
+            "margin": -27.0,
+            "rank": {
+              "ppg": 30,
+              "papg": 26,
+              "margin": 30
+            },
+            "streak": "L2",
+            "ats": null,
+            "ou": null,
+            "rest": 4
+          },
+          "opp": {
+            "games": 2,
+            "wins": 2,
+            "losses": 0,
+            "home": [
+              2,
+              0
+            ],
+            "away": [
+              0,
+              0
+            ],
+            "ppg": 119.5,
+            "papg": 100.5,
+            "margin": 19.0,
+            "rank": {
+              "ppg": 11,
+              "papg": 2,
+              "margin": 2
+            },
+            "streak": "W2",
+            "ats": null,
+            "ou": null,
+            "rest": 4
+          }
+        },
+        "volatility": {
+          "rec": 15.5,
+          "opp": 12.8
+        },
+        "h2h": [
+          {
+            "date": "2025-11-30",
+            "won": false,
+            "for": 107,
+            "against": 115
+          },
+          {
+            "date": "2026-02-04",
+            "won": false,
+            "for": 125,
+            "against": 129
+          },
+          {
+            "date": "2026-02-23",
+            "won": true,
+            "for": 123,
+            "against": 114
+          }
+        ],
+        "projection": {
+          "model_margin": 7.8,
+          "raw_margin": 7.8,
+          "market_margin": 0.0,
+          "edge": 7.8,
+          "pred_total": 235.0,
+          "total_line": 225.0,
+          "total_edge": 10.0,
+          "total_is_default": true
+        },
+        "probability": {
+          "cover": 0.734,
+          "win_model": 0.734,
+          "win_market": null,
+          "total": 0.7,
+          "sigma_spread": 12.5,
+          "sigma_total": 19.0,
+          "sigma_measured": false
+        },
+        "effects": {
+          "since": "2023-06-14",
+          "years": 3,
+          "home_margin": 2.031,
+          "home_win_rate": 0.551,
+          "home_n": 4161,
+          "avg_total": 227.896,
+          "b2b_margin": -1.873,
+          "b2b_win_rate": 0.454,
+          "b2b_n": 1323
+        },
+        "record": {
+          "spread": [
+            10,
+            7
+          ],
+          "total": [
+            9,
+            8
+          ],
+          "spread_at_conf": [
+            1,
+            0
+          ]
+        },
+        "generated_at": "2026-10-24T00:00:12"
+      },
+      "matches": {
+        "id": 64,
+        "date": "2026-10-25",
+        "start_time": "2026-10-26T01:00Z",
+        "home_team_id": 23,
+        "away_team_id": 14,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": null,
+        "vegas_total": null,
+        "home_team": {
+          "code": "SAC",
+          "full_name": "Sacramento Kings",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png"
+        },
+        "away_team": {
+          "code": "MEM",
+          "full_name": "Memphis Grizzlies",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png"
+        },
+        "home_team_nba_id": 1610612758,
+        "away_team_nba_id": 1610612763
+      },
+      "recommended_team": {
+        "code": "SAC",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png"
+      }
+    },
+    {
+      "id": 42,
+      "match_id": 60,
+      "recommended_team_id": 28,
+      "confidence_score": 81.0,
+      "spread_logic": "AI projects NY to win by 7.9 pts",
+      "spread_logic_zh": "AI 預測 NY 贏 7.9 分",
+      "line_info": "0.0",
+      "ou_pick": "UNDER",
+      "ou_line": 225.0,
+      "ou_confidence": 87.0,
+      "analysis_content": "## The Call\nThe number says NY, at home.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has NY by 7.9, a 74% win probability.\nConfidence is high at 81%.\n## Season So Far\nNY is 1-1 (1-1 home, 0-0 away), scoring 111.0 (21st of 30) and allowing 113.0 (13th of 30) for a -2.0 margin (18th of 30), currently on a L1 run. Last out: W 122-120 vs TOR, L 100-106 vs PHI.\nORL is 1-1, scoring 130.5 (2nd of 30) and allowing 123.5 (25th of 30) for a +7.0 margin (9th of 30), on a L1 run. Last out: W 136-115 vs MIA, L 125-132 vs ATL.\nHead to head, NY is 2-1 in the last 3 meetings with an average margin of +2.0 (most recent 2025-12-13: W 132-120).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-06-13), here is where NY separates from ORL. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — NY outscores opponents by +11.9 per game against -1.9 (league avg -4.7; NY 1st vs ORL 12th of 30).\n• **Points** — NY scores 114.1 a night to 101.0 (league avg 111.1; NY 9th vs ORL 30th of 30).\n• **FG%** — NY shoots 46.8% from the floor to 40.8% (league avg 45.8%; NY 11th vs ORL 30th of 30).\n• **3P%** — NY hits 39.2% from three against 31.2% (league avg 34.9%; NY 3rd vs ORL 28th of 30).\nConsistency check: NY's game margins over this stretch vary by ±12.4 points (one standard deviation) against ±15.1 for ORL; the steadier side is NY.\n## Schedule & Rest\nNY comes in with 4 days of rest; ORL comes in with 3 days of rest.\nThe rest edge belongs to NY.\nNY has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 241.5 points and the two defences concede 236.5; on record they attempt 70 threes between them (league pair average 73) with 34 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 212.6 total points against a line of 225.0, 12.4 points below the number. With totals spreading ±19.0 points around the line, that is a 74% probability of the under; published confidence is 87%.\n## Model Track Record\nThis season, published spread picks are 10-7 (59%); totals are 9-8 (53%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: sample sizes this early in the season are thin and roster changes are not in the box scores yet.",
+      "analysis_content_zh": "## 結論\n結論落在主場作戰的 NY。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 NY 贏 7.9 分，勝率 74%。\n信心高（81%）。\n## 本季至今\nNY 戰績 1-1（主 1-1、客 0-0），場均得 111.0（30 隊中第 21）、失 113.0（30 隊中第 13），淨勝 -2.0（30 隊中第 18），目前 L1。近況：主場勝 TOR 122-120、主場負 PHI 100-106。\nORL 戰績 1-1，場均得 130.5（30 隊中第 2）、失 123.5（30 隊中第 25），淨勝 +7.0（30 隊中第 9），目前 L1。近況：主場勝 MIA 136-115、主場負 ATL 125-132。\n近 3 次交手 NY 2 勝 1 負，平均分差 +2.0（最近一次 2025-12-13：勝 132-120）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-06-13）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -1.9（聯盟平均 -4.7；NY 第 1、ORL 第 12／30 隊）。\n• **得分**：NY 場均得 114.1 分，對手 101.0（聯盟平均 111.1；NY 第 9、ORL 第 30／30 隊）。\n• **命中率**：NY 命中率 46.8%，對手 40.8%（聯盟平均 45.8%；NY 第 11、ORL 第 30／30 隊）。\n• **三分命中率**：NY 三分命中 39.2%，對手 31.2%（聯盟平均 34.9%；NY 第 3、ORL 第 28／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，ORL 是 ±15.1 分；NY 的表現較穩。\n## 賽程與休息\nNY 休了 4 天；ORL 休了 3 天。\n體能上 NY 較佔便宜。\nNY 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 241.5 分，防守合計失 236.5 分；近況合計每場出手 70 記三分（聯盟兩隊平均 73）、快攻 34 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 212.6，盤口 225.0，低於盤口 12.4 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 74%；公布信心 87%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 7 負（59%）；大小分 9 勝 8 負（53%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：季初樣本很小，陣容異動也還沒反映在技術統計裡。",
+      "predicted_margin": 7.88,
+      "predicted_total": 212.63,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-24T00:00:12.686728",
+      "analysis_facts": {
+        "profile_games": 10,
+        "profile_through": "2026-06-13",
+        "league_teams": 30,
+        "season_teams": 30,
+        "rows": [
+          {
+            "key": "ppg",
+            "en": "Points",
+            "zh": "得分",
+            "rec": 114.1,
+            "opp": 101.0,
+            "avg": 111.1,
+            "rec_rank": 9,
+            "opp_rank": 30,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "papg",
+            "en": "Points allowed",
+            "zh": "失分",
+            "rec": 102.2,
+            "opp": 102.9,
+            "avg": 115.8,
+            "rec_rank": 1,
+            "opp_rank": 2,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "net",
+            "en": "Net margin",
+            "zh": "淨勝分",
+            "rec": 11.9,
+            "opp": -1.9,
+            "avg": -4.7,
+            "rec_rank": 1,
+            "opp_rank": 12,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fg",
+            "en": "FG%",
+            "zh": "命中率",
+            "rec": 46.8,
+            "opp": 40.8,
+            "avg": 45.8,
+            "rec_rank": 11,
+            "opp_rank": 30,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tp",
+            "en": "3P%",
+            "zh": "三分命中率",
+            "rec": 39.2,
+            "opp": 31.2,
+            "avg": 34.9,
+            "rec_rank": 3,
+            "opp_rank": 28,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tpa",
+            "en": "3PA",
+            "zh": "三分出手",
+            "rec": 36.3,
+            "opp": 33.5,
+            "avg": 36.4,
+            "rec_rank": 15,
+            "opp_rank": 23,
+            "unit": "",
+            "better": null
+          },
+          {
+            "key": "ft",
+            "en": "FT%",
+            "zh": "罰球命中率",
+            "rec": 74.9,
+            "opp": 73.6,
+            "avg": 77.5,
+            "rec_rank": 22,
+            "opp_rank": 25,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "reb",
+            "en": "Rebounds",
+            "zh": "籃板",
+            "rec": 45.7,
+            "opp": 43.1,
+            "avg": 41.9,
+            "rec_rank": 3,
+            "opp_rank": 13,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "oreb",
+            "en": "Off. rebounds",
+            "zh": "進攻籃板",
+            "rec": 11.0,
+            "opp": 11.3,
+            "avg": 11.1,
+            "rec_rank": 15,
+            "opp_rank": 13,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "ast",
+            "en": "Assists",
+            "zh": "助攻",
+            "rec": 24.9,
+            "opp": 20.7,
+            "avg": 25.0,
+            "rec_rank": 14,
+            "opp_rank": 30,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "tov",
+            "en": "Turnovers",
+            "zh": "失誤",
+            "rec": 11.5,
+            "opp": 13.9,
+            "avg": 13.6,
+            "rec_rank": 4,
+            "opp_rank": 20,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "paint",
+            "en": "Paint points",
+            "zh": "禁區得分",
+            "rec": 44.8,
+            "opp": 39.6,
+            "avg": 47.4,
+            "rec_rank": 20,
+            "opp_rank": 26,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fb",
+            "en": "Fast-break points",
+            "zh": "快攻得分",
+            "rec": 16.8,
+            "opp": 17.2,
+            "avg": 14.2,
+            "rec_rank": 7,
+            "opp_rank": 6,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "pot",
+            "en": "Points off turnovers",
+            "zh": "失誤轉換得分",
+            "rec": 18.8,
+            "opp": 17.7,
+            "avg": 17.5,
+            "rec_rank": 9,
+            "opp_rank": 13,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "bench",
+            "en": "Bench points",
+            "zh": "板凳得分",
+            "rec": 26.3,
+            "opp": 23.0,
+            "avg": 35.3,
+            "rec_rank": 24,
+            "opp_rank": 27,
+            "unit": "",
+            "better": "high"
+          }
+        ],
+        "form": {
+          "rec": {
+            "games": 2,
+            "wins": 1,
+            "losses": 1,
+            "home": [
+              1,
+              1
+            ],
+            "away": [
+              0,
+              0
+            ],
+            "ppg": 111.0,
+            "papg": 113.0,
+            "margin": -2.0,
+            "rank": {
+              "ppg": 21,
+              "papg": 13,
+              "margin": 18
+            },
+            "streak": "L1",
+            "ats": null,
+            "ou": null,
+            "rest": 5
+          },
+          "opp": {
+            "games": 2,
+            "wins": 1,
+            "losses": 1,
+            "home": [
+              1,
+              1
+            ],
+            "away": [
+              0,
+              0
+            ],
+            "ppg": 130.5,
+            "papg": 123.5,
+            "margin": 7.0,
+            "rank": {
+              "ppg": 2,
+              "papg": 25,
+              "margin": 9
+            },
+            "streak": "L1",
+            "ats": null,
+            "ou": null,
+            "rest": 4
+          }
+        },
+        "volatility": {
+          "rec": 12.4,
+          "opp": 15.1
+        },
+        "h2h": [
+          {
+            "date": "2025-11-22",
+            "won": false,
+            "for": 121,
+            "against": 133
+          },
+          {
+            "date": "2025-12-07",
+            "won": true,
+            "for": 106,
+            "against": 100
+          },
+          {
+            "date": "2025-12-13",
+            "won": true,
+            "for": 132,
+            "against": 120
+          }
+        ],
+        "projection": {
+          "model_margin": 7.9,
+          "raw_margin": 7.9,
+          "market_margin": 0.0,
+          "edge": 7.9,
+          "pred_total": 212.6,
+          "total_line": 225.0,
+          "total_edge": -12.4,
+          "total_is_default": true
+        },
+        "probability": {
+          "cover": 0.736,
+          "win_model": 0.736,
+          "win_market": null,
+          "total": 0.743,
+          "sigma_spread": 12.5,
+          "sigma_total": 19.0,
+          "sigma_measured": false
+        },
+        "effects": {
+          "since": "2023-06-14",
+          "years": 3,
+          "home_margin": 2.031,
+          "home_win_rate": 0.551,
+          "home_n": 4161,
+          "avg_total": 227.896,
+          "b2b_margin": -1.873,
+          "b2b_win_rate": 0.454,
+          "b2b_n": 1323
+        },
+        "record": {
+          "spread": [
+            10,
+            7
+          ],
+          "total": [
+            9,
+            8
+          ],
+          "spread_at_conf": [
+            1,
+            0
+          ]
+        },
+        "generated_at": "2026-10-24T00:00:12"
+      },
+      "matches": {
+        "id": 60,
+        "date": "2026-10-25",
+        "start_time": "2026-10-25T23:00Z",
+        "home_team_id": 28,
+        "away_team_id": 19,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": null,
+        "vegas_total": null,
+        "home_team": {
+          "code": "NY",
+          "full_name": "New York Knicks",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png"
+        },
+        "away_team": {
+          "code": "ORL",
+          "full_name": "Orlando Magic",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png"
+        },
+        "home_team_nba_id": 1610612752,
+        "away_team_nba_id": 1610612753
+      },
+      "recommended_team": {
+        "code": "NY",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png"
+      }
+    },
+    {
+      "id": 43,
+      "match_id": 58,
+      "recommended_team_id": 13,
+      "confidence_score": 68.0,
+      "spread_logic": "AI projects LAL to win by 4.5 pts",
+      "spread_logic_zh": "AI 預測 LAL 贏 4.5 分",
+      "line_info": "0.0",
+      "ou_pick": "OVER",
+      "ou_line": 225.0,
+      "ou_confidence": 80.0,
+      "analysis_content": "## The Call\nThe number says LAL, on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has LAL by 4.5, a 64% win probability.\nConfidence is moderate at 68%.\n## Season So Far\nLAL is 1-1 (1-1 home, 0-0 away), scoring 116.5 (17th of 30) and allowing 113.0 (14th of 30) for a +3.5 margin (12th of 30), currently on a W1 run. Last out: L 106-121 vs DEN, W 127-105 vs GS.\nUTAH is 1-1, scoring 111.0 (22nd of 30) and allowing 119.5 (19th of 30) for a -8.5 margin (23rd of 30), on a L1 run. Last out: W 119-116 at PHX, L 103-123 at MEM.\nHead to head, LAL is 3-0 in the last 3 meetings with an average margin of +11.3 (most recent 2026-04-12: W 131-107).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-11), here is where LAL separates from UTAH. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — LAL gives up 107.1 to 132.8 (league avg 115.8; LAL 7th vs UTAH 30th of 30).\n• **FT%** — LAL converts 76.3% at the line to 67.5% (league avg 77.5%; LAL 19th vs UTAH 30th of 30).\n• **Net margin** — LAL outscores opponents by -4.9 per game against -14.2 (league avg -4.7; LAL 15th vs UTAH 28th of 30).\n• **3P%** — LAL hits 38.5% from three against 32.8% (league avg 34.9%; LAL 5th vs UTAH 25th of 30).\nWhere UTAH pushes back:\n• **Fast-break points** — UTAH holds the better number, 24.9 to LAL's 10.9 (league avg 14.2; LAL 23rd vs UTAH 1st of 30).\n• **Paint points** — UTAH holds the better number, 64.0 to LAL's 45.0 (league avg 47.4; LAL 18th vs UTAH 1st of 30).\n• **Points** — UTAH holds the better number, 118.6 to LAL's 102.2 (league avg 111.1; LAL 29th vs UTAH 2nd of 30).\nConsistency check: LAL's game margins over this stretch vary by ±13.8 points (one standard deviation) against ±22.0 for UTAH; the steadier side is LAL.\n## Schedule & Rest\nLAL comes in with 3 days of rest; UTAH comes in with 3 days of rest.\nUTAH has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 227.5 points and the two defences concede 232.5; on record they attempt 59 threes between them (league pair average 73) with 36 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 235.0 total points against a line of 225.0, 10.0 points above the number. With totals spreading ±19.0 points around the line, that is a 70% probability of the over; published confidence is 80%.\n## Model Track Record\nThis season, published spread picks are 10-7 (59%); at 68%+ confidence they are 2-2; totals are 9-8 (53%). The sample is still small; treat these as a progress report, not a guarantee.\n## What Could Go Wrong\nHonest caveats: UTAH's edge in Fast-break points (24.9 vs 10.9) is the cleanest path to an upset of this read; sample sizes this early in the season are thin and roster changes are not in the box scores yet.",
+      "analysis_content_zh": "## 結論\n數字指向 LAL（客場）。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 LAL 贏 4.5 分，勝率 64%。\n信心中等（68%）。\n## 本季至今\nLAL 戰績 1-1（主 1-1、客 0-0），場均得 116.5（30 隊中第 17）、失 113.0（30 隊中第 14），淨勝 +3.5（30 隊中第 12），目前 W1。近況：主場負 DEN 106-121、主場勝 GS 127-105。\nUTAH 戰績 1-1，場均得 111.0（30 隊中第 22）、失 119.5（30 隊中第 19），淨勝 -8.5（30 隊中第 23），目前 L1。近況：客場勝 PHX 119-116、客場負 MEM 103-123。\n近 3 次交手 LAL 3 勝 0 負，平均分差 +11.3（最近一次 2026-04-12：勝 131-107）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-11）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：LAL 場均失 107.1 分，對手 132.8（聯盟平均 115.8；LAL 第 7、UTAH 第 30／30 隊）。\n• **罰球命中率**：LAL 罰球 76.3%，對手 67.5%（聯盟平均 77.5%；LAL 第 19、UTAH 第 30／30 隊）。\n• **淨勝分**：LAL 場均淨勝 -4.9 分，對手 -14.2（聯盟平均 -4.7；LAL 第 15、UTAH 第 28／30 隊）。\n• **三分命中率**：LAL 三分命中 38.5%，對手 32.8%（聯盟平均 34.9%；LAL 第 5、UTAH 第 25／30 隊）。\nUTAH 能反擊的地方：\n• **快攻得分**：UTAH 這項較好，24.9 對 LAL 的 10.9（聯盟平均 14.2；LAL 第 23、UTAH 第 1／30 隊）。\n• **禁區得分**：UTAH 這項較好，64.0 對 LAL 的 45.0（聯盟平均 47.4；LAL 第 18、UTAH 第 1／30 隊）。\n• **得分**：UTAH 這項較好，118.6 對 LAL 的 102.2（聯盟平均 111.1；LAL 第 29、UTAH 第 2／30 隊）。\n穩定度：這段期間 LAL 單場分差的標準差是 ±13.8 分，UTAH 是 ±22.0 分；LAL 的表現較穩。\n## 賽程與休息\nLAL 休了 3 天；UTAH 休了 3 天。\nUTAH 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 227.5 分，防守合計失 232.5 分；近況合計每場出手 59 記三分（聯盟兩隊平均 73）、快攻 36 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 235.0，盤口 225.0，高於盤口 10.0 分。以總分相對盤口 ±19.0 分的分佈換算，大分機率 70%；公布信心 80%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 7 負（59%）；信心 68% 以上的場次 2 勝 2 負；大小分 9 勝 8 負（53%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：UTAH 在快攻得分上的優勢（24.9 對 10.9）是翻掉這份判讀最直接的路徑；季初樣本很小，陣容異動也還沒反映在技術統計裡。",
+      "predicted_margin": 4.51,
+      "predicted_total": 235.02,
+      "spread_outcome": null,
+      "total_outcome": null,
+      "created_at": "2026-10-24T00:00:12.746458",
+      "analysis_facts": {
+        "profile_games": 10,
+        "profile_through": "2026-05-11",
+        "league_teams": 30,
+        "season_teams": 30,
+        "rows": [
+          {
+            "key": "ppg",
+            "en": "Points",
+            "zh": "得分",
+            "rec": 102.2,
+            "opp": 118.6,
+            "avg": 111.1,
+            "rec_rank": 29,
+            "opp_rank": 2,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "papg",
+            "en": "Points allowed",
+            "zh": "失分",
+            "rec": 107.1,
+            "opp": 132.8,
+            "avg": 115.8,
+            "rec_rank": 7,
+            "opp_rank": 30,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "net",
+            "en": "Net margin",
+            "zh": "淨勝分",
+            "rec": -4.9,
+            "opp": -14.2,
+            "avg": -4.7,
+            "rec_rank": 15,
+            "opp_rank": 28,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fg",
+            "en": "FG%",
+            "zh": "命中率",
+            "rec": 47.6,
+            "opp": 48.2,
+            "avg": 45.8,
+            "rec_rank": 6,
+            "opp_rank": 4,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tp",
+            "en": "3P%",
+            "zh": "三分命中率",
+            "rec": 38.5,
+            "opp": 32.8,
+            "avg": 34.9,
+            "rec_rank": 5,
+            "opp_rank": 25,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "tpa",
+            "en": "3PA",
+            "zh": "三分出手",
+            "rec": 27.0,
+            "opp": 31.8,
+            "avg": 36.4,
+            "rec_rank": 30,
+            "opp_rank": 25,
+            "unit": "",
+            "better": null
+          },
+          {
+            "key": "ft",
+            "en": "FT%",
+            "zh": "罰球命中率",
+            "rec": 76.3,
+            "opp": 67.5,
+            "avg": 77.5,
+            "rec_rank": 19,
+            "opp_rank": 30,
+            "unit": "%",
+            "better": "high"
+          },
+          {
+            "key": "reb",
+            "en": "Rebounds",
+            "zh": "籃板",
+            "rec": 39.4,
+            "opp": 44.4,
+            "avg": 41.9,
+            "rec_rank": 24,
+            "opp_rank": 8,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "oreb",
+            "en": "Off. rebounds",
+            "zh": "進攻籃板",
+            "rec": 10.2,
+            "opp": 12.4,
+            "avg": 11.1,
+            "rec_rank": 22,
+            "opp_rank": 7,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "ast",
+            "en": "Assists",
+            "zh": "助攻",
+            "rec": 23.8,
+            "opp": 31.9,
+            "avg": 25.0,
+            "rec_rank": 20,
+            "opp_rank": 2,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "tov",
+            "en": "Turnovers",
+            "zh": "失誤",
+            "rec": 17.0,
+            "opp": 14.2,
+            "avg": 13.6,
+            "rec_rank": 29,
+            "opp_rank": 21,
+            "unit": "",
+            "better": "low"
+          },
+          {
+            "key": "paint",
+            "en": "Paint points",
+            "zh": "禁區得分",
+            "rec": 45.0,
+            "opp": 64.0,
+            "avg": 47.4,
+            "rec_rank": 18,
+            "opp_rank": 1,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "fb",
+            "en": "Fast-break points",
+            "zh": "快攻得分",
+            "rec": 10.9,
+            "opp": 24.9,
+            "avg": 14.2,
+            "rec_rank": 23,
+            "opp_rank": 1,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "pot",
+            "en": "Points off turnovers",
+            "zh": "失誤轉換得分",
+            "rec": 14.6,
+            "opp": 20.2,
+            "avg": 17.5,
+            "rec_rank": 27,
+            "opp_rank": 6,
+            "unit": "",
+            "better": "high"
+          },
+          {
+            "key": "bench",
+            "en": "Bench points",
+            "zh": "板凳得分",
+            "rec": 21.6,
+            "opp": 34.0,
+            "avg": 35.3,
+            "rec_rank": 28,
+            "opp_rank": 19,
+            "unit": "",
+            "better": "high"
+          }
+        ],
+        "form": {
+          "rec": {
+            "games": 2,
+            "wins": 1,
+            "losses": 1,
+            "home": [
+              1,
+              1
+            ],
+            "away": [
+              0,
+              0
+            ],
+            "ppg": 116.5,
+            "papg": 113.0,
+            "margin": 3.5,
+            "rank": {
+              "ppg": 17,
+              "papg": 14,
+              "margin": 12
+            },
+            "streak": "W1",
+            "ats": null,
+            "ou": null,
+            "rest": 4
+          },
+          "opp": {
+            "games": 2,
+            "wins": 1,
+            "losses": 1,
+            "home": [
+              0,
+              0
+            ],
+            "away": [
+              1,
+              1
+            ],
+            "ppg": 111.0,
+            "papg": 119.5,
+            "margin": -8.5,
+            "rank": {
+              "ppg": 22,
+              "papg": 19,
+              "margin": 23
+            },
+            "streak": "L1",
+            "ats": null,
+            "ou": null,
+            "rest": 4
+          }
+        },
+        "volatility": {
+          "rec": 13.8,
+          "opp": 22.0
+        },
+        "h2h": [
+          {
+            "date": "2025-11-23",
+            "won": true,
+            "for": 108,
+            "against": 106
+          },
+          {
+            "date": "2025-12-18",
+            "won": true,
+            "for": 143,
+            "against": 135
+          },
+          {
+            "date": "2026-04-12",
+            "won": true,
+            "for": 131,
+            "against": 107
+          }
+        ],
+        "projection": {
+          "model_margin": 4.5,
+          "raw_margin": 4.5,
+          "market_margin": 0.0,
+          "edge": 4.5,
+          "pred_total": 235.0,
+          "total_line": 225.0,
+          "total_edge": 10.0,
+          "total_is_default": true
+        },
+        "probability": {
+          "cover": 0.641,
+          "win_model": 0.641,
+          "win_market": null,
+          "total": 0.701,
+          "sigma_spread": 12.5,
+          "sigma_total": 19.0,
+          "sigma_measured": false
+        },
+        "effects": {
+          "since": "2023-06-14",
+          "years": 3,
+          "home_margin": 2.031,
+          "home_win_rate": 0.551,
+          "home_n": 4161,
+          "avg_total": 227.896,
+          "b2b_margin": -1.873,
+          "b2b_win_rate": 0.454,
+          "b2b_n": 1323
+        },
+        "record": {
+          "spread": [
+            10,
+            7
+          ],
+          "total": [
+            9,
+            8
+          ],
+          "spread_at_conf": [
+            2,
+            2
+          ]
+        },
+        "generated_at": "2026-10-24T00:00:12"
+      },
+      "matches": {
+        "id": 58,
+        "date": "2026-10-25",
+        "start_time": "2026-10-25T21:00Z",
+        "home_team_id": 30,
+        "away_team_id": 13,
+        "status": "STATUS_SCHEDULED",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": null,
+        "vegas_spread": null,
+        "vegas_total": null,
+        "home_team": {
+          "code": "UTAH",
+          "full_name": "Utah Jazz",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png"
+        },
+        "away_team": {
+          "code": "LAL",
+          "full_name": "Los Angeles Lakers",
+          "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png"
+        },
+        "home_team_nba_id": 1610612762,
+        "away_team_nba_id": 1610612747
+      },
+      "recommended_team": {
+        "code": "LAL",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png"
       }
     }
   ]
