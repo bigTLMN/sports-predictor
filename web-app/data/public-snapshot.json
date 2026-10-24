@@ -1924,7 +1924,7 @@
       "start_time": "2026-10-24T01:30Z",
       "home_team_id": 29,
       "away_team_id": 10,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 110,
       "away_score": 114,
       "period_scores": {
@@ -2001,18 +2001,20 @@
       "home_team_id": 26,
       "away_team_id": 14,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 90,
-      "away_score": 84,
+      "home_score": 95,
+      "away_score": 86,
       "period_scores": {
         "home": [
           34,
           22,
-          34
+          34,
+          5
         ],
         "away": [
           33,
           27,
-          24
+          24,
+          2
         ]
       },
       "vegas_spread": -4.5,
@@ -2038,7 +2040,7 @@
       "away_team_id": 12,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 119,
-      "away_score": 105,
+      "away_score": 109,
       "period_scores": {
         "home": [
           27,
@@ -2050,7 +2052,7 @@
           31,
           33,
           26,
-          15
+          19
         ]
       },
       "vegas_spread": -8.5,
@@ -2075,20 +2077,20 @@
       "home_team_id": 23,
       "away_team_id": 22,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 114,
-      "away_score": 118,
+      "home_score": 117,
+      "away_score": 123,
       "period_scores": {
         "home": [
           33,
           31,
           26,
-          24
+          27
         ],
         "away": [
           27,
           32,
           44,
-          15
+          20
         ]
       },
       "vegas_spread": 9.5,
@@ -5245,7 +5247,7 @@
         "away_team_id": 12,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 119,
-        "away_score": 105,
+        "away_score": 109,
         "period_scores": {
           "home": [
             27,
@@ -5257,7 +5259,7 @@
             31,
             33,
             26,
-            15
+            19
           ]
         },
         "vegas_spread": -8.5,
@@ -6724,20 +6726,20 @@
         "home_team_id": 23,
         "away_team_id": 22,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 114,
-        "away_score": 118,
+        "home_score": 117,
+        "away_score": 123,
         "period_scores": {
           "home": [
             33,
             31,
             26,
-            24
+            27
           ],
           "away": [
             27,
             32,
             44,
-            15
+            20
           ]
         },
         "vegas_spread": 9.5,
@@ -7464,18 +7466,20 @@
         "home_team_id": 26,
         "away_team_id": 14,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 90,
-        "away_score": 84,
+        "home_score": 95,
+        "away_score": 86,
         "period_scores": {
           "home": [
             34,
             22,
-            34
+            34,
+            5
           ],
           "away": [
             33,
             27,
-            24
+            24,
+            2
           ]
         },
         "vegas_spread": -4.5,
@@ -7513,8 +7517,8 @@
       "analysis_content_zh": "## 結論\n本場站 客場的 HOU。\n市場開 HOU +5.5，等於預期輸 5.5 分、勝率 33%；模型估 HOU -4.1（勝率 37%），與盤口差 1.4 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，1.4 分的優勢等於 54% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（55%）。\n## 本季至今\nHOU 戰績 2-0（主 2-0、客 0-0），場均得 122.0（29 隊中第 6）、失 99.5（29 隊中第 1），淨勝 +22.5（29 隊中第 1），目前 W2。近況：主場勝 OKC 116-89、主場勝 DAL 128-110。\nSA 戰績 2-1，場均得 117.7（29 隊中第 12）、失 105.3（29 隊中第 4），淨勝 +12.3（29 隊中第 6），目前 L1。近況：主場勝 PHX 123-103、主場勝 SAC 126-97、主場負 OKC 104-116。\n近 3 次交手 HOU 1 勝 2 負，平均分差 -10.7（最近一次 2026-03-08：負 120-145）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-01），HOU 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **禁區得分**：HOU 禁區拿 53.4 分，對手 41.4（聯盟平均 47.4；HOU 第 6、SA 第 25／30 隊）。\n• **進攻籃板**：HOU 進攻籃板 15.3 個，對手 11.5（聯盟平均 11.1；HOU 第 1、SA 第 12／30 隊）。\n• **命中率**：HOU 命中率 44.3%，對手 42.4%（聯盟平均 45.8%；HOU 第 25、SA 第 29／30 隊）。\n• **籃板**：HOU 場均 46.0 籃板，對手 44.4（聯盟平均 41.9；HOU 第 2、SA 第 7／30 隊）。\nSA 能反擊的地方：\n• **板凳得分**：SA 這項較好，28.3 對 HOU 的 21.3（聯盟平均 35.3；HOU 第 29、SA 第 23／30 隊）。\n• **三分命中率**：SA 這項較好，33.8% 對 HOU 的 29.9%（聯盟平均 34.9%；HOU 第 29、SA 第 19／30 隊）。\n• **助攻**：SA 這項較好，23.5 對 HOU 的 22.4（聯盟平均 25.0；HOU 第 26、SA 第 22／30 隊）。\n穩定度：這段期間 HOU 單場分差的標準差是 ±14.5 分，SA 是 ±13.2 分；HOU 的表現起伏較大。\n## 賽程與休息\nHOU 休一天；SA 休了 2 天。\n體能上 SA 較佔便宜。\nSA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 225.5\n節奏觀察：本季兩隊進攻合計 239.7 分，防守合計失 204.8 分；近況合計每場出手 72 記三分（聯盟兩隊平均 73）、快攻 30 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 213.9，盤口 225.5，低於盤口 11.6 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 73%；公布信心 84%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 55% 以上的場次 6 勝 3 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：優勢只有 1.4 分（過盤機率 54%），落在盤口正常波動範圍內；SA 在板凳得分上的優勢（28.3 對 21.3）是翻掉這份判讀最直接的路徑；HOU 單場分差起伏 ±14.5 分，單場優勢並不牢靠。",
       "predicted_margin": -4.13,
       "predicted_total": 213.88,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-10-22T23:30:12.695215",
       "analysis_facts": {
         "profile_games": 10,
@@ -7831,7 +7835,7 @@
         "start_time": "2026-10-24T01:30Z",
         "home_team_id": 29,
         "away_team_id": 10,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 110,
         "away_score": 114,
         "period_scores": {
