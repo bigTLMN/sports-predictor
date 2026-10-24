@@ -4,6 +4,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { differenceInCalendarDays, parseISO } from 'date-fns';
 import dynamic from 'next/dynamic';
 import { useI18n } from '@/lib/i18n';
+import { resolveDisplayedOutcomes } from '@/lib/pickModelLabels';
 
 const TrendChart = dynamic(() => import('./TrendChart'), {
   ssr: false,
@@ -36,8 +37,9 @@ function countSpreadLegs(picks: any[]): { w: number; l: number } {
   let w = 0;
   let l = 0;
   for (const p of picks) {
-    if (p.spread_outcome === 'WIN') w++;
-    else if (p.spread_outcome === 'LOSS') l++;
+    const { spreadOutcome } = resolveDisplayedOutcomes(p);
+    if (spreadOutcome === 'WIN') w++;
+    else if (spreadOutcome === 'LOSS') l++;
   }
   return { w, l };
 }
@@ -46,8 +48,9 @@ function countTotalLegs(picks: any[]): { w: number; l: number } {
   let w = 0;
   let l = 0;
   for (const p of picks) {
-    if (p.total_outcome === 'WIN') w++;
-    else if (p.total_outcome === 'LOSS') l++;
+    const { totalOutcome } = resolveDisplayedOutcomes(p);
+    if (totalOutcome === 'WIN') w++;
+    else if (totalOutcome === 'LOSS') l++;
   }
   return { w, l };
 }
@@ -57,10 +60,11 @@ function countCombinedLegs(picks: any[]): { w: number; l: number } {
   let w = 0;
   let l = 0;
   for (const p of picks) {
-    if (p.spread_outcome === 'WIN') w++;
-    else if (p.spread_outcome === 'LOSS') l++;
-    if (p.total_outcome === 'WIN') w++;
-    else if (p.total_outcome === 'LOSS') l++;
+    const { spreadOutcome, totalOutcome } = resolveDisplayedOutcomes(p);
+    if (spreadOutcome === 'WIN') w++;
+    else if (spreadOutcome === 'LOSS') l++;
+    if (totalOutcome === 'WIN') w++;
+    else if (totalOutcome === 'LOSS') l++;
   }
   return { w, l };
 }
@@ -76,13 +80,14 @@ function filterPicksByTab(picks: any[], activeTab: StatsType) {
   let total = 0;
 
   picks.forEach((p) => {
+    const { spreadOutcome, totalOutcome } = resolveDisplayedOutcomes(p);
     if (activeTab === 'SPREAD' || activeTab === 'ALL') {
-      if (p.spread_outcome === 'WIN') wins++;
-      if (p.spread_outcome === 'WIN' || p.spread_outcome === 'LOSS') total++;
+      if (spreadOutcome === 'WIN') wins++;
+      if (spreadOutcome === 'WIN' || spreadOutcome === 'LOSS') total++;
     }
     if (activeTab === 'TOTAL' || activeTab === 'ALL') {
-      if (p.total_outcome === 'WIN') wins++;
-      if (p.total_outcome === 'WIN' || p.total_outcome === 'LOSS') total++;
+      if (totalOutcome === 'WIN') wins++;
+      if (totalOutcome === 'WIN' || totalOutcome === 'LOSS') total++;
     }
   });
   return { wins, total };

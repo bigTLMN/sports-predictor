@@ -94,6 +94,85 @@ export function actualTotalEdge(
   return null;
 }
 
+export type PickOutcome = 'WIN' | 'LOSS' | 'PUSH';
+
+/** Same rules as grade_picks.settle — keeps UI outcomes aligned with line display. */
+export function settledSpreadOutcome(
+  homeScore: number,
+  awayScore: number,
+  spreadHomeLine: number,
+  recommendedIsHome: boolean
+): PickOutcome {
+  const edge = actualSpreadCoverEdge(homeScore, awayScore, spreadHomeLine, recommendedIsHome);
+  if (edge > 0) return 'WIN';
+  if (edge < 0) return 'LOSS';
+  return 'PUSH';
+}
+
+export function settledTotalOutcome(
+  homeScore: number,
+  awayScore: number,
+  totalLine: number,
+  ouPick: string | undefined
+): PickOutcome | null {
+  const edge = actualTotalEdge(homeScore, awayScore, totalLine, ouPick);
+  if (edge === null) return null;
+  if (edge > 0) return 'WIN';
+  if (edge < 0) return 'LOSS';
+  return 'PUSH';
+}
+
+export function isFinishedMatch(status: string | undefined): boolean {
+  return status === 'STATUS_FINISHED' || status === 'STATUS_FINAL' || status === 'Final';
+}
+
+/** Prefer live score + closing line over stored outcomes when a game is final. */
+export function resolveDisplayedOutcomes(pick: {
+  spread_outcome?: string | null;
+  total_outcome?: string | null;
+  ou_pick?: string;
+  recommended_team?: { code?: string };
+  matches?: {
+    status?: string;
+    home_score?: unknown;
+    away_score?: unknown;
+    home_team?: { code?: string };
+    vegas_spread?: unknown;
+    vegas_total?: unknown;
+  };
+  line_info?: unknown;
+  ou_line?: unknown;
+}): { spreadOutcome: string | null | undefined; totalOutcome: string | null | undefined } {
+  const m = pick.matches;
+  if (
+    !m ||
+    !isFinishedMatch(m.status) ||
+    m.home_score == null ||
+    m.away_score == null
+  ) {
+    return { spreadOutcome: pick.spread_outcome, totalOutcome: pick.total_outcome };
+  }
+  const home = Number(m.home_score);
+  const away = Number(m.away_score);
+  const spreadHomeLine = pickSpreadHomeLine(m, pick);
+  const hasSpreadLine = spreadHomeLine !== null && !!pick.recommended_team;
+  const totalLine = pickTotalLine(m, pick);
+  return {
+    spreadOutcome: hasSpreadLine
+      ? settledSpreadOutcome(
+          home,
+          away,
+          spreadHomeLine,
+          pick.recommended_team?.code === m.home_team?.code
+        )
+      : pick.spread_outcome,
+    totalOutcome:
+      totalLine !== null && pick.ou_pick
+        ? settledTotalOutcome(home, away, totalLine, pick.ou_pick)
+        : pick.total_outcome,
+  };
+}
+
 /** Home-perspective line, flipped when the pick is the away team. */
 export function recommendedCoverNumber(
   homeLine: unknown,

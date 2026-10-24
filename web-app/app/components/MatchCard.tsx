@@ -6,11 +6,13 @@ import { twMerge } from 'tailwind-merge';
 import Link from 'next/link';
 import {
   actualSpreadCoverEdge,
+  actualTotalEdge,
   formatSignedLine,
   formatTotalLine,
   pickSpreadHomeLine,
   pickTotalLine,
   recommendedCoverNumber,
+  resolveDisplayedOutcomes,
 } from '@/lib/pickModelLabels';
 import { useI18n } from '@/lib/i18n';
 import { pickSpreadLogic } from '@/lib/pickLocalized';
@@ -76,13 +78,25 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
           ),
         })
       : null;
+  const totalEdge =
+    finishedScores && totalLineNumber !== null && pick.ou_pick
+      ? actualTotalEdge(
+          finishedScores.home,
+          finishedScores.away,
+          totalLineNumber,
+          pick.ou_pick
+        )
+      : null;
   const totalAlignText =
     finishedScores && totalLineNumber !== null && pick.ou_pick
       ? t('card.finalTotalAlign', {
           pts: finishedScores.home + finishedScores.away,
           line: formatTotalLine(totalLineNumber),
+          edge: totalEdge === null ? '' : formatSignedLine(totalEdge),
         })
       : null;
+  const { spreadOutcome: displaySpreadOutcome, totalOutcome: displayTotalOutcome } =
+    resolveDisplayedOutcomes(pick);
   const outcomeText = (value: string | null | undefined) => {
     if (value === 'WIN') return t('common.win');
     if (value === 'LOSS') return t('common.loss');
@@ -305,13 +319,13 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
             </div>
           </div>
 
-          {hasPrediction && (pick.spread_outcome || pick.total_outcome) && (
+          {hasPrediction && (displaySpreadOutcome || displayTotalOutcome) && (
             <div className="flex border-t border-slate-100 dark:border-slate-800 divide-x divide-slate-100 dark:divide-slate-800 bg-white dark:bg-[#161b22]">
               <div
                 className={`flex-1 py-2 flex flex-col items-center justify-center ${
-                  hasSpreadLine && pick.spread_outcome === 'WIN'
+                  hasSpreadLine && displaySpreadOutcome === 'WIN'
                     ? 'bg-emerald-100 dark:bg-emerald-500/25'
-                    : hasSpreadLine && pick.spread_outcome === 'LOSS'
+                    : hasSpreadLine && displaySpreadOutcome === 'LOSS'
                       ? 'bg-red-100 dark:bg-red-500/25'
                       : ''
                 }`}
@@ -321,22 +335,22 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                   className={`text-base font-black ${
                     !hasSpreadLine
                       ? 'text-slate-400'
-                      : pick.spread_outcome === 'WIN'
+                      : displaySpreadOutcome === 'WIN'
                         ? 'text-emerald-700 dark:text-emerald-300'
-                        : pick.spread_outcome === 'LOSS'
+                        : displaySpreadOutcome === 'LOSS'
                           ? 'text-red-600 dark:text-red-300'
                           : 'text-slate-500 dark:text-slate-300'
                   }`}
                 >
-                  {hasSpreadLine ? outcomeText(pick.spread_outcome) : '—'}
+                  {hasSpreadLine ? outcomeText(displaySpreadOutcome) : '—'}
                 </span>
               </div>
 
               <div
                 className={`flex-1 py-2 flex flex-col items-center justify-center ${
-                  pick.total_outcome === 'WIN'
+                  displayTotalOutcome === 'WIN'
                     ? 'bg-emerald-100 dark:bg-emerald-500/25'
-                    : pick.total_outcome === 'LOSS'
+                    : displayTotalOutcome === 'LOSS'
                       ? 'bg-red-100 dark:bg-red-500/25'
                       : ''
                 }`}
@@ -344,14 +358,14 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
                 <span className="text-sm font-bold text-slate-500 dark:text-slate-300 uppercase tracking-wider">{t('card.totalFooter')}</span>
                 <span
                   className={`text-base font-black ${
-                    pick.total_outcome === 'WIN'
+                    displayTotalOutcome === 'WIN'
                       ? 'text-emerald-700 dark:text-emerald-300'
-                      : pick.total_outcome === 'LOSS'
+                      : displayTotalOutcome === 'LOSS'
                         ? 'text-red-600 dark:text-red-300'
                         : 'text-slate-500 dark:text-slate-300'
                   }`}
                 >
-                  {outcomeText(pick.total_outcome)}
+                  {outcomeText(displayTotalOutcome)}
                 </span>
               </div>
             </div>

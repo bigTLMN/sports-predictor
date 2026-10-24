@@ -4,11 +4,15 @@ import Link from 'next/link';
 import { format } from 'date-fns';
 import { useI18n } from '@/lib/i18n';
 import {
+  actualSpreadCoverEdge,
+  actualTotalEdge,
   formatSignedLine,
   formatTotalLine,
+  isFinishedMatch,
   pickSpreadHomeLine,
   pickTotalLine,
   recommendedCoverNumber,
+  resolveDisplayedOutcomes,
 } from '@/lib/pickModelLabels';
 import { pickAnalysisContent } from '@/lib/pickLocalized';
 import AppearanceSwitch from '@/app/components/AppearanceSwitch';
@@ -44,6 +48,48 @@ export default function MatchDetailView({ pick }: { pick: any }) {
   const facts = pick.analysis_facts && typeof pick.analysis_facts === 'object' ? pick.analysis_facts : null;
   const recCode = pick.recommended_team?.code ?? '';
   const oppCode = recCode === m.home_team?.code ? m.away_team?.code ?? '' : m.home_team?.code ?? '';
+  const isFinished = isFinishedMatch(m.status);
+  const finishedScores =
+    isFinished && m.home_score != null && m.away_score != null
+      ? { home: Number(m.home_score), away: Number(m.away_score) }
+      : null;
+  const spreadAlignText =
+    finishedScores && hasSpreadLine && spreadHomeLine !== null
+      ? t('card.finalSpreadAlign', {
+          edge: formatSignedLine(
+            actualSpreadCoverEdge(
+              finishedScores.home,
+              finishedScores.away,
+              spreadHomeLine,
+              pick.recommended_team?.code === m.home_team?.code
+            )
+          ),
+        })
+      : null;
+  const totalEdge =
+    finishedScores && totalLineNumber !== null && pick.ou_pick
+      ? actualTotalEdge(
+          finishedScores.home,
+          finishedScores.away,
+          totalLineNumber,
+          pick.ou_pick
+        )
+      : null;
+  const totalAlignText =
+    finishedScores && totalLineNumber !== null && pick.ou_pick
+      ? t('card.finalTotalAlign', {
+          pts: finishedScores.home + finishedScores.away,
+          line: formatTotalLine(totalLineNumber),
+          edge: totalEdge === null ? '' : formatSignedLine(totalEdge),
+        })
+      : null;
+  const { spreadOutcome, totalOutcome } = resolveDisplayedOutcomes(pick);
+  const outcomeText = (value: string | null | undefined) => {
+    if (value === 'WIN') return t('common.win');
+    if (value === 'LOSS') return t('common.loss');
+    if (value === 'PUSH') return t('common.push');
+    return '—';
+  };
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-slate-100 text-slate-900 dark:bg-[#030712] dark:text-white font-sans selection:bg-orange-500/30">
@@ -75,8 +121,13 @@ export default function MatchDetailView({ pick }: { pick: any }) {
           <div className="flex flex-col items-center justify-center shrink-0 z-10">
             <div className="text-5xl font-black text-slate-700/30 italic absolute select-none">VS</div>
             <div className="bg-slate-800 text-slate-300 px-4 py-1 rounded-full text-sm mb-2 border border-slate-700">
-              {format(new Date(m.start_time), 'MMM dd • HH:mm')}
+              {isFinished ? t('card.final') : format(new Date(m.start_time), 'MMM dd • HH:mm')}
             </div>
+            {finishedScores && (
+              <div className="text-3xl font-black text-slate-900 dark:text-white tabular-nums mb-2">
+                {finishedScores.away} – {finishedScores.home}
+              </div>
+            )}
             <div className="text-center space-y-1">
               <div className="text-slate-600 dark:text-slate-300 text-sm font-bold tracking-widest uppercase">{t('card.vegas')}</div>
               <div className="text-xl font-black text-slate-900 dark:text-white">
@@ -87,6 +138,12 @@ export default function MatchDetailView({ pick }: { pick: any }) {
                 <div className="text-lg font-black text-yellow-600 dark:text-yellow-400 tabular-nums">
                   {t('card.vegasTotal')} {totalLineText}
                 </div>
+              )}
+              {spreadAlignText && (
+                <div className="text-xs font-bold text-slate-500 dark:text-slate-400 tabular-nums">{spreadAlignText}</div>
+              )}
+              {totalAlignText && (
+                <div className="text-xs font-bold text-slate-500 dark:text-slate-400 tabular-nums">{totalAlignText}</div>
               )}
             </div>
           </div>
@@ -172,6 +229,18 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               </div>
             </div>
             {facts ? <NumbersCard facts={facts} recCode={recCode} ouPick={pick.ou_pick} withheld={!hasSpreadLine} /> : null}
+            {isFinished && (spreadOutcome || totalOutcome) && (
+              <div className="bg-white border border-slate-200 dark:bg-[#161b22] dark:border-slate-800 rounded-2xl p-6 divide-y divide-slate-200 dark:divide-slate-800">
+                <div className="flex justify-between items-center pb-4">
+                  <span className="text-slate-600 dark:text-slate-300 text-sm font-bold uppercase">{t('card.spreadFooter')}</span>
+                  <span className="font-black text-lg">{hasSpreadLine ? outcomeText(spreadOutcome) : '—'}</span>
+                </div>
+                <div className="flex justify-between items-center pt-4">
+                  <span className="text-slate-600 dark:text-slate-300 text-sm font-bold uppercase">{t('card.totalFooter')}</span>
+                  <span className="font-black text-lg">{outcomeText(totalOutcome)}</span>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </main>
