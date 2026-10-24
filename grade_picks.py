@@ -6,7 +6,7 @@ def settle(conn):
         """
         SELECT p.id AS pick_id, p.line_info, p.recommended_team_id, p.ou_pick, p.ou_line,
                p.spread_outcome, p.total_outcome,
-               m.home_team_id, m.home_score, m.away_score, m.vegas_total, m.status
+               m.home_team_id, m.home_score, m.away_score, m.vegas_spread, m.vegas_total, m.status
         FROM aggregated_picks p
         JOIN matches m ON m.id = p.match_id
         WHERE m.status IN ('STATUS_FINAL', 'STATUS_FINISHED', 'Final')
@@ -15,9 +15,19 @@ def settle(conn):
     updated = 0
     for row in rows:
         spread = total = None
-        if row["spread_outcome"] is None and row["line_info"] not in (None, ""):
+        spread_line = row["vegas_spread"]
+        if spread_line in (None, "") and row["line_info"] not in (None, ""):
+            spread_line = row["line_info"]
+        needs_spread = row["spread_outcome"] is None
+        if not needs_spread and spread_line not in (None, "") and row["line_info"] not in (None, ""):
+            try:
+                if abs(float(spread_line) - float(row["line_info"])) > 1e-6:
+                    needs_spread = True
+            except (TypeError, ValueError):
+                pass
+        if needs_spread and spread_line not in (None, ""):
             margin = row["home_score"] - row["away_score"]
-            covered = margin + float(row["line_info"])
+            covered = margin + float(spread_line)
             if row["recommended_team_id"] == row["home_team_id"]:
                 spread = "WIN" if covered > 0 else "LOSS" if covered < 0 else "PUSH"
             else:
