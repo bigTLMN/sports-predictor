@@ -1697,20 +1697,20 @@
       "home_team_id": 2,
       "away_team_id": 28,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 99,
-      "away_score": 93,
+      "home_score": 101,
+      "away_score": 98,
       "period_scores": {
         "home": [
           26,
           24,
           33,
-          16
+          18
         ],
         "away": [
           27,
           22,
           24,
-          20
+          25
         ]
       },
       "vegas_spread": -2.5,
@@ -1773,20 +1773,20 @@
       "home_team_id": 11,
       "away_team_id": 7,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 96,
-      "away_score": 112,
+      "home_score": 99,
+      "away_score": 116,
       "period_scores": {
         "home": [
           27,
           16,
           33,
-          20
+          23
         ],
         "away": [
           44,
           33,
           21,
-          14
+          18
         ]
       },
       "vegas_spread": -7.5,
@@ -1810,7 +1810,7 @@
       "start_time": "2026-10-23T23:00Z",
       "home_team_id": 19,
       "away_team_id": 17,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 93,
       "away_score": 115,
       "period_scores": {
@@ -1848,15 +1848,15 @@
       "start_time": "2026-10-23T23:00Z",
       "home_team_id": 25,
       "away_team_id": 24,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 99,
+      "status": "STATUS_FINISHED",
+      "home_score": 102,
       "away_score": 112,
       "period_scores": {
         "home": [
           21,
           31,
           25,
-          20
+          25
         ],
         "away": [
           34,
@@ -1887,18 +1887,18 @@
       "home_team_id": 15,
       "away_team_id": 9,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 57,
-      "away_score": 78,
+      "home_score": 62,
+      "away_score": 82,
       "period_scores": {
         "home": [
           26,
           27,
-          4
+          9
         ],
         "away": [
           41,
           24,
-          13
+          17
         ]
       },
       "vegas_spread": 2.5,
@@ -4069,20 +4069,20 @@
         "home_team_id": 2,
         "away_team_id": 28,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 99,
-        "away_score": 93,
+        "home_score": 101,
+        "away_score": 98,
         "period_scores": {
           "home": [
             26,
             24,
             33,
-            16
+            18
           ],
           "away": [
             27,
             22,
             24,
-            20
+            25
           ]
         },
         "vegas_spread": -2.5,
@@ -4809,20 +4809,20 @@
         "home_team_id": 11,
         "away_team_id": 7,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 96,
-        "away_score": 112,
+        "home_score": 99,
+        "away_score": 116,
         "period_scores": {
           "home": [
             27,
             16,
             33,
-            20
+            23
           ],
           "away": [
             44,
             33,
             21,
-            14
+            18
           ]
         },
         "vegas_spread": -7.5,
@@ -5536,18 +5536,18 @@
         "home_team_id": 15,
         "away_team_id": 9,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 57,
-        "away_score": 78,
+        "home_score": 62,
+        "away_score": 82,
         "period_scores": {
           "home": [
             26,
             27,
-            4
+            9
           ],
           "away": [
             41,
             24,
-            13
+            17
           ]
         },
         "vegas_spread": 2.5,
@@ -5955,8 +5955,8 @@
       "analysis_content_zh": "## 結論\n本場站 主場的 ORL。\n市場開 ORL +1.5，等於預期輸 1.5 分、勝率 45%；模型估 ORL +3.7（勝率 62%），與盤口差 5.2 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，5.2 分的優勢等於 66% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +5.0；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（70%）。\n## 本季至今\nORL 戰績 1-1（主 1-1、客 0-0），場均得 130.5（29 隊中第 2）、失 123.5（29 隊中第 24），淨勝 +7.0（29 隊中第 9），目前 L1。近況：主場勝 MIA 136-115、主場負 ATL 125-132。\nMIN 戰績 1-2，場均得 117.7（29 隊中第 11）、失 122.3（29 隊中第 22），淨勝 -4.7（29 隊中第 19），目前 W1。近況：主場負 DET 106-128、客場負 CHI 116-133、客場勝 MIA 131-106。\n近 3 次交手 ORL 2 勝 1 負，平均分差 +10.7（最近一次 2026-04-08：勝 132-120）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-03）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：ORL 場均失 102.9 分，對手 113.9（聯盟平均 115.8；ORL 第 2、MIN 第 15／30 隊）。\n• **快攻得分**：ORL 快攻 17.2 分，對手 10.4（聯盟平均 14.2；ORL 第 6、MIN 第 24／30 隊）。\n• **淨勝分**：ORL 場均淨勝 -1.9 分，對手 -6.4（聯盟平均 -4.7；ORL 第 12、MIN 第 18／30 隊）。\nMIN 能反擊的地方：\n• **板凳得分**：MIN 這項較好，40.9 對 ORL 的 23.0（聯盟平均 35.3；ORL 第 27、MIN 第 9／30 隊）。\n• **禁區得分**：MIN 這項較好，50.2 對 ORL 的 39.6（聯盟平均 47.4；ORL 第 26、MIN 第 9／30 隊）。\n• **得分**：MIN 這項較好，107.5 對 ORL 的 101.0（聯盟平均 111.1；ORL 第 30、MIN 第 22／30 隊）。\n穩定度：這段期間 ORL 單場分差的標準差是 ±15.1 分，MIN 是 ±19.2 分；ORL 的表現較穩。\n## 賽程與休息\nORL 休一天；MIN 休一天。\nORL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 236.5\n節奏觀察：本季兩隊進攻合計 248.2 分，防守合計失 245.8 分；近況合計每場出手 64 記三分（聯盟兩隊平均 73）、快攻 28 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 221.2，盤口 236.5，低於盤口 15.3 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 79%；公布信心 90%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 70% 以上的場次 2 勝 2 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：MIN 在板凳得分上的優勢（40.9 對 23.0）是翻掉這份判讀最直接的路徑；ORL 單場分差起伏 ±15.1 分，單場優勢並不牢靠。",
       "predicted_margin": 3.67,
       "predicted_total": 221.19,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "WIN",
       "created_at": "2026-10-22T23:30:12.465827",
       "analysis_facts": {
         "profile_games": 10,
@@ -6273,7 +6273,7 @@
         "start_time": "2026-10-23T23:00Z",
         "home_team_id": 19,
         "away_team_id": 17,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 93,
         "away_score": 115,
         "period_scores": {
@@ -6682,8 +6682,8 @@
       "analysis_content_zh": "## 結論\n本場站 客場的 TOR。\n市場開 TOR -5.5，等於預期贏 5.5 分、勝率 67%；模型估 TOR +10.8（勝率 81%），與盤口差 5.3 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，5.3 分的優勢等於 66% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +12.1；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（71%）。\n## 本季至今\nTOR 戰績 1-2（主 1-0、客 0-2），場均得 126.7（29 隊中第 3）、失 114.3（29 隊中第 15），淨勝 +12.3（29 隊中第 7），目前 W1。近況：客場負 NY 120-122、客場負 DET 125-129、主場勝 CHI 135-92。\nWSH 戰績 1-1，場均得 117.0（29 隊中第 14）、失 111.5（29 隊中第 10），淨勝 +5.5（29 隊中第 11），目前 W1。近況：客場負 NO 106-107、主場勝 MIL 128-116。\n近 3 次交手 TOR 2 勝 1 負，平均分差 +6.0（最近一次 2026-02-28：勝 134-125）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-03），TOR 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：TOR 場均失 111.0 分，對手 131.8（聯盟平均 115.8；TOR 第 9、WSH 第 28／30 隊）。\n• **淨勝分**：TOR 場均淨勝 +2.0 分，對手 -18.1（聯盟平均 -4.7；TOR 第 8、WSH 第 29／30 隊）。\n• **失誤轉換得分**：TOR 失誤轉換得 21.3 分，對手 17.2（聯盟平均 17.5；TOR 第 2、WSH 第 16／30 隊）。\n• **命中率**：TOR 命中率 49.2%，對手 46.8%（聯盟平均 45.8%；TOR 第 2、WSH 第 12／30 隊）。\nWSH 能反擊的地方：\n• **板凳得分**：WSH 這項較好，45.7 對 TOR 的 35.6（聯盟平均 35.3；TOR 第 15、WSH 第 4／30 隊）。\n• **罰球命中率**：WSH 這項較好，77.4% 對 TOR 的 72.9%（聯盟平均 77.5%；TOR 第 28、WSH 第 16／30 隊）。\n穩定度：這段期間 TOR 單場分差的標準差是 ±16.2 分，WSH 是 ±9.4 分；TOR 的表現起伏較大。\n## 賽程與休息\nTOR 休一天；WSH 休一天。\nWSH 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 236.5\n節奏觀察：本季兩隊進攻合計 243.7 分，防守合計失 225.8 分；近況合計每場出手 64 記三分（聯盟兩隊平均 73）、快攻 30 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 231.2，盤口 236.5，低於盤口 5.3 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 61%；公布信心 65%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 4 負（71%）；信心 71% 以上的場次 2 勝 2 負；大小分 7 勝 7 負（50%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：WSH 在板凳得分上的優勢（45.7 對 35.6）是翻掉這份判讀最直接的路徑；TOR 單場分差起伏 ±16.2 分，單場優勢並不牢靠。",
       "predicted_margin": 10.79,
       "predicted_total": 231.2,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-10-22T23:30:12.580788",
       "analysis_facts": {
         "profile_games": 10,
@@ -7000,15 +7000,15 @@
         "start_time": "2026-10-23T23:00Z",
         "home_team_id": 25,
         "away_team_id": 24,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 99,
+        "status": "STATUS_FINISHED",
+        "home_score": 102,
         "away_score": 112,
         "period_scores": {
           "home": [
             21,
             31,
             25,
-            20
+            25
           ],
           "away": [
             34,
