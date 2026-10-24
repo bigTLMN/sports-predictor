@@ -48,6 +48,52 @@ export function formatTotalLine(value: number): string {
   return (Math.round(value * 10) / 10).toFixed(1);
 }
 
+function lineNumber(raw: unknown): number | null {
+  if (raw === null || raw === undefined || raw === '') return null;
+  const n = Number(raw);
+  return Number.isNaN(n) ? null : n;
+}
+
+/** Closing home spread for display and grading; snapshot line_info is fallback only. */
+export function pickSpreadHomeLine(
+  match: { vegas_spread?: unknown },
+  pick: { line_info?: unknown }
+): number | null {
+  return lineNumber(match.vegas_spread) ?? lineNumber(pick.line_info);
+}
+
+/** Saved total pick line for display and grading; closing vegas_total is fallback only. */
+export function pickTotalLine(
+  match: { vegas_total?: unknown },
+  pick: { ou_line?: unknown }
+): number | null {
+  return lineNumber(pick.ou_line) ?? lineNumber(match.vegas_total);
+}
+
+/** Positive = recommended side covered vs the home-perspective spread line. */
+export function actualSpreadCoverEdge(
+  homeScore: number,
+  awayScore: number,
+  homeLine: number,
+  recommendedIsHome: boolean
+): number {
+  const homeCover = homeScore - awayScore + homeLine;
+  return recommendedIsHome ? homeCover : -homeCover;
+}
+
+/** Positive = picked side (over/under) cleared the total line. */
+export function actualTotalEdge(
+  homeScore: number,
+  awayScore: number,
+  totalLine: number,
+  ouPick: string | undefined
+): number | null {
+  const pts = homeScore + awayScore;
+  if (ouPick === 'OVER') return Math.round((pts - totalLine) * 10) / 10;
+  if (ouPick === 'UNDER') return Math.round((totalLine - pts) * 10) / 10;
+  return null;
+}
+
 /** Home-perspective line, flipped when the pick is the away team. */
 export function recommendedCoverNumber(
   homeLine: unknown,

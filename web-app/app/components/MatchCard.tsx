@@ -4,7 +4,14 @@ import { motion } from 'framer-motion';
 import { format } from 'date-fns';
 import { twMerge } from 'tailwind-merge';
 import Link from 'next/link';
-import { formatSignedLine, formatTotalLine, recommendedCoverNumber } from '@/lib/pickModelLabels';
+import {
+  actualSpreadCoverEdge,
+  formatSignedLine,
+  formatTotalLine,
+  pickSpreadHomeLine,
+  pickTotalLine,
+  recommendedCoverNumber,
+} from '@/lib/pickModelLabels';
 import { useI18n } from '@/lib/i18n';
 import { pickSpreadLogic } from '@/lib/pickLocalized';
 
@@ -17,8 +24,8 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
   const { t, locale } = useI18n();
   const m = pick.matches;
 
-  const hasSpreadLine =
-    pick.line_info != null && String(pick.line_info).trim() !== '';
+  const spreadHomeLine = pickSpreadHomeLine(m, pick);
+  const hasSpreadLine = spreadHomeLine !== null && !!pick.recommended_team;
   const hasOuPick = !!(pick.ou_pick && pick.ou_line != null && pick.ou_line !== '');
   const hasPrediction =
     (!!pick.recommended_team && hasSpreadLine) || hasOuPick;
@@ -26,9 +33,7 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
   const isFinished = m.status === 'STATUS_FINISHED' || m.status === 'STATUS_FINAL' || m.status === 'Final';
 
   const spreadText =
-    m.vegas_spread !== null && m.vegas_spread !== undefined && m.vegas_spread !== ''
-      ? formatSignedLine(Number(m.vegas_spread))
-      : t('card.pk');
+    spreadHomeLine !== null ? formatSignedLine(spreadHomeLine) : t('card.pk');
 
   // 政策 B 不發佈讓分時，aggregate 會把 confidence_score 設成「大小分信心」；若仍用同一門檻會誤標 High Value
   const isHighConfidence =
@@ -37,30 +42,47 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
   const ouLabel =
     pick.ou_pick === 'OVER' ? t('card.ou.over') : pick.ou_pick === 'UNDER' ? t('card.ou.under') : pick.ou_pick;
 
-  const homeLineForCover =
-    m.vegas_spread !== null && m.vegas_spread !== undefined && m.vegas_spread !== ''
-      ? m.vegas_spread
-      : pick.line_info;
   const coverNumber = hasSpreadLine
-    ? recommendedCoverNumber(homeLineForCover, pick.recommended_team?.code, m.home_team?.code)
+    ? recommendedCoverNumber(spreadHomeLine, pick.recommended_team?.code, m.home_team?.code)
     : null;
   const coverLineText = coverNumber === null ? null : formatSignedLine(coverNumber);
   const spreadPickText = [pick.recommended_team?.code, coverLineText, t('card.toCover')]
     .filter((part) => part)
     .join(' ');
 
-  const totalSource =
-    m.vegas_total !== null && m.vegas_total !== undefined && m.vegas_total !== ''
-      ? m.vegas_total
-      : pick.ou_line;
-  const totalLineNumber = Number(totalSource);
-  const totalLineText = Number.isNaN(totalLineNumber) ? null : formatTotalLine(totalLineNumber);
+  const totalLineNumber = pickTotalLine(m, pick);
+  const totalLineText = totalLineNumber === null ? null : formatTotalLine(totalLineNumber);
   const totalCoverText =
     hasOuPick && ouLabel && totalLineText
       ? t('card.totalCoverLine', { side: ouLabel, line: totalLineText })
       : null;
 
   const spreadLogicDisplay = pickSpreadLogic(pick, locale);
+
+  const finishedScores =
+    isFinished && m.home_score != null && m.away_score != null
+      ? { home: Number(m.home_score), away: Number(m.away_score) }
+      : null;
+  const spreadAlignText =
+    finishedScores && hasSpreadLine && spreadHomeLine !== null
+      ? t('card.finalSpreadAlign', {
+          edge: formatSignedLine(
+            actualSpreadCoverEdge(
+              finishedScores.home,
+              finishedScores.away,
+              spreadHomeLine,
+              pick.recommended_team?.code === m.home_team?.code
+            )
+          ),
+        })
+      : null;
+  const totalAlignText =
+    finishedScores && totalLineNumber !== null && pick.ou_pick
+      ? t('card.finalTotalAlign', {
+          pts: finishedScores.home + finishedScores.away,
+          line: formatTotalLine(totalLineNumber),
+        })
+      : null;
   const outcomeText = (value: string | null | undefined) => {
     if (value === 'WIN') return t('common.win');
     if (value === 'LOSS') return t('common.loss');
@@ -123,9 +145,21 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
             <div className="flex flex-col items-center w-1/3">
               <span className="text-sm font-black text-slate-500 dark:text-slate-300 tracking-widest">{t('card.at')}</span>
               {isFinished ? (
-                <span className="text-sm font-bold bg-white text-slate-800 px-2 py-0.5 rounded mt-1 border border-slate-300 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-600">
-                  {t('card.final')}
-                </span>
+                <div className="flex flex-col items-center gap-0.5 mt-1">
+                  <span className="text-sm font-bold bg-white text-slate-800 px-2 py-0.5 rounded border border-slate-300 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-600">
+                    {t('card.final')}
+                  </span>
+                  {spreadAlignText && (
+                    <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 tabular-nums text-center leading-tight">
+                      {spreadAlignText}
+                    </span>
+                  )}
+                  {totalAlignText && (
+                    <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 tabular-nums text-center leading-tight">
+                      {totalAlignText}
+                    </span>
+                  )}
+                </div>
               ) : (
                 <span className="text-sm font-bold text-slate-800 mt-1 bg-white px-2 py-0.5 rounded border border-slate-300 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-600">
                   {format(new Date(m.start_time), 'HH:mm')}

@@ -1,6 +1,15 @@
 import sqlite_store
 
 
+def _float_line(value):
+    if value in (None, ""):
+        return None
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
 def settle(conn):
     rows = conn.execute(
         """
@@ -15,33 +24,32 @@ def settle(conn):
     updated = 0
     for row in rows:
         spread = total = None
-        spread_line = row["vegas_spread"]
-        if spread_line in (None, "") and row["line_info"] not in (None, ""):
-            spread_line = row["line_info"]
-        needs_spread = row["spread_outcome"] is None
-        if not needs_spread and spread_line not in (None, "") and row["line_info"] not in (None, ""):
-            try:
-                if abs(float(spread_line) - float(row["line_info"])) > 1e-6:
-                    needs_spread = True
-            except (TypeError, ValueError):
-                pass
-        if needs_spread and spread_line not in (None, ""):
+        spread_line = _float_line(row["vegas_spread"])
+        if spread_line is None:
+            spread_line = _float_line(row["line_info"])
+        if (
+            spread_line is not None
+            and row["home_score"] is not None
+            and row["away_score"] is not None
+            and row["recommended_team_id"] is not None
+        ):
             margin = row["home_score"] - row["away_score"]
-            covered = margin + float(spread_line)
+            covered = margin + spread_line
             if row["recommended_team_id"] == row["home_team_id"]:
                 spread = "WIN" if covered > 0 else "LOSS" if covered < 0 else "PUSH"
             else:
                 spread = "LOSS" if covered > 0 else "WIN" if covered < 0 else "PUSH"
-        total_line = row["ou_line"] if row["ou_line"] not in (None, "") else row["vegas_total"]
+        total_line = _float_line(row["ou_line"])
+        if total_line is None:
+            total_line = _float_line(row["vegas_total"])
         if (
-            row["total_outcome"] is None
-            and row["ou_pick"]
-            and total_line not in (None, "")
+            row["ou_pick"]
+            and total_line is not None
             and row["home_score"] is not None
             and row["away_score"] is not None
         ):
             points = row["home_score"] + row["away_score"]
-            line = float(total_line)
+            line = total_line
             if points == line:
                 total = "PUSH"
             elif row["ou_pick"] == "OVER":

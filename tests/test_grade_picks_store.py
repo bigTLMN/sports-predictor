@@ -50,12 +50,11 @@ class GradeTests(unittest.TestCase):
             "predicted_margin": -4.8, "predicted_total": 235.0, "created_at": "2026-10-22T00:00:00",
             "spread_outcome": "LOSS",
         })
-        updated = grade_picks.settle(conn)
+        grade_picks.settle(conn)
         row = conn.execute(
             "SELECT spread_outcome FROM aggregated_picks WHERE match_id=?",
             (match_id,),
         ).fetchone()
-        self.assertEqual(updated, 1)
         self.assertEqual(row["spread_outcome"], "WIN")
 
     def test_total_uses_saved_line_after_market_total_is_cleared(self):
@@ -81,6 +80,31 @@ class GradeTests(unittest.TestCase):
             (match_id,),
         ).fetchone()
         self.assertEqual(row["total_outcome"], "LOSS")
+
+    def test_regrades_spread_even_when_outcome_already_set(self):
+        conn = sqlite_store.connect(os.environ["NBA_SQLITE_PATH"])
+        home = sqlite_store.upsert_team(conn, "SAC", "Kings", "Sacramento Kings", None, 10)
+        away = sqlite_store.upsert_team(conn, "POR", "Blazers", "Portland Trail Blazers", None, 11)
+        match_id = sqlite_store.upsert_match(conn, {
+            "date": "2026-10-23", "start_time": "2026-10-23T02:00:00Z",
+            "home_team_id": home, "away_team_id": away, "status": "STATUS_FINISHED",
+            "home_score": 120, "away_score": 128, "period_scores": None,
+            "vegas_spread": 9.5, "vegas_total": 230.0,
+        })
+        sqlite_store.upsert_pick(conn, {
+            "match_id": match_id, "recommended_team_id": home, "confidence_score": 60,
+            "spread_logic": "en", "spread_logic_zh": "zh", "line_info": "7.5",
+            "ou_pick": "UNDER", "ou_line": 232.5, "ou_confidence": 55,
+            "analysis_content": "a", "analysis_content_zh": "甲",
+            "predicted_margin": -4.8, "predicted_total": 229.0, "created_at": "2026-10-22T00:00:00",
+            "spread_outcome": "LOSS",
+        })
+        grade_picks.settle(conn)
+        row = conn.execute(
+            "SELECT spread_outcome FROM aggregated_picks WHERE match_id=?",
+            (match_id,),
+        ).fetchone()
+        self.assertEqual(row["spread_outcome"], "WIN")
 
 
 if __name__ == "__main__":

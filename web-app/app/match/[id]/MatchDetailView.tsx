@@ -3,7 +3,13 @@
 import Link from 'next/link';
 import { format } from 'date-fns';
 import { useI18n } from '@/lib/i18n';
-import { formatSignedLine, formatTotalLine, recommendedCoverNumber } from '@/lib/pickModelLabels';
+import {
+  formatSignedLine,
+  formatTotalLine,
+  pickSpreadHomeLine,
+  pickTotalLine,
+  recommendedCoverNumber,
+} from '@/lib/pickModelLabels';
 import { pickAnalysisContent } from '@/lib/pickLocalized';
 import AppearanceSwitch from '@/app/components/AppearanceSwitch';
 import { AnalysisText, FactsTable, NumbersCard } from '@/app/components/AnalysisReport';
@@ -12,29 +18,21 @@ export default function MatchDetailView({ pick }: { pick: any }) {
   const { t, locale } = useI18n();
   const m = pick.matches;
 
-  const hasSpreadLine =
-    pick.line_info != null && String(pick.line_info).trim() !== '';
+  const spreadHomeLine = pickSpreadHomeLine(m, pick);
+  const hasSpreadLine = spreadHomeLine !== null && !!pick.recommended_team;
 
   const ouLabel =
     pick.ou_pick === 'OVER' ? t('card.ou.over') : pick.ou_pick === 'UNDER' ? t('card.ou.under') : pick.ou_pick;
 
-  const homeLineForCover =
-    m.vegas_spread !== null && m.vegas_spread !== undefined && m.vegas_spread !== ''
-      ? m.vegas_spread
-      : pick.line_info;
   const coverNumber = hasSpreadLine
-    ? recommendedCoverNumber(homeLineForCover, pick.recommended_team?.code, m.home_team?.code)
+    ? recommendedCoverNumber(spreadHomeLine, pick.recommended_team?.code, m.home_team?.code)
     : null;
   const coverLineText = coverNumber === null ? null : formatSignedLine(coverNumber);
   const spreadPickText = [pick.recommended_team?.code, coverLineText, t('card.toCover')]
     .filter((part) => part)
     .join(' ');
-  const totalSource =
-    m.vegas_total !== null && m.vegas_total !== undefined && m.vegas_total !== ''
-      ? m.vegas_total
-      : pick.ou_line;
-  const totalLineNumber = Number(totalSource);
-  const totalLineText = Number.isNaN(totalLineNumber) ? null : formatTotalLine(totalLineNumber);
+  const totalLineNumber = pickTotalLine(m, pick);
+  const totalLineText = totalLineNumber === null ? null : formatTotalLine(totalLineNumber);
   const totalCoverText =
     ouLabel && totalLineText
       ? t('card.totalCoverLine', { side: ouLabel, line: totalLineText })
@@ -83,9 +81,7 @@ export default function MatchDetailView({ pick }: { pick: any }) {
               <div className="text-slate-600 dark:text-slate-300 text-sm font-bold tracking-widest uppercase">{t('card.vegas')}</div>
               <div className="text-xl font-black text-slate-900 dark:text-white">
                 {m.home_team.code}{' '}
-                {m.vegas_spread !== null && m.vegas_spread !== undefined && m.vegas_spread !== ''
-                  ? formatSignedLine(Number(m.vegas_spread))
-                  : t('card.pk')}
+                {spreadHomeLine !== null ? formatSignedLine(spreadHomeLine) : t('card.pk')}
               </div>
               {totalLineText && (
                 <div className="text-lg font-black text-yellow-600 dark:text-yellow-400 tabular-nums">
