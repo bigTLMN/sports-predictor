@@ -1925,18 +1925,18 @@
       "home_team_id": 29,
       "away_team_id": 10,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 68,
-      "away_score": 76,
+      "home_score": 69,
+      "away_score": 78,
       "period_scores": {
         "home": [
           27,
           32,
-          9
+          10
         ],
         "away": [
           32,
           29,
-          15
+          17
         ]
       },
       "vegas_spread": -4.5,
@@ -1961,18 +1961,20 @@
       "home_team_id": 30,
       "away_team_id": 27,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 82,
-      "away_score": 86,
+      "home_score": 86,
+      "away_score": 90,
       "period_scores": {
         "home": [
           31,
           31,
-          20
+          24,
+          0
         ],
         "away": [
           28,
           24,
-          34
+          38,
+          0
         ]
       },
       "vegas_spread": -1.5,
@@ -2031,16 +2033,18 @@
       "home_team_id": 13,
       "away_team_id": 12,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 64,
-      "away_score": 64,
+      "home_score": 73,
+      "away_score": 72,
       "period_scores": {
         "home": [
           27,
-          37
+          37,
+          9
         ],
         "away": [
           31,
-          33
+          33,
+          8
         ]
       },
       "vegas_spread": -8.5,
@@ -2153,7 +2157,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -12.5,
-      "vegas_total": 230.5,
+      "vegas_total": 231.5,
       "home_team": {
         "code": "PHI",
         "full_name": "Philadelphia 76ers",
@@ -2252,8 +2256,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -11.5,
+      "vegas_total": 237.5,
       "home_team": {
         "code": "DEN",
         "full_name": "Denver Nuggets",
@@ -2277,8 +2281,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -6.5,
+      "vegas_total": 224.5,
       "home_team": {
         "code": "PHX",
         "full_name": "Phoenix Suns",
@@ -5230,16 +5234,18 @@
         "home_team_id": 13,
         "away_team_id": 12,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 64,
-        "away_score": 64,
+        "home_score": 73,
+        "away_score": 72,
         "period_scores": {
           "home": [
             27,
-            37
+            37,
+            9
           ],
           "away": [
             31,
-            33
+            33,
+            8
           ]
         },
         "vegas_spread": -8.5,
@@ -7808,18 +7814,18 @@
         "home_team_id": 29,
         "away_team_id": 10,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 68,
-        "away_score": 76,
+        "home_score": 69,
+        "away_score": 78,
         "period_scores": {
           "home": [
             27,
             32,
-            9
+            10
           ],
           "away": [
             32,
             29,
-            15
+            17
           ]
         },
         "vegas_spread": -4.5,
@@ -8176,18 +8182,20 @@
         "home_team_id": 30,
         "away_team_id": 27,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 82,
-        "away_score": 86,
+        "home_score": 86,
+        "away_score": 90,
         "period_scores": {
           "home": [
             31,
             31,
-            20
+            24,
+            0
           ],
           "away": [
             28,
             24,
-            34
+            38,
+            0
           ]
         },
         "vegas_spread": -1.5,
@@ -10356,8 +10364,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -11.5,
+        "vegas_total": 237.5,
         "home_team": {
           "code": "DEN",
           "full_name": "Denver Nuggets",
@@ -10730,7 +10738,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -12.5,
-        "vegas_total": 230.5,
+        "vegas_total": 231.5,
         "home_team": {
           "code": "PHI",
           "full_name": "Philadelphia 76ers",
@@ -11086,8 +11094,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -6.5,
+        "vegas_total": 224.5,
         "home_team": {
           "code": "PHX",
           "full_name": "Phoenix Suns",
@@ -11123,7 +11131,7 @@
       "predicted_total": 225.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-24T03:00:12.035662",
+      "created_at": "2026-10-24T03:30:12.291014",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -11439,7 +11447,7 @@
             4
           ]
         },
-        "generated_at": "2026-10-24T03:00:12"
+        "generated_at": "2026-10-24T03:30:12"
       },
       "matches": {
         "id": 59,
@@ -11488,7 +11496,7 @@
       "predicted_total": 224.38,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-24T03:00:12.087822",
+      "created_at": "2026-10-24T03:30:12.344341",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -11812,7 +11820,7 @@
             5
           ]
         },
-        "generated_at": "2026-10-24T03:00:12"
+        "generated_at": "2026-10-24T03:30:12"
       },
       "matches": {
         "id": 61,
@@ -11861,7 +11869,7 @@
       "predicted_total": 219.08,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-24T03:00:12.145301",
+      "created_at": "2026-10-24T03:30:12.402295",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -12177,7 +12185,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-24T03:00:12"
+        "generated_at": "2026-10-24T03:30:12"
       },
       "matches": {
         "id": 62,
@@ -12226,7 +12234,7 @@
       "predicted_total": 218.3,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-24T03:00:12.206786",
+      "created_at": "2026-10-24T03:30:12.464729",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -12550,7 +12558,7 @@
             5
           ]
         },
-        "generated_at": "2026-10-24T03:00:12"
+        "generated_at": "2026-10-24T03:30:12"
       },
       "matches": {
         "id": 63,
@@ -12599,7 +12607,7 @@
       "predicted_total": 234.97,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-24T03:00:12.262737",
+      "created_at": "2026-10-24T03:30:12.521129",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -12907,7 +12915,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-24T03:00:12"
+        "generated_at": "2026-10-24T03:30:12"
       },
       "matches": {
         "id": 64,
@@ -12956,7 +12964,7 @@
       "predicted_total": 212.63,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-24T03:00:12.319489",
+      "created_at": "2026-10-24T03:30:12.578261",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -13280,7 +13288,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-24T03:00:12"
+        "generated_at": "2026-10-24T03:30:12"
       },
       "matches": {
         "id": 60,
@@ -13329,7 +13337,7 @@
       "predicted_total": 235.02,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-24T03:00:12.378870",
+      "created_at": "2026-10-24T03:30:12.637868",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-11",
@@ -13637,7 +13645,7 @@
             4
           ]
         },
-        "generated_at": "2026-10-24T03:00:12"
+        "generated_at": "2026-10-24T03:30:12"
       },
       "matches": {
         "id": 58,
