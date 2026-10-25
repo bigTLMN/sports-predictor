@@ -5,8 +5,6 @@ import { format } from 'date-fns';
 import { twMerge } from 'tailwind-merge';
 import Link from 'next/link';
 import {
-  actualSpreadCoverEdge,
-  actualTotalEdge,
   formatSignedLine,
   formatTotalLine,
   pickSpreadHomeLine,
@@ -61,40 +59,6 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
 
   const spreadLogicDisplay = pickSpreadLogic(pick, locale);
 
-  const finishedScores =
-    isFinished && m.home_score != null && m.away_score != null
-      ? { home: Number(m.home_score), away: Number(m.away_score) }
-      : null;
-  const spreadAlignText =
-    finishedScores && hasSpreadLine && spreadHomeLine !== null
-      ? t('card.finalSpreadAlign', {
-          edge: formatSignedLine(
-            actualSpreadCoverEdge(
-              finishedScores.home,
-              finishedScores.away,
-              spreadHomeLine,
-              pick.recommended_team?.code === m.home_team?.code
-            )
-          ),
-        })
-      : null;
-  const totalEdge =
-    finishedScores && totalLineNumber !== null && pick.ou_pick
-      ? actualTotalEdge(
-          finishedScores.home,
-          finishedScores.away,
-          totalLineNumber,
-          pick.ou_pick
-        )
-      : null;
-  const totalAlignText =
-    finishedScores && totalLineNumber !== null && pick.ou_pick
-      ? t('card.finalTotalAlign', {
-          pts: finishedScores.home + finishedScores.away,
-          line: formatTotalLine(totalLineNumber),
-          edge: totalEdge === null ? '' : formatSignedLine(totalEdge),
-        })
-      : null;
   const { spreadOutcome: displaySpreadOutcome, totalOutcome: displayTotalOutcome } =
     resolveDisplayedOutcomes(pick);
   const outcomeText = (value: string | null | undefined) => {
@@ -159,21 +123,9 @@ export default function MatchCard({ pick, index }: MatchCardProps) {
             <div className="flex flex-col items-center w-1/3">
               <span className="text-sm font-black text-slate-500 dark:text-slate-300 tracking-widest">{t('card.at')}</span>
               {isFinished ? (
-                <div className="flex flex-col items-center gap-0.5 mt-1">
-                  <span className="text-sm font-bold bg-white text-slate-800 px-2 py-0.5 rounded border border-slate-300 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-600">
-                    {t('card.final')}
-                  </span>
-                  {spreadAlignText && (
-                    <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 tabular-nums text-center leading-tight">
-                      {spreadAlignText}
-                    </span>
-                  )}
-                  {totalAlignText && (
-                    <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 tabular-nums text-center leading-tight">
-                      {totalAlignText}
-                    </span>
-                  )}
-                </div>
+                <span className="text-sm font-bold bg-white text-slate-800 px-2 py-0.5 rounded border border-slate-300 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-600 mt-1">
+                  {t('card.final')}
+                </span>
               ) : (
                 <span className="text-sm font-bold text-slate-800 mt-1 bg-white px-2 py-0.5 rounded border border-slate-300 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-600">
                   {format(new Date(m.start_time), 'HH:mm')}

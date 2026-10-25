@@ -4,8 +4,6 @@ import Link from 'next/link';
 import { format } from 'date-fns';
 import { useI18n } from '@/lib/i18n';
 import {
-  actualSpreadCoverEdge,
-  actualTotalEdge,
   formatSignedLine,
   formatTotalLine,
   isFinishedMatch,
@@ -52,36 +50,6 @@ export default function MatchDetailView({ pick }: { pick: any }) {
   const finishedScores =
     isFinished && m.home_score != null && m.away_score != null
       ? { home: Number(m.home_score), away: Number(m.away_score) }
-      : null;
-  const spreadAlignText =
-    finishedScores && hasSpreadLine && spreadHomeLine !== null
-      ? t('card.finalSpreadAlign', {
-          edge: formatSignedLine(
-            actualSpreadCoverEdge(
-              finishedScores.home,
-              finishedScores.away,
-              spreadHomeLine,
-              pick.recommended_team?.code === m.home_team?.code
-            )
-          ),
-        })
-      : null;
-  const totalEdge =
-    finishedScores && totalLineNumber !== null && pick.ou_pick
-      ? actualTotalEdge(
-          finishedScores.home,
-          finishedScores.away,
-          totalLineNumber,
-          pick.ou_pick
-        )
-      : null;
-  const totalAlignText =
-    finishedScores && totalLineNumber !== null && pick.ou_pick
-      ? t('card.finalTotalAlign', {
-          pts: finishedScores.home + finishedScores.away,
-          line: formatTotalLine(totalLineNumber),
-          edge: totalEdge === null ? '' : formatSignedLine(totalEdge),
-        })
       : null;
   const { spreadOutcome, totalOutcome } = resolveDisplayedOutcomes(pick);
   const outcomeText = (value: string | null | undefined) => {
@@ -138,12 +106,6 @@ export default function MatchDetailView({ pick }: { pick: any }) {
                 <div className="text-lg font-black text-yellow-600 dark:text-yellow-400 tabular-nums">
                   {t('card.vegasTotal')} {totalLineText}
                 </div>
-              )}
-              {spreadAlignText && (
-                <div className="text-xs font-bold text-slate-500 dark:text-slate-400 tabular-nums">{spreadAlignText}</div>
-              )}
-              {totalAlignText && (
-                <div className="text-xs font-bold text-slate-500 dark:text-slate-400 tabular-nums">{totalAlignText}</div>
               )}
             </div>
           </div>
