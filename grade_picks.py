@@ -39,9 +39,9 @@ def settle(conn):
                 spread = "WIN" if covered > 0 else "LOSS" if covered < 0 else "PUSH"
             else:
                 spread = "LOSS" if covered > 0 else "WIN" if covered < 0 else "PUSH"
-        total_line = _float_line(row["ou_line"])
+        total_line = _float_line(row["vegas_total"])
         if total_line is None:
-            total_line = _float_line(row["vegas_total"])
+            total_line = _float_line(row["ou_line"])
         if (
             row["ou_pick"]
             and total_line is not None

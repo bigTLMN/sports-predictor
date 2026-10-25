@@ -62,12 +62,12 @@ export function pickSpreadHomeLine(
   return lineNumber(match.vegas_spread) ?? lineNumber(pick.line_info);
 }
 
-/** Saved total pick line for display and grading; closing vegas_total is fallback only. */
+/** Closing total for display and grading; saved ou_line is fallback when market line is missing. */
 export function pickTotalLine(
   match: { vegas_total?: unknown },
   pick: { ou_line?: unknown }
 ): number | null {
-  return lineNumber(pick.ou_line) ?? lineNumber(match.vegas_total);
+  return lineNumber(match.vegas_total) ?? lineNumber(pick.ou_line);
 }
 
 /** Positive = recommended side covered vs the home-perspective spread line. */

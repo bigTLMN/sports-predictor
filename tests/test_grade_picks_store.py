@@ -81,6 +81,30 @@ class GradeTests(unittest.TestCase):
         ).fetchone()
         self.assertEqual(row["total_outcome"], "LOSS")
 
+    def test_total_uses_closing_line_when_ou_line_is_stale_placeholder(self):
+        conn = sqlite_store.connect(os.environ["NBA_SQLITE_PATH"])
+        home = sqlite_store.upsert_team(conn, "MIA", "Heat", "Miami Heat", None, 20)
+        away = sqlite_store.upsert_team(conn, "CHA", "Hornets", "Charlotte Hornets", None, 21)
+        match_id = sqlite_store.upsert_match(conn, {
+            "date": "2026-10-24", "start_time": "2026-10-24T23:00:00Z",
+            "home_team_id": home, "away_team_id": away, "status": "STATUS_FINISHED",
+            "home_score": 110, "away_score": 120, "period_scores": None,
+            "vegas_spread": 3.5, "vegas_total": 230.5,
+        })
+        sqlite_store.upsert_pick(conn, {
+            "match_id": match_id, "recommended_team_id": home, "confidence_score": 60,
+            "spread_logic": "en", "spread_logic_zh": "zh", "line_info": "3.5",
+            "ou_pick": "OVER", "ou_line": 225.0, "ou_confidence": 55,
+            "analysis_content": "a", "analysis_content_zh": "甲",
+            "predicted_margin": 2.0, "predicted_total": 232.0, "created_at": "2026-10-23T00:00:00",
+        })
+        grade_picks.settle(conn)
+        row = conn.execute(
+            "SELECT total_outcome FROM aggregated_picks WHERE match_id=?",
+            (match_id,),
+        ).fetchone()
+        self.assertEqual(row["total_outcome"], "LOSS")
+
     def test_regrades_spread_even_when_outcome_already_set(self):
         conn = sqlite_store.connect(os.environ["NBA_SQLITE_PATH"])
         home = sqlite_store.upsert_team(conn, "SAC", "Kings", "Sacramento Kings", None, 10)
