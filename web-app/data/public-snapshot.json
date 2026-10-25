@@ -2304,21 +2304,21 @@
       "start_time": "2026-10-25T00:30Z",
       "home_team_id": 1,
       "away_team_id": 10,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 112,
-      "away_score": 119,
+      "status": "STATUS_FINISHED",
+      "home_score": 114,
+      "away_score": 121,
       "period_scores": {
         "home": [
           26,
           22,
           33,
-          31
+          33
         ],
         "away": [
           30,
           29,
           33,
-          27
+          29
         ]
       },
       "vegas_spread": 1.5,
@@ -2343,14 +2343,14 @@
       "home_team_id": 8,
       "away_team_id": 27,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 101,
+      "home_score": 102,
       "away_score": 112,
       "period_scores": {
         "home": [
           24,
           33,
           32,
-          12
+          13
         ],
         "away": [
           38,
@@ -2381,16 +2381,16 @@
       "home_team_id": 21,
       "away_team_id": 26,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 47,
-      "away_score": 50,
+      "home_score": 54,
+      "away_score": 52,
       "period_scores": {
         "home": [
           22,
-          25
+          32
         ],
         "away": [
           25,
-          25
+          27
         ]
       },
       "vegas_spread": -9.5,
@@ -8657,8 +8657,8 @@
       "analysis_content_zh": "## 結論\n結論落在主場作戰的 ATL。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 ATL 贏 1.5 分，勝率 55%。\n信心偏低（56%）。\n## 本季至今\nATL 戰績 2-0（主 0-0、客 2-0），場均得 133.5（30 隊中第 1）、失 118.0（30 隊中第 18），淨勝 +15.5（30 隊中第 4），目前 W2。近況：客場勝 DAL 135-111、客場勝 ORL 132-125。\nHOU 戰績 2-0，場均得 122.0（30 隊中第 6）、失 99.5（30 隊中第 1），淨勝 +22.5（30 隊中第 1），目前 W2。近況：主場勝 OKC 116-89、主場勝 DAL 128-110。\n近 3 次交手 ATL 0 勝 3 負，平均分差 -19.3（最近一次 2026-03-20：負 95-117）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-30），ATL 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：ATL 板凳貢獻 31.4 分，對手 21.3（聯盟平均 35.3；ATL 第 20、HOU 第 29／30 隊）。\n• **三分命中率**：ATL 三分命中 33.7%，對手 29.9%（聯盟平均 34.9%；ATL 第 21、HOU 第 29／30 隊）。\n• **助攻**：ATL 助攻 23.7 次，對手 22.4（聯盟平均 25.0；ATL 第 21、HOU 第 26／30 隊）。\nHOU 能反擊的地方：\n• **淨勝分**：HOU 這項較好，+3.7 對 ATL 的 -11.8（聯盟平均 -4.7；ATL 第 26、HOU 第 3／30 隊）。\n• **失分**：HOU 這項較好，105.1 對 ATL 的 118.2（聯盟平均 115.8；ATL 第 20、HOU 第 5／30 隊）。\n• **進攻籃板**：HOU 這項較好，15.3 對 ATL 的 11.1（聯盟平均 11.1；ATL 第 14、HOU 第 1／30 隊）。\n穩定度：這段期間 ATL 單場分差的標準差是 ±19.1 分，HOU 是 ±14.5 分；ATL 的表現起伏較大。\n## 賽程與休息\nATL 休了 2 天；HOU 休了 2 天。\nATL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 255.5 分，防守合計失 217.5 分；近況合計每場出手 72 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 219.4，盤口 225.0，低於盤口 5.6 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 62%；公布信心 66%。\n## 模型本季戰績\n本季至今，已發佈讓分 10 勝 6 負（62%）；信心 56% 以上的場次 6 勝 5 負；大小分 9 勝 7 負（56%）。樣本還小，這是進度回報，不是保證。\n## 風險\n坦白說：HOU 在淨勝分上的優勢（+3.7 對 -11.8）是翻掉這份判讀最直接的路徑；ATL 單場分差起伏 ±19.1 分，單場優勢並不牢靠；季初樣本很小，陣容異動也還沒反映在技術統計裡。",
       "predicted_margin": 1.52,
       "predicted_total": 219.4,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "LOSS",
       "created_at": "2026-10-23T23:30:12.748312",
       "analysis_facts": {
         "profile_games": 10,
@@ -8975,21 +8975,21 @@
         "start_time": "2026-10-25T00:30Z",
         "home_team_id": 1,
         "away_team_id": 10,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 112,
-        "away_score": 119,
+        "status": "STATUS_FINISHED",
+        "home_score": 114,
+        "away_score": 121,
         "period_scores": {
           "home": [
             26,
             22,
             33,
-            31
+            33
           ],
           "away": [
             30,
             29,
             33,
-            27
+            29
           ]
         },
         "vegas_spread": 1.5,
@@ -10850,14 +10850,14 @@
         "home_team_id": 8,
         "away_team_id": 27,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 101,
+        "home_score": 102,
         "away_score": 112,
         "period_scores": {
           "home": [
             24,
             33,
             32,
-            12
+            13
           ],
           "away": [
             38,
@@ -11606,16 +11606,16 @@
         "home_team_id": 21,
         "away_team_id": 26,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 47,
-        "away_score": 50,
+        "home_score": 54,
+        "away_score": 52,
         "period_scores": {
           "home": [
             22,
-            25
+            32
           ],
           "away": [
             25,
-            25
+            27
           ]
         },
         "vegas_spread": -9.5,
