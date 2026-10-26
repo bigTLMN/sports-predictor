@@ -2649,8 +2649,8 @@
       "home_team_id": 23,
       "away_team_id": 14,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 110,
-      "away_score": 119,
+      "home_score": 112,
+      "away_score": 123,
       "period_scores": {
         "home": [
           28,
@@ -2662,7 +2662,7 @@
           25,
           42,
           29,
-          23
+          27
         ]
       },
       "vegas_spread": 3.5,
@@ -2691,7 +2691,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -2.5,
-      "vegas_total": 229.5,
+      "vegas_total": 228.5,
       "home_team": {
         "code": "CHA",
         "full_name": "Charlotte Hornets",
@@ -2766,7 +2766,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -8.5,
-      "vegas_total": 235.5,
+      "vegas_total": 236.5,
       "home_team": {
         "code": "MIA",
         "full_name": "Miami Heat",
@@ -2815,8 +2815,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -9.5,
+      "vegas_total": 218.5,
       "home_team": {
         "code": "OKC",
         "full_name": "Oklahoma City Thunder",
@@ -2865,8 +2865,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -1.5,
+      "vegas_total": 237.5,
       "home_team": {
         "code": "UTAH",
         "full_name": "Utah Jazz",
@@ -13702,8 +13702,8 @@
         "home_team_id": 23,
         "away_team_id": 14,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 110,
-        "away_score": 119,
+        "home_score": 112,
+        "away_score": 123,
         "period_scores": {
           "home": [
             28,
@@ -13715,7 +13715,7 @@
             25,
             42,
             29,
-            23
+            27
           ]
         },
         "vegas_spread": 3.5,
@@ -15237,7 +15237,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -2.5,
-        "vegas_total": 229.5,
+        "vegas_total": 228.5,
         "home_team": {
           "code": "CHA",
           "full_name": "Charlotte Hornets",
@@ -16729,7 +16729,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -8.5,
-        "vegas_total": 235.5,
+        "vegas_total": 236.5,
         "home_team": {
           "code": "MIA",
           "full_name": "Miami Heat",
@@ -17474,8 +17474,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -9.5,
+        "vegas_total": 218.5,
         "home_team": {
           "code": "OKC",
           "full_name": "Oklahoma City Thunder",
@@ -17847,8 +17847,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -1.5,
+        "vegas_total": 237.5,
         "home_team": {
           "code": "UTAH",
           "full_name": "Utah Jazz",
@@ -17884,7 +17884,7 @@
       "predicted_total": 217.69,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-26T03:00:13.092899",
+      "created_at": "2026-10-26T03:30:15.281395",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -18208,7 +18208,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-26T03:00:13"
+        "generated_at": "2026-10-26T03:30:15"
       },
       "matches": {
         "id": 74,
@@ -18257,7 +18257,7 @@
       "predicted_total": 217.8,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-26T03:00:13.159948",
+      "created_at": "2026-10-26T03:30:15.341869",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-11",
@@ -18581,7 +18581,7 @@
             16
           ]
         },
-        "generated_at": "2026-10-26T03:00:13"
+        "generated_at": "2026-10-26T03:30:15"
       },
       "matches": {
         "id": 77,
@@ -18630,7 +18630,7 @@
       "predicted_total": 213.14,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-26T03:00:13.221864",
+      "created_at": "2026-10-26T03:30:15.403994",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -18954,7 +18954,7 @@
             4
           ]
         },
-        "generated_at": "2026-10-26T03:00:13"
+        "generated_at": "2026-10-26T03:30:15"
       },
       "matches": {
         "id": 75,
@@ -19003,7 +19003,7 @@
       "predicted_total": 225.06,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-26T03:00:13.280591",
+      "created_at": "2026-10-26T03:30:15.463026",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -19327,7 +19327,7 @@
             0
           ]
         },
-        "generated_at": "2026-10-26T03:00:13"
+        "generated_at": "2026-10-26T03:30:15"
       },
       "matches": {
         "id": 76,
