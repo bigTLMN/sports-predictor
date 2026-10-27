@@ -2954,7 +2954,7 @@
       "start_time": "2026-10-27T01:00Z",
       "home_team_id": 30,
       "away_team_id": 14,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 105,
       "away_score": 110,
       "period_scores": {
@@ -2993,18 +2993,18 @@
       "home_team_id": 8,
       "away_team_id": 26,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 60,
-      "away_score": 69,
+      "home_score": 65,
+      "away_score": 76,
       "period_scores": {
         "home": [
           32,
           24,
-          4
+          9
         ],
         "away": [
           28,
           32,
-          9
+          16
         ]
       },
       "vegas_spread": -7.5,
@@ -16387,18 +16387,18 @@
         "home_team_id": 8,
         "away_team_id": 26,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 60,
-        "away_score": 69,
+        "home_score": 65,
+        "away_score": 76,
         "period_scores": {
           "home": [
             32,
             24,
-            4
+            9
           ],
           "away": [
             28,
             32,
-            9
+            16
           ]
         },
         "vegas_spread": -7.5,
@@ -17980,8 +17980,8 @@
       "analysis_content_zh": "## 結論\n結論落在主場作戰的 UTAH。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 UTAH 贏 8.6 分，勝率 75%。\n信心高（84%）。\n## 本季至今\nUTAH 戰績 2-1（主 1-0、客 1-1），場均得 114.0（30 隊中第 24）、失 119.3（30 隊中第 21），淨勝 -5.3（30 隊中第 22），目前 W1。近況：客場勝 PHX 119-116、客場負 MEM 103-123、主場勝 NO 120-119。\nMEM 戰績 3-0，場均得 116.7（30 隊中第 17）、失 103.0（30 隊中第 2），淨勝 +13.7（30 隊中第 3），目前 W3。近況：主場勝 CHA 116-98、主場勝 UTAH 123-103、客場勝 GS 111-108。\n對盤口表現：UTAH 讓分 0 勝 1 負 (0%)；大分 1 次、小分 0 次；MEM 讓分 1 勝 0 負 (100%)；大分 0 次、小分 1 次。\n近 3 次交手 UTAH 1 勝 2 負，平均分差 +9.3（最近一次 2026-04-10：勝 147-101）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-12）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **快攻得分**：UTAH 快攻 24.9 分，對手 13.3（聯盟平均 14.2；UTAH 第 1、MEM 第 16／30 隊）。\n• **禁區得分**：UTAH 禁區拿 64.0 分，對手 47.6（聯盟平均 47.4；UTAH 第 1、MEM 第 14／30 隊）。\n• **籃板**：UTAH 場均 44.4 籃板，對手 35.8（聯盟平均 41.9；UTAH 第 8、MEM 第 29／30 隊）。\n• **助攻**：UTAH 助攻 31.9 次，對手 25.7（聯盟平均 25.0；UTAH 第 2、MEM 第 9／30 隊）。\nMEM 能反擊的地方：\n• **罰球命中率**：MEM 這項較好，81.1% 對 UTAH 的 67.5%（聯盟平均 77.5%；UTAH 第 30、MEM 第 6／30 隊）。\n• **板凳得分**：MEM 這項較好，37.9 對 UTAH 的 34.0（聯盟平均 35.3；UTAH 第 19、MEM 第 12／30 隊）。\n• **三分命中率**：MEM 這項較好，34.6% 對 UTAH 的 32.8%（聯盟平均 34.9%；UTAH 第 25、MEM 第 14／30 隊）。\n穩定度：這段期間 UTAH 單場分差的標準差是 ±22.0 分，MEM 是 ±12.8 分；UTAH 的表現起伏較大。\n## 賽程與休息\nUTAH 休了 2 天；MEM 休了 2 天。\nUTAH 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 230.7 分，防守合計失 222.3 分；近況合計每場出手 76 記三分（聯盟兩隊平均 73）、快攻 38 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 242.2，盤口 225.0，高於盤口 17.2 分。以總分相對盤口 ±19.0 分的分佈換算，大分機率 82%；公布信心 90%。\n## 模型本季戰績\n本季至今，已發佈讓分 18 勝 18 負（50%）；信心 84% 以上的場次 1 勝 2 負；大小分 19 勝 17 負（53%）。\n## 風險\n坦白說：MEM 在罰球命中率上的優勢（81.1% 對 67.5%）是翻掉這份判讀最直接的路徑；UTAH 單場分差起伏 ±22.0 分，單場優勢並不牢靠。",
       "predicted_margin": 8.6,
       "predicted_total": 242.2,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "LOSS",
       "created_at": "2026-10-25T23:30:12.580456",
       "analysis_facts": {
         "profile_games": 10,
@@ -18314,7 +18314,7 @@
         "start_time": "2026-10-27T01:00Z",
         "home_team_id": 30,
         "away_team_id": 14,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 105,
         "away_score": 110,
         "period_scores": {
