@@ -3059,7 +3059,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -4.5,
+      "vegas_spread": -3.5,
       "vegas_total": 219.5,
       "home_team": {
         "code": "NY",
@@ -3134,8 +3134,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -3.5,
+      "vegas_total": 239.5,
       "home_team": {
         "code": "ATL",
         "full_name": "Atlanta Hawks",
@@ -3159,8 +3159,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -10.5,
+      "vegas_total": 239.5,
       "home_team": {
         "code": "CLE",
         "full_name": "Cleveland Cavaliers",
@@ -3234,8 +3234,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -4.5,
+      "vegas_total": 223.5,
       "home_team": {
         "code": "TOR",
         "full_name": "Toronto Raptors",
@@ -19629,7 +19629,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -4.5,
+        "vegas_spread": -3.5,
         "vegas_total": 219.5,
         "home_team": {
           "code": "NY",
@@ -20025,24 +20025,24 @@
     {
       "id": 57,
       "match_id": 78,
-      "recommended_team_id": 1,
-      "confidence_score": 54.0,
-      "spread_logic": "AI projects ATL to win by 1.1 pts",
-      "spread_logic_zh": "AI 預測 ATL 贏 1.1 分",
-      "line_info": "0.0",
-      "ou_pick": "OVER",
-      "ou_line": 225.0,
-      "ou_confidence": 78.0,
-      "analysis_content": "## The Call\nATL at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has ATL by 1.1, a 53% win probability.\nConfidence is modest at 54%.\n## Season So Far\nATL is 3-2 (0-1 home, 3-1 away), scoring 123.8 (1st of 30) and allowing 111.6 (11th of 30) for a +12.2 margin (4th of 30), currently on a L2 run. Last out: W 128-81 at CHA, L 114-121 vs HOU, L 110-120 at HOU.\nMIA is 1-5, scoring 115.8 (18th of 30) and allowing 125.2 (29th of 30) for a -9.3 margin (26th of 30), on a L5 run. Last out: L 111-128 vs DET, L 110-115 at CHA, L 109-113 vs DAL.\nAgainst the number: ATL 1-2 against the spread (33%); 2 over / 1 under; MIA 0-3 against the spread (0%); 1 over / 2 under.\nHead to head, ATL is 1-2 in the last 3 meetings with an average margin of -15.0 (most recent 2026-04-12: L 117-143).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-04-30), here is where ATL separates from MIA. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — ATL gives up 118.2 to 128.6 (league avg 115.8; ATL 20th vs MIA 27th of 30).\nWhere MIA pushes back:\n• **Points** — MIA holds the better number, 126.4 to ATL's 106.4 (league avg 111.1; ATL 24th vs MIA 1st of 30).\n• **Bench points** — MIA holds the better number, 48.5 to ATL's 31.4 (league avg 35.3; ATL 20th vs MIA 2nd of 30).\n• **Assists** — MIA holds the better number, 31.1 to ATL's 23.7 (league avg 25.0; ATL 21st vs MIA 3rd of 30).\nConsistency check: ATL's game margins over this stretch vary by ±19.1 points (one standard deviation) against ±18.5 for MIA; the more volatile side is ATL.\n## Schedule & Rest\nATL has one day off; MIA has one day off.\nATL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 239.6 points and the two defences concede 236.8; on record they attempt 78 threes between them (league pair average 73) with 33 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 234.5 total points against a line of 225.0, 9.5 points above the number. With totals spreading ±19.0 points around the line, that is a 69% probability of the over; published confidence is 78%.\n## Model Track Record\nThis season, published spread picks are 26-26 (50%); at 54%+ confidence they are 22-26; totals are 27-25 (52%).\n## What Could Go Wrong\nHonest caveats: MIA's edge in Points (126.4 vs 106.4) is the cleanest path to an upset of this read; ATL's results swing ±19.1 points game to game, so any single-game edge is fragile; ATL is on a L2 skid and the model does not read locker rooms.",
-      "analysis_content_zh": "## 結論\n本場站 主場的 ATL。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 ATL 贏 1.1 分，勝率 53%。\n信心偏低（54%）。\n## 本季至今\nATL 戰績 3-2（主 0-1、客 3-1），場均得 123.8（30 隊中第 1）、失 111.6（30 隊中第 11），淨勝 +12.2（30 隊中第 4），目前 L2。近況：客場勝 CHA 128-81、主場負 HOU 114-121、客場負 HOU 110-120。\nMIA 戰績 1-5，場均得 115.8（30 隊中第 18）、失 125.2（30 隊中第 29），淨勝 -9.3（30 隊中第 26），目前 L5。近況：主場負 DET 111-128、客場負 CHA 110-115、主場負 DAL 109-113。\n對盤口表現：ATL 讓分 1 勝 2 負 (33%)；大分 2 次、小分 1 次；MIA 讓分 0 勝 3 負 (0%)；大分 1 次、小分 2 次。\n近 3 次交手 ATL 1 勝 2 負，平均分差 -15.0（最近一次 2026-04-12：負 117-143）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-30），ATL 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：ATL 場均失 118.2 分，對手 128.6（聯盟平均 115.8；ATL 第 20、MIA 第 27／30 隊）。\nMIA 能反擊的地方：\n• **得分**：MIA 這項較好，126.4 對 ATL 的 106.4（聯盟平均 111.1；ATL 第 24、MIA 第 1／30 隊）。\n• **板凳得分**：MIA 這項較好，48.5 對 ATL 的 31.4（聯盟平均 35.3；ATL 第 20、MIA 第 2／30 隊）。\n• **助攻**：MIA 這項較好，31.1 對 ATL 的 23.7（聯盟平均 25.0；ATL 第 21、MIA 第 3／30 隊）。\n穩定度：這段期間 ATL 單場分差的標準差是 ±19.1 分，MIA 是 ±18.5 分；ATL 的表現起伏較大。\n## 賽程與休息\nATL 休一天；MIA 休一天。\nATL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 239.6 分，防守合計失 236.8 分；近況合計每場出手 78 記三分（聯盟兩隊平均 73）、快攻 33 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 234.5，盤口 225.0，高於盤口 9.5 分。以總分相對盤口 ±19.0 分的分佈換算，大分機率 69%；公布信心 78%。\n## 模型本季戰績\n本季至今，已發佈讓分 26 勝 26 負（50%）；信心 54% 以上的場次 22 勝 26 負；大小分 27 勝 25 負（52%）。\n## 風險\n坦白說：MIA 在得分上的優勢（126.4 對 106.4）是翻掉這份判讀最直接的路徑；ATL 單場分差起伏 ±19.1 分，單場優勢並不牢靠；ATL 正吞 2 連敗，模型看不到更衣室氣氛。",
-      "predicted_margin": 1.06,
+      "recommended_team_id": 15,
+      "confidence_score": 57.0,
+      "spread_logic": "AI projects MIA to lose by 1.5 pts",
+      "spread_logic_zh": "AI 預測 MIA 輸 1.5 分",
+      "line_info": "-3.5",
+      "ou_pick": "UNDER",
+      "ou_line": 239.5,
+      "ou_confidence": 64.0,
+      "analysis_content": "## The Call\nMIA on the road is the side.\nThe market has MIA at +3.5, which implies a 3.5-point loss and a 39% win probability. Our projection is -1.5 for MIA (45% to win), a gap of 2.0 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 2.0-point edge is a 56% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 57%.\n## Season So Far\nMIA is 1-5 (1-3 home, 0-2 away), scoring 115.8 (18th of 30) and allowing 125.2 (29th of 30) for a -9.3 margin (26th of 30), currently on a L5 run. Last out: L 111-128 vs DET, L 110-115 at CHA, L 109-113 vs DAL.\nATL is 3-2, scoring 123.8 (1st of 30) and allowing 111.6 (11th of 30) for a +12.2 margin (4th of 30), on a L2 run. Last out: W 128-81 at CHA, L 114-121 vs HOU, L 110-120 at HOU.\nAgainst the number: MIA 0-3 against the spread (0%); 1 over / 2 under; ATL 1-2 against the spread (33%); 2 over / 1 under.\nHead to head, MIA is 2-1 in the last 3 meetings with an average margin of +15.0 (most recent 2026-04-12: W 143-117).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-04-14), here is where MIA separates from ATL. League averages and ranks across 30 teams are given for scale.\n• **Points** — MIA scores 126.4 a night to 106.4 (league avg 111.1; MIA 1st vs ATL 24th of 30).\n• **Bench points** — MIA gets 48.5 from the bench to 31.4 (league avg 35.3; MIA 2nd vs ATL 20th of 30).\n• **Assists** — MIA records 31.1 assists to 23.7 (league avg 25.0; MIA 3rd vs ATL 21st of 30).\n• **Fast-break points** — MIA runs for 21.2 fast-break points to 11.8 (league avg 14.2; MIA 2nd vs ATL 21st of 30).\nWhere ATL pushes back:\n• **Points allowed** — ATL holds the better number, 118.2 to MIA's 128.6 (league avg 115.8; MIA 27th vs ATL 20th of 30).\nConsistency check: MIA's game margins over this stretch vary by ±18.5 points (one standard deviation) against ±19.1 for ATL; the steadier side is MIA.\n## Schedule & Rest\nMIA has one day off; ATL has one day off.\nATL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 239.5\nTempo check: this season the two offences combine for 239.6 points and the two defences concede 236.8; on record they attempt 78 threes between them (league pair average 73) with 33 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 234.5 total points against a line of 239.5, 5.0 points below the number. With totals spreading ±19.0 points around the line, that is a 60% probability of the under; published confidence is 64%.\n## Model Track Record\nThis season, published spread picks are 26-26 (50%); at 57%+ confidence they are 19-24; totals are 27-25 (52%).\n## What Could Go Wrong\nHonest caveats: ATL's edge in Points allowed (118.2 vs 128.6) is the cleanest path to an upset of this read; MIA's results swing ±18.5 points game to game, so any single-game edge is fragile; MIA is on a L5 skid and the model does not read locker rooms.",
+      "analysis_content_zh": "## 結論\n數字指向 MIA（客場）。\n市場開 MIA +3.5，等於預期輸 3.5 分、勝率 39%；模型估 MIA -1.5（勝率 45%），與盤口差 2.0 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，2.0 分的優勢等於 56% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（57%）。\n## 本季至今\nMIA 戰績 1-5（主 1-3、客 0-2），場均得 115.8（30 隊中第 18）、失 125.2（30 隊中第 29），淨勝 -9.3（30 隊中第 26），目前 L5。近況：主場負 DET 111-128、客場負 CHA 110-115、主場負 DAL 109-113。\nATL 戰績 3-2，場均得 123.8（30 隊中第 1）、失 111.6（30 隊中第 11），淨勝 +12.2（30 隊中第 4），目前 L2。近況：客場勝 CHA 128-81、主場負 HOU 114-121、客場負 HOU 110-120。\n對盤口表現：MIA 讓分 0 勝 3 負 (0%)；大分 1 次、小分 2 次；ATL 讓分 1 勝 2 負 (33%)；大分 2 次、小分 1 次。\n近 3 次交手 MIA 2 勝 1 負，平均分差 +15.0（最近一次 2026-04-12：勝 143-117）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-14），MIA 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **得分**：MIA 場均得 126.4 分，對手 106.4（聯盟平均 111.1；MIA 第 1、ATL 第 24／30 隊）。\n• **板凳得分**：MIA 板凳貢獻 48.5 分，對手 31.4（聯盟平均 35.3；MIA 第 2、ATL 第 20／30 隊）。\n• **助攻**：MIA 助攻 31.1 次，對手 23.7（聯盟平均 25.0；MIA 第 3、ATL 第 21／30 隊）。\n• **快攻得分**：MIA 快攻 21.2 分，對手 11.8（聯盟平均 14.2；MIA 第 2、ATL 第 21／30 隊）。\nATL 能反擊的地方：\n• **失分**：ATL 這項較好，118.2 對 MIA 的 128.6（聯盟平均 115.8；MIA 第 27、ATL 第 20／30 隊）。\n穩定度：這段期間 MIA 單場分差的標準差是 ±18.5 分，ATL 是 ±19.1 分；MIA 的表現較穩。\n## 賽程與休息\nMIA 休一天；ATL 休一天。\nATL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 239.5\n節奏觀察：本季兩隊進攻合計 239.6 分，防守合計失 236.8 分；近況合計每場出手 78 記三分（聯盟兩隊平均 73）、快攻 33 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 234.5，盤口 239.5，低於盤口 5.0 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 60%；公布信心 64%。\n## 模型本季戰績\n本季至今，已發佈讓分 26 勝 26 負（50%）；信心 57% 以上的場次 19 勝 24 負；大小分 27 勝 25 負（52%）。\n## 風險\n坦白說：ATL 在失分上的優勢（118.2 對 128.6）是翻掉這份判讀最直接的路徑；MIA 單場分差起伏 ±18.5 分，單場優勢並不牢靠；MIA 正吞 5 連敗，模型看不到更衣室氣氛。",
+      "predicted_margin": -1.55,
       "predicted_total": 234.5,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:11.406141",
+      "created_at": "2026-10-27T22:30:12.510839",
       "analysis_facts": {
         "profile_games": 10,
-        "profile_through": "2026-04-30",
+        "profile_through": "2026-04-14",
         "league_teams": 30,
         "season_teams": 30,
         "rows": [
@@ -20050,11 +20050,11 @@
             "key": "ppg",
             "en": "Points",
             "zh": "得分",
-            "rec": 106.4,
-            "opp": 126.4,
+            "rec": 126.4,
+            "opp": 106.4,
             "avg": 111.1,
-            "rec_rank": 24,
-            "opp_rank": 1,
+            "rec_rank": 1,
+            "opp_rank": 24,
             "unit": "",
             "better": "high"
           },
@@ -20062,11 +20062,11 @@
             "key": "papg",
             "en": "Points allowed",
             "zh": "失分",
-            "rec": 118.2,
-            "opp": 128.6,
+            "rec": 128.6,
+            "opp": 118.2,
             "avg": 115.8,
-            "rec_rank": 20,
-            "opp_rank": 27,
+            "rec_rank": 27,
+            "opp_rank": 20,
             "unit": "",
             "better": "low"
           },
@@ -20074,11 +20074,11 @@
             "key": "net",
             "en": "Net margin",
             "zh": "淨勝分",
-            "rec": -11.8,
-            "opp": -2.2,
+            "rec": -2.2,
+            "opp": -11.8,
             "avg": -4.7,
-            "rec_rank": 26,
-            "opp_rank": 13,
+            "rec_rank": 13,
+            "opp_rank": 26,
             "unit": "",
             "better": "high"
           },
@@ -20086,11 +20086,11 @@
             "key": "fg",
             "en": "FG%",
             "zh": "命中率",
-            "rec": 44.5,
-            "opp": 49.7,
+            "rec": 49.7,
+            "opp": 44.5,
             "avg": 45.8,
-            "rec_rank": 21,
-            "opp_rank": 1,
+            "rec_rank": 1,
+            "opp_rank": 21,
             "unit": "%",
             "better": "high"
           },
@@ -20098,11 +20098,11 @@
             "key": "tp",
             "en": "3P%",
             "zh": "三分命中率",
-            "rec": 33.7,
-            "opp": 39.1,
+            "rec": 39.1,
+            "opp": 33.7,
             "avg": 34.9,
-            "rec_rank": 21,
-            "opp_rank": 4,
+            "rec_rank": 4,
+            "opp_rank": 21,
             "unit": "%",
             "better": "high"
           },
@@ -20110,11 +20110,11 @@
             "key": "tpa",
             "en": "3PA",
             "zh": "三分出手",
-            "rec": 38.2,
-            "opp": 40.3,
+            "rec": 40.3,
+            "opp": 38.2,
             "avg": 36.4,
-            "rec_rank": 9,
-            "opp_rank": 6,
+            "rec_rank": 6,
+            "opp_rank": 9,
             "unit": "",
             "better": null
           },
@@ -20122,11 +20122,11 @@
             "key": "ft",
             "en": "FT%",
             "zh": "罰球命中率",
-            "rec": 71.0,
-            "opp": 77.6,
+            "rec": 77.6,
+            "opp": 71.0,
             "avg": 77.5,
-            "rec_rank": 29,
-            "opp_rank": 14,
+            "rec_rank": 14,
+            "opp_rank": 29,
             "unit": "%",
             "better": "high"
           },
@@ -20134,11 +20134,11 @@
             "key": "reb",
             "en": "Rebounds",
             "zh": "籃板",
-            "rec": 40.4,
-            "opp": 44.1,
+            "rec": 44.1,
+            "opp": 40.4,
             "avg": 41.9,
-            "rec_rank": 21,
-            "opp_rank": 9,
+            "rec_rank": 9,
+            "opp_rank": 21,
             "unit": "",
             "better": "high"
           },
@@ -20146,11 +20146,11 @@
             "key": "oreb",
             "en": "Off. rebounds",
             "zh": "進攻籃板",
-            "rec": 11.1,
-            "opp": 10.9,
+            "rec": 10.9,
+            "opp": 11.1,
             "avg": 11.1,
-            "rec_rank": 14,
-            "opp_rank": 17,
+            "rec_rank": 17,
+            "opp_rank": 14,
             "unit": "",
             "better": "high"
           },
@@ -20158,11 +20158,11 @@
             "key": "ast",
             "en": "Assists",
             "zh": "助攻",
-            "rec": 23.7,
-            "opp": 31.1,
+            "rec": 31.1,
+            "opp": 23.7,
             "avg": 25.0,
-            "rec_rank": 21,
-            "opp_rank": 3,
+            "rec_rank": 3,
+            "opp_rank": 21,
             "unit": "",
             "better": "high"
           },
@@ -20170,11 +20170,11 @@
             "key": "tov",
             "en": "Turnovers",
             "zh": "失誤",
-            "rec": 13.8,
-            "opp": 11.3,
+            "rec": 11.3,
+            "opp": 13.8,
             "avg": 13.6,
-            "rec_rank": 18,
-            "opp_rank": 3,
+            "rec_rank": 3,
+            "opp_rank": 18,
             "unit": "",
             "better": "low"
           },
@@ -20182,11 +20182,11 @@
             "key": "paint",
             "en": "Paint points",
             "zh": "禁區得分",
-            "rec": 45.2,
-            "opp": 57.0,
+            "rec": 57.0,
+            "opp": 45.2,
             "avg": 47.4,
-            "rec_rank": 17,
-            "opp_rank": 4,
+            "rec_rank": 4,
+            "opp_rank": 17,
             "unit": "",
             "better": "high"
           },
@@ -20194,11 +20194,11 @@
             "key": "fb",
             "en": "Fast-break points",
             "zh": "快攻得分",
-            "rec": 11.8,
-            "opp": 21.2,
+            "rec": 21.2,
+            "opp": 11.8,
             "avg": 14.2,
-            "rec_rank": 21,
-            "opp_rank": 2,
+            "rec_rank": 2,
+            "opp_rank": 21,
             "unit": "",
             "better": "high"
           },
@@ -20206,11 +20206,11 @@
             "key": "pot",
             "en": "Points off turnovers",
             "zh": "失誤轉換得分",
-            "rec": 14.8,
-            "opp": 14.4,
+            "rec": 14.4,
+            "opp": 14.8,
             "avg": 17.5,
-            "rec_rank": 26,
-            "opp_rank": 28,
+            "rec_rank": 28,
+            "opp_rank": 26,
             "unit": "",
             "better": "high"
           },
@@ -20218,50 +20218,17 @@
             "key": "bench",
             "en": "Bench points",
             "zh": "板凳得分",
-            "rec": 31.4,
-            "opp": 48.5,
+            "rec": 48.5,
+            "opp": 31.4,
             "avg": 35.3,
-            "rec_rank": 20,
-            "opp_rank": 2,
+            "rec_rank": 2,
+            "opp_rank": 20,
             "unit": "",
             "better": "high"
           }
         ],
         "form": {
           "rec": {
-            "games": 5,
-            "wins": 3,
-            "losses": 2,
-            "home": [
-              0,
-              1
-            ],
-            "away": [
-              3,
-              1
-            ],
-            "ppg": 123.8,
-            "papg": 111.6,
-            "margin": 12.2,
-            "rank": {
-              "ppg": 1,
-              "papg": 11,
-              "margin": 4
-            },
-            "streak": "L2",
-            "ats": [
-              1,
-              2,
-              0
-            ],
-            "ou": [
-              2,
-              1,
-              0
-            ],
-            "rest": 2
-          },
-          "opp": {
             "games": 6,
             "wins": 1,
             "losses": 5,
@@ -20293,47 +20260,80 @@
               0
             ],
             "rest": 2
+          },
+          "opp": {
+            "games": 5,
+            "wins": 3,
+            "losses": 2,
+            "home": [
+              0,
+              1
+            ],
+            "away": [
+              3,
+              1
+            ],
+            "ppg": 123.8,
+            "papg": 111.6,
+            "margin": 12.2,
+            "rank": {
+              "ppg": 1,
+              "papg": 11,
+              "margin": 4
+            },
+            "streak": "L2",
+            "ats": [
+              1,
+              2,
+              0
+            ],
+            "ou": [
+              2,
+              1,
+              0
+            ],
+            "rest": 2
           }
         },
         "volatility": {
-          "rec": 19.1,
-          "opp": 18.5
+          "rec": 18.5,
+          "opp": 19.1
         },
         "h2h": [
           {
             "date": "2026-02-03",
-            "won": true,
-            "for": 127,
-            "against": 115
+            "won": false,
+            "for": 115,
+            "against": 127
           },
           {
             "date": "2026-02-20",
-            "won": false,
-            "for": 97,
-            "against": 128
+            "won": true,
+            "for": 128,
+            "against": 97
           },
           {
             "date": "2026-04-12",
-            "won": false,
-            "for": 117,
-            "against": 143
+            "won": true,
+            "for": 143,
+            "against": 117
           }
         ],
         "projection": {
-          "model_margin": 1.1,
-          "raw_margin": 1.1,
-          "market_margin": 0.0,
-          "edge": 1.1,
+          "model_margin": -1.5,
+          "raw_margin": -1.1,
+          "market_margin": -3.5,
+          "edge": 2.0,
           "pred_total": 234.5,
-          "total_line": 225.0,
-          "total_edge": 9.5,
-          "total_is_default": true
+          "total_line": 239.5,
+          "total_edge": -5.0,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.534,
-          "win_model": 0.534,
-          "win_market": null,
-          "total": 0.692,
+          "cover": 0.562,
+          "win_model": 0.451,
+          "win_market": 0.39,
+          "total": 0.604,
           "sigma_spread": 12.5,
           "sigma_total": 19.0,
           "sigma_measured": false
@@ -20359,11 +20359,11 @@
             25
           ],
           "spread_at_conf": [
-            22,
-            26
+            19,
+            24
           ]
         },
-        "generated_at": "2026-10-27T22:00:11"
+        "generated_at": "2026-10-27T22:30:12"
       },
       "matches": {
         "id": 78,
@@ -20375,8 +20375,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -3.5,
+        "vegas_total": 239.5,
         "home_team": {
           "code": "ATL",
           "full_name": "Atlanta Hawks",
@@ -20391,8 +20391,8 @@
         "away_team_nba_id": 1610612748
       },
       "recommended_team": {
-        "code": "ATL",
-        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png"
+        "code": "MIA",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png"
       }
     },
     {
@@ -20412,7 +20412,7 @@
       "predicted_total": 228.86,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:11.465770",
+      "created_at": "2026-10-27T22:30:12.570922",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -20736,7 +20736,7 @@
             8
           ]
         },
-        "generated_at": "2026-10-27T22:00:11"
+        "generated_at": "2026-10-27T22:30:12"
       },
       "matches": {
         "id": 83,
@@ -20772,20 +20772,20 @@
       "id": 59,
       "match_id": 79,
       "recommended_team_id": 6,
-      "confidence_score": 95.0,
-      "spread_logic": "AI projects CLE to win by 11.9 pts",
-      "spread_logic_zh": "AI 預測 CLE 贏 11.9 分",
-      "line_info": "0.0",
-      "ou_pick": "OVER",
-      "ou_line": 225.0,
-      "ou_confidence": 66.0,
-      "analysis_content": "## The Call\nCLE at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has CLE by 11.9, a 83% win probability.\nConfidence is high at 95%.\n## Season So Far\nCLE is 2-1 (2-0 home, 0-1 away), scoring 119.3 (7th of 30) and allowing 120.0 (23rd of 30) for a -0.7 margin (17th of 30), currently on a W2 run. Last out: L 106-114 at PHI, W 125-121 vs BKN, W 127-125 vs MIN.\nWSH is 2-3, scoring 112.6 (23rd of 30) and allowing 113.0 (14th of 30) for a -0.4 margin (16th of 30), on a L1 run. Last out: L 102-112 vs TOR, W 124-120 at CHI, L 103-110 at CHA.\nAgainst the number: CLE 0-3 against the spread (0%); 2 over / 1 under; WSH 1-2 against the spread (33%); 0 over / 3 under.\nHead to head, CLE is 3-0 in the last 3 meetings with an average margin of +14.0 (most recent 2026-04-12: W 130-117).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-25), here is where CLE separates from WSH. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — CLE gives up 111.6 to 131.8 (league avg 115.8; CLE 11th vs WSH 28th of 30).\n• **Net margin** — CLE outscores opponents by -5.7 per game against -18.1 (league avg -4.7; CLE 16th vs WSH 29th of 30).\n• **Off. rebounds** — CLE grabs 10.8 offensive boards to 9.5 (league avg 11.1; CLE 18th vs WSH 27th of 30).\nWhere WSH pushes back:\n• **Bench points** — WSH holds the better number, 45.7 to CLE's 24.4 (league avg 35.3; CLE 26th vs WSH 4th of 30).\n• **Paint points** — WSH holds the better number, 51.4 to CLE's 42.6 (league avg 47.4; CLE 23rd vs WSH 8th of 30).\n• **Fast-break points** — WSH holds the better number, 13.2 to CLE's 8.0 (league avg 14.2; CLE 30th vs WSH 17th of 30).\nConsistency check: CLE's game margins over this stretch vary by ±18.0 points (one standard deviation) against ±9.4 for WSH; the more volatile side is CLE.\n## Schedule & Rest\nCLE has one day off; WSH has one day off.\nCLE has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 231.9 points and the two defences concede 233.0; on record they attempt 73 threes between them (league pair average 73) with 21 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 230.4 total points against a line of 225.0, 5.4 points above the number. With totals spreading ±19.0 points around the line, that is a 61% probability of the over; published confidence is 66%.\n## Model Track Record\nThis season, published spread picks are 26-26 (50%); totals are 27-25 (52%).\n## What Could Go Wrong\nHonest caveats: WSH's edge in Bench points (45.7 vs 24.4) is the cleanest path to an upset of this read; CLE's results swing ±18.0 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n本場站 主場的 CLE。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 CLE 贏 11.9 分，勝率 83%。\n信心高（95%）。\n## 本季至今\nCLE 戰績 2-1（主 2-0、客 0-1），場均得 119.3（30 隊中第 7）、失 120.0（30 隊中第 23），淨勝 -0.7（30 隊中第 17），目前 W2。近況：客場負 PHI 106-114、主場勝 BKN 125-121、主場勝 MIN 127-125。\nWSH 戰績 2-3，場均得 112.6（30 隊中第 23）、失 113.0（30 隊中第 14），淨勝 -0.4（30 隊中第 16），目前 L1。近況：主場負 TOR 102-112、客場勝 CHI 124-120、客場負 CHA 103-110。\n對盤口表現：CLE 讓分 0 勝 3 負 (0%)；大分 2 次、小分 1 次；WSH 讓分 1 勝 2 負 (33%)；大分 0 次、小分 3 次。\n近 3 次交手 CLE 3 勝 0 負，平均分差 +14.0（最近一次 2026-04-12：勝 130-117）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-25）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：CLE 場均失 111.6 分，對手 131.8（聯盟平均 115.8；CLE 第 11、WSH 第 28／30 隊）。\n• **淨勝分**：CLE 場均淨勝 -5.7 分，對手 -18.1（聯盟平均 -4.7；CLE 第 16、WSH 第 29／30 隊）。\n• **進攻籃板**：CLE 進攻籃板 10.8 個，對手 9.5（聯盟平均 11.1；CLE 第 18、WSH 第 27／30 隊）。\nWSH 能反擊的地方：\n• **板凳得分**：WSH 這項較好，45.7 對 CLE 的 24.4（聯盟平均 35.3；CLE 第 26、WSH 第 4／30 隊）。\n• **禁區得分**：WSH 這項較好，51.4 對 CLE 的 42.6（聯盟平均 47.4；CLE 第 23、WSH 第 8／30 隊）。\n• **快攻得分**：WSH 這項較好，13.2 對 CLE 的 8.0（聯盟平均 14.2；CLE 第 30、WSH 第 17／30 隊）。\n穩定度：這段期間 CLE 單場分差的標準差是 ±18.0 分，WSH 是 ±9.4 分；CLE 的表現起伏較大。\n## 賽程與休息\nCLE 休一天；WSH 休一天。\nCLE 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 231.9 分，防守合計失 233.0 分；近況合計每場出手 73 記三分（聯盟兩隊平均 73）、快攻 21 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 230.4，盤口 225.0，高於盤口 5.4 分。以總分相對盤口 ±19.0 分的分佈換算，大分機率 61%；公布信心 66%。\n## 模型本季戰績\n本季至今，已發佈讓分 26 勝 26 負（50%）；大小分 27 勝 25 負（52%）。\n## 風險\n坦白說：WSH 在板凳得分上的優勢（45.7 對 24.4）是翻掉這份判讀最直接的路徑；CLE 單場分差起伏 ±18.0 分，單場優勢並不牢靠。",
-      "predicted_margin": 11.87,
+      "confidence_score": 54.0,
+      "spread_logic": "AI projects CLE to win by 11.6 pts",
+      "spread_logic_zh": "AI 預測 CLE 贏 11.6 分",
+      "line_info": "-10.5",
+      "ou_pick": "UNDER",
+      "ou_line": 239.5,
+      "ou_confidence": 77.0,
+      "analysis_content": "## The Call\nCLE at home is the side.\nThe market has CLE at -10.5, which implies a 10.5-point win and a 80% win probability. Our projection is +11.6 for CLE (82% to win), a gap of 1.1 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 1.1-point edge is a 53% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 54%.\n## Season So Far\nCLE is 2-1 (2-0 home, 0-1 away), scoring 119.3 (7th of 30) and allowing 120.0 (23rd of 30) for a -0.7 margin (17th of 30), currently on a W2 run. Last out: L 106-114 at PHI, W 125-121 vs BKN, W 127-125 vs MIN.\nWSH is 2-3, scoring 112.6 (23rd of 30) and allowing 113.0 (14th of 30) for a -0.4 margin (16th of 30), on a L1 run. Last out: L 102-112 vs TOR, W 124-120 at CHI, L 103-110 at CHA.\nAgainst the number: CLE 0-3 against the spread (0%); 2 over / 1 under; WSH 1-2 against the spread (33%); 0 over / 3 under.\nHead to head, CLE is 3-0 in the last 3 meetings with an average margin of +14.0 (most recent 2026-04-12: W 130-117).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-25), here is where CLE separates from WSH. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — CLE gives up 111.6 to 131.8 (league avg 115.8; CLE 11th vs WSH 28th of 30).\n• **Net margin** — CLE outscores opponents by -5.7 per game against -18.1 (league avg -4.7; CLE 16th vs WSH 29th of 30).\n• **Off. rebounds** — CLE grabs 10.8 offensive boards to 9.5 (league avg 11.1; CLE 18th vs WSH 27th of 30).\nWhere WSH pushes back:\n• **Bench points** — WSH holds the better number, 45.7 to CLE's 24.4 (league avg 35.3; CLE 26th vs WSH 4th of 30).\n• **Paint points** — WSH holds the better number, 51.4 to CLE's 42.6 (league avg 47.4; CLE 23rd vs WSH 8th of 30).\n• **Fast-break points** — WSH holds the better number, 13.2 to CLE's 8.0 (league avg 14.2; CLE 30th vs WSH 17th of 30).\nConsistency check: CLE's game margins over this stretch vary by ±18.0 points (one standard deviation) against ±9.4 for WSH; the more volatile side is CLE.\n## Schedule & Rest\nCLE has one day off; WSH has one day off.\nCLE has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 239.5\nTempo check: this season the two offences combine for 231.9 points and the two defences concede 233.0; on record they attempt 73 threes between them (league pair average 73) with 21 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 230.4 total points against a line of 239.5, 9.1 points below the number. With totals spreading ±19.0 points around the line, that is a 68% probability of the under; published confidence is 77%.\n## Model Track Record\nThis season, published spread picks are 26-26 (50%); at 54%+ confidence they are 22-26; totals are 27-25 (52%).\n## What Could Go Wrong\nHonest caveats: the edge is only 1.1 points (53% cover probability), inside normal line noise; laying 10.5 asks CLE to win comfortably, not just win; WSH's edge in Bench points (45.7 vs 24.4) is the cleanest path to an upset of this read; CLE's results swing ±18.0 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n本場站 主場的 CLE。\n市場開 CLE -10.5，等於預期贏 10.5 分、勝率 80%；模型估 CLE +11.6（勝率 82%），與盤口差 1.1 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，1.1 分的優勢等於 53% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（54%）。\n## 本季至今\nCLE 戰績 2-1（主 2-0、客 0-1），場均得 119.3（30 隊中第 7）、失 120.0（30 隊中第 23），淨勝 -0.7（30 隊中第 17），目前 W2。近況：客場負 PHI 106-114、主場勝 BKN 125-121、主場勝 MIN 127-125。\nWSH 戰績 2-3，場均得 112.6（30 隊中第 23）、失 113.0（30 隊中第 14），淨勝 -0.4（30 隊中第 16），目前 L1。近況：主場負 TOR 102-112、客場勝 CHI 124-120、客場負 CHA 103-110。\n對盤口表現：CLE 讓分 0 勝 3 負 (0%)；大分 2 次、小分 1 次；WSH 讓分 1 勝 2 負 (33%)；大分 0 次、小分 3 次。\n近 3 次交手 CLE 3 勝 0 負，平均分差 +14.0（最近一次 2026-04-12：勝 130-117）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-25）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：CLE 場均失 111.6 分，對手 131.8（聯盟平均 115.8；CLE 第 11、WSH 第 28／30 隊）。\n• **淨勝分**：CLE 場均淨勝 -5.7 分，對手 -18.1（聯盟平均 -4.7；CLE 第 16、WSH 第 29／30 隊）。\n• **進攻籃板**：CLE 進攻籃板 10.8 個，對手 9.5（聯盟平均 11.1；CLE 第 18、WSH 第 27／30 隊）。\nWSH 能反擊的地方：\n• **板凳得分**：WSH 這項較好，45.7 對 CLE 的 24.4（聯盟平均 35.3；CLE 第 26、WSH 第 4／30 隊）。\n• **禁區得分**：WSH 這項較好，51.4 對 CLE 的 42.6（聯盟平均 47.4；CLE 第 23、WSH 第 8／30 隊）。\n• **快攻得分**：WSH 這項較好，13.2 對 CLE 的 8.0（聯盟平均 14.2；CLE 第 30、WSH 第 17／30 隊）。\n穩定度：這段期間 CLE 單場分差的標準差是 ±18.0 分，WSH 是 ±9.4 分；CLE 的表現起伏較大。\n## 賽程與休息\nCLE 休一天；WSH 休一天。\nCLE 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 239.5\n節奏觀察：本季兩隊進攻合計 231.9 分，防守合計失 233.0 分；近況合計每場出手 73 記三分（聯盟兩隊平均 73）、快攻 21 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 230.4，盤口 239.5，低於盤口 9.1 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 68%；公布信心 77%。\n## 模型本季戰績\n本季至今，已發佈讓分 26 勝 26 負（50%）；信心 54% 以上的場次 22 勝 26 負；大小分 27 勝 25 負（52%）。\n## 風險\n坦白說：優勢只有 1.1 分（過盤機率 53%），落在盤口正常波動範圍內；讓 10.5 分代表 CLE 不只要贏，還要贏得輕鬆；WSH 在板凳得分上的優勢（45.7 對 24.4）是翻掉這份判讀最直接的路徑；CLE 單場分差起伏 ±18.0 分，單場優勢並不牢靠。",
+      "predicted_margin": 11.6,
       "predicted_total": 230.39,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:11.523863",
+      "created_at": "2026-10-27T22:30:12.631454",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-25",
@@ -21066,20 +21066,20 @@
           }
         ],
         "projection": {
-          "model_margin": 11.9,
+          "model_margin": 11.6,
           "raw_margin": 11.9,
-          "market_margin": 0.0,
-          "edge": 11.9,
+          "market_margin": 10.5,
+          "edge": 1.1,
           "pred_total": 230.4,
-          "total_line": 225.0,
-          "total_edge": 5.4,
-          "total_is_default": true
+          "total_line": 239.5,
+          "total_edge": -9.1,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.829,
-          "win_model": 0.829,
-          "win_market": null,
-          "total": 0.612,
+          "cover": 0.535,
+          "win_model": 0.823,
+          "win_market": 0.8,
+          "total": 0.684,
           "sigma_spread": 12.5,
           "sigma_total": 19.0,
           "sigma_measured": false
@@ -21105,11 +21105,11 @@
             25
           ],
           "spread_at_conf": [
-            2,
-            0
+            22,
+            26
           ]
         },
-        "generated_at": "2026-10-27T22:00:11"
+        "generated_at": "2026-10-27T22:30:12"
       },
       "matches": {
         "id": 79,
@@ -21121,8 +21121,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -10.5,
+        "vegas_total": 239.5,
         "home_team": {
           "code": "CLE",
           "full_name": "Cleveland Cavaliers",
@@ -21158,7 +21158,7 @@
       "predicted_total": 232.38,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:11.580307",
+      "created_at": "2026-10-27T22:30:12.688437",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -21482,7 +21482,7 @@
             6
           ]
         },
-        "generated_at": "2026-10-27T22:00:11"
+        "generated_at": "2026-10-27T22:30:12"
       },
       "matches": {
         "id": 88,
@@ -21531,7 +21531,7 @@
       "predicted_total": 216.92,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:11.637668",
+      "created_at": "2026-10-27T22:30:12.745783",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -21855,7 +21855,7 @@
             26
           ]
         },
-        "generated_at": "2026-10-27T22:00:11"
+        "generated_at": "2026-10-27T22:30:12"
       },
       "matches": {
         "id": 80,
@@ -21904,7 +21904,7 @@
       "predicted_total": 226.93,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:11.696923",
+      "created_at": "2026-10-27T22:30:12.804842",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -22228,7 +22228,7 @@
             18
           ]
         },
-        "generated_at": "2026-10-27T22:00:11"
+        "generated_at": "2026-10-27T22:30:12"
       },
       "matches": {
         "id": 81,
@@ -22277,7 +22277,7 @@
       "predicted_total": 219.43,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:11.756544",
+      "created_at": "2026-10-27T22:30:12.864794",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -22601,7 +22601,7 @@
             18
           ]
         },
-        "generated_at": "2026-10-27T22:00:11"
+        "generated_at": "2026-10-27T22:30:12"
       },
       "matches": {
         "id": 89,
@@ -22650,7 +22650,7 @@
       "predicted_total": 223.84,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:11.814085",
+      "created_at": "2026-10-27T22:30:12.922960",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-01",
@@ -22974,7 +22974,7 @@
             18
           ]
         },
-        "generated_at": "2026-10-27T22:00:11"
+        "generated_at": "2026-10-27T22:30:12"
       },
       "matches": {
         "id": 84,
@@ -23023,7 +23023,7 @@
       "predicted_total": 228.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:11.871286",
+      "created_at": "2026-10-27T22:30:12.980386",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-15",
@@ -23347,7 +23347,7 @@
             19
           ]
         },
-        "generated_at": "2026-10-27T22:00:11"
+        "generated_at": "2026-10-27T22:30:12"
       },
       "matches": {
         "id": 85,
@@ -23383,20 +23383,20 @@
       "id": 66,
       "match_id": 82,
       "recommended_team_id": 24,
-      "confidence_score": 70.0,
-      "spread_logic": "AI projects TOR to win by 5.2 pts",
-      "spread_logic_zh": "AI 預測 TOR 贏 5.2 分",
-      "line_info": "0.0",
+      "confidence_score": 52.0,
+      "spread_logic": "AI projects TOR to win by 5.1 pts",
+      "spread_logic_zh": "AI 預測 TOR 贏 5.1 分",
+      "line_info": "-4.5",
       "ou_pick": "UNDER",
-      "ou_line": 225.0,
-      "ou_confidence": 72.0,
-      "analysis_content": "## The Call\nWe land on TOR at home.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has TOR by 5.2, a 66% win probability.\nConfidence is moderate at 70%.\n## Season So Far\nTOR is 2-3 (1-0 home, 1-3 away), scoring 117.2 (11th of 30) and allowing 112.4 (13th of 30) for a +4.8 margin (11th of 30), currently on a L1 run. Last out: W 135-92 vs CHI, W 112-102 at WSH, L 94-117 at MIN.\nORL is 2-2, scoring 116.2 (17th of 30) and allowing 116.0 (16th of 30) for a +0.2 margin (15th of 30), on a W1 run. Last out: L 125-132 vs ATL, L 93-115 vs MIN, W 111-102 at NY.\nAgainst the number: TOR 1-1 against the spread (50%); 0 over / 2 under; ORL 1-1 against the spread (50%); 0 over / 2 under.\nHead to head, TOR is 2-1 in the last 3 meetings with an average margin of +14.3 (most recent 2026-03-29: W 139-87).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-05-03), TOR's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **FG%** — TOR shoots 49.2% from the floor to 40.8% (league avg 45.8%; TOR 2nd vs ORL 30th of 30).\n• **Bench points** — TOR gets 35.6 from the bench to 23.0 (league avg 35.3; TOR 15th vs ORL 27th of 30).\n• **Assists** — TOR records 26.8 assists to 20.7 (league avg 25.0; TOR 6th vs ORL 30th of 30).\n• **Points** — TOR scores 113.0 a night to 101.0 (league avg 111.1; TOR 12th vs ORL 30th of 30).\nWhere ORL pushes back:\n• **Points allowed** — ORL holds the better number, 102.9 to TOR's 111.0 (league avg 115.8; TOR 9th vs ORL 2nd of 30).\n• **Rebounds** — ORL holds the better number, 43.1 to TOR's 39.7 (league avg 41.9; TOR 23rd vs ORL 13th of 30).\n• **Off. rebounds** — ORL holds the better number, 11.3 to TOR's 10.0 (league avg 11.1; TOR 24th vs ORL 13th of 30).\nConsistency check: TOR's game margins over this stretch vary by ±16.2 points (one standard deviation) against ±15.1 for ORL; the more volatile side is TOR.\n## Schedule & Rest\nTOR comes in with 2 days of rest; ORL comes in with 2 days of rest.\nTOR has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 233.4 points and the two defences concede 228.4; on record they attempt 62 threes between them (league pair average 73) with 34 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 217.5 total points against a line of 225.0, 7.5 points below the number. With totals spreading ±19.0 points around the line, that is a 65% probability of the under; published confidence is 72%.\n## Model Track Record\nThis season, published spread picks are 26-26 (50%); at 70%+ confidence they are 9-15; totals are 27-25 (52%).\n## What Could Go Wrong\nHonest caveats: ORL's edge in Points allowed (102.9 vs 111.0) is the cleanest path to an upset of this read; TOR's results swing ±16.2 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n數字指向 TOR（主場）。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 TOR 贏 5.2 分，勝率 66%。\n信心中等（70%）。\n## 本季至今\nTOR 戰績 2-3（主 1-0、客 1-3），場均得 117.2（30 隊中第 11）、失 112.4（30 隊中第 13），淨勝 +4.8（30 隊中第 11），目前 L1。近況：主場勝 CHI 135-92、客場勝 WSH 112-102、客場負 MIN 94-117。\nORL 戰績 2-2，場均得 116.2（30 隊中第 17）、失 116.0（30 隊中第 16），淨勝 +0.2（30 隊中第 15），目前 W1。近況：主場負 ATL 125-132、主場負 MIN 93-115、客場勝 NY 111-102。\n對盤口表現：TOR 讓分 1 勝 1 負 (50%)；大分 0 次、小分 2 次；ORL 讓分 1 勝 1 負 (50%)；大分 0 次、小分 2 次。\n近 3 次交手 TOR 2 勝 1 負，平均分差 +14.3（最近一次 2026-03-29：勝 139-87）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-03），TOR 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **命中率**：TOR 命中率 49.2%，對手 40.8%（聯盟平均 45.8%；TOR 第 2、ORL 第 30／30 隊）。\n• **板凳得分**：TOR 板凳貢獻 35.6 分，對手 23.0（聯盟平均 35.3；TOR 第 15、ORL 第 27／30 隊）。\n• **助攻**：TOR 助攻 26.8 次，對手 20.7（聯盟平均 25.0；TOR 第 6、ORL 第 30／30 隊）。\n• **得分**：TOR 場均得 113.0 分，對手 101.0（聯盟平均 111.1；TOR 第 12、ORL 第 30／30 隊）。\nORL 能反擊的地方：\n• **失分**：ORL 這項較好，102.9 對 TOR 的 111.0（聯盟平均 115.8；TOR 第 9、ORL 第 2／30 隊）。\n• **籃板**：ORL 這項較好，43.1 對 TOR 的 39.7（聯盟平均 41.9；TOR 第 23、ORL 第 13／30 隊）。\n• **進攻籃板**：ORL 這項較好，11.3 對 TOR 的 10.0（聯盟平均 11.1；TOR 第 24、ORL 第 13／30 隊）。\n穩定度：這段期間 TOR 單場分差的標準差是 ±16.2 分，ORL 是 ±15.1 分；TOR 的表現起伏較大。\n## 賽程與休息\nTOR 休了 2 天；ORL 休了 2 天。\nTOR 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 233.4 分，防守合計失 228.4 分；近況合計每場出手 62 記三分（聯盟兩隊平均 73）、快攻 34 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 217.5，盤口 225.0，低於盤口 7.5 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 65%；公布信心 72%。\n## 模型本季戰績\n本季至今，已發佈讓分 26 勝 26 負（50%）；信心 70% 以上的場次 9 勝 15 負；大小分 27 勝 25 負（52%）。\n## 風險\n坦白說：ORL 在失分上的優勢（102.9 對 111.0）是翻掉這份判讀最直接的路徑；TOR 單場分差起伏 ±16.2 分，單場優勢並不牢靠。",
-      "predicted_margin": 5.21,
+      "ou_line": 223.5,
+      "ou_confidence": 67.0,
+      "analysis_content": "## The Call\nWe land on TOR at home.\nThe market has TOR at -4.5, which implies a 4.5-point win and a 64% win probability. Our projection is +5.1 for TOR (66% to win), a gap of 0.6 points in favour of the cover.\nConverted with the long-run 12.5-point spread of NBA results around the line, a 0.6-point edge is a 52% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 52%.\n## Season So Far\nTOR is 2-3 (1-0 home, 1-3 away), scoring 117.2 (11th of 30) and allowing 112.4 (13th of 30) for a +4.8 margin (11th of 30), currently on a L1 run. Last out: W 135-92 vs CHI, W 112-102 at WSH, L 94-117 at MIN.\nORL is 2-2, scoring 116.2 (17th of 30) and allowing 116.0 (16th of 30) for a +0.2 margin (15th of 30), on a W1 run. Last out: L 125-132 vs ATL, L 93-115 vs MIN, W 111-102 at NY.\nAgainst the number: TOR 1-1 against the spread (50%); 0 over / 2 under; ORL 1-1 against the spread (50%); 0 over / 2 under.\nHead to head, TOR is 2-1 in the last 3 meetings with an average margin of +14.3 (most recent 2026-03-29: W 139-87).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-05-03), TOR's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **FG%** — TOR shoots 49.2% from the floor to 40.8% (league avg 45.8%; TOR 2nd vs ORL 30th of 30).\n• **Bench points** — TOR gets 35.6 from the bench to 23.0 (league avg 35.3; TOR 15th vs ORL 27th of 30).\n• **Assists** — TOR records 26.8 assists to 20.7 (league avg 25.0; TOR 6th vs ORL 30th of 30).\n• **Points** — TOR scores 113.0 a night to 101.0 (league avg 111.1; TOR 12th vs ORL 30th of 30).\nWhere ORL pushes back:\n• **Points allowed** — ORL holds the better number, 102.9 to TOR's 111.0 (league avg 115.8; TOR 9th vs ORL 2nd of 30).\n• **Rebounds** — ORL holds the better number, 43.1 to TOR's 39.7 (league avg 41.9; TOR 23rd vs ORL 13th of 30).\n• **Off. rebounds** — ORL holds the better number, 11.3 to TOR's 10.0 (league avg 11.1; TOR 24th vs ORL 13th of 30).\nConsistency check: TOR's game margins over this stretch vary by ±16.2 points (one standard deviation) against ±15.1 for ORL; the more volatile side is TOR.\n## Schedule & Rest\nTOR comes in with 2 days of rest; ORL comes in with 2 days of rest.\nTOR has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 223.5\nTempo check: this season the two offences combine for 233.4 points and the two defences concede 228.4; on record they attempt 62 threes between them (league pair average 73) with 34 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 217.5 total points against a line of 223.5, 6.0 points below the number. With totals spreading ±19.0 points around the line, that is a 62% probability of the under; published confidence is 67%.\n## Model Track Record\nThis season, published spread picks are 26-26 (50%); at 52%+ confidence they are 23-26; totals are 27-25 (52%).\n## What Could Go Wrong\nHonest caveats: the edge is only 0.6 points (52% cover probability), inside normal line noise; ORL's edge in Points allowed (102.9 vs 111.0) is the cleanest path to an upset of this read; TOR's results swing ±16.2 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n數字指向 TOR（主場）。\n市場開 TOR -4.5，等於預期贏 4.5 分、勝率 64%；模型估 TOR +5.1（勝率 66%），與盤口差 0.6 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，0.6 分的優勢等於 52% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（52%）。\n## 本季至今\nTOR 戰績 2-3（主 1-0、客 1-3），場均得 117.2（30 隊中第 11）、失 112.4（30 隊中第 13），淨勝 +4.8（30 隊中第 11），目前 L1。近況：主場勝 CHI 135-92、客場勝 WSH 112-102、客場負 MIN 94-117。\nORL 戰績 2-2，場均得 116.2（30 隊中第 17）、失 116.0（30 隊中第 16），淨勝 +0.2（30 隊中第 15），目前 W1。近況：主場負 ATL 125-132、主場負 MIN 93-115、客場勝 NY 111-102。\n對盤口表現：TOR 讓分 1 勝 1 負 (50%)；大分 0 次、小分 2 次；ORL 讓分 1 勝 1 負 (50%)；大分 0 次、小分 2 次。\n近 3 次交手 TOR 2 勝 1 負，平均分差 +14.3（最近一次 2026-03-29：勝 139-87）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-03），TOR 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **命中率**：TOR 命中率 49.2%，對手 40.8%（聯盟平均 45.8%；TOR 第 2、ORL 第 30／30 隊）。\n• **板凳得分**：TOR 板凳貢獻 35.6 分，對手 23.0（聯盟平均 35.3；TOR 第 15、ORL 第 27／30 隊）。\n• **助攻**：TOR 助攻 26.8 次，對手 20.7（聯盟平均 25.0；TOR 第 6、ORL 第 30／30 隊）。\n• **得分**：TOR 場均得 113.0 分，對手 101.0（聯盟平均 111.1；TOR 第 12、ORL 第 30／30 隊）。\nORL 能反擊的地方：\n• **失分**：ORL 這項較好，102.9 對 TOR 的 111.0（聯盟平均 115.8；TOR 第 9、ORL 第 2／30 隊）。\n• **籃板**：ORL 這項較好，43.1 對 TOR 的 39.7（聯盟平均 41.9；TOR 第 23、ORL 第 13／30 隊）。\n• **進攻籃板**：ORL 這項較好，11.3 對 TOR 的 10.0（聯盟平均 11.1；TOR 第 24、ORL 第 13／30 隊）。\n穩定度：這段期間 TOR 單場分差的標準差是 ±16.2 分，ORL 是 ±15.1 分；TOR 的表現起伏較大。\n## 賽程與休息\nTOR 休了 2 天；ORL 休了 2 天。\nTOR 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 223.5\n節奏觀察：本季兩隊進攻合計 233.4 分，防守合計失 228.4 分；近況合計每場出手 62 記三分（聯盟兩隊平均 73）、快攻 34 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 217.5，盤口 223.5，低於盤口 6.0 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 62%；公布信心 67%。\n## 模型本季戰績\n本季至今，已發佈讓分 26 勝 26 負（50%）；信心 52% 以上的場次 23 勝 26 負；大小分 27 勝 25 負（52%）。\n## 風險\n坦白說：優勢只有 0.6 分（過盤機率 52%），落在盤口正常波動範圍內；ORL 在失分上的優勢（102.9 對 111.0）是翻掉這份判讀最直接的路徑；TOR 單場分差起伏 ±16.2 分，單場優勢並不牢靠。",
+      "predicted_margin": 5.07,
       "predicted_total": 217.54,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:11.923497",
+      "created_at": "2026-10-27T22:30:13.032997",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -23677,20 +23677,20 @@
           }
         ],
         "projection": {
-          "model_margin": 5.2,
+          "model_margin": 5.1,
           "raw_margin": 5.2,
-          "market_margin": 0.0,
-          "edge": 5.2,
+          "market_margin": 4.5,
+          "edge": 0.6,
           "pred_total": 217.5,
-          "total_line": 225.0,
-          "total_edge": -7.5,
-          "total_is_default": true
+          "total_line": 223.5,
+          "total_edge": -6.0,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.662,
-          "win_model": 0.662,
-          "win_market": null,
-          "total": 0.653,
+          "cover": 0.518,
+          "win_model": 0.657,
+          "win_market": 0.641,
+          "total": 0.623,
           "sigma_spread": 12.5,
           "sigma_total": 19.0,
           "sigma_measured": false
@@ -23716,11 +23716,11 @@
             25
           ],
           "spread_at_conf": [
-            9,
-            15
+            23,
+            26
           ]
         },
-        "generated_at": "2026-10-27T22:00:11"
+        "generated_at": "2026-10-27T22:30:13"
       },
       "matches": {
         "id": 82,
@@ -23732,8 +23732,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -4.5,
+        "vegas_total": 223.5,
         "home_team": {
           "code": "TOR",
           "full_name": "Toronto Raptors",
@@ -23769,7 +23769,7 @@
       "predicted_total": 236.78,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:11.976933",
+      "created_at": "2026-10-27T22:30:13.086524",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -24093,7 +24093,7 @@
             18
           ]
         },
-        "generated_at": "2026-10-27T22:00:11"
+        "generated_at": "2026-10-27T22:30:13"
       },
       "matches": {
         "id": 86,
@@ -24142,7 +24142,7 @@
       "predicted_total": 234.02,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-27T22:00:12.033470",
+      "created_at": "2026-10-27T22:30:13.143912",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -24466,7 +24466,7 @@
             8
           ]
         },
-        "generated_at": "2026-10-27T22:00:12"
+        "generated_at": "2026-10-27T22:30:13"
       },
       "matches": {
         "id": 87,
