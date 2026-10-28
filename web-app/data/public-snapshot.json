@@ -3185,14 +3185,16 @@
       "home_team_id": 1,
       "away_team_id": 15,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 25,
-      "away_score": 34,
+      "home_score": 34,
+      "away_score": 36,
       "period_scores": {
         "home": [
-          25
+          25,
+          9
         ],
         "away": [
-          34
+          34,
+          2
         ]
       },
       "vegas_spread": -2.5,
@@ -3217,14 +3219,14 @@
       "home_team_id": 6,
       "away_team_id": 25,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 32,
-      "away_score": 32,
+      "home_score": 34,
+      "away_score": 40,
       "period_scores": {
         "home": [
-          32
+          34
         ],
         "away": [
-          33
+          40
         ]
       },
       "vegas_spread": -9.5,
@@ -3281,11 +3283,11 @@
       "home_team_id": 11,
       "away_team_id": 20,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 17,
+      "home_score": 20,
       "away_score": 22,
       "period_scores": {
         "home": [
-          17
+          20
         ],
         "away": [
           22
@@ -20608,14 +20610,16 @@
         "home_team_id": 1,
         "away_team_id": 15,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 25,
-        "away_score": 34,
+        "home_score": 34,
+        "away_score": 36,
         "period_scores": {
           "home": [
-            25
+            25,
+            9
           ],
           "away": [
-            34
+            34,
+            2
           ]
         },
         "vegas_spread": -2.5,
@@ -21361,14 +21365,14 @@
         "home_team_id": 6,
         "away_team_id": 25,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 32,
-        "away_score": 32,
+        "home_score": 34,
+        "away_score": 40,
         "period_scores": {
           "home": [
-            32
+            34
           ],
           "away": [
-            33
+            40
           ]
         },
         "vegas_spread": -9.5,
@@ -22494,11 +22498,11 @@
         "home_team_id": 11,
         "away_team_id": 20,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 17,
+        "home_score": 20,
         "away_score": 22,
         "period_scores": {
           "home": [
-            17
+            20
           ],
           "away": [
             22
