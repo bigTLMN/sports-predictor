@@ -3147,14 +3147,14 @@
       "home_team_id": 13,
       "away_team_id": 22,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 14,
-      "away_score": 9,
+      "home_score": 22,
+      "away_score": 13,
       "period_scores": {
         "home": [
-          14
+          22
         ],
         "away": [
-          9
+          13
         ]
       },
       "vegas_spread": -1.5,
@@ -3358,7 +3358,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 225.5,
+      "vegas_total": 228.5,
       "home_team": {
         "code": "MIN",
         "full_name": "Minnesota Timberwolves",
@@ -19316,14 +19316,14 @@
         "home_team_id": 13,
         "away_team_id": 22,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 14,
-        "away_score": 9,
+        "home_score": 22,
+        "away_score": 13,
         "period_scores": {
           "home": [
-            14
+            22
           ],
           "away": [
-            9
+            13
           ]
         },
         "vegas_spread": -1.5,
@@ -23456,7 +23456,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -3.5,
-        "vegas_total": 225.5,
+        "vegas_total": 228.5,
         "home_team": {
           "code": "MIN",
           "full_name": "Minnesota Timberwolves",
@@ -24611,7 +24611,7 @@
       "predicted_total": 221.08,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-28T03:00:11.773551",
+      "created_at": "2026-10-28T03:30:12.945602",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -24935,7 +24935,7 @@
             16
           ]
         },
-        "generated_at": "2026-10-28T03:00:11"
+        "generated_at": "2026-10-28T03:30:12"
       },
       "matches": {
         "id": 90,
@@ -24984,7 +24984,7 @@
       "predicted_total": 229.38,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-28T03:00:11.828136",
+      "created_at": "2026-10-28T03:30:13.000394",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-28",
@@ -25308,7 +25308,7 @@
             1
           ]
         },
-        "generated_at": "2026-10-28T03:00:11"
+        "generated_at": "2026-10-28T03:30:13"
       },
       "matches": {
         "id": 92,
@@ -25357,7 +25357,7 @@
       "predicted_total": 237.61,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-28T03:00:11.884287",
+      "created_at": "2026-10-28T03:30:13.055892",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -25681,7 +25681,7 @@
             13
           ]
         },
-        "generated_at": "2026-10-28T03:00:11"
+        "generated_at": "2026-10-28T03:30:13"
       },
       "matches": {
         "id": 91,
