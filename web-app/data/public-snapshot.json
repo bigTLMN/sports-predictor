@@ -3526,8 +3526,8 @@
       "start_time": "2026-10-29T01:00Z",
       "home_team_id": 30,
       "away_team_id": 29,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 108,
+      "status": "STATUS_FINISHED",
+      "home_score": 111,
       "away_score": 117,
       "period_scores": {
         "home": [
@@ -3535,7 +3535,7 @@
           23,
           30,
           20,
-          3
+          6
         ],
         "away": [
           22,
@@ -3567,18 +3567,20 @@
       "home_team_id": 7,
       "away_team_id": 18,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 94,
-      "away_score": 81,
+      "home_score": 96,
+      "away_score": 83,
       "period_scores": {
         "home": [
           33,
           32,
-          29
+          29,
+          2
         ],
         "away": [
           30,
           29,
-          22
+          22,
+          2
         ]
       },
       "vegas_spread": 5.5,
@@ -3603,16 +3605,16 @@
       "home_team_id": 12,
       "away_team_id": 13,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 35,
-      "away_score": 48,
+      "home_score": 36,
+      "away_score": 54,
       "period_scores": {
         "home": [
           22,
-          13
+          14
         ],
         "away": [
           25,
-          23
+          29
         ]
       },
       "vegas_spread": -1.5,
@@ -21890,18 +21892,20 @@
         "home_team_id": 7,
         "away_team_id": 18,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 94,
-        "away_score": 81,
+        "home_score": 96,
+        "away_score": 83,
         "period_scores": {
           "home": [
             33,
             32,
-            29
+            29,
+            2
           ],
           "away": [
             30,
             29,
-            22
+            22,
+            2
           ]
         },
         "vegas_spread": 5.5,
@@ -23046,16 +23050,16 @@
         "home_team_id": 12,
         "away_team_id": 13,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 35,
-        "away_score": 48,
+        "home_score": 36,
+        "away_score": 54,
         "period_scores": {
           "home": [
             22,
-            13
+            14
           ],
           "away": [
             25,
-            23
+            29
           ]
         },
         "vegas_spread": -1.5,
@@ -24637,8 +24641,8 @@
       "analysis_content_zh": "## 結論\n本場站 客場的 SA。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 SA 贏 7.5 分，勝率 73%。\n信心高（79%）。\n## 本季至今\nSA 戰績 3-2（主 2-2、客 1-0），場均得 117.0（30 隊中第 12）、失 107.2（30 隊中第 5），淨勝 +9.8（30 隊中第 7），目前 W1。近況：主場負 OKC 104-116、主場負 HOU 110-114、客場勝 DAL 122-106。\nUTAH 戰績 2-3，場均得 114.0（30 隊中第 22）、失 120.0（30 隊中第 22），淨勝 -6.0（30 隊中第 22），目前 L2。近況：主場勝 NO 120-119、主場負 LAL 123-132、主場負 MEM 105-110。\n對盤口表現：SA 讓分 1 勝 1 負 (50%)；大分 0 次、小分 2 次；UTAH 讓分 0 勝 3 負 (0%)；大分 2 次、小分 1 次。\n近 3 次交手 SA 2 勝 1 負，平均分差 +5.7（最近一次 2026-01-22：勝 126-109）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-06-13）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：SA 場均失 104.8 分，對手 132.8（聯盟平均 115.8；SA 第 4、UTAH 第 30／30 隊）。\n• **淨勝分**：SA 場均淨勝 +1.6 分，對手 -14.2（聯盟平均 -4.7；SA 第 9、UTAH 第 28／30 隊）。\n• **罰球命中率**：SA 罰球 77.9%，對手 67.5%（聯盟平均 77.5%；SA 第 13、UTAH 第 30／30 隊）。\n• **失誤**：SA 失誤 12.6 次，對手 14.2（聯盟平均 13.6；SA 第 9、UTAH 第 21／30 隊）。\nUTAH 能反擊的地方：\n• **禁區得分**：UTAH 這項較好，64.0 對 SA 的 41.4（聯盟平均 47.4；SA 第 25、UTAH 第 1／30 隊）。\n• **助攻**：UTAH 這項較好，31.9 對 SA 的 23.5（聯盟平均 25.0；SA 第 22、UTAH 第 2／30 隊）。\n• **快攻得分**：UTAH 這項較好，24.9 對 SA 的 15.0（聯盟平均 14.2；SA 第 10、UTAH 第 1／30 隊）。\n穩定度：這段期間 SA 單場分差的標準差是 ±13.2 分，UTAH 是 ±22.0 分；SA 的表現較穩。\n## 賽程與休息\nSA 休了 3 天；UTAH 休一天。\n體能上 SA 較佔便宜。\nUTAH 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 231.0 分，防守合計失 227.2 分；近況合計每場出手 70 記三分（聯盟兩隊平均 73）、快攻 40 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 234.0，盤口 225.0，高於盤口 9.0 分。以總分相對盤口 ±19.0 分的分佈換算，大分機率 68%；公布信心 77%。\n## 模型本季戰績\n本季至今，已發佈讓分 26 勝 26 負（50%）；信心 79% 以上的場次 6 勝 8 負；大小分 27 勝 25 負（52%）。\n## 風險\n坦白說：UTAH 在禁區得分上的優勢（64.0 對 41.4）是翻掉這份判讀最直接的路徑。",
       "predicted_margin": 7.48,
       "predicted_total": 234.02,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "LOSS",
       "created_at": "2026-10-27T23:30:12.967227",
       "analysis_facts": {
         "profile_games": 10,
@@ -24971,8 +24975,8 @@
         "start_time": "2026-10-29T01:00Z",
         "home_team_id": 30,
         "away_team_id": 29,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 108,
+        "status": "STATUS_FINISHED",
+        "home_score": 111,
         "away_score": 117,
         "period_scores": {
           "home": [
@@ -24980,7 +24984,7 @@
             23,
             30,
             20,
-            3
+            6
           ],
           "away": [
             22,
