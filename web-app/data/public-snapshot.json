@@ -3796,7 +3796,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": 1.5,
+      "vegas_spread": -1.5,
       "vegas_total": 229.5,
       "home_team": {
         "code": "PHI",
@@ -26533,7 +26533,7 @@
       "predicted_total": 229.33,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-29T17:30:12.648000",
+      "created_at": "2026-10-29T18:00:12.070205",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -26857,7 +26857,7 @@
             32
           ]
         },
-        "generated_at": "2026-10-29T17:30:12"
+        "generated_at": "2026-10-29T18:00:12"
       },
       "matches": {
         "id": 94,
@@ -26906,7 +26906,7 @@
       "predicted_total": 218.67,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-29T17:30:12.706472",
+      "created_at": "2026-10-29T18:00:12.129030",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -27230,7 +27230,7 @@
             32
           ]
         },
-        "generated_at": "2026-10-29T17:30:12"
+        "generated_at": "2026-10-29T18:00:12"
       },
       "matches": {
         "id": 95,
@@ -27279,7 +27279,7 @@
       "predicted_total": 229.72,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-29T17:30:12.763199",
+      "created_at": "2026-10-29T18:00:12.185605",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-01",
@@ -27603,7 +27603,7 @@
             33
           ]
         },
-        "generated_at": "2026-10-29T17:30:12"
+        "generated_at": "2026-10-29T18:00:12"
       },
       "matches": {
         "id": 99,
@@ -27652,7 +27652,7 @@
       "predicted_total": 245.63,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-29T17:30:12.818092",
+      "created_at": "2026-10-29T18:00:12.239925",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-14",
@@ -27976,7 +27976,7 @@
             23
           ]
         },
-        "generated_at": "2026-10-29T17:30:12"
+        "generated_at": "2026-10-29T18:00:12"
       },
       "matches": {
         "id": 98,
@@ -28025,7 +28025,7 @@
       "predicted_total": 224.69,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-29T17:30:12.880484",
+      "created_at": "2026-10-29T18:00:12.294503",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -28349,7 +28349,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-29T17:30:12"
+        "generated_at": "2026-10-29T18:00:12"
       },
       "matches": {
         "id": 100,
@@ -28385,20 +28385,20 @@
       "id": 77,
       "match_id": 96,
       "recommended_team_id": 28,
-      "confidence_score": 65.0,
-      "spread_logic": "AI projects NY to win by 5.4 pts",
-      "spread_logic_zh": "AI 預測 NY 贏 5.4 分",
-      "line_info": "1.5",
+      "confidence_score": 75.0,
+      "spread_logic": "AI projects NY to win by 4.8 pts",
+      "spread_logic_zh": "AI 預測 NY 贏 4.8 分",
+      "line_info": "-1.5",
       "ou_pick": "UNDER",
       "ou_line": 229.5,
       "ou_confidence": 90.0,
-      "analysis_content": "## The Call\nWe land on NY on the road.\nThe market has NY at -1.5, which implies a 1.5-point win and a 55% win probability. Our projection is +5.4 for NY (66% to win), a gap of 3.9 points in favour of the cover.\nConverted with measured from 54 games this season, a 3.9-point edge is a 62% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was +6.4; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 65%.\n## Season So Far\nNY is 3-3 (2-2 home, 1-1 away), scoring 111.8 (24th of 30) and allowing 111.3 (11th of 30) for a +0.5 margin (14th of 30), currently on a W2 run. Last out: L 102-111 vs ORL, W 111-97 vs DET, W 133-127 at CHI.\nPHI is 4-2, scoring 112.3 (21st of 30) and allowing 110.3 (10th of 30) for a +2.0 margin (11th of 30), on a W1 run. Last out: W 127-116 vs MIL, L 93-106 vs DET, W 114-109 at IND.\nAgainst the number: NY 1-3 against the spread (25%); 1 over / 3 under; PHI 1-3 against the spread (25%); 1 over / 3 under.\nHead to head, NY is 3-0 in the last 3 meetings with an average margin of +16.7 (most recent 2026-05-10: W 144-114).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-06-13), NY's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — NY outscores opponents by +11.9 per game against -7.7 (league avg -4.7; NY 1st vs PHI 21st of 30).\n• **Rebounds** — NY pulls 45.7 rebounds to 37.8 (league avg 41.9; NY 3rd vs PHI 28th of 30).\n• **Fast-break points** — NY runs for 16.8 fast-break points to 9.3 (league avg 14.2; NY 7th vs PHI 29th of 30).\n• **Points** — NY scores 114.1 a night to 104.3 (league avg 111.1; NY 9th vs PHI 27th of 30).\nWhere PHI pushes back:\n• **FT%** — PHI holds the better number, 78.8% to NY's 74.9% (league avg 77.5%; NY 22nd vs PHI 9th of 30).\nConsistency check: NY's game margins over this stretch vary by ±12.4 points (one standard deviation) against ±19.6 for PHI; the steadier side is NY.\n## Schedule & Rest\nNY has one day off; PHI has one day off.\nPHI has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 229.5\nTempo check: this season the two offences combine for 224.2 points and the two defences concede 221.7; on record they attempt 70 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 213.6 total points against a line of 229.5, 15.9 points below the number. With totals spreading ±19.3 points around the line, that is a 80% probability of the under; published confidence is 90%.\n## Model Track Record\nThis season, published spread picks are 35-33 (51%); at 65%+ confidence they are 15-22; totals are 33-35 (49%).\n## What Could Go Wrong\nHonest caveats: PHI's edge in FT% (78.8% vs 74.9%) is the cleanest path to an upset of this read.",
-      "analysis_content_zh": "## 結論\n本場站 客場的 NY。\n市場開 NY -1.5，等於預期贏 1.5 分、勝率 55%；模型估 NY +5.4（勝率 66%），與盤口差 3.9 分，有利於過盤。\n以本季 54 場實際結果量得換算，3.9 分的優勢等於 62% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +6.4；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（65%）。\n## 本季至今\nNY 戰績 3-3（主 2-2、客 1-1），場均得 111.8（30 隊中第 24）、失 111.3（30 隊中第 11），淨勝 +0.5（30 隊中第 14），目前 W2。近況：主場負 ORL 102-111、主場勝 DET 111-97、客場勝 CHI 133-127。\nPHI 戰績 4-2，場均得 112.3（30 隊中第 21）、失 110.3（30 隊中第 10），淨勝 +2.0（30 隊中第 11），目前 W1。近況：主場勝 MIL 127-116、主場負 DET 93-106、客場勝 IND 114-109。\n對盤口表現：NY 讓分 1 勝 3 負 (25%)；大分 1 次、小分 3 次；PHI 讓分 1 勝 3 負 (25%)；大分 1 次、小分 3 次。\n近 3 次交手 NY 3 勝 0 負，平均分差 +16.7（最近一次 2026-05-10：勝 144-114）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-06-13）裡，NY 和 PHI 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -7.7（聯盟平均 -4.7；NY 第 1、PHI 第 21／30 隊）。\n• **籃板**：NY 場均 45.7 籃板，對手 37.8（聯盟平均 41.9；NY 第 3、PHI 第 28／30 隊）。\n• **快攻得分**：NY 快攻 16.8 分，對手 9.3（聯盟平均 14.2；NY 第 7、PHI 第 29／30 隊）。\n• **得分**：NY 場均得 114.1 分，對手 104.3（聯盟平均 111.1；NY 第 9、PHI 第 27／30 隊）。\nPHI 能反擊的地方：\n• **罰球命中率**：PHI 這項較好，78.8% 對 NY 的 74.9%（聯盟平均 77.5%；NY 第 22、PHI 第 9／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，PHI 是 ±19.6 分；NY 的表現較穩。\n## 賽程與休息\nNY 休一天；PHI 休一天。\nPHI 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 229.5\n節奏觀察：本季兩隊進攻合計 224.2 分，防守合計失 221.7 分；近況合計每場出手 70 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 213.6，盤口 229.5，低於盤口 15.9 分。以總分相對盤口 ±19.3 分的分佈換算，小分機率 80%；公布信心 90%。\n## 模型本季戰績\n本季至今，已發佈讓分 35 勝 33 負（51%）；信心 65% 以上的場次 15 勝 22 負；大小分 33 勝 35 負（49%）。\n## 風險\n坦白說：PHI 在罰球命中率上的優勢（78.8% 對 74.9%）是翻掉這份判讀最直接的路徑。",
-      "predicted_margin": 5.38,
+      "analysis_content": "## The Call\nWe land on NY on the road.\nThe market has NY at +1.5, which implies a 1.5-point loss and a 45% win probability. Our projection is +4.8 for NY (64% to win), a gap of 6.3 points in favour of the cover.\nConverted with measured from 54 games this season, a 6.3-point edge is a 69% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was +6.4; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 75%.\n## Season So Far\nNY is 3-3 (2-2 home, 1-1 away), scoring 111.8 (24th of 30) and allowing 111.3 (11th of 30) for a +0.5 margin (14th of 30), currently on a W2 run. Last out: L 102-111 vs ORL, W 111-97 vs DET, W 133-127 at CHI.\nPHI is 4-2, scoring 112.3 (21st of 30) and allowing 110.3 (10th of 30) for a +2.0 margin (11th of 30), on a W1 run. Last out: W 127-116 vs MIL, L 93-106 vs DET, W 114-109 at IND.\nAgainst the number: NY 1-3 against the spread (25%); 1 over / 3 under; PHI 1-3 against the spread (25%); 1 over / 3 under.\nHead to head, NY is 3-0 in the last 3 meetings with an average margin of +16.7 (most recent 2026-05-10: W 144-114).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-06-13), NY's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — NY outscores opponents by +11.9 per game against -7.7 (league avg -4.7; NY 1st vs PHI 21st of 30).\n• **Rebounds** — NY pulls 45.7 rebounds to 37.8 (league avg 41.9; NY 3rd vs PHI 28th of 30).\n• **Fast-break points** — NY runs for 16.8 fast-break points to 9.3 (league avg 14.2; NY 7th vs PHI 29th of 30).\n• **Points** — NY scores 114.1 a night to 104.3 (league avg 111.1; NY 9th vs PHI 27th of 30).\nWhere PHI pushes back:\n• **FT%** — PHI holds the better number, 78.8% to NY's 74.9% (league avg 77.5%; NY 22nd vs PHI 9th of 30).\nConsistency check: NY's game margins over this stretch vary by ±12.4 points (one standard deviation) against ±19.6 for PHI; the steadier side is NY.\n## Schedule & Rest\nNY has one day off; PHI has one day off.\nPHI has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 229.5\nTempo check: this season the two offences combine for 224.2 points and the two defences concede 221.7; on record they attempt 70 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 213.6 total points against a line of 229.5, 15.9 points below the number. With totals spreading ±19.3 points around the line, that is a 80% probability of the under; published confidence is 90%.\n## Model Track Record\nThis season, published spread picks are 35-33 (51%); at 75%+ confidence they are 9-14; totals are 33-35 (49%).\n## What Could Go Wrong\nHonest caveats: PHI's edge in FT% (78.8% vs 74.9%) is the cleanest path to an upset of this read.",
+      "analysis_content_zh": "## 結論\n本場站 客場的 NY。\n市場開 NY +1.5，等於預期輸 1.5 分、勝率 45%；模型估 NY +4.8（勝率 64%），與盤口差 6.3 分，有利於過盤。\n以本季 54 場實際結果量得換算，6.3 分的優勢等於 69% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +6.4；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（75%）。\n## 本季至今\nNY 戰績 3-3（主 2-2、客 1-1），場均得 111.8（30 隊中第 24）、失 111.3（30 隊中第 11），淨勝 +0.5（30 隊中第 14），目前 W2。近況：主場負 ORL 102-111、主場勝 DET 111-97、客場勝 CHI 133-127。\nPHI 戰績 4-2，場均得 112.3（30 隊中第 21）、失 110.3（30 隊中第 10），淨勝 +2.0（30 隊中第 11），目前 W1。近況：主場勝 MIL 127-116、主場負 DET 93-106、客場勝 IND 114-109。\n對盤口表現：NY 讓分 1 勝 3 負 (25%)；大分 1 次、小分 3 次；PHI 讓分 1 勝 3 負 (25%)；大分 1 次、小分 3 次。\n近 3 次交手 NY 3 勝 0 負，平均分差 +16.7（最近一次 2026-05-10：勝 144-114）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-06-13）裡，NY 和 PHI 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -7.7（聯盟平均 -4.7；NY 第 1、PHI 第 21／30 隊）。\n• **籃板**：NY 場均 45.7 籃板，對手 37.8（聯盟平均 41.9；NY 第 3、PHI 第 28／30 隊）。\n• **快攻得分**：NY 快攻 16.8 分，對手 9.3（聯盟平均 14.2；NY 第 7、PHI 第 29／30 隊）。\n• **得分**：NY 場均得 114.1 分，對手 104.3（聯盟平均 111.1；NY 第 9、PHI 第 27／30 隊）。\nPHI 能反擊的地方：\n• **罰球命中率**：PHI 這項較好，78.8% 對 NY 的 74.9%（聯盟平均 77.5%；NY 第 22、PHI 第 9／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，PHI 是 ±19.6 分；NY 的表現較穩。\n## 賽程與休息\nNY 休一天；PHI 休一天。\nPHI 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 229.5\n節奏觀察：本季兩隊進攻合計 224.2 分，防守合計失 221.7 分；近況合計每場出手 70 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 213.6，盤口 229.5，低於盤口 15.9 分。以總分相對盤口 ±19.3 分的分佈換算，小分機率 80%；公布信心 90%。\n## 模型本季戰績\n本季至今，已發佈讓分 35 勝 33 負（51%）；信心 75% 以上的場次 9 勝 14 負；大小分 33 勝 35 負（49%）。\n## 風險\n坦白說：PHI 在罰球命中率上的優勢（78.8% 對 74.9%）是翻掉這份判讀最直接的路徑。",
+      "predicted_margin": 4.78,
       "predicted_total": 213.56,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-29T17:30:12.943195",
+      "created_at": "2026-10-29T18:00:12.355963",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -28679,19 +28679,19 @@
           }
         ],
         "projection": {
-          "model_margin": 5.4,
+          "model_margin": 4.8,
           "raw_margin": 6.4,
-          "market_margin": 1.5,
-          "edge": 3.9,
+          "market_margin": -1.5,
+          "edge": 6.3,
           "pred_total": 213.6,
           "total_line": 229.5,
           "total_edge": -15.9,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.618,
-          "win_model": 0.661,
-          "win_market": 0.546,
+          "cover": 0.686,
+          "win_model": 0.644,
+          "win_market": 0.454,
           "total": 0.795,
           "sigma_spread": 13.0,
           "sigma_total": 19.3,
@@ -28718,11 +28718,11 @@
             35
           ],
           "spread_at_conf": [
-            15,
-            22
+            9,
+            14
           ]
         },
-        "generated_at": "2026-10-29T17:30:12"
+        "generated_at": "2026-10-29T18:00:12"
       },
       "matches": {
         "id": 96,
@@ -28734,7 +28734,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": 1.5,
+        "vegas_spread": -1.5,
         "vegas_total": 229.5,
         "home_team": {
           "code": "PHI",
@@ -28771,7 +28771,7 @@
       "predicted_total": 224.13,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-29T17:30:13.000403",
+      "created_at": "2026-10-29T18:00:12.413031",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-27",
@@ -29095,7 +29095,7 @@
             31
           ]
         },
-        "generated_at": "2026-10-29T17:30:13"
+        "generated_at": "2026-10-29T18:00:12"
       },
       "matches": {
         "id": 102,
@@ -29144,7 +29144,7 @@
       "predicted_total": 217.54,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-29T17:30:13.053938",
+      "created_at": "2026-10-29T18:00:12.465317",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -29468,7 +29468,7 @@
             33
           ]
         },
-        "generated_at": "2026-10-29T17:30:13"
+        "generated_at": "2026-10-29T18:00:12"
       },
       "matches": {
         "id": 97,
@@ -29517,7 +29517,7 @@
       "predicted_total": 230.09,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-29T17:30:13.110479",
+      "created_at": "2026-10-29T18:00:12.521318",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -29841,7 +29841,7 @@
             10
           ]
         },
-        "generated_at": "2026-10-29T17:30:13"
+        "generated_at": "2026-10-29T18:00:12"
       },
       "matches": {
         "id": 93,
@@ -29890,7 +29890,7 @@
       "predicted_total": 221.89,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-29T17:30:13.172531",
+      "created_at": "2026-10-29T18:00:12.583112",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-11",
@@ -30214,7 +30214,7 @@
             31
           ]
         },
-        "generated_at": "2026-10-29T17:30:13"
+        "generated_at": "2026-10-29T18:00:12"
       },
       "matches": {
         "id": 101,
