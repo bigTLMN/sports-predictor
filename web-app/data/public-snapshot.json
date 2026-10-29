@@ -3374,9 +3374,9 @@
       "start_time": "2026-10-29T00:00Z",
       "home_team_id": 5,
       "away_team_id": 28,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 127,
-      "away_score": 131,
+      "away_score": 133,
       "period_scores": {
         "home": [
           33,
@@ -3388,7 +3388,7 @@
           34,
           22,
           34,
-          41
+          43
         ]
       },
       "vegas_spread": 6.5,
@@ -3451,20 +3451,20 @@
       "home_team_id": 17,
       "away_team_id": 26,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 106,
-      "away_score": 115,
+      "home_score": 112,
+      "away_score": 116,
       "period_scores": {
         "home": [
           23,
           25,
           33,
-          25
+          31
         ],
         "away": [
           30,
           34,
           29,
-          22
+          23
         ]
       },
       "vegas_spread": -4.5,
@@ -3563,16 +3563,16 @@
       "home_team_id": 7,
       "away_team_id": 18,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 54,
-      "away_score": 46,
+      "home_score": 60,
+      "away_score": 53,
       "period_scores": {
         "home": [
           33,
-          21
+          27
         ],
         "away": [
           30,
-          16
+          23
         ]
       },
       "vegas_spread": 5.5,
@@ -20768,8 +20768,8 @@
       "analysis_content_zh": "## 結論\n本場站 客場的 NY。\n市場開 NY -7.5，等於預期贏 7.5 分、勝率 73%；模型估 NY +7.8（勝率 73%），與盤口差 0.3 分，有利於過盤。\n採 NBA 長期結果相對盤口的 12.5 分標準差換算，0.3 分的優勢等於 51% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（51%）。\n## 本季至今\nNY 戰績 1-3（主 1-2、客 0-1），場均得 106.8（30 隊中第 28）、失 111.0（30 隊中第 10），淨勝 -4.2（30 隊中第 20），目前 L3。近況：主場負 PHI 100-106、客場負 BOS 103-107、主場負 ORL 102-111。\nCHI 戰績 3-3，場均得 116.8（30 隊中第 13）、失 123.0（30 隊中第 26），淨勝 -6.2（30 隊中第 23），目前 L2。近況：客場勝 MIL 132-125、主場負 WSH 120-124、客場負 BOS 99-134。\n對盤口表現：NY 讓分 0 勝 2 負 (0%)；大分 0 次、小分 2 次；CHI 讓分 1 勝 2 負 (33%)；大分 1 次、小分 2 次。\n近 3 次交手 NY 3 勝 0 負，平均分差 +19.3（最近一次 2026-04-03：勝 136-96）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-06-13）裡，NY 和 CHI 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：NY 場均失 102.2 分，對手 126.8（聯盟平均 115.8；NY 第 1、CHI 第 26／30 隊）。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -10.6（聯盟平均 -4.7；NY 第 1、CHI 第 25／30 隊）。\n• **三分命中率**：NY 三分命中 39.2%，對手 29.7%（聯盟平均 34.9%；NY 第 3、CHI 第 30／30 隊）。\n• **失誤**：NY 失誤 11.5 次，對手 16.0（聯盟平均 13.6；NY 第 4、CHI 第 28／30 隊）。\nCHI 能反擊的地方：\n• **板凳得分**：CHI 這項較好，43.7 對 NY 的 26.3（聯盟平均 35.3；NY 第 24、CHI 第 6／30 隊）。\n• **禁區得分**：CHI 這項較好，59.2 對 NY 的 44.8（聯盟平均 47.4；NY 第 20、CHI 第 3／30 隊）。\n• **快攻得分**：CHI 這項較好，19.8 對 NY 的 16.8（聯盟平均 14.2；NY 第 7、CHI 第 5／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，CHI 是 ±18.9 分；NY 的表現較穩。\n## 賽程與休息\nNY 休了 2 天；CHI 休一天。\n體能上 NY 較佔便宜。\nCHI 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 234.5\n節奏觀察：本季兩隊進攻合計 223.6 分，防守合計失 234.0 分；近況合計每場出手 75 記三分（聯盟兩隊平均 73）、快攻 37 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 228.9，盤口 234.5，低於盤口 5.6 分。以總分相對盤口 ±19.0 分的分佈換算，小分機率 62%；公布信心 66%。\n## 模型本季戰績\n本季至今，已發佈讓分 26 勝 26 負（50%）；信心 51% 以上的場次 24 勝 26 負；大小分 27 勝 25 負（52%）。\n## 風險\n坦白說：優勢只有 0.3 分（過盤機率 51%），落在盤口正常波動範圍內；CHI 在板凳得分上的優勢（43.7 對 26.3）是翻掉這份判讀最直接的路徑；NY 正吞 3 連敗，模型看不到更衣室氣氛。",
       "predicted_margin": 7.76,
       "predicted_total": 228.86,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "LOSS",
       "created_at": "2026-10-27T23:30:12.400517",
       "analysis_facts": {
         "profile_games": 10,
@@ -21102,9 +21102,9 @@
         "start_time": "2026-10-29T00:00Z",
         "home_team_id": 5,
         "away_team_id": 28,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 127,
-        "away_score": 131,
+        "away_score": 133,
         "period_scores": {
           "home": [
             33,
@@ -21116,7 +21116,7 @@
             34,
             22,
             34,
-            41
+            43
           ]
         },
         "vegas_spread": 6.5,
@@ -21875,16 +21875,16 @@
         "home_team_id": 7,
         "away_team_id": 18,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 54,
-        "away_score": 46,
+        "home_score": 60,
+        "away_score": 53,
         "period_scores": {
           "home": [
             33,
-            21
+            27
           ],
           "away": [
             30,
-            16
+            23
           ]
         },
         "vegas_spread": 5.5,
@@ -23788,20 +23788,20 @@
         "home_team_id": 17,
         "away_team_id": 26,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 106,
-        "away_score": 115,
+        "home_score": 112,
+        "away_score": 116,
         "period_scores": {
           "home": [
             23,
             25,
             33,
-            25
+            31
           ],
           "away": [
             30,
             34,
             29,
-            22
+            23
           ]
         },
         "vegas_spread": -4.5,
