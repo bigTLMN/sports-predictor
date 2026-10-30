@@ -3719,16 +3719,16 @@
       "home_team_id": 22,
       "away_team_id": 14,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 45,
-      "away_score": 39,
+      "home_score": 49,
+      "away_score": 46,
       "period_scores": {
         "home": [
           25,
-          20
+          24
         ],
         "away": [
           25,
-          14
+          21
         ]
       },
       "vegas_spread": -7.5,
@@ -3757,7 +3757,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -1.5,
-      "vegas_total": 222.5,
+      "vegas_total": 220.5,
       "home_team": {
         "code": "WSH",
         "full_name": "Washington Wizards",
@@ -3882,7 +3882,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -7.5,
-      "vegas_total": 238.5,
+      "vegas_total": 236.5,
       "home_team": {
         "code": "MIA",
         "full_name": "Miami Heat",
@@ -3907,7 +3907,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 5.5,
-      "vegas_total": 227.5,
+      "vegas_total": 226.5,
       "home_team": {
         "code": "DAL",
         "full_name": "Dallas Mavericks",
@@ -26168,16 +26168,16 @@
         "home_team_id": 22,
         "away_team_id": 14,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 45,
-        "away_score": 39,
+        "home_score": 49,
+        "away_score": 46,
         "period_scores": {
           "home": [
             25,
-            20
+            24
           ],
           "away": [
             25,
-            14
+            21
           ]
         },
         "vegas_spread": -7.5,
@@ -27686,7 +27686,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 5.5,
-        "vegas_total": 227.5,
+        "vegas_total": 226.5,
         "home_team": {
           "code": "DAL",
           "full_name": "Dallas Mavericks",
@@ -28059,7 +28059,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -7.5,
-        "vegas_total": 238.5,
+        "vegas_total": 236.5,
         "home_team": {
           "code": "MIA",
           "full_name": "Miami Heat",
@@ -29924,7 +29924,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -1.5,
-        "vegas_total": 222.5,
+        "vegas_total": 220.5,
         "home_team": {
           "code": "WSH",
           "full_name": "Washington Wizards",
@@ -30333,7 +30333,7 @@
       "predicted_total": 221.55,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-30T02:30:12.505281",
+      "created_at": "2026-10-30T03:00:11.725294",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -30657,7 +30657,7 @@
             6
           ]
         },
-        "generated_at": "2026-10-30T02:30:12"
+        "generated_at": "2026-10-30T03:00:11"
       },
       "matches": {
         "id": 104,
@@ -30706,7 +30706,7 @@
       "predicted_total": 215.95,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-30T02:30:12.563233",
+      "created_at": "2026-10-30T03:00:11.783743",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -31030,7 +31030,7 @@
             31
           ]
         },
-        "generated_at": "2026-10-30T02:30:12"
+        "generated_at": "2026-10-30T03:00:11"
       },
       "matches": {
         "id": 109,
@@ -31079,7 +31079,7 @@
       "predicted_total": 234.97,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-30T02:30:12.620220",
+      "created_at": "2026-10-30T03:00:11.839974",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -31403,7 +31403,7 @@
             32
           ]
         },
-        "generated_at": "2026-10-30T02:30:12"
+        "generated_at": "2026-10-30T03:00:11"
       },
       "matches": {
         "id": 106,
@@ -31452,7 +31452,7 @@
       "predicted_total": 224.73,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-30T02:30:12.677631",
+      "created_at": "2026-10-30T03:00:11.897650",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-25",
@@ -31776,7 +31776,7 @@
             23
           ]
         },
-        "generated_at": "2026-10-30T02:30:12"
+        "generated_at": "2026-10-30T03:00:11"
       },
       "matches": {
         "id": 107,
@@ -31825,7 +31825,7 @@
       "predicted_total": 235.64,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-30T02:30:12.733359",
+      "created_at": "2026-10-30T03:00:11.953178",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -32149,7 +32149,7 @@
             23
           ]
         },
-        "generated_at": "2026-10-30T02:30:12"
+        "generated_at": "2026-10-30T03:00:11"
       },
       "matches": {
         "id": 105,
@@ -32198,7 +32198,7 @@
       "predicted_total": 221.99,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-30T02:30:12.787947",
+      "created_at": "2026-10-30T03:00:12.008037",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -32522,7 +32522,7 @@
             3
           ]
         },
-        "generated_at": "2026-10-30T02:30:12"
+        "generated_at": "2026-10-30T03:00:12"
       },
       "matches": {
         "id": 108,
@@ -32571,7 +32571,7 @@
       "predicted_total": 237.74,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-10-30T02:30:12.845173",
+      "created_at": "2026-10-30T03:00:12.065336",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-28",
@@ -32895,7 +32895,7 @@
             21
           ]
         },
-        "generated_at": "2026-10-30T02:30:12"
+        "generated_at": "2026-10-30T03:00:12"
       },
       "matches": {
         "id": 103,
