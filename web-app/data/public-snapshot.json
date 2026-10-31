@@ -3946,21 +3946,21 @@
       "start_time": "2026-10-31T00:00Z",
       "home_team_id": 15,
       "away_team_id": 11,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 141,
-      "away_score": 123,
+      "status": "STATUS_FINISHED",
+      "home_score": 145,
+      "away_score": 125,
       "period_scores": {
         "home": [
           36,
           32,
           35,
-          38
+          42
         ],
         "away": [
           42,
           19,
           27,
-          35
+          37
         ]
       },
       "vegas_spread": -8.5,
@@ -3985,20 +3985,20 @@
       "home_team_id": 7,
       "away_team_id": 10,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 109,
-      "away_score": 108,
+      "home_score": 112,
+      "away_score": 110,
       "period_scores": {
         "home": [
           27,
           17,
           32,
-          33
+          36
         ],
         "away": [
           20,
           31,
           33,
-          24
+          26
         ]
       },
       "vegas_spread": 5.5,
@@ -4061,14 +4061,14 @@
       "home_team_id": 26,
       "away_team_id": 13,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 14,
-      "away_score": 28,
+      "home_score": 15,
+      "away_score": 34,
       "period_scores": {
         "home": [
-          14
+          15
         ],
         "away": [
-          28
+          34
         ]
       },
       "vegas_spread": 2.5,
@@ -4093,14 +4093,16 @@
       "home_team_id": 21,
       "away_team_id": 8,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 37,
-      "away_score": 32,
+      "home_score": 40,
+      "away_score": 38,
       "period_scores": {
         "home": [
-          37
+          37,
+          3
         ],
         "away": [
-          32
+          32,
+          6
         ]
       },
       "vegas_spread": 3.5,
@@ -27834,20 +27836,20 @@
         "home_team_id": 7,
         "away_team_id": 10,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 109,
-        "away_score": 108,
+        "home_score": 112,
+        "away_score": 110,
         "period_scores": {
           "home": [
             27,
             17,
             32,
-            33
+            36
           ],
           "away": [
             20,
             31,
             33,
-            24
+            26
           ]
         },
         "vegas_spread": 5.5,
@@ -27885,8 +27887,8 @@
       "analysis_content_zh": "## 結論\n本場站 主場的 MIA。\n市場開 MIA -7.5，等於預期贏 7.5 分、勝率 72%；模型估 MIA +7.8（勝率 73%），與盤口差 0.3 分，有利於過盤。\n以本季 54 場實際結果量得換算，0.3 分的優勢等於 51% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（51%）。\n## 本季至今\nMIA 戰績 2-5（主 1-3、客 1-2），場均得 117.7（30 隊中第 11）、失 124.0（30 隊中第 26），淨勝 -6.3（30 隊中第 25），目前 W1。近況：客場負 CHA 110-115、主場負 DAL 109-113、客場勝 ATL 129-117。\nIND 戰績 2-4，場均得 117.0（30 隊中第 14）、失 117.0（30 隊中第 20），淨勝 +0.0（30 隊中第 16），目前 L2。近況：客場勝 BKN 136-109、客場負 MIL 102-110、主場負 PHI 109-114。\n對盤口表現：MIA 讓分 1 勝 3 負 (25%)；大分 2 次、小分 2 次；IND 讓分 2 勝 2 負 (50%)；大分 1 次、小分 3 次。\n近 3 次交手 MIA 1 勝 2 負，平均分差 -5.0（最近一次 2026-03-29：負 118-135）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-14）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失誤**：MIA 失誤 11.3 次，對手 15.3（聯盟平均 13.6；MIA 第 3、IND 第 27／30 隊）。\n• **得分**：MIA 場均得 126.4 分，對手 118.1（聯盟平均 111.1；MIA 第 1、IND 第 3／30 隊）。\n• **禁區得分**：MIA 禁區拿 57.0 分，對手 49.6（聯盟平均 47.4；MIA 第 4、IND 第 11／30 隊）。\n• **進攻籃板**：MIA 進攻籃板 10.9 個，對手 8.6（聯盟平均 11.1；MIA 第 17、IND 第 28／30 隊）。\nIND 能反擊的地方：\n• **失分**：IND 這項較好，119.7 對 MIA 的 128.6（聯盟平均 115.8；MIA 第 27、IND 第 22／30 隊）。\n• **失誤轉換得分**：IND 這項較好，17.7 對 MIA 的 14.4（聯盟平均 17.5；MIA 第 28、IND 第 14／30 隊）。\n• **助攻**：IND 這項較好，33.4 對 MIA 的 31.1（聯盟平均 25.0；MIA 第 3、IND 第 1／30 隊）。\n穩定度：這段期間 MIA 單場分差的標準差是 ±18.5 分，IND 是 ±16.4 分；MIA 的表現起伏較大。\n## 賽程與休息\nMIA 休一天；IND 休一天。\nMIA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：大分 238.5\n節奏觀察：本季兩隊進攻合計 234.7 分，防守合計失 241.0 分；近況合計每場出手 81 記三分（聯盟兩隊平均 73）、快攻 41 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 245.6，盤口 238.5，高於盤口 7.1 分。以總分相對盤口 ±19.3 分的分佈換算，大分機率 64%；公布信心 71%。\n## 模型本季戰績\n本季至今，已發佈讓分 35 勝 33 負（51%）；信心 51% 以上的場次 33 勝 33 負；大小分 33 勝 35 負（49%）。\n## 風險\n坦白說：優勢只有 0.3 分（過盤機率 51%），落在盤口正常波動範圍內；IND 在失分上的優勢（119.7 對 128.6）是翻掉這份判讀最直接的路徑；MIA 單場分差起伏 ±18.5 分，單場優勢並不牢靠。",
       "predicted_margin": 7.76,
       "predicted_total": 245.63,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-10-29T23:30:12.262536",
       "analysis_facts": {
         "profile_games": 10,
@@ -28219,21 +28221,21 @@
         "start_time": "2026-10-31T00:00Z",
         "home_team_id": 15,
         "away_team_id": 11,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 141,
-        "away_score": 123,
+        "status": "STATUS_FINISHED",
+        "home_score": 145,
+        "away_score": 125,
         "period_scores": {
           "home": [
             36,
             32,
             35,
-            38
+            42
           ],
           "away": [
             42,
             19,
             27,
-            35
+            37
           ]
         },
         "vegas_spread": -8.5,
@@ -29378,14 +29380,16 @@
         "home_team_id": 21,
         "away_team_id": 8,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 37,
-        "away_score": 32,
+        "home_score": 40,
+        "away_score": 38,
         "period_scores": {
           "home": [
-            37
+            37,
+            3
           ],
           "away": [
-            32
+            32,
+            6
           ]
         },
         "vegas_spread": 3.5,
@@ -30530,14 +30534,14 @@
         "home_team_id": 26,
         "away_team_id": 13,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 14,
-        "away_score": 28,
+        "home_score": 15,
+        "away_score": 34,
         "period_scores": {
           "home": [
-            14
+            15
           ],
           "away": [
-            28
+            34
           ]
         },
         "vegas_spread": 2.5,
