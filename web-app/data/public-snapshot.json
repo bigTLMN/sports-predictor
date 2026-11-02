@@ -4479,13 +4479,13 @@
       "home_team_id": 26,
       "away_team_id": 12,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 68,
+      "home_score": 73,
       "away_score": 63,
       "period_scores": {
         "home": [
           29,
           34,
-          5
+          10
         ],
         "away": [
           37,
@@ -4515,16 +4515,16 @@
       "home_team_id": 13,
       "away_team_id": 24,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 49,
-      "away_score": 41,
+      "home_score": 53,
+      "away_score": 46,
       "period_scores": {
         "home": [
           36,
-          13
+          17
         ],
         "away": [
           23,
-          18
+          23
         ]
       },
       "vegas_spread": -3.5,
@@ -4852,8 +4852,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -4.5,
+      "vegas_total": 227.5,
       "home_team": {
         "code": "GS",
         "full_name": "Golden State Warriors",
@@ -34559,16 +34559,16 @@
         "home_team_id": 13,
         "away_team_id": 24,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 49,
-        "away_score": 41,
+        "home_score": 53,
+        "away_score": 46,
         "period_scores": {
           "home": [
             36,
-            13
+            17
           ],
           "away": [
             23,
-            18
+            23
           ]
         },
         "vegas_spread": -3.5,
@@ -35327,13 +35327,13 @@
         "home_team_id": 26,
         "away_team_id": 12,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 68,
+        "home_score": 73,
         "away_score": 63,
         "period_scores": {
           "home": [
             29,
             34,
-            5
+            10
           ],
           "away": [
             37,
@@ -40190,8 +40190,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -4.5,
+        "vegas_total": 227.5,
         "home_team": {
           "code": "GS",
           "full_name": "Golden State Warriors",
