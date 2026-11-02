@@ -4558,7 +4558,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -3.5,
+      "vegas_spread": -4.5,
       "vegas_total": 229.5,
       "home_team": {
         "code": "CLE",
@@ -4584,7 +4584,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 5.5,
-      "vegas_total": 210.5,
+      "vegas_total": 209.5,
       "home_team": {
         "code": "CHA",
         "full_name": "Charlotte Hornets",
@@ -4758,7 +4758,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -10.5,
+      "vegas_spread": -11.5,
       "vegas_total": 233.5,
       "home_team": {
         "code": "MIN",
@@ -4834,7 +4834,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -4.5,
-      "vegas_total": 230.5,
+      "vegas_total": 231.5,
       "home_team": {
         "code": "DEN",
         "full_name": "Denver Nuggets",
@@ -5322,6 +5322,231 @@
       },
       "home_team_nba_id": 1610612744,
       "away_team_nba_id": 1610612748
+    },
+    {
+      "id": 145,
+      "date": "2026-11-06",
+      "start_time": "2026-11-07T00:00Z",
+      "home_team_id": 1,
+      "away_team_id": 25,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "ATL",
+        "full_name": "Atlanta Hawks",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png"
+      },
+      "away_team": {
+        "code": "WSH",
+        "full_name": "Washington Wizards",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png"
+      },
+      "home_team_nba_id": 1610612737,
+      "away_team_nba_id": 1610612764
+    },
+    {
+      "id": 146,
+      "date": "2026-11-06",
+      "start_time": "2026-11-07T00:00Z",
+      "home_team_id": 4,
+      "away_team_id": 2,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "CHA",
+        "full_name": "Charlotte Hornets",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png"
+      },
+      "away_team": {
+        "code": "BOS",
+        "full_name": "Boston Celtics",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png"
+      },
+      "home_team_nba_id": 1610612766,
+      "away_team_nba_id": 1610612738
+    },
+    {
+      "id": 147,
+      "date": "2026-11-06",
+      "start_time": "2026-11-07T00:30Z",
+      "home_team_id": 6,
+      "away_team_id": 20,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "CLE",
+        "full_name": "Cleveland Cavaliers",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png"
+      },
+      "away_team": {
+        "code": "PHI",
+        "full_name": "Philadelphia 76ers",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png"
+      },
+      "home_team_nba_id": 1610612739,
+      "away_team_nba_id": 1610612755
+    },
+    {
+      "id": 148,
+      "date": "2026-11-06",
+      "start_time": "2026-11-07T01:00Z",
+      "home_team_id": 7,
+      "away_team_id": 30,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "DAL",
+        "full_name": "Dallas Mavericks",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png"
+      },
+      "away_team": {
+        "code": "UTAH",
+        "full_name": "Utah Jazz",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png"
+      },
+      "home_team_nba_id": 1610612742,
+      "away_team_nba_id": 1610612762
+    },
+    {
+      "id": 149,
+      "date": "2026-11-06",
+      "start_time": "2026-11-07T01:00Z",
+      "home_team_id": 14,
+      "away_team_id": 18,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "MEM",
+        "full_name": "Memphis Grizzlies",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png"
+      },
+      "away_team": {
+        "code": "OKC",
+        "full_name": "Oklahoma City Thunder",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png"
+      },
+      "home_team_nba_id": 1610612763,
+      "away_team_nba_id": 1610612760
+    },
+    {
+      "id": 150,
+      "date": "2026-11-06",
+      "start_time": "2026-11-07T01:00Z",
+      "home_team_id": 16,
+      "away_team_id": 24,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "MIL",
+        "full_name": "Milwaukee Bucks",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png"
+      },
+      "away_team": {
+        "code": "TOR",
+        "full_name": "Toronto Raptors",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png"
+      },
+      "home_team_nba_id": 1610612749,
+      "away_team_nba_id": 1610612761
+    },
+    {
+      "id": 151,
+      "date": "2026-11-06",
+      "start_time": "2026-11-07T01:00Z",
+      "home_team_id": 27,
+      "away_team_id": 17,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "NO",
+        "full_name": "New Orleans Pelicans",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/no.png"
+      },
+      "away_team": {
+        "code": "MIN",
+        "full_name": "Minnesota Timberwolves",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/min.png"
+      },
+      "home_team_nba_id": 1610612740,
+      "away_team_nba_id": 1610612750
+    },
+    {
+      "id": 152,
+      "date": "2026-11-06",
+      "start_time": "2026-11-07T03:00Z",
+      "home_team_id": 13,
+      "away_team_id": 22,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "LAL",
+        "full_name": "Los Angeles Lakers",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png"
+      },
+      "away_team": {
+        "code": "POR",
+        "full_name": "Portland Trail Blazers",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/por.png"
+      },
+      "home_team_nba_id": 1610612747,
+      "away_team_nba_id": 1610612757
+    },
+    {
+      "id": 153,
+      "date": "2026-11-06",
+      "start_time": "2026-11-07T03:00Z",
+      "home_team_id": 23,
+      "away_team_id": 29,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "SAC",
+        "full_name": "Sacramento Kings",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png"
+      },
+      "away_team": {
+        "code": "SA",
+        "full_name": "San Antonio Spurs",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png"
+      },
+      "home_team_nba_id": 1610612758,
+      "away_team_nba_id": 1610612759
     }
   ],
   "picks": [
@@ -35727,7 +35952,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 5.5,
-        "vegas_total": 210.5,
+        "vegas_total": 209.5,
         "home_team": {
           "code": "CHA",
           "full_name": "Charlotte Hornets",
@@ -36099,7 +36324,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -3.5,
+        "vegas_spread": -4.5,
         "vegas_total": 229.5,
         "home_team": {
           "code": "CLE",
@@ -36846,7 +37071,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -4.5,
-        "vegas_total": 230.5,
+        "vegas_total": 231.5,
         "home_team": {
           "code": "DEN",
           "full_name": "Denver Nuggets",
@@ -39083,7 +39308,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -10.5,
+        "vegas_spread": -11.5,
         "vegas_total": 233.5,
         "home_team": {
           "code": "MIN",
