@@ -5305,8 +5305,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -2.5,
+      "vegas_total": 227.5,
       "home_team": {
         "code": "OKC",
         "full_name": "Oklahoma City Thunder",
@@ -5331,7 +5331,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -8.5,
-      "vegas_total": 223.5,
+      "vegas_total": 222.5,
       "home_team": {
         "code": "HOU",
         "full_name": "Houston Rockets",
@@ -41604,7 +41604,7 @@
       "predicted_total": 223.4,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.170194",
+      "created_at": "2026-11-03T10:30:12.309029",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -41928,7 +41928,7 @@
             2
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 131,
@@ -41977,7 +41977,7 @@
       "predicted_total": 222.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.224787",
+      "created_at": "2026-11-03T10:30:12.363496",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -42301,7 +42301,7 @@
             28
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 132,
@@ -42350,7 +42350,7 @@
       "predicted_total": 225.01,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.278467",
+      "created_at": "2026-11-03T10:30:12.417388",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -42674,7 +42674,7 @@
             32
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 138,
@@ -42723,7 +42723,7 @@
       "predicted_total": 218.3,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.339589",
+      "created_at": "2026-11-03T10:30:12.478670",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -43047,7 +43047,7 @@
             28
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 129,
@@ -43087,16 +43087,16 @@
       "spread_logic": "AI projects MIN to lose by 7.3 pts",
       "spread_logic_zh": "AI 預測 MIN 輸 7.3 分",
       "line_info": "-8.5",
-      "ou_pick": "UNDER",
-      "ou_line": 223.5,
+      "ou_pick": "OVER",
+      "ou_line": 222.5,
       "ou_confidence": 51.0,
-      "analysis_content": "## The Call\nMIN on the road is the side.\nThe market has MIN at +8.5, which implies an 8.5-point loss and a 26% win probability. Our projection is -7.3 for MIN (29% to win), a gap of 1.2 points in favour of the cover.\nConverted with measured from 93 games this season, a 1.2-point edge is a 53% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 54%.\n## Season So Far\nMIN is 5-5 (3-2 home, 2-3 away), scoring 117.4 (12th of 30) and allowing 112.2 (12th of 30) for a +5.2 margin (8th of 30), currently on a W1 run. Last out: W 127-101 vs LAC, L 111-121 at SA, W 112-100 vs MIL.\nHOU is 8-1, scoring 118.9 (8th of 30) and allowing 104.4 (2nd of 30) for a +14.4 margin (1st of 30), on a W2 run. Last out: L 111-116 at DAL, W 119-98 vs OKC, W 109-93 vs BOS.\nAgainst the number: MIN 6-1 against the spread (86%); 4 over / 3 under; HOU 6-1 against the spread (86%); 4 over / 3 under.\nHead to head, MIN is 2-1 in the last 3 meetings with an average margin of +0.3 (most recent 2026-04-10: W 136-132).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-15), here is where MIN separates from HOU. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — MIN gets 40.9 from the bench to 21.3 (league avg 35.3; MIN 9th vs HOU 29th of 30).\n• **3P%** — MIN hits 33.3% from three against 29.9% (league avg 34.9%; MIN 23rd vs HOU 29th of 30).\nWhere HOU pushes back:\n• **Net margin** — HOU holds the better number, +3.7 to MIN's -6.4 (league avg -4.7; MIN 18th vs HOU 3rd of 30).\n• **Points allowed** — HOU holds the better number, 105.1 to MIN's 113.9 (league avg 115.8; MIN 15th vs HOU 5th of 30).\n• **Fast-break points** — HOU holds the better number, 14.6 to MIN's 10.4 (league avg 14.2; MIN 24th vs HOU 12th of 30).\nConsistency check: MIN's game margins over this stretch vary by ±19.2 points (one standard deviation) against ±14.5 for HOU; the more volatile side is MIN.\n## Schedule & Rest\nMIN has one day off; HOU has one day off.\nHOU has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 223.5\nTempo check: this season the two offences combine for 236.3 points and the two defences concede 216.6; on record they attempt 64 threes between them (league pair average 73) with 25 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 223.1 total points against a line of 223.5, 0.4 points below the number. With totals spreading ±19.6 points around the line, that is a 51% probability of the under; published confidence is 51%.\n## Model Track Record\nThis season, published spread picks are 51-54 (49%); at 54%+ confidence they are 41-49; totals are 55-52 (51%).\n## What Could Go Wrong\nHonest caveats: the edge is only 1.2 points (53% cover probability), inside normal line noise; taking +8.5 relies on MIN staying within reach late; HOU's edge in Net margin (+3.7 vs -6.4) is the cleanest path to an upset of this read; MIN's results swing ±19.2 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n結論落在客場作戰的 MIN。\n市場開 MIN +8.5，等於預期輸 8.5 分、勝率 26%；模型估 MIN -7.3（勝率 29%），與盤口差 1.2 分，有利於過盤。\n以本季 93 場實際結果量得換算，1.2 分的優勢等於 53% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（54%）。\n## 本季至今\nMIN 戰績 5-5（主 3-2、客 2-3），場均得 117.4（30 隊中第 12）、失 112.2（30 隊中第 12），淨勝 +5.2（30 隊中第 8），目前 W1。近況：主場勝 LAC 127-101、客場負 SA 111-121、主場勝 MIL 112-100。\nHOU 戰績 8-1，場均得 118.9（30 隊中第 8）、失 104.4（30 隊中第 2），淨勝 +14.4（30 隊中第 1），目前 W2。近況：客場負 DAL 111-116、主場勝 OKC 119-98、主場勝 BOS 109-93。\n對盤口表現：MIN 讓分 6 勝 1 負 (86%)；大分 4 次、小分 3 次；HOU 讓分 6 勝 1 負 (86%)；大分 4 次、小分 3 次。\n近 3 次交手 MIN 2 勝 1 負，平均分差 +0.3（最近一次 2026-04-10：勝 136-132）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-15），MIN 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：MIN 板凳貢獻 40.9 分，對手 21.3（聯盟平均 35.3；MIN 第 9、HOU 第 29／30 隊）。\n• **三分命中率**：MIN 三分命中 33.3%，對手 29.9%（聯盟平均 34.9%；MIN 第 23、HOU 第 29／30 隊）。\nHOU 能反擊的地方：\n• **淨勝分**：HOU 這項較好，+3.7 對 MIN 的 -6.4（聯盟平均 -4.7；MIN 第 18、HOU 第 3／30 隊）。\n• **失分**：HOU 這項較好，105.1 對 MIN 的 113.9（聯盟平均 115.8；MIN 第 15、HOU 第 5／30 隊）。\n• **快攻得分**：HOU 這項較好，14.6 對 MIN 的 10.4（聯盟平均 14.2；MIN 第 24、HOU 第 12／30 隊）。\n穩定度：這段期間 MIN 單場分差的標準差是 ±19.2 分，HOU 是 ±14.5 分；MIN 的表現起伏較大。\n## 賽程與休息\nMIN 休一天；HOU 休一天。\nHOU 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 223.5\n節奏觀察：本季兩隊進攻合計 236.3 分，防守合計失 216.6 分；近況合計每場出手 64 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 223.1，盤口 223.5，低於盤口 0.4 分。以總分相對盤口 ±19.6 分的分佈換算，小分機率 51%；公布信心 51%。\n## 模型本季戰績\n本季至今，已發佈讓分 51 勝 54 負（49%）；信心 54% 以上的場次 41 勝 49 負；大小分 55 勝 52 負（51%）。\n## 風險\n坦白說：優勢只有 1.2 分（過盤機率 53%），落在盤口正常波動範圍內；收 +8.5 的前提是 MIN 末段還咬得住；HOU 在淨勝分上的優勢（+3.7 對 -6.4）是翻掉這份判讀最直接的路徑；MIN 單場分差起伏 ±19.2 分，單場優勢並不牢靠。",
+      "analysis_content": "## The Call\nMIN on the road is the side.\nThe market has MIN at +8.5, which implies an 8.5-point loss and a 26% win probability. Our projection is -7.3 for MIN (29% to win), a gap of 1.2 points in favour of the cover.\nConverted with measured from 93 games this season, a 1.2-point edge is a 53% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 54%.\n## Season So Far\nMIN is 5-5 (3-2 home, 2-3 away), scoring 117.4 (12th of 30) and allowing 112.2 (12th of 30) for a +5.2 margin (8th of 30), currently on a W1 run. Last out: W 127-101 vs LAC, L 111-121 at SA, W 112-100 vs MIL.\nHOU is 8-1, scoring 118.9 (8th of 30) and allowing 104.4 (2nd of 30) for a +14.4 margin (1st of 30), on a W2 run. Last out: L 111-116 at DAL, W 119-98 vs OKC, W 109-93 vs BOS.\nAgainst the number: MIN 6-1 against the spread (86%); 4 over / 3 under; HOU 6-1 against the spread (86%); 4 over / 3 under.\nHead to head, MIN is 2-1 in the last 3 meetings with an average margin of +0.3 (most recent 2026-04-10: W 136-132).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-15), here is where MIN separates from HOU. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — MIN gets 40.9 from the bench to 21.3 (league avg 35.3; MIN 9th vs HOU 29th of 30).\n• **3P%** — MIN hits 33.3% from three against 29.9% (league avg 34.9%; MIN 23rd vs HOU 29th of 30).\nWhere HOU pushes back:\n• **Net margin** — HOU holds the better number, +3.7 to MIN's -6.4 (league avg -4.7; MIN 18th vs HOU 3rd of 30).\n• **Points allowed** — HOU holds the better number, 105.1 to MIN's 113.9 (league avg 115.8; MIN 15th vs HOU 5th of 30).\n• **Fast-break points** — HOU holds the better number, 14.6 to MIN's 10.4 (league avg 14.2; MIN 24th vs HOU 12th of 30).\nConsistency check: MIN's game margins over this stretch vary by ±19.2 points (one standard deviation) against ±14.5 for HOU; the more volatile side is MIN.\n## Schedule & Rest\nMIN has one day off; HOU has one day off.\nHOU has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: OVER 222.5\nTempo check: this season the two offences combine for 236.3 points and the two defences concede 216.6; on record they attempt 64 threes between them (league pair average 73) with 25 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 223.1 total points against a line of 222.5, 0.6 points above the number. With totals spreading ±19.6 points around the line, that is a 51% probability of the over; published confidence is 51%.\n## Model Track Record\nThis season, published spread picks are 51-54 (49%); at 54%+ confidence they are 41-49; totals are 55-52 (51%).\n## What Could Go Wrong\nHonest caveats: the edge is only 1.2 points (53% cover probability), inside normal line noise; taking +8.5 relies on MIN staying within reach late; HOU's edge in Net margin (+3.7 vs -6.4) is the cleanest path to an upset of this read; MIN's results swing ±19.2 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n結論落在客場作戰的 MIN。\n市場開 MIN +8.5，等於預期輸 8.5 分、勝率 26%；模型估 MIN -7.3（勝率 29%），與盤口差 1.2 分，有利於過盤。\n以本季 93 場實際結果量得換算，1.2 分的優勢等於 53% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（54%）。\n## 本季至今\nMIN 戰績 5-5（主 3-2、客 2-3），場均得 117.4（30 隊中第 12）、失 112.2（30 隊中第 12），淨勝 +5.2（30 隊中第 8），目前 W1。近況：主場勝 LAC 127-101、客場負 SA 111-121、主場勝 MIL 112-100。\nHOU 戰績 8-1，場均得 118.9（30 隊中第 8）、失 104.4（30 隊中第 2），淨勝 +14.4（30 隊中第 1），目前 W2。近況：客場負 DAL 111-116、主場勝 OKC 119-98、主場勝 BOS 109-93。\n對盤口表現：MIN 讓分 6 勝 1 負 (86%)；大分 4 次、小分 3 次；HOU 讓分 6 勝 1 負 (86%)；大分 4 次、小分 3 次。\n近 3 次交手 MIN 2 勝 1 負，平均分差 +0.3（最近一次 2026-04-10：勝 136-132）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-15），MIN 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：MIN 板凳貢獻 40.9 分，對手 21.3（聯盟平均 35.3；MIN 第 9、HOU 第 29／30 隊）。\n• **三分命中率**：MIN 三分命中 33.3%，對手 29.9%（聯盟平均 34.9%；MIN 第 23、HOU 第 29／30 隊）。\nHOU 能反擊的地方：\n• **淨勝分**：HOU 這項較好，+3.7 對 MIN 的 -6.4（聯盟平均 -4.7；MIN 第 18、HOU 第 3／30 隊）。\n• **失分**：HOU 這項較好，105.1 對 MIN 的 113.9（聯盟平均 115.8；MIN 第 15、HOU 第 5／30 隊）。\n• **快攻得分**：HOU 這項較好，14.6 對 MIN 的 10.4（聯盟平均 14.2；MIN 第 24、HOU 第 12／30 隊）。\n穩定度：這段期間 MIN 單場分差的標準差是 ±19.2 分，HOU 是 ±14.5 分；MIN 的表現起伏較大。\n## 賽程與休息\nMIN 休一天；HOU 休一天。\nHOU 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：大分 222.5\n節奏觀察：本季兩隊進攻合計 236.3 分，防守合計失 216.6 分；近況合計每場出手 64 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 223.1，盤口 222.5，高於盤口 0.6 分。以總分相對盤口 ±19.6 分的分佈換算，大分機率 51%；公布信心 51%。\n## 模型本季戰績\n本季至今，已發佈讓分 51 勝 54 負（49%）；信心 54% 以上的場次 41 勝 49 負；大小分 55 勝 52 負（51%）。\n## 風險\n坦白說：優勢只有 1.2 分（過盤機率 53%），落在盤口正常波動範圍內；收 +8.5 的前提是 MIN 末段還咬得住；HOU 在淨勝分上的優勢（+3.7 對 -6.4）是翻掉這份判讀最直接的路徑；MIN 單場分差起伏 ±19.2 分，單場優勢並不牢靠。",
       "predicted_margin": -7.34,
       "predicted_total": 223.12,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.394960",
+      "created_at": "2026-11-03T10:30:12.534277",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-15",
@@ -43382,15 +43382,15 @@
           "market_margin": -8.5,
           "edge": 1.2,
           "pred_total": 223.1,
-          "total_line": 223.5,
-          "total_edge": -0.4,
+          "total_line": 222.5,
+          "total_edge": 0.6,
           "total_is_default": false
         },
         "probability": {
           "cover": 0.534,
           "win_model": 0.292,
           "win_market": 0.263,
-          "total": 0.508,
+          "total": 0.513,
           "sigma_spread": 13.4,
           "sigma_total": 19.6,
           "sigma_measured": true
@@ -43420,7 +43420,7 @@
             49
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 137,
@@ -43433,7 +43433,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -8.5,
-        "vegas_total": 223.5,
+        "vegas_total": 222.5,
         "home_team": {
           "code": "HOU",
           "full_name": "Houston Rockets",
@@ -43469,7 +43469,7 @@
       "predicted_total": 237.94,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.450308",
+      "created_at": "2026-11-03T10:30:12.590042",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -43793,7 +43793,7 @@
             35
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 142,
@@ -43842,7 +43842,7 @@
       "predicted_total": 236.91,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.504245",
+      "created_at": "2026-11-03T10:30:12.644764",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -44166,7 +44166,7 @@
             31
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 134,
@@ -44202,20 +44202,20 @@
       "id": 115,
       "match_id": 136,
       "recommended_team_id": 18,
-      "confidence_score": 85.0,
-      "spread_logic": "AI projects OKC to win by 8.8 pts",
-      "spread_logic_zh": "AI 預測 OKC 贏 8.8 分",
-      "line_info": "0.0",
+      "confidence_score": 70.0,
+      "spread_logic": "AI projects OKC to win by 7.5 pts",
+      "spread_logic_zh": "AI 預測 OKC 贏 7.5 分",
+      "line_info": "-2.5",
       "ou_pick": "UNDER",
-      "ou_line": 225.0,
-      "ou_confidence": 64.0,
-      "analysis_content": "## The Call\nWe land on OKC at home.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has OKC by 8.8, a 74% win probability.\nConfidence is high at 85%.\n## Season So Far\nOKC is 5-3 (3-0 home, 2-3 away), scoring 105.6 (29th of 30) and allowing 108.8 (9th of 30) for a -3.1 margin (19th of 30), currently on a W1 run. Last out: L 96-120 at DAL, L 98-119 at HOU, W 117-112 at CLE.\nCLE is 4-3, scoring 119.7 (6th of 30) and allowing 116.1 (22nd of 30) for a +3.6 margin (13th of 30), on a L1 run. Last out: L 111-114 at ATL, W 136-111 at MIL, L 112-117 vs OKC.\nAgainst the number: OKC 3-3 against the spread (50%); 1 over / 5 under; CLE 2-5 against the spread (29%); 3 over / 4 under.\nHead to head, OKC is 3-0 in the last 3 meetings with an average margin of +20.0 (most recent 2026-02-22: W 121-113).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-30), here is where OKC separates from CLE. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — OKC gets 44.9 from the bench to 24.4 (league avg 35.3; OKC 5th vs CLE 26th of 30).\n• **FT%** — OKC converts 83.7% at the line to 73.6% (league avg 77.5%; OKC 3rd vs CLE 26th of 30).\n• **Turnovers** — OKC commits 12.3 turnovers to 15.2 (league avg 13.6; OKC 8th vs CLE 26th of 30).\n• **Assists** — OKC records 25.6 assists to 21.7 (league avg 25.0; OKC 10th vs CLE 27th of 30).\nConsistency check: OKC's game margins over this stretch vary by ±16.1 points (one standard deviation) against ±18.0 for CLE; the steadier side is OKC.\n## Schedule & Rest\nOKC has one day off; CLE has one day off.\nOKC has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 225.3 points and the two defences concede 224.9; on record they attempt 74 threes between them (league pair average 73) with 18 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 220.1 total points against a line of 225.0, 4.9 points below the number. With totals spreading ±19.6 points around the line, that is a 60% probability of the under; published confidence is 64%.\n## Model Track Record\nThis season, published spread picks are 51-54 (49%); at 85%+ confidence they are 6-8; totals are 55-52 (51%).\n## What Could Go Wrong\nHonest caveats: OKC's results swing ±16.1 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n本場站 主場的 OKC。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 OKC 贏 8.8 分，勝率 74%。\n信心高（85%）。\n## 本季至今\nOKC 戰績 5-3（主 3-0、客 2-3），場均得 105.6（30 隊中第 29）、失 108.8（30 隊中第 9），淨勝 -3.1（30 隊中第 19），目前 W1。近況：客場負 DAL 96-120、客場負 HOU 98-119、客場勝 CLE 117-112。\nCLE 戰績 4-3，場均得 119.7（30 隊中第 6）、失 116.1（30 隊中第 22），淨勝 +3.6（30 隊中第 13），目前 L1。近況：客場負 ATL 111-114、客場勝 MIL 136-111、主場負 OKC 112-117。\n對盤口表現：OKC 讓分 3 勝 3 負 (50%)；大分 1 次、小分 5 次；CLE 讓分 2 勝 5 負 (29%)；大分 3 次、小分 4 次。\n近 3 次交手 OKC 3 勝 0 負，平均分差 +20.0（最近一次 2026-02-22：勝 121-113）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-30），OKC 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：OKC 板凳貢獻 44.9 分，對手 24.4（聯盟平均 35.3；OKC 第 5、CLE 第 26／30 隊）。\n• **罰球命中率**：OKC 罰球 83.7%，對手 73.6%（聯盟平均 77.5%；OKC 第 3、CLE 第 26／30 隊）。\n• **失誤**：OKC 失誤 12.3 次，對手 15.2（聯盟平均 13.6；OKC 第 8、CLE 第 26／30 隊）。\n• **助攻**：OKC 助攻 25.6 次，對手 21.7（聯盟平均 25.0；OKC 第 10、CLE 第 27／30 隊）。\n穩定度：這段期間 OKC 單場分差的標準差是 ±16.1 分，CLE 是 ±18.0 分；OKC 的表現較穩。\n## 賽程與休息\nOKC 休一天；CLE 休一天。\nOKC 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 225.3 分，防守合計失 224.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 18 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 220.1，盤口 225.0，低於盤口 4.9 分。以總分相對盤口 ±19.6 分的分佈換算，小分機率 60%；公布信心 64%。\n## 模型本季戰績\n本季至今，已發佈讓分 51 勝 54 負（49%）；信心 85% 以上的場次 6 勝 8 負；大小分 55 勝 52 負（51%）。\n## 風險\n坦白說：OKC 單場分差起伏 ±16.1 分，單場優勢並不牢靠。",
-      "predicted_margin": 8.8,
+      "ou_line": 227.5,
+      "ou_confidence": 72.0,
+      "analysis_content": "## The Call\nWe land on OKC at home.\nThe market has OKC at -2.5, which implies a 2.5-point win and a 57% win probability. Our projection is +7.5 for OKC (71% to win), a gap of 5.0 points in favour of the cover.\nConverted with measured from 93 games this season, a 5.0-point edge is a 65% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was +8.8; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 70%.\n## Season So Far\nOKC is 5-3 (3-0 home, 2-3 away), scoring 105.6 (29th of 30) and allowing 108.8 (9th of 30) for a -3.1 margin (19th of 30), currently on a W1 run. Last out: L 96-120 at DAL, L 98-119 at HOU, W 117-112 at CLE.\nCLE is 4-3, scoring 119.7 (6th of 30) and allowing 116.1 (22nd of 30) for a +3.6 margin (13th of 30), on a L1 run. Last out: L 111-114 at ATL, W 136-111 at MIL, L 112-117 vs OKC.\nAgainst the number: OKC 3-3 against the spread (50%); 1 over / 5 under; CLE 2-5 against the spread (29%); 3 over / 4 under.\nHead to head, OKC is 3-0 in the last 3 meetings with an average margin of +20.0 (most recent 2026-02-22: W 121-113).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-30), here is where OKC separates from CLE. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — OKC gets 44.9 from the bench to 24.4 (league avg 35.3; OKC 5th vs CLE 26th of 30).\n• **FT%** — OKC converts 83.7% at the line to 73.6% (league avg 77.5%; OKC 3rd vs CLE 26th of 30).\n• **Turnovers** — OKC commits 12.3 turnovers to 15.2 (league avg 13.6; OKC 8th vs CLE 26th of 30).\n• **Assists** — OKC records 25.6 assists to 21.7 (league avg 25.0; OKC 10th vs CLE 27th of 30).\nConsistency check: OKC's game margins over this stretch vary by ±16.1 points (one standard deviation) against ±18.0 for CLE; the steadier side is OKC.\n## Schedule & Rest\nOKC has one day off; CLE has one day off.\nOKC has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 227.5\nTempo check: this season the two offences combine for 225.3 points and the two defences concede 224.9; on record they attempt 74 threes between them (league pair average 73) with 18 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 220.1 total points against a line of 227.5, 7.4 points below the number. With totals spreading ±19.6 points around the line, that is a 65% probability of the under; published confidence is 72%.\n## Model Track Record\nThis season, published spread picks are 51-54 (49%); at 70%+ confidence they are 18-28; totals are 55-52 (51%).\n## What Could Go Wrong\nHonest caveats: OKC's results swing ±16.1 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n本場站 主場的 OKC。\n市場開 OKC -2.5，等於預期贏 2.5 分、勝率 57%；模型估 OKC +7.5（勝率 71%），與盤口差 5.0 分，有利於過盤。\n以本季 93 場實際結果量得換算，5.0 分的優勢等於 65% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +8.8；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（70%）。\n## 本季至今\nOKC 戰績 5-3（主 3-0、客 2-3），場均得 105.6（30 隊中第 29）、失 108.8（30 隊中第 9），淨勝 -3.1（30 隊中第 19），目前 W1。近況：客場負 DAL 96-120、客場負 HOU 98-119、客場勝 CLE 117-112。\nCLE 戰績 4-3，場均得 119.7（30 隊中第 6）、失 116.1（30 隊中第 22），淨勝 +3.6（30 隊中第 13），目前 L1。近況：客場負 ATL 111-114、客場勝 MIL 136-111、主場負 OKC 112-117。\n對盤口表現：OKC 讓分 3 勝 3 負 (50%)；大分 1 次、小分 5 次；CLE 讓分 2 勝 5 負 (29%)；大分 3 次、小分 4 次。\n近 3 次交手 OKC 3 勝 0 負，平均分差 +20.0（最近一次 2026-02-22：勝 121-113）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-30），OKC 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：OKC 板凳貢獻 44.9 分，對手 24.4（聯盟平均 35.3；OKC 第 5、CLE 第 26／30 隊）。\n• **罰球命中率**：OKC 罰球 83.7%，對手 73.6%（聯盟平均 77.5%；OKC 第 3、CLE 第 26／30 隊）。\n• **失誤**：OKC 失誤 12.3 次，對手 15.2（聯盟平均 13.6；OKC 第 8、CLE 第 26／30 隊）。\n• **助攻**：OKC 助攻 25.6 次，對手 21.7（聯盟平均 25.0；OKC 第 10、CLE 第 27／30 隊）。\n穩定度：這段期間 OKC 單場分差的標準差是 ±16.1 分，CLE 是 ±18.0 分；OKC 的表現較穩。\n## 賽程與休息\nOKC 休一天；CLE 休一天。\nOKC 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 227.5\n節奏觀察：本季兩隊進攻合計 225.3 分，防守合計失 224.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 18 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 220.1，盤口 227.5，低於盤口 7.4 分。以總分相對盤口 ±19.6 分的分佈換算，小分機率 65%；公布信心 72%。\n## 模型本季戰績\n本季至今，已發佈讓分 51 勝 54 負（49%）；信心 70% 以上的場次 18 勝 28 負；大小分 55 勝 52 負（51%）。\n## 風險\n坦白說：OKC 單場分差起伏 ±16.1 分，單場優勢並不牢靠。",
+      "predicted_margin": 7.54,
       "predicted_total": 220.12,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.561924",
+      "created_at": "2026-11-03T10:30:12.702779",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -44496,20 +44496,20 @@
           }
         ],
         "projection": {
-          "model_margin": 8.8,
+          "model_margin": 7.5,
           "raw_margin": 8.8,
-          "market_margin": 0.0,
-          "edge": 8.8,
+          "market_margin": 2.5,
+          "edge": 5.0,
           "pred_total": 220.1,
-          "total_line": 225.0,
-          "total_edge": -4.9,
-          "total_is_default": true
+          "total_line": 227.5,
+          "total_edge": -7.4,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.745,
-          "win_model": 0.745,
-          "win_market": null,
-          "total": 0.598,
+          "cover": 0.647,
+          "win_model": 0.713,
+          "win_market": 0.574,
+          "total": 0.647,
           "sigma_spread": 13.4,
           "sigma_total": 19.6,
           "sigma_measured": true
@@ -44535,11 +44535,11 @@
             52
           ],
           "spread_at_conf": [
-            6,
-            8
+            18,
+            28
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 136,
@@ -44551,8 +44551,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -2.5,
+        "vegas_total": 227.5,
         "home_team": {
           "code": "OKC",
           "full_name": "Oklahoma City Thunder",
@@ -44588,7 +44588,7 @@
       "predicted_total": 221.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.620368",
+      "created_at": "2026-11-03T10:30:12.764249",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-27",
@@ -44912,7 +44912,7 @@
             53
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 139,
@@ -44961,7 +44961,7 @@
       "predicted_total": 223.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.682547",
+      "created_at": "2026-11-03T10:30:12.828258",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-11",
@@ -45285,7 +45285,7 @@
             35
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 141,
@@ -45334,7 +45334,7 @@
       "predicted_total": 231.97,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.743235",
+      "created_at": "2026-11-03T10:30:12.888735",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -45658,7 +45658,7 @@
             12
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 130,
@@ -45707,7 +45707,7 @@
       "predicted_total": 243.7,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.796756",
+      "created_at": "2026-11-03T10:30:12.942307",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -46031,7 +46031,7 @@
             18
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:12"
       },
       "matches": {
         "id": 135,
@@ -46080,7 +46080,7 @@
       "predicted_total": 228.86,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.856986",
+      "created_at": "2026-11-03T10:30:13.002730",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -46404,7 +46404,7 @@
             2
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:13"
       },
       "matches": {
         "id": 133,
@@ -46453,7 +46453,7 @@
       "predicted_total": 229.58,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-03T10:00:12.913074",
+      "created_at": "2026-11-03T10:30:13.059141",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -46777,7 +46777,7 @@
             53
           ]
         },
-        "generated_at": "2026-11-03T10:00:12"
+        "generated_at": "2026-11-03T10:30:13"
       },
       "matches": {
         "id": 140,
