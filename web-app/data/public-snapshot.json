@@ -5255,8 +5255,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -6.5,
+      "vegas_total": 230.5,
       "home_team": {
         "code": "MEM",
         "full_name": "Memphis Grizzlies",
@@ -5280,8 +5280,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -5.5,
+      "vegas_total": 235.5,
       "home_team": {
         "code": "NO",
         "full_name": "New Orleans Pelicans",
@@ -5331,7 +5331,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -8.5,
-      "vegas_total": 220.5,
+      "vegas_total": 221.5,
       "home_team": {
         "code": "HOU",
         "full_name": "Houston Rockets",
@@ -5381,7 +5381,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 3.5,
-      "vegas_total": 227.5,
+      "vegas_total": 228.5,
       "home_team": {
         "code": "PHX",
         "full_name": "Phoenix Suns",
@@ -5455,8 +5455,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 4.5,
+      "vegas_total": 233.5,
       "home_team": {
         "code": "LAC",
         "full_name": "LA Clippers",
@@ -43608,7 +43608,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -8.5,
-        "vegas_total": 220.5,
+        "vegas_total": 221.5,
         "home_team": {
           "code": "HOU",
           "full_name": "Houston Rockets",
@@ -43980,8 +43980,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 4.5,
+        "vegas_total": 233.5,
         "home_team": {
           "code": "LAC",
           "full_name": "LA Clippers",
@@ -44353,8 +44353,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -6.5,
+        "vegas_total": 230.5,
         "home_team": {
           "code": "MEM",
           "full_name": "Memphis Grizzlies",
@@ -45100,7 +45100,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 3.5,
-        "vegas_total": 227.5,
+        "vegas_total": 228.5,
         "home_team": {
           "code": "PHX",
           "full_name": "Phoenix Suns",
@@ -46218,8 +46218,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -5.5,
+        "vegas_total": 235.5,
         "home_team": {
           "code": "NO",
           "full_name": "New Orleans Pelicans",
@@ -47001,7 +47001,7 @@
       "predicted_total": 218.64,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-04T00:00:11.837014",
+      "created_at": "2026-11-04T00:30:11.461628",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-27",
@@ -47325,7 +47325,7 @@
             51
           ]
         },
-        "generated_at": "2026-11-04T00:00:11"
+        "generated_at": "2026-11-04T00:30:11"
       },
       "matches": {
         "id": 143,
@@ -47374,7 +47374,7 @@
       "predicted_total": 242.81,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-04T00:00:11.895728",
+      "created_at": "2026-11-04T00:30:11.519339",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-14",
@@ -47698,7 +47698,7 @@
             39
           ]
         },
-        "generated_at": "2026-11-04T00:00:11"
+        "generated_at": "2026-11-04T00:30:11"
       },
       "matches": {
         "id": 144,
