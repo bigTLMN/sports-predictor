@@ -5354,23 +5354,23 @@
       "start_time": "2026-11-05T01:00Z",
       "home_team_id": 27,
       "away_team_id": 30,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 116,
-      "away_score": 110,
+      "status": "STATUS_FINISHED",
+      "home_score": 120,
+      "away_score": 113,
       "period_scores": {
         "home": [
           24,
           18,
           28,
           34,
-          12
+          16
         ],
         "away": [
           24,
           13,
           43,
           24,
-          6
+          9
         ]
       },
       "vegas_spread": -5.5,
@@ -5433,20 +5433,20 @@
       "home_team_id": 10,
       "away_team_id": 17,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 104,
-      "away_score": 109,
+      "home_score": 106,
+      "away_score": 117,
       "period_scores": {
         "home": [
           30,
           27,
           27,
-          20
+          22
         ],
         "away": [
           33,
           24,
           25,
-          27
+          35
         ]
       },
       "vegas_spread": -7.5,
@@ -5471,20 +5471,20 @@
       "home_team_id": 8,
       "away_team_id": 24,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 113,
-      "away_score": 90,
+      "home_score": 117,
+      "away_score": 96,
       "period_scores": {
         "home": [
           33,
           31,
           41,
-          8
+          12
         ],
         "away": [
           35,
           32,
           15,
-          8
+          14
         ]
       },
       "vegas_spread": -4.5,
@@ -5509,18 +5509,18 @@
       "home_team_id": 21,
       "away_team_id": 22,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 79,
-      "away_score": 97,
+      "home_score": 82,
+      "away_score": 100,
       "period_scores": {
         "home": [
           34,
           25,
-          20
+          23
         ],
         "away": [
           29,
           43,
-          25
+          28
         ]
       },
       "vegas_spread": 3.5,
@@ -5579,16 +5579,16 @@
       "home_team_id": 23,
       "away_team_id": 13,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 39,
-      "away_score": 41,
+      "home_score": 44,
+      "away_score": 46,
       "period_scores": {
         "home": [
           28,
-          11
+          16
         ],
         "away": [
           28,
-          13
+          18
         ]
       },
       "vegas_spread": 12.5,
@@ -5613,14 +5613,14 @@
       "home_team_id": 12,
       "away_team_id": 15,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 18,
-      "away_score": 24,
+      "home_score": 24,
+      "away_score": 30,
       "period_scores": {
         "home": [
-          18
+          24
         ],
         "away": [
-          24
+          30
         ]
       },
       "vegas_spread": 6.5,
@@ -43227,20 +43227,20 @@
         "home_team_id": 8,
         "away_team_id": 24,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 113,
-        "away_score": 90,
+        "home_score": 117,
+        "away_score": 96,
         "period_scores": {
           "home": [
             33,
             31,
             41,
-            8
+            12
           ],
           "away": [
             35,
             32,
             15,
-            8
+            14
           ]
         },
         "vegas_spread": -4.5,
@@ -43999,20 +43999,20 @@
         "home_team_id": 10,
         "away_team_id": 17,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 104,
-        "away_score": 109,
+        "home_score": 106,
+        "away_score": 117,
         "period_scores": {
           "home": [
             30,
             27,
             27,
-            20
+            22
           ],
           "away": [
             33,
             24,
             25,
-            27
+            35
           ]
         },
         "vegas_spread": -7.5,
@@ -44385,14 +44385,14 @@
         "home_team_id": 12,
         "away_team_id": 15,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 18,
-        "away_score": 24,
+        "home_score": 24,
+        "away_score": 30,
         "period_scores": {
           "home": [
-            18
+            24
           ],
           "away": [
-            24
+            30
           ]
         },
         "vegas_spread": 6.5,
@@ -45537,18 +45537,18 @@
         "home_team_id": 21,
         "away_team_id": 22,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 79,
-        "away_score": 97,
+        "home_score": 82,
+        "away_score": 100,
         "period_scores": {
           "home": [
             34,
             25,
-            20
+            23
           ],
           "away": [
             29,
             43,
-            25
+            28
           ]
         },
         "vegas_spread": 3.5,
@@ -45921,16 +45921,16 @@
         "home_team_id": 23,
         "away_team_id": 13,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 39,
-        "away_score": 41,
+        "home_score": 44,
+        "away_score": 46,
         "period_scores": {
           "home": [
             28,
-            11
+            16
           ],
           "away": [
             28,
-            13
+            18
           ]
         },
         "vegas_spread": 12.5,
@@ -46354,8 +46354,8 @@
       "analysis_content_zh": "## 結論\n結論落在主場作戰的 NO。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 NO 贏 7.2 分，勝率 70%。\n信心高（78%）。\n## 本季至今\nNO 戰績 5-4（主 3-2、客 2-2），場均得 117.9（30 隊中第 10）、失 116.0（30 隊中第 21），淨勝 +1.9（30 隊中第 14），目前 W3。近況：主場勝 SAC 132-120、主場勝 ATL 121-99、客場勝 MEM 135-134。\nUTAH 戰績 2-6，場均得 108.5（30 隊中第 25）、失 118.5（30 隊中第 25），淨勝 -10.0（30 隊中第 26），目前 L5。近況：主場負 SA 111-117、主場負 POR 90-112、客場負 SA 97-119。\n對盤口表現：NO 讓分 5 勝 1 負 (83%)；大分 4 次、小分 2 次；UTAH 讓分 1 勝 5 負 (17%)；大分 2 次、小分 4 次。\n近 3 次交手 NO 3 勝 0 負，平均分差 +13.3（最近一次 2026-04-07：勝 156-137）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-12），NO 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **罰球命中率**：NO 罰球 77.0%，對手 67.5%（聯盟平均 77.5%；NO 第 18、UTAH 第 30／30 隊）。\n• **失分**：NO 場均失 126.3 分，對手 132.8（聯盟平均 115.8；NO 第 25、UTAH 第 30／30 隊）。\n• **淨勝分**：NO 場均淨勝 -10.4 分，對手 -14.2（聯盟平均 -4.7；NO 第 24、UTAH 第 28／30 隊）。\n• **板凳得分**：NO 板凳貢獻 37.6 分，對手 34.0（聯盟平均 35.3；NO 第 13、UTAH 第 19／30 隊）。\nUTAH 能反擊的地方：\n• **助攻**：UTAH 這項較好，31.9 對 NO 的 24.0（聯盟平均 25.0；NO 第 17、UTAH 第 2／30 隊）。\n• **快攻得分**：UTAH 這項較好，24.9 對 NO 的 20.0（聯盟平均 14.2；NO 第 3、UTAH 第 1／30 隊）。\n• **失誤轉換得分**：UTAH 這項較好，20.2 對 NO 的 17.1（聯盟平均 17.5；NO 第 17、UTAH 第 6／30 隊）。\n穩定度：這段期間 NO 單場分差的標準差是 ±13.5 分，UTAH 是 ±22.0 分；NO 的表現較穩。\n## 賽程與休息\nNO 休一天；UTAH 休一天。\nNO 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 226.4 分，防守合計失 234.5 分；近況合計每場出手 61 記三分（聯盟兩隊平均 73）、快攻 45 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 243.7，盤口 225.0，高於盤口 18.7 分。以總分相對盤口 ±19.6 分的分佈換算，大分機率 83%；公布信心 90%。\n## 模型本季戰績\n本季至今，已發佈讓分 51 勝 54 負（49%）；信心 78% 以上的場次 12 勝 18 負；大小分 55 勝 52 負（51%）。\n## 風險\n坦白說：UTAH 在助攻上的優勢（31.9 對 24.0）是翻掉這份判讀最直接的路徑。",
       "predicted_margin": 7.19,
       "predicted_total": 243.7,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-11-03T23:30:11.936649",
       "analysis_facts": {
         "profile_games": 10,
@@ -46688,23 +46688,23 @@
         "start_time": "2026-11-05T01:00Z",
         "home_team_id": 27,
         "away_team_id": 30,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 116,
-        "away_score": 110,
+        "status": "STATUS_FINISHED",
+        "home_score": 120,
+        "away_score": 113,
         "period_scores": {
           "home": [
             24,
             18,
             28,
             34,
-            12
+            16
           ],
           "away": [
             24,
             13,
             43,
             24,
-            6
+            9
           ]
         },
         "vegas_spread": -5.5,
