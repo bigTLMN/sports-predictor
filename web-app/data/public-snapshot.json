@@ -5766,8 +5766,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 1.5,
+      "vegas_total": 230.5,
       "home_team": {
         "code": "CLE",
         "full_name": "Cleveland Cavaliers",
@@ -5841,7 +5841,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": 6.5,
+      "vegas_spread": 7.5,
       "vegas_total": 231.5,
       "home_team": {
         "code": "MIL",
@@ -48494,7 +48494,7 @@
       "predicted_total": 231.97,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T22:30:12.189880",
+      "created_at": "2026-11-05T23:00:13.747697",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -48818,7 +48818,7 @@
             2
           ]
         },
-        "generated_at": "2026-11-05T22:30:12"
+        "generated_at": "2026-11-05T23:00:13"
       },
       "matches": {
         "id": 145,
@@ -48867,7 +48867,7 @@
       "predicted_total": 217.18,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T22:30:12.248003",
+      "created_at": "2026-11-05T23:00:13.805283",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -49191,7 +49191,7 @@
             50
           ]
         },
-        "generated_at": "2026-11-05T22:30:12"
+        "generated_at": "2026-11-05T23:00:13"
       },
       "matches": {
         "id": 146,
@@ -49227,20 +49227,20 @@
       "id": 126,
       "match_id": 147,
       "recommended_team_id": 6,
-      "confidence_score": 65.0,
-      "spread_logic": "AI projects CLE to win by 3.9 pts",
-      "spread_logic_zh": "AI 預測 CLE 贏 3.9 分",
-      "line_info": "0.0",
+      "confidence_score": 67.0,
+      "spread_logic": "AI projects CLE to win by 2.8 pts",
+      "spread_logic_zh": "AI 預測 CLE 贏 2.8 分",
+      "line_info": "1.5",
       "ou_pick": "UNDER",
-      "ou_line": 225.0,
-      "ou_confidence": 57.0,
-      "analysis_content": "## The Call\nWe land on CLE at home.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has CLE by 3.9, a 62% win probability.\nConfidence is moderate at 65%.\n## Season So Far\nCLE is 4-4 (3-1 home, 1-3 away), scoring 119.2 (5th of 30) and allowing 117.1 (24th of 30) for a +2.1 margin (15th of 30), currently on a L2 run. Last out: W 136-111 at MIL, L 112-117 vs OKC, L 116-124 at OKC.\nPHI is 8-2, scoring 111.9 (19th of 30) and allowing 107.2 (5th of 30) for a +4.7 margin (10th of 30), on a W5 run. Last out: W 109-104 at CHA, W 126-107 vs CHI, W 112-106 at DET.\nAgainst the number: CLE 2-6 against the spread (25%); 4 over / 4 under; PHI 5-3 against the spread (62%); 2 over / 6 under.\nHead to head, CLE is 3-0 in the last 3 meetings with an average margin of +14.0 (most recent 2026-03-09: W 115-101).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-05-25) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Points off turnovers** — CLE turns mistakes into 18.5 points to 14.3 (league avg 17.5; CLE 10th vs PHI 29th of 30).\n• **Off. rebounds** — CLE grabs 10.8 offensive boards to 8.2 (league avg 11.1; CLE 18th vs PHI 29th of 30).\n• **Bench points** — CLE gets 24.4 from the bench to 19.7 (league avg 35.3; CLE 26th vs PHI 30th of 30).\n• **Paint points** — CLE produces 42.6 paint points to 38.6 (league avg 47.4; CLE 23rd vs PHI 28th of 30).\nWhere PHI pushes back:\n• **Turnovers** — PHI holds the better number, 11.1 to CLE's 15.2 (league avg 13.6; CLE 26th vs PHI 2nd of 30).\n• **FT%** — PHI holds the better number, 78.8% to CLE's 73.6% (league avg 77.5%; CLE 26th vs PHI 9th of 30).\n• **3P%** — PHI holds the better number, 34.7% to CLE's 31.5% (league avg 34.9%; CLE 27th vs PHI 13th of 30).\nConsistency check: CLE's game margins over this stretch vary by ±18.0 points (one standard deviation) against ±19.6 for PHI; the steadier side is CLE.\n## Schedule & Rest\nCLE has one day off; PHI has one day off.\nCLE has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 231.2 points and the two defences concede 224.3; on record they attempt 71 threes between them (league pair average 73) with 17 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 222.4 total points against a line of 225.0, 2.6 points below the number. With totals spreading ±18.7 points around the line, that is a 56% probability of the under; published confidence is 57%.\n## Model Track Record\nThis season, published spread picks are 58-61 (49%); at 65%+ confidence they are 27-35; totals are 61-60 (50%).\n## What Could Go Wrong\nHonest caveats: PHI's edge in Turnovers (11.1 vs 15.2) is the cleanest path to an upset of this read; CLE's results swing ±18.0 points game to game, so any single-game edge is fragile; CLE is on a L2 skid and the model does not read locker rooms.",
-      "analysis_content_zh": "## 結論\n結論落在主場作戰的 CLE。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 CLE 贏 3.9 分，勝率 62%。\n信心中等（65%）。\n## 本季至今\nCLE 戰績 4-4（主 3-1、客 1-3），場均得 119.2（30 隊中第 5）、失 117.1（30 隊中第 24），淨勝 +2.1（30 隊中第 15），目前 L2。近況：客場勝 MIL 136-111、主場負 OKC 112-117、客場負 OKC 116-124。\nPHI 戰績 8-2，場均得 111.9（30 隊中第 19）、失 107.2（30 隊中第 5），淨勝 +4.7（30 隊中第 10），目前 W5。近況：客場勝 CHA 109-104、主場勝 CHI 126-107、客場勝 DET 112-106。\n對盤口表現：CLE 讓分 2 勝 6 負 (25%)；大分 4 次、小分 4 次；PHI 讓分 5 勝 3 負 (62%)；大分 2 次、小分 6 次。\n近 3 次交手 CLE 3 勝 0 負，平均分差 +14.0（最近一次 2026-03-09：勝 115-101）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-25）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失誤轉換得分**：CLE 失誤轉換得 18.5 分，對手 14.3（聯盟平均 17.5；CLE 第 10、PHI 第 29／30 隊）。\n• **進攻籃板**：CLE 進攻籃板 10.8 個，對手 8.2（聯盟平均 11.1；CLE 第 18、PHI 第 29／30 隊）。\n• **板凳得分**：CLE 板凳貢獻 24.4 分，對手 19.7（聯盟平均 35.3；CLE 第 26、PHI 第 30／30 隊）。\n• **禁區得分**：CLE 禁區拿 42.6 分，對手 38.6（聯盟平均 47.4；CLE 第 23、PHI 第 28／30 隊）。\nPHI 能反擊的地方：\n• **失誤**：PHI 這項較好，11.1 對 CLE 的 15.2（聯盟平均 13.6；CLE 第 26、PHI 第 2／30 隊）。\n• **罰球命中率**：PHI 這項較好，78.8% 對 CLE 的 73.6%（聯盟平均 77.5%；CLE 第 26、PHI 第 9／30 隊）。\n• **三分命中率**：PHI 這項較好，34.7% 對 CLE 的 31.5%（聯盟平均 34.9%；CLE 第 27、PHI 第 13／30 隊）。\n穩定度：這段期間 CLE 單場分差的標準差是 ±18.0 分，PHI 是 ±19.6 分；CLE 的表現較穩。\n## 賽程與休息\nCLE 休一天；PHI 休一天。\nCLE 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 231.2 分，防守合計失 224.3 分；近況合計每場出手 71 記三分（聯盟兩隊平均 73）、快攻 17 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 222.4，盤口 225.0，低於盤口 2.6 分。以總分相對盤口 ±18.7 分的分佈換算，小分機率 56%；公布信心 57%。\n## 模型本季戰績\n本季至今，已發佈讓分 58 勝 61 負（49%）；信心 65% 以上的場次 27 勝 35 負；大小分 61 勝 60 負（50%）。\n## 風險\n坦白說：PHI 在失誤上的優勢（11.1 對 15.2）是翻掉這份判讀最直接的路徑；CLE 單場分差起伏 ±18.0 分，單場優勢並不牢靠；CLE 正吞 2 連敗，模型看不到更衣室氣氛。",
-      "predicted_margin": 3.94,
+      "ou_line": 230.5,
+      "ou_confidence": 74.0,
+      "analysis_content": "## The Call\nWe land on CLE at home.\nThe market has CLE at +1.5, which implies a 1.5-point loss and a 45% win probability. Our projection is +2.8 for CLE (59% to win), a gap of 4.3 points in favour of the cover.\nConverted with measured from 107 games this season, a 4.3-point edge is a 63% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was +3.9; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 67%.\n## Season So Far\nCLE is 4-4 (3-1 home, 1-3 away), scoring 119.2 (5th of 30) and allowing 117.1 (24th of 30) for a +2.1 margin (15th of 30), currently on a L2 run. Last out: W 136-111 at MIL, L 112-117 vs OKC, L 116-124 at OKC.\nPHI is 8-2, scoring 111.9 (19th of 30) and allowing 107.2 (5th of 30) for a +4.7 margin (10th of 30), on a W5 run. Last out: W 109-104 at CHA, W 126-107 vs CHI, W 112-106 at DET.\nAgainst the number: CLE 2-6 against the spread (25%); 4 over / 4 under; PHI 5-3 against the spread (62%); 2 over / 6 under.\nHead to head, CLE is 3-0 in the last 3 meetings with an average margin of +14.0 (most recent 2026-03-09: W 115-101).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-05-25) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Points off turnovers** — CLE turns mistakes into 18.5 points to 14.3 (league avg 17.5; CLE 10th vs PHI 29th of 30).\n• **Off. rebounds** — CLE grabs 10.8 offensive boards to 8.2 (league avg 11.1; CLE 18th vs PHI 29th of 30).\n• **Bench points** — CLE gets 24.4 from the bench to 19.7 (league avg 35.3; CLE 26th vs PHI 30th of 30).\n• **Paint points** — CLE produces 42.6 paint points to 38.6 (league avg 47.4; CLE 23rd vs PHI 28th of 30).\nWhere PHI pushes back:\n• **Turnovers** — PHI holds the better number, 11.1 to CLE's 15.2 (league avg 13.6; CLE 26th vs PHI 2nd of 30).\n• **FT%** — PHI holds the better number, 78.8% to CLE's 73.6% (league avg 77.5%; CLE 26th vs PHI 9th of 30).\n• **3P%** — PHI holds the better number, 34.7% to CLE's 31.5% (league avg 34.9%; CLE 27th vs PHI 13th of 30).\nConsistency check: CLE's game margins over this stretch vary by ±18.0 points (one standard deviation) against ±19.6 for PHI; the steadier side is CLE.\n## Schedule & Rest\nCLE has one day off; PHI has one day off.\nCLE has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 230.5\nTempo check: this season the two offences combine for 231.2 points and the two defences concede 224.3; on record they attempt 71 threes between them (league pair average 73) with 17 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 222.4 total points against a line of 230.5, 8.1 points below the number. With totals spreading ±18.7 points around the line, that is a 67% probability of the under; published confidence is 74%.\n## Model Track Record\nThis season, published spread picks are 58-61 (49%); at 67%+ confidence they are 24-32; totals are 61-60 (50%).\n## What Could Go Wrong\nHonest caveats: PHI's edge in Turnovers (11.1 vs 15.2) is the cleanest path to an upset of this read; CLE's results swing ±18.0 points game to game, so any single-game edge is fragile; CLE is on a L2 skid and the model does not read locker rooms.",
+      "analysis_content_zh": "## 結論\n結論落在主場作戰的 CLE。\n市場開 CLE +1.5，等於預期輸 1.5 分、勝率 45%；模型估 CLE +2.8（勝率 59%），與盤口差 4.3 分，有利於過盤。\n以本季 107 場實際結果量得換算，4.3 分的優勢等於 63% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +3.9；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（67%）。\n## 本季至今\nCLE 戰績 4-4（主 3-1、客 1-3），場均得 119.2（30 隊中第 5）、失 117.1（30 隊中第 24），淨勝 +2.1（30 隊中第 15），目前 L2。近況：客場勝 MIL 136-111、主場負 OKC 112-117、客場負 OKC 116-124。\nPHI 戰績 8-2，場均得 111.9（30 隊中第 19）、失 107.2（30 隊中第 5），淨勝 +4.7（30 隊中第 10），目前 W5。近況：客場勝 CHA 109-104、主場勝 CHI 126-107、客場勝 DET 112-106。\n對盤口表現：CLE 讓分 2 勝 6 負 (25%)；大分 4 次、小分 4 次；PHI 讓分 5 勝 3 負 (62%)；大分 2 次、小分 6 次。\n近 3 次交手 CLE 3 勝 0 負，平均分差 +14.0（最近一次 2026-03-09：勝 115-101）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-25）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失誤轉換得分**：CLE 失誤轉換得 18.5 分，對手 14.3（聯盟平均 17.5；CLE 第 10、PHI 第 29／30 隊）。\n• **進攻籃板**：CLE 進攻籃板 10.8 個，對手 8.2（聯盟平均 11.1；CLE 第 18、PHI 第 29／30 隊）。\n• **板凳得分**：CLE 板凳貢獻 24.4 分，對手 19.7（聯盟平均 35.3；CLE 第 26、PHI 第 30／30 隊）。\n• **禁區得分**：CLE 禁區拿 42.6 分，對手 38.6（聯盟平均 47.4；CLE 第 23、PHI 第 28／30 隊）。\nPHI 能反擊的地方：\n• **失誤**：PHI 這項較好，11.1 對 CLE 的 15.2（聯盟平均 13.6；CLE 第 26、PHI 第 2／30 隊）。\n• **罰球命中率**：PHI 這項較好，78.8% 對 CLE 的 73.6%（聯盟平均 77.5%；CLE 第 26、PHI 第 9／30 隊）。\n• **三分命中率**：PHI 這項較好，34.7% 對 CLE 的 31.5%（聯盟平均 34.9%；CLE 第 27、PHI 第 13／30 隊）。\n穩定度：這段期間 CLE 單場分差的標準差是 ±18.0 分，PHI 是 ±19.6 分；CLE 的表現較穩。\n## 賽程與休息\nCLE 休一天；PHI 休一天。\nCLE 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 230.5\n節奏觀察：本季兩隊進攻合計 231.2 分，防守合計失 224.3 分；近況合計每場出手 71 記三分（聯盟兩隊平均 73）、快攻 17 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 222.4，盤口 230.5，低於盤口 8.1 分。以總分相對盤口 ±18.7 分的分佈換算，小分機率 67%；公布信心 74%。\n## 模型本季戰績\n本季至今，已發佈讓分 58 勝 61 負（49%）；信心 67% 以上的場次 24 勝 32 負；大小分 61 勝 60 負（50%）。\n## 風險\n坦白說：PHI 在失誤上的優勢（11.1 對 15.2）是翻掉這份判讀最直接的路徑；CLE 單場分差起伏 ±18.0 分，單場優勢並不牢靠；CLE 正吞 2 連敗，模型看不到更衣室氣氛。",
+      "predicted_margin": 2.85,
       "predicted_total": 222.39,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T22:30:12.307856",
+      "created_at": "2026-11-05T23:00:13.865417",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-25",
@@ -49521,20 +49521,20 @@
           }
         ],
         "projection": {
-          "model_margin": 3.9,
+          "model_margin": 2.8,
           "raw_margin": 3.9,
-          "market_margin": 0.0,
-          "edge": 3.9,
+          "market_margin": -1.5,
+          "edge": 4.3,
           "pred_total": 222.4,
-          "total_line": 225.0,
-          "total_edge": -2.6,
-          "total_is_default": true
+          "total_line": 230.5,
+          "total_edge": -8.1,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.618,
-          "win_model": 0.618,
-          "win_market": null,
-          "total": 0.555,
+          "cover": 0.63,
+          "win_model": 0.586,
+          "win_market": 0.454,
+          "total": 0.668,
           "sigma_spread": 13.1,
           "sigma_total": 18.7,
           "sigma_measured": true
@@ -49560,11 +49560,11 @@
             60
           ],
           "spread_at_conf": [
-            27,
-            35
+            24,
+            32
           ]
         },
-        "generated_at": "2026-11-05T22:30:12"
+        "generated_at": "2026-11-05T23:00:13"
       },
       "matches": {
         "id": 147,
@@ -49576,8 +49576,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 1.5,
+        "vegas_total": 230.5,
         "home_team": {
           "code": "CLE",
           "full_name": "Cleveland Cavaliers",
@@ -49613,7 +49613,7 @@
       "predicted_total": 244.24,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T22:30:12.364638",
+      "created_at": "2026-11-05T23:00:13.921339",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -49937,7 +49937,7 @@
             40
           ]
         },
-        "generated_at": "2026-11-05T22:30:12"
+        "generated_at": "2026-11-05T23:00:13"
       },
       "matches": {
         "id": 148,
@@ -49986,7 +49986,7 @@
       "predicted_total": 217.8,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T22:30:12.425538",
+      "created_at": "2026-11-05T23:00:13.981794",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-11",
@@ -50310,7 +50310,7 @@
             43
           ]
         },
-        "generated_at": "2026-11-05T22:30:12"
+        "generated_at": "2026-11-05T23:00:13"
       },
       "matches": {
         "id": 152,
@@ -50359,7 +50359,7 @@
       "predicted_total": 230.47,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T22:30:12.481117",
+      "created_at": "2026-11-05T23:00:14.036772",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -50683,7 +50683,7 @@
             2
           ]
         },
-        "generated_at": "2026-11-05T22:30:12"
+        "generated_at": "2026-11-05T23:00:14"
       },
       "matches": {
         "id": 149,
@@ -50719,20 +50719,20 @@
       "id": 130,
       "match_id": 150,
       "recommended_team_id": 16,
-      "confidence_score": 56.0,
-      "spread_logic": "AI projects MIL to lose by 5.0 pts",
-      "spread_logic_zh": "AI 預測 MIL 輸 5.0 分",
-      "line_info": "6.5",
+      "confidence_score": 59.0,
+      "spread_logic": "AI projects MIL to lose by 5.2 pts",
+      "spread_logic_zh": "AI 預測 MIL 輸 5.2 分",
+      "line_info": "7.5",
       "ou_pick": "UNDER",
       "ou_line": 231.5,
       "ou_confidence": 63.0,
-      "analysis_content": "## The Call\nThe number says MIL, at home.\nThe market has MIL at +6.5, which implies a 6.5-point loss and a 31% win probability. Our projection is -5.0 for MIL (35% to win), a gap of 1.5 points in favour of the cover.\nConverted with measured from 107 games this season, a 1.5-point edge is a 55% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 56%.\n## Season So Far\nMIL is 2-8 (1-4 home, 1-4 away), scoring 111.2 (21st of 30) and allowing 123.0 (26th of 30) for a -11.8 margin (28th of 30), currently on a L4 run. Last out: L 111-136 vs CLE, L 100-112 at MIN, L 102-109 at BOS.\nTOR is 4-6, scoring 118.8 (6th of 30) and allowing 115.9 (22nd of 30) for a +2.9 margin (13th of 30), on a L1 run. Last out: L 125-131 at LAL, W 125-118 at LAC, L 109-128 at DEN.\nAgainst the number: MIL 3-4 against the spread (43%); 4 over / 3 under; TOR 3-4 against the spread (43%); 5 over / 2 under.\nHead to head, MIL is 0-3 in the last 3 meetings with an average margin of -20.7 (most recent 2026-02-22: L 94-122).\n## Statistical Profile\nThe last 10 games on record (box scores on record through 2026-04-12) show no category where MIL clearly separates from TOR; the projection is being driven by the broader rolling windows and the matchup context rather than one headline stat.\nWhere TOR pushes back:\n• **Paint points** — TOR holds the better number, 51.6 to MIL's 38.2 (league avg 47.4; MIL 29th vs TOR 7th of 30).\n• **Turnovers** — TOR holds the better number, 13.5 to MIL's 17.0 (league avg 13.6; MIL 30th vs TOR 16th of 30).\n• **Net margin** — TOR holds the better number, +2.0 to MIL's -7.9 (league avg -4.7; MIL 22nd vs TOR 8th of 30).\nConsistency check: MIL's game margins over this stretch vary by ±19.7 points (one standard deviation) against ±16.2 for TOR; the more volatile side is MIL.\n## Schedule & Rest\nMIL has one day off; TOR has one day off.\nMIL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 231.5\nTempo check: this season the two offences combine for 230.0 points and the two defences concede 238.9; on record they attempt 74 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 227.0 total points against a line of 231.5, 4.5 points below the number. With totals spreading ±18.7 points around the line, that is a 60% probability of the under; published confidence is 63%.\n## Model Track Record\nThis season, published spread picks are 58-61 (49%); at 56%+ confidence they are 43-50; totals are 61-60 (50%).\n## What Could Go Wrong\nHonest caveats: TOR's edge in Paint points (51.6 vs 38.2) is the cleanest path to an upset of this read; MIL's results swing ±19.7 points game to game, so any single-game edge is fragile; MIL is on a L4 skid and the model does not read locker rooms.",
-      "analysis_content_zh": "## 結論\n本場站 主場的 MIL。\n市場開 MIL +6.5，等於預期輸 6.5 分、勝率 31%；模型估 MIL -5.0（勝率 35%），與盤口差 1.5 分，有利於過盤。\n以本季 107 場實際結果量得換算，1.5 分的優勢等於 55% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（56%）。\n## 本季至今\nMIL 戰績 2-8（主 1-4、客 1-4），場均得 111.2（30 隊中第 21）、失 123.0（30 隊中第 26），淨勝 -11.8（30 隊中第 28），目前 L4。近況：主場負 CLE 111-136、客場負 MIN 100-112、客場負 BOS 102-109。\nTOR 戰績 4-6，場均得 118.8（30 隊中第 6）、失 115.9（30 隊中第 22），淨勝 +2.9（30 隊中第 13），目前 L1。近況：客場負 LAL 125-131、客場勝 LAC 125-118、客場負 DEN 109-128。\n對盤口表現：MIL 讓分 3 勝 4 負 (43%)；大分 4 次、小分 3 次；TOR 讓分 3 勝 4 負 (43%)；大分 5 次、小分 2 次。\n近 3 次交手 MIL 0 勝 3 負，平均分差 -20.7（最近一次 2026-02-22：負 94-122）。\n## 數據體質\n近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-12）裡，MIL 沒有哪一項明顯壓過 TOR；預測主要來自更長的滾動窗口與對戰情境，不是單一亮眼數據。\nTOR 能反擊的地方：\n• **禁區得分**：TOR 這項較好，51.6 對 MIL 的 38.2（聯盟平均 47.4；MIL 第 29、TOR 第 7／30 隊）。\n• **失誤**：TOR 這項較好，13.5 對 MIL 的 17.0（聯盟平均 13.6；MIL 第 30、TOR 第 16／30 隊）。\n• **淨勝分**：TOR 這項較好，+2.0 對 MIL 的 -7.9（聯盟平均 -4.7；MIL 第 22、TOR 第 8／30 隊）。\n穩定度：這段期間 MIL 單場分差的標準差是 ±19.7 分，TOR 是 ±16.2 分；MIL 的表現起伏較大。\n## 賽程與休息\nMIL 休一天；TOR 休一天。\nMIL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 231.5\n節奏觀察：本季兩隊進攻合計 230.0 分，防守合計失 238.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 227.0，盤口 231.5，低於盤口 4.5 分。以總分相對盤口 ±18.7 分的分佈換算，小分機率 60%；公布信心 63%。\n## 模型本季戰績\n本季至今，已發佈讓分 58 勝 61 負（49%）；信心 56% 以上的場次 43 勝 50 負；大小分 61 勝 60 負（50%）。\n## 風險\n坦白說：TOR 在禁區得分上的優勢（51.6 對 38.2）是翻掉這份判讀最直接的路徑；MIL 單場分差起伏 ±19.7 分，單場優勢並不牢靠；MIL 正吞 4 連敗，模型看不到更衣室氣氛。",
-      "predicted_margin": -5.0,
+      "analysis_content": "## The Call\nThe number says MIL, at home.\nThe market has MIL at +7.5, which implies a 7.5-point loss and a 28% win probability. Our projection is -5.2 for MIL (35% to win), a gap of 2.3 points in favour of the cover.\nConverted with measured from 107 games this season, a 2.3-point edge is a 57% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 59%.\n## Season So Far\nMIL is 2-8 (1-4 home, 1-4 away), scoring 111.2 (21st of 30) and allowing 123.0 (26th of 30) for a -11.8 margin (28th of 30), currently on a L4 run. Last out: L 111-136 vs CLE, L 100-112 at MIN, L 102-109 at BOS.\nTOR is 4-6, scoring 118.8 (6th of 30) and allowing 115.9 (22nd of 30) for a +2.9 margin (13th of 30), on a L1 run. Last out: L 125-131 at LAL, W 125-118 at LAC, L 109-128 at DEN.\nAgainst the number: MIL 3-4 against the spread (43%); 4 over / 3 under; TOR 3-4 against the spread (43%); 5 over / 2 under.\nHead to head, MIL is 0-3 in the last 3 meetings with an average margin of -20.7 (most recent 2026-02-22: L 94-122).\n## Statistical Profile\nThe last 10 games on record (box scores on record through 2026-04-12) show no category where MIL clearly separates from TOR; the projection is being driven by the broader rolling windows and the matchup context rather than one headline stat.\nWhere TOR pushes back:\n• **Paint points** — TOR holds the better number, 51.6 to MIL's 38.2 (league avg 47.4; MIL 29th vs TOR 7th of 30).\n• **Turnovers** — TOR holds the better number, 13.5 to MIL's 17.0 (league avg 13.6; MIL 30th vs TOR 16th of 30).\n• **Net margin** — TOR holds the better number, +2.0 to MIL's -7.9 (league avg -4.7; MIL 22nd vs TOR 8th of 30).\nConsistency check: MIL's game margins over this stretch vary by ±19.7 points (one standard deviation) against ±16.2 for TOR; the more volatile side is MIL.\n## Schedule & Rest\nMIL has one day off; TOR has one day off.\nMIL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 231.5\nTempo check: this season the two offences combine for 230.0 points and the two defences concede 238.9; on record they attempt 74 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 227.0 total points against a line of 231.5, 4.5 points below the number. With totals spreading ±18.7 points around the line, that is a 60% probability of the under; published confidence is 63%.\n## Model Track Record\nThis season, published spread picks are 58-61 (49%); at 59%+ confidence they are 38-43; totals are 61-60 (50%).\n## What Could Go Wrong\nHonest caveats: TOR's edge in Paint points (51.6 vs 38.2) is the cleanest path to an upset of this read; MIL's results swing ±19.7 points game to game, so any single-game edge is fragile; MIL is on a L4 skid and the model does not read locker rooms.",
+      "analysis_content_zh": "## 結論\n本場站 主場的 MIL。\n市場開 MIL +7.5，等於預期輸 7.5 分、勝率 28%；模型估 MIL -5.2（勝率 35%），與盤口差 2.3 分，有利於過盤。\n以本季 107 場實際結果量得換算，2.3 分的優勢等於 57% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（59%）。\n## 本季至今\nMIL 戰績 2-8（主 1-4、客 1-4），場均得 111.2（30 隊中第 21）、失 123.0（30 隊中第 26），淨勝 -11.8（30 隊中第 28），目前 L4。近況：主場負 CLE 111-136、客場負 MIN 100-112、客場負 BOS 102-109。\nTOR 戰績 4-6，場均得 118.8（30 隊中第 6）、失 115.9（30 隊中第 22），淨勝 +2.9（30 隊中第 13），目前 L1。近況：客場負 LAL 125-131、客場勝 LAC 125-118、客場負 DEN 109-128。\n對盤口表現：MIL 讓分 3 勝 4 負 (43%)；大分 4 次、小分 3 次；TOR 讓分 3 勝 4 負 (43%)；大分 5 次、小分 2 次。\n近 3 次交手 MIL 0 勝 3 負，平均分差 -20.7（最近一次 2026-02-22：負 94-122）。\n## 數據體質\n近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-12）裡，MIL 沒有哪一項明顯壓過 TOR；預測主要來自更長的滾動窗口與對戰情境，不是單一亮眼數據。\nTOR 能反擊的地方：\n• **禁區得分**：TOR 這項較好，51.6 對 MIL 的 38.2（聯盟平均 47.4；MIL 第 29、TOR 第 7／30 隊）。\n• **失誤**：TOR 這項較好，13.5 對 MIL 的 17.0（聯盟平均 13.6；MIL 第 30、TOR 第 16／30 隊）。\n• **淨勝分**：TOR 這項較好，+2.0 對 MIL 的 -7.9（聯盟平均 -4.7；MIL 第 22、TOR 第 8／30 隊）。\n穩定度：這段期間 MIL 單場分差的標準差是 ±19.7 分，TOR 是 ±16.2 分；MIL 的表現起伏較大。\n## 賽程與休息\nMIL 休一天；TOR 休一天。\nMIL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 231.5\n節奏觀察：本季兩隊進攻合計 230.0 分，防守合計失 238.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 227.0，盤口 231.5，低於盤口 4.5 分。以總分相對盤口 ±18.7 分的分佈換算，小分機率 60%；公布信心 63%。\n## 模型本季戰績\n本季至今，已發佈讓分 58 勝 61 負（49%）；信心 59% 以上的場次 38 勝 43 負；大小分 61 勝 60 負（50%）。\n## 風險\n坦白說：TOR 在禁區得分上的優勢（51.6 對 38.2）是翻掉這份判讀最直接的路徑；MIL 單場分差起伏 ±19.7 分，單場優勢並不牢靠；MIL 正吞 4 連敗，模型看不到更衣室氣氛。",
+      "predicted_margin": -5.2,
       "predicted_total": 227.0,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T22:30:12.536649",
+      "created_at": "2026-11-05T23:00:14.091778",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -51013,19 +51013,19 @@
           }
         ],
         "projection": {
-          "model_margin": -5.0,
+          "model_margin": -5.2,
           "raw_margin": -4.6,
-          "market_margin": -6.5,
-          "edge": 1.5,
+          "market_margin": -7.5,
+          "edge": 2.3,
           "pred_total": 227.0,
           "total_line": 231.5,
           "total_edge": -4.5,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.546,
-          "win_model": 0.351,
-          "win_market": 0.31,
+          "cover": 0.57,
+          "win_model": 0.346,
+          "win_market": 0.283,
           "total": 0.595,
           "sigma_spread": 13.1,
           "sigma_total": 18.7,
@@ -51052,11 +51052,11 @@
             60
           ],
           "spread_at_conf": [
-            43,
-            50
+            38,
+            43
           ]
         },
-        "generated_at": "2026-11-05T22:30:12"
+        "generated_at": "2026-11-05T23:00:14"
       },
       "matches": {
         "id": 150,
@@ -51068,7 +51068,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": 6.5,
+        "vegas_spread": 7.5,
         "vegas_total": 231.5,
         "home_team": {
           "code": "MIL",
@@ -51105,7 +51105,7 @@
       "predicted_total": 225.06,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T22:30:12.596461",
+      "created_at": "2026-11-05T23:00:14.150447",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -51429,7 +51429,7 @@
             26
           ]
         },
-        "generated_at": "2026-11-05T22:30:12"
+        "generated_at": "2026-11-05T23:00:14"
       },
       "matches": {
         "id": 153,
@@ -51478,7 +51478,7 @@
       "predicted_total": 234.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T22:30:12.649339",
+      "created_at": "2026-11-05T23:00:14.202396",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -51802,7 +51802,7 @@
             21
           ]
         },
-        "generated_at": "2026-11-05T22:30:12"
+        "generated_at": "2026-11-05T23:00:14"
       },
       "matches": {
         "id": 151,
