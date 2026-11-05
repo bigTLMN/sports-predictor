@@ -5692,7 +5692,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 236.5,
+      "vegas_total": 235.5,
       "home_team": {
         "code": "GS",
         "full_name": "Golden State Warriors",
@@ -5841,7 +5841,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": 7.5,
+      "vegas_spread": 6.5,
       "vegas_total": 231.5,
       "home_team": {
         "code": "MIL",
@@ -48458,7 +48458,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -3.5,
-        "vegas_total": 236.5,
+        "vegas_total": 235.5,
         "home_team": {
           "code": "GS",
           "full_name": "Golden State Warriors",
@@ -48494,7 +48494,7 @@
       "predicted_total": 231.97,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T21:30:11.878634",
+      "created_at": "2026-11-05T22:00:11.563686",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -48818,7 +48818,7 @@
             2
           ]
         },
-        "generated_at": "2026-11-05T21:30:11"
+        "generated_at": "2026-11-05T22:00:11"
       },
       "matches": {
         "id": 145,
@@ -48867,7 +48867,7 @@
       "predicted_total": 217.18,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T21:30:11.935985",
+      "created_at": "2026-11-05T22:00:11.621060",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -49191,7 +49191,7 @@
             50
           ]
         },
-        "generated_at": "2026-11-05T21:30:11"
+        "generated_at": "2026-11-05T22:00:11"
       },
       "matches": {
         "id": 146,
@@ -49240,7 +49240,7 @@
       "predicted_total": 222.39,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T21:30:11.995370",
+      "created_at": "2026-11-05T22:00:11.680199",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-25",
@@ -49564,7 +49564,7 @@
             35
           ]
         },
-        "generated_at": "2026-11-05T21:30:11"
+        "generated_at": "2026-11-05T22:00:11"
       },
       "matches": {
         "id": 147,
@@ -49613,7 +49613,7 @@
       "predicted_total": 244.24,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T21:30:12.051445",
+      "created_at": "2026-11-05T22:00:11.735884",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -49937,7 +49937,7 @@
             40
           ]
         },
-        "generated_at": "2026-11-05T21:30:12"
+        "generated_at": "2026-11-05T22:00:11"
       },
       "matches": {
         "id": 148,
@@ -49986,7 +49986,7 @@
       "predicted_total": 217.8,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T21:30:12.111090",
+      "created_at": "2026-11-05T22:00:11.795462",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-11",
@@ -50310,7 +50310,7 @@
             43
           ]
         },
-        "generated_at": "2026-11-05T21:30:12"
+        "generated_at": "2026-11-05T22:00:11"
       },
       "matches": {
         "id": 152,
@@ -50359,7 +50359,7 @@
       "predicted_total": 230.47,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T21:30:12.165972",
+      "created_at": "2026-11-05T22:00:11.850661",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -50683,7 +50683,7 @@
             2
           ]
         },
-        "generated_at": "2026-11-05T21:30:12"
+        "generated_at": "2026-11-05T22:00:11"
       },
       "matches": {
         "id": 149,
@@ -50719,20 +50719,20 @@
       "id": 130,
       "match_id": 150,
       "recommended_team_id": 16,
-      "confidence_score": 59.0,
-      "spread_logic": "AI projects MIL to lose by 5.2 pts",
-      "spread_logic_zh": "AI 預測 MIL 輸 5.2 分",
-      "line_info": "7.5",
+      "confidence_score": 56.0,
+      "spread_logic": "AI projects MIL to lose by 5.0 pts",
+      "spread_logic_zh": "AI 預測 MIL 輸 5.0 分",
+      "line_info": "6.5",
       "ou_pick": "UNDER",
       "ou_line": 231.5,
       "ou_confidence": 63.0,
-      "analysis_content": "## The Call\nThe number says MIL, at home.\nThe market has MIL at +7.5, which implies a 7.5-point loss and a 28% win probability. Our projection is -5.2 for MIL (35% to win), a gap of 2.3 points in favour of the cover.\nConverted with measured from 107 games this season, a 2.3-point edge is a 57% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 59%.\n## Season So Far\nMIL is 2-8 (1-4 home, 1-4 away), scoring 111.2 (21st of 30) and allowing 123.0 (26th of 30) for a -11.8 margin (28th of 30), currently on a L4 run. Last out: L 111-136 vs CLE, L 100-112 at MIN, L 102-109 at BOS.\nTOR is 4-6, scoring 118.8 (6th of 30) and allowing 115.9 (22nd of 30) for a +2.9 margin (13th of 30), on a L1 run. Last out: L 125-131 at LAL, W 125-118 at LAC, L 109-128 at DEN.\nAgainst the number: MIL 3-4 against the spread (43%); 4 over / 3 under; TOR 3-4 against the spread (43%); 5 over / 2 under.\nHead to head, MIL is 0-3 in the last 3 meetings with an average margin of -20.7 (most recent 2026-02-22: L 94-122).\n## Statistical Profile\nThe last 10 games on record (box scores on record through 2026-04-12) show no category where MIL clearly separates from TOR; the projection is being driven by the broader rolling windows and the matchup context rather than one headline stat.\nWhere TOR pushes back:\n• **Paint points** — TOR holds the better number, 51.6 to MIL's 38.2 (league avg 47.4; MIL 29th vs TOR 7th of 30).\n• **Turnovers** — TOR holds the better number, 13.5 to MIL's 17.0 (league avg 13.6; MIL 30th vs TOR 16th of 30).\n• **Net margin** — TOR holds the better number, +2.0 to MIL's -7.9 (league avg -4.7; MIL 22nd vs TOR 8th of 30).\nConsistency check: MIL's game margins over this stretch vary by ±19.7 points (one standard deviation) against ±16.2 for TOR; the more volatile side is MIL.\n## Schedule & Rest\nMIL has one day off; TOR has one day off.\nMIL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 231.5\nTempo check: this season the two offences combine for 230.0 points and the two defences concede 238.9; on record they attempt 74 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 227.0 total points against a line of 231.5, 4.5 points below the number. With totals spreading ±18.7 points around the line, that is a 60% probability of the under; published confidence is 63%.\n## Model Track Record\nThis season, published spread picks are 58-61 (49%); at 59%+ confidence they are 38-43; totals are 61-60 (50%).\n## What Could Go Wrong\nHonest caveats: TOR's edge in Paint points (51.6 vs 38.2) is the cleanest path to an upset of this read; MIL's results swing ±19.7 points game to game, so any single-game edge is fragile; MIL is on a L4 skid and the model does not read locker rooms.",
-      "analysis_content_zh": "## 結論\n本場站 主場的 MIL。\n市場開 MIL +7.5，等於預期輸 7.5 分、勝率 28%；模型估 MIL -5.2（勝率 35%），與盤口差 2.3 分，有利於過盤。\n以本季 107 場實際結果量得換算，2.3 分的優勢等於 57% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（59%）。\n## 本季至今\nMIL 戰績 2-8（主 1-4、客 1-4），場均得 111.2（30 隊中第 21）、失 123.0（30 隊中第 26），淨勝 -11.8（30 隊中第 28），目前 L4。近況：主場負 CLE 111-136、客場負 MIN 100-112、客場負 BOS 102-109。\nTOR 戰績 4-6，場均得 118.8（30 隊中第 6）、失 115.9（30 隊中第 22），淨勝 +2.9（30 隊中第 13），目前 L1。近況：客場負 LAL 125-131、客場勝 LAC 125-118、客場負 DEN 109-128。\n對盤口表現：MIL 讓分 3 勝 4 負 (43%)；大分 4 次、小分 3 次；TOR 讓分 3 勝 4 負 (43%)；大分 5 次、小分 2 次。\n近 3 次交手 MIL 0 勝 3 負，平均分差 -20.7（最近一次 2026-02-22：負 94-122）。\n## 數據體質\n近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-12）裡，MIL 沒有哪一項明顯壓過 TOR；預測主要來自更長的滾動窗口與對戰情境，不是單一亮眼數據。\nTOR 能反擊的地方：\n• **禁區得分**：TOR 這項較好，51.6 對 MIL 的 38.2（聯盟平均 47.4；MIL 第 29、TOR 第 7／30 隊）。\n• **失誤**：TOR 這項較好，13.5 對 MIL 的 17.0（聯盟平均 13.6；MIL 第 30、TOR 第 16／30 隊）。\n• **淨勝分**：TOR 這項較好，+2.0 對 MIL 的 -7.9（聯盟平均 -4.7；MIL 第 22、TOR 第 8／30 隊）。\n穩定度：這段期間 MIL 單場分差的標準差是 ±19.7 分，TOR 是 ±16.2 分；MIL 的表現起伏較大。\n## 賽程與休息\nMIL 休一天；TOR 休一天。\nMIL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 231.5\n節奏觀察：本季兩隊進攻合計 230.0 分，防守合計失 238.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 227.0，盤口 231.5，低於盤口 4.5 分。以總分相對盤口 ±18.7 分的分佈換算，小分機率 60%；公布信心 63%。\n## 模型本季戰績\n本季至今，已發佈讓分 58 勝 61 負（49%）；信心 59% 以上的場次 38 勝 43 負；大小分 61 勝 60 負（50%）。\n## 風險\n坦白說：TOR 在禁區得分上的優勢（51.6 對 38.2）是翻掉這份判讀最直接的路徑；MIL 單場分差起伏 ±19.7 分，單場優勢並不牢靠；MIL 正吞 4 連敗，模型看不到更衣室氣氛。",
-      "predicted_margin": -5.2,
+      "analysis_content": "## The Call\nThe number says MIL, at home.\nThe market has MIL at +6.5, which implies a 6.5-point loss and a 31% win probability. Our projection is -5.0 for MIL (35% to win), a gap of 1.5 points in favour of the cover.\nConverted with measured from 107 games this season, a 1.5-point edge is a 55% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 56%.\n## Season So Far\nMIL is 2-8 (1-4 home, 1-4 away), scoring 111.2 (21st of 30) and allowing 123.0 (26th of 30) for a -11.8 margin (28th of 30), currently on a L4 run. Last out: L 111-136 vs CLE, L 100-112 at MIN, L 102-109 at BOS.\nTOR is 4-6, scoring 118.8 (6th of 30) and allowing 115.9 (22nd of 30) for a +2.9 margin (13th of 30), on a L1 run. Last out: L 125-131 at LAL, W 125-118 at LAC, L 109-128 at DEN.\nAgainst the number: MIL 3-4 against the spread (43%); 4 over / 3 under; TOR 3-4 against the spread (43%); 5 over / 2 under.\nHead to head, MIL is 0-3 in the last 3 meetings with an average margin of -20.7 (most recent 2026-02-22: L 94-122).\n## Statistical Profile\nThe last 10 games on record (box scores on record through 2026-04-12) show no category where MIL clearly separates from TOR; the projection is being driven by the broader rolling windows and the matchup context rather than one headline stat.\nWhere TOR pushes back:\n• **Paint points** — TOR holds the better number, 51.6 to MIL's 38.2 (league avg 47.4; MIL 29th vs TOR 7th of 30).\n• **Turnovers** — TOR holds the better number, 13.5 to MIL's 17.0 (league avg 13.6; MIL 30th vs TOR 16th of 30).\n• **Net margin** — TOR holds the better number, +2.0 to MIL's -7.9 (league avg -4.7; MIL 22nd vs TOR 8th of 30).\nConsistency check: MIL's game margins over this stretch vary by ±19.7 points (one standard deviation) against ±16.2 for TOR; the more volatile side is MIL.\n## Schedule & Rest\nMIL has one day off; TOR has one day off.\nMIL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 231.5\nTempo check: this season the two offences combine for 230.0 points and the two defences concede 238.9; on record they attempt 74 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 227.0 total points against a line of 231.5, 4.5 points below the number. With totals spreading ±18.7 points around the line, that is a 60% probability of the under; published confidence is 63%.\n## Model Track Record\nThis season, published spread picks are 58-61 (49%); at 56%+ confidence they are 43-50; totals are 61-60 (50%).\n## What Could Go Wrong\nHonest caveats: TOR's edge in Paint points (51.6 vs 38.2) is the cleanest path to an upset of this read; MIL's results swing ±19.7 points game to game, so any single-game edge is fragile; MIL is on a L4 skid and the model does not read locker rooms.",
+      "analysis_content_zh": "## 結論\n本場站 主場的 MIL。\n市場開 MIL +6.5，等於預期輸 6.5 分、勝率 31%；模型估 MIL -5.0（勝率 35%），與盤口差 1.5 分，有利於過盤。\n以本季 107 場實際結果量得換算，1.5 分的優勢等於 55% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（56%）。\n## 本季至今\nMIL 戰績 2-8（主 1-4、客 1-4），場均得 111.2（30 隊中第 21）、失 123.0（30 隊中第 26），淨勝 -11.8（30 隊中第 28），目前 L4。近況：主場負 CLE 111-136、客場負 MIN 100-112、客場負 BOS 102-109。\nTOR 戰績 4-6，場均得 118.8（30 隊中第 6）、失 115.9（30 隊中第 22），淨勝 +2.9（30 隊中第 13），目前 L1。近況：客場負 LAL 125-131、客場勝 LAC 125-118、客場負 DEN 109-128。\n對盤口表現：MIL 讓分 3 勝 4 負 (43%)；大分 4 次、小分 3 次；TOR 讓分 3 勝 4 負 (43%)；大分 5 次、小分 2 次。\n近 3 次交手 MIL 0 勝 3 負，平均分差 -20.7（最近一次 2026-02-22：負 94-122）。\n## 數據體質\n近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-12）裡，MIL 沒有哪一項明顯壓過 TOR；預測主要來自更長的滾動窗口與對戰情境，不是單一亮眼數據。\nTOR 能反擊的地方：\n• **禁區得分**：TOR 這項較好，51.6 對 MIL 的 38.2（聯盟平均 47.4；MIL 第 29、TOR 第 7／30 隊）。\n• **失誤**：TOR 這項較好，13.5 對 MIL 的 17.0（聯盟平均 13.6；MIL 第 30、TOR 第 16／30 隊）。\n• **淨勝分**：TOR 這項較好，+2.0 對 MIL 的 -7.9（聯盟平均 -4.7；MIL 第 22、TOR 第 8／30 隊）。\n穩定度：這段期間 MIL 單場分差的標準差是 ±19.7 分，TOR 是 ±16.2 分；MIL 的表現起伏較大。\n## 賽程與休息\nMIL 休一天；TOR 休一天。\nMIL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 231.5\n節奏觀察：本季兩隊進攻合計 230.0 分，防守合計失 238.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 227.0，盤口 231.5，低於盤口 4.5 分。以總分相對盤口 ±18.7 分的分佈換算，小分機率 60%；公布信心 63%。\n## 模型本季戰績\n本季至今，已發佈讓分 58 勝 61 負（49%）；信心 56% 以上的場次 43 勝 50 負；大小分 61 勝 60 負（50%）。\n## 風險\n坦白說：TOR 在禁區得分上的優勢（51.6 對 38.2）是翻掉這份判讀最直接的路徑；MIL 單場分差起伏 ±19.7 分，單場優勢並不牢靠；MIL 正吞 4 連敗，模型看不到更衣室氣氛。",
+      "predicted_margin": -5.0,
       "predicted_total": 227.0,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T21:30:12.221301",
+      "created_at": "2026-11-05T22:00:11.905395",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -51013,19 +51013,19 @@
           }
         ],
         "projection": {
-          "model_margin": -5.2,
+          "model_margin": -5.0,
           "raw_margin": -4.6,
-          "market_margin": -7.5,
-          "edge": 2.3,
+          "market_margin": -6.5,
+          "edge": 1.5,
           "pred_total": 227.0,
           "total_line": 231.5,
           "total_edge": -4.5,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.57,
-          "win_model": 0.346,
-          "win_market": 0.283,
+          "cover": 0.546,
+          "win_model": 0.351,
+          "win_market": 0.31,
           "total": 0.595,
           "sigma_spread": 13.1,
           "sigma_total": 18.7,
@@ -51052,11 +51052,11 @@
             60
           ],
           "spread_at_conf": [
-            38,
-            43
+            43,
+            50
           ]
         },
-        "generated_at": "2026-11-05T21:30:12"
+        "generated_at": "2026-11-05T22:00:11"
       },
       "matches": {
         "id": 150,
@@ -51068,7 +51068,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": 7.5,
+        "vegas_spread": 6.5,
         "vegas_total": 231.5,
         "home_team": {
           "code": "MIL",
@@ -51105,7 +51105,7 @@
       "predicted_total": 225.06,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T21:30:12.279932",
+      "created_at": "2026-11-05T22:00:11.964572",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -51429,7 +51429,7 @@
             26
           ]
         },
-        "generated_at": "2026-11-05T21:30:12"
+        "generated_at": "2026-11-05T22:00:11"
       },
       "matches": {
         "id": 153,
@@ -51478,7 +51478,7 @@
       "predicted_total": 234.2,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-05T21:30:12.331663",
+      "created_at": "2026-11-05T22:00:12.016483",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -51802,7 +51802,7 @@
             21
           ]
         },
-        "generated_at": "2026-11-05T21:30:12"
+        "generated_at": "2026-11-05T22:00:12"
       },
       "matches": {
         "id": 151,
