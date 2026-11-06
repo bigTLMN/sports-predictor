@@ -5663,16 +5663,16 @@
       "home_team_id": 21,
       "away_team_id": 19,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 46,
-      "away_score": 35,
+      "home_score": 56,
+      "away_score": 46,
       "period_scores": {
         "home": [
           33,
-          13
+          23
         ],
         "away": [
           26,
-          9
+          20
         ]
       },
       "vegas_spread": -1.5,
@@ -5701,7 +5701,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 235.5,
+      "vegas_total": 236.5,
       "home_team": {
         "code": "GS",
         "full_name": "Golden State Warriors",
@@ -48090,16 +48090,16 @@
         "home_team_id": 21,
         "away_team_id": 19,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 46,
-        "away_score": 35,
+        "home_score": 56,
+        "away_score": 46,
         "period_scores": {
           "home": [
             33,
-            13
+            23
           ],
           "away": [
             26,
-            9
+            20
           ]
         },
         "vegas_spread": -1.5,
@@ -48476,7 +48476,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -3.5,
-        "vegas_total": 235.5,
+        "vegas_total": 236.5,
         "home_team": {
           "code": "GS",
           "full_name": "Golden State Warriors",
@@ -51869,7 +51869,7 @@
       "predicted_total": 221.62,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T02:30:12.029609",
+      "created_at": "2026-11-06T03:00:11.642696",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -52193,7 +52193,7 @@
             3
           ]
         },
-        "generated_at": "2026-11-06T02:30:12"
+        "generated_at": "2026-11-06T03:00:11"
       },
       "matches": {
         "id": 155,
@@ -52242,7 +52242,7 @@
       "predicted_total": 214.42,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T02:30:12.088711",
+      "created_at": "2026-11-06T03:00:11.702098",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -52566,7 +52566,7 @@
             23
           ]
         },
-        "generated_at": "2026-11-06T02:30:12"
+        "generated_at": "2026-11-06T03:00:11"
       },
       "matches": {
         "id": 156,
@@ -52615,7 +52615,7 @@
       "predicted_total": 234.03,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T02:30:12.144687",
+      "created_at": "2026-11-06T03:00:11.758067",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -52939,7 +52939,7 @@
             21
           ]
         },
-        "generated_at": "2026-11-06T02:30:12"
+        "generated_at": "2026-11-06T03:00:11"
       },
       "matches": {
         "id": 154,
@@ -52988,7 +52988,7 @@
       "predicted_total": 229.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T02:30:12.203240",
+      "created_at": "2026-11-06T03:00:11.816510",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -53312,7 +53312,7 @@
             2
           ]
         },
-        "generated_at": "2026-11-06T02:30:12"
+        "generated_at": "2026-11-06T03:00:11"
       },
       "matches": {
         "id": 157,
@@ -53361,7 +53361,7 @@
       "predicted_total": 221.02,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T02:30:12.261277",
+      "created_at": "2026-11-06T03:00:11.874944",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-27",
@@ -53685,7 +53685,7 @@
             53
           ]
         },
-        "generated_at": "2026-11-06T02:30:12"
+        "generated_at": "2026-11-06T03:00:11"
       },
       "matches": {
         "id": 159,
@@ -53734,7 +53734,7 @@
       "predicted_total": 218.14,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T02:30:12.318258",
+      "created_at": "2026-11-06T03:00:11.932056",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -54058,7 +54058,7 @@
             50
           ]
         },
-        "generated_at": "2026-11-06T02:30:12"
+        "generated_at": "2026-11-06T03:00:11"
       },
       "matches": {
         "id": 160,
@@ -54107,7 +54107,7 @@
       "predicted_total": 223.16,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T02:30:12.376031",
+      "created_at": "2026-11-06T03:00:11.989259",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -54431,7 +54431,7 @@
             56
           ]
         },
-        "generated_at": "2026-11-06T02:30:12"
+        "generated_at": "2026-11-06T03:00:11"
       },
       "matches": {
         "id": 158,
