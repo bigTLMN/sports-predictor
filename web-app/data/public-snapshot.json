@@ -5662,10 +5662,17 @@
       "start_time": "2026-11-06T02:00Z",
       "home_team_id": 21,
       "away_team_id": 19,
-      "status": "STATUS_SCHEDULED",
-      "home_score": 0,
-      "away_score": 0,
-      "period_scores": null,
+      "status": "STATUS_IN_PROGRESS",
+      "home_score": 6,
+      "away_score": 8,
+      "period_scores": {
+        "home": [
+          6
+        ],
+        "away": [
+          8
+        ]
+      },
       "vegas_spread": -1.5,
       "vegas_total": 222.5,
       "home_team": {
@@ -48080,10 +48087,17 @@
         "start_time": "2026-11-06T02:00Z",
         "home_team_id": 21,
         "away_team_id": 19,
-        "status": "STATUS_SCHEDULED",
-        "home_score": 0,
-        "away_score": 0,
-        "period_scores": null,
+        "status": "STATUS_IN_PROGRESS",
+        "home_score": 6,
+        "away_score": 8,
+        "period_scores": {
+          "home": [
+            6
+          ],
+          "away": [
+            8
+          ]
+        },
         "vegas_spread": -1.5,
         "vegas_total": 222.5,
         "home_team": {
