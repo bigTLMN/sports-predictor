@@ -5663,14 +5663,14 @@
       "home_team_id": 21,
       "away_team_id": 19,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 96,
+      "home_score": 102,
       "away_score": 75,
       "period_scores": {
         "home": [
           33,
           30,
           33,
-          0
+          6
         ],
         "away": [
           26,
@@ -5701,16 +5701,16 @@
       "home_team_id": 26,
       "away_team_id": 15,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 36,
-      "away_score": 38,
+      "home_score": 45,
+      "away_score": 49,
       "period_scores": {
         "home": [
           26,
-          10
+          19
         ],
         "away": [
           29,
-          9
+          20
         ]
       },
       "vegas_spread": -3.5,
@@ -5763,8 +5763,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 8.5,
+      "vegas_total": 210.5,
       "home_team": {
         "code": "CHA",
         "full_name": "Charlotte Hornets",
@@ -5939,7 +5939,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 15.5,
-      "vegas_total": 228.5,
+      "vegas_total": 229.5,
       "home_team": {
         "code": "SAC",
         "full_name": "Sacramento Kings",
@@ -48103,14 +48103,14 @@
         "home_team_id": 21,
         "away_team_id": 19,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 96,
+        "home_score": 102,
         "away_score": 75,
         "period_scores": {
           "home": [
             33,
             30,
             33,
-            0
+            6
           ],
           "away": [
             26,
@@ -48489,16 +48489,16 @@
         "home_team_id": 26,
         "away_team_id": 15,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 36,
-        "away_score": 38,
+        "home_score": 45,
+        "away_score": 49,
         "period_scores": {
           "home": [
             26,
-            10
+            19
           ],
           "away": [
             29,
-            9
+            20
           ]
         },
         "vegas_spread": -3.5,
@@ -49247,8 +49247,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 8.5,
+        "vegas_total": 210.5,
         "home_team": {
           "code": "CHA",
           "full_name": "Charlotte Hornets",
@@ -51486,7 +51486,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 15.5,
-        "vegas_total": 228.5,
+        "vegas_total": 229.5,
         "home_team": {
           "code": "SAC",
           "full_name": "Sacramento Kings",
@@ -51895,7 +51895,7 @@
       "predicted_total": 221.62,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T03:30:12.046776",
+      "created_at": "2026-11-06T04:00:11.813228",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -52219,7 +52219,7 @@
             3
           ]
         },
-        "generated_at": "2026-11-06T03:30:12"
+        "generated_at": "2026-11-06T04:00:11"
       },
       "matches": {
         "id": 155,
@@ -52268,7 +52268,7 @@
       "predicted_total": 214.42,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T03:30:12.106509",
+      "created_at": "2026-11-06T04:00:11.873152",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -52592,7 +52592,7 @@
             23
           ]
         },
-        "generated_at": "2026-11-06T03:30:12"
+        "generated_at": "2026-11-06T04:00:11"
       },
       "matches": {
         "id": 156,
@@ -52641,7 +52641,7 @@
       "predicted_total": 234.03,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T03:30:12.162659",
+      "created_at": "2026-11-06T04:00:11.929079",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -52965,7 +52965,7 @@
             21
           ]
         },
-        "generated_at": "2026-11-06T03:30:12"
+        "generated_at": "2026-11-06T04:00:11"
       },
       "matches": {
         "id": 154,
@@ -53014,7 +53014,7 @@
       "predicted_total": 229.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T03:30:12.221222",
+      "created_at": "2026-11-06T04:00:11.987652",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -53338,7 +53338,7 @@
             2
           ]
         },
-        "generated_at": "2026-11-06T03:30:12"
+        "generated_at": "2026-11-06T04:00:11"
       },
       "matches": {
         "id": 157,
@@ -53387,7 +53387,7 @@
       "predicted_total": 221.02,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T03:30:12.279272",
+      "created_at": "2026-11-06T04:00:12.046615",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-27",
@@ -53711,7 +53711,7 @@
             53
           ]
         },
-        "generated_at": "2026-11-06T03:30:12"
+        "generated_at": "2026-11-06T04:00:12"
       },
       "matches": {
         "id": 159,
@@ -53760,7 +53760,7 @@
       "predicted_total": 218.14,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T03:30:12.336549",
+      "created_at": "2026-11-06T04:00:12.104010",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -54084,7 +54084,7 @@
             50
           ]
         },
-        "generated_at": "2026-11-06T03:30:12"
+        "generated_at": "2026-11-06T04:00:12"
       },
       "matches": {
         "id": 160,
@@ -54133,7 +54133,7 @@
       "predicted_total": 223.16,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-06T03:30:12.394492",
+      "created_at": "2026-11-06T04:00:12.161311",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -54457,7 +54457,7 @@
             56
           ]
         },
-        "generated_at": "2026-11-06T03:30:12"
+        "generated_at": "2026-11-06T04:00:12"
       },
       "matches": {
         "id": 158,
