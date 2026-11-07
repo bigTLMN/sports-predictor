@@ -6081,14 +6081,14 @@
       "home_team_id": 11,
       "away_team_id": 8,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 7,
-      "away_score": 14,
+      "home_score": 13,
+      "away_score": 18,
       "period_scores": {
         "home": [
-          7
+          13
         ],
         "away": [
-          14
+          18
         ]
       },
       "vegas_spread": 8.5,
@@ -6291,8 +6291,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -2.5,
-      "vegas_total": 223.5,
+      "vegas_spread": -4.5,
+      "vegas_total": 221.5,
       "home_team": {
         "code": "DET",
         "full_name": "Detroit Pistons",
@@ -53623,14 +53623,14 @@
         "home_team_id": 11,
         "away_team_id": 8,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 7,
-        "away_score": 14,
+        "home_score": 13,
+        "away_score": 18,
         "period_scores": {
           "home": [
-            7
+            13
           ],
           "away": [
-            14
+            18
           ]
         },
         "vegas_spread": 8.5,
@@ -55162,7 +55162,7 @@
       "predicted_total": 233.16,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-07T22:00:11.843972",
+      "created_at": "2026-11-07T22:30:12.441777",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -55486,7 +55486,7 @@
             26
           ]
         },
-        "generated_at": "2026-11-07T22:00:11"
+        "generated_at": "2026-11-07T22:30:12"
       },
       "matches": {
         "id": 161,
@@ -55535,7 +55535,7 @@
       "predicted_total": 226.68,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-07T22:00:11.899461",
+      "created_at": "2026-11-07T22:30:12.497105",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -55859,7 +55859,7 @@
             23
           ]
         },
-        "generated_at": "2026-11-07T22:00:11"
+        "generated_at": "2026-11-07T22:30:12"
       },
       "matches": {
         "id": 164,
@@ -55895,20 +55895,20 @@
       "id": 142,
       "match_id": 162,
       "recommended_team_id": 9,
-      "confidence_score": 57.0,
-      "spread_logic": "AI projects DET to win by 4.5 pts",
-      "spread_logic_zh": "AI 預測 DET 贏 4.5 分",
-      "line_info": "-2.5",
+      "confidence_score": 51.0,
+      "spread_logic": "AI projects DET to win by 4.9 pts",
+      "spread_logic_zh": "AI 預測 DET 贏 4.9 分",
+      "line_info": "-4.5",
       "ou_pick": "UNDER",
-      "ou_line": 223.5,
-      "ou_confidence": 77.0,
-      "analysis_content": "## The Call\nWe land on DET at home.\nThe market has DET at -2.5, which implies a 2.5-point win and a 57% win probability. Our projection is +4.5 for DET (63% to win), a gap of 2.0 points in favour of the cover.\nConverted with measured from 118 games this season, a 2.0-point edge is a 56% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 57%.\n## Season So Far\nDET is 8-2 (3-1 home, 5-1 away), scoring 114.6 (16th of 30) and allowing 104.5 (1st of 30) for a +10.1 margin (4th of 30), currently on a L1 run. Last out: W 110-94 at BKN, W 124-91 at CHA, L 106-112 vs PHI.\nLAL is 8-3, scoring 120.5 (2nd of 30) and allowing 114.9 (18th of 30) for a +5.6 margin (8th of 30), on a W4 run. Last out: W 138-117 vs MIA, W 116-103 at SAC, W 124-118 vs POR.\nAgainst the number: DET 5-2 against the spread (71%); 2 over / 5 under; LAL 6-3 against the spread (67%); 6 over / 3 under.\nHead to head, DET is 3-0 in the last 3 meetings with an average margin of +9.3 (most recent 2026-03-23: W 113-110).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-05-17), DET's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Turnovers** — DET commits 13.5 turnovers to 17.0 (league avg 13.6; DET 17th vs LAL 29th of 30).\n• **Points off turnovers** — DET turns mistakes into 20.7 points to 14.6 (league avg 17.5; DET 3rd vs LAL 27th of 30).\n• **Bench points** — DET gets 30.5 from the bench to 21.6 (league avg 35.3; DET 21st vs LAL 28th of 30).\n• **Net margin** — DET outscores opponents by +3.3 per game against -4.9 (league avg -4.7; DET 4th vs LAL 15th of 30).\nWhere LAL pushes back:\n• **FG%** — LAL holds the better number, 47.6% to DET's 46.1% (league avg 45.8%; DET 16th vs LAL 6th of 30).\nConsistency check: DET's game margins over this stretch vary by ±15.4 points (one standard deviation) against ±13.8 for LAL; the more volatile side is DET.\n## Schedule & Rest\nDET comes in with 3 days of rest; LAL has one day off.\nThe rest edge belongs to DET.\nDET has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 223.5\nTempo check: this season the two offences combine for 235.1 points and the two defences concede 219.4; on record they attempt 57 threes between them (league pair average 73) with 25 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 214.2 total points against a line of 223.5, 9.3 points below the number. With totals spreading ±18.5 points around the line, that is a 69% probability of the under; published confidence is 77%.\n## Model Track Record\nThis season, published spread picks are 63-66 (49%); at 57%+ confidence they are 46-52; totals are 67-65 (51%).\n## What Could Go Wrong\nHonest caveats: LAL's edge in FG% (47.6% vs 46.1%) is the cleanest path to an upset of this read; DET's results swing ±15.4 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n結論落在主場作戰的 DET。\n市場開 DET -2.5，等於預期贏 2.5 分、勝率 57%；模型估 DET +4.5（勝率 63%），與盤口差 2.0 分，有利於過盤。\n以本季 118 場實際結果量得換算，2.0 分的優勢等於 56% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（57%）。\n## 本季至今\nDET 戰績 8-2（主 3-1、客 5-1），場均得 114.6（30 隊中第 16）、失 104.5（30 隊中第 1），淨勝 +10.1（30 隊中第 4），目前 L1。近況：客場勝 BKN 110-94、客場勝 CHA 124-91、主場負 PHI 106-112。\nLAL 戰績 8-3，場均得 120.5（30 隊中第 2）、失 114.9（30 隊中第 18），淨勝 +5.6（30 隊中第 8），目前 W4。近況：主場勝 MIA 138-117、客場勝 SAC 116-103、主場勝 POR 124-118。\n對盤口表現：DET 讓分 5 勝 2 負 (71%)；大分 2 次、小分 5 次；LAL 讓分 6 勝 3 負 (67%)；大分 6 次、小分 3 次。\n近 3 次交手 DET 3 勝 0 負，平均分差 +9.3（最近一次 2026-03-23：勝 113-110）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-05-17）裡，DET 和 LAL 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失誤**：DET 失誤 13.5 次，對手 17.0（聯盟平均 13.6；DET 第 17、LAL 第 29／30 隊）。\n• **失誤轉換得分**：DET 失誤轉換得 20.7 分，對手 14.6（聯盟平均 17.5；DET 第 3、LAL 第 27／30 隊）。\n• **板凳得分**：DET 板凳貢獻 30.5 分，對手 21.6（聯盟平均 35.3；DET 第 21、LAL 第 28／30 隊）。\n• **淨勝分**：DET 場均淨勝 +3.3 分，對手 -4.9（聯盟平均 -4.7；DET 第 4、LAL 第 15／30 隊）。\nLAL 能反擊的地方：\n• **命中率**：LAL 這項較好，47.6% 對 DET 的 46.1%（聯盟平均 45.8%；DET 第 16、LAL 第 6／30 隊）。\n穩定度：這段期間 DET 單場分差的標準差是 ±15.4 分，LAL 是 ±13.8 分；DET 的表現起伏較大。\n## 賽程與休息\nDET 休了 3 天；LAL 休一天。\n體能上 DET 較佔便宜。\nDET 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 223.5\n節奏觀察：本季兩隊進攻合計 235.1 分，防守合計失 219.4 分；近況合計每場出手 57 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 214.2，盤口 223.5，低於盤口 9.3 分。以總分相對盤口 ±18.5 分的分佈換算，小分機率 69%；公布信心 77%。\n## 模型本季戰績\n本季至今，已發佈讓分 63 勝 66 負（49%）；信心 57% 以上的場次 46 勝 52 負；大小分 67 勝 65 負（51%）。\n## 風險\n坦白說：LAL 在命中率上的優勢（47.6% 對 46.1%）是翻掉這份判讀最直接的路徑；DET 單場分差起伏 ±15.4 分，單場優勢並不牢靠。",
-      "predicted_margin": 4.45,
+      "ou_line": 221.5,
+      "ou_confidence": 71.0,
+      "analysis_content": "## The Call\nWe land on DET at home.\nThe market has DET at -4.5, which implies a 4.5-point win and a 63% win probability. Our projection is +4.9 for DET (64% to win), a gap of 0.4 points in favour of the cover.\nConverted with measured from 118 games this season, a 0.4-point edge is a 51% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 51%.\n## Season So Far\nDET is 8-2 (3-1 home, 5-1 away), scoring 114.6 (16th of 30) and allowing 104.5 (1st of 30) for a +10.1 margin (4th of 30), currently on a L1 run. Last out: W 110-94 at BKN, W 124-91 at CHA, L 106-112 vs PHI.\nLAL is 8-3, scoring 120.5 (2nd of 30) and allowing 114.9 (18th of 30) for a +5.6 margin (8th of 30), on a W4 run. Last out: W 138-117 vs MIA, W 116-103 at SAC, W 124-118 vs POR.\nAgainst the number: DET 5-2 against the spread (71%); 2 over / 5 under; LAL 6-3 against the spread (67%); 6 over / 3 under.\nHead to head, DET is 3-0 in the last 3 meetings with an average margin of +9.3 (most recent 2026-03-23: W 113-110).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-05-17), DET's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Turnovers** — DET commits 13.5 turnovers to 17.0 (league avg 13.6; DET 17th vs LAL 29th of 30).\n• **Points off turnovers** — DET turns mistakes into 20.7 points to 14.6 (league avg 17.5; DET 3rd vs LAL 27th of 30).\n• **Bench points** — DET gets 30.5 from the bench to 21.6 (league avg 35.3; DET 21st vs LAL 28th of 30).\n• **Net margin** — DET outscores opponents by +3.3 per game against -4.9 (league avg -4.7; DET 4th vs LAL 15th of 30).\nWhere LAL pushes back:\n• **FG%** — LAL holds the better number, 47.6% to DET's 46.1% (league avg 45.8%; DET 16th vs LAL 6th of 30).\nConsistency check: DET's game margins over this stretch vary by ±15.4 points (one standard deviation) against ±13.8 for LAL; the more volatile side is DET.\n## Schedule & Rest\nDET comes in with 3 days of rest; LAL has one day off.\nThe rest edge belongs to DET.\nDET has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 221.5\nTempo check: this season the two offences combine for 235.1 points and the two defences concede 219.4; on record they attempt 57 threes between them (league pair average 73) with 25 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 214.2 total points against a line of 221.5, 7.3 points below the number. With totals spreading ±18.5 points around the line, that is a 65% probability of the under; published confidence is 71%.\n## Model Track Record\nThis season, published spread picks are 63-66 (49%); at 51%+ confidence they are 59-65; totals are 67-65 (51%).\n## What Could Go Wrong\nHonest caveats: the edge is only 0.4 points (51% cover probability), inside normal line noise; LAL's edge in FG% (47.6% vs 46.1%) is the cleanest path to an upset of this read; DET's results swing ±15.4 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n結論落在主場作戰的 DET。\n市場開 DET -4.5，等於預期贏 4.5 分、勝率 63%；模型估 DET +4.9（勝率 64%），與盤口差 0.4 分，有利於過盤。\n以本季 118 場實際結果量得換算，0.4 分的優勢等於 51% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（51%）。\n## 本季至今\nDET 戰績 8-2（主 3-1、客 5-1），場均得 114.6（30 隊中第 16）、失 104.5（30 隊中第 1），淨勝 +10.1（30 隊中第 4），目前 L1。近況：客場勝 BKN 110-94、客場勝 CHA 124-91、主場負 PHI 106-112。\nLAL 戰績 8-3，場均得 120.5（30 隊中第 2）、失 114.9（30 隊中第 18），淨勝 +5.6（30 隊中第 8），目前 W4。近況：主場勝 MIA 138-117、客場勝 SAC 116-103、主場勝 POR 124-118。\n對盤口表現：DET 讓分 5 勝 2 負 (71%)；大分 2 次、小分 5 次；LAL 讓分 6 勝 3 負 (67%)；大分 6 次、小分 3 次。\n近 3 次交手 DET 3 勝 0 負，平均分差 +9.3（最近一次 2026-03-23：勝 113-110）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-05-17）裡，DET 和 LAL 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失誤**：DET 失誤 13.5 次，對手 17.0（聯盟平均 13.6；DET 第 17、LAL 第 29／30 隊）。\n• **失誤轉換得分**：DET 失誤轉換得 20.7 分，對手 14.6（聯盟平均 17.5；DET 第 3、LAL 第 27／30 隊）。\n• **板凳得分**：DET 板凳貢獻 30.5 分，對手 21.6（聯盟平均 35.3；DET 第 21、LAL 第 28／30 隊）。\n• **淨勝分**：DET 場均淨勝 +3.3 分，對手 -4.9（聯盟平均 -4.7；DET 第 4、LAL 第 15／30 隊）。\nLAL 能反擊的地方：\n• **命中率**：LAL 這項較好，47.6% 對 DET 的 46.1%（聯盟平均 45.8%；DET 第 16、LAL 第 6／30 隊）。\n穩定度：這段期間 DET 單場分差的標準差是 ±15.4 分，LAL 是 ±13.8 分；DET 的表現起伏較大。\n## 賽程與休息\nDET 休了 3 天；LAL 休一天。\n體能上 DET 較佔便宜。\nDET 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 221.5\n節奏觀察：本季兩隊進攻合計 235.1 分，防守合計失 219.4 分；近況合計每場出手 57 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 214.2，盤口 221.5，低於盤口 7.3 分。以總分相對盤口 ±18.5 分的分佈換算，小分機率 65%；公布信心 71%。\n## 模型本季戰績\n本季至今，已發佈讓分 63 勝 66 負（49%）；信心 51% 以上的場次 59 勝 65 負；大小分 67 勝 65 負（51%）。\n## 風險\n坦白說：優勢只有 0.4 分（過盤機率 51%），落在盤口正常波動範圍內；LAL 在命中率上的優勢（47.6% 對 46.1%）是翻掉這份判讀最直接的路徑；DET 單場分差起伏 ±15.4 分，單場優勢並不牢靠。",
+      "predicted_margin": 4.85,
       "predicted_total": 214.22,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-07T22:00:11.961580",
+      "created_at": "2026-11-07T22:30:12.559194",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -56189,20 +56189,20 @@
           }
         ],
         "projection": {
-          "model_margin": 4.5,
+          "model_margin": 4.9,
           "raw_margin": 4.9,
-          "market_margin": 2.5,
-          "edge": 2.0,
+          "market_margin": 4.5,
+          "edge": 0.4,
           "pred_total": 214.2,
-          "total_line": 223.5,
-          "total_edge": -9.3,
+          "total_line": 221.5,
+          "total_edge": -7.3,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.558,
-          "win_model": 0.63,
-          "win_market": 0.574,
-          "total": 0.692,
+          "cover": 0.511,
+          "win_model": 0.641,
+          "win_market": 0.632,
+          "total": 0.653,
           "sigma_spread": 13.4,
           "sigma_total": 18.5,
           "sigma_measured": true
@@ -56228,11 +56228,11 @@
             65
           ],
           "spread_at_conf": [
-            46,
-            52
+            59,
+            65
           ]
         },
-        "generated_at": "2026-11-07T22:00:11"
+        "generated_at": "2026-11-07T22:30:12"
       },
       "matches": {
         "id": 162,
@@ -56244,8 +56244,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -2.5,
-        "vegas_total": 223.5,
+        "vegas_spread": -4.5,
+        "vegas_total": 221.5,
         "home_team": {
           "code": "DET",
           "full_name": "Detroit Pistons",
@@ -56281,7 +56281,7 @@
       "predicted_total": 234.45,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-07T22:00:12.015699",
+      "created_at": "2026-11-07T22:30:12.612972",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -56605,7 +56605,7 @@
             13
           ]
         },
-        "generated_at": "2026-11-07T22:00:12"
+        "generated_at": "2026-11-07T22:30:12"
       },
       "matches": {
         "id": 166,
@@ -56654,7 +56654,7 @@
       "predicted_total": 223.4,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-07T22:00:12.076394",
+      "created_at": "2026-11-07T22:30:12.674761",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -56978,7 +56978,7 @@
             8
           ]
         },
-        "generated_at": "2026-11-07T22:00:12"
+        "generated_at": "2026-11-07T22:30:12"
       },
       "matches": {
         "id": 165,
@@ -57027,7 +57027,7 @@
       "predicted_total": 238.92,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-07T22:00:12.131880",
+      "created_at": "2026-11-07T22:30:12.730724",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-15",
@@ -57351,7 +57351,7 @@
             15
           ]
         },
-        "generated_at": "2026-11-07T22:00:12"
+        "generated_at": "2026-11-07T22:30:12"
       },
       "matches": {
         "id": 163,
@@ -57400,7 +57400,7 @@
       "predicted_total": 244.84,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-07T22:00:12.189639",
+      "created_at": "2026-11-07T22:30:12.788052",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-14",
@@ -57724,7 +57724,7 @@
             31
           ]
         },
-        "generated_at": "2026-11-07T22:00:12"
+        "generated_at": "2026-11-07T22:30:12"
       },
       "matches": {
         "id": 167,
