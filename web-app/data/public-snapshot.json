@@ -5966,7 +5966,7 @@
       "start_time": "2026-11-07T01:00Z",
       "home_team_id": 27,
       "away_team_id": 17,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 109,
       "away_score": 115,
       "period_scores": {
@@ -6006,13 +6006,15 @@
       "away_team_id": 22,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 20,
-      "away_score": 29,
+      "away_score": 34,
       "period_scores": {
         "home": [
-          20
+          20,
+          0
         ],
         "away": [
-          29
+          29,
+          5
         ]
       },
       "vegas_spread": -3.5,
@@ -6037,11 +6039,11 @@
       "home_team_id": 23,
       "away_team_id": 29,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 26,
+      "home_score": 27,
       "away_score": 30,
       "period_scores": {
         "home": [
-          26
+          24
         ],
         "away": [
           30
@@ -50679,13 +50681,15 @@
         "away_team_id": 22,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 20,
-        "away_score": 29,
+        "away_score": 34,
         "period_scores": {
           "home": [
-            20
+            20,
+            0
           ],
           "away": [
-            29
+            29,
+            5
           ]
         },
         "vegas_spread": -3.5,
@@ -51830,11 +51834,11 @@
         "home_team_id": 23,
         "away_team_id": 29,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 26,
+        "home_score": 27,
         "away_score": 30,
         "period_scores": {
           "home": [
-            26
+            24
           ],
           "away": [
             30
@@ -51875,8 +51879,8 @@
       "analysis_content_zh": "## 結論\n本場站 主場的 NO。\n市場開 NO +5.5，等於預期輸 5.5 分、勝率 34%；模型估 NO +1.1（勝率 53%），與盤口差 6.6 分，有利於過盤。\n以本季 107 場實際結果量得換算，6.6 分的優勢等於 69% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +2.8；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（76%）。\n## 本季至今\nNO 戰績 6-4（主 4-2、客 2-2），場均得 118.1（30 隊中第 9）、失 115.7（30 隊中第 21），淨勝 +2.4（30 隊中第 14），目前 W4。近況：主場勝 ATL 121-99、客場勝 MEM 135-134、主場勝 UTAH 120-113。\nMIN 戰績 6-5，場均得 117.4（30 隊中第 12）、失 111.7（30 隊中第 11），淨勝 +5.6（30 隊中第 7），目前 W2。近況：客場負 SA 111-121、主場勝 MIL 112-100、客場勝 HOU 117-107。\n對盤口表現：NO 讓分 6 勝 1 負 (86%)；大分 5 次、小分 2 次；MIN 讓分 7 勝 1 負 (88%)；大分 5 次、小分 3 次。\n近 3 次交手 NO 1 勝 2 負，平均分差 -3.7（最近一次 2026-04-12：負 126-132）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-12）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **快攻得分**：NO 快攻 20.0 分，對手 10.4（聯盟平均 14.2；NO 第 3、MIN 第 24／30 隊）。\n• **禁區得分**：NO 禁區拿 60.6 分，對手 50.2（聯盟平均 47.4；NO 第 2、MIN 第 9／30 隊）。\n• **得分**：NO 場均得 115.9 分，對手 107.5（聯盟平均 111.1；NO 第 7、MIN 第 22／30 隊）。\n• **命中率**：NO 命中率 46.2%，對手 43.2%（聯盟平均 45.8%；NO 第 15、MIN 第 27／30 隊）。\nMIN 能反擊的地方：\n• **失分**：MIN 這項較好，113.9 對 NO 的 126.3（聯盟平均 115.8；NO 第 25、MIN 第 15／30 隊）。\n• **籃板**：MIN 這項較好，45.4 對 NO 的 42.6（聯盟平均 41.9；NO 第 16、MIN 第 4／30 隊）。\n• **淨勝分**：MIN 這項較好，-6.4 對 NO 的 -10.4（聯盟平均 -4.7；NO 第 24、MIN 第 18／30 隊）。\n穩定度：這段期間 NO 單場分差的標準差是 ±13.5 分，MIN 是 ±19.2 分；NO 的表現較穩。\n## 賽程與休息\nNO 休一天；MIN 休一天。\nNO 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：大分 229.5\n節奏觀察：本季兩隊進攻合計 235.5 分，防守合計失 227.4 分；近況合計每場出手 60 記三分（聯盟兩隊平均 73）、快攻 30 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 234.2，盤口 229.5，高於盤口 4.7 分。以總分相對盤口 ±18.7 分的分佈換算，大分機率 60%；公布信心 64%。\n## 模型本季戰績\n本季至今，已發佈讓分 58 勝 61 負（49%）；信心 76% 以上的場次 14 勝 21 負；大小分 61 勝 60 負（50%）。\n## 風險\n坦白說：MIN 在失分上的優勢（113.9 對 126.3）是翻掉這份判讀最直接的路徑。",
       "predicted_margin": 1.11,
       "predicted_total": 234.2,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "LOSS",
       "created_at": "2026-11-05T23:30:12.891280",
       "analysis_facts": {
         "profile_games": 10,
@@ -52209,7 +52213,7 @@
         "start_time": "2026-11-07T01:00Z",
         "home_team_id": 27,
         "away_team_id": 17,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 109,
         "away_score": 115,
         "period_scores": {
