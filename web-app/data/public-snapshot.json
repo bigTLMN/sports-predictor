@@ -6388,13 +6388,13 @@
       "away_team_id": 13,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 9,
-      "away_score": 23,
+      "away_score": 29,
       "period_scores": {
         "home": [
           9
         ],
         "away": [
-          23
+          29
         ]
       },
       "vegas_spread": -8.5,
@@ -6422,7 +6422,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -11.5,
+      "vegas_spread": -12.5,
       "vegas_total": 222.5,
       "home_team": {
         "code": "MIN",
@@ -6672,8 +6672,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -4.5,
-      "vegas_total": 222.5,
+      "vegas_spread": -8.5,
+      "vegas_total": 217.5,
       "home_team": {
         "code": "HOU",
         "full_name": "Houston Rockets",
@@ -56547,13 +56547,13 @@
         "away_team_id": 13,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 9,
-        "away_score": 23,
+        "away_score": 29,
         "period_scores": {
           "home": [
             9
           ],
           "away": [
-            23
+            29
           ]
         },
         "vegas_spread": -8.5,
@@ -57675,7 +57675,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -11.5,
+        "vegas_spread": -12.5,
         "vegas_total": 222.5,
         "home_team": {
           "code": "MIN",
@@ -58085,7 +58085,7 @@
       "predicted_total": 216.07,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T23:00:12.454073",
+      "created_at": "2026-11-08T23:30:11.863196",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -58409,7 +58409,7 @@
             42
           ]
         },
-        "generated_at": "2026-11-08T23:00:12"
+        "generated_at": "2026-11-08T23:30:11"
       },
       "matches": {
         "id": 168,
@@ -58458,7 +58458,7 @@
       "predicted_total": 222.05,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T23:00:12.509051",
+      "created_at": "2026-11-08T23:30:11.918265",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -58782,7 +58782,7 @@
             20
           ]
         },
-        "generated_at": "2026-11-08T23:00:12"
+        "generated_at": "2026-11-08T23:30:11"
       },
       "matches": {
         "id": 169,
@@ -58831,7 +58831,7 @@
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T23:00:12.564514",
+      "created_at": "2026-11-08T23:30:11.974158",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -59155,7 +59155,7 @@
             62
           ]
         },
-        "generated_at": "2026-11-08T23:00:12"
+        "generated_at": "2026-11-08T23:30:11"
       },
       "matches": {
         "id": 172,
@@ -59204,7 +59204,7 @@
       "predicted_total": 227.83,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T23:00:12.624927",
+      "created_at": "2026-11-08T23:30:12.035048",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -59528,7 +59528,7 @@
             3
           ]
         },
-        "generated_at": "2026-11-08T23:00:12"
+        "generated_at": "2026-11-08T23:30:12"
       },
       "matches": {
         "id": 170,
@@ -59564,20 +59564,20 @@
       "id": 151,
       "match_id": 173,
       "recommended_team_id": 8,
-      "confidence_score": 55.0,
-      "spread_logic": "AI projects DEN to lose by 3.2 pts",
-      "spread_logic_zh": "AI 預測 DEN 輸 3.2 分",
-      "line_info": "-4.5",
-      "ou_pick": "UNDER",
-      "ou_line": 222.5,
-      "ou_confidence": 53.0,
-      "analysis_content": "## The Call\nDEN on the road is the side.\nThe market has DEN at +4.5, which implies a 4.5-point loss and a 37% win probability. Our projection is -3.2 for DEN (41% to win), a gap of 1.3 points in favour of the cover.\nConverted with measured from 125 games this season, a 1.3-point edge is a 54% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 55%.\n## Season So Far\nDEN is 6-4 (2-2 home, 4-2 away), scoring 115.3 (14th of 30) and allowing 113.3 (13th of 30) for a +2.0 margin (16th of 30), currently on a W2 run. Last out: L 110-118 vs POR, W 128-109 vs TOR, W 114-102 at IND.\nHOU is 8-3, scoring 116.0 (12th of 30) and allowing 105.4 (4th of 30) for a +10.6 margin (2nd of 30), on a L2 run. Last out: W 109-93 vs BOS, L 107-117 vs MIN, L 99-102 at PHX.\nAgainst the number: DEN 4-4 against the spread (50%); 4 over / 4 under; HOU 6-3 against the spread (67%); 5 over / 4 under.\nHead to head, DEN is 2-1 in the last 3 meetings with an average margin of +8.3 (most recent 2026-03-11: W 129-93).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-04-30) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — DEN gets 34.2 from the bench to 21.3 (league avg 35.3; DEN 18th vs HOU 29th of 30).\n• **Assists** — DEN records 27.3 assists to 22.4 (league avg 25.0; DEN 4th vs HOU 26th of 30).\n• **Points** — DEN scores 117.3 a night to 108.8 (league avg 111.1; DEN 4th vs HOU 19th of 30).\n• **FT%** — DEN converts 82.7% at the line to 76.3% (league avg 77.5%; DEN 5th vs HOU 20th of 30).\nWhere HOU pushes back:\n• **Off. rebounds** — HOU holds the better number, 15.3 to DEN's 9.7 (league avg 11.1; DEN 26th vs HOU 1st of 30).\n• **Points allowed** — HOU holds the better number, 105.1 to DEN's 114.8 (league avg 115.8; DEN 16th vs HOU 5th of 30).\n• **Points off turnovers** — HOU holds the better number, 19.1 to DEN's 15.9 (league avg 17.5; DEN 21st vs HOU 8th of 30).\nConsistency check: DEN's game margins over this stretch vary by ±13.2 points (one standard deviation) against ±14.5 for HOU; the steadier side is DEN.\n## Schedule & Rest\nDEN has one day off; HOU has one day off.\nHOU has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 222.5\nTempo check: this season the two offences combine for 231.3 points and the two defences concede 218.7; on record they attempt 68 threes between them (league pair average 73) with 29 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 221.2 total points against a line of 222.5, 1.3 points below the number. With totals spreading ±18.6 points around the line, that is a 53% probability of the under; published confidence is 53%.\n## Model Track Record\nThis season, published spread picks are 69-67 (51%); at 55%+ confidence they are 54-59; totals are 70-69 (50%).\n## What Could Go Wrong\nHonest caveats: the edge is only 1.3 points (54% cover probability), inside normal line noise; HOU's edge in Off. rebounds (15.3 vs 9.7) is the cleanest path to an upset of this read.",
-      "analysis_content_zh": "## 結論\n本場站 客場的 DEN。\n市場開 DEN +4.5，等於預期輸 4.5 分、勝率 37%；模型估 DEN -3.2（勝率 41%），與盤口差 1.3 分，有利於過盤。\n以本季 125 場實際結果量得換算，1.3 分的優勢等於 54% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（55%）。\n## 本季至今\nDEN 戰績 6-4（主 2-2、客 4-2），場均得 115.3（30 隊中第 14）、失 113.3（30 隊中第 13），淨勝 +2.0（30 隊中第 16），目前 W2。近況：主場負 POR 110-118、主場勝 TOR 128-109、客場勝 IND 114-102。\nHOU 戰績 8-3，場均得 116.0（30 隊中第 12）、失 105.4（30 隊中第 4），淨勝 +10.6（30 隊中第 2），目前 L2。近況：主場勝 BOS 109-93、主場負 MIN 107-117、客場負 PHX 99-102。\n對盤口表現：DEN 讓分 4 勝 4 負 (50%)；大分 4 次、小分 4 次；HOU 讓分 6 勝 3 負 (67%)；大分 5 次、小分 4 次。\n近 3 次交手 DEN 2 勝 1 負，平均分差 +8.3（最近一次 2026-03-11：勝 129-93）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-30），DEN 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：DEN 板凳貢獻 34.2 分，對手 21.3（聯盟平均 35.3；DEN 第 18、HOU 第 29／30 隊）。\n• **助攻**：DEN 助攻 27.3 次，對手 22.4（聯盟平均 25.0；DEN 第 4、HOU 第 26／30 隊）。\n• **得分**：DEN 場均得 117.3 分，對手 108.8（聯盟平均 111.1；DEN 第 4、HOU 第 19／30 隊）。\n• **罰球命中率**：DEN 罰球 82.7%，對手 76.3%（聯盟平均 77.5%；DEN 第 5、HOU 第 20／30 隊）。\nHOU 能反擊的地方：\n• **進攻籃板**：HOU 這項較好，15.3 對 DEN 的 9.7（聯盟平均 11.1；DEN 第 26、HOU 第 1／30 隊）。\n• **失分**：HOU 這項較好，105.1 對 DEN 的 114.8（聯盟平均 115.8；DEN 第 16、HOU 第 5／30 隊）。\n• **失誤轉換得分**：HOU 這項較好，19.1 對 DEN 的 15.9（聯盟平均 17.5；DEN 第 21、HOU 第 8／30 隊）。\n穩定度：這段期間 DEN 單場分差的標準差是 ±13.2 分，HOU 是 ±14.5 分；DEN 的表現較穩。\n## 賽程與休息\nDEN 休一天；HOU 休一天。\nHOU 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 222.5\n節奏觀察：本季兩隊進攻合計 231.3 分，防守合計失 218.7 分；近況合計每場出手 68 記三分（聯盟兩隊平均 73）、快攻 29 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 221.2，盤口 222.5，低於盤口 1.3 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 53%；公布信心 53%。\n## 模型本季戰績\n本季至今，已發佈讓分 69 勝 67 負（51%）；信心 55% 以上的場次 54 勝 59 負；大小分 70 勝 69 負（50%）。\n## 風險\n坦白說：優勢只有 1.3 分（過盤機率 54%），落在盤口正常波動範圍內；HOU 在進攻籃板上的優勢（15.3 對 9.7）是翻掉這份判讀最直接的路徑。",
-      "predicted_margin": -3.16,
+      "confidence_score": 68.0,
+      "spread_logic": "AI projects DEN to lose by 4.0 pts",
+      "spread_logic_zh": "AI 預測 DEN 輸 4.0 分",
+      "line_info": "-8.5",
+      "ou_pick": "OVER",
+      "ou_line": 217.5,
+      "ou_confidence": 61.0,
+      "analysis_content": "## The Call\nDEN on the road is the side.\nThe market has DEN at +8.5, which implies an 8.5-point loss and a 26% win probability. Our projection is -4.0 for DEN (38% to win), a gap of 4.5 points in favour of the cover.\nConverted with measured from 125 games this season, a 4.5-point edge is a 63% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was -2.8; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 68%.\n## Season So Far\nDEN is 6-4 (2-2 home, 4-2 away), scoring 115.3 (14th of 30) and allowing 113.3 (13th of 30) for a +2.0 margin (16th of 30), currently on a W2 run. Last out: L 110-118 vs POR, W 128-109 vs TOR, W 114-102 at IND.\nHOU is 8-3, scoring 116.0 (12th of 30) and allowing 105.4 (4th of 30) for a +10.6 margin (2nd of 30), on a L2 run. Last out: W 109-93 vs BOS, L 107-117 vs MIN, L 99-102 at PHX.\nAgainst the number: DEN 4-4 against the spread (50%); 4 over / 4 under; HOU 6-3 against the spread (67%); 5 over / 4 under.\nHead to head, DEN is 2-1 in the last 3 meetings with an average margin of +8.3 (most recent 2026-03-11: W 129-93).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-04-30) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — DEN gets 34.2 from the bench to 21.3 (league avg 35.3; DEN 18th vs HOU 29th of 30).\n• **Assists** — DEN records 27.3 assists to 22.4 (league avg 25.0; DEN 4th vs HOU 26th of 30).\n• **Points** — DEN scores 117.3 a night to 108.8 (league avg 111.1; DEN 4th vs HOU 19th of 30).\n• **FT%** — DEN converts 82.7% at the line to 76.3% (league avg 77.5%; DEN 5th vs HOU 20th of 30).\nWhere HOU pushes back:\n• **Off. rebounds** — HOU holds the better number, 15.3 to DEN's 9.7 (league avg 11.1; DEN 26th vs HOU 1st of 30).\n• **Points allowed** — HOU holds the better number, 105.1 to DEN's 114.8 (league avg 115.8; DEN 16th vs HOU 5th of 30).\n• **Points off turnovers** — HOU holds the better number, 19.1 to DEN's 15.9 (league avg 17.5; DEN 21st vs HOU 8th of 30).\nConsistency check: DEN's game margins over this stretch vary by ±13.2 points (one standard deviation) against ±14.5 for HOU; the steadier side is DEN.\n## Schedule & Rest\nDEN has one day off; HOU has one day off.\nHOU has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: OVER 217.5\nTempo check: this season the two offences combine for 231.3 points and the two defences concede 218.7; on record they attempt 68 threes between them (league pair average 73) with 29 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 221.2 total points against a line of 217.5, 3.7 points above the number. With totals spreading ±18.6 points around the line, that is a 58% probability of the over; published confidence is 61%.\n## Model Track Record\nThis season, published spread picks are 69-67 (51%); at 68%+ confidence they are 27-32; totals are 70-69 (50%).\n## What Could Go Wrong\nHonest caveats: taking +8.5 relies on DEN staying within reach late; HOU's edge in Off. rebounds (15.3 vs 9.7) is the cleanest path to an upset of this read.",
+      "analysis_content_zh": "## 結論\n本場站 客場的 DEN。\n市場開 DEN +8.5，等於預期輸 8.5 分、勝率 26%；模型估 DEN -4.0（勝率 38%），與盤口差 4.5 分，有利於過盤。\n以本季 125 場實際結果量得換算，4.5 分的優勢等於 63% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 -2.8；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（68%）。\n## 本季至今\nDEN 戰績 6-4（主 2-2、客 4-2），場均得 115.3（30 隊中第 14）、失 113.3（30 隊中第 13），淨勝 +2.0（30 隊中第 16），目前 W2。近況：主場負 POR 110-118、主場勝 TOR 128-109、客場勝 IND 114-102。\nHOU 戰績 8-3，場均得 116.0（30 隊中第 12）、失 105.4（30 隊中第 4），淨勝 +10.6（30 隊中第 2），目前 L2。近況：主場勝 BOS 109-93、主場負 MIN 107-117、客場負 PHX 99-102。\n對盤口表現：DEN 讓分 4 勝 4 負 (50%)；大分 4 次、小分 4 次；HOU 讓分 6 勝 3 負 (67%)；大分 5 次、小分 4 次。\n近 3 次交手 DEN 2 勝 1 負，平均分差 +8.3（最近一次 2026-03-11：勝 129-93）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-30），DEN 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：DEN 板凳貢獻 34.2 分，對手 21.3（聯盟平均 35.3；DEN 第 18、HOU 第 29／30 隊）。\n• **助攻**：DEN 助攻 27.3 次，對手 22.4（聯盟平均 25.0；DEN 第 4、HOU 第 26／30 隊）。\n• **得分**：DEN 場均得 117.3 分，對手 108.8（聯盟平均 111.1；DEN 第 4、HOU 第 19／30 隊）。\n• **罰球命中率**：DEN 罰球 82.7%，對手 76.3%（聯盟平均 77.5%；DEN 第 5、HOU 第 20／30 隊）。\nHOU 能反擊的地方：\n• **進攻籃板**：HOU 這項較好，15.3 對 DEN 的 9.7（聯盟平均 11.1；DEN 第 26、HOU 第 1／30 隊）。\n• **失分**：HOU 這項較好，105.1 對 DEN 的 114.8（聯盟平均 115.8；DEN 第 16、HOU 第 5／30 隊）。\n• **失誤轉換得分**：HOU 這項較好，19.1 對 DEN 的 15.9（聯盟平均 17.5；DEN 第 21、HOU 第 8／30 隊）。\n穩定度：這段期間 DEN 單場分差的標準差是 ±13.2 分，HOU 是 ±14.5 分；DEN 的表現較穩。\n## 賽程與休息\nDEN 休一天；HOU 休一天。\nHOU 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：大分 217.5\n節奏觀察：本季兩隊進攻合計 231.3 分，防守合計失 218.7 分；近況合計每場出手 68 記三分（聯盟兩隊平均 73）、快攻 29 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 221.2，盤口 217.5，高於盤口 3.7 分。以總分相對盤口 ±18.6 分的分佈換算，大分機率 58%；公布信心 61%。\n## 模型本季戰績\n本季至今，已發佈讓分 69 勝 67 負（51%）；信心 68% 以上的場次 27 勝 32 負；大小分 70 勝 69 負（50%）。\n## 風險\n坦白說：收 +8.5 的前提是 DEN 末段還咬得住；HOU 在進攻籃板上的優勢（15.3 對 9.7）是翻掉這份判讀最直接的路徑。",
+      "predicted_margin": -3.96,
       "predicted_total": 221.22,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T23:00:12.682377",
+      "created_at": "2026-11-08T23:30:12.092690",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -59858,20 +59858,20 @@
           }
         ],
         "projection": {
-          "model_margin": -3.2,
+          "model_margin": -4.0,
           "raw_margin": -2.8,
-          "market_margin": -4.5,
-          "edge": 1.3,
+          "market_margin": -8.5,
+          "edge": 4.5,
           "pred_total": 221.2,
-          "total_line": 222.5,
-          "total_edge": -1.3,
+          "total_line": 217.5,
+          "total_edge": 3.7,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.54,
-          "win_model": 0.407,
-          "win_market": 0.368,
-          "total": 0.527,
+          "cover": 0.633,
+          "win_model": 0.384,
+          "win_market": 0.262,
+          "total": 0.579,
           "sigma_spread": 13.4,
           "sigma_total": 18.6,
           "sigma_measured": true
@@ -59897,11 +59897,11 @@
             69
           ],
           "spread_at_conf": [
-            54,
-            59
+            27,
+            32
           ]
         },
-        "generated_at": "2026-11-08T23:00:12"
+        "generated_at": "2026-11-08T23:30:12"
       },
       "matches": {
         "id": 173,
@@ -59913,8 +59913,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -4.5,
-        "vegas_total": 222.5,
+        "vegas_spread": -8.5,
+        "vegas_total": 217.5,
         "home_team": {
           "code": "HOU",
           "full_name": "Houston Rockets",
@@ -59950,7 +59950,7 @@
       "predicted_total": 217.8,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T23:00:12.739611",
+      "created_at": "2026-11-08T23:30:12.150115",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-27",
@@ -60274,7 +60274,7 @@
             32
           ]
         },
-        "generated_at": "2026-11-08T23:00:12"
+        "generated_at": "2026-11-08T23:30:12"
       },
       "matches": {
         "id": 174,
@@ -60323,7 +60323,7 @@
       "predicted_total": 233.65,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T23:00:12.791254",
+      "created_at": "2026-11-08T23:30:12.202467",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -60647,7 +60647,7 @@
             3
           ]
         },
-        "generated_at": "2026-11-08T23:00:12"
+        "generated_at": "2026-11-08T23:30:12"
       },
       "matches": {
         "id": 171,
@@ -60696,7 +60696,7 @@
       "predicted_total": 237.5,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T23:00:12.846856",
+      "created_at": "2026-11-08T23:30:12.258533",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -61020,7 +61020,7 @@
             48
           ]
         },
-        "generated_at": "2026-11-08T23:00:12"
+        "generated_at": "2026-11-08T23:30:12"
       },
       "matches": {
         "id": 175,
