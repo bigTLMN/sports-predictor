@@ -6156,9 +6156,9 @@
       "start_time": "2026-11-08T01:00Z",
       "home_team_id": 6,
       "away_team_id": 28,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 97,
-      "away_score": 107,
+      "away_score": 109,
       "period_scores": {
         "home": [
           27,
@@ -6170,7 +6170,7 @@
           26,
           37,
           25,
-          19
+          21
         ]
       },
       "vegas_spread": 4.5,
@@ -6233,13 +6233,13 @@
       "home_team_id": 26,
       "away_team_id": 19,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 75,
+      "home_score": 77,
       "away_score": 78,
       "period_scores": {
         "home": [
           31,
           26,
-          18
+          20
         ],
         "away": [
           19,
@@ -6269,18 +6269,18 @@
       "home_team_id": 21,
       "away_team_id": 10,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 47,
-      "away_score": 47,
+      "home_score": 53,
+      "away_score": 57,
       "period_scores": {
         "home": [
           35,
           12,
-          0
+          6
         ],
         "away": [
           23,
           24,
-          0
+          10
         ]
       },
       "vegas_spread": 6.5,
@@ -6305,14 +6305,14 @@
       "home_team_id": 22,
       "away_team_id": 29,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 3,
-      "away_score": 11,
+      "home_score": 8,
+      "away_score": 14,
       "period_scores": {
         "home": [
-          3
+          8
         ],
         "away": [
-          11
+          14
         ]
       },
       "vegas_spread": 5.5,
@@ -53002,8 +53002,8 @@
       "analysis_content_zh": "## 結論\n本場站 客場的 NY。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 NY 贏 6.2 分，勝率 68%。\n信心中等（74%）。\n## 本季至今\nNY 戰績 5-4（主 4-2、客 1-2），場均得 111.3（30 隊中第 20）、失 106.8（30 隊中第 3），淨勝 +4.6（30 隊中第 12），目前 W2。近況：客場負 PHI 93-98、主場勝 BKN 103-90、主場勝 CHI 135-105。\nCLE 戰績 4-4，場均得 119.2（30 隊中第 4）、失 117.1（30 隊中第 24），淨勝 +2.1（30 隊中第 15），目前 L2。近況：客場勝 MIL 136-111、主場負 OKC 112-117、客場負 OKC 116-124。\n對盤口表現：NY 讓分 2 勝 5 負 (29%)；大分 2 次、小分 5 次；CLE 讓分 2 勝 6 負 (25%)；大分 4 次、小分 4 次。\n近 3 次交手 NY 3 勝 0 負，平均分差 +22.0（最近一次 2026-05-25：勝 130-93）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-06-13），NY 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -5.7（聯盟平均 -4.7；NY 第 1、CLE 第 16／30 隊）。\n• **快攻得分**：NY 快攻 16.8 分，對手 8.0（聯盟平均 14.2；NY 第 7、CLE 第 30／30 隊）。\n• **三分命中率**：NY 三分命中 39.2%，對手 31.5%（聯盟平均 34.9%；NY 第 3、CLE 第 27／30 隊）。\n• **籃板**：NY 場均 45.7 籃板，對手 38.3（聯盟平均 41.9；NY 第 3、CLE 第 26／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，CLE 是 ±18.0 分；NY 的表現較穩。\n## 賽程與休息\nNY 休了 2 天；CLE 休了 2 天。\nCLE 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 230.6 分，防守合計失 223.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 214.4，盤口 225.0，低於盤口 10.6 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 72%；公布信心 81%。\n## 模型本季戰績\n本季至今，已發佈讓分 59 勝 62 負（49%）；信心 74% 以上的場次 14 勝 23 負；大小分 62 勝 61 負（50%）。\n## 風險\n坦白說：沒有單一明顯風險，主要變數是單場 48 分鐘的隨機性。",
       "predicted_margin": 6.23,
       "predicted_total": 214.42,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-11-06T23:30:12.991184",
       "analysis_facts": {
         "profile_games": 10,
@@ -53336,9 +53336,9 @@
         "start_time": "2026-11-08T01:00Z",
         "home_team_id": 6,
         "away_team_id": 28,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 97,
-        "away_score": 107,
+        "away_score": 109,
         "period_scores": {
           "home": [
             27,
@@ -53350,7 +53350,7 @@
             26,
             37,
             25,
-            19
+            21
           ]
         },
         "vegas_spread": 4.5,
@@ -54495,18 +54495,18 @@
         "home_team_id": 21,
         "away_team_id": 10,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 47,
-        "away_score": 47,
+        "home_score": 53,
+        "away_score": 57,
         "period_scores": {
           "home": [
             35,
             12,
-            0
+            6
           ],
           "away": [
             23,
             24,
-            0
+            10
           ]
         },
         "vegas_spread": 6.5,
@@ -54879,14 +54879,14 @@
         "home_team_id": 22,
         "away_team_id": 29,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 3,
-        "away_score": 11,
+        "home_score": 8,
+        "away_score": 14,
         "period_scores": {
           "home": [
-            3
+            8
           ],
           "away": [
-            11
+            14
           ]
         },
         "vegas_spread": 5.5,
@@ -55259,13 +55259,13 @@
         "home_team_id": 26,
         "away_team_id": 19,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 75,
+        "home_score": 77,
         "away_score": 78,
         "period_scores": {
           "home": [
             31,
             26,
-            18
+            20
           ],
           "away": [
             19,
