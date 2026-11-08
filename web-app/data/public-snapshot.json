@@ -6515,8 +6515,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": 10.5,
-      "vegas_total": 237.5,
+      "vegas_spread": 11.5,
+      "vegas_total": 236.5,
       "home_team": {
         "code": "SAC",
         "full_name": "Sacramento Kings",
@@ -6690,8 +6690,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": 7.5,
-      "vegas_total": 225.5,
+      "vegas_spread": 8.5,
+      "vegas_total": 226.5,
       "home_team": {
         "code": "PHX",
         "full_name": "Phoenix Suns",
@@ -58034,8 +58034,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": 10.5,
-        "vegas_total": 237.5,
+        "vegas_spread": 11.5,
+        "vegas_total": 236.5,
         "home_team": {
           "code": "SAC",
           "full_name": "Sacramento Kings",
@@ -58071,7 +58071,7 @@
       "predicted_total": 216.07,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T22:30:12.138578",
+      "created_at": "2026-11-08T23:00:12.454073",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -58395,7 +58395,7 @@
             42
           ]
         },
-        "generated_at": "2026-11-08T22:30:12"
+        "generated_at": "2026-11-08T23:00:12"
       },
       "matches": {
         "id": 168,
@@ -58444,7 +58444,7 @@
       "predicted_total": 222.05,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T22:30:12.193606",
+      "created_at": "2026-11-08T23:00:12.509051",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -58768,7 +58768,7 @@
             20
           ]
         },
-        "generated_at": "2026-11-08T22:30:12"
+        "generated_at": "2026-11-08T23:00:12"
       },
       "matches": {
         "id": 169,
@@ -58817,7 +58817,7 @@
       "predicted_total": 236.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T22:30:12.249226",
+      "created_at": "2026-11-08T23:00:12.564514",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -59141,7 +59141,7 @@
             62
           ]
         },
-        "generated_at": "2026-11-08T22:30:12"
+        "generated_at": "2026-11-08T23:00:12"
       },
       "matches": {
         "id": 172,
@@ -59190,7 +59190,7 @@
       "predicted_total": 227.83,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T22:30:12.309081",
+      "created_at": "2026-11-08T23:00:12.624927",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -59514,7 +59514,7 @@
             3
           ]
         },
-        "generated_at": "2026-11-08T22:30:12"
+        "generated_at": "2026-11-08T23:00:12"
       },
       "matches": {
         "id": 170,
@@ -59563,7 +59563,7 @@
       "predicted_total": 221.22,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T22:30:12.366037",
+      "created_at": "2026-11-08T23:00:12.682377",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -59887,7 +59887,7 @@
             59
           ]
         },
-        "generated_at": "2026-11-08T22:30:12"
+        "generated_at": "2026-11-08T23:00:12"
       },
       "matches": {
         "id": 173,
@@ -59923,20 +59923,20 @@
       "id": 152,
       "match_id": 174,
       "recommended_team_id": 21,
-      "confidence_score": 66.0,
-      "spread_logic": "AI projects PHX to lose by 3.5 pts",
-      "spread_logic_zh": "AI 預測 PHX 輸 3.5 分",
-      "line_info": "7.5",
+      "confidence_score": 69.0,
+      "spread_logic": "AI projects PHX to lose by 3.7 pts",
+      "spread_logic_zh": "AI 預測 PHX 輸 3.7 分",
+      "line_info": "8.5",
       "ou_pick": "UNDER",
-      "ou_line": 225.5,
-      "ou_confidence": 73.0,
-      "analysis_content": "## The Call\nWe land on PHX at home.\nThe market has PHX at +7.5, which implies a 7.5-point loss and a 29% win probability. Our projection is -3.5 for PHX (40% to win), a gap of 4.0 points in favour of the cover.\nConverted with measured from 125 games this season, a 4.0-point edge is a 62% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was -2.5; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 66%.\n## Season So Far\nPHX is 3-7 (3-3 home, 0-4 away), scoring 111.8 (18th of 30) and allowing 119.1 (26th of 30) for a -7.3 margin (25th of 30), currently on a W2 run. Last out: L 119-132 vs POR, W 117-104 vs ORL, W 102-99 vs HOU.\nSA is 10-2, scoring 119.4 (4th of 30) and allowing 106.8 (6th of 30) for a +12.7 margin (1st of 30), on a W8 run. Last out: W 112-111 vs DAL, W 124-109 at SAC, W 125-103 at POR.\nAgainst the number: PHX 2-5 against the spread (29%); 5 over / 2 under; SA 4-5 against the spread (44%); 3 over / 6 under.\nHead to head, PHX is 1-2 in the last 3 meetings with an average margin of -6.3 (most recent 2026-03-19: L 100-101).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-04-27), here is where PHX separates from SA. League averages and ranks across 30 teams are given for scale.\n• **FG%** — PHX shoots 45.3% from the floor to 42.4% (league avg 45.8%; PHX 18th vs SA 29th of 30).\nWhere SA pushes back:\n• **Points allowed** — SA holds the better number, 104.8 to PHX's 113.1 (league avg 115.8; PHX 14th vs SA 4th of 30).\n• **Fast-break points** — SA holds the better number, 15.0 to PHX's 9.7 (league avg 14.2; PHX 28th vs SA 10th of 30).\n• **Net margin** — SA holds the better number, +1.6 to PHX's -6.3 (league avg -4.7; PHX 17th vs SA 9th of 30).\nConsistency check: PHX's game margins over this stretch vary by ±18.7 points (one standard deviation) against ±13.2 for SA; the more volatile side is PHX.\n## Schedule & Rest\nPHX has one day off; SA has one day off.\nPHX has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 225.5\nTempo check: this season the two offences combine for 231.2 points and the two defences concede 225.8; on record they attempt 75 threes between them (league pair average 73) with 25 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 217.8 total points against a line of 225.5, 7.7 points below the number. With totals spreading ±18.6 points around the line, that is a 66% probability of the under; published confidence is 73%.\n## Model Track Record\nThis season, published spread picks are 69-67 (51%); at 66%+ confidence they are 30-37; totals are 70-69 (50%).\n## What Could Go Wrong\nHonest caveats: SA's edge in Points allowed (104.8 vs 113.1) is the cleanest path to an upset of this read; PHX's results swing ±18.7 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n本場站 主場的 PHX。\n市場開 PHX +7.5，等於預期輸 7.5 分、勝率 29%；模型估 PHX -3.5（勝率 40%），與盤口差 4.0 分，有利於過盤。\n以本季 125 場實際結果量得換算，4.0 分的優勢等於 62% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 -2.5；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（66%）。\n## 本季至今\nPHX 戰績 3-7（主 3-3、客 0-4），場均得 111.8（30 隊中第 18）、失 119.1（30 隊中第 26），淨勝 -7.3（30 隊中第 25），目前 W2。近況：主場負 POR 119-132、主場勝 ORL 117-104、主場勝 HOU 102-99。\nSA 戰績 10-2，場均得 119.4（30 隊中第 4）、失 106.8（30 隊中第 6），淨勝 +12.7（30 隊中第 1），目前 W8。近況：主場勝 DAL 112-111、客場勝 SAC 124-109、客場勝 POR 125-103。\n對盤口表現：PHX 讓分 2 勝 5 負 (29%)；大分 5 次、小分 2 次；SA 讓分 4 勝 5 負 (44%)；大分 3 次、小分 6 次。\n近 3 次交手 PHX 1 勝 2 負，平均分差 -6.3（最近一次 2026-03-19：負 100-101）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-04-27）裡，PHX 和 SA 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **命中率**：PHX 命中率 45.3%，對手 42.4%（聯盟平均 45.8%；PHX 第 18、SA 第 29／30 隊）。\nSA 能反擊的地方：\n• **失分**：SA 這項較好，104.8 對 PHX 的 113.1（聯盟平均 115.8；PHX 第 14、SA 第 4／30 隊）。\n• **快攻得分**：SA 這項較好，15.0 對 PHX 的 9.7（聯盟平均 14.2；PHX 第 28、SA 第 10／30 隊）。\n• **淨勝分**：SA 這項較好，+1.6 對 PHX 的 -6.3（聯盟平均 -4.7；PHX 第 17、SA 第 9／30 隊）。\n穩定度：這段期間 PHX 單場分差的標準差是 ±18.7 分，SA 是 ±13.2 分；PHX 的表現起伏較大。\n## 賽程與休息\nPHX 休一天；SA 休一天。\nPHX 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 225.5\n節奏觀察：本季兩隊進攻合計 231.2 分，防守合計失 225.8 分；近況合計每場出手 75 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 217.8，盤口 225.5，低於盤口 7.7 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 66%；公布信心 73%。\n## 模型本季戰績\n本季至今，已發佈讓分 69 勝 67 負（51%）；信心 66% 以上的場次 30 勝 37 負；大小分 70 勝 69 負（50%）。\n## 風險\n坦白說：SA 在失分上的優勢（104.8 對 113.1）是翻掉這份判讀最直接的路徑；PHX 單場分差起伏 ±18.7 分，單場優勢並不牢靠。",
-      "predicted_margin": -3.47,
+      "ou_line": 226.5,
+      "ou_confidence": 76.0,
+      "analysis_content": "## The Call\nWe land on PHX at home.\nThe market has PHX at +8.5, which implies an 8.5-point loss and a 26% win probability. Our projection is -3.7 for PHX (39% to win), a gap of 4.8 points in favour of the cover.\nConverted with measured from 125 games this season, a 4.8-point edge is a 64% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was -2.5; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 69%.\n## Season So Far\nPHX is 3-7 (3-3 home, 0-4 away), scoring 111.8 (18th of 30) and allowing 119.1 (26th of 30) for a -7.3 margin (25th of 30), currently on a W2 run. Last out: L 119-132 vs POR, W 117-104 vs ORL, W 102-99 vs HOU.\nSA is 10-2, scoring 119.4 (4th of 30) and allowing 106.8 (6th of 30) for a +12.7 margin (1st of 30), on a W8 run. Last out: W 112-111 vs DAL, W 124-109 at SAC, W 125-103 at POR.\nAgainst the number: PHX 2-5 against the spread (29%); 5 over / 2 under; SA 4-5 against the spread (44%); 3 over / 6 under.\nHead to head, PHX is 1-2 in the last 3 meetings with an average margin of -6.3 (most recent 2026-03-19: L 100-101).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-04-27), here is where PHX separates from SA. League averages and ranks across 30 teams are given for scale.\n• **FG%** — PHX shoots 45.3% from the floor to 42.4% (league avg 45.8%; PHX 18th vs SA 29th of 30).\nWhere SA pushes back:\n• **Points allowed** — SA holds the better number, 104.8 to PHX's 113.1 (league avg 115.8; PHX 14th vs SA 4th of 30).\n• **Fast-break points** — SA holds the better number, 15.0 to PHX's 9.7 (league avg 14.2; PHX 28th vs SA 10th of 30).\n• **Net margin** — SA holds the better number, +1.6 to PHX's -6.3 (league avg -4.7; PHX 17th vs SA 9th of 30).\nConsistency check: PHX's game margins over this stretch vary by ±18.7 points (one standard deviation) against ±13.2 for SA; the more volatile side is PHX.\n## Schedule & Rest\nPHX has one day off; SA has one day off.\nPHX has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 226.5\nTempo check: this season the two offences combine for 231.2 points and the two defences concede 225.8; on record they attempt 75 threes between them (league pair average 73) with 25 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 217.8 total points against a line of 226.5, 8.7 points below the number. With totals spreading ±18.6 points around the line, that is a 68% probability of the under; published confidence is 76%.\n## Model Track Record\nThis season, published spread picks are 69-67 (51%); at 69%+ confidence they are 25-32; totals are 70-69 (50%).\n## What Could Go Wrong\nHonest caveats: taking +8.5 relies on PHX staying within reach late; SA's edge in Points allowed (104.8 vs 113.1) is the cleanest path to an upset of this read; PHX's results swing ±18.7 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n本場站 主場的 PHX。\n市場開 PHX +8.5，等於預期輸 8.5 分、勝率 26%；模型估 PHX -3.7（勝率 39%），與盤口差 4.8 分，有利於過盤。\n以本季 125 場實際結果量得換算，4.8 分的優勢等於 64% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 -2.5；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（69%）。\n## 本季至今\nPHX 戰績 3-7（主 3-3、客 0-4），場均得 111.8（30 隊中第 18）、失 119.1（30 隊中第 26），淨勝 -7.3（30 隊中第 25），目前 W2。近況：主場負 POR 119-132、主場勝 ORL 117-104、主場勝 HOU 102-99。\nSA 戰績 10-2，場均得 119.4（30 隊中第 4）、失 106.8（30 隊中第 6），淨勝 +12.7（30 隊中第 1），目前 W8。近況：主場勝 DAL 112-111、客場勝 SAC 124-109、客場勝 POR 125-103。\n對盤口表現：PHX 讓分 2 勝 5 負 (29%)；大分 5 次、小分 2 次；SA 讓分 4 勝 5 負 (44%)；大分 3 次、小分 6 次。\n近 3 次交手 PHX 1 勝 2 負，平均分差 -6.3（最近一次 2026-03-19：負 100-101）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-04-27）裡，PHX 和 SA 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **命中率**：PHX 命中率 45.3%，對手 42.4%（聯盟平均 45.8%；PHX 第 18、SA 第 29／30 隊）。\nSA 能反擊的地方：\n• **失分**：SA 這項較好，104.8 對 PHX 的 113.1（聯盟平均 115.8；PHX 第 14、SA 第 4／30 隊）。\n• **快攻得分**：SA 這項較好，15.0 對 PHX 的 9.7（聯盟平均 14.2；PHX 第 28、SA 第 10／30 隊）。\n• **淨勝分**：SA 這項較好，+1.6 對 PHX 的 -6.3（聯盟平均 -4.7；PHX 第 17、SA 第 9／30 隊）。\n穩定度：這段期間 PHX 單場分差的標準差是 ±18.7 分，SA 是 ±13.2 分；PHX 的表現起伏較大。\n## 賽程與休息\nPHX 休一天；SA 休一天。\nPHX 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 226.5\n節奏觀察：本季兩隊進攻合計 231.2 分，防守合計失 225.8 分；近況合計每場出手 75 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 217.8，盤口 226.5，低於盤口 8.7 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 68%；公布信心 76%。\n## 模型本季戰績\n本季至今，已發佈讓分 69 勝 67 負（51%）；信心 69% 以上的場次 25 勝 32 負；大小分 70 勝 69 負（50%）。\n## 風險\n坦白說：收 +8.5 的前提是 PHX 末段還咬得住；SA 在失分上的優勢（104.8 對 113.1）是翻掉這份判讀最直接的路徑；PHX 單場分差起伏 ±18.7 分，單場優勢並不牢靠。",
+      "predicted_margin": -3.67,
       "predicted_total": 217.8,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T22:30:12.423068",
+      "created_at": "2026-11-08T23:00:12.739611",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-27",
@@ -60217,20 +60217,20 @@
           }
         ],
         "projection": {
-          "model_margin": -3.5,
+          "model_margin": -3.7,
           "raw_margin": -2.5,
-          "market_margin": -7.5,
-          "edge": 4.0,
+          "market_margin": -8.5,
+          "edge": 4.8,
           "pred_total": 217.8,
-          "total_line": 225.5,
-          "total_edge": -7.7,
+          "total_line": 226.5,
+          "total_edge": -8.7,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.618,
-          "win_model": 0.398,
-          "win_market": 0.287,
-          "total": 0.66,
+          "cover": 0.641,
+          "win_model": 0.392,
+          "win_market": 0.262,
+          "total": 0.68,
           "sigma_spread": 13.4,
           "sigma_total": 18.6,
           "sigma_measured": true
@@ -60256,11 +60256,11 @@
             69
           ],
           "spread_at_conf": [
-            30,
-            37
+            25,
+            32
           ]
         },
-        "generated_at": "2026-11-08T22:30:12"
+        "generated_at": "2026-11-08T23:00:12"
       },
       "matches": {
         "id": 174,
@@ -60272,8 +60272,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": 7.5,
-        "vegas_total": 225.5,
+        "vegas_spread": 8.5,
+        "vegas_total": 226.5,
         "home_team": {
           "code": "PHX",
           "full_name": "Phoenix Suns",
@@ -60309,7 +60309,7 @@
       "predicted_total": 233.65,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T22:30:12.475075",
+      "created_at": "2026-11-08T23:00:12.791254",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -60633,7 +60633,7 @@
             3
           ]
         },
-        "generated_at": "2026-11-08T22:30:12"
+        "generated_at": "2026-11-08T23:00:12"
       },
       "matches": {
         "id": 171,
@@ -60682,7 +60682,7 @@
       "predicted_total": 237.5,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-08T22:30:12.531050",
+      "created_at": "2026-11-08T23:00:12.846856",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -61006,7 +61006,7 @@
             48
           ]
         },
-        "generated_at": "2026-11-08T22:30:12"
+        "generated_at": "2026-11-08T23:00:12"
       },
       "matches": {
         "id": 175,
