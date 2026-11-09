@@ -6387,16 +6387,18 @@
       "home_team_id": 9,
       "away_team_id": 13,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 48,
-      "away_score": 61,
+      "home_score": 50,
+      "away_score": 64,
       "period_scores": {
         "home": [
           14,
-          34
+          34,
+          2
         ],
         "away": [
           38,
-          23
+          23,
+          3
         ]
       },
       "vegas_spread": -8.5,
@@ -6421,14 +6423,14 @@
       "home_team_id": 17,
       "away_team_id": 30,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 12,
-      "away_score": 17,
+      "home_score": 23,
+      "away_score": 20,
       "period_scores": {
         "home": [
-          12
+          23
         ],
         "away": [
-          17
+          20
         ]
       },
       "vegas_spread": -12.5,
@@ -6781,8 +6783,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 1.5,
+      "vegas_total": 215.5,
       "home_team": {
         "code": "PHI",
         "full_name": "Philadelphia 76ers",
@@ -56555,16 +56557,18 @@
         "home_team_id": 9,
         "away_team_id": 13,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 48,
-        "away_score": 61,
+        "home_score": 50,
+        "away_score": 64,
         "period_scores": {
           "home": [
             14,
-            34
+            34,
+            2
           ],
           "away": [
             38,
-            23
+            23,
+            3
           ]
         },
         "vegas_spread": -8.5,
@@ -57683,14 +57687,14 @@
         "home_team_id": 17,
         "away_team_id": 30,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 12,
-        "away_score": 17,
+        "home_score": 23,
+        "away_score": 20,
         "period_scores": {
           "home": [
-            12
+            23
           ],
           "away": [
-            17
+            20
           ]
         },
         "vegas_spread": -12.5,
@@ -61074,20 +61078,20 @@
       "id": 155,
       "match_id": 177,
       "recommended_team_id": 2,
-      "confidence_score": 78.0,
-      "spread_logic": "AI projects BOS to win by 7.2 pts",
-      "spread_logic_zh": "AI 預測 BOS 贏 7.2 分",
-      "line_info": "0.0",
+      "confidence_score": 68.0,
+      "spread_logic": "AI projects BOS to win by 6.1 pts",
+      "spread_logic_zh": "AI 預測 BOS 贏 6.1 分",
+      "line_info": "1.5",
       "ou_pick": "UNDER",
-      "ou_line": 225.0,
-      "ou_confidence": 78.0,
-      "analysis_content": "## The Call\nThe number says BOS, on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has BOS by 7.2, a 71% win probability.\nConfidence is high at 78%.\n## Season So Far\nBOS is 9-2 (6-0 home, 3-2 away), scoring 115.6 (13th of 30) and allowing 105.4 (3rd of 30) for a +10.3 margin (3rd of 30), currently on a W2 run. Last out: L 93-109 at HOU, W 109-102 vs MIL, W 119-80 at CHA.\nPHI is 9-3, scoring 111.8 (19th of 30) and allowing 109.3 (7th of 30) for a +2.4 margin (15th of 30), on a W1 run. Last out: W 112-106 at DET, L 95-119 at CLE, W 127-121 at CHI.\nAgainst the number: BOS 4-4 against the spread (50%); 1 over / 7 under; PHI 5-5 against the spread (50%); 3 over / 7 under.\nHead to head, BOS is 0-3 in the last 3 meetings with an average margin of -12.7 (most recent 2026-05-02: L 100-109).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-05-02), BOS's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — BOS gets 40.2 from the bench to 19.7 (league avg 35.3; BOS 10th vs PHI 30th of 30).\n• **Rebounds** — BOS pulls 46.0 rebounds to 37.8 (league avg 41.9; BOS 1st vs PHI 28th of 30).\n• **Net margin** — BOS outscores opponents by +4.5 per game against -7.7 (league avg -4.7; BOS 2nd vs PHI 21st of 30).\n• **Off. rebounds** — BOS grabs 11.5 offensive boards to 8.2 (league avg 11.1; BOS 11th vs PHI 29th of 30).\nWhere PHI pushes back:\n• **Paint points** — PHI holds the better number, 38.6 to BOS's 36.4 (league avg 47.4; BOS 30th vs PHI 28th of 30).\n• **Turnovers** — PHI holds the better number, 11.1 to BOS's 11.8 (league avg 13.6; BOS 5th vs PHI 2nd of 30).\nConsistency check: BOS's game margins over this stretch vary by ±18.3 points (one standard deviation) against ±19.6 for PHI; the steadier side is BOS.\n## Schedule & Rest\nBOS comes in with 3 days of rest; PHI has one day off.\nThe rest edge belongs to BOS.\nPHI has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 227.4 points and the two defences concede 214.7; on record they attempt 81 threes between them (league pair average 73) with 22 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 215.5 total points against a line of 225.0, 9.5 points below the number. With totals spreading ±18.6 points around the line, that is a 70% probability of the under; published confidence is 78%.\n## Model Track Record\nThis season, published spread picks are 70-67 (51%); at 78%+ confidence they are 15-20; totals are 70-70 (50%).\n## What Could Go Wrong\nHonest caveats: PHI's edge in Paint points (38.6 vs 36.4) is the cleanest path to an upset of this read; BOS's results swing ±18.3 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n結論落在客場作戰的 BOS。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 BOS 贏 7.2 分，勝率 71%。\n信心高（78%）。\n## 本季至今\nBOS 戰績 9-2（主 6-0、客 3-2），場均得 115.6（30 隊中第 13）、失 105.4（30 隊中第 3），淨勝 +10.3（30 隊中第 3），目前 W2。近況：客場負 HOU 93-109、主場勝 MIL 109-102、客場勝 CHA 119-80。\nPHI 戰績 9-3，場均得 111.8（30 隊中第 19）、失 109.3（30 隊中第 7），淨勝 +2.4（30 隊中第 15），目前 W1。近況：客場勝 DET 112-106、客場負 CLE 95-119、客場勝 CHI 127-121。\n對盤口表現：BOS 讓分 4 勝 4 負 (50%)；大分 1 次、小分 7 次；PHI 讓分 5 勝 5 負 (50%)；大分 3 次、小分 7 次。\n近 3 次交手 BOS 0 勝 3 負，平均分差 -12.7（最近一次 2026-05-02：負 100-109）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-02），BOS 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：BOS 板凳貢獻 40.2 分，對手 19.7（聯盟平均 35.3；BOS 第 10、PHI 第 30／30 隊）。\n• **籃板**：BOS 場均 46.0 籃板，對手 37.8（聯盟平均 41.9；BOS 第 1、PHI 第 28／30 隊）。\n• **淨勝分**：BOS 場均淨勝 +4.5 分，對手 -7.7（聯盟平均 -4.7；BOS 第 2、PHI 第 21／30 隊）。\n• **進攻籃板**：BOS 進攻籃板 11.5 個，對手 8.2（聯盟平均 11.1；BOS 第 11、PHI 第 29／30 隊）。\nPHI 能反擊的地方：\n• **禁區得分**：PHI 這項較好，38.6 對 BOS 的 36.4（聯盟平均 47.4；BOS 第 30、PHI 第 28／30 隊）。\n• **失誤**：PHI 這項較好，11.1 對 BOS 的 11.8（聯盟平均 13.6；BOS 第 5、PHI 第 2／30 隊）。\n穩定度：這段期間 BOS 單場分差的標準差是 ±18.3 分，PHI 是 ±19.6 分；BOS 的表現較穩。\n## 賽程與休息\nBOS 休了 3 天；PHI 休一天。\n體能上 BOS 較佔便宜。\nPHI 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 227.4 分，防守合計失 214.7 分；近況合計每場出手 81 記三分（聯盟兩隊平均 73）、快攻 22 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 215.5，盤口 225.0，低於盤口 9.5 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 70%；公布信心 78%。\n## 模型本季戰績\n本季至今，已發佈讓分 70 勝 67 負（51%）；信心 78% 以上的場次 15 勝 20 負；大小分 70 勝 70 負（50%）。\n## 風險\n坦白說：PHI 在禁區得分上的優勢（38.6 對 36.4）是翻掉這份判讀最直接的路徑；BOS 單場分差起伏 ±18.3 分，單場優勢並不牢靠。",
-      "predicted_margin": 7.22,
+      "ou_line": 215.5,
+      "ou_confidence": 50.0,
+      "analysis_content": "## The Call\nThe number says BOS, on the road.\nThe market has BOS at -1.5, which implies a 1.5-point win and a 54% win probability. Our projection is +6.1 for BOS (68% to win), a gap of 4.6 points in favour of the cover.\nConverted with measured from 126 games this season, a 4.6-point edge is a 63% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was +7.2; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 68%.\n## Season So Far\nBOS is 9-2 (6-0 home, 3-2 away), scoring 115.6 (13th of 30) and allowing 105.4 (3rd of 30) for a +10.3 margin (3rd of 30), currently on a W2 run. Last out: L 93-109 at HOU, W 109-102 vs MIL, W 119-80 at CHA.\nPHI is 9-3, scoring 111.8 (19th of 30) and allowing 109.3 (7th of 30) for a +2.4 margin (15th of 30), on a W1 run. Last out: W 112-106 at DET, L 95-119 at CLE, W 127-121 at CHI.\nAgainst the number: BOS 4-4 against the spread (50%); 1 over / 7 under; PHI 5-5 against the spread (50%); 3 over / 7 under.\nHead to head, BOS is 0-3 in the last 3 meetings with an average margin of -12.7 (most recent 2026-05-02: L 100-109).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-05-02), BOS's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — BOS gets 40.2 from the bench to 19.7 (league avg 35.3; BOS 10th vs PHI 30th of 30).\n• **Rebounds** — BOS pulls 46.0 rebounds to 37.8 (league avg 41.9; BOS 1st vs PHI 28th of 30).\n• **Net margin** — BOS outscores opponents by +4.5 per game against -7.7 (league avg -4.7; BOS 2nd vs PHI 21st of 30).\n• **Off. rebounds** — BOS grabs 11.5 offensive boards to 8.2 (league avg 11.1; BOS 11th vs PHI 29th of 30).\nWhere PHI pushes back:\n• **Paint points** — PHI holds the better number, 38.6 to BOS's 36.4 (league avg 47.4; BOS 30th vs PHI 28th of 30).\n• **Turnovers** — PHI holds the better number, 11.1 to BOS's 11.8 (league avg 13.6; BOS 5th vs PHI 2nd of 30).\nConsistency check: BOS's game margins over this stretch vary by ±18.3 points (one standard deviation) against ±19.6 for PHI; the steadier side is BOS.\n## Schedule & Rest\nBOS comes in with 3 days of rest; PHI has one day off.\nThe rest edge belongs to BOS.\nPHI has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 215.5\nTempo check: this season the two offences combine for 227.4 points and the two defences concede 214.7; on record they attempt 81 threes between them (league pair average 73) with 22 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 215.5 total points against a line of 215.5, 0.0 points below the number. With totals spreading ±18.6 points around the line, that is a 50% probability of the under; published confidence is 50%.\n## Model Track Record\nThis season, published spread picks are 70-67 (51%); at 68%+ confidence they are 28-32; totals are 70-70 (50%).\n## What Could Go Wrong\nHonest caveats: PHI's edge in Paint points (38.6 vs 36.4) is the cleanest path to an upset of this read; BOS's results swing ±18.3 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n結論落在客場作戰的 BOS。\n市場開 BOS -1.5，等於預期贏 1.5 分、勝率 54%；模型估 BOS +6.1（勝率 68%），與盤口差 4.6 分，有利於過盤。\n以本季 126 場實際結果量得換算，4.6 分的優勢等於 63% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +7.2；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（68%）。\n## 本季至今\nBOS 戰績 9-2（主 6-0、客 3-2），場均得 115.6（30 隊中第 13）、失 105.4（30 隊中第 3），淨勝 +10.3（30 隊中第 3），目前 W2。近況：客場負 HOU 93-109、主場勝 MIL 109-102、客場勝 CHA 119-80。\nPHI 戰績 9-3，場均得 111.8（30 隊中第 19）、失 109.3（30 隊中第 7），淨勝 +2.4（30 隊中第 15），目前 W1。近況：客場勝 DET 112-106、客場負 CLE 95-119、客場勝 CHI 127-121。\n對盤口表現：BOS 讓分 4 勝 4 負 (50%)；大分 1 次、小分 7 次；PHI 讓分 5 勝 5 負 (50%)；大分 3 次、小分 7 次。\n近 3 次交手 BOS 0 勝 3 負，平均分差 -12.7（最近一次 2026-05-02：負 100-109）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-02），BOS 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：BOS 板凳貢獻 40.2 分，對手 19.7（聯盟平均 35.3；BOS 第 10、PHI 第 30／30 隊）。\n• **籃板**：BOS 場均 46.0 籃板，對手 37.8（聯盟平均 41.9；BOS 第 1、PHI 第 28／30 隊）。\n• **淨勝分**：BOS 場均淨勝 +4.5 分，對手 -7.7（聯盟平均 -4.7；BOS 第 2、PHI 第 21／30 隊）。\n• **進攻籃板**：BOS 進攻籃板 11.5 個，對手 8.2（聯盟平均 11.1；BOS 第 11、PHI 第 29／30 隊）。\nPHI 能反擊的地方：\n• **禁區得分**：PHI 這項較好，38.6 對 BOS 的 36.4（聯盟平均 47.4；BOS 第 30、PHI 第 28／30 隊）。\n• **失誤**：PHI 這項較好，11.1 對 BOS 的 11.8（聯盟平均 13.6；BOS 第 5、PHI 第 2／30 隊）。\n穩定度：這段期間 BOS 單場分差的標準差是 ±18.3 分，PHI 是 ±19.6 分；BOS 的表現較穩。\n## 賽程與休息\nBOS 休了 3 天；PHI 休一天。\n體能上 BOS 較佔便宜。\nPHI 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 215.5\n節奏觀察：本季兩隊進攻合計 227.4 分，防守合計失 214.7 分；近況合計每場出手 81 記三分（聯盟兩隊平均 73）、快攻 22 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 215.5，盤口 215.5，低於盤口 0.0 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 50%；公布信心 50%。\n## 模型本季戰績\n本季至今，已發佈讓分 70 勝 67 負（51%）；信心 68% 以上的場次 28 勝 32 負；大小分 70 勝 70 負（50%）。\n## 風險\n坦白說：PHI 在禁區得分上的優勢（38.6 對 36.4）是翻掉這份判讀最直接的路徑；BOS 單場分差起伏 ±18.3 分，單場優勢並不牢靠。",
+      "predicted_margin": 6.08,
       "predicted_total": 215.46,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:00:11.963163",
+      "created_at": "2026-11-09T00:30:11.556620",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -61368,20 +61372,20 @@
           }
         ],
         "projection": {
-          "model_margin": 7.2,
+          "model_margin": 6.1,
           "raw_margin": 7.2,
-          "market_margin": 0.0,
-          "edge": 7.2,
+          "market_margin": 1.5,
+          "edge": 4.6,
           "pred_total": 215.5,
-          "total_line": 225.0,
-          "total_edge": -9.5,
-          "total_is_default": true
+          "total_line": 215.5,
+          "total_edge": -0.0,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.706,
-          "win_model": 0.706,
-          "win_market": null,
-          "total": 0.696,
+          "cover": 0.634,
+          "win_model": 0.676,
+          "win_market": 0.545,
+          "total": 0.501,
           "sigma_spread": 13.3,
           "sigma_total": 18.6,
           "sigma_measured": true
@@ -61407,11 +61411,11 @@
             70
           ],
           "spread_at_conf": [
-            15,
-            20
+            28,
+            32
           ]
         },
-        "generated_at": "2026-11-09T00:00:11"
+        "generated_at": "2026-11-09T00:30:11"
       },
       "matches": {
         "id": 177,
@@ -61423,8 +61427,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 1.5,
+        "vegas_total": 215.5,
         "home_team": {
           "code": "PHI",
           "full_name": "Philadelphia 76ers",
@@ -61460,7 +61464,7 @@
       "predicted_total": 222.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:00:12.021185",
+      "created_at": "2026-11-09T00:30:11.615380",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -61784,7 +61788,7 @@
             60
           ]
         },
-        "generated_at": "2026-11-09T00:00:12"
+        "generated_at": "2026-11-09T00:30:11"
       },
       "matches": {
         "id": 178,
@@ -61833,7 +61837,7 @@
       "predicted_total": 220.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:00:12.079454",
+      "created_at": "2026-11-09T00:30:11.673536",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -62157,7 +62161,7 @@
             39
           ]
         },
-        "generated_at": "2026-11-09T00:00:12"
+        "generated_at": "2026-11-09T00:30:11"
       },
       "matches": {
         "id": 181,
@@ -62206,7 +62210,7 @@
       "predicted_total": 224.9,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:00:12.136969",
+      "created_at": "2026-11-09T00:30:11.730666",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -62530,7 +62534,7 @@
             42
           ]
         },
-        "generated_at": "2026-11-09T00:00:12"
+        "generated_at": "2026-11-09T00:30:11"
       },
       "matches": {
         "id": 180,
@@ -62579,7 +62583,7 @@
       "predicted_total": 216.65,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:00:12.197082",
+      "created_at": "2026-11-09T00:30:11.790449",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -62903,7 +62907,7 @@
             3
           ]
         },
-        "generated_at": "2026-11-09T00:00:12"
+        "generated_at": "2026-11-09T00:30:11"
       },
       "matches": {
         "id": 176,
@@ -62952,7 +62956,7 @@
       "predicted_total": 249.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:00:12.252705",
+      "created_at": "2026-11-09T00:30:11.845904",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-14",
@@ -63276,7 +63280,7 @@
             18
           ]
         },
-        "generated_at": "2026-11-09T00:00:12"
+        "generated_at": "2026-11-09T00:30:11"
       },
       "matches": {
         "id": 179,
