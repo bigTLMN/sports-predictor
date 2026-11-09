@@ -6618,8 +6618,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -1.5,
-      "vegas_total": 236.5,
+      "vegas_spread": -2.5,
+      "vegas_total": 233.5,
       "home_team": {
         "code": "ATL",
         "full_name": "Atlanta Hawks",
@@ -6693,8 +6693,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -2.5,
-      "vegas_total": 228.5,
+      "vegas_spread": 2.5,
+      "vegas_total": 226.5,
       "home_team": {
         "code": "TOR",
         "full_name": "Toronto Raptors",
@@ -6818,8 +6818,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -15.5,
+      "vegas_total": 219.5,
       "home_team": {
         "code": "NY",
         "full_name": "New York Knicks",
@@ -58788,8 +58788,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -1.5,
-        "vegas_total": 236.5,
+        "vegas_spread": -2.5,
+        "vegas_total": 233.5,
         "home_team": {
           "code": "ATL",
           "full_name": "Atlanta Hawks",
@@ -61026,8 +61026,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -2.5,
-        "vegas_total": 228.5,
+        "vegas_spread": 2.5,
+        "vegas_total": 226.5,
         "home_team": {
           "code": "TOR",
           "full_name": "Toronto Raptors",
@@ -61436,7 +61436,7 @@
       "predicted_total": 215.46,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T22:30:12.340560",
+      "created_at": "2026-11-09T23:00:12.234562",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -61760,7 +61760,7 @@
             20
           ]
         },
-        "generated_at": "2026-11-09T22:30:12"
+        "generated_at": "2026-11-09T23:00:12"
       },
       "matches": {
         "id": 177,
@@ -61809,7 +61809,7 @@
       "predicted_total": 222.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T22:30:12.398498",
+      "created_at": "2026-11-09T23:00:12.292363",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -62133,7 +62133,7 @@
             62
           ]
         },
-        "generated_at": "2026-11-09T22:30:12"
+        "generated_at": "2026-11-09T23:00:12"
       },
       "matches": {
         "id": 178,
@@ -62182,7 +62182,7 @@
       "predicted_total": 220.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T22:30:12.456897",
+      "created_at": "2026-11-09T23:00:12.350380",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -62506,7 +62506,7 @@
             40
           ]
         },
-        "generated_at": "2026-11-09T22:30:12"
+        "generated_at": "2026-11-09T23:00:12"
       },
       "matches": {
         "id": 181,
@@ -62555,7 +62555,7 @@
       "predicted_total": 224.9,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T22:30:12.514313",
+      "created_at": "2026-11-09T23:00:12.407610",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -62879,7 +62879,7 @@
             43
           ]
         },
-        "generated_at": "2026-11-09T22:30:12"
+        "generated_at": "2026-11-09T23:00:12"
       },
       "matches": {
         "id": 180,
@@ -62914,24 +62914,24 @@
     {
       "id": 159,
       "match_id": 176,
-      "recommended_team_id": 28,
-      "confidence_score": 95.0,
-      "spread_logic": "AI projects NY to win by 14.0 pts",
-      "spread_logic_zh": "AI 預測 NY 贏 14.0 分",
-      "line_info": "0.0",
+      "recommended_team_id": 16,
+      "confidence_score": 58.0,
+      "spread_logic": "Spread pick withheld (large underdog filter).",
+      "spread_logic_zh": "因大受讓政策，本場不發佈讓分建議。",
+      "line_info": "",
       "ou_pick": "UNDER",
-      "ou_line": 225.0,
-      "ou_confidence": 75.0,
-      "analysis_content": "## The Call\nThe number says NY, at home.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has NY by 14.0, a 85% win probability.\nConfidence is high at 95%.\n## Season So Far\nNY is 6-4 (4-2 home, 2-2 away), scoring 111.1 (22nd of 30) and allowing 105.8 (4th of 30) for a +5.3 margin (9th of 30), currently on a W3 run. Last out: W 103-90 vs BKN, W 135-105 vs CHI, W 109-97 at CLE.\nMIL is 2-10, scoring 109.7 (25th of 30) and allowing 122.3 (27th of 30) for a -12.7 margin (28th of 30), on a L6 run. Last out: L 102-109 at BOS, L 107-121 vs TOR, L 97-117 vs BOS.\nAgainst the number: NY 3-5 against the spread (38%); 2 over / 6 under; MIL 3-6 against the spread (33%); 4 over / 5 under.\nHead to head, NY is 2-1 in the last 3 meetings with an average margin of +9.3 (most recent 2026-02-27: W 127-98).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-06-13), here is where NY separates from MIL. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — NY outscores opponents by +11.9 per game against -7.9 (league avg -4.7; NY 1st vs MIL 22nd of 30).\n• **Points allowed** — NY gives up 102.2 to 118.7 (league avg 115.8; NY 1st vs MIL 21st of 30).\n• **Turnovers** — NY commits 11.5 turnovers to 17.0 (league avg 13.6; NY 4th vs MIL 30th of 30).\n• **Fast-break points** — NY runs for 16.8 fast-break points to 10.0 (league avg 14.2; NY 7th vs MIL 26th of 30).\nWhere MIL pushes back:\n• **Bench points** — MIL holds the better number, 36.6 to NY's 26.3 (league avg 35.3; NY 24th vs MIL 14th of 30).\n• **Assists** — MIL holds the better number, 26.1 to NY's 24.9 (league avg 25.0; NY 14th vs MIL 8th of 30).\nConsistency check: NY's game margins over this stretch vary by ±12.4 points (one standard deviation) against ±19.7 for MIL; the steadier side is NY.\n## Schedule & Rest\nNY comes in with 2 days of rest; MIL has one day off.\nThe rest edge belongs to NY.\nNY has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 220.8 points and the two defences concede 228.1; on record they attempt 82 threes between them (league pair average 73) with 27 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 216.7 total points against a line of 225.0, 8.3 points below the number. With totals spreading ±18.6 points around the line, that is a 67% probability of the under; published confidence is 75%.\n## Model Track Record\nThis season, published spread picks are 73-70 (51%); at 95%+ confidence they are 5-3; totals are 72-74 (49%).\n## What Could Go Wrong\nHonest caveats: MIL's edge in Bench points (36.6 vs 26.3) is the cleanest path to an upset of this read.",
-      "analysis_content_zh": "## 結論\n結論落在主場作戰的 NY。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 NY 贏 14.0 分，勝率 85%。\n信心高（95%）。\n## 本季至今\nNY 戰績 6-4（主 4-2、客 2-2），場均得 111.1（30 隊中第 22）、失 105.8（30 隊中第 4），淨勝 +5.3（30 隊中第 9），目前 W3。近況：主場勝 BKN 103-90、主場勝 CHI 135-105、客場勝 CLE 109-97。\nMIL 戰績 2-10，場均得 109.7（30 隊中第 25）、失 122.3（30 隊中第 27），淨勝 -12.7（30 隊中第 28），目前 L6。近況：客場負 BOS 102-109、主場負 TOR 107-121、主場負 BOS 97-117。\n對盤口表現：NY 讓分 3 勝 5 負 (38%)；大分 2 次、小分 6 次；MIL 讓分 3 勝 6 負 (33%)；大分 4 次、小分 5 次。\n近 3 次交手 NY 2 勝 1 負，平均分差 +9.3（最近一次 2026-02-27：勝 127-98）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-06-13），NY 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -7.9（聯盟平均 -4.7；NY 第 1、MIL 第 22／30 隊）。\n• **失分**：NY 場均失 102.2 分，對手 118.7（聯盟平均 115.8；NY 第 1、MIL 第 21／30 隊）。\n• **失誤**：NY 失誤 11.5 次，對手 17.0（聯盟平均 13.6；NY 第 4、MIL 第 30／30 隊）。\n• **快攻得分**：NY 快攻 16.8 分，對手 10.0（聯盟平均 14.2；NY 第 7、MIL 第 26／30 隊）。\nMIL 能反擊的地方：\n• **板凳得分**：MIL 這項較好，36.6 對 NY 的 26.3（聯盟平均 35.3；NY 第 24、MIL 第 14／30 隊）。\n• **助攻**：MIL 這項較好，26.1 對 NY 的 24.9（聯盟平均 25.0；NY 第 14、MIL 第 8／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，MIL 是 ±19.7 分；NY 的表現較穩。\n## 賽程與休息\nNY 休了 2 天；MIL 休一天。\n體能上 NY 較佔便宜。\nNY 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 220.8 分，防守合計失 228.1 分；近況合計每場出手 82 記三分（聯盟兩隊平均 73）、快攻 27 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 216.7，盤口 225.0，低於盤口 8.3 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 67%；公布信心 75%。\n## 模型本季戰績\n本季至今，已發佈讓分 73 勝 70 負（51%）；信心 95% 以上的場次 5 勝 3 負；大小分 72 勝 74 負（49%）。\n## 風險\n坦白說：MIL 在板凳得分上的優勢（36.6 對 26.3）是翻掉這份判讀最直接的路徑。",
-      "predicted_margin": 14.01,
+      "ou_line": 219.5,
+      "ou_confidence": 58.0,
+      "analysis_content": "## The Call\nThe spread model leans MIL on the road, but the line is +15.5 and our large-underdog rule keeps a pick of that size off the board. Only the total is published here.\n## Season So Far\nMIL is 2-10 (1-6 home, 1-4 away), scoring 109.7 (25th of 30) and allowing 122.3 (27th of 30) for a -12.7 margin (28th of 30), currently on a L6 run. Last out: L 102-109 at BOS, L 107-121 vs TOR, L 97-117 vs BOS.\nNY is 6-4, scoring 111.1 (22nd of 30) and allowing 105.8 (4th of 30) for a +5.3 margin (9th of 30), on a W3 run. Last out: W 103-90 vs BKN, W 135-105 vs CHI, W 109-97 at CLE.\nAgainst the number: MIL 3-6 against the spread (33%); 4 over / 5 under; NY 3-5 against the spread (38%); 2 over / 6 under.\nHead to head, MIL is 1-2 in the last 3 meetings with an average margin of -9.3 (most recent 2026-02-27: L 98-127).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-04-12), MIL's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — MIL gets 36.6 from the bench to 26.3 (league avg 35.3; MIL 14th vs NY 24th of 30).\n• **Assists** — MIL records 26.1 assists to 24.9 (league avg 25.0; MIL 8th vs NY 14th of 30).\nWhere NY pushes back:\n• **Net margin** — NY holds the better number, +11.9 to MIL's -7.9 (league avg -4.7; MIL 22nd vs NY 1st of 30).\n• **Points allowed** — NY holds the better number, 102.2 to MIL's 118.7 (league avg 115.8; MIL 21st vs NY 1st of 30).\n• **Turnovers** — NY holds the better number, 11.5 to MIL's 17.0 (league avg 13.6; MIL 30th vs NY 4th of 30).\nConsistency check: MIL's game margins over this stretch vary by ±19.7 points (one standard deviation) against ±12.4 for NY; the more volatile side is MIL.\n## Schedule & Rest\nMIL has one day off; NY comes in with 2 days of rest.\nThe rest edge belongs to NY.\nNY has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 219.5\nTempo check: this season the two offences combine for 220.8 points and the two defences concede 228.1; on record they attempt 82 threes between them (league pair average 73) with 27 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 216.7 total points against a line of 219.5, 2.8 points below the number. With totals spreading ±18.6 points around the line, that is a 56% probability of the under; published confidence is 58%.\n## Model Track Record\nThis season, published spread picks are 73-70 (51%); totals are 72-74 (49%).\n## What Could Go Wrong\nHonest caveats: NY's edge in Net margin (+11.9 vs -7.9) is the cleanest path to an upset of this read; MIL's results swing ±19.7 points game to game, so any single-game edge is fragile; MIL is on a L6 skid and the model does not read locker rooms.",
+      "analysis_content_zh": "## 結論\n讓分模型偏向客場的 MIL，但盤口是 +15.5，依大受讓規則這種級距不發佈讓分建議。本場只公布大小分。\n## 本季至今\nMIL 戰績 2-10（主 1-6、客 1-4），場均得 109.7（30 隊中第 25）、失 122.3（30 隊中第 27），淨勝 -12.7（30 隊中第 28），目前 L6。近況：客場負 BOS 102-109、主場負 TOR 107-121、主場負 BOS 97-117。\nNY 戰績 6-4，場均得 111.1（30 隊中第 22）、失 105.8（30 隊中第 4），淨勝 +5.3（30 隊中第 9），目前 W3。近況：主場勝 BKN 103-90、主場勝 CHI 135-105、客場勝 CLE 109-97。\n對盤口表現：MIL 讓分 3 勝 6 負 (33%)；大分 4 次、小分 5 次；NY 讓分 3 勝 5 負 (38%)；大分 2 次、小分 6 次。\n近 3 次交手 MIL 1 勝 2 負，平均分差 -9.3（最近一次 2026-02-27：負 98-127）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-12）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：MIL 板凳貢獻 36.6 分，對手 26.3（聯盟平均 35.3；MIL 第 14、NY 第 24／30 隊）。\n• **助攻**：MIL 助攻 26.1 次，對手 24.9（聯盟平均 25.0；MIL 第 8、NY 第 14／30 隊）。\nNY 能反擊的地方：\n• **淨勝分**：NY 這項較好，+11.9 對 MIL 的 -7.9（聯盟平均 -4.7；MIL 第 22、NY 第 1／30 隊）。\n• **失分**：NY 這項較好，102.2 對 MIL 的 118.7（聯盟平均 115.8；MIL 第 21、NY 第 1／30 隊）。\n• **失誤**：NY 這項較好，11.5 對 MIL 的 17.0（聯盟平均 13.6；MIL 第 30、NY 第 4／30 隊）。\n穩定度：這段期間 MIL 單場分差的標準差是 ±19.7 分，NY 是 ±12.4 分；MIL 的表現起伏較大。\n## 賽程與休息\nMIL 休一天；NY 休了 2 天。\n體能上 NY 較佔便宜。\nNY 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 219.5\n節奏觀察：本季兩隊進攻合計 220.8 分，防守合計失 228.1 分；近況合計每場出手 82 記三分（聯盟兩隊平均 73）、快攻 27 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 216.7，盤口 219.5，低於盤口 2.8 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 56%；公布信心 58%。\n## 模型本季戰績\n本季至今，已發佈讓分 73 勝 70 負（51%）；大小分 72 勝 74 負（49%）。\n## 風險\n坦白說：NY 在淨勝分上的優勢（+11.9 對 -7.9）是翻掉這份判讀最直接的路徑；MIL 單場分差起伏 ±19.7 分，單場優勢並不牢靠；MIL 正吞 6 連敗，模型看不到更衣室氣氛。",
+      "predicted_margin": -14.3,
       "predicted_total": 216.65,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T22:30:12.574504",
+      "created_at": "2026-11-09T23:00:12.467420",
       "analysis_facts": {
         "profile_games": 10,
-        "profile_through": "2026-06-13",
+        "profile_through": "2026-04-12",
         "league_teams": 30,
         "season_teams": 30,
         "rows": [
@@ -62939,11 +62939,11 @@
             "key": "ppg",
             "en": "Points",
             "zh": "得分",
-            "rec": 114.1,
-            "opp": 110.8,
+            "rec": 110.8,
+            "opp": 114.1,
             "avg": 111.1,
-            "rec_rank": 9,
-            "opp_rank": 16,
+            "rec_rank": 16,
+            "opp_rank": 9,
             "unit": "",
             "better": "high"
           },
@@ -62951,11 +62951,11 @@
             "key": "papg",
             "en": "Points allowed",
             "zh": "失分",
-            "rec": 102.2,
-            "opp": 118.7,
+            "rec": 118.7,
+            "opp": 102.2,
             "avg": 115.8,
-            "rec_rank": 1,
-            "opp_rank": 21,
+            "rec_rank": 21,
+            "opp_rank": 1,
             "unit": "",
             "better": "low"
           },
@@ -62963,11 +62963,11 @@
             "key": "net",
             "en": "Net margin",
             "zh": "淨勝分",
-            "rec": 11.9,
-            "opp": -7.9,
+            "rec": -7.9,
+            "opp": 11.9,
             "avg": -4.7,
-            "rec_rank": 1,
-            "opp_rank": 22,
+            "rec_rank": 22,
+            "opp_rank": 1,
             "unit": "",
             "better": "high"
           },
@@ -62975,11 +62975,11 @@
             "key": "fg",
             "en": "FG%",
             "zh": "命中率",
-            "rec": 46.8,
-            "opp": 47.4,
+            "rec": 47.4,
+            "opp": 46.8,
             "avg": 45.8,
-            "rec_rank": 11,
-            "opp_rank": 8,
+            "rec_rank": 8,
+            "opp_rank": 11,
             "unit": "%",
             "better": "high"
           },
@@ -62987,11 +62987,11 @@
             "key": "tp",
             "en": "3P%",
             "zh": "三分命中率",
-            "rec": 39.2,
-            "opp": 39.5,
+            "rec": 39.5,
+            "opp": 39.2,
             "avg": 34.9,
-            "rec_rank": 3,
-            "opp_rank": 1,
+            "rec_rank": 1,
+            "opp_rank": 3,
             "unit": "%",
             "better": "high"
           },
@@ -62999,11 +62999,11 @@
             "key": "tpa",
             "en": "3PA",
             "zh": "三分出手",
-            "rec": 36.3,
-            "opp": 45.3,
+            "rec": 45.3,
+            "opp": 36.3,
             "avg": 36.4,
-            "rec_rank": 15,
-            "opp_rank": 3,
+            "rec_rank": 3,
+            "opp_rank": 15,
             "unit": "",
             "better": null
           },
@@ -63011,11 +63011,11 @@
             "key": "ft",
             "en": "FT%",
             "zh": "罰球命中率",
-            "rec": 74.9,
-            "opp": 74.3,
+            "rec": 74.3,
+            "opp": 74.9,
             "avg": 77.5,
-            "rec_rank": 22,
-            "opp_rank": 24,
+            "rec_rank": 24,
+            "opp_rank": 22,
             "unit": "%",
             "better": "high"
           },
@@ -63023,11 +63023,11 @@
             "key": "reb",
             "en": "Rebounds",
             "zh": "籃板",
-            "rec": 45.7,
-            "opp": 40.7,
+            "rec": 40.7,
+            "opp": 45.7,
             "avg": 41.9,
-            "rec_rank": 3,
-            "opp_rank": 19,
+            "rec_rank": 19,
+            "opp_rank": 3,
             "unit": "",
             "better": "high"
           },
@@ -63035,11 +63035,11 @@
             "key": "oreb",
             "en": "Off. rebounds",
             "zh": "進攻籃板",
-            "rec": 11.0,
-            "opp": 10.1,
+            "rec": 10.1,
+            "opp": 11.0,
             "avg": 11.1,
-            "rec_rank": 15,
-            "opp_rank": 23,
+            "rec_rank": 23,
+            "opp_rank": 15,
             "unit": "",
             "better": "high"
           },
@@ -63047,11 +63047,11 @@
             "key": "ast",
             "en": "Assists",
             "zh": "助攻",
-            "rec": 24.9,
-            "opp": 26.1,
+            "rec": 26.1,
+            "opp": 24.9,
             "avg": 25.0,
-            "rec_rank": 14,
-            "opp_rank": 8,
+            "rec_rank": 8,
+            "opp_rank": 14,
             "unit": "",
             "better": "high"
           },
@@ -63059,11 +63059,11 @@
             "key": "tov",
             "en": "Turnovers",
             "zh": "失誤",
-            "rec": 11.5,
-            "opp": 17.0,
+            "rec": 17.0,
+            "opp": 11.5,
             "avg": 13.6,
-            "rec_rank": 4,
-            "opp_rank": 30,
+            "rec_rank": 30,
+            "opp_rank": 4,
             "unit": "",
             "better": "low"
           },
@@ -63071,11 +63071,11 @@
             "key": "paint",
             "en": "Paint points",
             "zh": "禁區得分",
-            "rec": 44.8,
-            "opp": 38.2,
+            "rec": 38.2,
+            "opp": 44.8,
             "avg": 47.4,
-            "rec_rank": 20,
-            "opp_rank": 29,
+            "rec_rank": 29,
+            "opp_rank": 20,
             "unit": "",
             "better": "high"
           },
@@ -63083,11 +63083,11 @@
             "key": "fb",
             "en": "Fast-break points",
             "zh": "快攻得分",
-            "rec": 16.8,
-            "opp": 10.0,
+            "rec": 10.0,
+            "opp": 16.8,
             "avg": 14.2,
-            "rec_rank": 7,
-            "opp_rank": 26,
+            "rec_rank": 26,
+            "opp_rank": 7,
             "unit": "",
             "better": "high"
           },
@@ -63095,11 +63095,11 @@
             "key": "pot",
             "en": "Points off turnovers",
             "zh": "失誤轉換得分",
-            "rec": 18.8,
-            "opp": 15.3,
+            "rec": 15.3,
+            "opp": 18.8,
             "avg": 17.5,
-            "rec_rank": 9,
-            "opp_rank": 24,
+            "rec_rank": 24,
+            "opp_rank": 9,
             "unit": "",
             "better": "high"
           },
@@ -63107,50 +63107,17 @@
             "key": "bench",
             "en": "Bench points",
             "zh": "板凳得分",
-            "rec": 26.3,
-            "opp": 36.6,
+            "rec": 36.6,
+            "opp": 26.3,
             "avg": 35.3,
-            "rec_rank": 24,
-            "opp_rank": 14,
+            "rec_rank": 14,
+            "opp_rank": 24,
             "unit": "",
             "better": "high"
           }
         ],
         "form": {
           "rec": {
-            "games": 10,
-            "wins": 6,
-            "losses": 4,
-            "home": [
-              4,
-              2
-            ],
-            "away": [
-              2,
-              2
-            ],
-            "ppg": 111.1,
-            "papg": 105.8,
-            "margin": 5.3,
-            "rank": {
-              "ppg": 22,
-              "papg": 4,
-              "margin": 9
-            },
-            "streak": "W3",
-            "ats": [
-              3,
-              5,
-              0
-            ],
-            "ou": [
-              2,
-              6,
-              0
-            ],
-            "rest": 3
-          },
-          "opp": {
             "games": 12,
             "wins": 2,
             "losses": 10,
@@ -63182,47 +63149,80 @@
               0
             ],
             "rest": 2
+          },
+          "opp": {
+            "games": 10,
+            "wins": 6,
+            "losses": 4,
+            "home": [
+              4,
+              2
+            ],
+            "away": [
+              2,
+              2
+            ],
+            "ppg": 111.1,
+            "papg": 105.8,
+            "margin": 5.3,
+            "rank": {
+              "ppg": 22,
+              "papg": 4,
+              "margin": 9
+            },
+            "streak": "W3",
+            "ats": [
+              3,
+              5,
+              0
+            ],
+            "ou": [
+              2,
+              6,
+              0
+            ],
+            "rest": 3
           }
         },
         "volatility": {
-          "rec": 12.4,
-          "opp": 19.7
+          "rec": 19.7,
+          "opp": 12.4
         },
         "h2h": [
           {
             "date": "2025-10-28",
-            "won": false,
-            "for": 111,
-            "against": 121
+            "won": true,
+            "for": 121,
+            "against": 111
           },
           {
             "date": "2025-11-28",
-            "won": true,
-            "for": 118,
-            "against": 109
+            "won": false,
+            "for": 109,
+            "against": 118
           },
           {
             "date": "2026-02-27",
-            "won": true,
-            "for": 127,
-            "against": 98
+            "won": false,
+            "for": 98,
+            "against": 127
           }
         ],
         "projection": {
-          "model_margin": 14.0,
-          "raw_margin": 14.0,
-          "market_margin": 0.0,
-          "edge": 14.0,
+          "model_margin": -14.3,
+          "raw_margin": -14.0,
+          "market_margin": -15.5,
+          "edge": 1.2,
           "pred_total": 216.7,
-          "total_line": 225.0,
-          "total_edge": -8.3,
-          "total_is_default": true
+          "total_line": 219.5,
+          "total_edge": -2.8,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.851,
-          "win_model": 0.851,
-          "win_market": null,
-          "total": 0.673,
+          "cover": 0.535,
+          "win_model": 0.144,
+          "win_market": 0.125,
+          "total": 0.561,
           "sigma_spread": 13.5,
           "sigma_total": 18.6,
           "sigma_measured": true
@@ -63248,11 +63248,11 @@
             74
           ],
           "spread_at_conf": [
-            5,
-            3
+            60,
+            62
           ]
         },
-        "generated_at": "2026-11-09T22:30:12"
+        "generated_at": "2026-11-09T23:00:12"
       },
       "matches": {
         "id": 176,
@@ -63264,8 +63264,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -15.5,
+        "vegas_total": 219.5,
         "home_team": {
           "code": "NY",
           "full_name": "New York Knicks",
@@ -63280,8 +63280,8 @@
         "away_team_nba_id": 1610612749
       },
       "recommended_team": {
-        "code": "NY",
-        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png"
+        "code": "MIL",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png"
       }
     },
     {
@@ -63301,7 +63301,7 @@
       "predicted_total": 249.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T22:30:12.630834",
+      "created_at": "2026-11-09T23:00:12.522867",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-14",
@@ -63625,7 +63625,7 @@
             18
           ]
         },
-        "generated_at": "2026-11-09T22:30:12"
+        "generated_at": "2026-11-09T23:00:12"
       },
       "matches": {
         "id": 179,
