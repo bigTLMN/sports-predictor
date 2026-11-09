@@ -6387,18 +6387,20 @@
       "home_team_id": 9,
       "away_team_id": 13,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 81,
-      "away_score": 88,
+      "home_score": 88,
+      "away_score": 90,
       "period_scores": {
         "home": [
           14,
           34,
-          33
+          33,
+          7
         ],
         "away": [
           38,
           23,
-          27
+          27,
+          2
         ]
       },
       "vegas_spread": -8.5,
@@ -6423,16 +6425,16 @@
       "home_team_id": 17,
       "away_team_id": 30,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 43,
-      "away_score": 35,
+      "home_score": 47,
+      "away_score": 43,
       "period_scores": {
         "home": [
           28,
-          15
+          19
         ],
         "away": [
           25,
-          10
+          18
         ]
       },
       "vegas_spread": -12.5,
@@ -6457,14 +6459,14 @@
       "home_team_id": 7,
       "away_team_id": 3,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 19,
-      "away_score": 11,
+      "home_score": 24,
+      "away_score": 12,
       "period_scores": {
         "home": [
-          19
+          24
         ],
         "away": [
-          11
+          13
         ]
       },
       "vegas_spread": -7.5,
@@ -6493,7 +6495,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 13.5,
-      "vegas_total": 221.5,
+      "vegas_total": 222.5,
       "home_team": {
         "code": "MIL",
         "full_name": "Milwaukee Bucks",
@@ -56193,14 +56195,14 @@
         "home_team_id": 7,
         "away_team_id": 3,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 19,
-        "away_score": 11,
+        "home_score": 24,
+        "away_score": 12,
         "period_scores": {
           "home": [
-            19
+            24
           ],
           "away": [
-            11
+            13
           ]
         },
         "vegas_spread": -7.5,
@@ -56573,18 +56575,20 @@
         "home_team_id": 9,
         "away_team_id": 13,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 81,
-        "away_score": 88,
+        "home_score": 88,
+        "away_score": 90,
         "period_scores": {
           "home": [
             14,
             34,
-            33
+            33,
+            7
           ],
           "away": [
             38,
             23,
-            27
+            27,
+            2
           ]
         },
         "vegas_spread": -8.5,
@@ -57334,7 +57338,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 13.5,
-        "vegas_total": 221.5,
+        "vegas_total": 222.5,
         "home_team": {
           "code": "MIL",
           "full_name": "Milwaukee Bucks",
@@ -57703,16 +57707,16 @@
         "home_team_id": 17,
         "away_team_id": 30,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 43,
-        "away_score": 35,
+        "home_score": 47,
+        "away_score": 43,
         "period_scores": {
           "home": [
             28,
-            15
+            19
           ],
           "away": [
             25,
-            10
+            18
           ]
         },
         "vegas_spread": -12.5,
@@ -61109,7 +61113,7 @@
       "predicted_total": 215.46,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:30:11.556620",
+      "created_at": "2026-11-09T01:00:11.176113",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -61433,7 +61437,7 @@
             32
           ]
         },
-        "generated_at": "2026-11-09T00:30:11"
+        "generated_at": "2026-11-09T01:00:11"
       },
       "matches": {
         "id": 177,
@@ -61482,7 +61486,7 @@
       "predicted_total": 222.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:30:11.615380",
+      "created_at": "2026-11-09T01:00:11.233763",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -61806,7 +61810,7 @@
             60
           ]
         },
-        "generated_at": "2026-11-09T00:30:11"
+        "generated_at": "2026-11-09T01:00:11"
       },
       "matches": {
         "id": 178,
@@ -61855,7 +61859,7 @@
       "predicted_total": 220.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:30:11.673536",
+      "created_at": "2026-11-09T01:00:11.291591",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -62179,7 +62183,7 @@
             39
           ]
         },
-        "generated_at": "2026-11-09T00:30:11"
+        "generated_at": "2026-11-09T01:00:11"
       },
       "matches": {
         "id": 181,
@@ -62228,7 +62232,7 @@
       "predicted_total": 224.9,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:30:11.730666",
+      "created_at": "2026-11-09T01:00:11.348672",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -62552,7 +62556,7 @@
             42
           ]
         },
-        "generated_at": "2026-11-09T00:30:11"
+        "generated_at": "2026-11-09T01:00:11"
       },
       "matches": {
         "id": 180,
@@ -62601,7 +62605,7 @@
       "predicted_total": 216.65,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:30:11.790449",
+      "created_at": "2026-11-09T01:00:11.408491",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -62925,7 +62929,7 @@
             3
           ]
         },
-        "generated_at": "2026-11-09T00:30:11"
+        "generated_at": "2026-11-09T01:00:11"
       },
       "matches": {
         "id": 176,
@@ -62974,7 +62978,7 @@
       "predicted_total": 249.19,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-09T00:30:11.845904",
+      "created_at": "2026-11-09T01:00:11.463483",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-14",
@@ -63298,7 +63302,7 @@
             18
           ]
         },
-        "generated_at": "2026-11-09T00:30:11"
+        "generated_at": "2026-11-09T01:00:11"
       },
       "matches": {
         "id": 179,
