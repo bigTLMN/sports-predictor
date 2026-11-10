@@ -6973,7 +6973,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 224.5,
+      "vegas_total": 223.5,
       "home_team": {
         "code": "PHX",
         "full_name": "Phoenix Suns",
@@ -7272,8 +7272,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -5.5,
+      "vegas_total": 222.5,
       "home_team": {
         "code": "HOU",
         "full_name": "Houston Rockets",
@@ -62479,7 +62479,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -3.5,
-        "vegas_total": 224.5,
+        "vegas_total": 223.5,
         "home_team": {
           "code": "PHX",
           "full_name": "Phoenix Suns",
@@ -64007,7 +64007,7 @@
       "predicted_total": 229.41,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-10T22:00:11.958761",
+      "created_at": "2026-11-10T22:30:11.319347",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -64331,7 +64331,7 @@
             25
           ]
         },
-        "generated_at": "2026-11-10T22:00:11"
+        "generated_at": "2026-11-10T22:30:11"
       },
       "matches": {
         "id": 185,
@@ -64367,20 +64367,20 @@
       "id": 162,
       "match_id": 190,
       "recommended_team_id": 10,
-      "confidence_score": 85.0,
-      "spread_logic": "AI projects HOU to win by 8.8 pts",
-      "spread_logic_zh": "AI 預測 HOU 贏 8.8 分",
-      "line_info": "0.0",
+      "confidence_score": 60.0,
+      "spread_logic": "AI projects HOU to win by 8.1 pts",
+      "spread_logic_zh": "AI 預測 HOU 贏 8.1 分",
+      "line_info": "-5.5",
       "ou_pick": "OVER",
-      "ou_line": 225.0,
-      "ou_confidence": 50.0,
-      "analysis_content": "## The Call\nThe number says HOU, at home.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has HOU by 8.8, a 74% win probability.\nConfidence is high at 85%.\n## Season So Far\nHOU is 9-3 (6-1 home, 3-2 away), scoring 115.5 (13th of 30) and allowing 104.9 (2nd of 30) for a +10.6 margin (3rd of 30), currently on a W1 run. Last out: L 107-117 vs MIN, L 99-102 at PHX, W 110-100 vs DEN.\nGS is 9-3, scoring 121.0 (1st of 30) and allowing 111.8 (12th of 30) for a +9.2 margin (4th of 30), on a W8 run. Last out: W 120-100 vs MIA, W 126-119 vs ORL, W 138-87 vs NO.\nAgainst the number: HOU 7-3 against the spread (70%); 5 over / 5 under; GS 8-2 against the spread (80%); 6 over / 4 under.\nHead to head, HOU is 2-1 in the last 3 meetings with an average margin of +1.0 (most recent 2026-04-05: W 117-116).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-05-01) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — HOU gives up 105.1 to 117.3 (league avg 115.8; HOU 5th vs GS 19th of 30).\n• **Net margin** — HOU outscores opponents by +3.7 per game against -7.7 (league avg -4.7; HOU 3rd vs GS 20th of 30).\n• **Off. rebounds** — HOU grabs 15.3 offensive boards to 10.6 (league avg 11.1; HOU 1st vs GS 20th of 30).\n• **Rebounds** — HOU pulls 46.0 rebounds to 39.2 (league avg 41.9; HOU 2nd vs GS 25th of 30).\nWhere GS pushes back:\n• **Bench points** — GS holds the better number, 43.6 to HOU's 21.3 (league avg 35.3; HOU 29th vs GS 7th of 30).\n• **Assists** — GS holds the better number, 27.3 to HOU's 22.4 (league avg 25.0; HOU 26th vs GS 5th of 30).\n• **FT%** — GS holds the better number, 84.1% to HOU's 76.3% (league avg 77.5%; HOU 20th vs GS 2nd of 30).\nConsistency check: HOU's game margins over this stretch vary by ±14.5 points (one standard deviation) against ±8.8 for GS; the more volatile side is HOU.\n## Schedule & Rest\nHOU has one day off; GS has one day off.\nHOU has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 236.5 points and the two defences concede 216.7; on record they attempt 72 threes between them (league pair average 73) with 24 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 225.3 total points against a line of 225.0, 0.3 points above the number. With totals spreading ±18.4 points around the line, that is a 51% probability of the over; published confidence is 50%.\n## Model Track Record\nThis season, published spread picks are 76-75 (50%); at 85%+ confidence they are 10-11; totals are 75-79 (49%).\n## What Could Go Wrong\nHonest caveats: GS's edge in Bench points (43.6 vs 21.3) is the cleanest path to an upset of this read; HOU's results swing ±14.5 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n結論落在主場作戰的 HOU。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 HOU 贏 8.8 分，勝率 74%。\n信心高（85%）。\n## 本季至今\nHOU 戰績 9-3（主 6-1、客 3-2），場均得 115.5（30 隊中第 13）、失 104.9（30 隊中第 2），淨勝 +10.6（30 隊中第 3），目前 W1。近況：主場負 MIN 107-117、客場負 PHX 99-102、主場勝 DEN 110-100。\nGS 戰績 9-3，場均得 121.0（30 隊中第 1）、失 111.8（30 隊中第 12），淨勝 +9.2（30 隊中第 4），目前 W8。近況：主場勝 MIA 120-100、主場勝 ORL 126-119、主場勝 NO 138-87。\n對盤口表現：HOU 讓分 7 勝 3 負 (70%)；大分 5 次、小分 5 次；GS 讓分 8 勝 2 負 (80%)；大分 6 次、小分 4 次。\n近 3 次交手 HOU 2 勝 1 負，平均分差 +1.0（最近一次 2026-04-05：勝 117-116）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-05-01）裡，HOU 和 GS 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：HOU 場均失 105.1 分，對手 117.3（聯盟平均 115.8；HOU 第 5、GS 第 19／30 隊）。\n• **淨勝分**：HOU 場均淨勝 +3.7 分，對手 -7.7（聯盟平均 -4.7；HOU 第 3、GS 第 20／30 隊）。\n• **進攻籃板**：HOU 進攻籃板 15.3 個，對手 10.6（聯盟平均 11.1；HOU 第 1、GS 第 20／30 隊）。\n• **籃板**：HOU 場均 46.0 籃板，對手 39.2（聯盟平均 41.9；HOU 第 2、GS 第 25／30 隊）。\nGS 能反擊的地方：\n• **板凳得分**：GS 這項較好，43.6 對 HOU 的 21.3（聯盟平均 35.3；HOU 第 29、GS 第 7／30 隊）。\n• **助攻**：GS 這項較好，27.3 對 HOU 的 22.4（聯盟平均 25.0；HOU 第 26、GS 第 5／30 隊）。\n• **罰球命中率**：GS 這項較好，84.1% 對 HOU 的 76.3%（聯盟平均 77.5%；HOU 第 20、GS 第 2／30 隊）。\n穩定度：這段期間 HOU 單場分差的標準差是 ±14.5 分，GS 是 ±8.8 分；HOU 的表現起伏較大。\n## 賽程與休息\nHOU 休一天；GS 休一天。\nHOU 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 236.5 分，防守合計失 216.7 分；近況合計每場出手 72 記三分（聯盟兩隊平均 73）、快攻 24 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 225.3，盤口 225.0，高於盤口 0.3 分。以總分相對盤口 ±18.4 分的分佈換算，大分機率 51%；公布信心 50%。\n## 模型本季戰績\n本季至今，已發佈讓分 76 勝 75 負（50%）；信心 85% 以上的場次 10 勝 11 負；大小分 75 勝 79 負（49%）。\n## 風險\n坦白說：GS 在板凳得分上的優勢（43.6 對 21.3）是翻掉這份判讀最直接的路徑；HOU 單場分差起伏 ±14.5 分，單場優勢並不牢靠。",
-      "predicted_margin": 8.75,
+      "ou_line": 222.5,
+      "ou_confidence": 58.0,
+      "analysis_content": "## The Call\nThe number says HOU, at home.\nThe market has HOU at -5.5, which implies a 5.5-point win and a 65% win probability. Our projection is +8.1 for HOU (72% to win), a gap of 2.6 points in favour of the cover.\nConverted with measured from 140 games this season, a 2.6-point edge is a 57% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 60%.\n## Season So Far\nHOU is 9-3 (6-1 home, 3-2 away), scoring 115.5 (13th of 30) and allowing 104.9 (2nd of 30) for a +10.6 margin (3rd of 30), currently on a W1 run. Last out: L 107-117 vs MIN, L 99-102 at PHX, W 110-100 vs DEN.\nGS is 9-3, scoring 121.0 (1st of 30) and allowing 111.8 (12th of 30) for a +9.2 margin (4th of 30), on a W8 run. Last out: W 120-100 vs MIA, W 126-119 vs ORL, W 138-87 vs NO.\nAgainst the number: HOU 7-3 against the spread (70%); 5 over / 5 under; GS 8-2 against the spread (80%); 6 over / 4 under.\nHead to head, HOU is 2-1 in the last 3 meetings with an average margin of +1.0 (most recent 2026-04-05: W 117-116).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-05-01) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — HOU gives up 105.1 to 117.3 (league avg 115.8; HOU 5th vs GS 19th of 30).\n• **Net margin** — HOU outscores opponents by +3.7 per game against -7.7 (league avg -4.7; HOU 3rd vs GS 20th of 30).\n• **Off. rebounds** — HOU grabs 15.3 offensive boards to 10.6 (league avg 11.1; HOU 1st vs GS 20th of 30).\n• **Rebounds** — HOU pulls 46.0 rebounds to 39.2 (league avg 41.9; HOU 2nd vs GS 25th of 30).\nWhere GS pushes back:\n• **Bench points** — GS holds the better number, 43.6 to HOU's 21.3 (league avg 35.3; HOU 29th vs GS 7th of 30).\n• **Assists** — GS holds the better number, 27.3 to HOU's 22.4 (league avg 25.0; HOU 26th vs GS 5th of 30).\n• **FT%** — GS holds the better number, 84.1% to HOU's 76.3% (league avg 77.5%; HOU 20th vs GS 2nd of 30).\nConsistency check: HOU's game margins over this stretch vary by ±14.5 points (one standard deviation) against ±8.8 for GS; the more volatile side is HOU.\n## Schedule & Rest\nHOU has one day off; GS has one day off.\nHOU has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: OVER 222.5\nTempo check: this season the two offences combine for 236.5 points and the two defences concede 216.7; on record they attempt 72 threes between them (league pair average 73) with 24 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 225.3 total points against a line of 222.5, 2.8 points above the number. With totals spreading ±18.4 points around the line, that is a 56% probability of the over; published confidence is 58%.\n## Model Track Record\nThis season, published spread picks are 76-75 (50%); at 60%+ confidence they are 50-50; totals are 75-79 (49%).\n## What Could Go Wrong\nHonest caveats: GS's edge in Bench points (43.6 vs 21.3) is the cleanest path to an upset of this read; HOU's results swing ±14.5 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n結論落在主場作戰的 HOU。\n市場開 HOU -5.5，等於預期贏 5.5 分、勝率 65%；模型估 HOU +8.1（勝率 72%），與盤口差 2.6 分，有利於過盤。\n以本季 140 場實際結果量得換算，2.6 分的優勢等於 57% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（60%）。\n## 本季至今\nHOU 戰績 9-3（主 6-1、客 3-2），場均得 115.5（30 隊中第 13）、失 104.9（30 隊中第 2），淨勝 +10.6（30 隊中第 3），目前 W1。近況：主場負 MIN 107-117、客場負 PHX 99-102、主場勝 DEN 110-100。\nGS 戰績 9-3，場均得 121.0（30 隊中第 1）、失 111.8（30 隊中第 12），淨勝 +9.2（30 隊中第 4），目前 W8。近況：主場勝 MIA 120-100、主場勝 ORL 126-119、主場勝 NO 138-87。\n對盤口表現：HOU 讓分 7 勝 3 負 (70%)；大分 5 次、小分 5 次；GS 讓分 8 勝 2 負 (80%)；大分 6 次、小分 4 次。\n近 3 次交手 HOU 2 勝 1 負，平均分差 +1.0（最近一次 2026-04-05：勝 117-116）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-05-01）裡，HOU 和 GS 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：HOU 場均失 105.1 分，對手 117.3（聯盟平均 115.8；HOU 第 5、GS 第 19／30 隊）。\n• **淨勝分**：HOU 場均淨勝 +3.7 分，對手 -7.7（聯盟平均 -4.7；HOU 第 3、GS 第 20／30 隊）。\n• **進攻籃板**：HOU 進攻籃板 15.3 個，對手 10.6（聯盟平均 11.1；HOU 第 1、GS 第 20／30 隊）。\n• **籃板**：HOU 場均 46.0 籃板，對手 39.2（聯盟平均 41.9；HOU 第 2、GS 第 25／30 隊）。\nGS 能反擊的地方：\n• **板凳得分**：GS 這項較好，43.6 對 HOU 的 21.3（聯盟平均 35.3；HOU 第 29、GS 第 7／30 隊）。\n• **助攻**：GS 這項較好，27.3 對 HOU 的 22.4（聯盟平均 25.0；HOU 第 26、GS 第 5／30 隊）。\n• **罰球命中率**：GS 這項較好，84.1% 對 HOU 的 76.3%（聯盟平均 77.5%；HOU 第 20、GS 第 2／30 隊）。\n穩定度：這段期間 HOU 單場分差的標準差是 ±14.5 分，GS 是 ±8.8 分；HOU 的表現起伏較大。\n## 賽程與休息\nHOU 休一天；GS 休一天。\nHOU 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：大分 222.5\n節奏觀察：本季兩隊進攻合計 236.5 分，防守合計失 216.7 分；近況合計每場出手 72 記三分（聯盟兩隊平均 73）、快攻 24 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 225.3，盤口 222.5，高於盤口 2.8 分。以總分相對盤口 ±18.4 分的分佈換算，大分機率 56%；公布信心 58%。\n## 模型本季戰績\n本季至今，已發佈讓分 76 勝 75 負（50%）；信心 60% 以上的場次 50 勝 50 負；大小分 75 勝 79 負（49%）。\n## 風險\n坦白說：GS 在板凳得分上的優勢（43.6 對 21.3）是翻掉這份判讀最直接的路徑；HOU 單場分差起伏 ±14.5 分，單場優勢並不牢靠。",
+      "predicted_margin": 8.1,
       "predicted_total": 225.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-10T22:00:12.019093",
+      "created_at": "2026-11-10T22:30:11.379491",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-01",
@@ -64661,20 +64661,20 @@
           }
         ],
         "projection": {
-          "model_margin": 8.8,
+          "model_margin": 8.1,
           "raw_margin": 8.8,
-          "market_margin": 0.0,
-          "edge": 8.8,
+          "market_margin": 5.5,
+          "edge": 2.6,
           "pred_total": 225.3,
-          "total_line": 225.0,
-          "total_edge": 0.3,
-          "total_is_default": true
+          "total_line": 222.5,
+          "total_edge": 2.8,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.737,
-          "win_model": 0.737,
-          "win_market": null,
-          "total": 0.506,
+          "cover": 0.575,
+          "win_model": 0.721,
+          "win_market": 0.655,
+          "total": 0.56,
           "sigma_spread": 13.8,
           "sigma_total": 18.4,
           "sigma_measured": true
@@ -64700,11 +64700,11 @@
             79
           ],
           "spread_at_conf": [
-            10,
-            11
+            50,
+            50
           ]
         },
-        "generated_at": "2026-11-10T22:00:12"
+        "generated_at": "2026-11-10T22:30:11"
       },
       "matches": {
         "id": 190,
@@ -64716,8 +64716,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -5.5,
+        "vegas_total": 222.5,
         "home_team": {
           "code": "HOU",
           "full_name": "Houston Rockets",
@@ -64753,7 +64753,7 @@
       "predicted_total": 236.86,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-10T22:00:12.077351",
+      "created_at": "2026-11-10T22:30:11.437306",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -65077,7 +65077,7 @@
             17
           ]
         },
-        "generated_at": "2026-11-10T22:00:12"
+        "generated_at": "2026-11-10T22:30:11"
       },
       "matches": {
         "id": 182,
@@ -65126,7 +65126,7 @@
       "predicted_total": 235.37,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-10T22:00:12.132000",
+      "created_at": "2026-11-10T22:30:11.491400",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -65450,7 +65450,7 @@
             8
           ]
         },
-        "generated_at": "2026-11-10T22:00:12"
+        "generated_at": "2026-11-10T22:30:11"
       },
       "matches": {
         "id": 186,
@@ -65499,7 +65499,7 @@
       "predicted_total": 220.8,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-10T22:00:12.192565",
+      "created_at": "2026-11-10T22:30:11.551861",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-11",
@@ -65823,7 +65823,7 @@
             41
           ]
         },
-        "generated_at": "2026-11-10T22:00:12"
+        "generated_at": "2026-11-10T22:30:11"
       },
       "matches": {
         "id": 187,
@@ -65872,7 +65872,7 @@
       "predicted_total": 220.48,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-10T22:00:12.251058",
+      "created_at": "2026-11-10T22:30:11.610796",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -66196,7 +66196,7 @@
             69
           ]
         },
-        "generated_at": "2026-11-10T22:00:12"
+        "generated_at": "2026-11-10T22:30:11"
       },
       "matches": {
         "id": 191,
@@ -66245,7 +66245,7 @@
       "predicted_total": 216.3,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-10T22:00:12.308638",
+      "created_at": "2026-11-10T22:30:11.668702",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -66569,7 +66569,7 @@
             65
           ]
         },
-        "generated_at": "2026-11-10T22:00:12"
+        "generated_at": "2026-11-10T22:30:11"
       },
       "matches": {
         "id": 184,
@@ -66618,7 +66618,7 @@
       "predicted_total": 231.97,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-10T22:00:12.362258",
+      "created_at": "2026-11-10T22:30:11.722126",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -66942,7 +66942,7 @@
             39
           ]
         },
-        "generated_at": "2026-11-10T22:00:12"
+        "generated_at": "2026-11-10T22:30:11"
       },
       "matches": {
         "id": 188,
@@ -66991,7 +66991,7 @@
       "predicted_total": 214.42,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-10T22:00:12.422471",
+      "created_at": "2026-11-10T22:30:11.782276",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -67315,7 +67315,7 @@
             9
           ]
         },
-        "generated_at": "2026-11-10T22:00:12"
+        "generated_at": "2026-11-10T22:30:11"
       },
       "matches": {
         "id": 183,
@@ -67364,7 +67364,7 @@
       "predicted_total": 233.64,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-10T22:00:12.477810",
+      "created_at": "2026-11-10T22:30:11.837322",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -67688,7 +67688,7 @@
             50
           ]
         },
-        "generated_at": "2026-11-10T22:00:12"
+        "generated_at": "2026-11-10T22:30:11"
       },
       "matches": {
         "id": 189,
