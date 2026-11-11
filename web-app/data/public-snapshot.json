@@ -7109,18 +7109,18 @@
       "home_team_id": 22,
       "away_team_id": 18,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 88,
-      "away_score": 77,
+      "home_score": 91,
+      "away_score": 80,
       "period_scores": {
         "home": [
           26,
           33,
-          29
+          32
         ],
         "away": [
           27,
           32,
-          18
+          21
         ]
       },
       "vegas_spread": 1.5,
@@ -7198,8 +7198,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": 6.5,
-      "vegas_total": 216.5,
+      "vegas_spread": 7.5,
+      "vegas_total": 215.5,
       "home_team": {
         "code": "TOR",
         "full_name": "Toronto Raptors",
@@ -7223,7 +7223,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": 14.5,
+      "vegas_spread": 15.5,
       "vegas_total": 240.5,
       "home_team": {
         "code": "CHI",
@@ -7273,8 +7273,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": 10.5,
-      "vegas_total": 233.5,
+      "vegas_spread": 11.5,
+      "vegas_total": 232.5,
       "home_team": {
         "code": "MIL",
         "full_name": "Milwaukee Bucks",
@@ -7348,8 +7348,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -5.5,
-      "vegas_total": 222.5,
+      "vegas_spread": -6.5,
+      "vegas_total": 221.5,
       "home_team": {
         "code": "HOU",
         "full_name": "Houston Rockets",
@@ -62950,18 +62950,18 @@
         "home_team_id": 22,
         "away_team_id": 18,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 88,
-        "away_score": 77,
+        "home_score": 91,
+        "away_score": 80,
         "period_scores": {
           "home": [
             26,
             33,
-            29
+            32
           ],
           "away": [
             27,
             32,
-            18
+            21
           ]
         },
         "vegas_spread": 1.5,
@@ -64495,7 +64495,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": 14.5,
+        "vegas_spread": 15.5,
         "vegas_total": 240.5,
         "home_team": {
           "code": "CHI",
@@ -64868,8 +64868,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -5.5,
-        "vegas_total": 222.5,
+        "vegas_spread": -6.5,
+        "vegas_total": 221.5,
         "home_team": {
           "code": "HOU",
           "full_name": "Houston Rockets",
@@ -65987,8 +65987,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": 10.5,
-        "vegas_total": 233.5,
+        "vegas_spread": 11.5,
+        "vegas_total": 232.5,
         "home_team": {
           "code": "MIL",
           "full_name": "Milwaukee Bucks",
@@ -66733,8 +66733,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": 6.5,
-        "vegas_total": 216.5,
+        "vegas_spread": 7.5,
+        "vegas_total": 215.5,
         "home_team": {
           "code": "TOR",
           "full_name": "Toronto Raptors",
@@ -67889,7 +67889,7 @@
       "predicted_total": 233.24,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-11T05:30:12.119147",
+      "created_at": "2026-11-11T06:00:14.202546",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-15",
@@ -68213,7 +68213,7 @@
             36
           ]
         },
-        "generated_at": "2026-11-11T05:30:12"
+        "generated_at": "2026-11-11T06:00:14"
       },
       "matches": {
         "id": 194,
@@ -68262,7 +68262,7 @@
       "predicted_total": 220.35,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-11T05:30:12.175820",
+      "created_at": "2026-11-11T06:00:14.259828",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -68586,7 +68586,7 @@
             60
           ]
         },
-        "generated_at": "2026-11-11T05:30:12"
+        "generated_at": "2026-11-11T06:00:14"
       },
       "matches": {
         "id": 192,
@@ -68635,7 +68635,7 @@
       "predicted_total": 222.15,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-11T05:30:12.231489",
+      "created_at": "2026-11-11T06:00:14.315766",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -68959,7 +68959,7 @@
             48
           ]
         },
-        "generated_at": "2026-11-11T05:30:12"
+        "generated_at": "2026-11-11T06:00:14"
       },
       "matches": {
         "id": 195,
@@ -69008,7 +69008,7 @@
       "predicted_total": 227.83,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-11T05:30:12.291953",
+      "created_at": "2026-11-11T06:00:14.376720",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -69332,7 +69332,7 @@
             8
           ]
         },
-        "generated_at": "2026-11-11T05:30:12"
+        "generated_at": "2026-11-11T06:00:14"
       },
       "matches": {
         "id": 193,
