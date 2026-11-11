@@ -6919,11 +6919,11 @@
       "home_team_id": 28,
       "away_team_id": 16,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 15,
+      "home_score": 23,
       "away_score": 16,
       "period_scores": {
         "home": [
-          15
+          23
         ],
         "away": [
           16
@@ -6955,7 +6955,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 1.5,
-      "vegas_total": 217.5,
+      "vegas_total": 216.5,
       "home_team": {
         "code": "PHI",
         "full_name": "Philadelphia 76ers",
@@ -6980,7 +6980,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 224.5,
+      "vegas_total": 223.5,
       "home_team": {
         "code": "PHX",
         "full_name": "Phoenix Suns",
@@ -7005,7 +7005,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 6.5,
-      "vegas_total": 225.5,
+      "vegas_total": 226.5,
       "home_team": {
         "code": "UTAH",
         "full_name": "Utah Jazz",
@@ -7179,8 +7179,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 4.5,
+      "vegas_total": 228.5,
       "home_team": {
         "code": "MEM",
         "full_name": "Memphis Grizzlies",
@@ -7229,8 +7229,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -4.5,
-      "vegas_total": 230.5,
+      "vegas_spread": -5.5,
+      "vegas_total": 229.5,
       "home_team": {
         "code": "NO",
         "full_name": "New Orleans Pelicans",
@@ -7279,8 +7279,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -5.5,
-      "vegas_total": 222.5,
+      "vegas_spread": -4.5,
+      "vegas_total": 223.5,
       "home_team": {
         "code": "HOU",
         "full_name": "Houston Rockets",
@@ -62113,7 +62113,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 1.5,
-        "vegas_total": 217.5,
+        "vegas_total": 216.5,
         "home_team": {
           "code": "PHI",
           "full_name": "Philadelphia 76ers",
@@ -62486,7 +62486,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -3.5,
-        "vegas_total": 224.5,
+        "vegas_total": 223.5,
         "home_team": {
           "code": "PHX",
           "full_name": "Phoenix Suns",
@@ -63601,11 +63601,11 @@
         "home_team_id": 28,
         "away_team_id": 16,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 15,
+        "home_score": 23,
         "away_score": 16,
         "period_scores": {
           "home": [
-            15
+            23
           ],
           "away": [
             16
@@ -63985,7 +63985,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 6.5,
-        "vegas_total": 225.5,
+        "vegas_total": 226.5,
         "home_team": {
           "code": "UTAH",
           "full_name": "Utah Jazz",
@@ -64730,8 +64730,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -5.5,
-        "vegas_total": 222.5,
+        "vegas_spread": -4.5,
+        "vegas_total": 223.5,
         "home_team": {
           "code": "HOU",
           "full_name": "Houston Rockets",
@@ -65476,8 +65476,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 4.5,
+        "vegas_total": 228.5,
         "home_team": {
           "code": "MEM",
           "full_name": "Memphis Grizzlies",
@@ -66968,8 +66968,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -4.5,
-        "vegas_total": 230.5,
+        "vegas_spread": -5.5,
+        "vegas_total": 229.5,
         "home_team": {
           "code": "NO",
           "full_name": "New Orleans Pelicans",
@@ -67751,7 +67751,7 @@
       "predicted_total": 233.24,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-11T00:30:12.243679",
+      "created_at": "2026-11-11T01:00:11.589432",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-15",
@@ -68075,7 +68075,7 @@
             35
           ]
         },
-        "generated_at": "2026-11-11T00:30:12"
+        "generated_at": "2026-11-11T01:00:11"
       },
       "matches": {
         "id": 194,
@@ -68124,7 +68124,7 @@
       "predicted_total": 220.35,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-11T00:30:12.300764",
+      "created_at": "2026-11-11T01:00:11.646540",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -68448,7 +68448,7 @@
             59
           ]
         },
-        "generated_at": "2026-11-11T00:30:12"
+        "generated_at": "2026-11-11T01:00:11"
       },
       "matches": {
         "id": 192,
@@ -68497,7 +68497,7 @@
       "predicted_total": 222.15,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-11T00:30:12.356963",
+      "created_at": "2026-11-11T01:00:11.701855",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -68821,7 +68821,7 @@
             47
           ]
         },
-        "generated_at": "2026-11-11T00:30:12"
+        "generated_at": "2026-11-11T01:00:11"
       },
       "matches": {
         "id": 195,
@@ -68870,7 +68870,7 @@
       "predicted_total": 227.83,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-11T00:30:12.417517",
+      "created_at": "2026-11-11T01:00:11.762337",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -69194,7 +69194,7 @@
             8
           ]
         },
-        "generated_at": "2026-11-11T00:30:12"
+        "generated_at": "2026-11-11T01:00:11"
       },
       "matches": {
         "id": 193,
