@@ -6956,21 +6956,21 @@
       "start_time": "2026-11-11T01:00Z",
       "home_team_id": 20,
       "away_team_id": 2,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 89,
-      "away_score": 118,
+      "status": "STATUS_FINISHED",
+      "home_score": 101,
+      "away_score": 123,
       "period_scores": {
         "home": [
           23,
           28,
           31,
-          7
+          19
         ],
         "away": [
           30,
           32,
           29,
-          27
+          32
         ]
       },
       "vegas_spread": 1.5,
@@ -6995,16 +6995,18 @@
       "home_team_id": 21,
       "away_team_id": 12,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 64,
-      "away_score": 47,
+      "home_score": 69,
+      "away_score": 52,
       "period_scores": {
         "home": [
           29,
-          35
+          35,
+          5
         ],
         "away": [
           18,
-          29
+          29,
+          5
         ]
       },
       "vegas_spread": -3.5,
@@ -7029,16 +7031,16 @@
       "home_team_id": 30,
       "away_team_id": 15,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 50,
-      "away_score": 62,
+      "home_score": 54,
+      "away_score": 64,
       "period_scores": {
         "home": [
           25,
-          25
+          29
         ],
         "away": [
           29,
-          33
+          35
         ]
       },
       "vegas_spread": 8.5,
@@ -7063,14 +7065,14 @@
       "home_team_id": 23,
       "away_team_id": 19,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 9,
-      "away_score": 15,
+      "home_score": 14,
+      "away_score": 24,
       "period_scores": {
         "home": [
-          9
+          14
         ],
         "away": [
-          15
+          24
         ]
       },
       "vegas_spread": 5.5,
@@ -61818,8 +61820,8 @@
       "analysis_content_zh": "## 結論\n結論落在客場作戰的 BOS。\n市場開 BOS +1.5，等於預期輸 1.5 分、勝率 46%；模型估 BOS +5.5（勝率 66%），與盤口差 7.0 分，有利於過盤。\n以本季 132 場實際結果量得換算，7.0 分的優勢等於 70% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +7.2；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（77%）。\n## 本季至今\nBOS 戰績 10-2（主 6-0、客 4-2），場均得 115.8（30 隊中第 13）、失 104.7（30 隊中第 1），淨勝 +11.1（30 隊中第 2），目前 W3。近況：主場勝 MIL 109-102、客場勝 CHA 119-80、客場勝 MIL 117-97。\nPHI 戰績 9-3，場均得 111.8（30 隊中第 21）、失 109.3（30 隊中第 7），淨勝 +2.4（30 隊中第 15），目前 W1。近況：客場勝 DET 112-106、客場負 CLE 95-119、客場勝 CHI 127-121。\n對盤口表現：BOS 讓分 5 勝 4 負 (56%)；大分 1 次、小分 8 次；PHI 讓分 5 勝 5 負 (50%)；大分 3 次、小分 7 次。\n近 3 次交手 BOS 0 勝 3 負，平均分差 -12.7（最近一次 2026-05-02：負 100-109）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-02），BOS 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：BOS 板凳貢獻 40.2 分，對手 19.7（聯盟平均 35.3；BOS 第 10、PHI 第 30／30 隊）。\n• **籃板**：BOS 場均 46.0 籃板，對手 37.8（聯盟平均 41.9；BOS 第 1、PHI 第 28／30 隊）。\n• **淨勝分**：BOS 場均淨勝 +4.5 分，對手 -7.7（聯盟平均 -4.7；BOS 第 2、PHI 第 21／30 隊）。\n• **進攻籃板**：BOS 進攻籃板 11.5 個，對手 8.2（聯盟平均 11.1；BOS 第 11、PHI 第 29／30 隊）。\nPHI 能反擊的地方：\n• **禁區得分**：PHI 這項較好，38.6 對 BOS 的 36.4（聯盟平均 47.4；BOS 第 30、PHI 第 28／30 隊）。\n• **失誤**：PHI 這項較好，11.1 對 BOS 的 11.8（聯盟平均 13.6；BOS 第 5、PHI 第 2／30 隊）。\n穩定度：這段期間 BOS 單場分差的標準差是 ±18.3 分，PHI 是 ±19.6 分；BOS 的表現較穩。\n## 賽程與休息\nBOS 休一天；PHI 休一天。\nPHI 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 215.5\n節奏觀察：本季兩隊進攻合計 227.5 分，防守合計失 214.0 分；近況合計每場出手 81 記三分（聯盟兩隊平均 73）、快攻 22 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 215.5，盤口 215.5，低於盤口 0.0 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 50%；公布信心 50%。\n## 模型本季戰績\n本季至今，已發佈讓分 73 勝 70 負（51%）；信心 77% 以上的場次 18 勝 20 負；大小分 72 勝 74 負（49%）。\n## 風險\n坦白說：PHI 在禁區得分上的優勢（38.6 對 36.4）是翻掉這份判讀最直接的路徑；BOS 單場分差起伏 ±18.3 分，單場優勢並不牢靠。",
       "predicted_margin": 5.48,
       "predicted_total": 215.46,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "LOSS",
       "created_at": "2026-11-09T23:30:12.528079",
       "analysis_facts": {
         "profile_games": 10,
@@ -62152,21 +62154,21 @@
         "start_time": "2026-11-11T01:00Z",
         "home_team_id": 20,
         "away_team_id": 2,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 89,
-        "away_score": 118,
+        "status": "STATUS_FINISHED",
+        "home_score": 101,
+        "away_score": 123,
         "period_scores": {
           "home": [
             23,
             28,
             31,
-            7
+            19
           ],
           "away": [
             30,
             32,
             29,
-            27
+            32
           ]
         },
         "vegas_spread": 1.5,
@@ -62539,16 +62541,18 @@
         "home_team_id": 21,
         "away_team_id": 12,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 64,
-        "away_score": 47,
+        "home_score": 69,
+        "away_score": 52,
         "period_scores": {
           "home": [
             29,
-            35
+            35,
+            5
           ],
           "away": [
             18,
-            29
+            29,
+            5
           ]
         },
         "vegas_spread": -3.5,
@@ -63294,14 +63298,14 @@
         "home_team_id": 23,
         "away_team_id": 19,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 9,
-        "away_score": 15,
+        "home_score": 14,
+        "away_score": 24,
         "period_scores": {
           "home": [
-            9
+            14
           ],
           "away": [
-            15
+            24
           ]
         },
         "vegas_spread": 5.5,
@@ -64060,16 +64064,16 @@
         "home_team_id": 30,
         "away_team_id": 15,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 50,
-        "away_score": 62,
+        "home_score": 54,
+        "away_score": 64,
         "period_scores": {
           "home": [
             25,
-            25
+            29
           ],
           "away": [
             29,
-            33
+            35
           ]
         },
         "vegas_spread": 8.5,
