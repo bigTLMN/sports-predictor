@@ -7556,7 +7556,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 10.5,
-      "vegas_total": 221.5,
+      "vegas_total": 222.5,
       "home_team": {
         "code": "WSH",
         "full_name": "Washington Wizards",
@@ -7630,8 +7630,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 6.5,
+      "vegas_total": 221.5,
       "home_team": {
         "code": "IND",
         "full_name": "Indiana Pacers",
@@ -7680,8 +7680,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -1.5,
+      "vegas_total": 237.5,
       "home_team": {
         "code": "MIA",
         "full_name": "Miami Heat",
@@ -70034,7 +70034,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 10.5,
-        "vegas_total": 221.5,
+        "vegas_total": 222.5,
         "home_team": {
           "code": "WSH",
           "full_name": "Washington Wizards",
@@ -70070,7 +70070,7 @@
       "predicted_total": 233.77,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T22:30:12.313063",
+      "created_at": "2026-11-12T23:00:12.097814",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -70394,7 +70394,7 @@
             32
           ]
         },
-        "generated_at": "2026-11-12T22:30:12"
+        "generated_at": "2026-11-12T23:00:12"
       },
       "matches": {
         "id": 199,
@@ -70443,7 +70443,7 @@
       "predicted_total": 234.39,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T22:30:12.378231",
+      "created_at": "2026-11-12T23:00:12.160337",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-01",
@@ -70767,7 +70767,7 @@
             4
           ]
         },
-        "generated_at": "2026-11-12T22:30:12"
+        "generated_at": "2026-11-12T23:00:12"
       },
       "matches": {
         "id": 201,
@@ -70803,20 +70803,20 @@
       "id": 177,
       "match_id": 196,
       "recommended_team_id": 28,
-      "confidence_score": 87.0,
-      "spread_logic": "AI projects NY to win by 9.5 pts",
-      "spread_logic_zh": "AI 預測 NY 贏 9.5 分",
-      "line_info": "0.0",
-      "ou_pick": "UNDER",
-      "ou_line": 225.0,
-      "ou_confidence": 55.0,
-      "analysis_content": "## The Call\nWe land on NY on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has NY by 9.5, a 75% win probability.\nConfidence is high at 87%.\n## Season So Far\nNY is 7-5 (5-3 home, 2-2 away), scoring 111.2 (22nd of 30) and allowing 104.8 (2nd of 30) for a +6.4 margin (7th of 30), currently on a L1 run. Last out: W 109-97 at CLE, W 117-85 vs MIL, L 107-115 vs CLE.\nIND is 4-9, scoring 112.8 (19th of 30) and allowing 115.1 (20th of 30) for a -2.3 margin (18th of 30), on a W1 run. Last out: L 102-114 vs DEN, L 122-125 at DAL, W 114-101 vs WSH.\nAgainst the number: NY 4-6 against the spread (40%); 3 over / 7 under; IND 6-5 against the spread (55%); 3 over / 8 under.\nHead to head, NY is 2-1 in the last 3 meetings with an average margin of +10.7 (most recent 2026-03-17: W 136-110).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-06-13), NY's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — NY gives up 102.2 to 119.7 (league avg 115.8; NY 1st vs IND 22nd of 30).\n• **Net margin** — NY outscores opponents by +11.9 per game against -1.6 (league avg -4.7; NY 1st vs IND 11th of 30).\n• **Turnovers** — NY commits 11.5 turnovers to 15.3 (league avg 13.6; NY 4th vs IND 27th of 30).\n• **Off. rebounds** — NY grabs 11.0 offensive boards to 8.6 (league avg 11.1; NY 15th vs IND 28th of 30).\nWhere IND pushes back:\n• **Bench points** — IND holds the better number, 47.9 to NY's 26.3 (league avg 35.3; NY 24th vs IND 3rd of 30).\n• **Assists** — IND holds the better number, 33.4 to NY's 24.9 (league avg 25.0; NY 14th vs IND 1st of 30).\n• **FT%** — IND holds the better number, 80.3% to NY's 74.9% (league avg 77.5%; NY 22nd vs IND 8th of 30).\nConsistency check: NY's game margins over this stretch vary by ±12.4 points (one standard deviation) against ±16.4 for IND; the steadier side is NY.\n## Schedule & Rest\nNY has one day off; IND has one day off.\nIND has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 224.0 points and the two defences concede 219.9; on record they attempt 77 threes between them (league pair average 73) with 37 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 223.0 total points against a line of 225.0, 2.0 points below the number. With totals spreading ±18.0 points around the line, that is a 54% probability of the under; published confidence is 55%.\n## Model Track Record\nThis season, published spread picks are 83-82 (50%); at 87%+ confidence they are 9-10; totals are 83-87 (49%).\n## What Could Go Wrong\nHonest caveats: IND's edge in Bench points (47.9 vs 26.3) is the cleanest path to an upset of this read.",
-      "analysis_content_zh": "## 結論\n本場站 客場的 NY。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 NY 贏 9.5 分，勝率 75%。\n信心高（87%）。\n## 本季至今\nNY 戰績 7-5（主 5-3、客 2-2），場均得 111.2（30 隊中第 22）、失 104.8（30 隊中第 2），淨勝 +6.4（30 隊中第 7），目前 L1。近況：客場勝 CLE 109-97、主場勝 MIL 117-85、主場負 CLE 107-115。\nIND 戰績 4-9，場均得 112.8（30 隊中第 19）、失 115.1（30 隊中第 20），淨勝 -2.3（30 隊中第 18），目前 W1。近況：主場負 DEN 102-114、客場負 DAL 122-125、主場勝 WSH 114-101。\n對盤口表現：NY 讓分 4 勝 6 負 (40%)；大分 3 次、小分 7 次；IND 讓分 6 勝 5 負 (55%)；大分 3 次、小分 8 次。\n近 3 次交手 NY 2 勝 1 負，平均分差 +10.7（最近一次 2026-03-17：勝 136-110）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-06-13）裡，NY 和 IND 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：NY 場均失 102.2 分，對手 119.7（聯盟平均 115.8；NY 第 1、IND 第 22／30 隊）。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -1.6（聯盟平均 -4.7；NY 第 1、IND 第 11／30 隊）。\n• **失誤**：NY 失誤 11.5 次，對手 15.3（聯盟平均 13.6；NY 第 4、IND 第 27／30 隊）。\n• **進攻籃板**：NY 進攻籃板 11.0 個，對手 8.6（聯盟平均 11.1；NY 第 15、IND 第 28／30 隊）。\nIND 能反擊的地方：\n• **板凳得分**：IND 這項較好，47.9 對 NY 的 26.3（聯盟平均 35.3；NY 第 24、IND 第 3／30 隊）。\n• **助攻**：IND 這項較好，33.4 對 NY 的 24.9（聯盟平均 25.0；NY 第 14、IND 第 1／30 隊）。\n• **罰球命中率**：IND 這項較好，80.3% 對 NY 的 74.9%（聯盟平均 77.5%；NY 第 22、IND 第 8／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，IND 是 ±16.4 分；NY 的表現較穩。\n## 賽程與休息\nNY 休一天；IND 休一天。\nIND 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 224.0 分，防守合計失 219.9 分；近況合計每場出手 77 記三分（聯盟兩隊平均 73）、快攻 37 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 223.0，盤口 225.0，低於盤口 2.0 分。以總分相對盤口 ±18.0 分的分佈換算，小分機率 54%；公布信心 55%。\n## 模型本季戰績\n本季至今，已發佈讓分 83 勝 82 負（50%）；信心 87% 以上的場次 9 勝 10 負；大小分 83 勝 87 負（49%）。\n## 風險\n坦白說：IND 在板凳得分上的優勢（47.9 對 26.3）是翻掉這份判讀最直接的路徑。",
-      "predicted_margin": 9.46,
+      "confidence_score": 59.0,
+      "spread_logic": "AI projects NY to win by 8.9 pts",
+      "spread_logic_zh": "AI 預測 NY 贏 8.9 分",
+      "line_info": "6.5",
+      "ou_pick": "OVER",
+      "ou_line": 221.5,
+      "ou_confidence": 54.0,
+      "analysis_content": "## The Call\nWe land on NY on the road.\nThe market has NY at -6.5, which implies a 6.5-point win and a 68% win probability. Our projection is +8.9 for NY (74% to win), a gap of 2.4 points in favour of the cover.\nConverted with measured from 156 games this season, a 2.4-point edge is a 57% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 59%.\n## Season So Far\nNY is 7-5 (5-3 home, 2-2 away), scoring 111.2 (22nd of 30) and allowing 104.8 (2nd of 30) for a +6.4 margin (7th of 30), currently on a L1 run. Last out: W 109-97 at CLE, W 117-85 vs MIL, L 107-115 vs CLE.\nIND is 4-9, scoring 112.8 (19th of 30) and allowing 115.1 (20th of 30) for a -2.3 margin (18th of 30), on a W1 run. Last out: L 102-114 vs DEN, L 122-125 at DAL, W 114-101 vs WSH.\nAgainst the number: NY 4-6 against the spread (40%); 3 over / 7 under; IND 6-5 against the spread (55%); 3 over / 8 under.\nHead to head, NY is 2-1 in the last 3 meetings with an average margin of +10.7 (most recent 2026-03-17: W 136-110).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-06-13), NY's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — NY gives up 102.2 to 119.7 (league avg 115.8; NY 1st vs IND 22nd of 30).\n• **Net margin** — NY outscores opponents by +11.9 per game against -1.6 (league avg -4.7; NY 1st vs IND 11th of 30).\n• **Turnovers** — NY commits 11.5 turnovers to 15.3 (league avg 13.6; NY 4th vs IND 27th of 30).\n• **Off. rebounds** — NY grabs 11.0 offensive boards to 8.6 (league avg 11.1; NY 15th vs IND 28th of 30).\nWhere IND pushes back:\n• **Bench points** — IND holds the better number, 47.9 to NY's 26.3 (league avg 35.3; NY 24th vs IND 3rd of 30).\n• **Assists** — IND holds the better number, 33.4 to NY's 24.9 (league avg 25.0; NY 14th vs IND 1st of 30).\n• **FT%** — IND holds the better number, 80.3% to NY's 74.9% (league avg 77.5%; NY 22nd vs IND 8th of 30).\nConsistency check: NY's game margins over this stretch vary by ±12.4 points (one standard deviation) against ±16.4 for IND; the steadier side is NY.\n## Schedule & Rest\nNY has one day off; IND has one day off.\nIND has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: OVER 221.5\nTempo check: this season the two offences combine for 224.0 points and the two defences concede 219.9; on record they attempt 77 threes between them (league pair average 73) with 37 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 223.0 total points against a line of 221.5, 1.5 points above the number. With totals spreading ±18.0 points around the line, that is a 53% probability of the over; published confidence is 54%.\n## Model Track Record\nThis season, published spread picks are 83-82 (50%); at 59%+ confidence they are 58-58; totals are 83-87 (49%).\n## What Could Go Wrong\nHonest caveats: IND's edge in Bench points (47.9 vs 26.3) is the cleanest path to an upset of this read.",
+      "analysis_content_zh": "## 結論\n本場站 客場的 NY。\n市場開 NY -6.5，等於預期贏 6.5 分、勝率 68%；模型估 NY +8.9（勝率 74%），與盤口差 2.4 分，有利於過盤。\n以本季 156 場實際結果量得換算，2.4 分的優勢等於 57% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（59%）。\n## 本季至今\nNY 戰績 7-5（主 5-3、客 2-2），場均得 111.2（30 隊中第 22）、失 104.8（30 隊中第 2），淨勝 +6.4（30 隊中第 7），目前 L1。近況：客場勝 CLE 109-97、主場勝 MIL 117-85、主場負 CLE 107-115。\nIND 戰績 4-9，場均得 112.8（30 隊中第 19）、失 115.1（30 隊中第 20），淨勝 -2.3（30 隊中第 18），目前 W1。近況：主場負 DEN 102-114、客場負 DAL 122-125、主場勝 WSH 114-101。\n對盤口表現：NY 讓分 4 勝 6 負 (40%)；大分 3 次、小分 7 次；IND 讓分 6 勝 5 負 (55%)；大分 3 次、小分 8 次。\n近 3 次交手 NY 2 勝 1 負，平均分差 +10.7（最近一次 2026-03-17：勝 136-110）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-06-13）裡，NY 和 IND 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：NY 場均失 102.2 分，對手 119.7（聯盟平均 115.8；NY 第 1、IND 第 22／30 隊）。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -1.6（聯盟平均 -4.7；NY 第 1、IND 第 11／30 隊）。\n• **失誤**：NY 失誤 11.5 次，對手 15.3（聯盟平均 13.6；NY 第 4、IND 第 27／30 隊）。\n• **進攻籃板**：NY 進攻籃板 11.0 個，對手 8.6（聯盟平均 11.1；NY 第 15、IND 第 28／30 隊）。\nIND 能反擊的地方：\n• **板凳得分**：IND 這項較好，47.9 對 NY 的 26.3（聯盟平均 35.3；NY 第 24、IND 第 3／30 隊）。\n• **助攻**：IND 這項較好，33.4 對 NY 的 24.9（聯盟平均 25.0；NY 第 14、IND 第 1／30 隊）。\n• **罰球命中率**：IND 這項較好，80.3% 對 NY 的 74.9%（聯盟平均 77.5%；NY 第 22、IND 第 8／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，IND 是 ±16.4 分；NY 的表現較穩。\n## 賽程與休息\nNY 休一天；IND 休一天。\nIND 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：大分 221.5\n節奏觀察：本季兩隊進攻合計 224.0 分，防守合計失 219.9 分；近況合計每場出手 77 記三分（聯盟兩隊平均 73）、快攻 37 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 223.0，盤口 221.5，高於盤口 1.5 分。以總分相對盤口 ±18.0 分的分佈換算，大分機率 53%；公布信心 54%。\n## 模型本季戰績\n本季至今，已發佈讓分 83 勝 82 負（50%）；信心 59% 以上的場次 58 勝 58 負；大小分 83 勝 87 負（49%）。\n## 風險\n坦白說：IND 在板凳得分上的優勢（47.9 對 26.3）是翻掉這份判讀最直接的路徑。",
+      "predicted_margin": 8.87,
       "predicted_total": 223.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T22:30:12.443543",
+      "created_at": "2026-11-12T23:00:12.226855",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -71097,20 +71097,20 @@
           }
         ],
         "projection": {
-          "model_margin": 9.5,
+          "model_margin": 8.9,
           "raw_margin": 9.5,
-          "market_margin": 0.0,
-          "edge": 9.5,
+          "market_margin": 6.5,
+          "edge": 2.4,
           "pred_total": 223.0,
-          "total_line": 225.0,
-          "total_edge": -2.0,
-          "total_is_default": true
+          "total_line": 221.5,
+          "total_edge": 1.5,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.752,
-          "win_model": 0.752,
-          "win_market": null,
-          "total": 0.543,
+          "cover": 0.568,
+          "win_model": 0.738,
+          "win_market": 0.68,
+          "total": 0.534,
           "sigma_spread": 13.9,
           "sigma_total": 18.0,
           "sigma_measured": true
@@ -71136,11 +71136,11 @@
             87
           ],
           "spread_at_conf": [
-            9,
-            10
+            58,
+            58
           ]
         },
-        "generated_at": "2026-11-12T22:30:12"
+        "generated_at": "2026-11-12T23:00:12"
       },
       "matches": {
         "id": 196,
@@ -71152,8 +71152,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 6.5,
+        "vegas_total": 221.5,
         "home_team": {
           "code": "IND",
           "full_name": "Indiana Pacers",
@@ -71189,7 +71189,7 @@
       "predicted_total": 219.08,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T22:30:12.505262",
+      "created_at": "2026-11-12T23:00:12.284026",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -71513,7 +71513,7 @@
             55
           ]
         },
-        "generated_at": "2026-11-12T22:30:12"
+        "generated_at": "2026-11-12T23:00:12"
       },
       "matches": {
         "id": 204,
@@ -71549,20 +71549,20 @@
       "id": 179,
       "match_id": 198,
       "recommended_team_id": 15,
-      "confidence_score": 72.0,
-      "spread_logic": "AI projects MIA to win by 5.7 pts",
-      "spread_logic_zh": "AI 預測 MIA 贏 5.7 分",
-      "line_info": "0.0",
-      "ou_pick": "OVER",
-      "ou_line": 225.0,
-      "ou_confidence": 86.0,
-      "analysis_content": "## The Call\nThe number says MIA, at home.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has MIA by 5.7, a 66% win probability.\nConfidence is moderate at 72%.\n## Season So Far\nMIA is 6-7 (2-3 home, 4-4 away), scoring 117.8 (6th of 30) and allowing 121.8 (28th of 30) for a -4.0 margin (20th of 30), currently on a W2 run. Last out: L 100-120 at GS, W 114-108 at SAC, W 115-109 at UTAH.\nCLE is 6-6, scoring 116.4 (9th of 30) and allowing 114.3 (18th of 30) for a +2.1 margin (12th of 30), on a W1 run. Last out: L 97-109 vs NY, L 112-124 at CHA, W 115-107 at NY.\nAgainst the number: MIA 2-8 against the spread (20%); 4 over / 6 under; CLE 4-8 against the spread (33%); 6 over / 6 under.\nHead to head, MIA is 1-2 in the last 3 meetings with an average margin of -6.0 (most recent 2026-03-27: L 128-149).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-04-14) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — MIA gets 48.5 from the bench to 24.4 (league avg 35.3; MIA 2nd vs CLE 26th of 30).\n• **Points** — MIA scores 126.4 a night to 105.9 (league avg 111.1; MIA 1st vs CLE 26th of 30).\n• **Fast-break points** — MIA runs for 21.2 fast-break points to 8.0 (league avg 14.2; MIA 2nd vs CLE 30th of 30).\n• **Assists** — MIA records 31.1 assists to 21.7 (league avg 25.0; MIA 3rd vs CLE 27th of 30).\nWhere CLE pushes back:\n• **Points allowed** — CLE holds the better number, 111.6 to MIA's 128.6 (league avg 115.8; MIA 27th vs CLE 11th of 30).\n• **Points off turnovers** — CLE holds the better number, 18.5 to MIA's 14.4 (league avg 17.5; MIA 28th vs CLE 10th of 30).\nConsistency check: MIA's game margins over this stretch vary by ±18.5 points (one standard deviation) against ±18.0 for CLE; the more volatile side is MIA.\n## Schedule & Rest\nMIA comes in with 2 days of rest; CLE has one day off.\nThe rest edge belongs to MIA.\nMIA has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 234.3 points and the two defences concede 236.2; on record they attempt 78 threes between them (league pair average 73) with 29 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 237.0 total points against a line of 225.0, 12.0 points above the number. With totals spreading ±18.0 points around the line, that is a 75% probability of the over; published confidence is 86%.\n## Model Track Record\nThis season, published spread picks are 83-82 (50%); at 72%+ confidence they are 30-30; totals are 83-87 (49%).\n## What Could Go Wrong\nHonest caveats: CLE's edge in Points allowed (111.6 vs 128.6) is the cleanest path to an upset of this read; MIA's results swing ±18.5 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n本場站 主場的 MIA。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 MIA 贏 5.7 分，勝率 66%。\n信心中等（72%）。\n## 本季至今\nMIA 戰績 6-7（主 2-3、客 4-4），場均得 117.8（30 隊中第 6）、失 121.8（30 隊中第 28），淨勝 -4.0（30 隊中第 20），目前 W2。近況：客場負 GS 100-120、客場勝 SAC 114-108、客場勝 UTAH 115-109。\nCLE 戰績 6-6，場均得 116.4（30 隊中第 9）、失 114.3（30 隊中第 18），淨勝 +2.1（30 隊中第 12），目前 W1。近況：主場負 NY 97-109、客場負 CHA 112-124、客場勝 NY 115-107。\n對盤口表現：MIA 讓分 2 勝 8 負 (20%)；大分 4 次、小分 6 次；CLE 讓分 4 勝 8 負 (33%)；大分 6 次、小分 6 次。\n近 3 次交手 MIA 1 勝 2 負，平均分差 -6.0（最近一次 2026-03-27：負 128-149）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-14）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：MIA 板凳貢獻 48.5 分，對手 24.4（聯盟平均 35.3；MIA 第 2、CLE 第 26／30 隊）。\n• **得分**：MIA 場均得 126.4 分，對手 105.9（聯盟平均 111.1；MIA 第 1、CLE 第 26／30 隊）。\n• **快攻得分**：MIA 快攻 21.2 分，對手 8.0（聯盟平均 14.2；MIA 第 2、CLE 第 30／30 隊）。\n• **助攻**：MIA 助攻 31.1 次，對手 21.7（聯盟平均 25.0；MIA 第 3、CLE 第 27／30 隊）。\nCLE 能反擊的地方：\n• **失分**：CLE 這項較好，111.6 對 MIA 的 128.6（聯盟平均 115.8；MIA 第 27、CLE 第 11／30 隊）。\n• **失誤轉換得分**：CLE 這項較好，18.5 對 MIA 的 14.4（聯盟平均 17.5；MIA 第 28、CLE 第 10／30 隊）。\n穩定度：這段期間 MIA 單場分差的標準差是 ±18.5 分，CLE 是 ±18.0 分；MIA 的表現起伏較大。\n## 賽程與休息\nMIA 休了 2 天；CLE 休一天。\n體能上 MIA 較佔便宜。\nMIA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 234.3 分，防守合計失 236.2 分；近況合計每場出手 78 記三分（聯盟兩隊平均 73）、快攻 29 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 237.0，盤口 225.0，高於盤口 12.0 分。以總分相對盤口 ±18.0 分的分佈換算，大分機率 75%；公布信心 86%。\n## 模型本季戰績\n本季至今，已發佈讓分 83 勝 82 負（50%）；信心 72% 以上的場次 30 勝 30 負；大小分 83 勝 87 負（49%）。\n## 風險\n坦白說：CLE 在失分上的優勢（111.6 對 128.6）是翻掉這份判讀最直接的路徑；MIA 單場分差起伏 ±18.5 分，單場優勢並不牢靠。",
-      "predicted_margin": 5.73,
+      "confidence_score": 63.0,
+      "spread_logic": "AI projects MIA to win by 4.9 pts",
+      "spread_logic_zh": "AI 預測 MIA 贏 4.9 分",
+      "line_info": "-1.5",
+      "ou_pick": "UNDER",
+      "ou_line": 237.5,
+      "ou_confidence": 51.0,
+      "analysis_content": "## The Call\nThe number says MIA, at home.\nThe market has MIA at -1.5, which implies a 1.5-point win and a 54% win probability. Our projection is +4.9 for MIA (64% to win), a gap of 3.4 points in favour of the cover.\nConverted with measured from 156 games this season, a 3.4-point edge is a 60% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was +5.7; we pull it 20% toward the line to respect price discovery.\nConfidence is modest at 63%.\n## Season So Far\nMIA is 6-7 (2-3 home, 4-4 away), scoring 117.8 (6th of 30) and allowing 121.8 (28th of 30) for a -4.0 margin (20th of 30), currently on a W2 run. Last out: L 100-120 at GS, W 114-108 at SAC, W 115-109 at UTAH.\nCLE is 6-6, scoring 116.4 (9th of 30) and allowing 114.3 (18th of 30) for a +2.1 margin (12th of 30), on a W1 run. Last out: L 97-109 vs NY, L 112-124 at CHA, W 115-107 at NY.\nAgainst the number: MIA 2-8 against the spread (20%); 4 over / 6 under; CLE 4-8 against the spread (33%); 6 over / 6 under.\nHead to head, MIA is 1-2 in the last 3 meetings with an average margin of -6.0 (most recent 2026-03-27: L 128-149).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-04-14) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — MIA gets 48.5 from the bench to 24.4 (league avg 35.3; MIA 2nd vs CLE 26th of 30).\n• **Points** — MIA scores 126.4 a night to 105.9 (league avg 111.1; MIA 1st vs CLE 26th of 30).\n• **Fast-break points** — MIA runs for 21.2 fast-break points to 8.0 (league avg 14.2; MIA 2nd vs CLE 30th of 30).\n• **Assists** — MIA records 31.1 assists to 21.7 (league avg 25.0; MIA 3rd vs CLE 27th of 30).\nWhere CLE pushes back:\n• **Points allowed** — CLE holds the better number, 111.6 to MIA's 128.6 (league avg 115.8; MIA 27th vs CLE 11th of 30).\n• **Points off turnovers** — CLE holds the better number, 18.5 to MIA's 14.4 (league avg 17.5; MIA 28th vs CLE 10th of 30).\nConsistency check: MIA's game margins over this stretch vary by ±18.5 points (one standard deviation) against ±18.0 for CLE; the more volatile side is MIA.\n## Schedule & Rest\nMIA comes in with 2 days of rest; CLE has one day off.\nThe rest edge belongs to MIA.\nMIA has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 237.5\nTempo check: this season the two offences combine for 234.3 points and the two defences concede 236.2; on record they attempt 78 threes between them (league pair average 73) with 29 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 237.0 total points against a line of 237.5, 0.5 points below the number. With totals spreading ±18.0 points around the line, that is a 51% probability of the under; published confidence is 51%.\n## Model Track Record\nThis season, published spread picks are 83-82 (50%); at 63%+ confidence they are 41-49; totals are 83-87 (49%).\n## What Could Go Wrong\nHonest caveats: CLE's edge in Points allowed (111.6 vs 128.6) is the cleanest path to an upset of this read; MIA's results swing ±18.5 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n本場站 主場的 MIA。\n市場開 MIA -1.5，等於預期贏 1.5 分、勝率 54%；模型估 MIA +4.9（勝率 64%），與盤口差 3.4 分，有利於過盤。\n以本季 156 場實際結果量得換算，3.4 分的優勢等於 60% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +5.7；我們固定把它往盤口拉 20%，尊重市場定價。\n信心偏低（63%）。\n## 本季至今\nMIA 戰績 6-7（主 2-3、客 4-4），場均得 117.8（30 隊中第 6）、失 121.8（30 隊中第 28），淨勝 -4.0（30 隊中第 20），目前 W2。近況：客場負 GS 100-120、客場勝 SAC 114-108、客場勝 UTAH 115-109。\nCLE 戰績 6-6，場均得 116.4（30 隊中第 9）、失 114.3（30 隊中第 18），淨勝 +2.1（30 隊中第 12），目前 W1。近況：主場負 NY 97-109、客場負 CHA 112-124、客場勝 NY 115-107。\n對盤口表現：MIA 讓分 2 勝 8 負 (20%)；大分 4 次、小分 6 次；CLE 讓分 4 勝 8 負 (33%)；大分 6 次、小分 6 次。\n近 3 次交手 MIA 1 勝 2 負，平均分差 -6.0（最近一次 2026-03-27：負 128-149）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-14）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：MIA 板凳貢獻 48.5 分，對手 24.4（聯盟平均 35.3；MIA 第 2、CLE 第 26／30 隊）。\n• **得分**：MIA 場均得 126.4 分，對手 105.9（聯盟平均 111.1；MIA 第 1、CLE 第 26／30 隊）。\n• **快攻得分**：MIA 快攻 21.2 分，對手 8.0（聯盟平均 14.2；MIA 第 2、CLE 第 30／30 隊）。\n• **助攻**：MIA 助攻 31.1 次，對手 21.7（聯盟平均 25.0；MIA 第 3、CLE 第 27／30 隊）。\nCLE 能反擊的地方：\n• **失分**：CLE 這項較好，111.6 對 MIA 的 128.6（聯盟平均 115.8；MIA 第 27、CLE 第 11／30 隊）。\n• **失誤轉換得分**：CLE 這項較好，18.5 對 MIA 的 14.4（聯盟平均 17.5；MIA 第 28、CLE 第 10／30 隊）。\n穩定度：這段期間 MIA 單場分差的標準差是 ±18.5 分，CLE 是 ±18.0 分；MIA 的表現起伏較大。\n## 賽程與休息\nMIA 休了 2 天；CLE 休一天。\n體能上 MIA 較佔便宜。\nMIA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 237.5\n節奏觀察：本季兩隊進攻合計 234.3 分，防守合計失 236.2 分；近況合計每場出手 78 記三分（聯盟兩隊平均 73）、快攻 29 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 237.0，盤口 237.5，低於盤口 0.5 分。以總分相對盤口 ±18.0 分的分佈換算，小分機率 51%；公布信心 51%。\n## 模型本季戰績\n本季至今，已發佈讓分 83 勝 82 負（50%）；信心 63% 以上的場次 41 勝 49 負；大小分 83 勝 87 負（49%）。\n## 風險\n坦白說：CLE 在失分上的優勢（111.6 對 128.6）是翻掉這份判讀最直接的路徑；MIA 單場分差起伏 ±18.5 分，單場優勢並不牢靠。",
+      "predicted_margin": 4.88,
       "predicted_total": 237.02,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T22:30:12.562177",
+      "created_at": "2026-11-12T23:00:12.338884",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-14",
@@ -71843,20 +71843,20 @@
           }
         ],
         "projection": {
-          "model_margin": 5.7,
+          "model_margin": 4.9,
           "raw_margin": 5.7,
-          "market_margin": 0.0,
-          "edge": 5.7,
+          "market_margin": 1.5,
+          "edge": 3.4,
           "pred_total": 237.0,
-          "total_line": 225.0,
-          "total_edge": 12.0,
-          "total_is_default": true
+          "total_line": 237.5,
+          "total_edge": -0.5,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.66,
-          "win_model": 0.66,
-          "win_market": null,
-          "total": 0.748,
+          "cover": 0.596,
+          "win_model": 0.637,
+          "win_market": 0.543,
+          "total": 0.511,
           "sigma_spread": 13.9,
           "sigma_total": 18.0,
           "sigma_measured": true
@@ -71882,11 +71882,11 @@
             87
           ],
           "spread_at_conf": [
-            30,
-            30
+            41,
+            49
           ]
         },
-        "generated_at": "2026-11-12T22:30:12"
+        "generated_at": "2026-11-12T23:00:12"
       },
       "matches": {
         "id": 198,
@@ -71898,8 +71898,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -1.5,
+        "vegas_total": 237.5,
         "home_team": {
           "code": "MIA",
           "full_name": "Miami Heat",
@@ -71935,7 +71935,7 @@
       "predicted_total": 221.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T22:30:12.620926",
+      "created_at": "2026-11-12T23:00:12.394275",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -72259,7 +72259,7 @@
             27
           ]
         },
-        "generated_at": "2026-11-12T22:30:12"
+        "generated_at": "2026-11-12T23:00:12"
       },
       "matches": {
         "id": 197,
@@ -72308,7 +72308,7 @@
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T22:30:12.680866",
+      "created_at": "2026-11-12T23:00:12.452731",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-28",
@@ -72632,7 +72632,7 @@
             45
           ]
         },
-        "generated_at": "2026-11-12T22:30:12"
+        "generated_at": "2026-11-12T23:00:12"
       },
       "matches": {
         "id": 203,
@@ -72681,7 +72681,7 @@
       "predicted_total": 239.47,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T22:30:12.733625",
+      "created_at": "2026-11-12T23:00:12.503021",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -73005,7 +73005,7 @@
             6
           ]
         },
-        "generated_at": "2026-11-12T22:30:12"
+        "generated_at": "2026-11-12T23:00:12"
       },
       "matches": {
         "id": 200,
@@ -73054,7 +73054,7 @@
       "predicted_total": 223.56,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T22:30:12.799590",
+      "created_at": "2026-11-12T23:00:12.561299",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -73378,7 +73378,7 @@
             10
           ]
         },
-        "generated_at": "2026-11-12T22:30:12"
+        "generated_at": "2026-11-12T23:00:12"
       },
       "matches": {
         "id": 202,
