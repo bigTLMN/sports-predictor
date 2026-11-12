@@ -7184,21 +7184,21 @@
       "start_time": "2026-11-12T00:00Z",
       "home_team_id": 28,
       "away_team_id": 6,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 105,
-      "away_score": 110,
+      "status": "STATUS_FINISHED",
+      "home_score": 107,
+      "away_score": 115,
       "period_scores": {
         "home": [
           23,
           30,
           23,
-          29
+          31
         ],
         "away": [
           33,
           26,
           23,
-          28
+          33
         ]
       },
       "vegas_spread": -4.5,
@@ -7222,9 +7222,9 @@
       "start_time": "2026-11-12T00:00Z",
       "home_team_id": 24,
       "away_team_id": 2,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 93,
-      "away_score": 94,
+      "away_score": 98,
       "period_scores": {
         "home": [
           38,
@@ -7236,7 +7236,7 @@
           29,
           25,
           21,
-          19
+          23
         ]
       },
       "vegas_spread": 4.5,
@@ -7261,18 +7261,18 @@
       "home_team_id": 5,
       "away_team_id": 29,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 80,
-      "away_score": 78,
+      "home_score": 84,
+      "away_score": 88,
       "period_scores": {
         "home": [
           41,
           29,
-          10
+          14
         ],
         "away": [
           29,
           27,
-          22
+          32
         ]
       },
       "vegas_spread": 15.5,
@@ -7297,18 +7297,18 @@
       "home_team_id": 14,
       "away_team_id": 8,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 69,
-      "away_score": 76,
+      "home_score": 75,
+      "away_score": 77,
       "period_scores": {
         "home": [
           24,
           28,
-          17
+          23
         ],
         "away": [
           35,
           30,
-          11
+          12
         ]
       },
       "vegas_spread": 3.5,
@@ -7333,18 +7333,18 @@
       "home_team_id": 16,
       "away_team_id": 13,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 60,
-      "away_score": 77,
+      "home_score": 65,
+      "away_score": 85,
       "period_scores": {
         "home": [
           28,
           22,
-          10
+          15
         ],
         "away": [
           30,
           31,
-          16
+          24
         ]
       },
       "vegas_spread": 14.5,
@@ -7369,18 +7369,18 @@
       "home_team_id": 27,
       "away_team_id": 3,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 66,
-      "away_score": 90,
+      "home_score": 72,
+      "away_score": 97,
       "period_scores": {
         "home": [
           25,
           41,
-          0
+          6
         ],
         "away": [
           39,
           44,
-          7
+          14
         ]
       },
       "vegas_spread": -2.5,
@@ -7405,14 +7405,14 @@
       "home_team_id": 30,
       "away_team_id": 19,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 29,
-      "away_score": 25,
+      "home_score": 34,
+      "away_score": 29,
       "period_scores": {
         "home": [
-          26
+          34
         ],
         "away": [
-          25
+          29
         ]
       },
       "vegas_spread": 4.5,
@@ -64811,18 +64811,18 @@
         "home_team_id": 5,
         "away_team_id": 29,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 80,
-        "away_score": 78,
+        "home_score": 84,
+        "away_score": 88,
         "period_scores": {
           "home": [
             41,
             29,
-            10
+            14
           ],
           "away": [
             29,
             27,
-            22
+            32
           ]
         },
         "vegas_spread": 15.5,
@@ -65954,18 +65954,18 @@
         "home_team_id": 14,
         "away_team_id": 8,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 69,
-        "away_score": 76,
+        "home_score": 75,
+        "away_score": 77,
         "period_scores": {
           "home": [
             24,
             28,
-            17
+            23
           ],
           "away": [
             35,
             30,
-            11
+            12
           ]
         },
         "vegas_spread": 3.5,
@@ -66338,18 +66338,18 @@
         "home_team_id": 16,
         "away_team_id": 13,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 60,
-        "away_score": 77,
+        "home_score": 65,
+        "away_score": 85,
         "period_scores": {
           "home": [
             28,
             22,
-            10
+            15
           ],
           "away": [
             30,
             31,
-            16
+            24
           ]
         },
         "vegas_spread": 14.5,
@@ -66760,8 +66760,8 @@
       "analysis_content_zh": "## 結論\n結論落在客場作戰的 BOS。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 BOS 贏 1.5 分，勝率 54%。\n信心偏低（55%）。\n## 本季至今\nBOS 戰績 10-2（主 6-0、客 4-2），場均得 115.8（30 隊中第 11）、失 104.7（30 隊中第 1），淨勝 +11.1（30 隊中第 2），目前 W3。近況：主場勝 MIL 109-102、客場勝 CHA 119-80、客場勝 MIL 117-97。\nTOR 戰績 5-7，場均得 117.6（30 隊中第 8）、失 115.3（30 隊中第 18），淨勝 +2.2（30 隊中第 14），目前 L1。近況：客場負 DEN 109-128、客場勝 MIL 121-107、主場負 MEM 102-118。\n對盤口表現：BOS 讓分 5 勝 4 負 (56%)；大分 1 次、小分 8 次；TOR 讓分 4 勝 5 負 (44%)；大分 5 次、小分 4 次。\n近 3 次交手 BOS 3 勝 0 負，平均分差 +12.7（最近一次 2026-04-05：勝 115-101）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-02）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **籃板**：BOS 場均 46.0 籃板，對手 39.7（聯盟平均 41.9；BOS 第 1、TOR 第 23／30 隊）。\n• **罰球命中率**：BOS 罰球 78.0%，對手 72.9%（聯盟平均 77.5%；BOS 第 12、TOR 第 28／30 隊）。\n• **失誤**：BOS 失誤 11.8 次，對手 13.5（聯盟平均 13.6；BOS 第 5、TOR 第 16／30 隊）。\n• **板凳得分**：BOS 板凳貢獻 40.2 分，對手 35.6（聯盟平均 35.3；BOS 第 10、TOR 第 15／30 隊）。\nTOR 能反擊的地方：\n• **禁區得分**：TOR 這項較好，51.6 對 BOS 的 36.4（聯盟平均 47.4；BOS 第 30、TOR 第 7／30 隊）。\n• **失誤轉換得分**：TOR 這項較好，21.3 對 BOS 的 13.7（聯盟平均 17.5；BOS 第 30、TOR 第 2／30 隊）。\n• **命中率**：TOR 這項較好，49.2% 對 BOS 的 44.5%（聯盟平均 45.8%；BOS 第 22、TOR 第 2／30 隊）。\n穩定度：這段期間 BOS 單場分差的標準差是 ±18.3 分，TOR 是 ±16.2 分；BOS 的表現起伏較大。\n## 賽程與休息\nBOS 休了 2 天；TOR 休一天。\n體能上 BOS 較佔便宜。\nTOR 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 233.3 分，防守合計失 220.0 分；近況合計每場出手 76 記三分（聯盟兩隊平均 73）、快攻 29 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 216.3，盤口 225.0，低於盤口 8.7 分。以總分相對盤口 ±18.4 分的分佈換算，小分機率 68%；公布信心 76%。\n## 模型本季戰績\n本季至今，已發佈讓分 76 勝 75 負（50%）；信心 55% 以上的場次 61 勝 65 負；大小分 75 勝 79 負（49%）。\n## 風險\n坦白說：TOR 在禁區得分上的優勢（51.6 對 36.4）是翻掉這份判讀最直接的路徑；BOS 單場分差起伏 ±18.3 分，單場優勢並不牢靠。",
       "predicted_margin": 1.48,
       "predicted_total": 216.3,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-11-10T23:30:12.594038",
       "analysis_facts": {
         "profile_games": 10,
@@ -67094,9 +67094,9 @@
         "start_time": "2026-11-12T00:00Z",
         "home_team_id": 24,
         "away_team_id": 2,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 93,
-        "away_score": 94,
+        "away_score": 98,
         "period_scores": {
           "home": [
             38,
@@ -67108,7 +67108,7 @@
             29,
             25,
             21,
-            19
+            23
           ]
         },
         "vegas_spread": 4.5,
@@ -67481,18 +67481,18 @@
         "home_team_id": 27,
         "away_team_id": 3,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 66,
-        "away_score": 90,
+        "home_score": 72,
+        "away_score": 97,
         "period_scores": {
           "home": [
             25,
             41,
-            0
+            6
           ],
           "away": [
             39,
             44,
-            7
+            14
           ]
         },
         "vegas_spread": -2.5,
@@ -67530,8 +67530,8 @@
       "analysis_content_zh": "## 結論\n結論落在主場作戰的 NY。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 NY 贏 9.6 分，勝率 76%。\n信心高（88%）。\n## 本季至今\nNY 戰績 6-4（主 4-2、客 2-2），場均得 111.1（30 隊中第 21）、失 105.8（30 隊中第 4），淨勝 +5.3（30 隊中第 9），目前 W3。近況：主場勝 BKN 103-90、主場勝 CHI 135-105、客場勝 CLE 109-97。\nCLE 戰績 5-6，場均得 116.5（30 隊中第 10）、失 115.0（30 隊中第 16），淨勝 +1.5（30 隊中第 16），目前 L2。近況：主場勝 PHI 119-95、主場負 NY 97-109、客場負 CHA 112-124。\n對盤口表現：NY 讓分 3 勝 5 負 (38%)；大分 2 次、小分 6 次；CLE 讓分 3 勝 8 負 (27%)；大分 5 次、小分 6 次。\n近 3 次交手 NY 3 勝 0 負，平均分差 +22.0（最近一次 2026-05-25：勝 130-93）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-06-13）裡，NY 和 CLE 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -5.7（聯盟平均 -4.7；NY 第 1、CLE 第 16／30 隊）。\n• **快攻得分**：NY 快攻 16.8 分，對手 8.0（聯盟平均 14.2；NY 第 7、CLE 第 30／30 隊）。\n• **三分命中率**：NY 三分命中 39.2%，對手 31.5%（聯盟平均 34.9%；NY 第 3、CLE 第 27／30 隊）。\n• **籃板**：NY 場均 45.7 籃板，對手 38.3（聯盟平均 41.9；NY 第 3、CLE 第 26／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，CLE 是 ±18.0 分；NY 的表現較穩。\n## 賽程與休息\nNY 休了 3 天；CLE 休一天。\n體能上 NY 較佔便宜。\nNY 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 227.6 分，防守合計失 220.8 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 214.4，盤口 225.0，低於盤口 10.6 分。以總分相對盤口 ±18.4 分的分佈換算，小分機率 72%；公布信心 81%。\n## 模型本季戰績\n本季至今，已發佈讓分 76 勝 75 負（50%）；信心 88% 以上的場次 7 勝 9 負；大小分 75 勝 79 負（49%）。\n## 風險\n坦白說：沒有單一明顯風險，主要變數是單場 48 分鐘的隨機性。",
       "predicted_margin": 9.64,
       "predicted_total": 214.42,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "LOSS",
       "created_at": "2026-11-10T23:30:12.708754",
       "analysis_facts": {
         "profile_games": 10,
@@ -67864,21 +67864,21 @@
         "start_time": "2026-11-12T00:00Z",
         "home_team_id": 28,
         "away_team_id": 6,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 105,
-        "away_score": 110,
+        "status": "STATUS_FINISHED",
+        "home_score": 107,
+        "away_score": 115,
         "period_scores": {
           "home": [
             23,
             30,
             23,
-            29
+            31
           ],
           "away": [
             33,
             26,
             23,
-            28
+            33
           ]
         },
         "vegas_spread": -4.5,
@@ -68251,14 +68251,14 @@
         "home_team_id": 30,
         "away_team_id": 19,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 29,
-        "away_score": 25,
+        "home_score": 34,
+        "away_score": 29,
         "period_scores": {
           "home": [
-            26
+            34
           ],
           "away": [
-            25
+            29
           ]
         },
         "vegas_spread": 4.5,
