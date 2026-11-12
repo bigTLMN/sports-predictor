@@ -7531,7 +7531,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -8.5,
-      "vegas_total": 222.5,
+      "vegas_total": 223.5,
       "home_team": {
         "code": "PHI",
         "full_name": "Philadelphia 76ers",
@@ -7581,7 +7581,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -5.5,
-      "vegas_total": 225.5,
+      "vegas_total": 226.5,
       "home_team": {
         "code": "MIN",
         "full_name": "Minnesota Timberwolves",
@@ -8194,6 +8194,206 @@
       },
       "home_team_nba_id": 1610612758,
       "away_team_nba_id": 1610612760
+    },
+    {
+      "id": 219,
+      "date": "2026-11-16",
+      "start_time": "2026-11-17T00:00Z",
+      "home_team_id": 2,
+      "away_team_id": 19,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "BOS",
+        "full_name": "Boston Celtics",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png"
+      },
+      "away_team": {
+        "code": "ORL",
+        "full_name": "Orlando Magic",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png"
+      },
+      "home_team_nba_id": 1610612738,
+      "away_team_nba_id": 1610612753
+    },
+    {
+      "id": 220,
+      "date": "2026-11-16",
+      "start_time": "2026-11-17T00:00Z",
+      "home_team_id": 6,
+      "away_team_id": 5,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "CLE",
+        "full_name": "Cleveland Cavaliers",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png"
+      },
+      "away_team": {
+        "code": "CHI",
+        "full_name": "Chicago Bulls",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png"
+      },
+      "home_team_nba_id": 1610612739,
+      "away_team_nba_id": 1610612741
+    },
+    {
+      "id": 221,
+      "date": "2026-11-16",
+      "start_time": "2026-11-17T00:00Z",
+      "home_team_id": 25,
+      "away_team_id": 14,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "WSH",
+        "full_name": "Washington Wizards",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png"
+      },
+      "away_team": {
+        "code": "MEM",
+        "full_name": "Memphis Grizzlies",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png"
+      },
+      "home_team_nba_id": 1610612764,
+      "away_team_nba_id": 1610612763
+    },
+    {
+      "id": 222,
+      "date": "2026-11-16",
+      "start_time": "2026-11-17T00:30Z",
+      "home_team_id": 3,
+      "away_team_id": 20,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "BKN",
+        "full_name": "Brooklyn Nets",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png"
+      },
+      "away_team": {
+        "code": "PHI",
+        "full_name": "Philadelphia 76ers",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png"
+      },
+      "home_team_nba_id": 1610612751,
+      "away_team_nba_id": 1610612755
+    },
+    {
+      "id": 223,
+      "date": "2026-11-16",
+      "start_time": "2026-11-17T00:30Z",
+      "home_team_id": 15,
+      "away_team_id": 10,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "MIA",
+        "full_name": "Miami Heat",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png"
+      },
+      "away_team": {
+        "code": "HOU",
+        "full_name": "Houston Rockets",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png"
+      },
+      "home_team_nba_id": 1610612748,
+      "away_team_nba_id": 1610612745
+    },
+    {
+      "id": 224,
+      "date": "2026-11-16",
+      "start_time": "2026-11-17T01:00Z",
+      "home_team_id": 17,
+      "away_team_id": 22,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "MIN",
+        "full_name": "Minnesota Timberwolves",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/min.png"
+      },
+      "away_team": {
+        "code": "POR",
+        "full_name": "Portland Trail Blazers",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/por.png"
+      },
+      "home_team_nba_id": 1610612750,
+      "away_team_nba_id": 1610612757
+    },
+    {
+      "id": 225,
+      "date": "2026-11-16",
+      "start_time": "2026-11-17T01:00Z",
+      "home_team_id": 27,
+      "away_team_id": 26,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "NO",
+        "full_name": "New Orleans Pelicans",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/no.png"
+      },
+      "away_team": {
+        "code": "GS",
+        "full_name": "Golden State Warriors",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png"
+      },
+      "home_team_nba_id": 1610612740,
+      "away_team_nba_id": 1610612744
+    },
+    {
+      "id": 226,
+      "date": "2026-11-16",
+      "start_time": "2026-11-17T02:00Z",
+      "home_team_id": 8,
+      "away_team_id": 21,
+      "status": "STATUS_SCHEDULED",
+      "home_score": 0,
+      "away_score": 0,
+      "period_scores": null,
+      "vegas_spread": null,
+      "vegas_total": null,
+      "home_team": {
+        "code": "DEN",
+        "full_name": "Denver Nuggets",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/den.png"
+      },
+      "away_team": {
+        "code": "PHX",
+        "full_name": "Phoenix Suns",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png"
+      },
+      "home_team_nba_id": 1610612743,
+      "away_team_nba_id": 1610612756
     }
   ],
   "picks": [
@@ -68715,7 +68915,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -5.5,
-        "vegas_total": 225.5,
+        "vegas_total": 226.5,
         "home_team": {
           "code": "MIN",
           "full_name": "Minnesota Timberwolves",
@@ -69088,7 +69288,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -8.5,
-        "vegas_total": 222.5,
+        "vegas_total": 223.5,
         "home_team": {
           "code": "PHI",
           "full_name": "Philadelphia 76ers",
@@ -69870,7 +70070,7 @@
       "predicted_total": 233.77,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T15:30:13.166430",
+      "created_at": "2026-11-12T16:00:15.486775",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -70194,7 +70394,7 @@
             32
           ]
         },
-        "generated_at": "2026-11-12T15:30:13"
+        "generated_at": "2026-11-12T16:00:15"
       },
       "matches": {
         "id": 199,
@@ -70243,7 +70443,7 @@
       "predicted_total": 234.39,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T15:30:13.224021",
+      "created_at": "2026-11-12T16:00:15.544773",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-01",
@@ -70567,7 +70767,7 @@
             4
           ]
         },
-        "generated_at": "2026-11-12T15:30:13"
+        "generated_at": "2026-11-12T16:00:15"
       },
       "matches": {
         "id": 201,
@@ -70616,7 +70816,7 @@
       "predicted_total": 223.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T15:30:13.289753",
+      "created_at": "2026-11-12T16:00:15.603203",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -70940,7 +71140,7 @@
             10
           ]
         },
-        "generated_at": "2026-11-12T15:30:13"
+        "generated_at": "2026-11-12T16:00:15"
       },
       "matches": {
         "id": 196,
@@ -70989,7 +71189,7 @@
       "predicted_total": 219.08,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T15:30:13.352335",
+      "created_at": "2026-11-12T16:00:15.662998",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -71313,7 +71513,7 @@
             55
           ]
         },
-        "generated_at": "2026-11-12T15:30:13"
+        "generated_at": "2026-11-12T16:00:15"
       },
       "matches": {
         "id": 204,
@@ -71362,7 +71562,7 @@
       "predicted_total": 237.02,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T15:30:13.412028",
+      "created_at": "2026-11-12T16:00:15.719719",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-14",
@@ -71686,7 +71886,7 @@
             30
           ]
         },
-        "generated_at": "2026-11-12T15:30:13"
+        "generated_at": "2026-11-12T16:00:15"
       },
       "matches": {
         "id": 198,
@@ -71735,7 +71935,7 @@
       "predicted_total": 221.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T15:30:13.470821",
+      "created_at": "2026-11-12T16:00:15.777288",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -72059,7 +72259,7 @@
             27
           ]
         },
-        "generated_at": "2026-11-12T15:30:13"
+        "generated_at": "2026-11-12T16:00:15"
       },
       "matches": {
         "id": 197,
@@ -72108,7 +72308,7 @@
       "predicted_total": 229.25,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T15:30:13.532233",
+      "created_at": "2026-11-12T16:00:15.838845",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-28",
@@ -72432,7 +72632,7 @@
             45
           ]
         },
-        "generated_at": "2026-11-12T15:30:13"
+        "generated_at": "2026-11-12T16:00:15"
       },
       "matches": {
         "id": 203,
@@ -72481,7 +72681,7 @@
       "predicted_total": 239.47,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T15:30:13.584571",
+      "created_at": "2026-11-12T16:00:15.901336",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -72805,7 +73005,7 @@
             6
           ]
         },
-        "generated_at": "2026-11-12T15:30:13"
+        "generated_at": "2026-11-12T16:00:15"
       },
       "matches": {
         "id": 200,
@@ -72854,7 +73054,7 @@
       "predicted_total": 223.56,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-12T15:30:13.646055",
+      "created_at": "2026-11-12T16:00:15.964724",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -73178,7 +73378,7 @@
             10
           ]
         },
-        "generated_at": "2026-11-12T15:30:13"
+        "generated_at": "2026-11-12T16:00:15"
       },
       "matches": {
         "id": 202,
