@@ -7759,20 +7759,20 @@
       "home_team_id": 15,
       "away_team_id": 6,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 120,
-      "away_score": 112,
+      "home_score": 122,
+      "away_score": 114,
       "period_scores": {
         "home": [
           29,
           25,
           38,
-          28
+          30
         ],
         "away": [
           27,
           30,
           34,
-          21
+          23
         ]
       },
       "vegas_spread": -2.5,
@@ -7835,20 +7835,20 @@
       "home_team_id": 27,
       "away_team_id": 14,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 103,
-      "away_score": 126,
+      "home_score": 105,
+      "away_score": 133,
       "period_scores": {
         "home": [
           28,
           30,
           28,
-          17
+          19
         ],
         "away": [
           35,
           35,
           35,
-          21
+          28
         ]
       },
       "vegas_spread": 3.5,
@@ -7873,18 +7873,18 @@
       "home_team_id": 10,
       "away_team_id": 30,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 88,
-      "away_score": 87,
+      "home_score": 92,
+      "away_score": 89,
       "period_scores": {
         "home": [
           27,
           36,
-          25
+          29
         ],
         "away": [
           27,
           26,
-          34
+          36
         ]
       },
       "vegas_spread": -15.5,
@@ -7910,7 +7910,7 @@
       "away_team_id": 26,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 40,
-      "away_score": 16,
+      "away_score": 22,
       "period_scores": {
         "home": [
           38,
@@ -7918,7 +7918,7 @@
         ],
         "away": [
           14,
-          2
+          8
         ]
       },
       "vegas_spread": -12.5,
@@ -7943,14 +7943,14 @@
       "home_team_id": 23,
       "away_team_id": 22,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 18,
-      "away_score": 18,
+      "home_score": 20,
+      "away_score": 21,
       "period_scores": {
         "home": [
-          18
+          20
         ],
         "away": [
-          17
+          21
         ]
       },
       "vegas_spread": 10.5,
@@ -7979,7 +7979,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 6.5,
-      "vegas_total": 222.5,
+      "vegas_total": 221.5,
       "home_team": {
         "code": "LAC",
         "full_name": "LA Clippers",
@@ -71118,18 +71118,18 @@
         "home_team_id": 10,
         "away_team_id": 30,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 88,
-        "away_score": 87,
+        "home_score": 92,
+        "away_score": 89,
         "period_scores": {
           "home": [
             27,
             36,
-            25
+            29
           ],
           "away": [
             27,
             26,
-            34
+            36
           ]
         },
         "vegas_spread": -15.5,
@@ -71892,7 +71892,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 6.5,
-        "vegas_total": 222.5,
+        "vegas_total": 221.5,
         "home_team": {
           "code": "LAC",
           "full_name": "LA Clippers",
@@ -72261,20 +72261,20 @@
         "home_team_id": 15,
         "away_team_id": 6,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 120,
-        "away_score": 112,
+        "home_score": 122,
+        "away_score": 114,
         "period_scores": {
           "home": [
             29,
             25,
             38,
-            28
+            30
           ],
           "away": [
             27,
             30,
             34,
-            21
+            23
           ]
         },
         "vegas_spread": -2.5,
@@ -73033,14 +73033,14 @@
         "home_team_id": 23,
         "away_team_id": 22,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 18,
-        "away_score": 18,
+        "home_score": 20,
+        "away_score": 21,
         "period_scores": {
           "home": [
-            18
+            20
           ],
           "away": [
-            17
+            21
           ]
         },
         "vegas_spread": 10.5,
@@ -73413,20 +73413,20 @@
         "home_team_id": 27,
         "away_team_id": 14,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 103,
-        "away_score": 126,
+        "home_score": 105,
+        "away_score": 133,
         "period_scores": {
           "home": [
             28,
             30,
             28,
-            17
+            19
           ],
           "away": [
             35,
             35,
             35,
-            21
+            28
           ]
         },
         "vegas_spread": 3.5,
@@ -73800,7 +73800,7 @@
         "away_team_id": 26,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 40,
-        "away_score": 16,
+        "away_score": 22,
         "period_scores": {
           "home": [
             38,
@@ -73808,7 +73808,7 @@
           ],
           "away": [
             14,
-            2
+            8
           ]
         },
         "vegas_spread": -12.5,
@@ -75713,7 +75713,7 @@
       "predicted_total": 229.23,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-14T03:00:12.160104",
+      "created_at": "2026-11-14T03:30:12.879465",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -76037,7 +76037,7 @@
             4
           ]
         },
-        "generated_at": "2026-11-14T03:00:12"
+        "generated_at": "2026-11-14T03:30:12"
       },
       "matches": {
         "id": 214,
@@ -76086,7 +76086,7 @@
       "predicted_total": 219.84,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-14T03:00:12.223300",
+      "created_at": "2026-11-14T03:30:12.934203",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -76410,7 +76410,7 @@
             61
           ]
         },
-        "generated_at": "2026-11-14T03:00:12"
+        "generated_at": "2026-11-14T03:30:12"
       },
       "matches": {
         "id": 212,
@@ -76459,7 +76459,7 @@
       "predicted_total": 226.12,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-14T03:00:12.286751",
+      "created_at": "2026-11-14T03:30:12.992650",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -76783,7 +76783,7 @@
             50
           ]
         },
-        "generated_at": "2026-11-14T03:00:12"
+        "generated_at": "2026-11-14T03:30:12"
       },
       "matches": {
         "id": 217,
@@ -76832,7 +76832,7 @@
       "predicted_total": 226.93,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-14T03:00:12.361635",
+      "created_at": "2026-11-14T03:30:13.050805",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-10",
@@ -77156,7 +77156,7 @@
             34
           ]
         },
-        "generated_at": "2026-11-14T03:00:12"
+        "generated_at": "2026-11-14T03:30:13"
       },
       "matches": {
         "id": 210,
@@ -77205,7 +77205,7 @@
       "predicted_total": 217.35,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-14T03:00:12.426984",
+      "created_at": "2026-11-14T03:30:13.110251",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-27",
@@ -77529,7 +77529,7 @@
             76
           ]
         },
-        "generated_at": "2026-11-14T03:00:12"
+        "generated_at": "2026-11-14T03:30:13"
       },
       "matches": {
         "id": 211,
@@ -77578,7 +77578,7 @@
       "predicted_total": 226.18,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-14T03:00:12.492535",
+      "created_at": "2026-11-14T03:30:13.170539",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -77902,7 +77902,7 @@
             11
           ]
         },
-        "generated_at": "2026-11-14T03:00:12"
+        "generated_at": "2026-11-14T03:30:13"
       },
       "matches": {
         "id": 218,
@@ -77951,7 +77951,7 @@
       "predicted_total": 213.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-14T03:00:12.549520",
+      "created_at": "2026-11-14T03:30:13.228560",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -78275,7 +78275,7 @@
             47
           ]
         },
-        "generated_at": "2026-11-14T03:00:12"
+        "generated_at": "2026-11-14T03:30:13"
       },
       "matches": {
         "id": 215,
@@ -78324,7 +78324,7 @@
       "predicted_total": 229.23,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-14T03:00:12.609015",
+      "created_at": "2026-11-14T03:30:13.286491",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-01",
@@ -78648,7 +78648,7 @@
             9
           ]
         },
-        "generated_at": "2026-11-14T03:00:12"
+        "generated_at": "2026-11-14T03:30:13"
       },
       "matches": {
         "id": 216,
@@ -78697,7 +78697,7 @@
       "predicted_total": 234.02,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-14T03:00:12.667337",
+      "created_at": "2026-11-14T03:30:13.342450",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -79021,7 +79021,7 @@
             23
           ]
         },
-        "generated_at": "2026-11-14T03:00:12"
+        "generated_at": "2026-11-14T03:30:13"
       },
       "matches": {
         "id": 213,
