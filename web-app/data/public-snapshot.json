@@ -7912,21 +7912,21 @@
       "start_time": "2026-11-14T02:30Z",
       "home_team_id": 29,
       "away_team_id": 26,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 119,
-      "away_score": 83,
+      "status": "STATUS_FINISHED",
+      "home_score": 123,
+      "away_score": 85,
       "period_scores": {
         "home": [
           38,
           25,
           34,
-          22
+          26
         ],
         "away": [
           14,
           19,
           27,
-          23
+          25
         ]
       },
       "vegas_spread": -12.5,
@@ -7951,20 +7951,20 @@
       "home_team_id": 23,
       "away_team_id": 22,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 78,
-      "away_score": 98,
+      "home_score": 84,
+      "away_score": 100,
       "period_scores": {
         "home": [
           25,
           28,
           25,
-          0
+          6
         ],
         "away": [
           34,
           30,
           29,
-          5
+          7
         ]
       },
       "vegas_spread": 10.5,
@@ -7989,18 +7989,18 @@
       "home_team_id": 12,
       "away_team_id": 18,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 58,
-      "away_score": 50,
+      "home_score": 60,
+      "away_score": 57,
       "period_scores": {
         "home": [
           33,
           24,
-          1
+          3
         ],
         "away": [
           27,
           17,
-          6
+          13
         ]
       },
       "vegas_spread": 6.5,
@@ -71917,18 +71917,18 @@
         "home_team_id": 12,
         "away_team_id": 18,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 58,
-        "away_score": 50,
+        "home_score": 60,
+        "away_score": 57,
         "period_scores": {
           "home": [
             33,
             24,
-            1
+            3
           ],
           "away": [
             27,
             17,
-            6
+            13
           ]
         },
         "vegas_spread": 6.5,
@@ -73073,20 +73073,20 @@
         "home_team_id": 23,
         "away_team_id": 22,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 78,
-        "away_score": 98,
+        "home_score": 84,
+        "away_score": 100,
         "period_scores": {
           "home": [
             25,
             28,
             25,
-            0
+            6
           ],
           "away": [
             34,
             30,
             29,
-            5
+            7
           ]
         },
         "vegas_spread": 10.5,
@@ -73510,8 +73510,8 @@
       "analysis_content_zh": "## 結論\n結論落在主場作戰的 SA。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 SA 贏 9.4 分，勝率 75%。\n信心高（87%）。\n## 本季至今\nSA 戰績 12-2（主 6-2、客 6-0），場均得 119.9（30 隊中第 3）、失 106.9（30 隊中第 5），淨勝 +13.1（30 隊中第 1），目前 W10。近況：客場勝 POR 125-103、客場勝 PHX 122-96、客場勝 CHI 124-119。\nGS 戰績 9-4，場均得 120.0（30 隊中第 2）、失 112.0（30 隊中第 12），淨勝 +8.0（30 隊中第 5），目前 L1。近況：主場勝 ORL 126-119、主場勝 NO 138-87、客場負 HOU 108-115。\n對盤口表現：SA 讓分 5 勝 6 負 (45%)；大分 4 次、小分 7 次；GS 讓分 8 勝 3 負 (73%)；大分 7 次、小分 4 次。\n近 3 次交手 SA 2 勝 1 負，平均分差 +8.7（最近一次 2026-04-01：勝 127-113）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-06-13），SA 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：SA 場均失 104.8 分，對手 117.3（聯盟平均 115.8；SA 第 4、GS 第 19／30 隊）。\n• **淨勝分**：SA 場均淨勝 +1.6 分，對手 -7.7（聯盟平均 -4.7；SA 第 9、GS 第 20／30 隊）。\n• **快攻得分**：SA 快攻 15.0 分，對手 9.7（聯盟平均 14.2；SA 第 10、GS 第 27／30 隊）。\n• **籃板**：SA 場均 44.4 籃板，對手 39.2（聯盟平均 41.9；SA 第 7、GS 第 25／30 隊）。\nGS 能反擊的地方：\n• **板凳得分**：GS 這項較好，43.6 對 SA 的 28.3（聯盟平均 35.3；SA 第 23、GS 第 7／30 隊）。\n• **命中率**：GS 這項較好，47.1% 對 SA 的 42.4%（聯盟平均 45.8%；SA 第 29、GS 第 10／30 隊）。\n• **助攻**：GS 這項較好，27.3 對 SA 的 23.5（聯盟平均 25.0；SA 第 22、GS 第 5／30 隊）。\n穩定度：這段期間 SA 單場分差的標準差是 ±13.2 分，GS 是 ±8.8 分；SA 的表現起伏較大。\n## 賽程與休息\nSA 休一天；GS 休一天。\nSA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 239.9 分，防守合計失 218.9 分；近況合計每場出手 76 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 223.6，盤口 225.0，低於盤口 1.4 分。以總分相對盤口 ±18.0 分的分佈換算，小分機率 53%；公布信心 54%。\n## 模型本季戰績\n本季至今，已發佈讓分 83 勝 82 負（50%）；信心 87% 以上的場次 9 勝 10 負；大小分 83 勝 87 負（49%）。\n## 風險\n坦白說：GS 在板凳得分上的優勢（43.6 對 28.3）是翻掉這份判讀最直接的路徑。",
       "predicted_margin": 9.44,
       "predicted_total": 223.56,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-11-12T23:30:12.471706",
       "analysis_facts": {
         "profile_games": 10,
@@ -73844,21 +73844,21 @@
         "start_time": "2026-11-14T02:30Z",
         "home_team_id": 29,
         "away_team_id": 26,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 119,
-        "away_score": 83,
+        "status": "STATUS_FINISHED",
+        "home_score": 123,
+        "away_score": 85,
         "period_scores": {
           "home": [
             38,
             25,
             34,
-            22
+            26
           ],
           "away": [
             14,
             19,
             27,
-            23
+            25
           ]
         },
         "vegas_spread": -12.5,
