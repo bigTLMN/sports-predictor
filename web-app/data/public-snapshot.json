@@ -7683,20 +7683,20 @@
       "home_team_id": 11,
       "away_team_id": 28,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 100,
-      "away_score": 89,
+      "home_score": 102,
+      "away_score": 94,
       "period_scores": {
         "home": [
           26,
           32,
           27,
-          15
+          17
         ],
         "away": [
           27,
           22,
           35,
-          5
+          10
         ]
       },
       "vegas_spread": 7.5,
@@ -7721,20 +7721,20 @@
       "home_team_id": 19,
       "away_team_id": 16,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 98,
-      "away_score": 86,
+      "home_score": 102,
+      "away_score": 92,
       "period_scores": {
         "home": [
           23,
           29,
           32,
-          14
+          18
         ],
         "away": [
           15,
           22,
           35,
-          14
+          20
         ]
       },
       "vegas_spread": -9.5,
@@ -7793,16 +7793,18 @@
       "home_team_id": 5,
       "away_team_id": 1,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 60,
-      "away_score": 53,
+      "home_score": 65,
+      "away_score": 56,
       "period_scores": {
         "home": [
           33,
-          27
+          27,
+          5
         ],
         "away": [
           24,
-          29
+          29,
+          3
         ]
       },
       "vegas_spread": 6.5,
@@ -7861,16 +7863,16 @@
       "home_team_id": 10,
       "away_team_id": 30,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 36,
-      "away_score": 37,
+      "home_score": 42,
+      "away_score": 41,
       "period_scores": {
         "home": [
           27,
-          9
+          15
         ],
         "away": [
           27,
-          10
+          14
         ]
       },
       "vegas_spread": -15.5,
@@ -70702,16 +70704,18 @@
         "home_team_id": 5,
         "away_team_id": 1,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 60,
-        "away_score": 53,
+        "home_score": 65,
+        "away_score": 56,
         "period_scores": {
           "home": [
             33,
-            27
+            27,
+            5
           ],
           "away": [
             24,
-            29
+            29,
+            3
           ]
         },
         "vegas_spread": 6.5,
@@ -71084,16 +71088,16 @@
         "home_team_id": 10,
         "away_team_id": 30,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 36,
-        "away_score": 37,
+        "home_score": 42,
+        "away_score": 41,
         "period_scores": {
           "home": [
             27,
-            9
+            15
           ],
           "away": [
             27,
-            10
+            14
           ]
         },
         "vegas_spread": -15.5,
@@ -71466,20 +71470,20 @@
         "home_team_id": 11,
         "away_team_id": 28,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 100,
-        "away_score": 89,
+        "home_score": 102,
+        "away_score": 94,
         "period_scores": {
           "home": [
             26,
             32,
             27,
-            15
+            17
           ],
           "away": [
             27,
             22,
             35,
-            5
+            10
           ]
         },
         "vegas_spread": 7.5,
@@ -72607,20 +72611,20 @@
         "home_team_id": 19,
         "away_team_id": 16,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 98,
-        "away_score": 86,
+        "home_score": 102,
+        "away_score": 92,
         "period_scores": {
           "home": [
             23,
             29,
             32,
-            14
+            18
           ],
           "away": [
             15,
             22,
             35,
-            14
+            20
           ]
         },
         "vegas_spread": -9.5,
