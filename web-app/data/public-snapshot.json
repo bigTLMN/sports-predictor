@@ -8369,20 +8369,20 @@
       "home_team_id": 2,
       "away_team_id": 7,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 122,
-      "away_score": 86,
+      "home_score": 126,
+      "away_score": 90,
       "period_scores": {
         "home": [
           42,
           25,
           37,
-          16
+          22
         ],
         "away": [
           9,
           28,
           34,
-          15
+          19
         ]
       },
       "vegas_spread": -14.5,
@@ -8408,7 +8408,7 @@
       "away_team_id": 28,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 74,
-      "away_score": 62,
+      "away_score": 67,
       "period_scores": {
         "home": [
           17,
@@ -8418,7 +8418,7 @@
         "away": [
           23,
           24,
-          15
+          20
         ]
       },
       "vegas_spread": 3.5,
@@ -8443,16 +8443,16 @@
       "home_team_id": 25,
       "away_team_id": 10,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 43,
-      "away_score": 59,
+      "home_score": 50,
+      "away_score": 71,
       "period_scores": {
         "home": [
           31,
-          12
+          19
         ],
         "away": [
           36,
-          23
+          35
         ]
       },
       "vegas_spread": 8.5,
@@ -8655,8 +8655,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -3.5,
+      "vegas_total": 228.5,
       "home_team": {
         "code": "MIN",
         "full_name": "Minnesota Timberwolves",
@@ -76715,20 +76715,20 @@
         "home_team_id": 2,
         "away_team_id": 7,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 122,
-        "away_score": 86,
+        "home_score": 126,
+        "away_score": 90,
         "period_scores": {
           "home": [
             42,
             25,
             37,
-            16
+            22
           ],
           "away": [
             9,
             28,
             34,
-            15
+            19
           ]
         },
         "vegas_spread": -14.5,
@@ -79006,7 +79006,7 @@
         "away_team_id": 28,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 74,
-        "away_score": 62,
+        "away_score": 67,
         "period_scores": {
           "home": [
             17,
@@ -79016,7 +79016,7 @@
           "away": [
             23,
             24,
-            15
+            20
           ]
         },
         "vegas_spread": 3.5,
@@ -79389,16 +79389,16 @@
         "home_team_id": 25,
         "away_team_id": 10,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 43,
-        "away_score": 59,
+        "home_score": 50,
+        "away_score": 71,
         "period_scores": {
           "home": [
             31,
-            12
+            19
           ],
           "away": [
             36,
-            23
+            35
           ]
         },
         "vegas_spread": 8.5,
@@ -82025,8 +82025,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -3.5,
+        "vegas_total": 228.5,
         "home_team": {
           "code": "MIN",
           "full_name": "Minnesota Timberwolves",
@@ -82808,7 +82808,7 @@
       "predicted_total": 239.01,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-16T00:30:13.494500",
+      "created_at": "2026-11-16T01:00:13.322246",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -83132,7 +83132,7 @@
             5
           ]
         },
-        "generated_at": "2026-11-16T00:30:13"
+        "generated_at": "2026-11-16T01:00:13"
       },
       "matches": {
         "id": 230,
@@ -83181,7 +83181,7 @@
       "predicted_total": 216.06,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-16T00:30:13.551867",
+      "created_at": "2026-11-16T01:00:13.380597",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -83505,7 +83505,7 @@
             62
           ]
         },
-        "generated_at": "2026-11-16T00:30:13"
+        "generated_at": "2026-11-16T01:00:13"
       },
       "matches": {
         "id": 231,
@@ -83554,7 +83554,7 @@
       "predicted_total": 224.73,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-16T00:30:13.606975",
+      "created_at": "2026-11-16T01:00:13.436393",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-28",
@@ -83878,7 +83878,7 @@
             95
           ]
         },
-        "generated_at": "2026-11-16T00:30:13"
+        "generated_at": "2026-11-16T01:00:13"
       },
       "matches": {
         "id": 228,
@@ -83927,7 +83927,7 @@
       "predicted_total": 213.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-16T00:30:13.665021",
+      "created_at": "2026-11-16T01:00:13.493588",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -84251,7 +84251,7 @@
             53
           ]
         },
-        "generated_at": "2026-11-16T00:30:13"
+        "generated_at": "2026-11-16T01:00:13"
       },
       "matches": {
         "id": 227,
@@ -84300,7 +84300,7 @@
       "predicted_total": 214.75,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-16T00:30:13.726018",
+      "created_at": "2026-11-16T01:00:13.552801",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -84624,7 +84624,7 @@
             54
           ]
         },
-        "generated_at": "2026-11-16T00:30:13"
+        "generated_at": "2026-11-16T01:00:13"
       },
       "matches": {
         "id": 229,
