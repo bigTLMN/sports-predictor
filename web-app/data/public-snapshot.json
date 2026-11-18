@@ -8865,14 +8865,14 @@
       "home_team_id": 24,
       "away_team_id": 28,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 22,
-      "away_score": 17,
+      "home_score": 24,
+      "away_score": 20,
       "period_scores": {
         "home": [
-          22
+          24
         ],
         "away": [
-          17
+          20
         ]
       },
       "vegas_spread": 2.5,
@@ -8950,7 +8950,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -6.5,
+      "vegas_spread": -5.5,
       "vegas_total": 226.5,
       "home_team": {
         "code": "LAC",
@@ -8975,7 +8975,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -6.5,
+      "vegas_spread": -7.5,
       "vegas_total": 223.5,
       "home_team": {
         "code": "LAL",
@@ -9225,8 +9225,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 2.5,
+      "vegas_total": 219.5,
       "home_team": {
         "code": "DEN",
         "full_name": "Denver Nuggets",
@@ -83802,7 +83802,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -6.5,
+        "vegas_spread": -5.5,
         "vegas_total": 226.5,
         "home_team": {
           "code": "LAC",
@@ -84175,7 +84175,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -6.5,
+        "vegas_spread": -7.5,
         "vegas_total": 223.5,
         "home_team": {
           "code": "LAL",
@@ -84918,14 +84918,14 @@
         "home_team_id": 24,
         "away_team_id": 28,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 22,
-        "away_score": 17,
+        "home_score": 24,
+        "away_score": 20,
         "period_scores": {
           "home": [
-            22
+            24
           ],
           "away": [
-            17
+            20
           ]
         },
         "vegas_spread": 2.5,
@@ -86793,8 +86793,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 2.5,
+        "vegas_total": 219.5,
         "home_team": {
           "code": "DEN",
           "full_name": "Denver Nuggets",
@@ -89814,7 +89814,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-18T00:30:12.821611",
+      "created_at": "2026-11-18T01:00:14.387801",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -90138,7 +90138,7 @@
             42
           ]
         },
-        "generated_at": "2026-11-18T00:30:12"
+        "generated_at": "2026-11-18T01:00:14"
       },
       "matches": {
         "id": 244,
@@ -90187,7 +90187,7 @@
       "predicted_total": 224.76,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-18T00:30:12.880145",
+      "created_at": "2026-11-18T01:00:14.454718",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-28",
@@ -90511,7 +90511,7 @@
             64
           ]
         },
-        "generated_at": "2026-11-18T00:30:12"
+        "generated_at": "2026-11-18T01:00:14"
       },
       "matches": {
         "id": 245,
@@ -90560,7 +90560,7 @@
       "predicted_total": 218.5,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-18T00:30:12.943957",
+      "created_at": "2026-11-18T01:00:14.513410",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -90884,7 +90884,7 @@
             9
           ]
         },
-        "generated_at": "2026-11-18T00:30:12"
+        "generated_at": "2026-11-18T01:00:14"
       },
       "matches": {
         "id": 246,
@@ -90933,7 +90933,7 @@
       "predicted_total": 218.17,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-18T00:30:13.001825",
+      "created_at": "2026-11-18T01:00:14.571343",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -91257,7 +91257,7 @@
             52
           ]
         },
-        "generated_at": "2026-11-18T00:30:13"
+        "generated_at": "2026-11-18T01:00:14"
       },
       "matches": {
         "id": 247,
