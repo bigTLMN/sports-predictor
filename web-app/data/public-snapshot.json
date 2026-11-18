@@ -8865,16 +8865,16 @@
       "home_team_id": 24,
       "away_team_id": 28,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 46,
-      "away_score": 35,
+      "home_score": 48,
+      "away_score": 44,
       "period_scores": {
         "home": [
           29,
-          17
+          19
         ],
         "away": [
           23,
-          12
+          21
         ]
       },
       "vegas_spread": 2.5,
@@ -8900,13 +8900,13 @@
       "away_team_id": 22,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 13,
-      "away_score": 13,
+      "away_score": 15,
       "period_scores": {
         "home": [
           13
         ],
         "away": [
-          13
+          15
         ]
       },
       "vegas_spread": -4.5,
@@ -8931,14 +8931,14 @@
       "home_team_id": 29,
       "away_team_id": 9,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 18,
-      "away_score": 6,
+      "home_score": 24,
+      "away_score": 16,
       "period_scores": {
         "home": [
-          18
+          24
         ],
         "away": [
-          6
+          16
         ]
       },
       "vegas_spread": -9.5,
@@ -8991,7 +8991,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -7.5,
+      "vegas_spread": -6.5,
       "vegas_total": 223.5,
       "home_team": {
         "code": "LAL",
@@ -9016,8 +9016,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -5.5,
+      "vegas_total": 236.5,
       "home_team": {
         "code": "CLE",
         "full_name": "Cleveland Cavaliers",
@@ -9191,8 +9191,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -7.5,
+      "vegas_total": 226.5,
       "home_team": {
         "code": "OKC",
         "full_name": "Oklahoma City Thunder",
@@ -9291,8 +9291,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 6.5,
+      "vegas_total": 229.5,
       "home_team": {
         "code": "SAC",
         "full_name": "Sacramento Kings",
@@ -84191,7 +84191,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -7.5,
+        "vegas_spread": -6.5,
         "vegas_total": 223.5,
         "home_team": {
           "code": "LAL",
@@ -84562,13 +84562,13 @@
         "away_team_id": 22,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 13,
-        "away_score": 13,
+        "away_score": 15,
         "period_scores": {
           "home": [
             13
           ],
           "away": [
-            13
+            15
           ]
         },
         "vegas_spread": -4.5,
@@ -84941,16 +84941,16 @@
         "home_team_id": 24,
         "away_team_id": 28,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 46,
-        "away_score": 35,
+        "home_score": 48,
+        "away_score": 44,
         "period_scores": {
           "home": [
             29,
-            17
+            19
           ],
           "away": [
             23,
-            12
+            21
           ]
         },
         "vegas_spread": 2.5,
@@ -85323,14 +85323,14 @@
         "home_team_id": 29,
         "away_team_id": 9,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 18,
-        "away_score": 6,
+        "home_score": 24,
+        "away_score": 16,
         "period_scores": {
           "home": [
-            18
+            24
           ],
           "away": [
-            6
+            16
           ]
         },
         "vegas_spread": -9.5,
@@ -86079,8 +86079,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -5.5,
+        "vegas_total": 236.5,
         "home_team": {
           "code": "CLE",
           "full_name": "Cleveland Cavaliers",
@@ -88317,8 +88317,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -7.5,
+        "vegas_total": 226.5,
         "home_team": {
           "code": "OKC",
           "full_name": "Oklahoma City Thunder",
@@ -89063,8 +89063,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 6.5,
+        "vegas_total": 229.5,
         "home_team": {
           "code": "SAC",
           "full_name": "Sacramento Kings",
@@ -89846,7 +89846,7 @@
       "predicted_total": 233.88,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-18T01:00:14.387801",
+      "created_at": "2026-11-18T01:30:13.407873",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -90170,7 +90170,7 @@
             42
           ]
         },
-        "generated_at": "2026-11-18T01:00:14"
+        "generated_at": "2026-11-18T01:30:13"
       },
       "matches": {
         "id": 244,
@@ -90219,7 +90219,7 @@
       "predicted_total": 224.76,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-18T01:00:14.454718",
+      "created_at": "2026-11-18T01:30:13.465494",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-28",
@@ -90543,7 +90543,7 @@
             64
           ]
         },
-        "generated_at": "2026-11-18T01:00:14"
+        "generated_at": "2026-11-18T01:30:13"
       },
       "matches": {
         "id": 245,
@@ -90592,7 +90592,7 @@
       "predicted_total": 218.5,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-18T01:00:14.513410",
+      "created_at": "2026-11-18T01:30:13.522372",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -90916,7 +90916,7 @@
             9
           ]
         },
-        "generated_at": "2026-11-18T01:00:14"
+        "generated_at": "2026-11-18T01:30:13"
       },
       "matches": {
         "id": 246,
@@ -90965,7 +90965,7 @@
       "predicted_total": 218.17,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-18T01:00:14.571343",
+      "created_at": "2026-11-18T01:30:13.578782",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -91289,7 +91289,7 @@
             52
           ]
         },
-        "generated_at": "2026-11-18T01:00:14"
+        "generated_at": "2026-11-18T01:30:13"
       },
       "matches": {
         "id": 247,
