@@ -9399,20 +9399,20 @@
       "home_team_id": 8,
       "away_team_id": 2,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 90,
-      "away_score": 92,
+      "home_score": 95,
+      "away_score": 95,
       "period_scores": {
         "home": [
           24,
           25,
           31,
-          10
+          15
         ],
         "away": [
           30,
           31,
           19,
-          12
+          15
         ]
       },
       "vegas_spread": 2.5,
@@ -9437,18 +9437,18 @@
       "home_team_id": 13,
       "away_team_id": 30,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 72,
-      "away_score": 76,
+      "home_score": 76,
+      "away_score": 78,
       "period_scores": {
         "home": [
           34,
           20,
-          18
+          22
         ],
         "away": [
           29,
           27,
-          20
+          22
         ]
       },
       "vegas_spread": -11.5,
@@ -9473,20 +9473,20 @@
       "home_team_id": 23,
       "away_team_id": 21,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 90,
-      "away_score": 99,
+      "home_score": 94,
+      "away_score": 106,
       "period_scores": {
         "home": [
           31,
           29,
           24,
-          6
+          10
         ],
         "away": [
           36,
           29,
           34,
-          0
+          7
         ]
       },
       "vegas_spread": 7.5,
@@ -9514,8 +9514,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -8.5,
+      "vegas_total": 225.5,
       "home_team": {
         "code": "MEM",
         "full_name": "Memphis Grizzlies",
@@ -9539,8 +9539,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 9.5,
+      "vegas_total": 225.5,
       "home_team": {
         "code": "MIL",
         "full_name": "Milwaukee Bucks",
@@ -87278,20 +87278,20 @@
         "home_team_id": 8,
         "away_team_id": 2,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 90,
-        "away_score": 92,
+        "home_score": 95,
+        "away_score": 95,
         "period_scores": {
           "home": [
             24,
             25,
             31,
-            10
+            15
           ],
           "away": [
             30,
             31,
             19,
-            12
+            15
           ]
         },
         "vegas_spread": 2.5,
@@ -88050,18 +88050,18 @@
         "home_team_id": 13,
         "away_team_id": 30,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 72,
-        "away_score": 76,
+        "home_score": 76,
+        "away_score": 78,
         "period_scores": {
           "home": [
             34,
             20,
-            18
+            22
           ],
           "away": [
             29,
             27,
-            20
+            22
           ]
         },
         "vegas_spread": -11.5,
@@ -89592,20 +89592,20 @@
         "home_team_id": 23,
         "away_team_id": 21,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 90,
-        "away_score": 99,
+        "home_score": 94,
+        "away_score": 106,
         "period_scores": {
           "home": [
             31,
             29,
             24,
-            6
+            10
           ],
           "away": [
             36,
             29,
             34,
-            0
+            7
           ]
         },
         "vegas_spread": 7.5,
@@ -90753,8 +90753,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -8.5,
+        "vegas_total": 225.5,
         "home_team": {
           "code": "MEM",
           "full_name": "Memphis Grizzlies",
@@ -91126,8 +91126,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 9.5,
+        "vegas_total": 225.5,
         "home_team": {
           "code": "MIL",
           "full_name": "Milwaukee Bucks",
@@ -91909,7 +91909,7 @@
       "predicted_total": 221.29,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-19T04:30:13.979794",
+      "created_at": "2026-11-19T05:00:13.991897",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -92233,7 +92233,7 @@
             94
           ]
         },
-        "generated_at": "2026-11-19T04:30:13"
+        "generated_at": "2026-11-19T05:00:13"
       },
       "matches": {
         "id": 248,
@@ -92282,7 +92282,7 @@
       "predicted_total": 215.12,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-19T04:30:14.046677",
+      "created_at": "2026-11-19T05:00:14.077529",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -92606,7 +92606,7 @@
             23
           ]
         },
-        "generated_at": "2026-11-19T04:30:14"
+        "generated_at": "2026-11-19T05:00:14"
       },
       "matches": {
         "id": 249,
@@ -92655,7 +92655,7 @@
       "predicted_total": 239.28,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-19T04:30:14.129241",
+      "created_at": "2026-11-19T05:00:14.164455",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -92979,7 +92979,7 @@
             32
           ]
         },
-        "generated_at": "2026-11-19T04:30:14"
+        "generated_at": "2026-11-19T05:00:14"
       },
       "matches": {
         "id": 252,
@@ -93028,7 +93028,7 @@
       "predicted_total": 229.26,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-19T04:30:14.191969",
+      "created_at": "2026-11-19T05:00:14.243539",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-25",
@@ -93352,7 +93352,7 @@
             40
           ]
         },
-        "generated_at": "2026-11-19T04:30:14"
+        "generated_at": "2026-11-19T05:00:14"
       },
       "matches": {
         "id": 250,
@@ -93401,7 +93401,7 @@
       "predicted_total": 221.22,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-19T04:30:14.253855",
+      "created_at": "2026-11-19T05:00:14.309575",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -93725,7 +93725,7 @@
             67
           ]
         },
-        "generated_at": "2026-11-19T04:30:14"
+        "generated_at": "2026-11-19T05:00:14"
       },
       "matches": {
         "id": 255,
@@ -93774,7 +93774,7 @@
       "predicted_total": 217.66,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-19T04:30:14.316043",
+      "created_at": "2026-11-19T05:00:14.376605",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -94098,7 +94098,7 @@
             72
           ]
         },
-        "generated_at": "2026-11-19T04:30:14"
+        "generated_at": "2026-11-19T05:00:14"
       },
       "matches": {
         "id": 251,
@@ -94147,7 +94147,7 @@
       "predicted_total": 223.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-19T04:30:14.385658",
+      "created_at": "2026-11-19T05:00:14.450594",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-11",
@@ -94471,7 +94471,7 @@
             33
           ]
         },
-        "generated_at": "2026-11-19T04:30:14"
+        "generated_at": "2026-11-19T05:00:14"
       },
       "matches": {
         "id": 256,
@@ -94520,7 +94520,7 @@
       "predicted_total": 231.79,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-19T04:30:14.449477",
+      "created_at": "2026-11-19T05:00:14.514682",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -94844,7 +94844,7 @@
             13
           ]
         },
-        "generated_at": "2026-11-19T04:30:14"
+        "generated_at": "2026-11-19T05:00:14"
       },
       "matches": {
         "id": 253,
@@ -94893,7 +94893,7 @@
       "predicted_total": 235.8,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-19T04:30:14.512068",
+      "created_at": "2026-11-19T05:00:14.582679",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-27",
@@ -95217,7 +95217,7 @@
             91
           ]
         },
-        "generated_at": "2026-11-19T04:30:14"
+        "generated_at": "2026-11-19T05:00:14"
       },
       "matches": {
         "id": 254,
