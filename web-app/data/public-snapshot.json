@@ -9512,9 +9512,9 @@
       "start_time": "2026-11-20T01:00Z",
       "home_team_id": 14,
       "away_team_id": 26,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 126,
-      "away_score": 94,
+      "away_score": 98,
       "period_scores": {
         "home": [
           31,
@@ -9526,7 +9526,7 @@
           24,
           23,
           26,
-          21
+          25
         ]
       },
       "vegas_spread": -5.5,
@@ -9550,9 +9550,9 @@
       "start_time": "2026-11-20T01:00Z",
       "home_team_id": 16,
       "away_team_id": 22,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 114,
-      "away_score": 119,
+      "away_score": 124,
       "period_scores": {
         "home": [
           21,
@@ -9564,7 +9564,7 @@
           24,
           36,
           36,
-          23
+          28
         ]
       },
       "vegas_spread": 10.5,
@@ -9626,15 +9626,15 @@
       "start_time": "2026-11-20T01:00Z",
       "home_team_id": 29,
       "away_team_id": 12,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 120,
+      "status": "STATUS_FINISHED",
+      "home_score": 124,
       "away_score": 112,
       "period_scores": {
         "home": [
           24,
           33,
           35,
-          28
+          32
         ],
         "away": [
           21,
@@ -9844,7 +9844,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -1.5,
-      "vegas_total": 223.5,
+      "vegas_total": 224.5,
       "home_team": {
         "code": "DEN",
         "full_name": "Denver Nuggets",
@@ -90721,8 +90721,8 @@
       "analysis_content_zh": "## 結論\n數字指向 GS（客場）。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 GS 贏 5.3 分，勝率 64%。\n信心中等（71%）。\n## 本季至今\nGS 戰績 9-6（主 7-1、客 2-5），場均得 115.9（30 隊中第 12）、失 112.9（30 隊中第 13），淨勝 +3.0（30 隊中第 11），目前 L3。近況：客場負 HOU 108-115、客場負 SA 85-123、客場負 NO 94-115。\nMEM 戰績 11-4，場均得 121.3（30 隊中第 2）、失 111.3（30 隊中第 9），淨勝 +10.0（30 隊中第 3），目前 W3。近況：客場勝 NO 142-111、主場勝 BKN 129-110、客場勝 WSH 136-120。\n對盤口表現：GS 讓分 8 勝 5 負 (62%)；大分 7 次、小分 6 次；MEM 讓分 9 勝 4 負 (69%)；大分 8 次、小分 5 次。\n近 3 次交手 GS 3 勝 0 負，平均分差 +11.7（最近一次 2026-02-25：勝 133-112）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-17）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：GS 場均失 117.3 分，對手 132.0（聯盟平均 115.8；GS 第 19、MEM 第 29／30 隊）。\n• **淨勝分**：GS 場均淨勝 -7.7 分，對手 -20.4（聯盟平均 -4.7；GS 第 20、MEM 第 30／30 隊）。\n• **板凳得分**：GS 板凳貢獻 43.6 分，對手 37.9（聯盟平均 35.3；GS 第 7、MEM 第 12／30 隊）。\n• **籃板**：GS 場均 39.2 籃板，對手 35.8（聯盟平均 41.9；GS 第 25、MEM 第 29／30 隊）。\nMEM 能反擊的地方：\n• **快攻得分**：MEM 這項較好，13.3 對 GS 的 9.7（聯盟平均 14.2；GS 第 27、MEM 第 16／30 隊）。\n穩定度：這段期間 GS 單場分差的標準差是 ±8.8 分，MEM 是 ±12.8 分；GS 的表現較穩。\n## 賽程與休息\nGS 休了 2 天；MEM 休了 2 天。\nMEM 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 237.3 分，防守合計失 224.3 分；近況合計每場出手 82 記三分（聯盟兩隊平均 73）、快攻 23 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 233.9，盤口 225.0，高於盤口 8.9 分。以總分相對盤口 ±18.3 分的分佈換算，大分機率 69%；公布信心 76%。\n## 模型本季戰績\n本季至今，已發佈讓分 102 勝 103 負（50%）；信心 71% 以上的場次 38 勝 43 負；大小分 104 勝 106 負（50%）。\n## 風險\n坦白說：MEM 在快攻得分上的優勢（13.3 對 9.7）是翻掉這份判讀最直接的路徑；GS 正吞 3 連敗，模型看不到更衣室氣氛。",
       "predicted_margin": 5.28,
       "predicted_total": 233.88,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "LOSS",
       "created_at": "2026-11-18T23:30:14.076515",
       "analysis_facts": {
         "profile_games": 10,
@@ -91055,9 +91055,9 @@
         "start_time": "2026-11-20T01:00Z",
         "home_team_id": 14,
         "away_team_id": 26,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 126,
-        "away_score": 94,
+        "away_score": 98,
         "period_scores": {
           "home": [
             31,
@@ -91069,7 +91069,7 @@
             24,
             23,
             26,
-            21
+            25
           ]
         },
         "vegas_spread": -5.5,
@@ -91107,8 +91107,8 @@
       "analysis_content_zh": "## 結論\n本場站 客場的 POR。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 POR 贏 3.1 分，勝率 59%。\n信心偏低（62%）。\n## 本季至今\nPOR 戰績 9-6（主 3-2、客 6-4），場均得 117.1（30 隊中第 8）、失 112.1（30 隊中第 11），淨勝 +4.9（30 隊中第 9），目前 L2。近況：客場勝 SAC 120-107、客場負 MIN 98-106、客場負 MIN 105-106。\nMIL 戰績 2-14，場均得 107.4（30 隊中第 28）、失 120.5（30 隊中第 27），淨勝 -13.1（30 隊中第 29），目前 L10。近況：主場負 LAL 112-123、客場負 ORL 99-107、主場負 ATL 106-113。\n對盤口表現：POR 讓分 8 勝 5 負 (62%)；大分 5 次、小分 8 次；MIL 讓分 6 勝 7 負 (46%)；大分 5 次、小分 8 次。\n近 3 次交手 POR 3 勝 0 負，平均分差 +18.7（最近一次 2026-03-25：勝 130-99）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-04-28）裡，POR 和 MIL 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失誤**：POR 失誤 13.3 次，對手 17.0（聯盟平均 13.6；POR 第 14、MIL 第 30／30 隊）。\n• **失誤轉換得分**：POR 失誤轉換得 20.3 分，對手 15.3（聯盟平均 17.5；POR 第 5、MIL 第 24／30 隊）。\n• **快攻得分**：POR 快攻 14.5 分，對手 10.0（聯盟平均 14.2；POR 第 13、MIL 第 26／30 隊）。\n• **進攻籃板**：POR 進攻籃板 12.7 個，對手 10.1（聯盟平均 11.1；POR 第 5、MIL 第 23／30 隊）。\nMIL 能反擊的地方：\n• **三分命中率**：MIL 這項較好，39.5% 對 POR 的 33.5%（聯盟平均 34.9%；POR 第 22、MIL 第 1／30 隊）。\n• **命中率**：MIL 這項較好，47.4% 對 POR 的 43.1%（聯盟平均 45.8%；POR 第 28、MIL 第 8／30 隊）。\n• **板凳得分**：MIL 這項較好，36.6 對 POR 的 29.7（聯盟平均 35.3；POR 第 22、MIL 第 14／30 隊）。\n穩定度：這段期間 POR 單場分差的標準差是 ±12.7 分，MIL 是 ±19.7 分；POR 的表現較穩。\n## 賽程與休息\nPOR 休一天；MIL 休了 3 天。\n體能上 MIL 較佔便宜。\nMIL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 224.4 分，防守合計失 232.6 分；近況合計每場出手 87 記三分（聯盟兩隊平均 73）、快攻 24 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 224.8，盤口 225.0，低於盤口 0.2 分。以總分相對盤口 ±18.3 分的分佈換算，小分機率 51%；公布信心 50%。\n## 模型本季戰績\n本季至今，已發佈讓分 102 勝 103 負（50%）；信心 62% 以上的場次 62 勝 66 負；大小分 104 勝 106 負（50%）。\n## 風險\n坦白說：MIL 在三分命中率上的優勢（39.5% 對 33.5%）是翻掉這份判讀最直接的路徑；POR 正吞 2 連敗，模型看不到更衣室氣氛。",
       "predicted_margin": 3.07,
       "predicted_total": 224.76,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "LOSS",
       "created_at": "2026-11-18T23:30:14.135461",
       "analysis_facts": {
         "profile_games": 10,
@@ -91441,9 +91441,9 @@
         "start_time": "2026-11-20T01:00Z",
         "home_team_id": 16,
         "away_team_id": 22,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 114,
-        "away_score": 119,
+        "away_score": 124,
         "period_scores": {
           "home": [
             21,
@@ -91455,7 +91455,7 @@
             24,
             36,
             36,
-            23
+            28
           ]
         },
         "vegas_spread": 10.5,
@@ -91879,8 +91879,8 @@
       "analysis_content_zh": "## 結論\n結論落在主場作戰的 SA。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 SA 贏 4.5 分，勝率 62%。\n信心中等（67%）。\n## 本季至今\nSA 戰績 14-3（主 7-3、客 7-0），場均得 117.9（30 隊中第 6）、失 105.2（30 隊中第 3），淨勝 +12.8（30 隊中第 1），目前 L1。近況：主場勝 GS 123-85、客場勝 UTAH 110-102、主場負 DET 93-105。\nLAC 戰績 5-9，場均得 112.6（30 隊中第 19）、失 117.1（30 隊中第 22），淨勝 -4.5（30 隊中第 22），目前 L1。近況：主場勝 OKC 113-112、主場勝 CHA 113-105、主場負 UTAH 107-132。\n對盤口表現：SA 讓分 6 勝 8 負 (43%)；大分 4 次、小分 10 次；LAC 讓分 6 勝 6 負 (50%)；大分 9 次、小分 3 次。\n近 3 次交手 SA 3 勝 0 負，平均分差 +9.0（最近一次 2026-04-02：勝 118-99）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-06-13），SA 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：SA 場均失 104.8 分，對手 115.0（聯盟平均 115.8；SA 第 4、LAC 第 17／30 隊）。\n• **籃板**：SA 場均 44.4 籃板，對手 39.7（聯盟平均 41.9；SA 第 7、LAC 第 22／30 隊）。\n• **進攻籃板**：SA 進攻籃板 11.5 個，對手 10.2（聯盟平均 11.1；SA 第 12、LAC 第 21／30 隊）。\n• **失誤**：SA 失誤 12.6 次，對手 13.5（聯盟平均 13.6；SA 第 9、LAC 第 15／30 隊）。\nLAC 能反擊的地方：\n• **板凳得分**：LAC 這項較好，43.1 對 SA 的 28.3（聯盟平均 35.3；SA 第 23、LAC 第 8／30 隊）。\n• **命中率**：LAC 這項較好，48.1% 對 SA 的 42.4%（聯盟平均 45.8%；SA 第 29、LAC 第 5／30 隊）。\n• **禁區得分**：LAC 這項較好，50.0 對 SA 的 41.4（聯盟平均 47.4；SA 第 25、LAC 第 10／30 隊）。\n穩定度：這段期間 SA 單場分差的標準差是 ±13.2 分，LAC 是 ±15.5 分；SA 的表現較穩。\n## 賽程與休息\nSA 休一天；LAC 休一天。\nSA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 230.6 分，防守合計失 222.3 分；近況合計每場出手 73 記三分（聯盟兩隊平均 73）、快攻 30 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 218.2，盤口 225.0，低於盤口 6.8 分。以總分相對盤口 ±18.3 分的分佈換算，小分機率 65%；公布信心 70%。\n## 模型本季戰績\n本季至今，已發佈讓分 102 勝 103 負（50%）；信心 67% 以上的場次 46 勝 53 負；大小分 104 勝 106 負（50%）。\n## 風險\n坦白說：LAC 在板凳得分上的優勢（43.1 對 28.3）是翻掉這份判讀最直接的路徑。",
       "predicted_margin": 4.46,
       "predicted_total": 218.17,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "LOSS",
       "created_at": "2026-11-18T23:30:14.255281",
       "analysis_facts": {
         "profile_games": 10,
@@ -92213,15 +92213,15 @@
         "start_time": "2026-11-20T01:00Z",
         "home_team_id": 29,
         "away_team_id": 12,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 120,
+        "status": "STATUS_FINISHED",
+        "home_score": 124,
         "away_score": 112,
         "period_scores": {
           "home": [
             24,
             33,
             35,
-            28
+            32
           ],
           "away": [
             21,
@@ -94096,7 +94096,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -1.5,
-        "vegas_total": 223.5,
+        "vegas_total": 224.5,
         "home_team": {
           "code": "DEN",
           "full_name": "Denver Nuggets",
@@ -95618,13 +95618,13 @@
       "ou_pick": "OVER",
       "ou_line": 225.0,
       "ou_confidence": 78.0,
-      "analysis_content": "## The Call\nLAC on the road is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has LAC by 5.1, a 64% win probability.\nConfidence is moderate at 70%.\n## Season So Far\nLAC is 5-9 (5-4 home, 0-5 away), scoring 112.6 (19th of 30) and allowing 117.1 (23rd of 30) for a -4.5 margin (22nd of 30), currently on a L1 run. Last out: W 113-112 vs OKC, W 113-105 vs CHA, L 107-132 vs UTAH.\nDAL is 8-9, scoring 111.4 (22nd of 30) and allowing 113.8 (16th of 30) for a -2.4 margin (19th of 30), on a W1 run. Last out: L 117-127 at CLE, L 94-131 at BOS, W 116-94 vs GS.\nAgainst the number: LAC 6-6 against the spread (50%); 9 over / 3 under; DAL 8-6 against the spread (57%); 5 over / 9 under.\nHead to head, LAC is 2-1 in the last 3 meetings with an average margin of +5.3 (most recent 2026-04-07: W 116-103).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-04-15), here is where LAC separates from DAL. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — LAC gives up 115.0 to 124.3 (league avg 115.8; LAC 17th vs DAL 24th of 30).\n• **FG%** — LAC shoots 48.1% from the floor to 43.7% (league avg 45.8%; LAC 5th vs DAL 26th of 30).\n• **Points off turnovers** — LAC turns mistakes into 22.4 points to 17.0 (league avg 17.5; LAC 1st vs DAL 18th of 30).\n• **Net margin** — LAC outscores opponents by -0.9 per game against -7.5 (league avg -4.7; LAC 10th vs DAL 19th of 30).\nWhere DAL pushes back:\n• **Bench points** — DAL holds the better number, 51.7 to LAC's 43.1 (league avg 35.3; LAC 8th vs DAL 1st of 30).\n• **Rebounds** — DAL holds the better number, 45.0 to LAC's 39.7 (league avg 41.9; LAC 22nd vs DAL 6th of 30).\n• **Turnovers** — DAL holds the better number, 11.1 to LAC's 13.5 (league avg 13.6; LAC 15th vs DAL 1st of 30).\nConsistency check: LAC's game margins over this stretch vary by ±15.5 points (one standard deviation) against ±14.7 for DAL; the more volatile side is LAC.\n## Schedule & Rest\nLAC comes in with 3 days of rest; DAL comes in with 2 days of rest.\nThe rest edge belongs to LAC.\nDAL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 224.0 points and the two defences concede 230.9; on record they attempt 70 threes between them (league pair average 73) with 31 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 234.3 total points against a line of 225.0, 9.3 points above the number. With totals spreading ±18.1 points around the line, that is a 70% probability of the over; published confidence is 78%.\n## Model Track Record\nThis season, published spread picks are 107-110 (49%); at 70%+ confidence they are 40-51; totals are 110-112 (50%).\n## What Could Go Wrong\nHonest caveats: DAL's edge in Bench points (51.7 vs 43.1) is the cleanest path to an upset of this read; LAC's results swing ±15.5 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n本場站 客場的 LAC。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 LAC 贏 5.1 分，勝率 64%。\n信心中等（70%）。\n## 本季至今\nLAC 戰績 5-9（主 5-4、客 0-5），場均得 112.6（30 隊中第 19）、失 117.1（30 隊中第 23），淨勝 -4.5（30 隊中第 22），目前 L1。近況：主場勝 OKC 113-112、主場勝 CHA 113-105、主場負 UTAH 107-132。\nDAL 戰績 8-9，場均得 111.4（30 隊中第 22）、失 113.8（30 隊中第 16），淨勝 -2.4（30 隊中第 19），目前 W1。近況：客場負 CLE 117-127、客場負 BOS 94-131、主場勝 GS 116-94。\n對盤口表現：LAC 讓分 6 勝 6 負 (50%)；大分 9 次、小分 3 次；DAL 讓分 8 勝 6 負 (57%)；大分 5 次、小分 9 次。\n近 3 次交手 LAC 2 勝 1 負，平均分差 +5.3（最近一次 2026-04-07：勝 116-103）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-04-15）裡，LAC 和 DAL 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：LAC 場均失 115.0 分，對手 124.3（聯盟平均 115.8；LAC 第 17、DAL 第 24／30 隊）。\n• **命中率**：LAC 命中率 48.1%，對手 43.7%（聯盟平均 45.8%；LAC 第 5、DAL 第 26／30 隊）。\n• **失誤轉換得分**：LAC 失誤轉換得 22.4 分，對手 17.0（聯盟平均 17.5；LAC 第 1、DAL 第 18／30 隊）。\n• **淨勝分**：LAC 場均淨勝 -0.9 分，對手 -7.5（聯盟平均 -4.7；LAC 第 10、DAL 第 19／30 隊）。\nDAL 能反擊的地方：\n• **板凳得分**：DAL 這項較好，51.7 對 LAC 的 43.1（聯盟平均 35.3；LAC 第 8、DAL 第 1／30 隊）。\n• **籃板**：DAL 這項較好，45.0 對 LAC 的 39.7（聯盟平均 41.9；LAC 第 22、DAL 第 6／30 隊）。\n• **失誤**：DAL 這項較好，11.1 對 LAC 的 13.5（聯盟平均 13.6；LAC 第 15、DAL 第 1／30 隊）。\n穩定度：這段期間 LAC 單場分差的標準差是 ±15.5 分，DAL 是 ±14.7 分；LAC 的表現起伏較大。\n## 賽程與休息\nLAC 休了 3 天；DAL 休了 2 天。\n體能上 LAC 較佔便宜。\nDAL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 224.0 分，防守合計失 230.9 分；近況合計每場出手 70 記三分（聯盟兩隊平均 73）、快攻 31 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 234.3，盤口 225.0，高於盤口 9.3 分。以總分相對盤口 ±18.1 分的分佈換算，大分機率 70%；公布信心 78%。\n## 模型本季戰績\n本季至今，已發佈讓分 107 勝 110 負（49%）；信心 70% 以上的場次 40 勝 51 負；大小分 110 勝 112 負（50%）。\n## 風險\n坦白說：DAL 在板凳得分上的優勢（51.7 對 43.1）是翻掉這份判讀最直接的路徑；LAC 單場分差起伏 ±15.5 分，單場優勢並不牢靠。",
+      "analysis_content": "## The Call\nLAC on the road is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has LAC by 5.1, a 64% win probability.\nConfidence is moderate at 70%.\n## Season So Far\nLAC is 5-10 (5-4 home, 0-6 away), scoring 112.6 (19th of 30) and allowing 117.6 (24th of 30) for a -5.0 margin (23rd of 30), currently on a L2 run. Last out: W 113-105 vs CHA, L 107-132 vs UTAH, L 112-124 at SA.\nDAL is 8-9, scoring 111.4 (22nd of 30) and allowing 113.8 (15th of 30) for a -2.4 margin (19th of 30), on a W1 run. Last out: L 117-127 at CLE, L 94-131 at BOS, W 116-94 vs GS.\nAgainst the number: LAC 7-6 against the spread (54%); 10 over / 3 under; DAL 8-6 against the spread (57%); 5 over / 9 under.\nHead to head, LAC is 2-1 in the last 3 meetings with an average margin of +5.3 (most recent 2026-04-07: W 116-103).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-04-15), here is where LAC separates from DAL. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — LAC gives up 115.0 to 124.3 (league avg 115.8; LAC 17th vs DAL 24th of 30).\n• **FG%** — LAC shoots 48.1% from the floor to 43.7% (league avg 45.8%; LAC 5th vs DAL 26th of 30).\n• **Points off turnovers** — LAC turns mistakes into 22.4 points to 17.0 (league avg 17.5; LAC 1st vs DAL 18th of 30).\n• **Net margin** — LAC outscores opponents by -0.9 per game against -7.5 (league avg -4.7; LAC 10th vs DAL 19th of 30).\nWhere DAL pushes back:\n• **Bench points** — DAL holds the better number, 51.7 to LAC's 43.1 (league avg 35.3; LAC 8th vs DAL 1st of 30).\n• **Rebounds** — DAL holds the better number, 45.0 to LAC's 39.7 (league avg 41.9; LAC 22nd vs DAL 6th of 30).\n• **Turnovers** — DAL holds the better number, 11.1 to LAC's 13.5 (league avg 13.6; LAC 15th vs DAL 1st of 30).\nConsistency check: LAC's game margins over this stretch vary by ±15.5 points (one standard deviation) against ±14.7 for DAL; the more volatile side is LAC.\n## Schedule & Rest\nLAC has one day off; DAL comes in with 2 days of rest.\nThe rest edge belongs to DAL.\nDAL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 224.0 points and the two defences concede 231.4; on record they attempt 70 threes between them (league pair average 73) with 31 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 234.3 total points against a line of 225.0, 9.3 points above the number. With totals spreading ±18.0 points around the line, that is a 70% probability of the over; published confidence is 78%.\n## Model Track Record\nThis season, published spread picks are 108-113 (49%); at 70%+ confidence they are 41-52; totals are 111-115 (49%).\n## What Could Go Wrong\nHonest caveats: DAL's edge in Bench points (51.7 vs 43.1) is the cleanest path to an upset of this read; LAC's results swing ±15.5 points game to game, so any single-game edge is fragile; LAC is on a L2 skid and the model does not read locker rooms.",
+      "analysis_content_zh": "## 結論\n本場站 客場的 LAC。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 LAC 贏 5.1 分，勝率 64%。\n信心中等（70%）。\n## 本季至今\nLAC 戰績 5-10（主 5-4、客 0-6），場均得 112.6（30 隊中第 19）、失 117.6（30 隊中第 24），淨勝 -5.0（30 隊中第 23），目前 L2。近況：主場勝 CHA 113-105、主場負 UTAH 107-132、客場負 SA 112-124。\nDAL 戰績 8-9，場均得 111.4（30 隊中第 22）、失 113.8（30 隊中第 15），淨勝 -2.4（30 隊中第 19），目前 W1。近況：客場負 CLE 117-127、客場負 BOS 94-131、主場勝 GS 116-94。\n對盤口表現：LAC 讓分 7 勝 6 負 (54%)；大分 10 次、小分 3 次；DAL 讓分 8 勝 6 負 (57%)；大分 5 次、小分 9 次。\n近 3 次交手 LAC 2 勝 1 負，平均分差 +5.3（最近一次 2026-04-07：勝 116-103）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-04-15）裡，LAC 和 DAL 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：LAC 場均失 115.0 分，對手 124.3（聯盟平均 115.8；LAC 第 17、DAL 第 24／30 隊）。\n• **命中率**：LAC 命中率 48.1%，對手 43.7%（聯盟平均 45.8%；LAC 第 5、DAL 第 26／30 隊）。\n• **失誤轉換得分**：LAC 失誤轉換得 22.4 分，對手 17.0（聯盟平均 17.5；LAC 第 1、DAL 第 18／30 隊）。\n• **淨勝分**：LAC 場均淨勝 -0.9 分，對手 -7.5（聯盟平均 -4.7；LAC 第 10、DAL 第 19／30 隊）。\nDAL 能反擊的地方：\n• **板凳得分**：DAL 這項較好，51.7 對 LAC 的 43.1（聯盟平均 35.3；LAC 第 8、DAL 第 1／30 隊）。\n• **籃板**：DAL 這項較好，45.0 對 LAC 的 39.7（聯盟平均 41.9；LAC 第 22、DAL 第 6／30 隊）。\n• **失誤**：DAL 這項較好，11.1 對 LAC 的 13.5（聯盟平均 13.6；LAC 第 15、DAL 第 1／30 隊）。\n穩定度：這段期間 LAC 單場分差的標準差是 ±15.5 分，DAL 是 ±14.7 分；LAC 的表現起伏較大。\n## 賽程與休息\nLAC 休一天；DAL 休了 2 天。\n體能上 DAL 較佔便宜。\nDAL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 224.0 分，防守合計失 231.4 分；近況合計每場出手 70 記三分（聯盟兩隊平均 73）、快攻 31 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 234.3，盤口 225.0，高於盤口 9.3 分。以總分相對盤口 ±18.0 分的分佈換算，大分機率 70%；公布信心 78%。\n## 模型本季戰績\n本季至今，已發佈讓分 108 勝 113 負（49%）；信心 70% 以上的場次 41 勝 52 負；大小分 111 勝 115 負（49%）。\n## 風險\n坦白說：DAL 在板凳得分上的優勢（51.7 對 43.1）是翻掉這份判讀最直接的路徑；LAC 單場分差起伏 ±15.5 分，單場優勢並不牢靠；LAC 正吞 2 連敗，模型看不到更衣室氣氛。",
       "predicted_margin": 5.05,
       "predicted_total": 234.34,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-20T03:00:14.211506",
+      "created_at": "2026-11-20T03:30:14.510845",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -95814,37 +95814,37 @@
         ],
         "form": {
           "rec": {
-            "games": 14,
+            "games": 15,
             "wins": 5,
-            "losses": 9,
+            "losses": 10,
             "home": [
               5,
               4
             ],
             "away": [
               0,
-              5
+              6
             ],
             "ppg": 112.6,
-            "papg": 117.1,
-            "margin": -4.5,
+            "papg": 117.6,
+            "margin": -5.0,
             "rank": {
               "ppg": 19,
-              "papg": 23,
-              "margin": 22
+              "papg": 24,
+              "margin": 23
             },
-            "streak": "L1",
+            "streak": "L2",
             "ats": [
-              6,
+              7,
               6,
               0
             ],
             "ou": [
-              9,
+              10,
               3,
               0
             ],
-            "rest": 4
+            "rest": 2
           },
           "opp": {
             "games": 17,
@@ -95863,7 +95863,7 @@
             "margin": -2.4,
             "rank": {
               "ppg": 22,
-              "papg": 16,
+              "papg": 15,
               "margin": 19
             },
             "streak": "W1",
@@ -95915,12 +95915,12 @@
           "total_is_default": true
         },
         "probability": {
-          "cover": 0.638,
-          "win_model": 0.638,
+          "cover": 0.639,
+          "win_model": 0.639,
           "win_market": null,
-          "total": 0.697,
-          "sigma_spread": 14.3,
-          "sigma_total": 18.1,
+          "total": 0.698,
+          "sigma_spread": 14.2,
+          "sigma_total": 18.0,
           "sigma_measured": true
         },
         "effects": {
@@ -95936,19 +95936,19 @@
         },
         "record": {
           "spread": [
-            107,
-            110
+            108,
+            113
           ],
           "total": [
-            110,
-            112
+            111,
+            115
           ],
           "spread_at_conf": [
-            40,
-            51
+            41,
+            52
           ]
         },
-        "generated_at": "2026-11-20T03:00:14"
+        "generated_at": "2026-11-20T03:30:14"
       },
       "matches": {
         "id": 259,
@@ -95991,13 +95991,13 @@
       "ou_pick": "OVER",
       "ou_line": 225.0,
       "ou_confidence": 65.0,
-      "analysis_content": "## The Call\nThe number says MIN, at home.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has MIN by 10.1, a 76% win probability.\nConfidence is high at 90%.\n## Season So Far\nMIN is 11-6 (7-3 home, 4-3 away), scoring 116.0 (11th of 30) and allowing 108.9 (6th of 30) for a +7.1 margin (6th of 30), currently on a W2 run. Last out: L 106-117 vs CHI, W 106-98 vs POR, W 106-105 vs POR.\nMEM is 12-4, scoring 121.5 (2nd of 30) and allowing 111.9 (9th of 30) for a +9.6 margin (4th of 30), on a W4 run. Last out: W 129-110 vs BKN, W 136-120 at WSH, W 124-121 at CLE.\nAgainst the number: MIN 11-3 against the spread (79%); 6 over / 8 under; MEM 10-4 against the spread (71%); 9 over / 5 under.\nHead to head, MIN is 2-1 in the last 3 meetings with an average margin of +5.0 (most recent 2026-03-03: W 117-110).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-05-15) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — MIN gives up 113.9 to 132.0 (league avg 115.8; MIN 15th vs MEM 29th of 30).\n• **Rebounds** — MIN pulls 45.4 rebounds to 35.8 (league avg 41.9; MIN 4th vs MEM 29th of 30).\n• **Net margin** — MIN outscores opponents by -6.4 per game against -20.4 (league avg -4.7; MIN 18th vs MEM 30th of 30).\n• **Off. rebounds** — MIN grabs 12.9 offensive boards to 9.9 (league avg 11.1; MIN 4th vs MEM 25th of 30).\nWhere MEM pushes back:\n• **Assists** — MEM holds the better number, 25.7 to MIN's 22.8 (league avg 25.0; MIN 25th vs MEM 9th of 30).\n• **FT%** — MEM holds the better number, 81.1% to MIN's 77.2% (league avg 77.5%; MIN 17th vs MEM 6th of 30).\n• **Fast-break points** — MEM holds the better number, 13.3 to MIN's 10.4 (league avg 14.2; MIN 24th vs MEM 16th of 30).\nConsistency check: MIN's game margins over this stretch vary by ±19.2 points (one standard deviation) against ±12.8 for MEM; the more volatile side is MIN.\n## Schedule & Rest\nMIN comes in with 3 days of rest; MEM comes in with 2 days of rest.\nThe rest edge belongs to MIN.\nMIN has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 237.5 points and the two defences concede 220.9; on record they attempt 74 threes between them (league pair average 73) with 24 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 230.1 total points against a line of 225.0, 5.1 points above the number. With totals spreading ±18.1 points around the line, that is a 61% probability of the over; published confidence is 65%.\n## Model Track Record\nThis season, published spread picks are 107-110 (49%); at 90%+ confidence they are 9-15; totals are 110-112 (50%).\n## What Could Go Wrong\nHonest caveats: MEM's edge in Assists (25.7 vs 22.8) is the cleanest path to an upset of this read; MIN's results swing ±19.2 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n數字指向 MIN（主場）。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 MIN 贏 10.1 分，勝率 76%。\n信心高（90%）。\n## 本季至今\nMIN 戰績 11-6（主 7-3、客 4-3），場均得 116.0（30 隊中第 11）、失 108.9（30 隊中第 6），淨勝 +7.1（30 隊中第 6），目前 W2。近況：主場負 CHI 106-117、主場勝 POR 106-98、主場勝 POR 106-105。\nMEM 戰績 12-4，場均得 121.5（30 隊中第 2）、失 111.9（30 隊中第 9），淨勝 +9.6（30 隊中第 4），目前 W4。近況：主場勝 BKN 129-110、客場勝 WSH 136-120、客場勝 CLE 124-121。\n對盤口表現：MIN 讓分 11 勝 3 負 (79%)；大分 6 次、小分 8 次；MEM 讓分 10 勝 4 負 (71%)；大分 9 次、小分 5 次。\n近 3 次交手 MIN 2 勝 1 負，平均分差 +5.0（最近一次 2026-03-03：勝 117-110）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-15）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：MIN 場均失 113.9 分，對手 132.0（聯盟平均 115.8；MIN 第 15、MEM 第 29／30 隊）。\n• **籃板**：MIN 場均 45.4 籃板，對手 35.8（聯盟平均 41.9；MIN 第 4、MEM 第 29／30 隊）。\n• **淨勝分**：MIN 場均淨勝 -6.4 分，對手 -20.4（聯盟平均 -4.7；MIN 第 18、MEM 第 30／30 隊）。\n• **進攻籃板**：MIN 進攻籃板 12.9 個，對手 9.9（聯盟平均 11.1；MIN 第 4、MEM 第 25／30 隊）。\nMEM 能反擊的地方：\n• **助攻**：MEM 這項較好，25.7 對 MIN 的 22.8（聯盟平均 25.0；MIN 第 25、MEM 第 9／30 隊）。\n• **罰球命中率**：MEM 這項較好，81.1% 對 MIN 的 77.2%（聯盟平均 77.5%；MIN 第 17、MEM 第 6／30 隊）。\n• **快攻得分**：MEM 這項較好，13.3 對 MIN 的 10.4（聯盟平均 14.2；MIN 第 24、MEM 第 16／30 隊）。\n穩定度：這段期間 MIN 單場分差的標準差是 ±19.2 分，MEM 是 ±12.8 分；MIN 的表現起伏較大。\n## 賽程與休息\nMIN 休了 3 天；MEM 休了 2 天。\n體能上 MIN 較佔便宜。\nMIN 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 237.5 分，防守合計失 220.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 24 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 230.1，盤口 225.0，高於盤口 5.1 分。以總分相對盤口 ±18.1 分的分佈換算，大分機率 61%；公布信心 65%。\n## 模型本季戰績\n本季至今，已發佈讓分 107 勝 110 負（49%）；信心 90% 以上的場次 9 勝 15 負；大小分 110 勝 112 負（50%）。\n## 風險\n坦白說：MEM 在助攻上的優勢（25.7 對 22.8）是翻掉這份判讀最直接的路徑；MIN 單場分差起伏 ±19.2 分，單場優勢並不牢靠。",
+      "analysis_content": "## The Call\nThe number says MIN, at home.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has MIN by 10.1, a 76% win probability.\nConfidence is high at 90%.\n## Season So Far\nMIN is 11-7 (7-4 home, 4-3 away), scoring 115.1 (11th of 30) and allowing 108.6 (6th of 30) for a +6.5 margin (6th of 30), currently on a L1 run. Last out: W 106-98 vs POR, W 106-105 vs POR, L 99-102 vs NY.\nMEM is 13-4, scoring 121.8 (1st of 30) and allowing 111.1 (9th of 30) for a +10.6 margin (3rd of 30), on a W5 run. Last out: W 136-120 at WSH, W 124-121 at CLE, W 126-98 vs GS.\nAgainst the number: MIN 11-4 against the spread (73%); 6 over / 9 under; MEM 11-4 against the spread (73%); 9 over / 6 under.\nHead to head, MIN is 2-1 in the last 3 meetings with an average margin of +5.0 (most recent 2026-03-03: W 117-110).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-05-15) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — MIN gives up 113.9 to 132.0 (league avg 115.8; MIN 15th vs MEM 29th of 30).\n• **Rebounds** — MIN pulls 45.4 rebounds to 35.8 (league avg 41.9; MIN 4th vs MEM 29th of 30).\n• **Net margin** — MIN outscores opponents by -6.4 per game against -20.4 (league avg -4.7; MIN 18th vs MEM 30th of 30).\n• **Off. rebounds** — MIN grabs 12.9 offensive boards to 9.9 (league avg 11.1; MIN 4th vs MEM 25th of 30).\nWhere MEM pushes back:\n• **Assists** — MEM holds the better number, 25.7 to MIN's 22.8 (league avg 25.0; MIN 25th vs MEM 9th of 30).\n• **FT%** — MEM holds the better number, 81.1% to MIN's 77.2% (league avg 77.5%; MIN 17th vs MEM 6th of 30).\n• **Fast-break points** — MEM holds the better number, 13.3 to MIN's 10.4 (league avg 14.2; MIN 24th vs MEM 16th of 30).\nConsistency check: MIN's game margins over this stretch vary by ±19.2 points (one standard deviation) against ±12.8 for MEM; the more volatile side is MIN.\n## Schedule & Rest\nMIN has one day off; MEM has one day off.\nMIN has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 236.8 points and the two defences concede 219.7; on record they attempt 74 threes between them (league pair average 73) with 24 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 230.1 total points against a line of 225.0, 5.1 points above the number. With totals spreading ±18.0 points around the line, that is a 61% probability of the over; published confidence is 65%.\n## Model Track Record\nThis season, published spread picks are 108-113 (49%); at 90%+ confidence they are 10-15; totals are 111-115 (49%).\n## What Could Go Wrong\nHonest caveats: MEM's edge in Assists (25.7 vs 22.8) is the cleanest path to an upset of this read; MIN's results swing ±19.2 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n數字指向 MIN（主場）。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 MIN 贏 10.1 分，勝率 76%。\n信心高（90%）。\n## 本季至今\nMIN 戰績 11-7（主 7-4、客 4-3），場均得 115.1（30 隊中第 11）、失 108.6（30 隊中第 6），淨勝 +6.5（30 隊中第 6），目前 L1。近況：主場勝 POR 106-98、主場勝 POR 106-105、主場負 NY 99-102。\nMEM 戰績 13-4，場均得 121.8（30 隊中第 1）、失 111.1（30 隊中第 9），淨勝 +10.6（30 隊中第 3），目前 W5。近況：客場勝 WSH 136-120、客場勝 CLE 124-121、主場勝 GS 126-98。\n對盤口表現：MIN 讓分 11 勝 4 負 (73%)；大分 6 次、小分 9 次；MEM 讓分 11 勝 4 負 (73%)；大分 9 次、小分 6 次。\n近 3 次交手 MIN 2 勝 1 負，平均分差 +5.0（最近一次 2026-03-03：勝 117-110）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-15）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：MIN 場均失 113.9 分，對手 132.0（聯盟平均 115.8；MIN 第 15、MEM 第 29／30 隊）。\n• **籃板**：MIN 場均 45.4 籃板，對手 35.8（聯盟平均 41.9；MIN 第 4、MEM 第 29／30 隊）。\n• **淨勝分**：MIN 場均淨勝 -6.4 分，對手 -20.4（聯盟平均 -4.7；MIN 第 18、MEM 第 30／30 隊）。\n• **進攻籃板**：MIN 進攻籃板 12.9 個，對手 9.9（聯盟平均 11.1；MIN 第 4、MEM 第 25／30 隊）。\nMEM 能反擊的地方：\n• **助攻**：MEM 這項較好，25.7 對 MIN 的 22.8（聯盟平均 25.0；MIN 第 25、MEM 第 9／30 隊）。\n• **罰球命中率**：MEM 這項較好，81.1% 對 MIN 的 77.2%（聯盟平均 77.5%；MIN 第 17、MEM 第 6／30 隊）。\n• **快攻得分**：MEM 這項較好，13.3 對 MIN 的 10.4（聯盟平均 14.2；MIN 第 24、MEM 第 16／30 隊）。\n穩定度：這段期間 MIN 單場分差的標準差是 ±19.2 分，MEM 是 ±12.8 分；MIN 的表現起伏較大。\n## 賽程與休息\nMIN 休一天；MEM 休一天。\nMIN 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 236.8 分，防守合計失 219.7 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 24 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 230.1，盤口 225.0，高於盤口 5.1 分。以總分相對盤口 ±18.0 分的分佈換算，大分機率 61%；公布信心 65%。\n## 模型本季戰績\n本季至今，已發佈讓分 108 勝 113 負（49%）；信心 90% 以上的場次 10 勝 15 負；大小分 111 勝 115 負（49%）。\n## 風險\n坦白說：MEM 在助攻上的優勢（25.7 對 22.8）是翻掉這份判讀最直接的路徑；MIN 單場分差起伏 ±19.2 分，單場優勢並不牢靠。",
       "predicted_margin": 10.05,
       "predicted_total": 230.07,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-20T03:00:14.287028",
+      "created_at": "2026-11-20T03:30:14.580198",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-15",
@@ -96187,70 +96187,70 @@
         ],
         "form": {
           "rec": {
-            "games": 17,
+            "games": 18,
             "wins": 11,
-            "losses": 6,
+            "losses": 7,
             "home": [
               7,
-              3
+              4
             ],
             "away": [
               4,
               3
             ],
-            "ppg": 116.0,
-            "papg": 108.9,
-            "margin": 7.1,
+            "ppg": 115.1,
+            "papg": 108.6,
+            "margin": 6.5,
             "rank": {
               "ppg": 11,
               "papg": 6,
               "margin": 6
             },
-            "streak": "W2",
+            "streak": "L1",
             "ats": [
               11,
-              3,
+              4,
               0
             ],
             "ou": [
               6,
-              8,
+              9,
               0
             ],
-            "rest": 4
+            "rest": 2
           },
           "opp": {
-            "games": 16,
-            "wins": 12,
+            "games": 17,
+            "wins": 13,
             "losses": 4,
             "home": [
-              4,
+              5,
               4
             ],
             "away": [
               8,
               0
             ],
-            "ppg": 121.5,
-            "papg": 111.9,
-            "margin": 9.6,
+            "ppg": 121.8,
+            "papg": 111.1,
+            "margin": 10.6,
             "rank": {
-              "ppg": 2,
+              "ppg": 1,
               "papg": 9,
-              "margin": 4
+              "margin": 3
             },
-            "streak": "W4",
+            "streak": "W5",
             "ats": [
-              10,
+              11,
               4,
               0
             ],
             "ou": [
               9,
-              5,
+              6,
               0
             ],
-            "rest": 3
+            "rest": 2
           }
         },
         "volatility": {
@@ -96291,9 +96291,9 @@
           "cover": 0.76,
           "win_model": 0.76,
           "win_market": null,
-          "total": 0.61,
-          "sigma_spread": 14.3,
-          "sigma_total": 18.1,
+          "total": 0.611,
+          "sigma_spread": 14.2,
+          "sigma_total": 18.0,
           "sigma_measured": true
         },
         "effects": {
@@ -96309,19 +96309,19 @@
         },
         "record": {
           "spread": [
-            107,
-            110
+            108,
+            113
           ],
           "total": [
-            110,
-            112
+            111,
+            115
           ],
           "spread_at_conf": [
-            9,
+            10,
             15
           ]
         },
-        "generated_at": "2026-11-20T03:00:14"
+        "generated_at": "2026-11-20T03:30:14"
       },
       "matches": {
         "id": 260,
@@ -96364,13 +96364,13 @@
       "ou_pick": "UNDER",
       "ou_line": 225.0,
       "ou_confidence": 58.0,
-      "analysis_content": "## The Call\nPHI at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has PHI by 6.6, a 68% win probability.\nConfidence is moderate at 76%.\n## Season So Far\nPHI is 13-4 (6-3 home, 7-1 away), scoring 114.8 (12th of 30) and allowing 112.4 (11th of 30) for a +2.5 margin (11th of 30), currently on a W4 run. Last out: W 131-124 vs IND, W 135-123 at BKN, W 121-116 at ORL.\nMIL is 2-15, scoring 108.7 (28th of 30) and allowing 121.5 (28th of 30) for a -12.8 margin (29th of 30), on a L11 run. Last out: L 99-107 at ORL, L 106-113 vs ATL, L 130-137 at MIA.\nAgainst the number: PHI 8-7 against the spread (53%); 8 over / 7 under; MIL 7-7 against the spread (50%); 6 over / 8 under.\nHead to head, PHI is 3-0 in the last 3 meetings with an average margin of +17.3 (most recent 2026-04-12: W 126-106).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-05-10), PHI's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Turnovers** — PHI commits 11.1 turnovers to 17.0 (league avg 13.6; PHI 2nd vs MIL 30th of 30).\n• **Points allowed** — PHI gives up 112.0 to 118.7 (league avg 115.8; PHI 12th vs MIL 21st of 30).\n• **FT%** — PHI converts 78.8% at the line to 74.3% (league avg 77.5%; PHI 9th vs MIL 24th of 30).\nWhere MIL pushes back:\n• **Bench points** — MIL holds the better number, 36.6 to PHI's 19.7 (league avg 35.3; PHI 30th vs MIL 14th of 30).\n• **Assists** — MIL holds the better number, 26.1 to PHI's 21.4 (league avg 25.0; PHI 28th vs MIL 8th of 30).\n• **3P%** — MIL holds the better number, 39.5% to PHI's 34.7% (league avg 34.9%; PHI 13th vs MIL 1st of 30).\nConsistency check: PHI's game margins over this stretch vary by ±19.6 points (one standard deviation) against ±19.7 for MIL; the steadier side is PHI.\n## Schedule & Rest\nPHI comes in with 2 days of rest; MIL comes in with 2 days of rest.\nPHI has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 223.5 points and the two defences concede 233.8; on record they attempt 79 threes between them (league pair average 73) with 19 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 222.0 total points against a line of 225.0, 3.0 points below the number. With totals spreading ±18.1 points around the line, that is a 56% probability of the under; published confidence is 58%.\n## Model Track Record\nThis season, published spread picks are 107-110 (49%); at 76%+ confidence they are 30-40; totals are 110-112 (50%).\n## What Could Go Wrong\nHonest caveats: MIL's edge in Bench points (36.6 vs 19.7) is the cleanest path to an upset of this read; PHI's results swing ±19.6 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n本場站 主場的 PHI。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 PHI 贏 6.6 分，勝率 68%。\n信心中等（76%）。\n## 本季至今\nPHI 戰績 13-4（主 6-3、客 7-1），場均得 114.8（30 隊中第 12）、失 112.4（30 隊中第 11），淨勝 +2.5（30 隊中第 11），目前 W4。近況：主場勝 IND 131-124、客場勝 BKN 135-123、客場勝 ORL 121-116。\nMIL 戰績 2-15，場均得 108.7（30 隊中第 28）、失 121.5（30 隊中第 28），淨勝 -12.8（30 隊中第 29），目前 L11。近況：客場負 ORL 99-107、主場負 ATL 106-113、客場負 MIA 130-137。\n對盤口表現：PHI 讓分 8 勝 7 負 (53%)；大分 8 次、小分 7 次；MIL 讓分 7 勝 7 負 (50%)；大分 6 次、小分 8 次。\n近 3 次交手 PHI 3 勝 0 負，平均分差 +17.3（最近一次 2026-04-12：勝 126-106）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-10），PHI 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失誤**：PHI 失誤 11.1 次，對手 17.0（聯盟平均 13.6；PHI 第 2、MIL 第 30／30 隊）。\n• **失分**：PHI 場均失 112.0 分，對手 118.7（聯盟平均 115.8；PHI 第 12、MIL 第 21／30 隊）。\n• **罰球命中率**：PHI 罰球 78.8%，對手 74.3%（聯盟平均 77.5%；PHI 第 9、MIL 第 24／30 隊）。\nMIL 能反擊的地方：\n• **板凳得分**：MIL 這項較好，36.6 對 PHI 的 19.7（聯盟平均 35.3；PHI 第 30、MIL 第 14／30 隊）。\n• **助攻**：MIL 這項較好，26.1 對 PHI 的 21.4（聯盟平均 25.0；PHI 第 28、MIL 第 8／30 隊）。\n• **三分命中率**：MIL 這項較好，39.5% 對 PHI 的 34.7%（聯盟平均 34.9%；PHI 第 13、MIL 第 1／30 隊）。\n穩定度：這段期間 PHI 單場分差的標準差是 ±19.6 分，MIL 是 ±19.7 分；PHI 的表現較穩。\n## 賽程與休息\nPHI 休了 2 天；MIL 休了 2 天。\nPHI 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 223.5 分，防守合計失 233.8 分；近況合計每場出手 79 記三分（聯盟兩隊平均 73）、快攻 19 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 222.0，盤口 225.0，低於盤口 3.0 分。以總分相對盤口 ±18.1 分的分佈換算，小分機率 56%；公布信心 58%。\n## 模型本季戰績\n本季至今，已發佈讓分 107 勝 110 負（49%）；信心 76% 以上的場次 30 勝 40 負；大小分 110 勝 112 負（50%）。\n## 風險\n坦白說：MIL 在板凳得分上的優勢（36.6 對 19.7）是翻掉這份判讀最直接的路徑；PHI 單場分差起伏 ±19.6 分，單場優勢並不牢靠。",
+      "analysis_content": "## The Call\nPHI at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has PHI by 6.6, a 68% win probability.\nConfidence is moderate at 76%.\n## Season So Far\nPHI is 13-4 (6-3 home, 7-1 away), scoring 114.8 (12th of 30) and allowing 112.4 (11th of 30) for a +2.5 margin (11th of 30), currently on a W4 run. Last out: W 131-124 vs IND, W 135-123 at BKN, W 121-116 at ORL.\nMIL is 2-16, scoring 109.0 (28th of 30) and allowing 121.6 (28th of 30) for a -12.6 margin (29th of 30), on a L12 run. Last out: L 106-113 vs ATL, L 130-137 at MIA, L 114-124 vs POR.\nAgainst the number: PHI 8-7 against the spread (53%); 8 over / 7 under; MIL 8-7 against the spread (53%); 7 over / 8 under.\nHead to head, PHI is 3-0 in the last 3 meetings with an average margin of +17.3 (most recent 2026-04-12: W 126-106).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-05-10), PHI's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Turnovers** — PHI commits 11.1 turnovers to 17.0 (league avg 13.6; PHI 2nd vs MIL 30th of 30).\n• **Points allowed** — PHI gives up 112.0 to 118.7 (league avg 115.8; PHI 12th vs MIL 21st of 30).\n• **FT%** — PHI converts 78.8% at the line to 74.3% (league avg 77.5%; PHI 9th vs MIL 24th of 30).\nWhere MIL pushes back:\n• **Bench points** — MIL holds the better number, 36.6 to PHI's 19.7 (league avg 35.3; PHI 30th vs MIL 14th of 30).\n• **Assists** — MIL holds the better number, 26.1 to PHI's 21.4 (league avg 25.0; PHI 28th vs MIL 8th of 30).\n• **3P%** — MIL holds the better number, 39.5% to PHI's 34.7% (league avg 34.9%; PHI 13th vs MIL 1st of 30).\nConsistency check: PHI's game margins over this stretch vary by ±19.6 points (one standard deviation) against ±19.7 for MIL; the steadier side is PHI.\n## Schedule & Rest\nPHI comes in with 2 days of rest; MIL has one day off.\nThe rest edge belongs to PHI.\nPHI has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 223.8 points and the two defences concede 234.0; on record they attempt 79 threes between them (league pair average 73) with 19 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 222.0 total points against a line of 225.0, 3.0 points below the number. With totals spreading ±18.0 points around the line, that is a 57% probability of the under; published confidence is 58%.\n## Model Track Record\nThis season, published spread picks are 108-113 (49%); at 76%+ confidence they are 31-40; totals are 111-115 (49%).\n## What Could Go Wrong\nHonest caveats: MIL's edge in Bench points (36.6 vs 19.7) is the cleanest path to an upset of this read; PHI's results swing ±19.6 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n本場站 主場的 PHI。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 PHI 贏 6.6 分，勝率 68%。\n信心中等（76%）。\n## 本季至今\nPHI 戰績 13-4（主 6-3、客 7-1），場均得 114.8（30 隊中第 12）、失 112.4（30 隊中第 11），淨勝 +2.5（30 隊中第 11），目前 W4。近況：主場勝 IND 131-124、客場勝 BKN 135-123、客場勝 ORL 121-116。\nMIL 戰績 2-16，場均得 109.0（30 隊中第 28）、失 121.6（30 隊中第 28），淨勝 -12.6（30 隊中第 29），目前 L12。近況：主場負 ATL 106-113、客場負 MIA 130-137、主場負 POR 114-124。\n對盤口表現：PHI 讓分 8 勝 7 負 (53%)；大分 8 次、小分 7 次；MIL 讓分 8 勝 7 負 (53%)；大分 7 次、小分 8 次。\n近 3 次交手 PHI 3 勝 0 負，平均分差 +17.3（最近一次 2026-04-12：勝 126-106）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-10），PHI 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失誤**：PHI 失誤 11.1 次，對手 17.0（聯盟平均 13.6；PHI 第 2、MIL 第 30／30 隊）。\n• **失分**：PHI 場均失 112.0 分，對手 118.7（聯盟平均 115.8；PHI 第 12、MIL 第 21／30 隊）。\n• **罰球命中率**：PHI 罰球 78.8%，對手 74.3%（聯盟平均 77.5%；PHI 第 9、MIL 第 24／30 隊）。\nMIL 能反擊的地方：\n• **板凳得分**：MIL 這項較好，36.6 對 PHI 的 19.7（聯盟平均 35.3；PHI 第 30、MIL 第 14／30 隊）。\n• **助攻**：MIL 這項較好，26.1 對 PHI 的 21.4（聯盟平均 25.0；PHI 第 28、MIL 第 8／30 隊）。\n• **三分命中率**：MIL 這項較好，39.5% 對 PHI 的 34.7%（聯盟平均 34.9%；PHI 第 13、MIL 第 1／30 隊）。\n穩定度：這段期間 PHI 單場分差的標準差是 ±19.6 分，MIL 是 ±19.7 分；PHI 的表現較穩。\n## 賽程與休息\nPHI 休了 2 天；MIL 休一天。\n體能上 PHI 較佔便宜。\nPHI 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 223.8 分，防守合計失 234.0 分；近況合計每場出手 79 記三分（聯盟兩隊平均 73）、快攻 19 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 222.0，盤口 225.0，低於盤口 3.0 分。以總分相對盤口 ±18.0 分的分佈換算，小分機率 57%；公布信心 58%。\n## 模型本季戰績\n本季至今，已發佈讓分 108 勝 113 負（49%）；信心 76% 以上的場次 31 勝 40 負；大小分 111 勝 115 負（49%）。\n## 風險\n坦白說：MIL 在板凳得分上的優勢（36.6 對 19.7）是翻掉這份判讀最直接的路徑；PHI 單場分差起伏 ±19.6 分，單場優勢並不牢靠。",
       "predicted_margin": 6.63,
       "predicted_total": 222.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-20T03:00:14.360446",
+      "created_at": "2026-11-20T03:30:14.682241",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-10",
@@ -96593,37 +96593,37 @@
             "rest": 3
           },
           "opp": {
-            "games": 17,
+            "games": 18,
             "wins": 2,
-            "losses": 15,
+            "losses": 16,
             "home": [
               1,
-              8
+              9
             ],
             "away": [
               1,
               7
             ],
-            "ppg": 108.7,
-            "papg": 121.5,
-            "margin": -12.8,
+            "ppg": 109.0,
+            "papg": 121.6,
+            "margin": -12.6,
             "rank": {
               "ppg": 28,
               "papg": 28,
               "margin": 29
             },
-            "streak": "L11",
+            "streak": "L12",
             "ats": [
-              7,
+              8,
               7,
               0
             ],
             "ou": [
-              6,
+              7,
               8,
               0
             ],
-            "rest": 3
+            "rest": 2
           }
         },
         "volatility": {
@@ -96665,8 +96665,8 @@
           "win_model": 0.679,
           "win_market": null,
           "total": 0.565,
-          "sigma_spread": 14.3,
-          "sigma_total": 18.1,
+          "sigma_spread": 14.2,
+          "sigma_total": 18.0,
           "sigma_measured": true
         },
         "effects": {
@@ -96682,19 +96682,19 @@
         },
         "record": {
           "spread": [
-            107,
-            110
+            108,
+            113
           ],
           "total": [
-            110,
-            112
+            111,
+            115
           ],
           "spread_at_conf": [
-            30,
+            31,
             40
           ]
         },
-        "generated_at": "2026-11-20T03:00:14"
+        "generated_at": "2026-11-20T03:30:14"
       },
       "matches": {
         "id": 257,
@@ -96737,13 +96737,13 @@
       "ou_pick": "UNDER",
       "ou_line": 225.0,
       "ou_confidence": 52.0,
-      "analysis_content": "## The Call\nThe number says BOS, on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has BOS by 8.1, a 72% win probability.\nConfidence is high at 82%.\n## Season So Far\nBOS is 13-4 (7-1 home, 6-3 away), scoring 114.5 (14th of 30) and allowing 103.8 (1st of 30) for a +10.8 margin (2nd of 30), currently on a L2 run. Last out: W 131-94 vs DAL, L 105-115 vs ORL, L 101-105 at DEN.\nSAC is 1-14, scoring 107.0 (29th of 30) and allowing 122.0 (29th of 30) for a -15.0 margin (30th of 30), on a L7 run. Last out: L 107-120 vs POR, L 103-125 vs OKC, L 107-128 vs PHX.\nAgainst the number: BOS 8-6 against the spread (57%); 4 over / 10 under; SAC 4-9 against the spread (31%); 8 over / 5 under.\nHead to head, BOS is 3-0 in the last 3 meetings with an average margin of +17.0 (most recent 2026-01-30: W 112-93).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-02), here is where BOS separates from SAC. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — BOS outscores opponents by +4.5 per game against -10.3 (league avg -4.7; BOS 2nd vs SAC 23rd of 30).\n• **Points allowed** — BOS gives up 106.4 to 121.0 (league avg 115.8; BOS 6th vs SAC 23rd of 30).\n• **Turnovers** — BOS commits 11.8 turnovers to 14.4 (league avg 13.6; BOS 5th vs SAC 22nd of 30).\n• **FT%** — BOS converts 78.0% at the line to 73.4% (league avg 77.5%; BOS 12th vs SAC 27th of 30).\nWhere SAC pushes back:\n• **Paint points** — SAC holds the better number, 53.6 to BOS's 36.4 (league avg 47.4; BOS 30th vs SAC 5th of 30).\n• **FG%** — SAC holds the better number, 47.4% to BOS's 44.5% (league avg 45.8%; BOS 22nd vs SAC 7th of 30).\n• **Points off turnovers** — SAC holds the better number, 16.9 to BOS's 13.7 (league avg 17.5; BOS 30th vs SAC 19th of 30).\nConsistency check: BOS's game margins over this stretch vary by ±18.3 points (one standard deviation) against ±15.5 for SAC; the more volatile side is BOS.\n## Schedule & Rest\nBOS comes in with 2 days of rest; SAC comes in with 2 days of rest.\nSAC has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 221.5 points and the two defences concede 225.8; on record they attempt 79 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 224.2 total points against a line of 225.0, 0.8 points below the number. With totals spreading ±18.1 points around the line, that is a 52% probability of the under; published confidence is 52%.\n## Model Track Record\nThis season, published spread picks are 107-110 (49%); at 82%+ confidence they are 16-26; totals are 110-112 (50%).\n## What Could Go Wrong\nHonest caveats: SAC's edge in Paint points (53.6 vs 36.4) is the cleanest path to an upset of this read; BOS's results swing ±18.3 points game to game, so any single-game edge is fragile; BOS is on a L2 skid and the model does not read locker rooms.",
-      "analysis_content_zh": "## 結論\n結論落在客場作戰的 BOS。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 BOS 贏 8.1 分，勝率 72%。\n信心高（82%）。\n## 本季至今\nBOS 戰績 13-4（主 7-1、客 6-3），場均得 114.5（30 隊中第 14）、失 103.8（30 隊中第 1），淨勝 +10.8（30 隊中第 2），目前 L2。近況：主場勝 DAL 131-94、主場負 ORL 105-115、客場負 DEN 101-105。\nSAC 戰績 1-14，場均得 107.0（30 隊中第 29）、失 122.0（30 隊中第 29），淨勝 -15.0（30 隊中第 30），目前 L7。近況：主場負 POR 107-120、主場負 OKC 103-125、主場負 PHX 107-128。\n對盤口表現：BOS 讓分 8 勝 6 負 (57%)；大分 4 次、小分 10 次；SAC 讓分 4 勝 9 負 (31%)；大分 8 次、小分 5 次。\n近 3 次交手 BOS 3 勝 0 負，平均分差 +17.0（最近一次 2026-01-30：勝 112-93）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-02），BOS 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：BOS 場均淨勝 +4.5 分，對手 -10.3（聯盟平均 -4.7；BOS 第 2、SAC 第 23／30 隊）。\n• **失分**：BOS 場均失 106.4 分，對手 121.0（聯盟平均 115.8；BOS 第 6、SAC 第 23／30 隊）。\n• **失誤**：BOS 失誤 11.8 次，對手 14.4（聯盟平均 13.6；BOS 第 5、SAC 第 22／30 隊）。\n• **罰球命中率**：BOS 罰球 78.0%，對手 73.4%（聯盟平均 77.5%；BOS 第 12、SAC 第 27／30 隊）。\nSAC 能反擊的地方：\n• **禁區得分**：SAC 這項較好，53.6 對 BOS 的 36.4（聯盟平均 47.4；BOS 第 30、SAC 第 5／30 隊）。\n• **命中率**：SAC 這項較好，47.4% 對 BOS 的 44.5%（聯盟平均 45.8%；BOS 第 22、SAC 第 7／30 隊）。\n• **失誤轉換得分**：SAC 這項較好，16.9 對 BOS 的 13.7（聯盟平均 17.5；BOS 第 30、SAC 第 19／30 隊）。\n穩定度：這段期間 BOS 單場分差的標準差是 ±18.3 分，SAC 是 ±15.5 分；BOS 的表現起伏較大。\n## 賽程與休息\nBOS 休了 2 天；SAC 休了 2 天。\nSAC 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 221.5 分，防守合計失 225.8 分；近況合計每場出手 79 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 224.2，盤口 225.0，低於盤口 0.8 分。以總分相對盤口 ±18.1 分的分佈換算，小分機率 52%；公布信心 52%。\n## 模型本季戰績\n本季至今，已發佈讓分 107 勝 110 負（49%）；信心 82% 以上的場次 16 勝 26 負；大小分 110 勝 112 負（50%）。\n## 風險\n坦白說：SAC 在禁區得分上的優勢（53.6 對 36.4）是翻掉這份判讀最直接的路徑；BOS 單場分差起伏 ±18.3 分，單場優勢並不牢靠；BOS 正吞 2 連敗，模型看不到更衣室氣氛。",
+      "analysis_content": "## The Call\nThe number says BOS, on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has BOS by 8.1, a 72% win probability.\nConfidence is high at 82%.\n## Season So Far\nBOS is 13-4 (7-1 home, 6-3 away), scoring 114.5 (13th of 30) and allowing 103.8 (1st of 30) for a +10.8 margin (2nd of 30), currently on a L2 run. Last out: W 131-94 vs DAL, L 105-115 vs ORL, L 101-105 at DEN.\nSAC is 1-14, scoring 107.0 (29th of 30) and allowing 122.0 (29th of 30) for a -15.0 margin (30th of 30), on a L7 run. Last out: L 107-120 vs POR, L 103-125 vs OKC, L 107-128 vs PHX.\nAgainst the number: BOS 8-6 against the spread (57%); 4 over / 10 under; SAC 4-9 against the spread (31%); 8 over / 5 under.\nHead to head, BOS is 3-0 in the last 3 meetings with an average margin of +17.0 (most recent 2026-01-30: W 112-93).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-02), here is where BOS separates from SAC. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — BOS outscores opponents by +4.5 per game against -10.3 (league avg -4.7; BOS 2nd vs SAC 23rd of 30).\n• **Points allowed** — BOS gives up 106.4 to 121.0 (league avg 115.8; BOS 6th vs SAC 23rd of 30).\n• **Turnovers** — BOS commits 11.8 turnovers to 14.4 (league avg 13.6; BOS 5th vs SAC 22nd of 30).\n• **FT%** — BOS converts 78.0% at the line to 73.4% (league avg 77.5%; BOS 12th vs SAC 27th of 30).\nWhere SAC pushes back:\n• **Paint points** — SAC holds the better number, 53.6 to BOS's 36.4 (league avg 47.4; BOS 30th vs SAC 5th of 30).\n• **FG%** — SAC holds the better number, 47.4% to BOS's 44.5% (league avg 45.8%; BOS 22nd vs SAC 7th of 30).\n• **Points off turnovers** — SAC holds the better number, 16.9 to BOS's 13.7 (league avg 17.5; BOS 30th vs SAC 19th of 30).\nConsistency check: BOS's game margins over this stretch vary by ±18.3 points (one standard deviation) against ±15.5 for SAC; the more volatile side is BOS.\n## Schedule & Rest\nBOS comes in with 2 days of rest; SAC comes in with 2 days of rest.\nSAC has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 221.5 points and the two defences concede 225.8; on record they attempt 79 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 224.2 total points against a line of 225.0, 0.8 points below the number. With totals spreading ±18.0 points around the line, that is a 52% probability of the under; published confidence is 52%.\n## Model Track Record\nThis season, published spread picks are 108-113 (49%); at 82%+ confidence they are 17-26; totals are 111-115 (49%).\n## What Could Go Wrong\nHonest caveats: SAC's edge in Paint points (53.6 vs 36.4) is the cleanest path to an upset of this read; BOS's results swing ±18.3 points game to game, so any single-game edge is fragile; BOS is on a L2 skid and the model does not read locker rooms.",
+      "analysis_content_zh": "## 結論\n結論落在客場作戰的 BOS。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 BOS 贏 8.1 分，勝率 72%。\n信心高（82%）。\n## 本季至今\nBOS 戰績 13-4（主 7-1、客 6-3），場均得 114.5（30 隊中第 13）、失 103.8（30 隊中第 1），淨勝 +10.8（30 隊中第 2），目前 L2。近況：主場勝 DAL 131-94、主場負 ORL 105-115、客場負 DEN 101-105。\nSAC 戰績 1-14，場均得 107.0（30 隊中第 29）、失 122.0（30 隊中第 29），淨勝 -15.0（30 隊中第 30），目前 L7。近況：主場負 POR 107-120、主場負 OKC 103-125、主場負 PHX 107-128。\n對盤口表現：BOS 讓分 8 勝 6 負 (57%)；大分 4 次、小分 10 次；SAC 讓分 4 勝 9 負 (31%)；大分 8 次、小分 5 次。\n近 3 次交手 BOS 3 勝 0 負，平均分差 +17.0（最近一次 2026-01-30：勝 112-93）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-02），BOS 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：BOS 場均淨勝 +4.5 分，對手 -10.3（聯盟平均 -4.7；BOS 第 2、SAC 第 23／30 隊）。\n• **失分**：BOS 場均失 106.4 分，對手 121.0（聯盟平均 115.8；BOS 第 6、SAC 第 23／30 隊）。\n• **失誤**：BOS 失誤 11.8 次，對手 14.4（聯盟平均 13.6；BOS 第 5、SAC 第 22／30 隊）。\n• **罰球命中率**：BOS 罰球 78.0%，對手 73.4%（聯盟平均 77.5%；BOS 第 12、SAC 第 27／30 隊）。\nSAC 能反擊的地方：\n• **禁區得分**：SAC 這項較好，53.6 對 BOS 的 36.4（聯盟平均 47.4；BOS 第 30、SAC 第 5／30 隊）。\n• **命中率**：SAC 這項較好，47.4% 對 BOS 的 44.5%（聯盟平均 45.8%；BOS 第 22、SAC 第 7／30 隊）。\n• **失誤轉換得分**：SAC 這項較好，16.9 對 BOS 的 13.7（聯盟平均 17.5；BOS 第 30、SAC 第 19／30 隊）。\n穩定度：這段期間 BOS 單場分差的標準差是 ±18.3 分，SAC 是 ±15.5 分；BOS 的表現起伏較大。\n## 賽程與休息\nBOS 休了 2 天；SAC 休了 2 天。\nSAC 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 221.5 分，防守合計失 225.8 分；近況合計每場出手 79 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 224.2，盤口 225.0，低於盤口 0.8 分。以總分相對盤口 ±18.0 分的分佈換算，小分機率 52%；公布信心 52%。\n## 模型本季戰績\n本季至今，已發佈讓分 108 勝 113 負（49%）；信心 82% 以上的場次 17 勝 26 負；大小分 111 勝 115 負（49%）。\n## 風險\n坦白說：SAC 在禁區得分上的優勢（53.6 對 36.4）是翻掉這份判讀最直接的路徑；BOS 單場分差起伏 ±18.3 分，單場優勢並不牢靠；BOS 正吞 2 連敗，模型看不到更衣室氣氛。",
       "predicted_margin": 8.12,
       "predicted_total": 224.22,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-20T03:00:14.435676",
+      "created_at": "2026-11-20T03:30:14.784762",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -96948,7 +96948,7 @@
             "papg": 103.8,
             "margin": 10.8,
             "rank": {
-              "ppg": 14,
+              "ppg": 13,
               "papg": 1,
               "margin": 2
             },
@@ -97034,12 +97034,12 @@
           "total_is_default": true
         },
         "probability": {
-          "cover": 0.715,
-          "win_model": 0.715,
+          "cover": 0.716,
+          "win_model": 0.716,
           "win_market": null,
           "total": 0.517,
-          "sigma_spread": 14.3,
-          "sigma_total": 18.1,
+          "sigma_spread": 14.2,
+          "sigma_total": 18.0,
           "sigma_measured": true
         },
         "effects": {
@@ -97055,19 +97055,19 @@
         },
         "record": {
           "spread": [
-            107,
-            110
+            108,
+            113
           ],
           "total": [
-            110,
-            112
+            111,
+            115
           ],
           "spread_at_conf": [
-            16,
+            17,
             26
           ]
         },
-        "generated_at": "2026-11-20T03:00:14"
+        "generated_at": "2026-11-20T03:30:14"
       },
       "matches": {
         "id": 262,
@@ -97110,13 +97110,13 @@
       "ou_pick": "UNDER",
       "ou_line": 225.0,
       "ou_confidence": 76.0,
-      "analysis_content": "## The Call\nNY at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has NY by 9.0, a 74% win probability.\nConfidence is high at 86%.\n## Season So Far\nNY is 9-6 (5-3 home, 4-3 away), scoring 110.8 (24th of 30) and allowing 104.9 (2nd of 30) for a +5.9 margin (7th of 30), currently on a W2 run. Last out: L 104-106 at IND, W 112-108 at TOR, W 111-102 at TOR.\nPOR is 9-6, scoring 117.1 (9th of 30) and allowing 112.1 (10th of 30) for a +4.9 margin (9th of 30), on a L2 run. Last out: W 120-107 at SAC, L 98-106 at MIN, L 105-106 at MIN.\nAgainst the number: NY 6-7 against the spread (46%); 4 over / 9 under; POR 8-5 against the spread (62%); 5 over / 8 under.\nHead to head, NY is 3-0 in the last 3 meetings with an average margin of +18.7 (most recent 2026-01-30: W 127-97).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-06-13) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — NY outscores opponents by +11.9 per game against -4.3 (league avg -4.7; NY 1st vs POR 14th of 30).\n• **Points allowed** — NY gives up 102.2 to 112.8 (league avg 115.8; NY 1st vs POR 13th of 30).\n• **3P%** — NY hits 39.2% from three against 33.5% (league avg 34.9%; NY 3rd vs POR 22nd of 30).\n• **FG%** — NY shoots 46.8% from the floor to 43.1% (league avg 45.8%; NY 11th vs POR 28th of 30).\nWhere POR pushes back:\n• **Off. rebounds** — POR holds the better number, 12.7 to NY's 11.0 (league avg 11.1; NY 15th vs POR 5th of 30).\n• **Bench points** — POR holds the better number, 29.7 to NY's 26.3 (league avg 35.3; NY 24th vs POR 22nd of 30).\n• **Points off turnovers** — POR holds the better number, 20.3 to NY's 18.8 (league avg 17.5; NY 9th vs POR 5th of 30).\nConsistency check: NY's game margins over this stretch vary by ±12.4 points (one standard deviation) against ±12.7 for POR; the steadier side is NY.\n## Schedule & Rest\nNY comes in with 3 days of rest; POR comes in with 3 days of rest.\nNY has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 227.9 points and the two defences concede 217.1; on record they attempt 78 threes between them (league pair average 73) with 31 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 216.2 total points against a line of 225.0, 8.8 points below the number. With totals spreading ±18.1 points around the line, that is a 69% probability of the under; published confidence is 76%.\n## Model Track Record\nThis season, published spread picks are 107-110 (49%); at 86%+ confidence they are 15-19; totals are 110-112 (50%).\n## What Could Go Wrong\nHonest caveats: POR's edge in Off. rebounds (12.7 vs 11.0) is the cleanest path to an upset of this read.",
-      "analysis_content_zh": "## 結論\n本場站 主場的 NY。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 NY 贏 9.0 分，勝率 74%。\n信心高（86%）。\n## 本季至今\nNY 戰績 9-6（主 5-3、客 4-3），場均得 110.8（30 隊中第 24）、失 104.9（30 隊中第 2），淨勝 +5.9（30 隊中第 7），目前 W2。近況：客場負 IND 104-106、客場勝 TOR 112-108、客場勝 TOR 111-102。\nPOR 戰績 9-6，場均得 117.1（30 隊中第 9）、失 112.1（30 隊中第 10），淨勝 +4.9（30 隊中第 9），目前 L2。近況：客場勝 SAC 120-107、客場負 MIN 98-106、客場負 MIN 105-106。\n對盤口表現：NY 讓分 6 勝 7 負 (46%)；大分 4 次、小分 9 次；POR 讓分 8 勝 5 負 (62%)；大分 5 次、小分 8 次。\n近 3 次交手 NY 3 勝 0 負，平均分差 +18.7（最近一次 2026-01-30：勝 127-97）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-06-13）裡，NY 和 POR 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -4.3（聯盟平均 -4.7；NY 第 1、POR 第 14／30 隊）。\n• **失分**：NY 場均失 102.2 分，對手 112.8（聯盟平均 115.8；NY 第 1、POR 第 13／30 隊）。\n• **三分命中率**：NY 三分命中 39.2%，對手 33.5%（聯盟平均 34.9%；NY 第 3、POR 第 22／30 隊）。\n• **命中率**：NY 命中率 46.8%，對手 43.1%（聯盟平均 45.8%；NY 第 11、POR 第 28／30 隊）。\nPOR 能反擊的地方：\n• **進攻籃板**：POR 這項較好，12.7 對 NY 的 11.0（聯盟平均 11.1；NY 第 15、POR 第 5／30 隊）。\n• **板凳得分**：POR 這項較好，29.7 對 NY 的 26.3（聯盟平均 35.3；NY 第 24、POR 第 22／30 隊）。\n• **失誤轉換得分**：POR 這項較好，20.3 對 NY 的 18.8（聯盟平均 17.5；NY 第 9、POR 第 5／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，POR 是 ±12.7 分；NY 的表現較穩。\n## 賽程與休息\nNY 休了 3 天；POR 休了 3 天。\nNY 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 227.9 分，防守合計失 217.1 分；近況合計每場出手 78 記三分（聯盟兩隊平均 73）、快攻 31 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 216.2，盤口 225.0，低於盤口 8.8 分。以總分相對盤口 ±18.1 分的分佈換算，小分機率 69%；公布信心 76%。\n## 模型本季戰績\n本季至今，已發佈讓分 107 勝 110 負（49%）；信心 86% 以上的場次 15 勝 19 負；大小分 110 勝 112 負（50%）。\n## 風險\n坦白說：POR 在進攻籃板上的優勢（12.7 對 11.0）是翻掉這份判讀最直接的路徑。",
+      "analysis_content": "## The Call\nNY at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has NY by 9.0, a 74% win probability.\nConfidence is high at 86%.\n## Season So Far\nNY is 10-6 (5-3 home, 5-3 away), scoring 110.2 (26th of 30) and allowing 104.6 (2nd of 30) for a +5.7 margin (7th of 30), currently on a W3 run. Last out: W 112-108 at TOR, W 111-102 at TOR, W 102-99 at MIN.\nPOR is 10-6, scoring 117.5 (9th of 30) and allowing 112.2 (10th of 30) for a +5.2 margin (8th of 30), on a W1 run. Last out: L 98-106 at MIN, L 105-106 at MIN, W 124-114 at MIL.\nAgainst the number: NY 7-7 against the spread (50%); 4 over / 10 under; POR 8-6 against the spread (57%); 6 over / 8 under.\nHead to head, NY is 3-0 in the last 3 meetings with an average margin of +18.7 (most recent 2026-01-30: W 127-97).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-06-13) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — NY outscores opponents by +11.9 per game against -4.3 (league avg -4.7; NY 1st vs POR 14th of 30).\n• **Points allowed** — NY gives up 102.2 to 112.8 (league avg 115.8; NY 1st vs POR 13th of 30).\n• **3P%** — NY hits 39.2% from three against 33.5% (league avg 34.9%; NY 3rd vs POR 22nd of 30).\n• **FG%** — NY shoots 46.8% from the floor to 43.1% (league avg 45.8%; NY 11th vs POR 28th of 30).\nWhere POR pushes back:\n• **Off. rebounds** — POR holds the better number, 12.7 to NY's 11.0 (league avg 11.1; NY 15th vs POR 5th of 30).\n• **Bench points** — POR holds the better number, 29.7 to NY's 26.3 (league avg 35.3; NY 24th vs POR 22nd of 30).\n• **Points off turnovers** — POR holds the better number, 20.3 to NY's 18.8 (league avg 17.5; NY 9th vs POR 5th of 30).\nConsistency check: NY's game margins over this stretch vary by ±12.4 points (one standard deviation) against ±12.7 for POR; the steadier side is NY.\n## Schedule & Rest\nNY has one day off; POR has one day off.\nNY has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 227.8 points and the two defences concede 216.8; on record they attempt 78 threes between them (league pair average 73) with 31 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 216.2 total points against a line of 225.0, 8.8 points below the number. With totals spreading ±18.0 points around the line, that is a 69% probability of the under; published confidence is 76%.\n## Model Track Record\nThis season, published spread picks are 108-113 (49%); at 86%+ confidence they are 16-19; totals are 111-115 (49%).\n## What Could Go Wrong\nHonest caveats: POR's edge in Off. rebounds (12.7 vs 11.0) is the cleanest path to an upset of this read.",
+      "analysis_content_zh": "## 結論\n本場站 主場的 NY。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 NY 贏 9.0 分，勝率 74%。\n信心高（86%）。\n## 本季至今\nNY 戰績 10-6（主 5-3、客 5-3），場均得 110.2（30 隊中第 26）、失 104.6（30 隊中第 2），淨勝 +5.7（30 隊中第 7），目前 W3。近況：客場勝 TOR 112-108、客場勝 TOR 111-102、客場勝 MIN 102-99。\nPOR 戰績 10-6，場均得 117.5（30 隊中第 9）、失 112.2（30 隊中第 10），淨勝 +5.2（30 隊中第 8），目前 W1。近況：客場負 MIN 98-106、客場負 MIN 105-106、客場勝 MIL 124-114。\n對盤口表現：NY 讓分 7 勝 7 負 (50%)；大分 4 次、小分 10 次；POR 讓分 8 勝 6 負 (57%)；大分 6 次、小分 8 次。\n近 3 次交手 NY 3 勝 0 負，平均分差 +18.7（最近一次 2026-01-30：勝 127-97）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-06-13）裡，NY 和 POR 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -4.3（聯盟平均 -4.7；NY 第 1、POR 第 14／30 隊）。\n• **失分**：NY 場均失 102.2 分，對手 112.8（聯盟平均 115.8；NY 第 1、POR 第 13／30 隊）。\n• **三分命中率**：NY 三分命中 39.2%，對手 33.5%（聯盟平均 34.9%；NY 第 3、POR 第 22／30 隊）。\n• **命中率**：NY 命中率 46.8%，對手 43.1%（聯盟平均 45.8%；NY 第 11、POR 第 28／30 隊）。\nPOR 能反擊的地方：\n• **進攻籃板**：POR 這項較好，12.7 對 NY 的 11.0（聯盟平均 11.1；NY 第 15、POR 第 5／30 隊）。\n• **板凳得分**：POR 這項較好，29.7 對 NY 的 26.3（聯盟平均 35.3；NY 第 24、POR 第 22／30 隊）。\n• **失誤轉換得分**：POR 這項較好，20.3 對 NY 的 18.8（聯盟平均 17.5；NY 第 9、POR 第 5／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，POR 是 ±12.7 分；NY 的表現較穩。\n## 賽程與休息\nNY 休一天；POR 休一天。\nNY 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 227.8 分，防守合計失 216.8 分；近況合計每場出手 78 記三分（聯盟兩隊平均 73）、快攻 31 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 216.2，盤口 225.0，低於盤口 8.8 分。以總分相對盤口 ±18.0 分的分佈換算，小分機率 69%；公布信心 76%。\n## 模型本季戰績\n本季至今，已發佈讓分 108 勝 113 負（49%）；信心 86% 以上的場次 16 勝 19 負；大小分 111 勝 115 負（49%）。\n## 風險\n坦白說：POR 在進攻籃板上的優勢（12.7 對 11.0）是翻掉這份判讀最直接的路徑。",
       "predicted_margin": 9.04,
       "predicted_total": 216.23,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-20T03:00:14.523200",
+      "created_at": "2026-11-20T03:30:14.878830",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -97306,70 +97306,70 @@
         ],
         "form": {
           "rec": {
-            "games": 15,
-            "wins": 9,
+            "games": 16,
+            "wins": 10,
             "losses": 6,
             "home": [
               5,
               3
             ],
             "away": [
-              4,
+              5,
               3
             ],
-            "ppg": 110.8,
-            "papg": 104.9,
-            "margin": 5.9,
+            "ppg": 110.2,
+            "papg": 104.6,
+            "margin": 5.7,
             "rank": {
-              "ppg": 24,
+              "ppg": 26,
               "papg": 2,
               "margin": 7
             },
-            "streak": "W2",
+            "streak": "W3",
             "ats": [
-              6,
+              7,
               7,
               0
             ],
             "ou": [
               4,
-              9,
+              10,
               0
             ],
-            "rest": 4
+            "rest": 2
           },
           "opp": {
-            "games": 15,
-            "wins": 9,
+            "games": 16,
+            "wins": 10,
             "losses": 6,
             "home": [
               3,
               2
             ],
             "away": [
-              6,
+              7,
               4
             ],
-            "ppg": 117.1,
-            "papg": 112.1,
-            "margin": 4.9,
+            "ppg": 117.5,
+            "papg": 112.2,
+            "margin": 5.2,
             "rank": {
               "ppg": 9,
               "papg": 10,
-              "margin": 9
+              "margin": 8
             },
-            "streak": "L2",
+            "streak": "W1",
             "ats": [
               8,
-              5,
+              6,
               0
             ],
             "ou": [
-              5,
+              6,
               8,
               0
             ],
-            "rest": 4
+            "rest": 2
           }
         },
         "volatility": {
@@ -97410,9 +97410,9 @@
           "cover": 0.737,
           "win_model": 0.737,
           "win_market": null,
-          "total": 0.686,
-          "sigma_spread": 14.3,
-          "sigma_total": 18.1,
+          "total": 0.687,
+          "sigma_spread": 14.2,
+          "sigma_total": 18.0,
           "sigma_measured": true
         },
         "effects": {
@@ -97428,19 +97428,19 @@
         },
         "record": {
           "spread": [
-            107,
-            110
+            108,
+            113
           ],
           "total": [
-            110,
-            112
+            111,
+            115
           ],
           "spread_at_conf": [
-            15,
+            16,
             19
           ]
         },
-        "generated_at": "2026-11-20T03:00:14"
+        "generated_at": "2026-11-20T03:30:14"
       },
       "matches": {
         "id": 258,
@@ -97483,13 +97483,13 @@
       "ou_pick": "OVER",
       "ou_line": 225.0,
       "ou_confidence": 61.0,
-      "analysis_content": "## The Call\nSA at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has SA by 8.7, a 73% win probability.\nConfidence is high at 84%.\n## Season So Far\nSA is 14-3 (7-3 home, 7-0 away), scoring 117.9 (6th of 30) and allowing 105.2 (3rd of 30) for a +12.8 margin (1st of 30), currently on a L1 run. Last out: W 123-85 vs GS, W 110-102 at UTAH, L 93-105 vs DET.\nNO is 7-11, scoring 114.1 (15th of 30) and allowing 120.4 (25th of 30) for a -6.3 margin (24th of 30), on a L1 run. Last out: L 108-116 vs DEN, W 115-94 vs GS, L 109-122 vs DET.\nAgainst the number: SA 6-8 against the spread (43%); 4 over / 10 under; NO 8-7 against the spread (53%); 9 over / 6 under.\nHead to head, SA is 2-1 in the last 3 meetings with an average margin of +0.3 (most recent 2026-01-25: L 95-104).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-06-13), SA's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — SA gives up 104.8 to 126.3 (league avg 115.8; SA 4th vs NO 25th of 30).\n• **Net margin** — SA outscores opponents by +1.6 per game against -10.4 (league avg -4.7; SA 9th vs NO 24th of 30).\n• **Points off turnovers** — SA turns mistakes into 19.7 points to 17.1 (league avg 17.5; SA 7th vs NO 17th of 30).\n• **Rebounds** — SA pulls 44.4 rebounds to 42.6 (league avg 41.9; SA 7th vs NO 16th of 30).\nWhere NO pushes back:\n• **Paint points** — NO holds the better number, 60.6 to SA's 41.4 (league avg 47.4; SA 25th vs NO 2nd of 30).\n• **Points** — NO holds the better number, 115.9 to SA's 106.4 (league avg 111.1; SA 25th vs NO 7th of 30).\n• **Bench points** — NO holds the better number, 37.6 to SA's 28.3 (league avg 35.3; SA 23rd vs NO 13th of 30).\nConsistency check: SA's game margins over this stretch vary by ±13.2 points (one standard deviation) against ±13.5 for NO; the steadier side is SA.\n## Schedule & Rest\nSA comes in with 3 days of rest; NO comes in with 2 days of rest.\nThe rest edge belongs to SA.\nSA has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 232.1 points and the two defences concede 225.6; on record they attempt 67 threes between them (league pair average 73) with 35 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 228.9 total points against a line of 225.0, 3.9 points above the number. With totals spreading ±18.1 points around the line, that is a 59% probability of the over; published confidence is 61%.\n## Model Track Record\nThis season, published spread picks are 107-110 (49%); at 84%+ confidence they are 16-24; totals are 110-112 (50%).\n## What Could Go Wrong\nHonest caveats: NO's edge in Paint points (60.6 vs 41.4) is the cleanest path to an upset of this read.",
-      "analysis_content_zh": "## 結論\n數字指向 SA（主場）。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 SA 贏 8.7 分，勝率 73%。\n信心高（84%）。\n## 本季至今\nSA 戰績 14-3（主 7-3、客 7-0），場均得 117.9（30 隊中第 6）、失 105.2（30 隊中第 3），淨勝 +12.8（30 隊中第 1），目前 L1。近況：主場勝 GS 123-85、客場勝 UTAH 110-102、主場負 DET 93-105。\nNO 戰績 7-11，場均得 114.1（30 隊中第 15）、失 120.4（30 隊中第 25），淨勝 -6.3（30 隊中第 24），目前 L1。近況：主場負 DEN 108-116、主場勝 GS 115-94、主場負 DET 109-122。\n對盤口表現：SA 讓分 6 勝 8 負 (43%)；大分 4 次、小分 10 次；NO 讓分 8 勝 7 負 (53%)；大分 9 次、小分 6 次。\n近 3 次交手 SA 2 勝 1 負，平均分差 +0.3（最近一次 2026-01-25：負 95-104）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-06-13），SA 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：SA 場均失 104.8 分，對手 126.3（聯盟平均 115.8；SA 第 4、NO 第 25／30 隊）。\n• **淨勝分**：SA 場均淨勝 +1.6 分，對手 -10.4（聯盟平均 -4.7；SA 第 9、NO 第 24／30 隊）。\n• **失誤轉換得分**：SA 失誤轉換得 19.7 分，對手 17.1（聯盟平均 17.5；SA 第 7、NO 第 17／30 隊）。\n• **籃板**：SA 場均 44.4 籃板，對手 42.6（聯盟平均 41.9；SA 第 7、NO 第 16／30 隊）。\nNO 能反擊的地方：\n• **禁區得分**：NO 這項較好，60.6 對 SA 的 41.4（聯盟平均 47.4；SA 第 25、NO 第 2／30 隊）。\n• **得分**：NO 這項較好，115.9 對 SA 的 106.4（聯盟平均 111.1；SA 第 25、NO 第 7／30 隊）。\n• **板凳得分**：NO 這項較好，37.6 對 SA 的 28.3（聯盟平均 35.3；SA 第 23、NO 第 13／30 隊）。\n穩定度：這段期間 SA 單場分差的標準差是 ±13.2 分，NO 是 ±13.5 分；SA 的表現較穩。\n## 賽程與休息\nSA 休了 3 天；NO 休了 2 天。\n體能上 SA 較佔便宜。\nSA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 232.1 分，防守合計失 225.6 分；近況合計每場出手 67 記三分（聯盟兩隊平均 73）、快攻 35 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 228.9，盤口 225.0，高於盤口 3.9 分。以總分相對盤口 ±18.1 分的分佈換算，大分機率 59%；公布信心 61%。\n## 模型本季戰績\n本季至今，已發佈讓分 107 勝 110 負（49%）；信心 84% 以上的場次 16 勝 24 負；大小分 110 勝 112 負（50%）。\n## 風險\n坦白說：NO 在禁區得分上的優勢（60.6 對 41.4）是翻掉這份判讀最直接的路徑。",
+      "analysis_content": "## The Call\nSA at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has SA by 8.7, a 73% win probability.\nConfidence is high at 84%.\n## Season So Far\nSA is 15-3 (8-3 home, 7-0 away), scoring 118.3 (5th of 30) and allowing 105.6 (3rd of 30) for a +12.7 margin (1st of 30), currently on a W1 run. Last out: W 110-102 at UTAH, L 93-105 vs DET, W 124-112 vs LAC.\nNO is 7-11, scoring 114.1 (14th of 30) and allowing 120.4 (25th of 30) for a -6.3 margin (24th of 30), on a L1 run. Last out: L 108-116 vs DEN, W 115-94 vs GS, L 109-122 vs DET.\nAgainst the number: SA 6-9 against the spread (40%); 5 over / 10 under; NO 8-7 against the spread (53%); 9 over / 6 under.\nHead to head, SA is 2-1 in the last 3 meetings with an average margin of +0.3 (most recent 2026-01-25: L 95-104).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-06-13), SA's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — SA gives up 104.8 to 126.3 (league avg 115.8; SA 4th vs NO 25th of 30).\n• **Net margin** — SA outscores opponents by +1.6 per game against -10.4 (league avg -4.7; SA 9th vs NO 24th of 30).\n• **Points off turnovers** — SA turns mistakes into 19.7 points to 17.1 (league avg 17.5; SA 7th vs NO 17th of 30).\n• **Rebounds** — SA pulls 44.4 rebounds to 42.6 (league avg 41.9; SA 7th vs NO 16th of 30).\nWhere NO pushes back:\n• **Paint points** — NO holds the better number, 60.6 to SA's 41.4 (league avg 47.4; SA 25th vs NO 2nd of 30).\n• **Points** — NO holds the better number, 115.9 to SA's 106.4 (league avg 111.1; SA 25th vs NO 7th of 30).\n• **Bench points** — NO holds the better number, 37.6 to SA's 28.3 (league avg 35.3; SA 23rd vs NO 13th of 30).\nConsistency check: SA's game margins over this stretch vary by ±13.2 points (one standard deviation) against ±13.5 for NO; the steadier side is SA.\n## Schedule & Rest\nSA has one day off; NO comes in with 2 days of rest.\nThe rest edge belongs to NO.\nSA has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 232.4 points and the two defences concede 226.0; on record they attempt 67 threes between them (league pair average 73) with 35 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 228.9 total points against a line of 225.0, 3.9 points above the number. With totals spreading ±18.0 points around the line, that is a 59% probability of the over; published confidence is 61%.\n## Model Track Record\nThis season, published spread picks are 108-113 (49%); at 84%+ confidence they are 17-24; totals are 111-115 (49%).\n## What Could Go Wrong\nHonest caveats: NO's edge in Paint points (60.6 vs 41.4) is the cleanest path to an upset of this read.",
+      "analysis_content_zh": "## 結論\n數字指向 SA（主場）。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 SA 贏 8.7 分，勝率 73%。\n信心高（84%）。\n## 本季至今\nSA 戰績 15-3（主 8-3、客 7-0），場均得 118.3（30 隊中第 5）、失 105.6（30 隊中第 3），淨勝 +12.7（30 隊中第 1），目前 W1。近況：客場勝 UTAH 110-102、主場負 DET 93-105、主場勝 LAC 124-112。\nNO 戰績 7-11，場均得 114.1（30 隊中第 14）、失 120.4（30 隊中第 25），淨勝 -6.3（30 隊中第 24），目前 L1。近況：主場負 DEN 108-116、主場勝 GS 115-94、主場負 DET 109-122。\n對盤口表現：SA 讓分 6 勝 9 負 (40%)；大分 5 次、小分 10 次；NO 讓分 8 勝 7 負 (53%)；大分 9 次、小分 6 次。\n近 3 次交手 SA 2 勝 1 負，平均分差 +0.3（最近一次 2026-01-25：負 95-104）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-06-13），SA 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：SA 場均失 104.8 分，對手 126.3（聯盟平均 115.8；SA 第 4、NO 第 25／30 隊）。\n• **淨勝分**：SA 場均淨勝 +1.6 分，對手 -10.4（聯盟平均 -4.7；SA 第 9、NO 第 24／30 隊）。\n• **失誤轉換得分**：SA 失誤轉換得 19.7 分，對手 17.1（聯盟平均 17.5；SA 第 7、NO 第 17／30 隊）。\n• **籃板**：SA 場均 44.4 籃板，對手 42.6（聯盟平均 41.9；SA 第 7、NO 第 16／30 隊）。\nNO 能反擊的地方：\n• **禁區得分**：NO 這項較好，60.6 對 SA 的 41.4（聯盟平均 47.4；SA 第 25、NO 第 2／30 隊）。\n• **得分**：NO 這項較好，115.9 對 SA 的 106.4（聯盟平均 111.1；SA 第 25、NO 第 7／30 隊）。\n• **板凳得分**：NO 這項較好，37.6 對 SA 的 28.3（聯盟平均 35.3；SA 第 23、NO 第 13／30 隊）。\n穩定度：這段期間 SA 單場分差的標準差是 ±13.2 分，NO 是 ±13.5 分；SA 的表現較穩。\n## 賽程與休息\nSA 休一天；NO 休了 2 天。\n體能上 NO 較佔便宜。\nSA 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 232.4 分，防守合計失 226.0 分；近況合計每場出手 67 記三分（聯盟兩隊平均 73）、快攻 35 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 228.9，盤口 225.0，高於盤口 3.9 分。以總分相對盤口 ±18.0 分的分佈換算，大分機率 59%；公布信心 61%。\n## 模型本季戰績\n本季至今，已發佈讓分 108 勝 113 負（49%）；信心 84% 以上的場次 17 勝 24 負；大小分 111 勝 115 負（49%）。\n## 風險\n坦白說：NO 在禁區得分上的優勢（60.6 對 41.4）是翻掉這份判讀最直接的路徑。",
       "predicted_margin": 8.67,
       "predicted_total": 228.94,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-20T03:00:14.612550",
+      "created_at": "2026-11-20T03:30:14.945063",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -97679,37 +97679,37 @@
         ],
         "form": {
           "rec": {
-            "games": 17,
-            "wins": 14,
+            "games": 18,
+            "wins": 15,
             "losses": 3,
             "home": [
-              7,
+              8,
               3
             ],
             "away": [
               7,
               0
             ],
-            "ppg": 117.9,
-            "papg": 105.2,
-            "margin": 12.8,
+            "ppg": 118.3,
+            "papg": 105.6,
+            "margin": 12.7,
             "rank": {
-              "ppg": 6,
+              "ppg": 5,
               "papg": 3,
               "margin": 1
             },
-            "streak": "L1",
+            "streak": "W1",
             "ats": [
               6,
-              8,
+              9,
               0
             ],
             "ou": [
-              4,
+              5,
               10,
               0
             ],
-            "rest": 4
+            "rest": 2
           },
           "opp": {
             "games": 18,
@@ -97727,7 +97727,7 @@
             "papg": 120.4,
             "margin": -6.3,
             "rank": {
-              "ppg": 15,
+              "ppg": 14,
               "papg": 25,
               "margin": 24
             },
@@ -97780,12 +97780,12 @@
           "total_is_default": true
         },
         "probability": {
-          "cover": 0.728,
-          "win_model": 0.728,
+          "cover": 0.729,
+          "win_model": 0.729,
           "win_market": null,
-          "total": 0.586,
-          "sigma_spread": 14.3,
-          "sigma_total": 18.1,
+          "total": 0.587,
+          "sigma_spread": 14.2,
+          "sigma_total": 18.0,
           "sigma_measured": true
         },
         "effects": {
@@ -97801,19 +97801,19 @@
         },
         "record": {
           "spread": [
-            107,
-            110
+            108,
+            113
           ],
           "total": [
-            110,
-            112
+            111,
+            115
           ],
           "spread_at_conf": [
-            16,
+            17,
             24
           ]
         },
-        "generated_at": "2026-11-20T03:00:14"
+        "generated_at": "2026-11-20T03:30:14"
       },
       "matches": {
         "id": 261,
