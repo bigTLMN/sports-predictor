@@ -9892,9 +9892,9 @@
       "start_time": "2026-11-21T02:30Z",
       "home_team_id": 30,
       "away_team_id": 21,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 101,
-      "away_score": 107,
+      "away_score": 111,
       "period_scores": {
         "home": [
           23,
@@ -9906,7 +9906,7 @@
           26,
           35,
           28,
-          18
+          22
         ]
       },
       "vegas_spread": 4.5,
@@ -9931,18 +9931,20 @@
       "home_team_id": 8,
       "away_team_id": 10,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 99,
-      "away_score": 102,
+      "home_score": 103,
+      "away_score": 106,
       "period_scores": {
         "home": [
           31,
           31,
-          37
+          37,
+          2
         ],
         "away": [
           33,
           27,
-          42
+          42,
+          4
         ]
       },
       "vegas_spread": 1.5,
@@ -9967,20 +9969,20 @@
       "home_team_id": 13,
       "away_team_id": 23,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 96,
-      "away_score": 91,
+      "home_score": 101,
+      "away_score": 96,
       "period_scores": {
         "home": [
           28,
           26,
           28,
-          14
+          19
         ],
         "away": [
           28,
           34,
           22,
-          7
+          12
         ]
       },
       "vegas_spread": -14.5,
@@ -94334,18 +94336,20 @@
         "home_team_id": 8,
         "away_team_id": 10,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 99,
-        "away_score": 102,
+        "home_score": 103,
+        "away_score": 106,
         "period_scores": {
           "home": [
             31,
             31,
-            37
+            37,
+            2
           ],
           "away": [
             33,
             27,
-            42
+            42,
+            4
           ]
         },
         "vegas_spread": 1.5,
@@ -95104,20 +95108,20 @@
         "home_team_id": 13,
         "away_team_id": 23,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 96,
-        "away_score": 91,
+        "home_score": 101,
+        "away_score": 96,
         "period_scores": {
           "home": [
             28,
             26,
             28,
-            14
+            19
           ],
           "away": [
             28,
             34,
             22,
-            7
+            12
           ]
         },
         "vegas_spread": -14.5,
@@ -95541,8 +95545,8 @@
       "analysis_content_zh": "## 結論\n數字指向 PHX（客場）。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 PHX 贏 1.5 分，勝率 54%。\n信心偏低（56%）。\n## 本季至今\nPHX 戰績 7-9（主 5-5、客 2-4），場均得 113.5（30 隊中第 16）、失 116.4（30 隊中第 22），淨勝 -2.9（30 隊中第 20），目前 W2。近況：主場負 LAL 123-131、客場勝 DEN 117-105、客場勝 SAC 128-107。\nUTAH 戰績 4-13，場均得 109.4（30 隊中第 27）、失 116.0（30 隊中第 20），淨勝 -6.6（30 隊中第 25），目前 W2。近況：主場負 SA 102-110、客場勝 LAC 132-107、客場勝 LAL 109-97。\n對盤口表現：PHX 讓分 5 勝 8 負 (38%)；大分 8 次、小分 5 次；UTAH 讓分 6 勝 9 負 (40%)；大分 6 次、小分 9 次。\n近 3 次交手 PHX 2 勝 1 負，平均分差 +14.3（最近一次 2026-03-28：勝 134-109）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-27）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：PHX 場均失 113.1 分，對手 132.8（聯盟平均 115.8；PHX 第 14、UTAH 第 30／30 隊）。\n• **罰球命中率**：PHX 罰球 77.4%，對手 67.5%（聯盟平均 77.5%；PHX 第 15、UTAH 第 30／30 隊）。\n• **淨勝分**：PHX 場均淨勝 -6.3 分，對手 -14.2（聯盟平均 -4.7；PHX 第 17、UTAH 第 28／30 隊）。\nUTAH 能反擊的地方：\n• **禁區得分**：UTAH 這項較好，64.0 對 PHX 的 39.4（聯盟平均 47.4；PHX 第 27、UTAH 第 1／30 隊）。\n• **快攻得分**：UTAH 這項較好，24.9 對 PHX 的 9.7（聯盟平均 14.2；PHX 第 28、UTAH 第 1／30 隊）。\n• **助攻**：UTAH 這項較好，31.9 對 PHX 的 21.1（聯盟平均 25.0；PHX 第 29、UTAH 第 2／30 隊）。\n穩定度：這段期間 PHX 單場分差的標準差是 ±18.7 分，UTAH 是 ±22.0 分；PHX 的表現較穩。\n## 賽程與休息\nPHX 休一天；UTAH 休一天。\nUTAH 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 222.9 分，防守合計失 232.4 分；近況合計每場出手 69 記三分（聯盟兩隊平均 73）、快攻 35 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 235.8，盤口 225.0，高於盤口 10.8 分。以總分相對盤口 ±18.1 分的分佈換算，大分機率 72%；公布信心 82%。\n## 模型本季戰績\n本季至今，已發佈讓分 107 勝 110 負（49%）；信心 56% 以上的場次 85 勝 92 負；大小分 110 勝 112 負（50%）。\n## 風險\n坦白說：UTAH 在禁區得分上的優勢（64.0 對 39.4）是翻掉這份判讀最直接的路徑；PHX 單場分差起伏 ±18.7 分，單場優勢並不牢靠。",
       "predicted_margin": 1.55,
       "predicted_total": 235.8,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "LOSS",
       "created_at": "2026-11-19T23:30:13.174242",
       "analysis_facts": {
         "profile_games": 10,
@@ -95875,9 +95879,9 @@
         "start_time": "2026-11-21T02:30Z",
         "home_team_id": 30,
         "away_team_id": 21,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 101,
-        "away_score": 107,
+        "away_score": 111,
         "period_scores": {
           "home": [
             23,
@@ -95889,7 +95893,7 @@
             26,
             35,
             28,
-            18
+            22
           ]
         },
         "vegas_spread": 4.5,
