@@ -9664,9 +9664,9 @@
       "start_time": "2026-11-21T00:00Z",
       "home_team_id": 1,
       "away_team_id": 4,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 111,
-      "away_score": 96,
+      "away_score": 97,
       "period_scores": {
         "home": [
           23,
@@ -9678,7 +9678,7 @@
           31,
           26,
           19,
-          20
+          21
         ]
       },
       "vegas_spread": -7.5,
@@ -9703,18 +9703,18 @@
       "home_team_id": 3,
       "away_team_id": 19,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 71,
-      "away_score": 77,
+      "home_score": 76,
+      "away_score": 78,
       "period_scores": {
         "home": [
           25,
           36,
-          10
+          15
         ],
         "away": [
           38,
           24,
-          15
+          16
         ]
       },
       "vegas_spread": 6.5,
@@ -9739,18 +9739,18 @@
       "home_team_id": 6,
       "away_team_id": 11,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 97,
-      "away_score": 77,
+      "home_score": 100,
+      "away_score": 80,
       "period_scores": {
         "home": [
           29,
           33,
-          35
+          38
         ],
         "away": [
           29,
           32,
-          16
+          19
         ]
       },
       "vegas_spread": -6.5,
@@ -9775,13 +9775,13 @@
       "home_team_id": 9,
       "away_team_id": 24,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 62,
+      "home_score": 68,
       "away_score": 72,
       "period_scores": {
         "home": [
           23,
           25,
-          14
+          20
         ],
         "away": [
           26,
@@ -92404,8 +92404,8 @@
       "analysis_content_zh": "## 結論\n結論落在客場作戰的 CHA。\n市場開 CHA +5.5，等於預期輸 5.5 分、勝率 35%；模型估 CHA -0.1（勝率 50%），與盤口差 5.4 分，有利於過盤。\n以本季 208 場實際結果量得換算，5.4 分的優勢等於 65% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +1.3；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（71%）。\n## 本季至今\nCHA 戰績 4-12（主 3-4、客 1-8），場均得 99.6（30 隊中第 30）、失 111.0（30 隊中第 8），淨勝 -11.4（30 隊中第 28），目前 L3。近況：客場負 PHX 96-101、客場負 LAC 105-113、客場負 LAL 114-118。\nATL 戰績 10-6，場均得 118.8（30 隊中第 4）、失 115.5（30 隊中第 18），淨勝 +3.3（30 隊中第 10），目前 W2。近況：客場負 CHI 117-125、客場勝 MIL 113-106、客場勝 OKC 117-112。\n對盤口表現：CHA 讓分 5 勝 8 負 (38%)；大分 6 次、小分 7 次；ATL 讓分 4 勝 10 負 (29%)；大分 7 次、小分 7 次。\n近 3 次交手 CHA 3 勝 0 負，平均分差 +5.7（最近一次 2026-02-11：勝 110-107）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-17），CHA 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **罰球命中率**：CHA 罰球 85.5%，對手 71.0%（聯盟平均 77.5%；CHA 第 1、ATL 第 29／30 隊）。\n• **淨勝分**：CHA 場均淨勝 +2.6 分，對手 -11.8（聯盟平均 -4.7；CHA 第 5、ATL 第 26／30 隊）。\n• **失分**：CHA 場均失 109.7 分，對手 118.2（聯盟平均 115.8；CHA 第 8、ATL 第 20／30 隊）。\n• **得分**：CHA 場均得 112.3 分，對手 106.4（聯盟平均 111.1；CHA 第 13、ATL 第 24／30 隊）。\n穩定度：這段期間 CHA 單場分差的標準差是 ±19.4 分，ATL 是 ±19.1 分；CHA 的表現起伏較大。\n## 賽程與休息\nCHA 休了 2 天；ATL 休一天。\n體能上 CHA 較佔便宜。\nATL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：大分 218.5\n節奏觀察：本季兩隊進攻合計 218.4 分，防守合計失 226.5 分；近況合計每場出手 86 記三分（聯盟兩隊平均 73）、快攻 23 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 221.3，盤口 218.5，高於盤口 2.8 分。以總分相對盤口 ±18.1 分的分佈換算，大分機率 56%；公布信心 58%。\n## 模型本季戰績\n本季至今，已發佈讓分 107 勝 110 負（49%）；信心 71% 以上的場次 38 勝 48 負；大小分 110 勝 112 負（50%）。\n## 風險\n坦白說：CHA 單場分差起伏 ±19.4 分，單場優勢並不牢靠；CHA 正吞 3 連敗，模型看不到更衣室氣氛；模型原始值和向市場收斂後的數字方向相反，這裡公布的是收斂後的版本。",
       "predicted_margin": -0.06,
       "predicted_total": 221.29,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "LOSS",
       "created_at": "2026-11-19T23:30:12.699979",
       "analysis_facts": {
         "profile_games": 10,
@@ -92738,9 +92738,9 @@
         "start_time": "2026-11-21T00:00Z",
         "home_team_id": 1,
         "away_team_id": 4,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 111,
-        "away_score": 96,
+        "away_score": 97,
         "period_scores": {
           "home": [
             23,
@@ -92752,7 +92752,7 @@
             31,
             26,
             19,
-            20
+            21
           ]
         },
         "vegas_spread": -7.5,
@@ -93125,18 +93125,18 @@
         "home_team_id": 3,
         "away_team_id": 19,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 71,
-        "away_score": 77,
+        "home_score": 76,
+        "away_score": 78,
         "period_scores": {
           "home": [
             25,
             36,
-            10
+            15
           ],
           "away": [
             38,
             24,
-            15
+            16
           ]
         },
         "vegas_spread": 6.5,
@@ -93891,18 +93891,18 @@
         "home_team_id": 6,
         "away_team_id": 11,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 97,
-        "away_score": 77,
+        "home_score": 100,
+        "away_score": 80,
         "period_scores": {
           "home": [
             29,
             33,
-            35
+            38
           ],
           "away": [
             29,
             32,
-            16
+            19
           ]
         },
         "vegas_spread": -6.5,
@@ -94648,13 +94648,13 @@
         "home_team_id": 9,
         "away_team_id": 24,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 62,
+        "home_score": 68,
         "away_score": 72,
         "period_scores": {
           "home": [
             23,
             25,
-            14
+            20
           ],
           "away": [
             26,
