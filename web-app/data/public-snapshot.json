@@ -10048,8 +10048,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -1.5,
-      "vegas_total": 214.5,
+      "vegas_spread": 1.5,
+      "vegas_total": 213.5,
       "home_team": {
         "code": "NY",
         "full_name": "New York Knicks",
@@ -10148,7 +10148,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": 11.5,
+      "vegas_spread": 12.5,
       "vegas_total": 215.5,
       "home_team": {
         "code": "SAC",
@@ -10173,8 +10173,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 2.5,
+      "vegas_total": 227.5,
       "home_team": {
         "code": "ATL",
         "full_name": "Atlanta Hawks",
@@ -97639,7 +97639,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": 11.5,
+        "vegas_spread": 12.5,
         "vegas_total": 215.5,
         "home_team": {
           "code": "SAC",
@@ -98012,8 +98012,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -1.5,
-        "vegas_total": 214.5,
+        "vegas_spread": 1.5,
+        "vegas_total": 213.5,
         "home_team": {
           "code": "NY",
           "full_name": "New York Knicks",
@@ -98409,20 +98409,20 @@
       "id": 242,
       "match_id": 263,
       "recommended_team_id": 1,
-      "confidence_score": 52.0,
-      "spread_logic": "AI projects ATL to win by 0.6 pts",
-      "spread_logic_zh": "AI 預測 ATL 贏 0.6 分",
-      "line_info": "0.0",
+      "confidence_score": 59.0,
+      "spread_logic": "AI projects ATL to lose by 0.0 pts",
+      "spread_logic_zh": "AI 預測 ATL 輸 0.0 分",
+      "line_info": "2.5",
       "ou_pick": "UNDER",
-      "ou_line": 225.0,
-      "ou_confidence": 69.0,
-      "analysis_content": "## The Call\nATL at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has ATL by 0.6, a 52% win probability.\nConfidence is modest at 52%.\n## Season So Far\nATL is 11-6 (4-3 home, 7-3 away), scoring 118.4 (5th of 30) and allowing 114.4 (18th of 30) for a +3.9 margin (10th of 30), currently on a W3 run. Last out: W 113-106 at MIL, W 117-112 at OKC, W 111-97 vs CHA.\nDET is 12-5, scoring 116.1 (10th of 30) and allowing 109.5 (7th of 30) for a +6.6 margin (5th of 30), on a L1 run. Last out: W 105-93 at SA, W 122-109 at NO, L 102-105 vs TOR.\nAgainst the number: ATL 5-10 against the spread (33%); 7 over / 8 under; DET 8-6 against the spread (57%); 7 over / 7 under.\nHead to head, ATL is 1-2 in the last 3 meetings with an average margin of -9.0 (most recent 2026-03-25: W 130-129).\n## Statistical Profile\nThe last 10 games on record (box scores on record through 2026-04-30) show no category where ATL clearly separates from DET; the projection is being driven by the broader rolling windows and the matchup context rather than one headline stat.\nWhere DET pushes back:\n• **Net margin** — DET holds the better number, +3.3 to ATL's -11.8 (league avg -4.7; ATL 26th vs DET 4th of 30).\n• **Points allowed** — DET holds the better number, 104.4 to ATL's 118.2 (league avg 115.8; ATL 20th vs DET 3rd of 30).\n• **Points off turnovers** — DET holds the better number, 20.7 to ATL's 14.8 (league avg 17.5; ATL 26th vs DET 3rd of 30).\nConsistency check: ATL's game margins over this stretch vary by ±19.1 points (one standard deviation) against ±15.4 for DET; the more volatile side is ATL.\n## Schedule & Rest\nATL has one day off; DET has one day off.\nATL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 234.5 points and the two defences concede 223.9; on record they attempt 68 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 218.4 total points against a line of 225.0, 6.6 points below the number. With totals spreading ±18.1 points around the line, that is a 64% probability of the under; published confidence is 69%.\n## Model Track Record\nThis season, published spread picks are 111-119 (48%); at 52%+ confidence they are 103-112; totals are 116-119 (49%).\n## What Could Go Wrong\nHonest caveats: DET's edge in Net margin (+3.3 vs -11.8) is the cleanest path to an upset of this read; ATL's results swing ±19.1 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n數字指向 ATL（主場）。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 ATL 贏 0.6 分，勝率 52%。\n信心偏低（52%）。\n## 本季至今\nATL 戰績 11-6（主 4-3、客 7-3），場均得 118.4（30 隊中第 5）、失 114.4（30 隊中第 18），淨勝 +3.9（30 隊中第 10），目前 W3。近況：客場勝 MIL 113-106、客場勝 OKC 117-112、主場勝 CHA 111-97。\nDET 戰績 12-5，場均得 116.1（30 隊中第 10）、失 109.5（30 隊中第 7），淨勝 +6.6（30 隊中第 5），目前 L1。近況：客場勝 SA 105-93、客場勝 NO 122-109、主場負 TOR 102-105。\n對盤口表現：ATL 讓分 5 勝 10 負 (33%)；大分 7 次、小分 8 次；DET 讓分 8 勝 6 負 (57%)；大分 7 次、小分 7 次。\n近 3 次交手 ATL 1 勝 2 負，平均分差 -9.0（最近一次 2026-03-25：勝 130-129）。\n## 數據體質\n近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-30）裡，ATL 沒有哪一項明顯壓過 DET；預測主要來自更長的滾動窗口與對戰情境，不是單一亮眼數據。\nDET 能反擊的地方：\n• **淨勝分**：DET 這項較好，+3.3 對 ATL 的 -11.8（聯盟平均 -4.7；ATL 第 26、DET 第 4／30 隊）。\n• **失分**：DET 這項較好，104.4 對 ATL 的 118.2（聯盟平均 115.8；ATL 第 20、DET 第 3／30 隊）。\n• **失誤轉換得分**：DET 這項較好，20.7 對 ATL 的 14.8（聯盟平均 17.5；ATL 第 26、DET 第 3／30 隊）。\n穩定度：這段期間 ATL 單場分差的標準差是 ±19.1 分，DET 是 ±15.4 分；ATL 的表現起伏較大。\n## 賽程與休息\nATL 休一天；DET 休一天。\nATL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 234.5 分，防守合計失 223.9 分；近況合計每場出手 68 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 218.4，盤口 225.0，低於盤口 6.6 分。以總分相對盤口 ±18.1 分的分佈換算，小分機率 64%；公布信心 69%。\n## 模型本季戰績\n本季至今，已發佈讓分 111 勝 119 負（48%）；信心 52% 以上的場次 103 勝 112 負；大小分 116 勝 119 負（49%）。\n## 風險\n坦白說：DET 在淨勝分上的優勢（+3.3 對 -11.8）是翻掉這份判讀最直接的路徑；ATL 單場分差起伏 ±19.1 分，單場優勢並不牢靠。",
-      "predicted_margin": 0.57,
+      "ou_line": 227.5,
+      "ou_confidence": 77.0,
+      "analysis_content": "## The Call\nATL at home is the side.\nThe market has ATL at +2.5, which implies a 2.5-point loss and a 43% win probability. Our projection is -0.0 for ATL (50% to win), a gap of 2.5 points in favour of the cover.\nConverted with measured from 221 games this season, a 2.5-point edge is a 57% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 59%.\n## Season So Far\nATL is 11-6 (4-3 home, 7-3 away), scoring 118.4 (5th of 30) and allowing 114.4 (18th of 30) for a +3.9 margin (10th of 30), currently on a W3 run. Last out: W 113-106 at MIL, W 117-112 at OKC, W 111-97 vs CHA.\nDET is 12-5, scoring 116.1 (10th of 30) and allowing 109.5 (7th of 30) for a +6.6 margin (5th of 30), on a L1 run. Last out: W 105-93 at SA, W 122-109 at NO, L 102-105 vs TOR.\nAgainst the number: ATL 5-10 against the spread (33%); 7 over / 8 under; DET 8-6 against the spread (57%); 7 over / 7 under.\nHead to head, ATL is 1-2 in the last 3 meetings with an average margin of -9.0 (most recent 2026-03-25: W 130-129).\n## Statistical Profile\nThe last 10 games on record (box scores on record through 2026-04-30) show no category where ATL clearly separates from DET; the projection is being driven by the broader rolling windows and the matchup context rather than one headline stat.\nWhere DET pushes back:\n• **Net margin** — DET holds the better number, +3.3 to ATL's -11.8 (league avg -4.7; ATL 26th vs DET 4th of 30).\n• **Points allowed** — DET holds the better number, 104.4 to ATL's 118.2 (league avg 115.8; ATL 20th vs DET 3rd of 30).\n• **Points off turnovers** — DET holds the better number, 20.7 to ATL's 14.8 (league avg 17.5; ATL 26th vs DET 3rd of 30).\nConsistency check: ATL's game margins over this stretch vary by ±19.1 points (one standard deviation) against ±15.4 for DET; the more volatile side is ATL.\n## Schedule & Rest\nATL has one day off; DET has one day off.\nATL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 227.5\nTempo check: this season the two offences combine for 234.5 points and the two defences concede 223.9; on record they attempt 68 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 218.4 total points against a line of 227.5, 9.1 points below the number. With totals spreading ±18.1 points around the line, that is a 69% probability of the under; published confidence is 77%.\n## Model Track Record\nThis season, published spread picks are 111-119 (48%); at 59%+ confidence they are 81-90; totals are 116-119 (49%).\n## What Could Go Wrong\nHonest caveats: DET's edge in Net margin (+3.3 vs -11.8) is the cleanest path to an upset of this read; ATL's results swing ±19.1 points game to game, so any single-game edge is fragile; the raw model and the market-blended number disagree on the side; the published lean is the blended one.",
+      "analysis_content_zh": "## 結論\n數字指向 ATL（主場）。\n市場開 ATL +2.5，等於預期輸 2.5 分、勝率 43%；模型估 ATL -0.0（勝率 50%），與盤口差 2.5 分，有利於過盤。\n以本季 221 場實際結果量得換算，2.5 分的優勢等於 57% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（59%）。\n## 本季至今\nATL 戰績 11-6（主 4-3、客 7-3），場均得 118.4（30 隊中第 5）、失 114.4（30 隊中第 18），淨勝 +3.9（30 隊中第 10），目前 W3。近況：客場勝 MIL 113-106、客場勝 OKC 117-112、主場勝 CHA 111-97。\nDET 戰績 12-5，場均得 116.1（30 隊中第 10）、失 109.5（30 隊中第 7），淨勝 +6.6（30 隊中第 5），目前 L1。近況：客場勝 SA 105-93、客場勝 NO 122-109、主場負 TOR 102-105。\n對盤口表現：ATL 讓分 5 勝 10 負 (33%)；大分 7 次、小分 8 次；DET 讓分 8 勝 6 負 (57%)；大分 7 次、小分 7 次。\n近 3 次交手 ATL 1 勝 2 負，平均分差 -9.0（最近一次 2026-03-25：勝 130-129）。\n## 數據體質\n近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-30）裡，ATL 沒有哪一項明顯壓過 DET；預測主要來自更長的滾動窗口與對戰情境，不是單一亮眼數據。\nDET 能反擊的地方：\n• **淨勝分**：DET 這項較好，+3.3 對 ATL 的 -11.8（聯盟平均 -4.7；ATL 第 26、DET 第 4／30 隊）。\n• **失分**：DET 這項較好，104.4 對 ATL 的 118.2（聯盟平均 115.8；ATL 第 20、DET 第 3／30 隊）。\n• **失誤轉換得分**：DET 這項較好，20.7 對 ATL 的 14.8（聯盟平均 17.5；ATL 第 26、DET 第 3／30 隊）。\n穩定度：這段期間 ATL 單場分差的標準差是 ±19.1 分，DET 是 ±15.4 分；ATL 的表現起伏較大。\n## 賽程與休息\nATL 休一天；DET 休一天。\nATL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 227.5\n節奏觀察：本季兩隊進攻合計 234.5 分，防守合計失 223.9 分；近況合計每場出手 68 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 218.4，盤口 227.5，低於盤口 9.1 分。以總分相對盤口 ±18.1 分的分佈換算，小分機率 69%；公布信心 77%。\n## 模型本季戰績\n本季至今，已發佈讓分 111 勝 119 負（48%）；信心 59% 以上的場次 81 勝 90 負；大小分 116 勝 119 負（49%）。\n## 風險\n坦白說：DET 在淨勝分上的優勢（+3.3 對 -11.8）是翻掉這份判讀最直接的路徑；ATL 單場分差起伏 ±19.1 分，單場優勢並不牢靠；模型原始值和向市場收斂後的數字方向相反，這裡公布的是收斂後的版本。",
+      "predicted_margin": -0.04,
       "predicted_total": 218.41,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-21T22:30:12.529289",
+      "created_at": "2026-11-21T23:00:13.194247",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -98703,20 +98703,20 @@
           }
         ],
         "projection": {
-          "model_margin": 0.6,
+          "model_margin": -0.0,
           "raw_margin": 0.6,
-          "market_margin": 0.0,
-          "edge": 0.6,
+          "market_margin": -2.5,
+          "edge": 2.5,
           "pred_total": 218.4,
-          "total_line": 225.0,
-          "total_edge": -6.6,
-          "total_is_default": true
+          "total_line": 227.5,
+          "total_edge": -9.1,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.516,
-          "win_model": 0.516,
-          "win_market": null,
-          "total": 0.642,
+          "cover": 0.57,
+          "win_model": 0.499,
+          "win_market": 0.429,
+          "total": 0.692,
           "sigma_spread": 14.0,
           "sigma_total": 18.1,
           "sigma_measured": true
@@ -98742,11 +98742,11 @@
             119
           ],
           "spread_at_conf": [
-            103,
-            112
+            81,
+            90
           ]
         },
-        "generated_at": "2026-11-21T22:30:12"
+        "generated_at": "2026-11-21T23:00:13"
       },
       "matches": {
         "id": 263,
@@ -98758,8 +98758,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 2.5,
+        "vegas_total": 227.5,
         "home_team": {
           "code": "ATL",
           "full_name": "Atlanta Hawks",
@@ -98795,7 +98795,7 @@
       "predicted_total": 240.93,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-21T22:30:12.587477",
+      "created_at": "2026-11-21T23:00:13.254709",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -99119,7 +99119,7 @@
             45
           ]
         },
-        "generated_at": "2026-11-21T22:30:12"
+        "generated_at": "2026-11-21T23:00:13"
       },
       "matches": {
         "id": 266,
@@ -99168,7 +99168,7 @@
       "predicted_total": 235.12,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-21T22:30:12.644094",
+      "created_at": "2026-11-21T23:00:13.332778",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -99492,7 +99492,7 @@
             94
           ]
         },
-        "generated_at": "2026-11-21T22:30:12"
+        "generated_at": "2026-11-21T23:00:13"
       },
       "matches": {
         "id": 264,
@@ -99541,7 +99541,7 @@
       "predicted_total": 227.34,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-21T22:30:12.703472",
+      "created_at": "2026-11-21T23:00:13.390219",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-03",
@@ -99865,7 +99865,7 @@
             38
           ]
         },
-        "generated_at": "2026-11-21T22:30:12"
+        "generated_at": "2026-11-21T23:00:13"
       },
       "matches": {
         "id": 265,
@@ -99914,7 +99914,7 @@
       "predicted_total": 222.73,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-21T22:30:12.765742",
+      "created_at": "2026-11-21T23:00:13.452691",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -100238,7 +100238,7 @@
             31
           ]
         },
-        "generated_at": "2026-11-21T22:30:12"
+        "generated_at": "2026-11-21T23:00:13"
       },
       "matches": {
         "id": 269,
@@ -100287,7 +100287,7 @@
       "predicted_total": 223.04,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-21T22:30:12.825298",
+      "created_at": "2026-11-21T23:00:13.517557",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -100611,7 +100611,7 @@
             8
           ]
         },
-        "generated_at": "2026-11-21T22:30:12"
+        "generated_at": "2026-11-21T23:00:13"
       },
       "matches": {
         "id": 268,
@@ -100660,7 +100660,7 @@
       "predicted_total": 244.24,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-21T22:30:12.883790",
+      "created_at": "2026-11-21T23:00:13.576083",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -100984,7 +100984,7 @@
             82
           ]
         },
-        "generated_at": "2026-11-21T22:30:12"
+        "generated_at": "2026-11-21T23:00:13"
       },
       "matches": {
         "id": 267,
