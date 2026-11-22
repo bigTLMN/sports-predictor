@@ -10044,21 +10044,21 @@
       "start_time": "2026-11-22T00:30Z",
       "home_team_id": 28,
       "away_team_id": 22,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 94,
-      "away_score": 94,
+      "status": "STATUS_FINISHED",
+      "home_score": 97,
+      "away_score": 96,
       "period_scores": {
         "home": [
           40,
           26,
           15,
-          13
+          16
         ],
         "away": [
           23,
           20,
           29,
-          22
+          24
         ]
       },
       "vegas_spread": 1.5,
@@ -10083,18 +10083,18 @@
       "home_team_id": 7,
       "away_team_id": 12,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 73,
-      "away_score": 69,
+      "home_score": 78,
+      "away_score": 74,
       "period_scores": {
         "home": [
           23,
           29,
-          21
+          26
         ],
         "away": [
           26,
           18,
-          25
+          30
         ]
       },
       "vegas_spread": -4.5,
@@ -10119,20 +10119,20 @@
       "home_team_id": 17,
       "away_team_id": 14,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 85,
-      "away_score": 62,
+      "home_score": 91,
+      "away_score": 74,
       "period_scores": {
         "home": [
           28,
           28,
           27,
-          0
+          8
         ],
         "away": [
           34,
           12,
           16,
-          0
+          12
         ]
       },
       "vegas_spread": -5.5,
@@ -10157,18 +10157,18 @@
       "home_team_id": 29,
       "away_team_id": 27,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 80,
-      "away_score": 60,
+      "home_score": 86,
+      "away_score": 66,
       "period_scores": {
         "home": [
           32,
           29,
-          19
+          25
         ],
         "away": [
           29,
           16,
-          15
+          21
         ]
       },
       "vegas_spread": -19.5,
@@ -96552,18 +96552,18 @@
         "home_team_id": 7,
         "away_team_id": 12,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 73,
-        "away_score": 69,
+        "home_score": 78,
+        "away_score": 74,
         "period_scores": {
           "home": [
             23,
             29,
-            21
+            26
           ],
           "away": [
             26,
             18,
-            25
+            30
           ]
         },
         "vegas_spread": -4.5,
@@ -96936,20 +96936,20 @@
         "home_team_id": 17,
         "away_team_id": 14,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 85,
-        "away_score": 62,
+        "home_score": 91,
+        "away_score": 74,
         "period_scores": {
           "home": [
             28,
             28,
             27,
-            0
+            8
           ],
           "away": [
             34,
             12,
             16,
-            0
+            12
           ]
         },
         "vegas_spread": -5.5,
@@ -97746,8 +97746,8 @@
       "analysis_content_zh": "## 結論\n本場站 主場的 NY。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 NY 贏 9.0 分，勝率 74%。\n信心高（86%）。\n## 本季至今\nNY 戰績 10-6（主 5-3、客 5-3），場均得 110.2（30 隊中第 26）、失 104.6（30 隊中第 2），淨勝 +5.7（30 隊中第 7），目前 W3。近況：客場勝 TOR 112-108、客場勝 TOR 111-102、客場勝 MIN 102-99。\nPOR 戰績 10-6，場均得 117.5（30 隊中第 9）、失 112.2（30 隊中第 10），淨勝 +5.2（30 隊中第 8），目前 W1。近況：客場負 MIN 98-106、客場負 MIN 105-106、客場勝 MIL 124-114。\n對盤口表現：NY 讓分 7 勝 7 負 (50%)；大分 4 次、小分 10 次；POR 讓分 8 勝 6 負 (57%)；大分 6 次、小分 8 次。\n近 3 次交手 NY 3 勝 0 負，平均分差 +18.7（最近一次 2026-01-30：勝 127-97）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-06-13）裡，NY 和 POR 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -4.3（聯盟平均 -4.7；NY 第 1、POR 第 14／30 隊）。\n• **失分**：NY 場均失 102.2 分，對手 112.8（聯盟平均 115.8；NY 第 1、POR 第 13／30 隊）。\n• **三分命中率**：NY 三分命中 39.2%，對手 33.5%（聯盟平均 34.9%；NY 第 3、POR 第 22／30 隊）。\n• **命中率**：NY 命中率 46.8%，對手 43.1%（聯盟平均 45.8%；NY 第 11、POR 第 28／30 隊）。\nPOR 能反擊的地方：\n• **進攻籃板**：POR 這項較好，12.7 對 NY 的 11.0（聯盟平均 11.1；NY 第 15、POR 第 5／30 隊）。\n• **板凳得分**：POR 這項較好，29.7 對 NY 的 26.3（聯盟平均 35.3；NY 第 24、POR 第 22／30 隊）。\n• **失誤轉換得分**：POR 這項較好，20.3 對 NY 的 18.8（聯盟平均 17.5；NY 第 9、POR 第 5／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，POR 是 ±12.7 分；NY 的表現較穩。\n## 賽程與休息\nNY 休一天；POR 休一天。\nNY 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 227.8 分，防守合計失 216.8 分；近況合計每場出手 78 記三分（聯盟兩隊平均 73）、快攻 31 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 216.2，盤口 225.0，低於盤口 8.8 分。以總分相對盤口 ±18.0 分的分佈換算，小分機率 69%；公布信心 76%。\n## 模型本季戰績\n本季至今，已發佈讓分 108 勝 113 負（49%）；信心 86% 以上的場次 16 勝 19 負；大小分 111 勝 115 負（49%）。\n## 風險\n坦白說：POR 在進攻籃板上的優勢（12.7 對 11.0）是翻掉這份判讀最直接的路徑。",
       "predicted_margin": 9.04,
       "predicted_total": 216.23,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "WIN",
+      "total_outcome": "WIN",
       "created_at": "2026-11-20T23:30:13.529454",
       "analysis_facts": {
         "profile_games": 10,
@@ -98080,21 +98080,21 @@
         "start_time": "2026-11-22T00:30Z",
         "home_team_id": 28,
         "away_team_id": 22,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 94,
-        "away_score": 94,
+        "status": "STATUS_FINISHED",
+        "home_score": 97,
+        "away_score": 96,
         "period_scores": {
           "home": [
             40,
             26,
             15,
-            13
+            16
           ],
           "away": [
             23,
             20,
             29,
-            22
+            24
           ]
         },
         "vegas_spread": 1.5,
@@ -98467,18 +98467,18 @@
         "home_team_id": 29,
         "away_team_id": 27,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 80,
-        "away_score": 60,
+        "home_score": 86,
+        "away_score": 66,
         "period_scores": {
           "home": [
             32,
             29,
-            19
+            25
           ],
           "away": [
             29,
             16,
-            15
+            21
           ]
         },
         "vegas_spread": -19.5,
