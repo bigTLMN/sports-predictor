@@ -10312,7 +10312,7 @@
       "away_team_id": 19,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 67,
-      "away_score": 57,
+      "away_score": 60,
       "period_scores": {
         "home": [
           38,
@@ -10322,7 +10322,7 @@
         "away": [
           21,
           30,
-          6
+          9
         ]
       },
       "vegas_spread": 4.5,
@@ -10347,18 +10347,18 @@
       "home_team_id": 5,
       "away_team_id": 8,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 79,
-      "away_score": 85,
+      "home_score": 82,
+      "away_score": 89,
       "period_scores": {
         "home": [
           31,
           39,
-          7
+          12
         ],
         "away": [
           33,
           39,
-          13
+          17
         ]
       },
       "vegas_spread": 9.5,
@@ -10384,7 +10384,7 @@
       "away_team_id": 7,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 62,
-      "away_score": 72,
+      "away_score": 77,
       "period_scores": {
         "home": [
           35,
@@ -10394,7 +10394,7 @@
         "away": [
           33,
           31,
-          8
+          13
         ]
       },
       "vegas_spread": 2.5,
@@ -10419,14 +10419,14 @@
       "home_team_id": 28,
       "away_team_id": 11,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 16,
-      "away_score": 13,
+      "home_score": 18,
+      "away_score": 15,
       "period_scores": {
         "home": [
-          16
+          18
         ],
         "away": [
-          13
+          15
         ]
       },
       "vegas_spread": -6.5,
@@ -10479,8 +10479,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 3.5,
+      "vegas_total": 218.5,
       "home_team": {
         "code": "CHA",
         "full_name": "Charlotte Hornets",
@@ -10554,8 +10554,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -11.5,
+      "vegas_total": 225.5,
       "home_team": {
         "code": "TOR",
         "full_name": "Toronto Raptors",
@@ -10579,8 +10579,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -11.5,
+      "vegas_total": 225.5,
       "home_team": {
         "code": "MIN",
         "full_name": "Minnesota Timberwolves",
@@ -99337,18 +99337,18 @@
         "home_team_id": 5,
         "away_team_id": 8,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 79,
-        "away_score": 85,
+        "home_score": 82,
+        "away_score": 89,
         "period_scores": {
           "home": [
             31,
             39,
-            7
+            12
           ],
           "away": [
             33,
             39,
-            13
+            17
           ]
         },
         "vegas_spread": 9.5,
@@ -100108,7 +100108,7 @@
         "away_team_id": 19,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 67,
-        "away_score": 57,
+        "away_score": 60,
         "period_scores": {
           "home": [
             38,
@@ -100118,7 +100118,7 @@
           "away": [
             21,
             30,
-            6
+            9
           ]
         },
         "vegas_spread": 4.5,
@@ -100864,14 +100864,14 @@
         "home_team_id": 28,
         "away_team_id": 11,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 16,
-        "away_score": 13,
+        "home_score": 18,
+        "away_score": 15,
         "period_scores": {
           "home": [
-            16
+            18
           ],
           "away": [
-            13
+            15
           ]
         },
         "vegas_spread": -6.5,
@@ -101245,7 +101245,7 @@
         "away_team_id": 7,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 62,
-        "away_score": 72,
+        "away_score": 77,
         "period_scores": {
           "home": [
             35,
@@ -101255,7 +101255,7 @@
           "away": [
             33,
             31,
-            8
+            13
           ]
         },
         "vegas_spread": 2.5,
@@ -101631,8 +101631,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 3.5,
+        "vegas_total": 218.5,
         "home_team": {
           "code": "CHA",
           "full_name": "Charlotte Hornets",
@@ -103496,8 +103496,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -11.5,
+        "vegas_total": 225.5,
         "home_team": {
           "code": "MIN",
           "full_name": "Minnesota Timberwolves",
@@ -104615,8 +104615,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -11.5,
+        "vegas_total": 225.5,
         "home_team": {
           "code": "TOR",
           "full_name": "Toronto Raptors",
@@ -105019,13 +105019,13 @@
       "ou_pick": "OVER",
       "ou_line": 225.0,
       "ou_confidence": 90.0,
-      "analysis_content": "## The Call\nDEN at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has DEN by 12.0, a 81% win probability.\nConfidence is high at 95%.\n## Season So Far\nDEN is 10-6 (4-3 home, 6-3 away), scoring 114.7 (12th of 30) and allowing 113.2 (14th of 30) for a +1.5 margin (14th of 30), currently on a W2 run. Last out: L 105-117 vs PHX, W 105-101 vs BOS, W 133-124 vs HOU.\nDAL is 9-9, scoring 111.3 (23rd of 30) and allowing 113.0 (13th of 30) for a -1.7 margin (19th of 30), on a W2 run. Last out: L 94-131 at BOS, W 116-94 vs GS, W 110-100 vs LAC.\nAgainst the number: DEN 7-7 against the spread (50%); 6 over / 8 under; DAL 9-6 against the spread (60%); 5 over / 10 under.\nHead to head, DEN is 2-1 in the last 3 meetings with an average margin of +5.0 (most recent 2026-03-25: W 142-135).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-04-30), here is where DEN separates from DAL. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — DEN outscores opponents by +2.5 per game against -7.5 (league avg -4.7; DEN 6th vs DAL 19th of 30).\n• **Points allowed** — DEN gives up 114.8 to 124.3 (league avg 115.8; DEN 16th vs DAL 24th of 30).\n• **FG%** — DEN shoots 47.3% from the floor to 43.7% (league avg 45.8%; DEN 9th vs DAL 26th of 30).\n• **Assists** — DEN records 27.3 assists to 25.2 (league avg 25.0; DEN 4th vs DAL 12th of 30).\nWhere DAL pushes back:\n• **Bench points** — DAL holds the better number, 51.7 to DEN's 34.2 (league avg 35.3; DEN 18th vs DAL 1st of 30).\n• **Off. rebounds** — DAL holds the better number, 11.9 to DEN's 9.7 (league avg 11.1; DEN 26th vs DAL 8th of 30).\n• **Turnovers** — DAL holds the better number, 11.1 to DEN's 12.1 (league avg 13.6; DEN 6th vs DAL 1st of 30).\nConsistency check: DEN's game margins over this stretch vary by ±13.2 points (one standard deviation) against ±14.7 for DAL; the steadier side is DEN.\n## Schedule & Rest\nDEN comes in with 3 days of rest; DAL comes in with 2 days of rest.\nThe rest edge belongs to DEN.\nDEN has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 226.0 points and the two defences concede 226.2; on record they attempt 70 threes between them (league pair average 73) with 30 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 238.9 total points against a line of 225.0, 13.9 points above the number. With totals spreading ±18.3 points around the line, that is a 78% probability of the over; published confidence is 90%.\n## Model Track Record\nThis season, published spread picks are 115-122 (49%); at 95%+ confidence they are 7-8; totals are 119-123 (49%).\n## What Could Go Wrong\nHonest caveats: DAL's edge in Bench points (51.7 vs 34.2) is the cleanest path to an upset of this read.",
-      "analysis_content_zh": "## 結論\n本場站 主場的 DEN。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 DEN 贏 12.0 分，勝率 81%。\n信心高（95%）。\n## 本季至今\nDEN 戰績 10-6（主 4-3、客 6-3），場均得 114.7（30 隊中第 12）、失 113.2（30 隊中第 14），淨勝 +1.5（30 隊中第 14），目前 W2。近況：主場負 PHX 105-117、主場勝 BOS 105-101、主場勝 HOU 133-124。\nDAL 戰績 9-9，場均得 111.3（30 隊中第 23）、失 113.0（30 隊中第 13），淨勝 -1.7（30 隊中第 19），目前 W2。近況：客場負 BOS 94-131、主場勝 GS 116-94、主場勝 LAC 110-100。\n對盤口表現：DEN 讓分 7 勝 7 負 (50%)；大分 6 次、小分 8 次；DAL 讓分 9 勝 6 負 (60%)；大分 5 次、小分 10 次。\n近 3 次交手 DEN 2 勝 1 負，平均分差 +5.0（最近一次 2026-03-25：勝 142-135）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-04-30）裡，DEN 和 DAL 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：DEN 場均淨勝 +2.5 分，對手 -7.5（聯盟平均 -4.7；DEN 第 6、DAL 第 19／30 隊）。\n• **失分**：DEN 場均失 114.8 分，對手 124.3（聯盟平均 115.8；DEN 第 16、DAL 第 24／30 隊）。\n• **命中率**：DEN 命中率 47.3%，對手 43.7%（聯盟平均 45.8%；DEN 第 9、DAL 第 26／30 隊）。\n• **助攻**：DEN 助攻 27.3 次，對手 25.2（聯盟平均 25.0；DEN 第 4、DAL 第 12／30 隊）。\nDAL 能反擊的地方：\n• **板凳得分**：DAL 這項較好，51.7 對 DEN 的 34.2（聯盟平均 35.3；DEN 第 18、DAL 第 1／30 隊）。\n• **進攻籃板**：DAL 這項較好，11.9 對 DEN 的 9.7（聯盟平均 11.1；DEN 第 26、DAL 第 8／30 隊）。\n• **失誤**：DAL 這項較好，11.1 對 DEN 的 12.1（聯盟平均 13.6；DEN 第 6、DAL 第 1／30 隊）。\n穩定度：這段期間 DEN 單場分差的標準差是 ±13.2 分，DAL 是 ±14.7 分；DEN 的表現較穩。\n## 賽程與休息\nDEN 休了 3 天；DAL 休了 2 天。\n體能上 DEN 較佔便宜。\nDEN 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 226.0 分，防守合計失 226.2 分；近況合計每場出手 70 記三分（聯盟兩隊平均 73）、快攻 30 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 238.9，盤口 225.0，高於盤口 13.9 分。以總分相對盤口 ±18.3 分的分佈換算，大分機率 78%；公布信心 90%。\n## 模型本季戰績\n本季至今，已發佈讓分 115 勝 122 負（49%）；信心 95% 以上的場次 7 勝 8 負；大小分 119 勝 123 負（49%）。\n## 風險\n坦白說：DAL 在板凳得分上的優勢（51.7 對 34.2）是翻掉這份判讀最直接的路徑。",
+      "analysis_content": "## The Call\nDEN at home is the side.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has DEN by 12.0, a 81% win probability.\nConfidence is high at 95%.\n## Season So Far\nDEN is 10-6 (4-3 home, 6-3 away), scoring 114.7 (12th of 30) and allowing 113.2 (14th of 30) for a +1.5 margin (14th of 30), currently on a W2 run. Last out: L 105-117 vs PHX, W 105-101 vs BOS, W 133-124 vs HOU.\nDAL is 9-9, scoring 111.3 (23rd of 30) and allowing 113.0 (13th of 30) for a -1.7 margin (19th of 30), on a W2 run. Last out: L 94-131 at BOS, W 116-94 vs GS, W 110-100 vs LAC.\nAgainst the number: DEN 7-7 against the spread (50%); 6 over / 8 under; DAL 9-6 against the spread (60%); 5 over / 10 under.\nHead to head, DEN is 2-1 in the last 3 meetings with an average margin of +5.0 (most recent 2026-03-25: W 142-135).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-04-30), here is where DEN separates from DAL. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — DEN outscores opponents by +2.5 per game against -7.5 (league avg -4.7; DEN 6th vs DAL 19th of 30).\n• **Points allowed** — DEN gives up 114.8 to 124.3 (league avg 115.8; DEN 16th vs DAL 24th of 30).\n• **FG%** — DEN shoots 47.3% from the floor to 43.7% (league avg 45.8%; DEN 9th vs DAL 26th of 30).\n• **Assists** — DEN records 27.3 assists to 25.2 (league avg 25.0; DEN 4th vs DAL 12th of 30).\nWhere DAL pushes back:\n• **Bench points** — DAL holds the better number, 51.7 to DEN's 34.2 (league avg 35.3; DEN 18th vs DAL 1st of 30).\n• **Off. rebounds** — DAL holds the better number, 11.9 to DEN's 9.7 (league avg 11.1; DEN 26th vs DAL 8th of 30).\n• **Turnovers** — DAL holds the better number, 11.1 to DEN's 12.1 (league avg 13.6; DEN 6th vs DAL 1st of 30).\nConsistency check: DEN's game margins over this stretch vary by ±13.2 points (one standard deviation) against ±14.7 for DAL; the steadier side is DEN.\n## Schedule & Rest\nDEN comes in with 3 days of rest; DAL comes in with 2 days of rest.\nThe rest edge belongs to DEN.\nDEN has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 226.0 points and the two defences concede 226.2; on record they attempt 70 threes between them (league pair average 73) with 30 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 238.9 total points against a line of 225.0, 13.9 points above the number. With totals spreading ±18.3 points around the line, that is a 78% probability of the over; published confidence is 90%.\n## Model Track Record\nThis season, published spread picks are 115-123 (48%); at 95%+ confidence they are 7-8; totals are 120-123 (49%).\n## What Could Go Wrong\nHonest caveats: DAL's edge in Bench points (51.7 vs 34.2) is the cleanest path to an upset of this read.",
+      "analysis_content_zh": "## 結論\n本場站 主場的 DEN。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 DEN 贏 12.0 分，勝率 81%。\n信心高（95%）。\n## 本季至今\nDEN 戰績 10-6（主 4-3、客 6-3），場均得 114.7（30 隊中第 12）、失 113.2（30 隊中第 14），淨勝 +1.5（30 隊中第 14），目前 W2。近況：主場負 PHX 105-117、主場勝 BOS 105-101、主場勝 HOU 133-124。\nDAL 戰績 9-9，場均得 111.3（30 隊中第 23）、失 113.0（30 隊中第 13），淨勝 -1.7（30 隊中第 19），目前 W2。近況：客場負 BOS 94-131、主場勝 GS 116-94、主場勝 LAC 110-100。\n對盤口表現：DEN 讓分 7 勝 7 負 (50%)；大分 6 次、小分 8 次；DAL 讓分 9 勝 6 負 (60%)；大分 5 次、小分 10 次。\n近 3 次交手 DEN 2 勝 1 負，平均分差 +5.0（最近一次 2026-03-25：勝 142-135）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-04-30）裡，DEN 和 DAL 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：DEN 場均淨勝 +2.5 分，對手 -7.5（聯盟平均 -4.7；DEN 第 6、DAL 第 19／30 隊）。\n• **失分**：DEN 場均失 114.8 分，對手 124.3（聯盟平均 115.8；DEN 第 16、DAL 第 24／30 隊）。\n• **命中率**：DEN 命中率 47.3%，對手 43.7%（聯盟平均 45.8%；DEN 第 9、DAL 第 26／30 隊）。\n• **助攻**：DEN 助攻 27.3 次，對手 25.2（聯盟平均 25.0；DEN 第 4、DAL 第 12／30 隊）。\nDAL 能反擊的地方：\n• **板凳得分**：DAL 這項較好，51.7 對 DEN 的 34.2（聯盟平均 35.3；DEN 第 18、DAL 第 1／30 隊）。\n• **進攻籃板**：DAL 這項較好，11.9 對 DEN 的 9.7（聯盟平均 11.1；DEN 第 26、DAL 第 8／30 隊）。\n• **失誤**：DAL 這項較好，11.1 對 DEN 的 12.1（聯盟平均 13.6；DEN 第 6、DAL 第 1／30 隊）。\n穩定度：這段期間 DEN 單場分差的標準差是 ±13.2 分，DAL 是 ±14.7 分；DEN 的表現較穩。\n## 賽程與休息\nDEN 休了 3 天；DAL 休了 2 天。\n體能上 DEN 較佔便宜。\nDEN 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 226.0 分，防守合計失 226.2 分；近況合計每場出手 70 記三分（聯盟兩隊平均 73）、快攻 30 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 238.9，盤口 225.0，高於盤口 13.9 分。以總分相對盤口 ±18.3 分的分佈換算，大分機率 78%；公布信心 90%。\n## 模型本季戰績\n本季至今，已發佈讓分 115 勝 123 負（48%）；信心 95% 以上的場次 7 勝 8 負；大小分 120 勝 123 負（49%）。\n## 風險\n坦白說：DAL 在板凳得分上的優勢（51.7 對 34.2）是翻掉這份判讀最直接的路徑。",
       "predicted_margin": 11.97,
       "predicted_total": 238.93,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-23T01:00:13.436357",
+      "created_at": "2026-11-23T01:30:13.326384",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -105319,8 +105319,8 @@
           "cover": 0.806,
           "win_model": 0.806,
           "win_market": null,
-          "total": 0.776,
-          "sigma_spread": 13.9,
+          "total": 0.777,
+          "sigma_spread": 13.8,
           "sigma_total": 18.3,
           "sigma_measured": true
         },
@@ -105338,10 +105338,10 @@
         "record": {
           "spread": [
             115,
-            122
+            123
           ],
           "total": [
-            119,
+            120,
             123
           ],
           "spread_at_conf": [
@@ -105349,7 +105349,7 @@
             8
           ]
         },
-        "generated_at": "2026-11-23T01:00:13"
+        "generated_at": "2026-11-23T01:30:13"
       },
       "matches": {
         "id": 282,
@@ -105392,13 +105392,13 @@
       "ou_pick": "UNDER",
       "ou_line": 225.0,
       "ou_confidence": 74.0,
-      "analysis_content": "## The Call\nThe number says DET, on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has DET by 0.3, a 51% win probability.\nConfidence is modest at 51%.\n## Season So Far\nDET is 12-6 (4-3 home, 8-3 away), scoring 115.1 (11th of 30) and allowing 109.3 (6th of 30) for a +5.7 margin (6th of 30), currently on a L2 run. Last out: W 122-109 at NO, L 102-105 vs TOR, L 97-107 at ATL.\nORL is 8-8, scoring 111.2 (24th of 30) and allowing 112.8 (11th of 30) for a -1.6 margin (18th of 30), on a W1 run. Last out: W 115-105 at BOS, L 116-121 vs PHI, W 113-111 at BKN.\nAgainst the number: DET 8-7 against the spread (53%); 7 over / 8 under; ORL 6-8 against the spread (43%); 6 over / 8 under.\nHead to head, DET is 3-0 in the last 3 meetings with an average margin of +14.3 (most recent 2026-05-03: W 116-94).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-17), here is where DET separates from ORL. League averages and ranks across 30 teams are given for scale.\n• **3P%** — DET hits 39.4% from three against 31.2% (league avg 34.9%; DET 2nd vs ORL 28th of 30).\n• **FG%** — DET shoots 46.1% from the floor to 40.8% (league avg 45.8%; DET 16th vs ORL 30th of 30).\n• **Bench points** — DET gets 30.5 from the bench to 23.0 (league avg 35.3; DET 21st vs ORL 27th of 30).\n• **Points** — DET scores 107.7 a night to 101.0 (league avg 111.1; DET 21st vs ORL 30th of 30).\nWhere ORL pushes back:\n• **Fast-break points** — ORL holds the better number, 17.2 to DET's 14.0 (league avg 14.2; DET 15th vs ORL 6th of 30).\nConsistency check: DET's game margins over this stretch vary by ±15.4 points (one standard deviation) against ±15.1 for ORL; the more volatile side is DET.\n## Schedule & Rest\nDET has one day off; ORL comes in with 3 days of rest.\nThe rest edge belongs to ORL.\nORL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 226.3 points and the two defences concede 222.1; on record they attempt 63 threes between them (league pair average 73) with 31 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 216.8 total points against a line of 225.0, 8.2 points below the number. With totals spreading ±18.3 points around the line, that is a 67% probability of the under; published confidence is 74%.\n## Model Track Record\nThis season, published spread picks are 115-122 (49%); at 51%+ confidence they are 111-121; totals are 119-123 (49%).\n## What Could Go Wrong\nHonest caveats: ORL's edge in Fast-break points (17.2 vs 14.0) is the cleanest path to an upset of this read; DET's results swing ±15.4 points game to game, so any single-game edge is fragile; DET is on a L2 skid and the model does not read locker rooms.",
-      "analysis_content_zh": "## 結論\n本場站 客場的 DET。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 DET 贏 0.3 分，勝率 51%。\n信心偏低（51%）。\n## 本季至今\nDET 戰績 12-6（主 4-3、客 8-3），場均得 115.1（30 隊中第 11）、失 109.3（30 隊中第 6），淨勝 +5.7（30 隊中第 6），目前 L2。近況：客場勝 NO 122-109、主場負 TOR 102-105、客場負 ATL 97-107。\nORL 戰績 8-8，場均得 111.2（30 隊中第 24）、失 112.8（30 隊中第 11），淨勝 -1.6（30 隊中第 18），目前 W1。近況：客場勝 BOS 115-105、主場負 PHI 116-121、客場勝 BKN 113-111。\n對盤口表現：DET 讓分 8 勝 7 負 (53%)；大分 7 次、小分 8 次；ORL 讓分 6 勝 8 負 (43%)；大分 6 次、小分 8 次。\n近 3 次交手 DET 3 勝 0 負，平均分差 +14.3（最近一次 2026-05-03：勝 116-94）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-17）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **三分命中率**：DET 三分命中 39.4%，對手 31.2%（聯盟平均 34.9%；DET 第 2、ORL 第 28／30 隊）。\n• **命中率**：DET 命中率 46.1%，對手 40.8%（聯盟平均 45.8%；DET 第 16、ORL 第 30／30 隊）。\n• **板凳得分**：DET 板凳貢獻 30.5 分，對手 23.0（聯盟平均 35.3；DET 第 21、ORL 第 27／30 隊）。\n• **得分**：DET 場均得 107.7 分，對手 101.0（聯盟平均 111.1；DET 第 21、ORL 第 30／30 隊）。\nORL 能反擊的地方：\n• **快攻得分**：ORL 這項較好，17.2 對 DET 的 14.0（聯盟平均 14.2；DET 第 15、ORL 第 6／30 隊）。\n穩定度：這段期間 DET 單場分差的標準差是 ±15.4 分，ORL 是 ±15.1 分；DET 的表現起伏較大。\n## 賽程與休息\nDET 休一天；ORL 休了 3 天。\n體能上 ORL 較佔便宜。\nORL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 226.3 分，防守合計失 222.1 分；近況合計每場出手 63 記三分（聯盟兩隊平均 73）、快攻 31 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 216.8，盤口 225.0，低於盤口 8.2 分。以總分相對盤口 ±18.3 分的分佈換算，小分機率 67%；公布信心 74%。\n## 模型本季戰績\n本季至今，已發佈讓分 115 勝 122 負（49%）；信心 51% 以上的場次 111 勝 121 負；大小分 119 勝 123 負（49%）。\n## 風險\n坦白說：ORL 在快攻得分上的優勢（17.2 對 14.0）是翻掉這份判讀最直接的路徑；DET 單場分差起伏 ±15.4 分，單場優勢並不牢靠；DET 正吞 2 連敗，模型看不到更衣室氣氛。",
+      "analysis_content": "## The Call\nThe number says DET, on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has DET by 0.3, a 51% win probability.\nConfidence is modest at 51%.\n## Season So Far\nDET is 12-6 (4-3 home, 8-3 away), scoring 115.1 (11th of 30) and allowing 109.3 (5th of 30) for a +5.7 margin (6th of 30), currently on a L2 run. Last out: W 122-109 at NO, L 102-105 vs TOR, L 97-107 at ATL.\nORL is 8-8, scoring 111.2 (24th of 30) and allowing 112.8 (11th of 30) for a -1.6 margin (18th of 30), on a W1 run. Last out: W 115-105 at BOS, L 116-121 vs PHI, W 113-111 at BKN.\nAgainst the number: DET 8-7 against the spread (53%); 7 over / 8 under; ORL 6-8 against the spread (43%); 6 over / 8 under.\nHead to head, DET is 3-0 in the last 3 meetings with an average margin of +14.3 (most recent 2026-05-03: W 116-94).\n## Statistical Profile\nAcross the last 10 box scores (box scores on record through 2026-05-17), here is where DET separates from ORL. League averages and ranks across 30 teams are given for scale.\n• **3P%** — DET hits 39.4% from three against 31.2% (league avg 34.9%; DET 2nd vs ORL 28th of 30).\n• **FG%** — DET shoots 46.1% from the floor to 40.8% (league avg 45.8%; DET 16th vs ORL 30th of 30).\n• **Bench points** — DET gets 30.5 from the bench to 23.0 (league avg 35.3; DET 21st vs ORL 27th of 30).\n• **Points** — DET scores 107.7 a night to 101.0 (league avg 111.1; DET 21st vs ORL 30th of 30).\nWhere ORL pushes back:\n• **Fast-break points** — ORL holds the better number, 17.2 to DET's 14.0 (league avg 14.2; DET 15th vs ORL 6th of 30).\nConsistency check: DET's game margins over this stretch vary by ±15.4 points (one standard deviation) against ±15.1 for ORL; the more volatile side is DET.\n## Schedule & Rest\nDET has one day off; ORL comes in with 3 days of rest.\nThe rest edge belongs to ORL.\nORL has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 226.3 points and the two defences concede 222.1; on record they attempt 63 threes between them (league pair average 73) with 31 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 216.8 total points against a line of 225.0, 8.2 points below the number. With totals spreading ±18.3 points around the line, that is a 67% probability of the under; published confidence is 74%.\n## Model Track Record\nThis season, published spread picks are 115-123 (48%); at 51%+ confidence they are 111-122; totals are 120-123 (49%).\n## What Could Go Wrong\nHonest caveats: ORL's edge in Fast-break points (17.2 vs 14.0) is the cleanest path to an upset of this read; DET's results swing ±15.4 points game to game, so any single-game edge is fragile; DET is on a L2 skid and the model does not read locker rooms.",
+      "analysis_content_zh": "## 結論\n本場站 客場的 DET。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 DET 贏 0.3 分，勝率 51%。\n信心偏低（51%）。\n## 本季至今\nDET 戰績 12-6（主 4-3、客 8-3），場均得 115.1（30 隊中第 11）、失 109.3（30 隊中第 5），淨勝 +5.7（30 隊中第 6），目前 L2。近況：客場勝 NO 122-109、主場負 TOR 102-105、客場負 ATL 97-107。\nORL 戰績 8-8，場均得 111.2（30 隊中第 24）、失 112.8（30 隊中第 11），淨勝 -1.6（30 隊中第 18），目前 W1。近況：客場勝 BOS 115-105、主場負 PHI 116-121、客場勝 BKN 113-111。\n對盤口表現：DET 讓分 8 勝 7 負 (53%)；大分 7 次、小分 8 次；ORL 讓分 6 勝 8 負 (43%)；大分 6 次、小分 8 次。\n近 3 次交手 DET 3 勝 0 負，平均分差 +14.3（最近一次 2026-05-03：勝 116-94）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-17）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **三分命中率**：DET 三分命中 39.4%，對手 31.2%（聯盟平均 34.9%；DET 第 2、ORL 第 28／30 隊）。\n• **命中率**：DET 命中率 46.1%，對手 40.8%（聯盟平均 45.8%；DET 第 16、ORL 第 30／30 隊）。\n• **板凳得分**：DET 板凳貢獻 30.5 分，對手 23.0（聯盟平均 35.3；DET 第 21、ORL 第 27／30 隊）。\n• **得分**：DET 場均得 107.7 分，對手 101.0（聯盟平均 111.1；DET 第 21、ORL 第 30／30 隊）。\nORL 能反擊的地方：\n• **快攻得分**：ORL 這項較好，17.2 對 DET 的 14.0（聯盟平均 14.2；DET 第 15、ORL 第 6／30 隊）。\n穩定度：這段期間 DET 單場分差的標準差是 ±15.4 分，ORL 是 ±15.1 分；DET 的表現起伏較大。\n## 賽程與休息\nDET 休一天；ORL 休了 3 天。\n體能上 ORL 較佔便宜。\nORL 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 226.3 分，防守合計失 222.1 分；近況合計每場出手 63 記三分（聯盟兩隊平均 73）、快攻 31 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 216.8，盤口 225.0，低於盤口 8.2 分。以總分相對盤口 ±18.3 分的分佈換算，小分機率 67%；公布信心 74%。\n## 模型本季戰績\n本季至今，已發佈讓分 115 勝 123 負（48%）；信心 51% 以上的場次 111 勝 122 負；大小分 120 勝 123 負（49%）。\n## 風險\n坦白說：ORL 在快攻得分上的優勢（17.2 對 14.0）是翻掉這份判讀最直接的路徑；DET 單場分差起伏 ±15.4 分，單場優勢並不牢靠；DET 正吞 2 連敗，模型看不到更衣室氣氛。",
       "predicted_margin": 0.35,
       "predicted_total": 216.8,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-23T01:00:13.495477",
+      "created_at": "2026-11-23T01:30:13.389683",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -105604,7 +105604,7 @@
             "margin": 5.7,
             "rank": {
               "ppg": 11,
-              "papg": 6,
+              "papg": 5,
               "margin": 6
             },
             "streak": "L2",
@@ -105693,7 +105693,7 @@
           "win_model": 0.51,
           "win_market": null,
           "total": 0.673,
-          "sigma_spread": 13.9,
+          "sigma_spread": 13.8,
           "sigma_total": 18.3,
           "sigma_measured": true
         },
@@ -105711,18 +105711,18 @@
         "record": {
           "spread": [
             115,
-            122
+            123
           ],
           "total": [
-            119,
+            120,
             123
           ],
           "spread_at_conf": [
             111,
-            121
+            122
           ]
         },
-        "generated_at": "2026-11-23T01:00:13"
+        "generated_at": "2026-11-23T01:30:13"
       },
       "matches": {
         "id": 280,
@@ -105765,13 +105765,13 @@
       "ou_pick": "OVER",
       "ou_line": 225.0,
       "ou_confidence": 57.0,
-      "analysis_content": "## The Call\nThe number says BOS, on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has BOS by 11.5, a 80% win probability.\nConfidence is high at 95%.\n## Season So Far\nBOS is 13-5 (7-1 home, 6-4 away), scoring 113.5 (15th of 30) and allowing 103.4 (1st of 30) for a +10.1 margin (2nd of 30), currently on a L3 run. Last out: L 105-115 vs ORL, L 101-105 at DEN, L 96-97 at SAC.\nWSH is 6-12, scoring 109.8 (26th of 30) and allowing 116.0 (21st of 30) for a -6.2 margin (24th of 30), on a W2 run. Last out: L 120-136 vs MEM, W 103-99 at TOR, W 98-94 at CHI.\nAgainst the number: BOS 8-7 against the spread (53%); 4 over / 11 under; WSH 7-9 against the spread (44%); 5 over / 11 under.\nHead to head, BOS is 3-0 in the last 3 meetings with an average margin of +28.3 (most recent 2026-03-14: W 111-100).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-05-02) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — BOS gives up 106.4 to 131.8 (league avg 115.8; BOS 6th vs WSH 28th of 30).\n• **Net margin** — BOS outscores opponents by +4.5 per game against -18.1 (league avg -4.7; BOS 2nd vs WSH 29th of 30).\n• **Rebounds** — BOS pulls 46.0 rebounds to 38.2 (league avg 41.9; BOS 1st vs WSH 27th of 30).\n• **Turnovers** — BOS commits 11.8 turnovers to 13.8 (league avg 13.6; BOS 5th vs WSH 19th of 30).\nWhere WSH pushes back:\n• **Paint points** — WSH holds the better number, 51.4 to BOS's 36.4 (league avg 47.4; BOS 30th vs WSH 8th of 30).\n• **Bench points** — WSH holds the better number, 45.7 to BOS's 40.2 (league avg 35.3; BOS 10th vs WSH 4th of 30).\n• **Points off turnovers** — WSH holds the better number, 17.2 to BOS's 13.7 (league avg 17.5; BOS 30th vs WSH 16th of 30).\nConsistency check: BOS's game margins over this stretch vary by ±18.3 points (one standard deviation) against ±9.4 for WSH; the more volatile side is BOS.\n## Schedule & Rest\nBOS comes in with 2 days of rest; WSH comes in with 3 days of rest.\nThe rest edge belongs to WSH.\nWSH has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 223.3 points and the two defences concede 219.4; on record they attempt 83 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 227.3 total points against a line of 225.0, 2.3 points above the number. With totals spreading ±18.3 points around the line, that is a 55% probability of the over; published confidence is 57%.\n## Model Track Record\nThis season, published spread picks are 115-122 (49%); at 95%+ confidence they are 7-8; totals are 119-123 (49%).\n## What Could Go Wrong\nHonest caveats: WSH's edge in Paint points (51.4 vs 36.4) is the cleanest path to an upset of this read; BOS's results swing ±18.3 points game to game, so any single-game edge is fragile; BOS is on a L3 skid and the model does not read locker rooms.",
-      "analysis_content_zh": "## 結論\n結論落在客場作戰的 BOS。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 BOS 贏 11.5 分，勝率 80%。\n信心高（95%）。\n## 本季至今\nBOS 戰績 13-5（主 7-1、客 6-4），場均得 113.5（30 隊中第 15）、失 103.4（30 隊中第 1），淨勝 +10.1（30 隊中第 2），目前 L3。近況：主場負 ORL 105-115、客場負 DEN 101-105、客場負 SAC 96-97。\nWSH 戰績 6-12，場均得 109.8（30 隊中第 26）、失 116.0（30 隊中第 21），淨勝 -6.2（30 隊中第 24），目前 W2。近況：主場負 MEM 120-136、客場勝 TOR 103-99、客場勝 CHI 98-94。\n對盤口表現：BOS 讓分 8 勝 7 負 (53%)；大分 4 次、小分 11 次；WSH 讓分 7 勝 9 負 (44%)；大分 5 次、小分 11 次。\n近 3 次交手 BOS 3 勝 0 負，平均分差 +28.3（最近一次 2026-03-14：勝 111-100）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-02），BOS 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：BOS 場均失 106.4 分，對手 131.8（聯盟平均 115.8；BOS 第 6、WSH 第 28／30 隊）。\n• **淨勝分**：BOS 場均淨勝 +4.5 分，對手 -18.1（聯盟平均 -4.7；BOS 第 2、WSH 第 29／30 隊）。\n• **籃板**：BOS 場均 46.0 籃板，對手 38.2（聯盟平均 41.9；BOS 第 1、WSH 第 27／30 隊）。\n• **失誤**：BOS 失誤 11.8 次，對手 13.8（聯盟平均 13.6；BOS 第 5、WSH 第 19／30 隊）。\nWSH 能反擊的地方：\n• **禁區得分**：WSH 這項較好，51.4 對 BOS 的 36.4（聯盟平均 47.4；BOS 第 30、WSH 第 8／30 隊）。\n• **板凳得分**：WSH 這項較好，45.7 對 BOS 的 40.2（聯盟平均 35.3；BOS 第 10、WSH 第 4／30 隊）。\n• **失誤轉換得分**：WSH 這項較好，17.2 對 BOS 的 13.7（聯盟平均 17.5；BOS 第 30、WSH 第 16／30 隊）。\n穩定度：這段期間 BOS 單場分差的標準差是 ±18.3 分，WSH 是 ±9.4 分；BOS 的表現起伏較大。\n## 賽程與休息\nBOS 休了 2 天；WSH 休了 3 天。\n體能上 WSH 較佔便宜。\nWSH 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 223.3 分，防守合計失 219.4 分；近況合計每場出手 83 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 227.3，盤口 225.0，高於盤口 2.3 分。以總分相對盤口 ±18.3 分的分佈換算，大分機率 55%；公布信心 57%。\n## 模型本季戰績\n本季至今，已發佈讓分 115 勝 122 負（49%）；信心 95% 以上的場次 7 勝 8 負；大小分 119 勝 123 負（49%）。\n## 風險\n坦白說：WSH 在禁區得分上的優勢（51.4 對 36.4）是翻掉這份判讀最直接的路徑；BOS 單場分差起伏 ±18.3 分，單場優勢並不牢靠；BOS 正吞 3 連敗，模型看不到更衣室氣氛。",
+      "analysis_content": "## The Call\nThe number says BOS, on the road.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has BOS by 11.5, a 80% win probability.\nConfidence is high at 95%.\n## Season So Far\nBOS is 13-5 (7-1 home, 6-4 away), scoring 113.5 (15th of 30) and allowing 103.4 (1st of 30) for a +10.1 margin (2nd of 30), currently on a L3 run. Last out: L 105-115 vs ORL, L 101-105 at DEN, L 96-97 at SAC.\nWSH is 6-12, scoring 109.8 (26th of 30) and allowing 116.0 (21st of 30) for a -6.2 margin (24th of 30), on a W2 run. Last out: L 120-136 vs MEM, W 103-99 at TOR, W 98-94 at CHI.\nAgainst the number: BOS 8-7 against the spread (53%); 4 over / 11 under; WSH 7-9 against the spread (44%); 5 over / 11 under.\nHead to head, BOS is 3-0 in the last 3 meetings with an average margin of +28.3 (most recent 2026-03-14: W 111-100).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-05-02) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Points allowed** — BOS gives up 106.4 to 131.8 (league avg 115.8; BOS 6th vs WSH 28th of 30).\n• **Net margin** — BOS outscores opponents by +4.5 per game against -18.1 (league avg -4.7; BOS 2nd vs WSH 29th of 30).\n• **Rebounds** — BOS pulls 46.0 rebounds to 38.2 (league avg 41.9; BOS 1st vs WSH 27th of 30).\n• **Turnovers** — BOS commits 11.8 turnovers to 13.8 (league avg 13.6; BOS 5th vs WSH 19th of 30).\nWhere WSH pushes back:\n• **Paint points** — WSH holds the better number, 51.4 to BOS's 36.4 (league avg 47.4; BOS 30th vs WSH 8th of 30).\n• **Bench points** — WSH holds the better number, 45.7 to BOS's 40.2 (league avg 35.3; BOS 10th vs WSH 4th of 30).\n• **Points off turnovers** — WSH holds the better number, 17.2 to BOS's 13.7 (league avg 17.5; BOS 30th vs WSH 16th of 30).\nConsistency check: BOS's game margins over this stretch vary by ±18.3 points (one standard deviation) against ±9.4 for WSH; the more volatile side is BOS.\n## Schedule & Rest\nBOS comes in with 2 days of rest; WSH comes in with 3 days of rest.\nThe rest edge belongs to WSH.\nWSH has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: OVER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 223.3 points and the two defences concede 219.4; on record they attempt 83 threes between them (league pair average 73) with 26 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 227.3 total points against a line of 225.0, 2.3 points above the number. With totals spreading ±18.3 points around the line, that is a 55% probability of the over; published confidence is 57%.\n## Model Track Record\nThis season, published spread picks are 115-123 (48%); at 95%+ confidence they are 7-8; totals are 120-123 (49%).\n## What Could Go Wrong\nHonest caveats: WSH's edge in Paint points (51.4 vs 36.4) is the cleanest path to an upset of this read; BOS's results swing ±18.3 points game to game, so any single-game edge is fragile; BOS is on a L3 skid and the model does not read locker rooms.",
+      "analysis_content_zh": "## 結論\n結論落在客場作戰的 BOS。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 BOS 贏 11.5 分，勝率 80%。\n信心高（95%）。\n## 本季至今\nBOS 戰績 13-5（主 7-1、客 6-4），場均得 113.5（30 隊中第 15）、失 103.4（30 隊中第 1），淨勝 +10.1（30 隊中第 2），目前 L3。近況：主場負 ORL 105-115、客場負 DEN 101-105、客場負 SAC 96-97。\nWSH 戰績 6-12，場均得 109.8（30 隊中第 26）、失 116.0（30 隊中第 21），淨勝 -6.2（30 隊中第 24），目前 W2。近況：主場負 MEM 120-136、客場勝 TOR 103-99、客場勝 CHI 98-94。\n對盤口表現：BOS 讓分 8 勝 7 負 (53%)；大分 4 次、小分 11 次；WSH 讓分 7 勝 9 負 (44%)；大分 5 次、小分 11 次。\n近 3 次交手 BOS 3 勝 0 負，平均分差 +28.3（最近一次 2026-03-14：勝 111-100）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-05-02），BOS 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：BOS 場均失 106.4 分，對手 131.8（聯盟平均 115.8；BOS 第 6、WSH 第 28／30 隊）。\n• **淨勝分**：BOS 場均淨勝 +4.5 分，對手 -18.1（聯盟平均 -4.7；BOS 第 2、WSH 第 29／30 隊）。\n• **籃板**：BOS 場均 46.0 籃板，對手 38.2（聯盟平均 41.9；BOS 第 1、WSH 第 27／30 隊）。\n• **失誤**：BOS 失誤 11.8 次，對手 13.8（聯盟平均 13.6；BOS 第 5、WSH 第 19／30 隊）。\nWSH 能反擊的地方：\n• **禁區得分**：WSH 這項較好，51.4 對 BOS 的 36.4（聯盟平均 47.4；BOS 第 30、WSH 第 8／30 隊）。\n• **板凳得分**：WSH 這項較好，45.7 對 BOS 的 40.2（聯盟平均 35.3；BOS 第 10、WSH 第 4／30 隊）。\n• **失誤轉換得分**：WSH 這項較好，17.2 對 BOS 的 13.7（聯盟平均 17.5；BOS 第 30、WSH 第 16／30 隊）。\n穩定度：這段期間 BOS 單場分差的標準差是 ±18.3 分，WSH 是 ±9.4 分；BOS 的表現起伏較大。\n## 賽程與休息\nBOS 休了 2 天；WSH 休了 3 天。\n體能上 WSH 較佔便宜。\nWSH 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 223.3 分，防守合計失 219.4 分；近況合計每場出手 83 記三分（聯盟兩隊平均 73）、快攻 26 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 227.3，盤口 225.0，高於盤口 2.3 分。以總分相對盤口 ±18.3 分的分佈換算，大分機率 55%；公布信心 57%。\n## 模型本季戰績\n本季至今，已發佈讓分 115 勝 123 負（48%）；信心 95% 以上的場次 7 勝 8 負；大小分 120 勝 123 負（49%）。\n## 風險\n坦白說：WSH 在禁區得分上的優勢（51.4 對 36.4）是翻掉這份判讀最直接的路徑；BOS 單場分差起伏 ±18.3 分，單場優勢並不牢靠；BOS 正吞 3 連敗，模型看不到更衣室氣氛。",
       "predicted_margin": 11.49,
       "predicted_total": 227.34,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-23T01:00:13.560573",
+      "created_at": "2026-11-23T01:30:13.457302",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -106062,11 +106062,11 @@
           "total_is_default": true
         },
         "probability": {
-          "cover": 0.796,
-          "win_model": 0.796,
+          "cover": 0.797,
+          "win_model": 0.797,
           "win_market": null,
           "total": 0.551,
-          "sigma_spread": 13.9,
+          "sigma_spread": 13.8,
           "sigma_total": 18.3,
           "sigma_measured": true
         },
@@ -106084,10 +106084,10 @@
         "record": {
           "spread": [
             115,
-            122
+            123
           ],
           "total": [
-            119,
+            120,
             123
           ],
           "spread_at_conf": [
@@ -106095,7 +106095,7 @@
             8
           ]
         },
-        "generated_at": "2026-11-23T01:00:13"
+        "generated_at": "2026-11-23T01:30:13"
       },
       "matches": {
         "id": 281,
