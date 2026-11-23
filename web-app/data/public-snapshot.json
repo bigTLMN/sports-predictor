@@ -10312,7 +10312,7 @@
       "away_team_id": 19,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 103,
-      "away_score": 81,
+      "away_score": 85,
       "period_scores": {
         "home": [
           38,
@@ -10324,7 +10324,7 @@
           21,
           30,
           26,
-          4
+          8
         ]
       },
       "vegas_spread": 4.5,
@@ -10349,20 +10349,20 @@
       "home_team_id": 5,
       "away_team_id": 8,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 103,
-      "away_score": 106,
+      "home_score": 108,
+      "away_score": 110,
       "period_scores": {
         "home": [
           31,
           39,
           25,
-          8
+          13
         ],
         "away": [
           33,
           39,
           33,
-          1
+          5
         ]
       },
       "vegas_spread": 9.5,
@@ -10387,20 +10387,20 @@
       "home_team_id": 30,
       "away_team_id": 7,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 78,
-      "away_score": 96,
+      "home_score": 86,
+      "away_score": 104,
       "period_scores": {
         "home": [
           35,
           22,
           17,
-          4
+          12
         ],
         "away": [
           33,
           31,
           27,
-          5
+          13
         ]
       },
       "vegas_spread": 2.5,
@@ -10425,16 +10425,16 @@
       "home_team_id": 28,
       "away_team_id": 11,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 42,
-      "away_score": 43,
+      "home_score": 48,
+      "away_score": 45,
       "period_scores": {
         "home": [
           26,
-          16
+          22
         ],
         "away": [
           26,
-          17
+          19
         ]
       },
       "vegas_spread": -6.5,
@@ -10459,14 +10459,14 @@
       "home_team_id": 26,
       "away_team_id": 2,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 15,
-      "away_score": 13,
+      "home_score": 20,
+      "away_score": 15,
       "period_scores": {
         "home": [
-          15
+          20
         ],
         "away": [
-          13
+          15
         ]
       },
       "vegas_spread": 8.5,
@@ -10570,7 +10570,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -11.5,
-      "vegas_total": 225.5,
+      "vegas_total": 223.5,
       "home_team": {
         "code": "TOR",
         "full_name": "Toronto Raptors",
@@ -10644,8 +10644,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": 3.5,
+      "vegas_total": 232.5,
       "home_team": {
         "code": "NO",
         "full_name": "New Orleans Pelicans",
@@ -10694,8 +10694,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -12.5,
+      "vegas_total": 230.5,
       "home_team": {
         "code": "LAL",
         "full_name": "Los Angeles Lakers",
@@ -99352,20 +99352,20 @@
         "home_team_id": 5,
         "away_team_id": 8,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 103,
-        "away_score": 106,
+        "home_score": 108,
+        "away_score": 110,
         "period_scores": {
           "home": [
             31,
             39,
             25,
-            8
+            13
           ],
           "away": [
             33,
             39,
             33,
-            1
+            5
           ]
         },
         "vegas_spread": 9.5,
@@ -100125,7 +100125,7 @@
         "away_team_id": 19,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 103,
-        "away_score": 81,
+        "away_score": 85,
         "period_scores": {
           "home": [
             38,
@@ -100137,7 +100137,7 @@
             21,
             30,
             26,
-            4
+            8
           ]
         },
         "vegas_spread": 4.5,
@@ -100510,14 +100510,14 @@
         "home_team_id": 26,
         "away_team_id": 2,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 15,
-        "away_score": 13,
+        "home_score": 20,
+        "away_score": 15,
         "period_scores": {
           "home": [
-            15
+            20
           ],
           "away": [
-            13
+            15
           ]
         },
         "vegas_spread": 8.5,
@@ -100890,16 +100890,16 @@
         "home_team_id": 28,
         "away_team_id": 11,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 42,
-        "away_score": 43,
+        "home_score": 48,
+        "away_score": 45,
         "period_scores": {
           "home": [
             26,
-            16
+            22
           ],
           "away": [
             26,
-            17
+            19
           ]
         },
         "vegas_spread": -6.5,
@@ -101272,20 +101272,20 @@
         "home_team_id": 30,
         "away_team_id": 7,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 78,
-        "away_score": 96,
+        "home_score": 86,
+        "away_score": 104,
         "period_scores": {
           "home": [
             35,
             22,
             17,
-            4
+            12
           ],
           "away": [
             33,
             31,
             27,
-            5
+            13
           ]
         },
         "vegas_spread": 2.5,
@@ -103153,8 +103153,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -12.5,
+        "vegas_total": 230.5,
         "home_team": {
           "code": "LAL",
           "full_name": "Los Angeles Lakers",
@@ -104646,7 +104646,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -11.5,
-        "vegas_total": 225.5,
+        "vegas_total": 223.5,
         "home_team": {
           "code": "TOR",
           "full_name": "Toronto Raptors",
@@ -105018,8 +105018,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": 3.5,
+        "vegas_total": 232.5,
         "home_team": {
           "code": "NO",
           "full_name": "New Orleans Pelicans",
@@ -105055,7 +105055,7 @@
       "predicted_total": 238.93,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-23T01:30:13.326384",
+      "created_at": "2026-11-23T02:00:15.029629",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-30",
@@ -105379,7 +105379,7 @@
             8
           ]
         },
-        "generated_at": "2026-11-23T01:30:13"
+        "generated_at": "2026-11-23T02:00:15"
       },
       "matches": {
         "id": 282,
@@ -105428,7 +105428,7 @@
       "predicted_total": 216.8,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-23T01:30:13.389683",
+      "created_at": "2026-11-23T02:00:15.096846",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-17",
@@ -105752,7 +105752,7 @@
             122
           ]
         },
-        "generated_at": "2026-11-23T01:30:13"
+        "generated_at": "2026-11-23T02:00:15"
       },
       "matches": {
         "id": 280,
@@ -105801,7 +105801,7 @@
       "predicted_total": 227.34,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-23T01:30:13.457302",
+      "created_at": "2026-11-23T02:00:15.164818",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-02",
@@ -106125,7 +106125,7 @@
             8
           ]
         },
-        "generated_at": "2026-11-23T01:30:13"
+        "generated_at": "2026-11-23T02:00:15"
       },
       "matches": {
         "id": 281,
