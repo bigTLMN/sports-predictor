@@ -10730,23 +10730,23 @@
       "start_time": "2026-11-24T01:00Z",
       "home_team_id": 27,
       "away_team_id": 21,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 117,
-      "away_score": 120,
+      "status": "STATUS_FINISHED",
+      "home_score": 119,
+      "away_score": 123,
       "period_scores": {
         "home": [
           35,
           19,
           29,
           26,
-          8
+          10
         ],
         "away": [
           31,
           25,
           23,
           30,
-          11
+          14
         ]
       },
       "vegas_spread": 3.5,
@@ -10771,20 +10771,20 @@
       "home_team_id": 10,
       "away_team_id": 12,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 103,
-      "away_score": 97,
+      "home_score": 114,
+      "away_score": 104,
       "period_scores": {
         "home": [
           25,
           22,
           38,
-          18
+          29
         ],
         "away": [
           15,
           28,
           32,
-          22
+          29
         ]
       },
       "vegas_spread": -13.5,
@@ -10809,16 +10809,16 @@
       "home_team_id": 13,
       "away_team_id": 30,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 32,
-      "away_score": 22,
+      "home_score": 34,
+      "away_score": 24,
       "period_scores": {
         "home": [
           30,
-          2
+          4
         ],
         "away": [
           20,
-          2
+          4
         ]
       },
       "vegas_spread": -13.5,
@@ -10843,16 +10843,16 @@
       "home_team_id": 23,
       "away_team_id": 29,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 30,
-      "away_score": 25,
+      "home_score": 36,
+      "away_score": 30,
       "period_scores": {
         "home": [
           28,
-          2
+          8
         ],
         "away": [
           19,
-          6
+          11
         ]
       },
       "vegas_spread": 8.5,
@@ -102853,20 +102853,20 @@
         "home_team_id": 10,
         "away_team_id": 12,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 103,
-        "away_score": 97,
+        "home_score": 114,
+        "away_score": 104,
         "period_scores": {
           "home": [
             25,
             22,
             38,
-            18
+            29
           ],
           "away": [
             15,
             28,
             32,
-            22
+            29
           ]
         },
         "vegas_spread": -13.5,
@@ -103625,16 +103625,16 @@
         "home_team_id": 13,
         "away_team_id": 30,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 32,
-        "away_score": 22,
+        "home_score": 34,
+        "away_score": 24,
         "period_scores": {
           "home": [
             30,
-            2
+            4
           ],
           "away": [
             20,
-            2
+            4
           ]
         },
         "vegas_spread": -13.5,
@@ -104779,16 +104779,16 @@
         "home_team_id": 23,
         "away_team_id": 29,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 30,
-        "away_score": 25,
+        "home_score": 36,
+        "away_score": 30,
         "period_scores": {
           "home": [
             28,
-            2
+            8
           ],
           "away": [
             19,
-            6
+            11
           ]
         },
         "vegas_spread": 8.5,
@@ -105212,8 +105212,8 @@
       "analysis_content_zh": "## 結論\n本場站 主場的 NO。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 NO 贏 1.8 分，勝率 55%。\n信心偏低（57%）。\n## 本季至今\nNO 戰績 7-13（主 5-7、客 2-6），場均得 113.2（30 隊中第 17）、失 120.4（30 隊中第 27），淨勝 -7.2（30 隊中第 26），目前 L3。近況：主場負 DET 109-122、客場負 OKC 120-126、客場負 SA 91-114。\nPHX 戰績 8-9，場均得 113.4（30 隊中第 16）、失 115.5（30 隊中第 19），淨勝 -2.1（30 隊中第 20），目前 W3。近況：客場勝 DEN 117-105、客場勝 SAC 128-107、客場勝 UTAH 111-101。\n對盤口表現：NO 讓分 9 勝 8 負 (53%)；大分 10 次、小分 7 次；PHX 讓分 6 勝 8 負 (43%)；大分 8 次、小分 6 次。\n近 3 次交手 NO 0 勝 3 負，平均分差 -6.0（最近一次 2026-03-06：負 116-118）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-04-12）裡，NO 和 PHX 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **禁區得分**：NO 禁區拿 60.6 分，對手 39.4（聯盟平均 47.4；NO 第 2、PHX 第 27／30 隊）。\n• **快攻得分**：NO 快攻 20.0 分，對手 9.7（聯盟平均 14.2；NO 第 3、PHX 第 28／30 隊）。\n• **板凳得分**：NO 板凳貢獻 37.6 分，對手 25.6（聯盟平均 35.3；NO 第 13、PHX 第 25／30 隊）。\n• **得分**：NO 場均得 115.9 分，對手 106.8（聯盟平均 111.1；NO 第 7、PHX 第 23／30 隊）。\nPHX 能反擊的地方：\n• **失分**：PHX 這項較好，113.1 對 NO 的 126.3（聯盟平均 115.8；NO 第 25、PHX 第 14／30 隊）。\n• **淨勝分**：PHX 這項較好，-6.3 對 NO 的 -10.4（聯盟平均 -4.7；NO 第 24、PHX 第 17／30 隊）。\n穩定度：這段期間 NO 單場分差的標準差是 ±13.5 分，PHX 是 ±18.7 分；NO 的表現較穩。\n## 賽程與休息\nNO 休一天；PHX 休了 2 天。\n體能上 PHX 較佔便宜。\nNO 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：大分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 226.6 分，防守合計失 235.9 分；近況合計每場出手 66 記三分（聯盟兩隊平均 73）、快攻 30 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 231.2，盤口 225.0，高於盤口 6.2 分。以總分相對盤口 ±18.3 分的分佈換算，大分機率 63%；公布信心 68%。\n## 模型本季戰績\n本季至今，已發佈讓分 114 勝 122 負（48%）；信心 57% 以上的場次 89 勝 101 負；大小分 118 勝 123 負（49%）。\n## 風險\n坦白說：PHX 在失分上的優勢（113.1 對 126.3）是翻掉這份判讀最直接的路徑；NO 正吞 3 連敗，模型看不到更衣室氣氛。",
       "predicted_margin": 1.77,
       "predicted_total": 231.25,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "WIN",
       "created_at": "2026-11-22T23:30:12.420326",
       "analysis_facts": {
         "profile_games": 10,
@@ -105546,23 +105546,23 @@
         "start_time": "2026-11-24T01:00Z",
         "home_team_id": 27,
         "away_team_id": 21,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 117,
-        "away_score": 120,
+        "status": "STATUS_FINISHED",
+        "home_score": 119,
+        "away_score": 123,
         "period_scores": {
           "home": [
             35,
             19,
             29,
             26,
-            8
+            10
           ],
           "away": [
             31,
             25,
             23,
             30,
-            11
+            14
           ]
         },
         "vegas_spread": 3.5,
