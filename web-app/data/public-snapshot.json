@@ -10809,18 +10809,18 @@
       "home_team_id": 13,
       "away_team_id": 30,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 73,
-      "away_score": 74,
+      "home_score": 78,
+      "away_score": 77,
       "period_scores": {
         "home": [
           30,
           23,
-          20
+          25
         ],
         "away": [
           20,
           22,
-          32
+          35
         ]
       },
       "vegas_spread": -13.5,
@@ -10845,20 +10845,20 @@
       "home_team_id": 23,
       "away_team_id": 29,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 76,
-      "away_score": 94,
+      "home_score": 85,
+      "away_score": 98,
       "period_scores": {
         "home": [
           28,
           23,
           23,
-          2
+          11
         ],
         "away": [
           19,
           41,
           32,
-          2
+          6
         ]
       },
       "vegas_spread": 8.5,
@@ -10886,7 +10886,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": 2.5,
+      "vegas_spread": 1.5,
       "vegas_total": 213.5,
       "home_team": {
         "code": "ORL",
@@ -103631,18 +103631,18 @@
         "home_team_id": 13,
         "away_team_id": 30,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 73,
-        "away_score": 74,
+        "home_score": 78,
+        "away_score": 77,
         "period_scores": {
           "home": [
             30,
             23,
-            20
+            25
           ],
           "away": [
             20,
             22,
-            32
+            35
           ]
         },
         "vegas_spread": -13.5,
@@ -104787,20 +104787,20 @@
         "home_team_id": 23,
         "away_team_id": 29,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 76,
-        "away_score": 94,
+        "home_score": 85,
+        "away_score": 98,
         "period_scores": {
           "home": [
             28,
             23,
             23,
-            2
+            11
           ],
           "away": [
             19,
             41,
             32,
-            2
+            6
           ]
         },
         "vegas_spread": 8.5,
@@ -106323,7 +106323,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": 2.5,
+        "vegas_spread": 1.5,
         "vegas_total": 213.5,
         "home_team": {
           "code": "ORL",
@@ -106733,7 +106733,7 @@
       "predicted_total": 232.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T04:30:12.914032",
+      "created_at": "2026-11-24T05:00:13.167467",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -107057,7 +107057,7 @@
             9
           ]
         },
-        "generated_at": "2026-11-24T04:30:12"
+        "generated_at": "2026-11-24T05:00:13"
       },
       "matches": {
         "id": 284,
@@ -107106,7 +107106,7 @@
       "predicted_total": 221.02,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T04:30:12.973558",
+      "created_at": "2026-11-24T05:00:13.235273",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-01",
@@ -107430,7 +107430,7 @@
             55
           ]
         },
-        "generated_at": "2026-11-24T04:30:12"
+        "generated_at": "2026-11-24T05:00:13"
       },
       "matches": {
         "id": 289,
@@ -107479,7 +107479,7 @@
       "predicted_total": 233.78,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T04:30:13.028863",
+      "created_at": "2026-11-24T05:00:13.298665",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -107803,7 +107803,7 @@
             20
           ]
         },
-        "generated_at": "2026-11-24T04:30:13"
+        "generated_at": "2026-11-24T05:00:13"
       },
       "matches": {
         "id": 287,
@@ -107852,7 +107852,7 @@
       "predicted_total": 218.38,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T04:30:13.087272",
+      "created_at": "2026-11-24T05:00:13.365040",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -108176,7 +108176,7 @@
             62
           ]
         },
-        "generated_at": "2026-11-24T04:30:13"
+        "generated_at": "2026-11-24T05:00:13"
       },
       "matches": {
         "id": 288,
@@ -108225,7 +108225,7 @@
       "predicted_total": 222.59,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T04:30:13.144111",
+      "created_at": "2026-11-24T05:00:13.430317",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -108549,7 +108549,7 @@
             14
           ]
         },
-        "generated_at": "2026-11-24T04:30:13"
+        "generated_at": "2026-11-24T05:00:13"
       },
       "matches": {
         "id": 286,
@@ -108598,7 +108598,7 @@
       "predicted_total": 233.09,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T04:30:13.202730",
+      "created_at": "2026-11-24T05:00:13.497380",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-14",
@@ -108922,7 +108922,7 @@
             105
           ]
         },
-        "generated_at": "2026-11-24T04:30:13"
+        "generated_at": "2026-11-24T05:00:13"
       },
       "matches": {
         "id": 283,
@@ -108971,7 +108971,7 @@
       "predicted_total": 218.14,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T04:30:13.261035",
+      "created_at": "2026-11-24T05:00:13.563319",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -109295,7 +109295,7 @@
             114
           ]
         },
-        "generated_at": "2026-11-24T04:30:13"
+        "generated_at": "2026-11-24T05:00:13"
       },
       "matches": {
         "id": 291,
@@ -109344,7 +109344,7 @@
       "predicted_total": 232.54,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T04:30:13.326192",
+      "created_at": "2026-11-24T05:00:13.634439",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -109668,7 +109668,7 @@
             78
           ]
         },
-        "generated_at": "2026-11-24T04:30:13"
+        "generated_at": "2026-11-24T05:00:13"
       },
       "matches": {
         "id": 290,
@@ -109717,7 +109717,7 @@
       "predicted_total": 214.42,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T04:30:13.386908",
+      "created_at": "2026-11-24T05:00:13.697498",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -110041,7 +110041,7 @@
             20
           ]
         },
-        "generated_at": "2026-11-24T04:30:13"
+        "generated_at": "2026-11-24T05:00:13"
       },
       "matches": {
         "id": 285,
