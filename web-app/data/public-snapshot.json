@@ -10963,8 +10963,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -2.5,
-      "vegas_total": 240.5,
+      "vegas_spread": -1.5,
+      "vegas_total": 238.5,
       "home_team": {
         "code": "PHI",
         "full_name": "Philadelphia 76ers",
@@ -11013,7 +11013,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -4.5,
+      "vegas_spread": -3.5,
       "vegas_total": 220.5,
       "home_team": {
         "code": "NY",
@@ -106862,7 +106862,7 @@
       "predicted_total": 232.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T22:00:14.284153",
+      "created_at": "2026-11-24T22:30:14.065588",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -107186,7 +107186,7 @@
             9
           ]
         },
-        "generated_at": "2026-11-24T22:00:14"
+        "generated_at": "2026-11-24T22:30:14"
       },
       "matches": {
         "id": 284,
@@ -107235,7 +107235,7 @@
       "predicted_total": 221.02,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T22:00:14.355883",
+      "created_at": "2026-11-24T22:30:14.130278",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-27",
@@ -107559,7 +107559,7 @@
             111
           ]
         },
-        "generated_at": "2026-11-24T22:00:14"
+        "generated_at": "2026-11-24T22:30:14"
       },
       "matches": {
         "id": 289,
@@ -107608,7 +107608,7 @@
       "predicted_total": 233.78,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T22:00:14.422547",
+      "created_at": "2026-11-24T22:30:14.189019",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -107932,7 +107932,7 @@
             20
           ]
         },
-        "generated_at": "2026-11-24T22:00:14"
+        "generated_at": "2026-11-24T22:30:14"
       },
       "matches": {
         "id": 287,
@@ -107981,7 +107981,7 @@
       "predicted_total": 218.38,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T22:00:14.493705",
+      "created_at": "2026-11-24T22:30:14.248818",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -108305,7 +108305,7 @@
             62
           ]
         },
-        "generated_at": "2026-11-24T22:00:14"
+        "generated_at": "2026-11-24T22:30:14"
       },
       "matches": {
         "id": 288,
@@ -108354,7 +108354,7 @@
       "predicted_total": 222.59,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T22:00:14.561675",
+      "created_at": "2026-11-24T22:30:14.307941",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -108678,7 +108678,7 @@
             39
           ]
         },
-        "generated_at": "2026-11-24T22:00:14"
+        "generated_at": "2026-11-24T22:30:14"
       },
       "matches": {
         "id": 286,
@@ -108714,20 +108714,20 @@
       "id": 267,
       "match_id": 283,
       "recommended_team_id": 15,
-      "confidence_score": 64.0,
-      "spread_logic": "AI projects MIA to win by 1.2 pts",
-      "spread_logic_zh": "AI 預測 MIA 贏 1.2 分",
-      "line_info": "-2.5",
+      "confidence_score": 61.0,
+      "spread_logic": "AI projects MIA to win by 1.4 pts",
+      "spread_logic_zh": "AI 預測 MIA 贏 1.4 分",
+      "line_info": "-1.5",
       "ou_pick": "UNDER",
-      "ou_line": 240.5,
-      "ou_confidence": 72.0,
-      "analysis_content": "## The Call\nWe land on MIA on the road.\nThe market has MIA at +2.5, which implies a 2.5-point loss and a 43% win probability. Our projection is +1.2 for MIA (54% to win), a gap of 3.7 points in favour of the cover.\nConverted with measured from 244 games this season, a 3.7-point edge is a 61% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was +2.2; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 64%.\n## Season So Far\nMIA is 11-7 (7-3 home, 4-4 away), scoring 121.7 (1st of 30) and allowing 120.8 (27th of 30) for a +0.8 margin (15th of 30), currently on a W7 run. Last out: W 128-110 vs HOU, W 137-130 vs MIL, W 123-113 vs OKC.\nPHI is 14-5, scoring 115.5 (12th of 30) and allowing 114.1 (17th of 30) for a +1.5 margin (13th of 30), on a L1 run. Last out: W 121-116 at ORL, W 132-129 vs MIL, L 111-128 vs POR.\nAgainst the number: MIA 6-9 against the spread (40%); 9 over / 6 under; PHI 8-9 against the spread (47%); 10 over / 7 under.\nHead to head, MIA is 2-1 in the last 3 meetings with an average margin of +4.3 (most recent 2026-03-30: W 119-109).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-04-14) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — MIA gets 48.5 from the bench to 19.7 (league avg 35.3; MIA 2nd vs PHI 30th of 30).\n• **Points** — MIA scores 126.4 a night to 104.3 (league avg 111.1; MIA 1st vs PHI 27th of 30).\n• **Assists** — MIA records 31.1 assists to 21.4 (league avg 25.0; MIA 3rd vs PHI 28th of 30).\n• **Paint points** — MIA produces 57.0 paint points to 38.6 (league avg 47.4; MIA 4th vs PHI 28th of 30).\nWhere PHI pushes back:\n• **Points allowed** — PHI holds the better number, 112.0 to MIA's 128.6 (league avg 115.8; MIA 27th vs PHI 12th of 30).\nConsistency check: MIA's game margins over this stretch vary by ±18.5 points (one standard deviation) against ±19.6 for PHI; the steadier side is MIA.\n## Schedule & Rest\nMIA comes in with 2 days of rest; PHI has one day off.\nThe rest edge belongs to MIA.\nPHI has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 240.5\nTempo check: this season the two offences combine for 237.2 points and the two defences concede 234.9; on record they attempt 74 threes between them (league pair average 73) with 30 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 233.1 total points against a line of 240.5, 7.4 points below the number. With totals spreading ±18.6 points around the line, that is a 65% probability of the under; published confidence is 72%.\n## Model Track Record\nThis season, published spread picks are 121-132 (48%); at 64%+ confidence they are 64-84; totals are 129-129 (50%).\n## What Could Go Wrong\nHonest caveats: PHI's edge in Points allowed (112.0 vs 128.6) is the cleanest path to an upset of this read; MIA's results swing ±18.5 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n本場站 客場的 MIA。\n市場開 MIA +2.5，等於預期輸 2.5 分、勝率 43%；模型估 MIA +1.2（勝率 54%），與盤口差 3.7 分，有利於過盤。\n以本季 244 場實際結果量得換算，3.7 分的優勢等於 61% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +2.2；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（64%）。\n## 本季至今\nMIA 戰績 11-7（主 7-3、客 4-4），場均得 121.7（30 隊中第 1）、失 120.8（30 隊中第 27），淨勝 +0.8（30 隊中第 15），目前 W7。近況：主場勝 HOU 128-110、主場勝 MIL 137-130、主場勝 OKC 123-113。\nPHI 戰績 14-5，場均得 115.5（30 隊中第 12）、失 114.1（30 隊中第 17），淨勝 +1.5（30 隊中第 13），目前 L1。近況：客場勝 ORL 121-116、主場勝 MIL 132-129、主場負 POR 111-128。\n對盤口表現：MIA 讓分 6 勝 9 負 (40%)；大分 9 次、小分 6 次；PHI 讓分 8 勝 9 負 (47%)；大分 10 次、小分 7 次。\n近 3 次交手 MIA 2 勝 1 負，平均分差 +4.3（最近一次 2026-03-30：勝 119-109）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-14）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：MIA 板凳貢獻 48.5 分，對手 19.7（聯盟平均 35.3；MIA 第 2、PHI 第 30／30 隊）。\n• **得分**：MIA 場均得 126.4 分，對手 104.3（聯盟平均 111.1；MIA 第 1、PHI 第 27／30 隊）。\n• **助攻**：MIA 助攻 31.1 次，對手 21.4（聯盟平均 25.0；MIA 第 3、PHI 第 28／30 隊）。\n• **禁區得分**：MIA 禁區拿 57.0 分，對手 38.6（聯盟平均 47.4；MIA 第 4、PHI 第 28／30 隊）。\nPHI 能反擊的地方：\n• **失分**：PHI 這項較好，112.0 對 MIA 的 128.6（聯盟平均 115.8；MIA 第 27、PHI 第 12／30 隊）。\n穩定度：這段期間 MIA 單場分差的標準差是 ±18.5 分，PHI 是 ±19.6 分；MIA 的表現較穩。\n## 賽程與休息\nMIA 休了 2 天；PHI 休一天。\n體能上 MIA 較佔便宜。\nPHI 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 240.5\n節奏觀察：本季兩隊進攻合計 237.2 分，防守合計失 234.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 30 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 233.1，盤口 240.5，低於盤口 7.4 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 65%；公布信心 72%。\n## 模型本季戰績\n本季至今，已發佈讓分 121 勝 132 負（48%）；信心 64% 以上的場次 64 勝 84 負；大小分 129 勝 129 負（50%）。\n## 風險\n坦白說：PHI 在失分上的優勢（112.0 對 128.6）是翻掉這份判讀最直接的路徑；MIA 單場分差起伏 ±18.5 分，單場優勢並不牢靠。",
-      "predicted_margin": 1.23,
+      "ou_line": 238.5,
+      "ou_confidence": 66.0,
+      "analysis_content": "## The Call\nWe land on MIA on the road.\nThe market has MIA at +1.5, which implies a 1.5-point loss and a 46% win probability. Our projection is +1.4 for MIA (54% to win), a gap of 2.9 points in favour of the cover.\nConverted with measured from 244 games this season, a 2.9-point edge is a 58% chance of covering; break-even at standard -110 pricing is 52.4%.\nConfidence is modest at 61%.\n## Season So Far\nMIA is 11-7 (7-3 home, 4-4 away), scoring 121.7 (1st of 30) and allowing 120.8 (27th of 30) for a +0.8 margin (15th of 30), currently on a W7 run. Last out: W 128-110 vs HOU, W 137-130 vs MIL, W 123-113 vs OKC.\nPHI is 14-5, scoring 115.5 (12th of 30) and allowing 114.1 (17th of 30) for a +1.5 margin (13th of 30), on a L1 run. Last out: W 121-116 at ORL, W 132-129 vs MIL, L 111-128 vs POR.\nAgainst the number: MIA 6-9 against the spread (40%); 9 over / 6 under; PHI 8-9 against the spread (47%); 10 over / 7 under.\nHead to head, MIA is 2-1 in the last 3 meetings with an average margin of +4.3 (most recent 2026-03-30: W 119-109).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-04-14) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Bench points** — MIA gets 48.5 from the bench to 19.7 (league avg 35.3; MIA 2nd vs PHI 30th of 30).\n• **Points** — MIA scores 126.4 a night to 104.3 (league avg 111.1; MIA 1st vs PHI 27th of 30).\n• **Assists** — MIA records 31.1 assists to 21.4 (league avg 25.0; MIA 3rd vs PHI 28th of 30).\n• **Paint points** — MIA produces 57.0 paint points to 38.6 (league avg 47.4; MIA 4th vs PHI 28th of 30).\nWhere PHI pushes back:\n• **Points allowed** — PHI holds the better number, 112.0 to MIA's 128.6 (league avg 115.8; MIA 27th vs PHI 12th of 30).\nConsistency check: MIA's game margins over this stretch vary by ±18.5 points (one standard deviation) against ±19.6 for PHI; the steadier side is MIA.\n## Schedule & Rest\nMIA comes in with 2 days of rest; PHI has one day off.\nThe rest edge belongs to MIA.\nPHI has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 238.5\nTempo check: this season the two offences combine for 237.2 points and the two defences concede 234.9; on record they attempt 74 threes between them (league pair average 73) with 30 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 233.1 total points against a line of 238.5, 5.4 points below the number. With totals spreading ±18.6 points around the line, that is a 61% probability of the under; published confidence is 66%.\n## Model Track Record\nThis season, published spread picks are 121-132 (48%); at 61%+ confidence they are 81-92; totals are 129-129 (50%).\n## What Could Go Wrong\nHonest caveats: PHI's edge in Points allowed (112.0 vs 128.6) is the cleanest path to an upset of this read; MIA's results swing ±18.5 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n本場站 客場的 MIA。\n市場開 MIA +1.5，等於預期輸 1.5 分、勝率 46%；模型估 MIA +1.4（勝率 54%），與盤口差 2.9 分，有利於過盤。\n以本季 244 場實際結果量得換算，2.9 分的優勢等於 58% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n信心偏低（61%）。\n## 本季至今\nMIA 戰績 11-7（主 7-3、客 4-4），場均得 121.7（30 隊中第 1）、失 120.8（30 隊中第 27），淨勝 +0.8（30 隊中第 15），目前 W7。近況：主場勝 HOU 128-110、主場勝 MIL 137-130、主場勝 OKC 123-113。\nPHI 戰績 14-5，場均得 115.5（30 隊中第 12）、失 114.1（30 隊中第 17），淨勝 +1.5（30 隊中第 13），目前 L1。近況：客場勝 ORL 121-116、主場勝 MIL 132-129、主場負 POR 111-128。\n對盤口表現：MIA 讓分 6 勝 9 負 (40%)；大分 9 次、小分 6 次；PHI 讓分 8 勝 9 負 (47%)；大分 10 次、小分 7 次。\n近 3 次交手 MIA 2 勝 1 負，平均分差 +4.3（最近一次 2026-03-30：勝 119-109）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-04-14）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **板凳得分**：MIA 板凳貢獻 48.5 分，對手 19.7（聯盟平均 35.3；MIA 第 2、PHI 第 30／30 隊）。\n• **得分**：MIA 場均得 126.4 分，對手 104.3（聯盟平均 111.1；MIA 第 1、PHI 第 27／30 隊）。\n• **助攻**：MIA 助攻 31.1 次，對手 21.4（聯盟平均 25.0；MIA 第 3、PHI 第 28／30 隊）。\n• **禁區得分**：MIA 禁區拿 57.0 分，對手 38.6（聯盟平均 47.4；MIA 第 4、PHI 第 28／30 隊）。\nPHI 能反擊的地方：\n• **失分**：PHI 這項較好，112.0 對 MIA 的 128.6（聯盟平均 115.8；MIA 第 27、PHI 第 12／30 隊）。\n穩定度：這段期間 MIA 單場分差的標準差是 ±18.5 分，PHI 是 ±19.6 分；MIA 的表現較穩。\n## 賽程與休息\nMIA 休了 2 天；PHI 休一天。\n體能上 MIA 較佔便宜。\nPHI 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 238.5\n節奏觀察：本季兩隊進攻合計 237.2 分，防守合計失 234.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 30 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 233.1，盤口 238.5，低於盤口 5.4 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 61%；公布信心 66%。\n## 模型本季戰績\n本季至今，已發佈讓分 121 勝 132 負（48%）；信心 61% 以上的場次 81 勝 92 負；大小分 129 勝 129 負（50%）。\n## 風險\n坦白說：PHI 在失分上的優勢（112.0 對 128.6）是翻掉這份判讀最直接的路徑；MIA 單場分差起伏 ±18.5 分，單場優勢並不牢靠。",
+      "predicted_margin": 1.43,
       "predicted_total": 233.09,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T22:00:14.632007",
+      "created_at": "2026-11-24T22:30:14.369075",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-14",
@@ -109008,20 +109008,20 @@
           }
         ],
         "projection": {
-          "model_margin": 1.2,
+          "model_margin": 1.4,
           "raw_margin": 2.2,
-          "market_margin": -2.5,
-          "edge": 3.7,
+          "market_margin": -1.5,
+          "edge": 2.9,
           "pred_total": 233.1,
-          "total_line": 240.5,
-          "total_edge": -7.4,
+          "total_line": 238.5,
+          "total_edge": -5.4,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.607,
-          "win_model": 0.536,
-          "win_market": 0.428,
-          "total": 0.655,
+          "cover": 0.584,
+          "win_model": 0.541,
+          "win_market": 0.457,
+          "total": 0.614,
           "sigma_spread": 13.7,
           "sigma_total": 18.6,
           "sigma_measured": true
@@ -109047,11 +109047,11 @@
             129
           ],
           "spread_at_conf": [
-            64,
-            84
+            81,
+            92
           ]
         },
-        "generated_at": "2026-11-24T22:00:14"
+        "generated_at": "2026-11-24T22:30:14"
       },
       "matches": {
         "id": 283,
@@ -109063,8 +109063,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -2.5,
-        "vegas_total": 240.5,
+        "vegas_spread": -1.5,
+        "vegas_total": 238.5,
         "home_team": {
           "code": "PHI",
           "full_name": "Philadelphia 76ers",
@@ -109100,7 +109100,7 @@
       "predicted_total": 218.14,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T22:00:14.702649",
+      "created_at": "2026-11-24T22:30:14.429658",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -109424,7 +109424,7 @@
             114
           ]
         },
-        "generated_at": "2026-11-24T22:00:14"
+        "generated_at": "2026-11-24T22:30:14"
       },
       "matches": {
         "id": 291,
@@ -109473,7 +109473,7 @@
       "predicted_total": 232.54,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T22:00:14.779671",
+      "created_at": "2026-11-24T22:30:14.494704",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -109797,7 +109797,7 @@
             78
           ]
         },
-        "generated_at": "2026-11-24T22:00:14"
+        "generated_at": "2026-11-24T22:30:14"
       },
       "matches": {
         "id": 290,
@@ -109833,20 +109833,20 @@
       "id": 270,
       "match_id": 285,
       "recommended_team_id": 28,
-      "confidence_score": 66.0,
-      "spread_logic": "AI projects NY to win by 8.6 pts",
-      "spread_logic_zh": "AI 預測 NY 贏 8.6 分",
-      "line_info": "-4.5",
+      "confidence_score": 69.0,
+      "spread_logic": "AI projects NY to win by 8.4 pts",
+      "spread_logic_zh": "AI 預測 NY 贏 8.4 分",
+      "line_info": "-3.5",
       "ou_pick": "UNDER",
       "ou_line": 220.5,
       "ou_confidence": 68.0,
-      "analysis_content": "## The Call\nThe number says NY, at home.\nThe market has NY at -4.5, which implies a 4.5-point win and a 63% win probability. Our projection is +8.6 for NY (73% to win), a gap of 4.1 points in favour of the cover.\nConverted with measured from 244 games this season, a 4.1-point edge is a 62% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was +9.6; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 66%.\n## Season So Far\nNY is 12-6 (7-3 home, 5-3 away), scoring 109.7 (27th of 30) and allowing 104.2 (2nd of 30) for a +5.5 margin (9th of 30), currently on a W5 run. Last out: W 102-99 at MIN, W 97-96 vs POR, W 113-106 vs IND.\nCLE is 9-9, scoring 118.2 (5th of 30) and allowing 116.8 (23rd of 30) for a +1.4 margin (14th of 30), on a L1 run. Last out: L 121-124 vs MEM, W 128-119 vs IND, L 108-122 at CHI.\nAgainst the number: NY 9-7 against the spread (56%); 5 over / 11 under; CLE 7-11 against the spread (39%); 10 over / 8 under.\nHead to head, NY is 3-0 in the last 3 meetings with an average margin of +22.0 (most recent 2026-05-25: W 130-93).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-06-13) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — NY outscores opponents by +11.9 per game against -5.7 (league avg -4.7; NY 1st vs CLE 16th of 30).\n• **Fast-break points** — NY runs for 16.8 fast-break points to 8.0 (league avg 14.2; NY 7th vs CLE 30th of 30).\n• **3P%** — NY hits 39.2% from three against 31.5% (league avg 34.9%; NY 3rd vs CLE 27th of 30).\n• **Rebounds** — NY pulls 45.7 rebounds to 38.3 (league avg 41.9; NY 3rd vs CLE 26th of 30).\nConsistency check: NY's game margins over this stretch vary by ±12.4 points (one standard deviation) against ±18.0 for CLE; the steadier side is NY.\n## Schedule & Rest\nNY comes in with 2 days of rest; CLE has one day off.\nThe rest edge belongs to NY.\nNY has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 220.5\nTempo check: this season the two offences combine for 227.9 points and the two defences concede 220.9; on record they attempt 74 threes between them (league pair average 73) with 25 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 214.4 total points against a line of 220.5, 6.1 points below the number. With totals spreading ±18.6 points around the line, that is a 63% probability of the under; published confidence is 68%.\n## Model Track Record\nThis season, published spread picks are 121-132 (48%); at 66%+ confidence they are 61-78; totals are 129-129 (50%).\n## What Could Go Wrong\nHonest caveats: no single factor stands out; the main risk is variance in a 48-minute sample.",
-      "analysis_content_zh": "## 結論\n數字指向 NY（主場）。\n市場開 NY -4.5，等於預期贏 4.5 分、勝率 63%；模型估 NY +8.6（勝率 73%），與盤口差 4.1 分，有利於過盤。\n以本季 244 場實際結果量得換算，4.1 分的優勢等於 62% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +9.6；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（66%）。\n## 本季至今\nNY 戰績 12-6（主 7-3、客 5-3），場均得 109.7（30 隊中第 27）、失 104.2（30 隊中第 2），淨勝 +5.5（30 隊中第 9），目前 W5。近況：客場勝 MIN 102-99、主場勝 POR 97-96、主場勝 IND 113-106。\nCLE 戰績 9-9，場均得 118.2（30 隊中第 5）、失 116.8（30 隊中第 23），淨勝 +1.4（30 隊中第 14），目前 L1。近況：主場負 MEM 121-124、主場勝 IND 128-119、客場負 CHI 108-122。\n對盤口表現：NY 讓分 9 勝 7 負 (56%)；大分 5 次、小分 11 次；CLE 讓分 7 勝 11 負 (39%)；大分 10 次、小分 8 次。\n近 3 次交手 NY 3 勝 0 負，平均分差 +22.0（最近一次 2026-05-25：勝 130-93）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-06-13），NY 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -5.7（聯盟平均 -4.7；NY 第 1、CLE 第 16／30 隊）。\n• **快攻得分**：NY 快攻 16.8 分，對手 8.0（聯盟平均 14.2；NY 第 7、CLE 第 30／30 隊）。\n• **三分命中率**：NY 三分命中 39.2%，對手 31.5%（聯盟平均 34.9%；NY 第 3、CLE 第 27／30 隊）。\n• **籃板**：NY 場均 45.7 籃板，對手 38.3（聯盟平均 41.9；NY 第 3、CLE 第 26／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，CLE 是 ±18.0 分；NY 的表現較穩。\n## 賽程與休息\nNY 休了 2 天；CLE 休一天。\n體能上 NY 較佔便宜。\nNY 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 220.5\n節奏觀察：本季兩隊進攻合計 227.9 分，防守合計失 220.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 214.4，盤口 220.5，低於盤口 6.1 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 63%；公布信心 68%。\n## 模型本季戰績\n本季至今，已發佈讓分 121 勝 132 負（48%）；信心 66% 以上的場次 61 勝 78 負；大小分 129 勝 129 負（50%）。\n## 風險\n坦白說：沒有單一明顯風險，主要變數是單場 48 分鐘的隨機性。",
-      "predicted_margin": 8.61,
+      "analysis_content": "## The Call\nThe number says NY, at home.\nThe market has NY at -3.5, which implies a 3.5-point win and a 60% win probability. Our projection is +8.4 for NY (73% to win), a gap of 4.9 points in favour of the cover.\nConverted with measured from 244 games this season, a 4.9-point edge is a 64% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was +9.6; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 69%.\n## Season So Far\nNY is 12-6 (7-3 home, 5-3 away), scoring 109.7 (27th of 30) and allowing 104.2 (2nd of 30) for a +5.5 margin (9th of 30), currently on a W5 run. Last out: W 102-99 at MIN, W 97-96 vs POR, W 113-106 vs IND.\nCLE is 9-9, scoring 118.2 (5th of 30) and allowing 116.8 (23rd of 30) for a +1.4 margin (14th of 30), on a L1 run. Last out: L 121-124 vs MEM, W 128-119 vs IND, L 108-122 at CHI.\nAgainst the number: NY 9-7 against the spread (56%); 5 over / 11 under; CLE 7-11 against the spread (39%); 10 over / 8 under.\nHead to head, NY is 3-0 in the last 3 meetings with an average margin of +22.0 (most recent 2026-05-25: W 130-93).\n## Statistical Profile\nThe 10-game profile (box scores on record through 2026-06-13) explains most of the projection. League averages and ranks across 30 teams are given for scale.\n• **Net margin** — NY outscores opponents by +11.9 per game against -5.7 (league avg -4.7; NY 1st vs CLE 16th of 30).\n• **Fast-break points** — NY runs for 16.8 fast-break points to 8.0 (league avg 14.2; NY 7th vs CLE 30th of 30).\n• **3P%** — NY hits 39.2% from three against 31.5% (league avg 34.9%; NY 3rd vs CLE 27th of 30).\n• **Rebounds** — NY pulls 45.7 rebounds to 38.3 (league avg 41.9; NY 3rd vs CLE 26th of 30).\nConsistency check: NY's game margins over this stretch vary by ±12.4 points (one standard deviation) against ±18.0 for CLE; the steadier side is NY.\n## Schedule & Rest\nNY comes in with 2 days of rest; CLE has one day off.\nThe rest edge belongs to NY.\nNY has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 220.5\nTempo check: this season the two offences combine for 227.9 points and the two defences concede 220.9; on record they attempt 74 threes between them (league pair average 73) with 25 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 214.4 total points against a line of 220.5, 6.1 points below the number. With totals spreading ±18.6 points around the line, that is a 63% probability of the under; published confidence is 68%.\n## Model Track Record\nThis season, published spread picks are 121-132 (48%); at 69%+ confidence they are 51-68; totals are 129-129 (50%).\n## What Could Go Wrong\nHonest caveats: no single factor stands out; the main risk is variance in a 48-minute sample.",
+      "analysis_content_zh": "## 結論\n數字指向 NY（主場）。\n市場開 NY -3.5，等於預期贏 3.5 分、勝率 60%；模型估 NY +8.4（勝率 73%），與盤口差 4.9 分，有利於過盤。\n以本季 244 場實際結果量得換算，4.9 分的優勢等於 64% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +9.6；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（69%）。\n## 本季至今\nNY 戰績 12-6（主 7-3、客 5-3），場均得 109.7（30 隊中第 27）、失 104.2（30 隊中第 2），淨勝 +5.5（30 隊中第 9），目前 W5。近況：客場勝 MIN 102-99、主場勝 POR 97-96、主場勝 IND 113-106。\nCLE 戰績 9-9，場均得 118.2（30 隊中第 5）、失 116.8（30 隊中第 23），淨勝 +1.4（30 隊中第 14），目前 L1。近況：主場負 MEM 121-124、主場勝 IND 128-119、客場負 CHI 108-122。\n對盤口表現：NY 讓分 9 勝 7 負 (56%)；大分 5 次、小分 11 次；CLE 讓分 7 勝 11 負 (39%)；大分 10 次、小分 8 次。\n近 3 次交手 NY 3 勝 0 負，平均分差 +22.0（最近一次 2026-05-25：勝 130-93）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-06-13），NY 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：NY 場均淨勝 +11.9 分，對手 -5.7（聯盟平均 -4.7；NY 第 1、CLE 第 16／30 隊）。\n• **快攻得分**：NY 快攻 16.8 分，對手 8.0（聯盟平均 14.2；NY 第 7、CLE 第 30／30 隊）。\n• **三分命中率**：NY 三分命中 39.2%，對手 31.5%（聯盟平均 34.9%；NY 第 3、CLE 第 27／30 隊）。\n• **籃板**：NY 場均 45.7 籃板，對手 38.3（聯盟平均 41.9；NY 第 3、CLE 第 26／30 隊）。\n穩定度：這段期間 NY 單場分差的標準差是 ±12.4 分，CLE 是 ±18.0 分；NY 的表現較穩。\n## 賽程與休息\nNY 休了 2 天；CLE 休一天。\n體能上 NY 較佔便宜。\nNY 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 220.5\n節奏觀察：本季兩隊進攻合計 227.9 分，防守合計失 220.9 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 25 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 214.4，盤口 220.5，低於盤口 6.1 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 63%；公布信心 68%。\n## 模型本季戰績\n本季至今，已發佈讓分 121 勝 132 負（48%）；信心 69% 以上的場次 51 勝 68 負；大小分 129 勝 129 負（50%）。\n## 風險\n坦白說：沒有單一明顯風險，主要變數是單場 48 分鐘的隨機性。",
+      "predicted_margin": 8.41,
       "predicted_total": 214.42,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T22:00:14.855250",
+      "created_at": "2026-11-24T22:30:14.563619",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -110127,19 +110127,19 @@
           }
         ],
         "projection": {
-          "model_margin": 8.6,
+          "model_margin": 8.4,
           "raw_margin": 9.6,
-          "market_margin": 4.5,
-          "edge": 4.1,
+          "market_margin": 3.5,
+          "edge": 4.9,
           "pred_total": 214.4,
           "total_line": 220.5,
           "total_edge": -6.1,
           "total_is_default": false
         },
         "probability": {
-          "cover": 0.618,
-          "win_model": 0.735,
-          "win_market": 0.628,
+          "cover": 0.64,
+          "win_model": 0.73,
+          "win_market": 0.601,
           "total": 0.628,
           "sigma_spread": 13.7,
           "sigma_total": 18.6,
@@ -110166,11 +110166,11 @@
             129
           ],
           "spread_at_conf": [
-            61,
-            78
+            51,
+            68
           ]
         },
-        "generated_at": "2026-11-24T22:00:14"
+        "generated_at": "2026-11-24T22:30:14"
       },
       "matches": {
         "id": 285,
@@ -110182,7 +110182,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -4.5,
+        "vegas_spread": -3.5,
         "vegas_total": 220.5,
         "home_team": {
           "code": "NY",
