@@ -10889,7 +10889,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 2.5,
-      "vegas_total": 214.5,
+      "vegas_total": 213.5,
       "home_team": {
         "code": "ORL",
         "full_name": "Orlando Magic",
@@ -10938,7 +10938,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -7.5,
+      "vegas_spread": -8.5,
       "vegas_total": 232.5,
       "home_team": {
         "code": "DEN",
@@ -11113,8 +11113,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": null,
-      "vegas_total": null,
+      "vegas_spread": -10.5,
+      "vegas_total": 223.5,
       "home_team": {
         "code": "HOU",
         "full_name": "Houston Rockets",
@@ -105954,7 +105954,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -7.5,
+        "vegas_spread": -8.5,
         "vegas_total": 232.5,
         "home_team": {
           "code": "DEN",
@@ -106328,7 +106328,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 2.5,
-        "vegas_total": 214.5,
+        "vegas_total": 213.5,
         "home_team": {
           "code": "ORL",
           "full_name": "Orlando Magic",
@@ -106737,7 +106737,7 @@
       "predicted_total": 232.49,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T09:30:13.332417",
+      "created_at": "2026-11-24T10:00:13.527779",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -107061,7 +107061,7 @@
             9
           ]
         },
-        "generated_at": "2026-11-24T09:30:13"
+        "generated_at": "2026-11-24T10:00:13"
       },
       "matches": {
         "id": 284,
@@ -107096,24 +107096,24 @@
     {
       "id": 263,
       "match_id": 289,
-      "recommended_team_id": 10,
-      "confidence_score": 74.0,
-      "spread_logic": "AI projects HOU to win by 6.1 pts",
-      "spread_logic_zh": "AI 預測 HOU 贏 6.1 分",
-      "line_info": "0.0",
+      "recommended_team_id": 21,
+      "confidence_score": 64.0,
+      "spread_logic": "AI projects PHX to lose by 7.0 pts",
+      "spread_logic_zh": "AI 預測 PHX 輸 7.0 分",
+      "line_info": "-10.5",
       "ou_pick": "UNDER",
-      "ou_line": 225.0,
-      "ou_confidence": 61.0,
-      "analysis_content": "## The Call\nWe land on HOU at home.\nNo spread was posted when this ran, so this is a straight call on the winner: the model has HOU by 6.1, a 67% win probability.\nConfidence is moderate at 74%.\n## Season So Far\nHOU is 14-5 (9-1 home, 5-4 away), scoring 118.0 (7th of 30) and allowing 109.1 (5th of 30) for a +8.9 margin (4th of 30), currently on a W1 run. Last out: W 119-104 at IND, L 124-133 at DEN, W 116-104 vs LAC.\nPHX is 9-9, scoring 113.9 (14th of 30) and allowing 115.7 (21st of 30) for a -1.8 margin (19th of 30), on a W4 run. Last out: W 128-107 at SAC, W 111-101 at UTAH, W 123-119 at NO.\nAgainst the number: HOU 10-7 against the spread (59%); 10 over / 7 under; PHX 7-8 against the spread (47%); 9 over / 6 under.\nHead to head, HOU is 3-0 in the last 3 meetings with an average margin of +12.0 (most recent 2026-04-07: W 119-105).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-05-01), HOU's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **Paint points** — HOU produces 53.4 paint points to 39.4 (league avg 47.4; HOU 6th vs PHX 27th of 30).\n• **Net margin** — HOU outscores opponents by +3.7 per game against -6.3 (league avg -4.7; HOU 3rd vs PHX 17th of 30).\n• **Off. rebounds** — HOU grabs 15.3 offensive boards to 11.9 (league avg 11.1; HOU 1st vs PHX 9th of 30).\n• **Points allowed** — HOU gives up 105.1 to 113.1 (league avg 115.8; HOU 5th vs PHX 14th of 30).\nWhere PHX pushes back:\n• **3P%** — PHX holds the better number, 33.8% to HOU's 29.9% (league avg 34.9%; HOU 29th vs PHX 20th of 30).\n• **Bench points** — PHX holds the better number, 25.6 to HOU's 21.3 (league avg 35.3; HOU 29th vs PHX 25th of 30).\n• **FG%** — PHX holds the better number, 45.3% to HOU's 44.3% (league avg 45.8%; HOU 25th vs PHX 18th of 30).\nConsistency check: HOU's game margins over this stretch vary by ±14.5 points (one standard deviation) against ±18.7 for PHX; the steadier side is HOU.\n## Schedule & Rest\nHOU has one day off; PHX has one day off.\nHOU has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161).\n## Total: UNDER 225.0\nNo posted total was available at run time, so the 225.0 reference is a placeholder and the lean below should be treated as directional only.\nTempo check: this season the two offences combine for 231.9 points and the two defences concede 224.8; on record they attempt 71 threes between them (league pair average 73) with 24 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 221.0 total points against a line of 225.0, 4.0 points below the number. With totals spreading ±18.6 points around the line, that is a 58% probability of the under; published confidence is 61%.\n## Model Track Record\nThis season, published spread picks are 121-132 (48%); at 74%+ confidence they are 41-55; totals are 129-129 (50%).\n## What Could Go Wrong\nHonest caveats: PHX's edge in 3P% (33.8% vs 29.9%) is the cleanest path to an upset of this read; HOU's results swing ±14.5 points game to game, so any single-game edge is fragile.",
-      "analysis_content_zh": "## 結論\n本場站 主場的 HOU。\n執行時還沒有讓分盤口，等於直接選勝方：模型估 HOU 贏 6.1 分，勝率 67%。\n信心中等（74%）。\n## 本季至今\nHOU 戰績 14-5（主 9-1、客 5-4），場均得 118.0（30 隊中第 7）、失 109.1（30 隊中第 5），淨勝 +8.9（30 隊中第 4），目前 W1。近況：客場勝 IND 119-104、客場負 DEN 124-133、主場勝 LAC 116-104。\nPHX 戰績 9-9，場均得 113.9（30 隊中第 14）、失 115.7（30 隊中第 21），淨勝 -1.8（30 隊中第 19），目前 W4。近況：客場勝 SAC 128-107、客場勝 UTAH 111-101、客場勝 NO 123-119。\n對盤口表現：HOU 讓分 10 勝 7 負 (59%)；大分 10 次、小分 7 次；PHX 讓分 7 勝 8 負 (47%)；大分 9 次、小分 6 次。\n近 3 次交手 HOU 3 勝 0 負，平均分差 +12.0（最近一次 2026-04-07：勝 119-105）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-01）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **禁區得分**：HOU 禁區拿 53.4 分，對手 39.4（聯盟平均 47.4；HOU 第 6、PHX 第 27／30 隊）。\n• **淨勝分**：HOU 場均淨勝 +3.7 分，對手 -6.3（聯盟平均 -4.7；HOU 第 3、PHX 第 17／30 隊）。\n• **進攻籃板**：HOU 進攻籃板 15.3 個，對手 11.9（聯盟平均 11.1；HOU 第 1、PHX 第 9／30 隊）。\n• **失分**：HOU 場均失 105.1 分，對手 113.1（聯盟平均 115.8；HOU 第 5、PHX 第 14／30 隊）。\nPHX 能反擊的地方：\n• **三分命中率**：PHX 這項較好，33.8% 對 HOU 的 29.9%（聯盟平均 34.9%；HOU 第 29、PHX 第 20／30 隊）。\n• **板凳得分**：PHX 這項較好，25.6 對 HOU 的 21.3（聯盟平均 35.3；HOU 第 29、PHX 第 25／30 隊）。\n• **命中率**：PHX 這項較好，45.3% 對 HOU 的 44.3%（聯盟平均 45.8%；HOU 第 25、PHX 第 18／30 隊）。\n穩定度：這段期間 HOU 單場分差的標準差是 ±14.5 分，PHX 是 ±18.7 分；HOU 的表現較穩。\n## 賽程與休息\nHOU 休一天；PHX 休一天。\nHOU 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）。\n## 大小分：小分 225.0\n執行時沒有公布的大小分盤口，225.0 只是參考值，下面的判斷僅供方向參考。\n節奏觀察：本季兩隊進攻合計 231.9 分，防守合計失 224.8 分；近況合計每場出手 71 記三分（聯盟兩隊平均 73）、快攻 24 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 221.0，盤口 225.0，低於盤口 4.0 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 58%；公布信心 61%。\n## 模型本季戰績\n本季至今，已發佈讓分 121 勝 132 負（48%）；信心 74% 以上的場次 41 勝 55 負；大小分 129 勝 129 負（50%）。\n## 風險\n坦白說：PHX 在三分命中率上的優勢（33.8% 對 29.9%）是翻掉這份判讀最直接的路徑；HOU 單場分差起伏 ±14.5 分，單場優勢並不牢靠。",
-      "predicted_margin": 6.09,
+      "ou_line": 223.5,
+      "ou_confidence": 57.0,
+      "analysis_content": "## The Call\nWe land on PHX on the road.\nThe market has PHX at +10.5, which implies a 10.5-point loss and a 22% win probability. Our projection is -7.0 for PHX (31% to win), a gap of 3.5 points in favour of the cover.\nConverted with measured from 244 games this season, a 3.5-point edge is a 60% chance of covering; break-even at standard -110 pricing is 52.4%.\nBefore blending toward the market the raw model number was -6.1; we pull it 20% toward the line to respect price discovery.\nConfidence is moderate at 64%.\n## Season So Far\nPHX is 9-9 (5-5 home, 4-4 away), scoring 113.9 (14th of 30) and allowing 115.7 (21st of 30) for a -1.8 margin (19th of 30), currently on a W4 run. Last out: W 128-107 at SAC, W 111-101 at UTAH, W 123-119 at NO.\nHOU is 14-5, scoring 118.0 (7th of 30) and allowing 109.1 (5th of 30) for a +8.9 margin (4th of 30), on a W1 run. Last out: W 119-104 at IND, L 124-133 at DEN, W 116-104 vs LAC.\nAgainst the number: PHX 7-8 against the spread (47%); 9 over / 6 under; HOU 10-7 against the spread (59%); 10 over / 7 under.\nHead to head, PHX is 0-3 in the last 3 meetings with an average margin of -12.0 (most recent 2026-04-07: L 105-119).\n## Statistical Profile\nOver the last 10 games on record (box scores on record through 2026-04-27), PHX's edges are concrete rather than cosmetic. League averages and ranks across 30 teams are given for scale.\n• **3P%** — PHX hits 33.8% from three against 29.9% (league avg 34.9%; PHX 20th vs HOU 29th of 30).\n• **Bench points** — PHX gets 25.6 from the bench to 21.3 (league avg 35.3; PHX 25th vs HOU 29th of 30).\n• **FG%** — PHX shoots 45.3% from the floor to 44.3% (league avg 45.8%; PHX 18th vs HOU 25th of 30).\nWhere HOU pushes back:\n• **Paint points** — HOU holds the better number, 53.4 to PHX's 39.4 (league avg 47.4; PHX 27th vs HOU 6th of 30).\n• **Net margin** — HOU holds the better number, +3.7 to PHX's -6.3 (league avg -4.7; PHX 17th vs HOU 3rd of 30).\n• **Off. rebounds** — HOU holds the better number, 15.3 to PHX's 11.9 (league avg 11.1; PHX 9th vs HOU 1st of 30).\nConsistency check: PHX's game margins over this stretch vary by ±18.7 points (one standard deviation) against ±14.5 for HOU; the more volatile side is PHX.\n## Schedule & Rest\nPHX has one day off; HOU has one day off.\nHOU has the floor. Home teams have outscored visitors by +2.0 per game and won 55% of games over the last 3 seasons (n = 4,161); that is already priced into the line, so it does not move our number on its own.\n## Total: UNDER 223.5\nTempo check: this season the two offences combine for 231.9 points and the two defences concede 224.8; on record they attempt 71 threes between them (league pair average 73) with 24 fast-break points (league pair average 28); the league-wide average total over the last 3 seasons is 227.9.\nThe model projects 221.0 total points against a line of 223.5, 2.5 points below the number. With totals spreading ±18.6 points around the line, that is a 55% probability of the under; published confidence is 57%.\n## Model Track Record\nThis season, published spread picks are 121-132 (48%); at 64%+ confidence they are 64-84; totals are 129-129 (50%).\n## What Could Go Wrong\nHonest caveats: taking +10.5 relies on PHX staying within reach late; HOU's edge in Paint points (53.4 vs 39.4) is the cleanest path to an upset of this read; PHX's results swing ±18.7 points game to game, so any single-game edge is fragile.",
+      "analysis_content_zh": "## 結論\n本場站 客場的 PHX。\n市場開 PHX +10.5，等於預期輸 10.5 分、勝率 22%；模型估 PHX -7.0（勝率 31%），與盤口差 3.5 分，有利於過盤。\n以本季 244 場實際結果量得換算，3.5 分的優勢等於 60% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 -6.1；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（64%）。\n## 本季至今\nPHX 戰績 9-9（主 5-5、客 4-4），場均得 113.9（30 隊中第 14）、失 115.7（30 隊中第 21），淨勝 -1.8（30 隊中第 19），目前 W4。近況：客場勝 SAC 128-107、客場勝 UTAH 111-101、客場勝 NO 123-119。\nHOU 戰績 14-5，場均得 118.0（30 隊中第 7）、失 109.1（30 隊中第 5），淨勝 +8.9（30 隊中第 4），目前 W1。近況：客場勝 IND 119-104、客場負 DEN 124-133、主場勝 LAC 116-104。\n對盤口表現：PHX 讓分 7 勝 8 負 (47%)；大分 9 次、小分 6 次；HOU 讓分 10 勝 7 負 (59%)；大分 10 次、小分 7 次。\n近 3 次交手 PHX 0 勝 3 負，平均分差 -12.0（最近一次 2026-04-07：負 105-119）。\n## 數據體質\n看近 10 場有紀錄的比賽（有紀錄的比賽資料到 2026-04-27），PHX 的優勢是實打實的數字，不是印象。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **三分命中率**：PHX 三分命中 33.8%，對手 29.9%（聯盟平均 34.9%；PHX 第 20、HOU 第 29／30 隊）。\n• **板凳得分**：PHX 板凳貢獻 25.6 分，對手 21.3（聯盟平均 35.3；PHX 第 25、HOU 第 29／30 隊）。\n• **命中率**：PHX 命中率 45.3%，對手 44.3%（聯盟平均 45.8%；PHX 第 18、HOU 第 25／30 隊）。\nHOU 能反擊的地方：\n• **禁區得分**：HOU 這項較好，53.4 對 PHX 的 39.4（聯盟平均 47.4；PHX 第 27、HOU 第 6／30 隊）。\n• **淨勝分**：HOU 這項較好，+3.7 對 PHX 的 -6.3（聯盟平均 -4.7；PHX 第 17、HOU 第 3／30 隊）。\n• **進攻籃板**：HOU 這項較好，15.3 對 PHX 的 11.9（聯盟平均 11.1；PHX 第 9、HOU 第 1／30 隊）。\n穩定度：這段期間 PHX 單場分差的標準差是 ±18.7 分，HOU 是 ±14.5 分；PHX 的表現起伏較大。\n## 賽程與休息\nPHX 休一天；HOU 休一天。\nHOU 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 223.5\n節奏觀察：本季兩隊進攻合計 231.9 分，防守合計失 224.8 分；近況合計每場出手 71 記三分（聯盟兩隊平均 73）、快攻 24 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 221.0，盤口 223.5，低於盤口 2.5 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 55%；公布信心 57%。\n## 模型本季戰績\n本季至今，已發佈讓分 121 勝 132 負（48%）；信心 64% 以上的場次 64 勝 84 負；大小分 129 勝 129 負（50%）。\n## 風險\n坦白說：收 +10.5 的前提是 PHX 末段還咬得住；HOU 在禁區得分上的優勢（53.4 對 39.4）是翻掉這份判讀最直接的路徑；PHX 單場分差起伏 ±18.7 分，單場優勢並不牢靠。",
+      "predicted_margin": -6.97,
       "predicted_total": 221.02,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T09:30:13.403257",
+      "created_at": "2026-11-24T10:00:13.590593",
       "analysis_facts": {
         "profile_games": 10,
-        "profile_through": "2026-05-01",
+        "profile_through": "2026-04-27",
         "league_teams": 30,
         "season_teams": 30,
         "rows": [
@@ -107121,11 +107121,11 @@
             "key": "ppg",
             "en": "Points",
             "zh": "得分",
-            "rec": 108.8,
-            "opp": 106.8,
+            "rec": 106.8,
+            "opp": 108.8,
             "avg": 111.1,
-            "rec_rank": 19,
-            "opp_rank": 23,
+            "rec_rank": 23,
+            "opp_rank": 19,
             "unit": "",
             "better": "high"
           },
@@ -107133,11 +107133,11 @@
             "key": "papg",
             "en": "Points allowed",
             "zh": "失分",
-            "rec": 105.1,
-            "opp": 113.1,
+            "rec": 113.1,
+            "opp": 105.1,
             "avg": 115.8,
-            "rec_rank": 5,
-            "opp_rank": 14,
+            "rec_rank": 14,
+            "opp_rank": 5,
             "unit": "",
             "better": "low"
           },
@@ -107145,11 +107145,11 @@
             "key": "net",
             "en": "Net margin",
             "zh": "淨勝分",
-            "rec": 3.7,
-            "opp": -6.3,
+            "rec": -6.3,
+            "opp": 3.7,
             "avg": -4.7,
-            "rec_rank": 3,
-            "opp_rank": 17,
+            "rec_rank": 17,
+            "opp_rank": 3,
             "unit": "",
             "better": "high"
           },
@@ -107157,11 +107157,11 @@
             "key": "fg",
             "en": "FG%",
             "zh": "命中率",
-            "rec": 44.3,
-            "opp": 45.3,
+            "rec": 45.3,
+            "opp": 44.3,
             "avg": 45.8,
-            "rec_rank": 25,
-            "opp_rank": 18,
+            "rec_rank": 18,
+            "opp_rank": 25,
             "unit": "%",
             "better": "high"
           },
@@ -107169,11 +107169,11 @@
             "key": "tp",
             "en": "3P%",
             "zh": "三分命中率",
-            "rec": 29.9,
-            "opp": 33.8,
+            "rec": 33.8,
+            "opp": 29.9,
             "avg": 34.9,
-            "rec_rank": 29,
-            "opp_rank": 20,
+            "rec_rank": 20,
+            "opp_rank": 29,
             "unit": "%",
             "better": "high"
           },
@@ -107181,11 +107181,11 @@
             "key": "tpa",
             "en": "3PA",
             "zh": "三分出手",
-            "rec": 33.7,
-            "opp": 37.1,
+            "rec": 37.1,
+            "opp": 33.7,
             "avg": 36.4,
-            "rec_rank": 22,
-            "opp_rank": 13,
+            "rec_rank": 13,
+            "opp_rank": 22,
             "unit": "",
             "better": null
           },
@@ -107193,11 +107193,11 @@
             "key": "ft",
             "en": "FT%",
             "zh": "罰球命中率",
-            "rec": 76.3,
-            "opp": 77.4,
+            "rec": 77.4,
+            "opp": 76.3,
             "avg": 77.5,
-            "rec_rank": 20,
-            "opp_rank": 15,
+            "rec_rank": 15,
+            "opp_rank": 20,
             "unit": "%",
             "better": "high"
           },
@@ -107205,11 +107205,11 @@
             "key": "reb",
             "en": "Rebounds",
             "zh": "籃板",
-            "rec": 46.0,
-            "opp": 41.6,
+            "rec": 41.6,
+            "opp": 46.0,
             "avg": 41.9,
-            "rec_rank": 2,
-            "opp_rank": 18,
+            "rec_rank": 18,
+            "opp_rank": 2,
             "unit": "",
             "better": "high"
           },
@@ -107217,11 +107217,11 @@
             "key": "oreb",
             "en": "Off. rebounds",
             "zh": "進攻籃板",
-            "rec": 15.3,
-            "opp": 11.9,
+            "rec": 11.9,
+            "opp": 15.3,
             "avg": 11.1,
-            "rec_rank": 1,
-            "opp_rank": 9,
+            "rec_rank": 9,
+            "opp_rank": 1,
             "unit": "",
             "better": "high"
           },
@@ -107229,11 +107229,11 @@
             "key": "ast",
             "en": "Assists",
             "zh": "助攻",
-            "rec": 22.4,
-            "opp": 21.1,
+            "rec": 21.1,
+            "opp": 22.4,
             "avg": 25.0,
-            "rec_rank": 26,
-            "opp_rank": 29,
+            "rec_rank": 29,
+            "opp_rank": 26,
             "unit": "",
             "better": "high"
           },
@@ -107241,11 +107241,11 @@
             "key": "tov",
             "en": "Turnovers",
             "zh": "失誤",
-            "rec": 13.2,
-            "opp": 14.8,
+            "rec": 14.8,
+            "opp": 13.2,
             "avg": 13.6,
-            "rec_rank": 12,
-            "opp_rank": 24,
+            "rec_rank": 24,
+            "opp_rank": 12,
             "unit": "",
             "better": "low"
           },
@@ -107253,11 +107253,11 @@
             "key": "paint",
             "en": "Paint points",
             "zh": "禁區得分",
-            "rec": 53.4,
-            "opp": 39.4,
+            "rec": 39.4,
+            "opp": 53.4,
             "avg": 47.4,
-            "rec_rank": 6,
-            "opp_rank": 27,
+            "rec_rank": 27,
+            "opp_rank": 6,
             "unit": "",
             "better": "high"
           },
@@ -107265,11 +107265,11 @@
             "key": "fb",
             "en": "Fast-break points",
             "zh": "快攻得分",
-            "rec": 14.6,
-            "opp": 9.7,
+            "rec": 9.7,
+            "opp": 14.6,
             "avg": 14.2,
-            "rec_rank": 12,
-            "opp_rank": 28,
+            "rec_rank": 28,
+            "opp_rank": 12,
             "unit": "",
             "better": "high"
           },
@@ -107277,11 +107277,11 @@
             "key": "pot",
             "en": "Points off turnovers",
             "zh": "失誤轉換得分",
-            "rec": 19.1,
-            "opp": 15.1,
+            "rec": 15.1,
+            "opp": 19.1,
             "avg": 17.5,
-            "rec_rank": 8,
-            "opp_rank": 25,
+            "rec_rank": 25,
+            "opp_rank": 8,
             "unit": "",
             "better": "high"
           },
@@ -107289,50 +107289,17 @@
             "key": "bench",
             "en": "Bench points",
             "zh": "板凳得分",
-            "rec": 21.3,
-            "opp": 25.6,
+            "rec": 25.6,
+            "opp": 21.3,
             "avg": 35.3,
-            "rec_rank": 29,
-            "opp_rank": 25,
+            "rec_rank": 25,
+            "opp_rank": 29,
             "unit": "",
             "better": "high"
           }
         ],
         "form": {
           "rec": {
-            "games": 19,
-            "wins": 14,
-            "losses": 5,
-            "home": [
-              9,
-              1
-            ],
-            "away": [
-              5,
-              4
-            ],
-            "ppg": 118.0,
-            "papg": 109.1,
-            "margin": 8.9,
-            "rank": {
-              "ppg": 7,
-              "papg": 5,
-              "margin": 4
-            },
-            "streak": "W1",
-            "ats": [
-              10,
-              7,
-              0
-            ],
-            "ou": [
-              10,
-              7,
-              0
-            ],
-            "rest": 2
-          },
-          "opp": {
             "games": 18,
             "wins": 9,
             "losses": 9,
@@ -107364,47 +107331,80 @@
               0
             ],
             "rest": 2
+          },
+          "opp": {
+            "games": 19,
+            "wins": 14,
+            "losses": 5,
+            "home": [
+              9,
+              1
+            ],
+            "away": [
+              5,
+              4
+            ],
+            "ppg": 118.0,
+            "papg": 109.1,
+            "margin": 8.9,
+            "rank": {
+              "ppg": 7,
+              "papg": 5,
+              "margin": 4
+            },
+            "streak": "W1",
+            "ats": [
+              10,
+              7,
+              0
+            ],
+            "ou": [
+              10,
+              7,
+              0
+            ],
+            "rest": 2
           }
         },
         "volatility": {
-          "rec": 14.5,
-          "opp": 18.7
+          "rec": 18.7,
+          "opp": 14.5
         },
         "h2h": [
           {
             "date": "2025-12-05",
-            "won": true,
-            "for": 117,
-            "against": 98
+            "won": false,
+            "for": 98,
+            "against": 117
           },
           {
             "date": "2026-01-05",
-            "won": true,
-            "for": 100,
-            "against": 97
+            "won": false,
+            "for": 97,
+            "against": 100
           },
           {
             "date": "2026-04-07",
-            "won": true,
-            "for": 119,
-            "against": 105
+            "won": false,
+            "for": 105,
+            "against": 119
           }
         ],
         "projection": {
-          "model_margin": 6.1,
-          "raw_margin": 6.1,
-          "market_margin": 0.0,
-          "edge": 6.1,
+          "model_margin": -7.0,
+          "raw_margin": -6.1,
+          "market_margin": -10.5,
+          "edge": 3.5,
           "pred_total": 221.0,
-          "total_line": 225.0,
-          "total_edge": -4.0,
-          "total_is_default": true
+          "total_line": 223.5,
+          "total_edge": -2.5,
+          "total_is_default": false
         },
         "probability": {
-          "cover": 0.671,
-          "win_model": 0.671,
-          "win_market": null,
-          "total": 0.585,
+          "cover": 0.601,
+          "win_model": 0.306,
+          "win_market": 0.222,
+          "total": 0.553,
           "sigma_spread": 13.7,
           "sigma_total": 18.6,
           "sigma_measured": true
@@ -107430,11 +107430,11 @@
             129
           ],
           "spread_at_conf": [
-            41,
-            55
+            64,
+            84
           ]
         },
-        "generated_at": "2026-11-24T09:30:13"
+        "generated_at": "2026-11-24T10:00:13"
       },
       "matches": {
         "id": 289,
@@ -107446,8 +107446,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": null,
-        "vegas_total": null,
+        "vegas_spread": -10.5,
+        "vegas_total": 223.5,
         "home_team": {
           "code": "HOU",
           "full_name": "Houston Rockets",
@@ -107462,8 +107462,8 @@
         "away_team_nba_id": 1610612756
       },
       "recommended_team": {
-        "code": "HOU",
-        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png"
+        "code": "PHX",
+        "logo_url": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png"
       }
     },
     {
@@ -107483,7 +107483,7 @@
       "predicted_total": 233.78,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T09:30:13.469628",
+      "created_at": "2026-11-24T10:00:13.656855",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-15",
@@ -107807,7 +107807,7 @@
             20
           ]
         },
-        "generated_at": "2026-11-24T09:30:13"
+        "generated_at": "2026-11-24T10:00:13"
       },
       "matches": {
         "id": 287,
@@ -107856,7 +107856,7 @@
       "predicted_total": 218.38,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T09:30:13.538537",
+      "created_at": "2026-11-24T10:00:13.736363",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-12",
@@ -108180,7 +108180,7 @@
             62
           ]
         },
-        "generated_at": "2026-11-24T09:30:13"
+        "generated_at": "2026-11-24T10:00:13"
       },
       "matches": {
         "id": 288,
@@ -108229,7 +108229,7 @@
       "predicted_total": 222.59,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T09:30:13.606647",
+      "created_at": "2026-11-24T10:00:13.809490",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-05-30",
@@ -108553,7 +108553,7 @@
             14
           ]
         },
-        "generated_at": "2026-11-24T09:30:13"
+        "generated_at": "2026-11-24T10:00:13"
       },
       "matches": {
         "id": 286,
@@ -108602,7 +108602,7 @@
       "predicted_total": 233.09,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T09:30:13.677131",
+      "created_at": "2026-11-24T10:00:13.872855",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-14",
@@ -108926,7 +108926,7 @@
             105
           ]
         },
-        "generated_at": "2026-11-24T09:30:13"
+        "generated_at": "2026-11-24T10:00:13"
       },
       "matches": {
         "id": 283,
@@ -108975,7 +108975,7 @@
       "predicted_total": 218.14,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T09:30:13.745967",
+      "created_at": "2026-11-24T10:00:13.969153",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -109299,7 +109299,7 @@
             114
           ]
         },
-        "generated_at": "2026-11-24T09:30:13"
+        "generated_at": "2026-11-24T10:00:13"
       },
       "matches": {
         "id": 291,
@@ -109348,7 +109348,7 @@
       "predicted_total": 232.54,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T09:30:13.820395",
+      "created_at": "2026-11-24T10:00:14.107582",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-04-17",
@@ -109672,7 +109672,7 @@
             78
           ]
         },
-        "generated_at": "2026-11-24T09:30:13"
+        "generated_at": "2026-11-24T10:00:14"
       },
       "matches": {
         "id": 290,
@@ -109721,7 +109721,7 @@
       "predicted_total": 214.42,
       "spread_outcome": null,
       "total_outcome": null,
-      "created_at": "2026-11-24T09:30:13.893712",
+      "created_at": "2026-11-24T10:00:14.182996",
       "analysis_facts": {
         "profile_games": 10,
         "profile_through": "2026-06-13",
@@ -110045,7 +110045,7 @@
             20
           ]
         },
-        "generated_at": "2026-11-24T09:30:13"
+        "generated_at": "2026-11-24T10:00:14"
       },
       "matches": {
         "id": 285,
