@@ -10923,20 +10923,20 @@
       "home_team_id": 25,
       "away_team_id": 2,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 110,
-      "away_score": 117,
+      "home_score": 112,
+      "away_score": 123,
       "period_scores": {
         "home": [
           28,
           21,
           40,
-          21
+          23
         ],
         "away": [
           34,
           46,
           24,
-          13
+          19
         ]
       },
       "vegas_spread": 10.5,
@@ -10962,13 +10962,13 @@
       "away_team_id": 7,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 8,
-      "away_score": 11,
+      "away_score": 15,
       "period_scores": {
         "home": [
           8
         ],
         "away": [
-          11
+          15
         ]
       },
       "vegas_spread": -7.5,
@@ -10997,7 +10997,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -1.5,
-      "vegas_total": 238.5,
+      "vegas_total": 237.5,
       "home_team": {
         "code": "PHI",
         "full_name": "Philadelphia 76ers",
@@ -11022,7 +11022,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 222.5,
+      "vegas_total": 221.5,
       "home_team": {
         "code": "CHA",
         "full_name": "Charlotte Hornets",
@@ -11047,7 +11047,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 220.5,
+      "vegas_total": 219.5,
       "home_team": {
         "code": "NY",
         "full_name": "New York Knicks",
@@ -11122,7 +11122,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -1.5,
-      "vegas_total": 229.5,
+      "vegas_total": 230.5,
       "home_team": {
         "code": "MIL",
         "full_name": "Milwaukee Bucks",
@@ -11197,7 +11197,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 2.5,
-      "vegas_total": 226.5,
+      "vegas_total": 225.5,
       "home_team": {
         "code": "POR",
         "full_name": "Portland Trail Blazers",
@@ -106110,13 +106110,13 @@
         "away_team_id": 7,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 8,
-        "away_score": 11,
+        "away_score": 15,
         "period_scores": {
           "home": [
             8
           ],
           "away": [
-            11
+            15
           ]
         },
         "vegas_spread": -7.5,
@@ -106875,20 +106875,20 @@
         "home_team_id": 25,
         "away_team_id": 2,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 110,
-        "away_score": 117,
+        "home_score": 112,
+        "away_score": 123,
         "period_scores": {
           "home": [
             28,
             21,
             40,
-            21
+            23
           ],
           "away": [
             34,
             46,
             24,
-            13
+            19
           ]
         },
         "vegas_spread": 10.5,
@@ -107265,7 +107265,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -3.5,
-        "vegas_total": 222.5,
+        "vegas_total": 221.5,
         "home_team": {
           "code": "CHA",
           "full_name": "Charlotte Hornets",
@@ -108384,7 +108384,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -1.5,
-        "vegas_total": 229.5,
+        "vegas_total": 230.5,
         "home_team": {
           "code": "MIL",
           "full_name": "Milwaukee Bucks",
@@ -109130,7 +109130,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -1.5,
-        "vegas_total": 238.5,
+        "vegas_total": 237.5,
         "home_team": {
           "code": "PHI",
           "full_name": "Philadelphia 76ers",
@@ -109503,7 +109503,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 2.5,
-        "vegas_total": 226.5,
+        "vegas_total": 225.5,
         "home_team": {
           "code": "POR",
           "full_name": "Portland Trail Blazers",
@@ -110249,7 +110249,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -3.5,
-        "vegas_total": 220.5,
+        "vegas_total": 219.5,
         "home_team": {
           "code": "NY",
           "full_name": "New York Knicks",
