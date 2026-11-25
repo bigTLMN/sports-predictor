@@ -10961,16 +10961,18 @@
       "home_team_id": 8,
       "away_team_id": 7,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 39,
-      "away_score": 58,
+      "home_score": 48,
+      "away_score": 62,
       "period_scores": {
         "home": [
           17,
-          22
+          22,
+          9
         ],
         "away": [
           24,
-          34
+          34,
+          4
         ]
       },
       "vegas_spread": -7.5,
@@ -11199,7 +11201,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 3.5,
-      "vegas_total": 226.5,
+      "vegas_total": 225.5,
       "home_team": {
         "code": "POR",
         "full_name": "Portland Trail Blazers",
@@ -106111,16 +106113,18 @@
         "home_team_id": 8,
         "away_team_id": 7,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 39,
-        "away_score": 58,
+        "home_score": 48,
+        "away_score": 62,
         "period_scores": {
           "home": [
             17,
-            22
+            22,
+            9
           ],
           "away": [
             24,
-            34
+            34,
+            4
           ]
         },
         "vegas_spread": -7.5,
@@ -109507,7 +109511,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 3.5,
-        "vegas_total": 226.5,
+        "vegas_total": 225.5,
         "home_team": {
           "code": "POR",
           "full_name": "Portland Trail Blazers",
