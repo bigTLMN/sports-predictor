@@ -10961,18 +10961,20 @@
       "home_team_id": 8,
       "away_team_id": 7,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 77,
-      "away_score": 84,
+      "home_score": 79,
+      "away_score": 90,
       "period_scores": {
         "home": [
           17,
           22,
-          38
+          38,
+          2
         ],
         "away": [
           24,
           34,
-          26
+          26,
+          6
         ]
       },
       "vegas_spread": -7.5,
@@ -11026,7 +11028,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -3.5,
-      "vegas_total": 222.5,
+      "vegas_total": 221.5,
       "home_team": {
         "code": "CHA",
         "full_name": "Charlotte Hornets",
@@ -11126,7 +11128,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -1.5,
-      "vegas_total": 230.5,
+      "vegas_total": 231.5,
       "home_team": {
         "code": "MIL",
         "full_name": "Milwaukee Bucks",
@@ -11150,7 +11152,7 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -8.5,
+      "vegas_spread": -9.5,
       "vegas_total": 224.5,
       "home_team": {
         "code": "HOU",
@@ -11201,7 +11203,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": 3.5,
-      "vegas_total": 225.5,
+      "vegas_total": 226.5,
       "home_team": {
         "code": "POR",
         "full_name": "Portland Trail Blazers",
@@ -106113,18 +106115,20 @@
         "home_team_id": 8,
         "away_team_id": 7,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 77,
-        "away_score": 84,
+        "home_score": 79,
+        "away_score": 90,
         "period_scores": {
           "home": [
             17,
             22,
-            38
+            38,
+            2
           ],
           "away": [
             24,
             34,
-            26
+            26,
+            6
           ]
         },
         "vegas_spread": -7.5,
@@ -107273,7 +107277,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -3.5,
-        "vegas_total": 222.5,
+        "vegas_total": 221.5,
         "home_team": {
           "code": "CHA",
           "full_name": "Charlotte Hornets",
@@ -107645,7 +107649,7 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -8.5,
+        "vegas_spread": -9.5,
         "vegas_total": 224.5,
         "home_team": {
           "code": "HOU",
@@ -108392,7 +108396,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -1.5,
-        "vegas_total": 230.5,
+        "vegas_total": 231.5,
         "home_team": {
           "code": "MIL",
           "full_name": "Milwaukee Bucks",
@@ -109511,7 +109515,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": 3.5,
-        "vegas_total": 225.5,
+        "vegas_total": 226.5,
         "home_team": {
           "code": "POR",
           "full_name": "Portland Trail Blazers",
