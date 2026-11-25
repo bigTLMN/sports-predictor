@@ -11000,15 +11000,17 @@
       "away_team_id": 15,
       "status": "STATUS_IN_PROGRESS",
       "home_score": 62,
-      "away_score": 53,
+      "away_score": 54,
       "period_scores": {
         "home": [
           29,
-          33
+          33,
+          0
         ],
         "away": [
           32,
-          21
+          21,
+          1
         ]
       },
       "vegas_spread": 1.5,
@@ -11036,8 +11038,8 @@
       "home_score": 0,
       "away_score": 0,
       "period_scores": null,
-      "vegas_spread": -3.5,
-      "vegas_total": 218.5,
+      "vegas_spread": -4.5,
+      "vegas_total": 217.5,
       "home_team": {
         "code": "CHA",
         "full_name": "Charlotte Hornets",
@@ -11087,7 +11089,7 @@
       "away_score": 0,
       "period_scores": null,
       "vegas_spread": -2.5,
-      "vegas_total": 222.5,
+      "vegas_total": 223.5,
       "home_team": {
         "code": "OKC",
         "full_name": "Oklahoma City Thunder",
@@ -107535,8 +107537,8 @@
         "home_score": 0,
         "away_score": 0,
         "period_scores": null,
-        "vegas_spread": -3.5,
-        "vegas_total": 218.5,
+        "vegas_spread": -4.5,
+        "vegas_total": 217.5,
         "home_team": {
           "code": "CHA",
           "full_name": "Charlotte Hornets",
@@ -109028,7 +109030,7 @@
         "away_score": 0,
         "period_scores": null,
         "vegas_spread": -2.5,
-        "vegas_total": 222.5,
+        "vegas_total": 223.5,
         "home_team": {
           "code": "OKC",
           "full_name": "Oklahoma City Thunder",
@@ -109398,15 +109400,17 @@
         "away_team_id": 15,
         "status": "STATUS_IN_PROGRESS",
         "home_score": 62,
-        "away_score": 53,
+        "away_score": 54,
         "period_scores": {
           "home": [
             29,
-            33
+            33,
+            0
           ],
           "away": [
             32,
-            21
+            21,
+            1
           ]
         },
         "vegas_spread": 1.5,
