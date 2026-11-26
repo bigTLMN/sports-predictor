@@ -11112,9 +11112,9 @@
       "start_time": "2026-11-26T00:30Z",
       "home_team_id": 18,
       "away_team_id": 17,
-      "status": "STATUS_IN_PROGRESS",
+      "status": "STATUS_FINISHED",
       "home_score": 106,
-      "away_score": 111,
+      "away_score": 113,
       "period_scores": {
         "home": [
           16,
@@ -11126,7 +11126,7 @@
           26,
           21,
           40,
-          24
+          26
         ]
       },
       "vegas_spread": -2.5,
@@ -11151,20 +11151,20 @@
       "home_team_id": 14,
       "away_team_id": 12,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 102,
-      "away_score": 82,
+      "home_score": 106,
+      "away_score": 85,
       "period_scores": {
         "home": [
           32,
           18,
           32,
-          22
+          24
         ],
         "away": [
           15,
           28,
           26,
-          13
+          16
         ]
       },
       "vegas_spread": -7.5,
@@ -11189,14 +11189,14 @@
       "home_team_id": 16,
       "away_team_id": 3,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 80,
+      "home_score": 82,
       "away_score": 88,
       "period_scores": {
         "home": [
           24,
           23,
           24,
-          9
+          11
         ],
         "away": [
           28,
@@ -11227,18 +11227,18 @@
       "home_team_id": 10,
       "away_team_id": 21,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 66,
-      "away_score": 56,
+      "home_score": 74,
+      "away_score": 65,
       "period_scores": {
         "home": [
           29,
           37,
-          0
+          8
         ],
         "away": [
           33,
           23,
-          0
+          9
         ]
       },
       "vegas_spread": -8.5,
@@ -107998,18 +107998,18 @@
         "home_team_id": 10,
         "away_team_id": 21,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 66,
-        "away_score": 56,
+        "home_score": 74,
+        "away_score": 65,
         "period_scores": {
           "home": [
             29,
             37,
-            0
+            8
           ],
           "away": [
             33,
             23,
-            0
+            9
           ]
         },
         "vegas_spread": -8.5,
@@ -108382,20 +108382,20 @@
         "home_team_id": 14,
         "away_team_id": 12,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 102,
-        "away_score": 82,
+        "home_score": 106,
+        "away_score": 85,
         "period_scores": {
           "home": [
             32,
             18,
             32,
-            22
+            24
           ],
           "away": [
             15,
             28,
             26,
-            13
+            16
           ]
         },
         "vegas_spread": -7.5,
@@ -108768,14 +108768,14 @@
         "home_team_id": 16,
         "away_team_id": 3,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 80,
+        "home_score": 82,
         "away_score": 88,
         "period_scores": {
           "home": [
             24,
             23,
             24,
-            9
+            11
           ],
           "away": [
             28,
@@ -108819,8 +108819,8 @@
       "analysis_content_zh": "## 結論\n結論落在主場作戰的 OKC。\n市場開 OKC -1.5，等於預期贏 1.5 分、勝率 54%；模型估 OKC +9.0（勝率 74%），與盤口差 7.5 分，有利於過盤。\n以本季 244 場實際結果量得換算，7.5 分的優勢等於 71% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +10.8；我們固定把它往盤口拉 20%，尊重市場定價。\n信心高（79%）。\n## 本季至今\nOKC 戰績 10-9（主 6-1、客 4-8），場均得 112.1（30 隊中第 21）、失 110.5（30 隊中第 7），淨勝 +1.6（30 隊中第 12），目前 L2。近況：主場勝 NO 126-120、客場負 MIA 113-123、客場負 IND 120-125。\nMIN 戰績 13-7，場均得 115.8（30 隊中第 11）、失 108.2（30 隊中第 4），淨勝 +7.6（30 隊中第 5），目前 W2。近況：主場負 NY 99-102、主場勝 MEM 104-95、主場勝 BKN 142-116。\n對盤口表現：OKC 讓分 7 勝 10 負 (41%)；大分 10 次、小分 7 次；MIN 讓分 13 勝 4 負 (76%)；大分 7 次、小分 10 次。\n近 3 次交手 OKC 1 勝 2 負，平均分差 -1.3（最近一次 2026-03-15：勝 116-103）。\n## 數據體質\n近 10 場技術統計（有紀錄的比賽資料到 2026-05-30）裡，OKC 和 MIN 拉開差距的地方在這幾項。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **淨勝分**：OKC 場均淨勝 +2.0 分，對手 -6.4（聯盟平均 -4.7；OKC 第 7、MIN 第 18／30 隊）。\n• **罰球命中率**：OKC 罰球 83.7%，對手 77.2%（聯盟平均 77.5%；OKC 第 3、MIN 第 17／30 隊）。\n• **命中率**：OKC 命中率 46.3%，對手 43.2%（聯盟平均 45.8%；OKC 第 13、MIN 第 27／30 隊）。\n• **得分**：OKC 場均得 113.4 分，對手 107.5（聯盟平均 111.1；OKC 第 11、MIN 第 22／30 隊）。\nMIN 能反擊的地方：\n• **禁區得分**：MIN 這項較好，50.2 對 OKC 的 42.0（聯盟平均 47.4；OKC 第 24、MIN 第 9／30 隊）。\n• **籃板**：MIN 這項較好，45.4 對 OKC 的 40.6（聯盟平均 41.9；OKC 第 20、MIN 第 4／30 隊）。\n• **進攻籃板**：MIN 這項較好，12.9 對 OKC 的 10.7（聯盟平均 11.1；OKC 第 19、MIN 第 4／30 隊）。\n穩定度：這段期間 OKC 單場分差的標準差是 ±16.1 分，MIN 是 ±19.2 分；OKC 的表現較穩。\n## 賽程與休息\nOKC 休一天；MIN 休一天。\nOKC 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：小分 224.5\n節奏觀察：本季兩隊進攻合計 228.0 分，防守合計失 218.8 分；近況合計每場出手 67 記三分（聯盟兩隊平均 73）、快攻 21 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 222.6，盤口 224.5，低於盤口 1.9 分。以總分相對盤口 ±18.6 分的分佈換算，小分機率 54%；公布信心 55%。\n## 模型本季戰績\n本季至今，已發佈讓分 121 勝 132 負（48%）；信心 79% 以上的場次 29 勝 39 負；大小分 129 勝 129 負（50%）。\n## 風險\n坦白說：MIN 在禁區得分上的優勢（50.2 對 42.0）是翻掉這份判讀最直接的路徑；OKC 單場分差起伏 ±16.1 分，單場優勢並不牢靠；OKC 正吞 2 連敗，模型看不到更衣室氣氛。",
       "predicted_margin": 8.98,
       "predicted_total": 222.59,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "WIN",
       "created_at": "2026-11-24T23:30:14.326855",
       "analysis_facts": {
         "profile_games": 10,
@@ -109153,9 +109153,9 @@
         "start_time": "2026-11-26T00:30Z",
         "home_team_id": 18,
         "away_team_id": 17,
-        "status": "STATUS_IN_PROGRESS",
+        "status": "STATUS_FINISHED",
         "home_score": 106,
-        "away_score": 111,
+        "away_score": 113,
         "period_scores": {
           "home": [
             16,
@@ -109167,7 +109167,7 @@
             26,
             21,
             40,
-            24
+            26
           ]
         },
         "vegas_spread": -2.5,
