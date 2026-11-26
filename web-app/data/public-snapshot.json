@@ -10999,20 +10999,20 @@
       "home_team_id": 20,
       "away_team_id": 15,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 100,
-      "away_score": 87,
+      "home_score": 104,
+      "away_score": 93,
       "period_scores": {
         "home": [
           29,
           33,
           28,
-          10
+          14
         ],
         "away": [
           32,
           21,
           28,
-          6
+          12
         ]
       },
       "vegas_spread": 1.5,
@@ -11036,10 +11036,17 @@
       "start_time": "2026-11-26T00:00Z",
       "home_team_id": 4,
       "away_team_id": 5,
-      "status": "STATUS_SCHEDULED",
-      "home_score": 0,
-      "away_score": 0,
-      "period_scores": null,
+      "status": "STATUS_IN_PROGRESS",
+      "home_score": 3,
+      "away_score": 2,
+      "period_scores": {
+        "home": [
+          3
+        ],
+        "away": [
+          2
+        ]
+      },
       "vegas_spread": -4.5,
       "vegas_total": 218.5,
       "home_team": {
@@ -107535,10 +107542,17 @@
         "start_time": "2026-11-26T00:00Z",
         "home_team_id": 4,
         "away_team_id": 5,
-        "status": "STATUS_SCHEDULED",
-        "home_score": 0,
-        "away_score": 0,
-        "period_scores": null,
+        "status": "STATUS_IN_PROGRESS",
+        "home_score": 3,
+        "away_score": 2,
+        "period_scores": {
+          "home": [
+            3
+          ],
+          "away": [
+            2
+          ]
+        },
         "vegas_spread": -4.5,
         "vegas_total": 218.5,
         "home_team": {
@@ -109401,20 +109415,20 @@
         "home_team_id": 20,
         "away_team_id": 15,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 100,
-        "away_score": 87,
+        "home_score": 104,
+        "away_score": 93,
         "period_scores": {
           "home": [
             29,
             33,
             28,
-            10
+            14
           ],
           "away": [
             32,
             21,
             28,
-            6
+            12
           ]
         },
         "vegas_spread": 1.5,
