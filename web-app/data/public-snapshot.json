@@ -11530,21 +11530,21 @@
       "start_time": "2026-11-28T01:30Z",
       "home_team_id": 17,
       "away_team_id": 14,
-      "status": "STATUS_IN_PROGRESS",
-      "home_score": 107,
-      "away_score": 113,
+      "status": "STATUS_FINISHED",
+      "home_score": 109,
+      "away_score": 114,
       "period_scores": {
         "home": [
           25,
           25,
           31,
-          26
+          28
         ],
         "away": [
           32,
           29,
           21,
-          31
+          32
         ]
       },
       "vegas_spread": -2.5,
@@ -11569,18 +11569,18 @@
       "home_team_id": 21,
       "away_team_id": 7,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 92,
-      "away_score": 71,
+      "home_score": 95,
+      "away_score": 78,
       "period_scores": {
         "home": [
           29,
           34,
-          29
+          32
         ],
         "away": [
           28,
           25,
-          18
+          25
         ]
       },
       "vegas_spread": -4.5,
@@ -11639,18 +11639,18 @@
       "home_team_id": 30,
       "away_team_id": 8,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 58,
-      "away_score": 56,
+      "home_score": 68,
+      "away_score": 67,
       "period_scores": {
         "home": [
           22,
           31,
-          2
+          17
         ],
         "away": [
           27,
           25,
-          4
+          15
         ]
       },
       "vegas_spread": 9.5,
@@ -11675,16 +11675,18 @@
       "home_team_id": 12,
       "away_team_id": 27,
       "status": "STATUS_IN_PROGRESS",
-      "home_score": 50,
-      "away_score": 54,
+      "home_score": 52,
+      "away_score": 56,
       "period_scores": {
         "home": [
           28,
-          22
+          22,
+          3
         ],
         "away": [
           29,
-          25
+          25,
+          2
         ]
       },
       "vegas_spread": -2.5,
@@ -112774,16 +112776,18 @@
         "home_team_id": 12,
         "away_team_id": 27,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 50,
-        "away_score": 54,
+        "home_score": 52,
+        "away_score": 56,
         "period_scores": {
           "home": [
             28,
-            22
+            22,
+            3
           ],
           "away": [
             29,
-            25
+            25,
+            2
           ]
         },
         "vegas_spread": -2.5,
@@ -112821,8 +112825,8 @@
       "analysis_content_zh": "## 結論\n本場站 主場的 MIN。\n市場開 MIN -3.5，等於預期贏 3.5 分、勝率 60%；模型估 MIN +8.7（勝率 74%），與盤口差 5.2 分，有利於過盤。\n以本季 256 場實際結果量得換算，5.2 分的優勢等於 65% 的過盤機率；一般 -110 賠率的損益兩平點是 52.4%。\n未向市場收斂前，模型原始值是 +10.1；我們固定把它往盤口拉 20%，尊重市場定價。\n信心中等（70%）。\n## 本季至今\nMIN 戰績 14-7（主 9-4、客 5-3），場均得 115.7（30 隊中第 11）、失 108.1（30 隊中第 5），淨勝 +7.6（30 隊中第 5），目前 W3。近況：主場勝 MEM 104-95、主場勝 BKN 142-116、客場勝 OKC 113-106。\nMEM 戰績 15-5，場均得 119.8（30 隊中第 2）、失 110.0（30 隊中第 7），淨勝 +9.8（30 隊中第 3），目前 W2。近況：客場負 MIN 95-104、客場勝 CHA 117-111、主場勝 LAC 115-97。\n對盤口表現：MIN 讓分 14 勝 4 負 (78%)；大分 7 次、小分 11 次；MEM 讓分 13 勝 5 負 (72%)；大分 10 次、小分 8 次。\n近 3 次交手 MIN 2 勝 1 負，平均分差 +5.0（最近一次 2026-03-03：勝 117-110）。\n## 數據體質\n近 10 場的數據體質（有紀錄的比賽資料到 2026-05-15）解釋了大部分的預測結果。括號內是 30 隊的聯盟平均與排名，方便對照。\n• **失分**：MIN 場均失 113.9 分，對手 132.0（聯盟平均 115.8；MIN 第 15、MEM 第 29／30 隊）。\n• **籃板**：MIN 場均 45.4 籃板，對手 35.8（聯盟平均 41.9；MIN 第 4、MEM 第 29／30 隊）。\n• **淨勝分**：MIN 場均淨勝 -6.4 分，對手 -20.4（聯盟平均 -4.7；MIN 第 18、MEM 第 30／30 隊）。\n• **進攻籃板**：MIN 進攻籃板 12.9 個，對手 9.9（聯盟平均 11.1；MIN 第 4、MEM 第 25／30 隊）。\nMEM 能反擊的地方：\n• **助攻**：MEM 這項較好，25.7 對 MIN 的 22.8（聯盟平均 25.0；MIN 第 25、MEM 第 9／30 隊）。\n• **罰球命中率**：MEM 這項較好，81.1% 對 MIN 的 77.2%（聯盟平均 77.5%；MIN 第 17、MEM 第 6／30 隊）。\n• **快攻得分**：MEM 這項較好，13.3 對 MIN 的 10.4（聯盟平均 14.2；MIN 第 24、MEM 第 16／30 隊）。\n穩定度：這段期間 MIN 單場分差的標準差是 ±19.2 分，MEM 是 ±12.8 分；MIN 的表現起伏較大。\n## 賽程與休息\nMIN 休一天；MEM 休一天。\nMIN 坐擁主場。近 3 季主隊平均淨勝 +2.0 分、勝率 55%（樣本 4,161 場）；這已反映在盤口裡，不會單獨改變我們的數字。\n## 大小分：大分 220.5\n節奏觀察：本季兩隊進攻合計 235.6 分，防守合計失 218.2 分；近況合計每場出手 74 記三分（聯盟兩隊平均 73）、快攻 24 分（聯盟兩隊平均 28）；近 3 季聯盟平均總分 227.9。\n模型預測總分 230.1，盤口 220.5，高於盤口 9.6 分。以總分相對盤口 ±18.5 分的分佈換算，大分機率 70%；公布信心 78%。\n## 模型本季戰績\n本季至今，已發佈讓分 125 勝 140 負（47%）；信心 70% 以上的場次 50 勝 71 負；大小分 136 勝 134 負（50%）。\n## 風險\n坦白說：MEM 在助攻上的優勢（25.7 對 22.8）是翻掉這份判讀最直接的路徑；MIN 單場分差起伏 ±19.2 分，單場優勢並不牢靠。",
       "predicted_margin": 8.74,
       "predicted_total": 230.07,
-      "spread_outcome": null,
-      "total_outcome": null,
+      "spread_outcome": "LOSS",
+      "total_outcome": "WIN",
       "created_at": "2026-11-26T23:30:13.762774",
       "analysis_facts": {
         "profile_games": 10,
@@ -113155,21 +113159,21 @@
         "start_time": "2026-11-28T01:30Z",
         "home_team_id": 17,
         "away_team_id": 14,
-        "status": "STATUS_IN_PROGRESS",
-        "home_score": 107,
-        "away_score": 113,
+        "status": "STATUS_FINISHED",
+        "home_score": 109,
+        "away_score": 114,
         "period_scores": {
           "home": [
             25,
             25,
             31,
-            26
+            28
           ],
           "away": [
             32,
             29,
             21,
-            31
+            32
           ]
         },
         "vegas_spread": -2.5,
@@ -113542,18 +113546,18 @@
         "home_team_id": 21,
         "away_team_id": 7,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 92,
-        "away_score": 71,
+        "home_score": 95,
+        "away_score": 78,
         "period_scores": {
           "home": [
             29,
             34,
-            29
+            32
           ],
           "away": [
             28,
             25,
-            18
+            25
           ]
         },
         "vegas_spread": -4.5,
@@ -115462,18 +115466,18 @@
         "home_team_id": 30,
         "away_team_id": 8,
         "status": "STATUS_IN_PROGRESS",
-        "home_score": 58,
-        "away_score": 56,
+        "home_score": 68,
+        "away_score": 67,
         "period_scores": {
           "home": [
             22,
             31,
-            2
+            17
           ],
           "away": [
             27,
             25,
-            4
+            15
           ]
         },
         "vegas_spread": 9.5,
